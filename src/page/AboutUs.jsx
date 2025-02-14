@@ -12,28 +12,58 @@ import Team4Img from "../assets/images/team/team4.png";
 const teamsData = [
 	{
 		id: crypto.randomUUID(),
-		name: "Andrew Mark",
-		designation: "Creative Director",
+		name: "Harsh Shah",
+		designation: "CEO & Founder",
 		img: Team1Img,
 	},
 	{
 		id: crypto.randomUUID(),
-		name: "Jack Taylor",
-		designation: "Senior Designer",
+		name: "Kinjal Shah",
+		designation: "HR Manager",
 		img: Team2Img,
 	},
 	{
 		id: crypto.randomUUID(),
-		name: "Martine Joy",
-		designation: "Project Manager",
+		name: "Vishwas Shah",
+		designation: "QA",
 		img: Team3Img,
 	},
 	{
 		id: crypto.randomUUID(),
-		name: "Adam Straw",
-		designation: "Web Developer",
+		name: "Sweta Parmar",
+		designation: "Sr. Wordpress Developer",
 		img: Team4Img,
 	},
+	// {
+	// 	id: crypto.randomUUID(),
+	// 	name: "Neer Lashkari",
+	// 	designation: "Wordpress Developer",
+	// 	img: Team5Img,
+	// },
+	// {
+	// 	id: crypto.randomUUID(),
+	// 	name: "Maitri Gandhi",
+	// 	designation: "Frontend Developer",
+	// 	img: Team6Img,
+	// },
+	// {
+	// 	id: crypto.randomUUID(),
+	// 	name: "Bhavik Hadiyel",
+	// 	designation: "Frontend Developer",
+	// 	img: Team7Img,
+	// },
+	// {
+	// 	id: crypto.randomUUID(),
+	// 	name: "Dhruv Parmar",
+	// 	designation: "Shopify Developer",
+	// 	img: Team8Img,
+	// },
+	// {
+	// 	id: crypto.randomUUID(),
+	// 	name: "Ravi Gajariya",
+	// 	designation: "Web Designer",
+	// 	img: Team9Img,
+	// },
 ];
 
 function AboutUs() {

@@ -16,9 +16,7 @@ function Story() {
 						worth sharing with you
 					</h2>
 					<p>
-						Established in 2008, we began as a small but ambitious team. We understood the importance of
-						creative and tech-savvy solutions to help businesses succeed in the ever-changing digital
-						landscape.
+						Founded in 2019, Codersh Web Services is a global leader in website design, development, and digital marketing, helping businesses across the US, UK, Asia, and the Netherlands to achieve their goals.
 					</p>
 				</div>
 

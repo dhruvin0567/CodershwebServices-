@@ -4,35 +4,35 @@ const faqData = {
 	faq1: [
 		{
 			id: crypto.randomUUID(),
-			title: "What services does agency offer?",
-			text: "Clients often seek to understand the range of design services an agency provides, such as graphic design, web design, branding.",
+			title: "What Shopify services you offer?",
+			text: "We provide Shopify setup, theme customization, app integrations, and store optimization for a seamless shopping experience.",
 		},
 		{
 			id: crypto.randomUUID(),
-			title: "What is your design process like?",
-			text: "Explaining the design agency's process from initial concept to final delivery helps clients understand what to expect.",
+			title: "Can you customize themes?",
+			text: "Yes, we can tailor Shopify themes to fit your brand identity and create a unique store design.",
 		},
 		{
 			id: crypto.randomUUID(),
-			title: "How much does design work cost?",
-			text: "The cost of our design services varies depending on the scope of the project. We provide customized quotes after discussing requirements.",
+			title: "Do you optimize store performance?",
+			text: "Absolutely! We focus on faster loading times, smooth navigation, and improved user experience.",
 		},
 	],
 	faq2: [
 		{
 			id: crypto.randomUUID(),
-			title: "What's your design process like?",
-			text: "Our design process typically involves discovery, concept development, design, revisions based on feedback, and finalization.",
+			title: "What payment gateways do you integrate?",
+			text: "We integrate popular gateways like PayPal, Stripe, and Shopify Payments for secure transactions.",
 		},
 		{
 			id: crypto.randomUUID(),
-			title: "How do you handle user feedback?",
-			text: "We value client feedback and work closely with you to make sure user happy with the final design. We offer a specific number of revisions.",
+			title: "How much do Shopify services cost?",
+			text: "Pricing depends on your needs. We’ll provide a custom quote after discussing your project.",
 		},
 		{
 			id: crypto.randomUUID(),
-			title: "Can we see samples of your work?",
-			text: "Yes, we're proud to showcase a portfolio of our previous projects. You can find examples of our work on our website or view our portfolio.",
+			title: "Can you share examples of Shopify stores?",
+			text: "Yes, we have a portfolio of Shopify projects that showcase our work.",
 		},
 	],
 };

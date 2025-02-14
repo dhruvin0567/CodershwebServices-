@@ -27,7 +27,7 @@ function HeaderSideMenu({ showSideMenu, setShowSideMenu }) {
 							<ul>
 								<li>Give us a call:</li>
 								<li>
-									<a href="">(123) 456-7890</a>
+									<a href="">(+91)96646-17700</a>
 								</li>
 							</ul>
 						</div>
@@ -35,7 +35,7 @@ function HeaderSideMenu({ showSideMenu, setShowSideMenu }) {
 							<ul>
 								<li>Send us an email:</li>
 								<li>
-									<a href="">info@mthemeus.com</a>
+									<a href="">arvind@codersh.com</a>
 								</li>
 							</ul>
 						</div>

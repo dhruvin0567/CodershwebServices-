@@ -14,15 +14,15 @@ function FooterContent() {
 				project together
 			</h2>
 			<p>
-				We work closely with our clients to understand their objectives, target audience, and unique needs. We
-				use our creative skills to translate these requirements and practical design solutions.
+				Codersh web service is a web design and development company
+				aiming to provide high quality website development to its clients.
 			</p>
 			<div className="aximo-info-wrap">
 				<div className="aximo-info">
 					<ul>
 						<li>Give us a call:</li>
 						<li>
-							<a href="tel:(123) 456-7890">(123) 456-7890</a>
+							<a href="tel:(123) 456-7890">(+91)96646-17700</a>
 						</li>
 					</ul>
 				</div>
@@ -30,7 +30,7 @@ function FooterContent() {
 					<ul>
 						<li>Send us an email:</li>
 						<li>
-							<a href="mailto:info@mthemeus.com">info@mthemeus.com</a>
+							<a href="mailto:info@mthemeus.com">arvind@codersh.com</a>
 						</li>
 					</ul>
 				</div>

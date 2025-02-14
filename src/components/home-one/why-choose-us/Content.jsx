@@ -12,12 +12,10 @@ function Content() {
 				working processes
 			</h2>
 			<p>
-				We focus at every stage on effective communication and collaboration between the client and ensuring
-				that the final design meets the client s objectives and expectations.
+				We specialize in creating custom Shopify stores that combine stunning design with powerful functionality. Our team delivers end-to-end solutions from initial concept to final launch, ensuring your e-commerce vision comes to life.
 			</p>
 			<p>
-				It is important to note that these are simplified steps, and the actual work process may vary depending
-				on the complexity of the project.
+				With years of experience in e-commerce development, we understand what drives online sales and customer engagement.
 			</p>
 		</div>
 	);

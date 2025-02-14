@@ -8,9 +8,9 @@ function Services({ services }) {
 			<div className="container">
 				<div className="aximo-section-title center">
 					<h2>
-						We provide effective
+						We provide Shopify
 						<span className="aximo-title-animation">
-							design solutions
+							Design&Developmnet
 							<span className="aximo-title-icon">
 								<img src={Star2Img} alt="Star2Img" />
 							</span>

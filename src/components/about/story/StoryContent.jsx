@@ -2,27 +2,21 @@ function StoryContent() {
 	return (
 		<div className="row">
 			<div className="col-lg-6">
-				<h3>Our core vision</h3>
+				<h3>Our vision</h3>
 				<p>
-					Empowering businesses to create impactful and visually stunning brand experiences that captivate
-					audiences and drive success in the digital age.{" "}
+					To be a Global leader in Delivering innovative Digital Solutions by striving for excellence in Website Design, Development, and Digital Marketing Services.
 				</p>
 				<p>
-					Our team consists of experienced designers, developers. We have a wide variety of skills and
-					backgrounds, allowing us to tackle projects of all sizes and complexities. We believe in the power
-					of imagination and innovation.
+					Our team consists of dedicated professionals who never settle for less than greatness, enabling us to serve clients across the US, UK, Asia, and the Netherlands with cutting-edge solutions.
 				</p>
 			</div>
 			<div className="col-lg-6">
-				<h3>Our main mission</h3>
+				<h3>Our mission</h3>
 				<p>
-					Our mission is to collaborate with businesses of all sizes, from startups to established brands, to
-					provide innovative and creative design solutions.{" "}
+					Our mission is to create disruptive web and mobile solutions that simplify complex challenges and enhance user experiences through innovative technology.
 				</p>
 				<p>
-					We are committed to creating designs that inspire, connect & our clients in the marketplace. Our
-					focus is on understanding. Our clients' unique needs and delivery designs that not only meet but
-					exceed their expectations.
+					We are committed to delivering comprehensive digital services and Shopify solutions that transform business visions into reality. Our creative approach helps businesses build strong brand recognition and achieve their goals.
 				</p>
 			</div>
 		</div>

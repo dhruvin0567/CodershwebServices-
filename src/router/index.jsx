@@ -36,6 +36,15 @@ import CommingSoon from "../page/utility/CommingSoon.jsx";
 import Faq from "../page/utility/Faq.jsx";
 import TestimonialPage from "../page/utility/Testimonial.jsx";
 
+// extrapages implimented
+import Portfolio1 from "../page/portfolio/Portfolio1.jsx";
+import Winestore from "../page/solutions/Winestore.jsx";
+import Businessdirectory from "../page/solutions/Businessdirectory.jsx";
+import Creditrepair from "../page/solutions/Creditrepair.jsx";
+import Itdigitalagency from "../page/solutions/Itdigitalagency.jsx";
+import Blog1 from "../page/blog/Blog1.jsx";
+// import Blog1 from "../page/blog/Blog1.jsx";
+
 export const router = createBrowserRouter([
 	{
 		path: "/",
@@ -76,6 +85,10 @@ export const router = createBrowserRouter([
 						element: <BlogPage />,
 					},
 					{
+						path: "/blog1",
+						element: <Blog1 />,
+					},
+					{
 						path: "/single-blog",
 						element: <SingleBlogPage />,
 					},
@@ -83,6 +96,7 @@ export const router = createBrowserRouter([
 						path: "/blog-grid",
 						element: <BlogGridPage />,
 					},
+
 					{
 						path: "/service",
 						element: <Service />,
@@ -90,6 +104,22 @@ export const router = createBrowserRouter([
 					{
 						path: "/single-service",
 						element: <SingleService />,
+					},
+					{
+						path: "/Businessdirectory",
+						element: <Businessdirectory />,
+					},
+					{
+						path: "/creditrepair",
+						element: <Creditrepair />,
+					},
+					{
+						path: "/itdigitalagency",
+						element: <Itdigitalagency />,
+					},
+					{
+						path: "/winestore",
+						element: <Winestore />,
 					},
 					{
 						path: "/team",
@@ -110,6 +140,10 @@ export const router = createBrowserRouter([
 					{
 						path: "/single-portfolio",
 						element: <SinglePortfolio />,
+					},
+					{
+						path: "/portfolio1",
+						element: <Portfolio1 />,
 					},
 					{
 						path: "*",

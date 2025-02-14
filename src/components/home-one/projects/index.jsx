@@ -3,6 +3,8 @@ import Project1Img from "../../../assets/images/v1/project1.png";
 import Project2Img from "../../../assets/images/v1/project2.png";
 import Project3Img from "../../../assets/images/v1/project3.png";
 import Project4Img from "../../../assets/images/v1/project4.png";
+import Project5Img from "../../../assets/images/v1/project5.png";
+import Project6Img from "../../../assets/images/v1/project6.png";
 import ProjectCard from "./ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Mousewheel } from "swiper/modules";
@@ -10,39 +12,39 @@ import { Pagination, Mousewheel } from "swiper/modules";
 const projectsData = [
 	{
 		id: crypto.randomUUID(),
-		title: "Product Design",
-		description: "Developing the look and feel of physical products, aesthetics, and functionality.",
+		title: "Madame F",
+		description: "The UK's most inclusive vibrant LGBTQ+ Wine Brand",
 		img: Project1Img,
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "Logo and Branding",
-		description: "Creating or refreshing a company's logo and developing a cohesive visual identity.",
+		title: "Van Hunks",
+		description: "Van Hunks Sparkling Wine is a captivating drink that delights and surprises.",
 		img: Project2Img,
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "App UI/UX Design",
-		description: "Designing the UI/UXe for mobile apps and web applications to ensure usability & engagement.",
+		title: "Liberation Cocktails",
+		description: "We source only the best ingredients, selecting them for how they shape taste and twist tradition.",
 		img: Project3Img,
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "Packaging Design",
-		description: "Creating packaging solutions for products that not only protect attract customers on store.",
+		title: "Tylers Coffees",
+		description: "Our Acid-Free Coffee Range Offers a Symphony of Flavor, Minus the Sour Aftertaste.",
 		img: Project4Img,
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "Product Design",
-		description: "Developing the look and feel of physical products, aesthetics, and functionality.",
-		img: Project1Img,
+		title: "Asterley Bros",
+		description: "Two Brothers with a passion for Botanical Spirits in South London.",
+		img: Project5Img,
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "Logo and Branding",
-		description: "Creating or refreshing a company's logo and developing a cohesive visual identity.",
-		img: Project2Img,
+		title: "Double Dutch Drinks",
+		description: "We created our Tonics and Mixers with Flavour pairing at the Heart of each rink.",
+		img: Project6Img,
 	},
 ];
 

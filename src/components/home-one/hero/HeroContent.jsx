@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import ShapeImg from "../../../assets/images/v1/shape1.png";
-import StarImg from "../../../assets/images/v1/star.png";
+// import StarImg from "../../../assets/images/v1/star.png";
 import User1Img from "../../../assets/images/v1/user1.png";
 import User2Img from "../../../assets/images/v1/user2.png";
 import User3Img from "../../../assets/images/v1/user3.png";
@@ -12,17 +12,16 @@ function HeroContent() {
 				<FadeInStaggerTwoChildren>
 					<h1>
 						<span className="aximo-title-animation">
-							A creative
-							<img src={StarImg} alt="StarImg" />
+							Trusted Ecommerce
+							{/* <img src={StarImg} alt="StarImg" /> */}
+
 						</span>{" "}
-						design studio
+						& Shopify Agency
 					</h1>
 				</FadeInStaggerTwoChildren>
 				<FadeInStaggerTwoChildren>
 					<p>
-						{`We're a creative design studio specializing in meeting the needs of the new generation.
-								We offer innovative and cutting-edge design solutions to help our clients stand out in
-								today's fast-paced.`}
+						{`We're a leading Shopify & Shopify Plus agency who design and develop strategic ecommerce websites, also grown from humble roots and become a versatile digital marketing partner for our clients.`}
 					</p>
 				</FadeInStaggerTwoChildren>
 				<FadeInStaggerTwoChildren>
@@ -39,13 +38,13 @@ function HeroContent() {
 							</div>
 						</div>
 						<div className="aximo-hero-user-data">
-							<p>Believed by more than a thousand people</p>
+							<p>Trusted by 1000+ people</p>
 						</div>
 					</div>
 				</FadeInStaggerTwoChildren>
 				<FadeInStaggerTwoChildren>
 					<Link className="aximo-call-btn" to="/contact-us">
-						Book a free consultation <i className="icon-call"></i>
+						Let's Talk About Your Project <i className="icon-call"></i>
 					</Link>
 					<div className="aximo-hero-shape">
 						<img src={ShapeImg} alt="ShapeImg" />
