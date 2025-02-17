@@ -38,6 +38,7 @@ function Header() {
 											<DropdownItem url="blog-grid">Blog Grid</DropdownItem>
 											<DropdownItem url="single-blog">Blog Details</DropdownItem>
 											<DropdownItem url="blog1">Blog 1</DropdownItem>
+											<DropdownItem url="singleblog2">Single Blog 2</DropdownItem>
 										</Dropdown>
 									</DropdownItem>
 									<DropdownItem dropdown title="Service">
@@ -54,6 +55,12 @@ function Header() {
 											<DropdownItem url="businessdirectory">Business Directory</DropdownItem>
 										</Dropdown>
 									</DropdownItem>
+									<DropdownItem dropdown title="Projects">
+										<Dropdown noShape>
+											<DropdownItem url="casestudies">Case Studies</DropdownItem>
+											<DropdownItem url="Ourwork">Our Work</DropdownItem>
+										</Dropdown>
+									</DropdownItem>
 									<DropdownItem dropdown title={"Team"}>
 										<Dropdown noShape>
 											<DropdownItem url="team">Team</DropdownItem>
@@ -66,6 +73,7 @@ function Header() {
 											<DropdownItem url="portfolio-two">Portfolio Two Column</DropdownItem>
 											<DropdownItem url="single-portfolio">Portfolio Details</DropdownItem>
 											<DropdownItem url="portfolio1">Portfolio1</DropdownItem>
+											<DropdownItem url="portfolio2">Portfolio2</DropdownItem>
 										</Dropdown>
 									</DropdownItem>
 									<DropdownItem dropdown title="Utility">

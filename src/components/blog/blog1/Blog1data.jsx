@@ -24,11 +24,32 @@ import Blog22Img from "../../../assets/assets/Images/codersh-banner-1-768x403.jp
 import Blog23Img from "../../../assets/assets/Images/Choose-the-Best-Shopify-Development-Compnay-768x403.png";
 import Blog24Img from "../../../assets/assets/Images/ISCC-Event-768x403.png";
 import Blog25Img from "../../../assets/assets/Images/image_2021_12_27T12_30_06_074Z-1-768x403.png";
+import Blog26Img from "../../../assets/assets/Images/Unleashing-the-Power-of-Shopify-768x404.png";
+import Blog27Img from "../../../assets/assets/Images/Optimizing-Shopify-Store-Performance-A-Technical-Guide-768x404.png";
+import Blog28Img from "../../../assets/assets/Images/codersh-1-768x512.png";
 // import FadeInStagger from "../../animation/FadeInStagger";  // Assuming you have a fade-in stagger animation
 
 
 
 const blogListData = [
+  {
+    id: crypto.randomUUID(),
+    title: "Unleashing the Power of Shopify: A Phenomenal $9.3 Billion BFCM Triumph!",
+    img: Blog26Img,
+    link: "/blog/Unleashing the Power of Shopify: A Phenomenal $9.3 Billion BFCM Triumph!",
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "Optimizing Shopify Store Performance: A Technical Guide",
+    img: Blog27Img,
+    link: "/blog/Optimizing Shopify Store Performance: A Technical Guide",
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "Codersh Web Services Takes Center Stage at WordCamp Ahmedabad",
+    img: Blog28Img,
+    link: "/blog/Codersh Web Services Takes Center Stage at WordCamp Ahmedabad",
+  },
   {
     id: crypto.randomUUID(),
     title: "LCP issue Technical Details",

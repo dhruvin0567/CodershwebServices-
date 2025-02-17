@@ -38,12 +38,16 @@ import TestimonialPage from "../page/utility/Testimonial.jsx";
 
 // extrapages implimented
 import Portfolio1 from "../page/portfolio/Portfolio1.jsx";
+import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
 import Winestore from "../page/solutions/Winestore.jsx";
 import Businessdirectory from "../page/solutions/Businessdirectory.jsx";
 import Creditrepair from "../page/solutions/Creditrepair.jsx";
 import Itdigitalagency from "../page/solutions/Itdigitalagency.jsx";
 import Blog1 from "../page/blog/Blog1.jsx";
-// import Blog1 from "../page/blog/Blog1.jsx";
+import CaseStudies from "../page/projects/CaseStudies.jsx";
+import OurWork from "../page/projects/OurWork.jsx";
+import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
+
 
 export const router = createBrowserRouter([
 	{
@@ -93,10 +97,13 @@ export const router = createBrowserRouter([
 						element: <SingleBlogPage />,
 					},
 					{
+						path: "/singleblog2",
+						element: <SingleBlog2 />,
+					},
+					{
 						path: "/blog-grid",
 						element: <BlogGridPage />,
 					},
-
 					{
 						path: "/service",
 						element: <Service />,
@@ -104,6 +111,14 @@ export const router = createBrowserRouter([
 					{
 						path: "/single-service",
 						element: <SingleService />,
+					},
+					{
+						path: "/casestudies",
+						element: <CaseStudies />,
+					},
+					{
+						path: "/ourwork",
+						element: <OurWork />,
 					},
 					{
 						path: "/Businessdirectory",
@@ -144,6 +159,10 @@ export const router = createBrowserRouter([
 					{
 						path: "/portfolio1",
 						element: <Portfolio1 />,
+					},
+					{
+						path: "/portfolio2",
+						element: <Portfolio2 />,
 					},
 					{
 						path: "*",

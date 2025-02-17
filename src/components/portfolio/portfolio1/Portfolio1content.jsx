@@ -1,222 +1,273 @@
 import { useState } from 'react';
 
+
+import CardIMg1 from "/src/assets/assets/Images/Van-Hunks.png.webp";
+import CardImg2 from "/src/assets/assets/Images/Madame-F.png.webp";
+import CardImg3 from "/src/assets/assets/Images/Liberation-Cocktails.png.webp";
+import CardImg4 from "/src/assets/assets/Images/BONE-IDYLL.png.webp";
+import CardImg5 from "/src/assets/assets/Images/potown-homepage.png.webp";
+import CardImg6 from "/src/assets/assets/Images/Violet-Blanc-Beauty.png.webp";
+import CardImg7 from "/src/assets/assets/Images/TylersCoffee.png.webp";
+import CardImg8 from "/src/assets/assets/Images/BUY-VAPE-USA.png.webp";
+import CardImg9 from "/src/assets/assets/Images/No-Mo-Stache.png.webp";
+import CardImg10 from "/src/assets/assets/Images/SplitGrip.png.webp";
+import CardImg11 from "/src/assets/assets/Images/Infinity-Loops.png.webp";
+import CardImg12 from "/src/assets/assets/Images/wallplanks.png.webp";
+import CardImg13 from "/src/assets/assets/Images/Rowan-Oak-Clothing-Co.png.webp";
+import CardImg14 from "/src/assets/assets/Images/Aolithium-Professional.png";
+import CardImg15 from "/src/assets/assets/Images/Baby-Gold.png";
+import CardImg16 from "/src/assets/assets/Images/Aubi-Ramsa-Ice-Cream-Co-.png.webp";
+import CardImg17 from "/src/assets/assets/Images/Airpaq-Sustainability-meets-functionality-Airpaq-GmbH.png.webp";
+import CardImg18 from "/src/assets/assets/Images/Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box.png.webp";
+import CardImg19 from "/src/assets/assets/Images/thewelshproducestall-the-welsh-produce-stall.png.webp";
+import CardImg20 from "/src/assets/assets/Images/fuel.png";
+import CardImg21 from "/src/assets/assets/Images/oceans6media.png";
+import CardImg22 from "/src/assets/assets/Images/NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-.png.webp";
+import CardImg23 from "/src/assets/assets/Images/jojosdogwalking.png.webp";
+import CardImg24 from "/src/assets/assets/Images/Indulge-in-Hudson-Pecan-Natures-Tastiest-Guilt-Free-Snack-Hudson-Pecan-Company.png.webp";
+import CardImg25 from "/src/assets/assets/Images/IKKS-Official-Website-Women-s-Children-s-Men-s-Fashion-Fall-Winter-2023.png.webp";
+import CardImg26 from "/src/assets/assets/Images/IFC-Ideal-Food-Corp-.png.webp";
+import CardImg27 from "/src/assets/assets/Images/Bumperninja.png.webp";
+import CardImg28 from "/src/assets/assets/Images/Biotrust.png";
+import CardImg29 from "/src/assets/assets/Images/vidtre.png.webp";
+
+
+// Sample data for project cards (can be replaced with real data)
+// Example card data
+const cards = [
+
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "south africa",
+        industry: "wine",
+        image: CardIMg1,
+        name: "Vank Hunks",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "uk",
+        industry: "wine",
+        image: CardImg2,
+        name: "Madame F",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "uk",
+        industry: "wine",
+        image: CardImg3,
+        name: "Liberation Cocktails",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "uk",
+        industry: "wine",
+        image: CardImg4,
+        name: "Bone Idyll",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        image: CardImg5,
+        name: "PowTown Store",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        industry: "health",
+        image: CardImg6,
+        name: "Violet Blanc",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        industry: "food & beverages",
+        image: CardImg7,
+        name: "Tylers Coffee",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        image: CardImg8,
+        name: "Buy Vape USA",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        image: CardImg9,
+        name: "No Mo-Stache",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "wordpress",
+        country: "usa",
+        industry: "sports",
+        image: CardImg10,
+        name: "Split Grip",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        image: CardImg11,
+        name: "Infinity Loops",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        image: CardImg12,
+        name: "Wallplanks",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        industry: "fashion",
+        image: CardImg13,
+        name: "Rowan Oak",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        image: CardImg14,
+        name: "Aolithium",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        industry: "fashion",
+        image: CardImg15,
+        name: "Baby Gold",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        industry: "food & beverages",
+        image: CardImg16,
+        name: "Aubi & Ramsa",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "germany",
+        industry: "travel and tourist",
+        image: CardImg17,
+        name: "Airpaq",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "uk",
+        industry: "fashion",
+        image: CardImg18,
+        name: "CUBIC",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "uk",
+        industry: "food & beverages",
+        image: CardImg19,
+        name: "The Welsh Produce Stall",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "uk",
+        industry: "food & beverages",
+        image: CardImg20,
+        name: "Fuel",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        image: CardImg21,
+        name: "Ocean 6 Media",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "australia",
+        industry: "fashion",
+        image: CardImg22,
+        name: "Neux",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "wordpress",
+        country: "usa",
+        image: CardImg23,
+        name: "jojos Dog Walking",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        industry: "food & beverages",
+        image: CardImg24,
+        name: "Hudson Pecan Company Inc",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        industry: "fashion",
+        image: CardImg25,
+        name: "IKKS",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "wordpress",
+        country: "usa",
+        industry: "food & beverages",
+        image: CardImg26,
+        name: "IFC",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        industry: "auto mobile",
+        image: CardImg27,
+        name: "Bumper Ninja",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        country: "usa",
+        industry: "health care",
+        image: CardImg28,
+        name: "Bio Trust",
+    },
+    {
+        id: crypto.randomUUID(),
+        category: "shopify",
+        image: CardImg29,
+        name: "Video Platform",
+    },
+    // Add more card data as needed
+];
+
+
 const Portfolio1content = () => {
 
-    // Sample data for project cards (can be replaced with real data)
-    const cards = [
 
-        {
-            name: 'Van Hunks',
-            imgSrc: '/assets/Images/Van-Hunks.png.webp',
-            category: 'shopify',
-            country: 'south africa',
-            industry: 'wine',
-        },
-        {
-            name: 'Madame F',
-            imgSrc: '/assets/Images/Madame-F.png.webp',
-            category: 'shopify',
-            country: 'uk',
-            industry: 'wine',
-        },
-        {
-            name: 'Liberation Cocktails',
-            imgSrc: '/assets/Images/Liberation-Cocktails.png.webp',
-            category: 'shopify',
-            country: 'uk',
-            industry: 'wine',
-        },
-        {
-            name: 'Bone Idyll',
-            imgSrc: '/assets/Images/BONE-IDYLL.png.webp',
-            category: 'shopify',
-            country: 'uk',
-            industry: 'wine',
-        },
-        {
-            name: 'PowTown Store',
-            imgSrc: '/assets/Images/potown-homepage.png.webp',
-            category: 'shopify',
-            country: 'usa',
-            industry: '',
-        },
-        {
-            name: 'Violet Blanc',
-            imgSrc: '/assets/Images/Violet-Blanc-Beauty.png.webp',
-            category: 'shopify',
-            country: 'usa',
-            industry: 'health',
-        },
-        {
-            name: 'Tylers Coffee',
-            imgSrc: '/assets/Images/TylersCoffee.png.webp',
-            category: 'shopify',
-            country: 'usa',
-            industry: 'food & beverages',
-        },
-        {
-            name: 'Buy Vape USA',
-            imgSrc: '/assets/Images/BUY-VAPE-USA.png.webp',
-            category: 'shopify',
-            country: 'usa',
-            industry: '',
-        },
-        {
-            name: 'No Mo-Stache',
-            imgSrc: '/assets/Images/No-Mo-Stache.png.webp',
-            category: 'shopify',
-            country: 'usa',
-            industry: '',
-        },
-        {
-            name: 'Split Grip',
-            imgSrc: '/assets/Images/SplitGrip.png.webp',
-            category: 'wordpress',
-            country: 'usa',
-            industry: 'sports',
-        },
-        {
-            name: 'Infinity Loops',
-            imgSrc: '/assets/Images/Infinity-Loops.png.webp',
-            category: 'shopify',
-            country: 'usa',
-            industry: '',
-        },
-        {
-            name: 'Wallplanks',
-            imgSrc: '/assets/Images/wallplanks.png.webp',
-            category: 'shopify',
-            country: 'usa',
-            industry: '',
-        },
-        {
-            name: 'Rowan Oak',
-            imgSrc: '/assets/Images/Rowan-Oak-Clothing-Co.png.webp',
-            category: 'shopify',
-            country: 'usa',
-            industry: 'fashion',
-        },
-        {
-            name: 'Aolithium',
-            imgSrc: '/assets/Images/Aolithium-Professional.png',
-            category: 'shopify',
-            country: 'usa',
-            industry: '',
-        },
-        {
-            name: 'Baby Gold',
-            imgSrc: '/assets/Images/Baby-Gold.png',
-            category: 'shopify',
-            country: 'usa',
-            industry: 'fashion',
-        },
-        {
-            name: 'Aubi & Ramsa',
-            imgSrc: '/assets/Images/Aubi-Ramsa-Ice-Cream-Co-.png.webp',
-            category: 'shopify',
-            country: 'usa',
-            industry: 'food & beverages',
-        },
-        {
-            name: 'Airpaq',
-            imgSrc: '/assets/Images/Airpaq-Sustainability-meets-functionality-Airpaq-GmbH.png.webp',
-            category: 'shopify',
-            country: 'germany',
-            industry: 'travel and tourist',
-        },
-        {
-            name: 'CUBIC',
-            imgSrc: '/assets/Images/Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box.png.webp',
-            category: 'shopify',
-            country: 'uk',
-            industry: 'fashion',
-        },
-        {
-            name: 'The Welsh Produce Stall',
-            imgSrc: '/assets/Images/thewelshproducestall-the-welsh-produce-stall.png.webp',
-            category: 'shopify',
-            country: 'uk',
-            industry: 'food & beverages',
-        },
-        {
-            name: 'Fuel',
-            imgSrc: '/assets/Images/fuel.png',
-            category: 'shopify',
-            country: 'uk',
-            industry: 'food & beverages',
-        },
-        {
-            name: 'Ocean 6 Media',
-            imgSrc: '/assets/Images/oceans6media.png',
-            category: 'shopify',
-            country: '',
-            industry: '',
-        },
-        {
-            name: 'Neux',
-            imgSrc: '/assets/Images/NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-.png.webp',
-            category: 'shopify',
-            country: 'australia',
-            industry: 'fashion',
-        },
-        {
-            name: 'jojos Dog Walking',
-            imgSrc: '/assets/Images/jojosdogwalking.png.webp',
-            category: 'wordpress',
-            country: 'usa',
-            industry: '',
-        },
-        {
-            name: 'Hudson Pecan Company Inc',
-            imgSrc: '/assets/Images/Indulge-in-Hudson-Pecan-Natures-Tastiest-Guilt-Free-Snack-Hudson-Pecan-Company.png.webp',
-            category: 'shopify',
-            country: 'usa',
-            industry: 'food & beverages',
-        },
-        {
-            name: 'IKKS',
-            imgSrc: '/assets/Images/IKKS-Official-Website-Women-s-Children-s-Men-s-Fashion-Fall-Winter-2023.png.webp',
-            category: 'shopify',
-            country: 'usa',
-            industry: 'fashion',
-        },
-        {
-            name: 'IFC',
-            imgSrc: '/assets/Images/IFC-Ideal-Food-Corp-.png.webp',
-            category: 'wordpress',
-            country: 'usa',
-            industry: 'food & beverages',
-        },
-        {
-            name: 'Bumper Ninja',
-            imgSrc: '/assets//Images/Bumperninja.png.webp',
-            category: 'shopify',
-            country: 'usa',
-            industry: 'auto mobile',
-        },
-        {
-            name: 'Bio Trust',
-            imgSrc: '/assets/Images/Biotrust.png',
-            category: 'shopify',
-            country: 'usa',
-            industry: 'health care',
-        },
-        {
-            name: 'Video Platform',
-            imgSrc: '/assets/Images/vidtre.png.webp',
-            category: 'shopify',
-            country: '',
-            industry: '',
-        },
-
-    ];
-
-    // State for dropdown selections
     const [selectedCategory, setSelectedCategory] = useState("all");
     const [selectedCountry, setSelectedCountry] = useState("all");
     const [selectedIndustry, setSelectedIndustry] = useState("all");
 
-    // State for filtered cards
     const [filteredCards, setFilteredCards] = useState(cards); // Initially show all cards
 
     // Normalize function for case-insensitive matching
@@ -244,8 +295,6 @@ const Portfolio1content = () => {
     const handleCategoryChange = (e) => setSelectedCategory(e.target.value);
     const handleCountryChange = (e) => setSelectedCountry(e.target.value);
     const handleIndustryChange = (e) => setSelectedIndustry(e.target.value);
-
-
 
 
 
@@ -298,14 +347,12 @@ const Portfolio1content = () => {
                 </div>
             </div>
 
-
             {/* Project Cards Section */}
             <div className="project-cards-section">
                 <div className="container-fluid">
                     <div className="row">
                         {filteredCards.map((card, index) => (
                             <div
-                                // key={card.id}
                                 key={index}
                                 className="col-lg-3 col-sm-6 project-card"
                                 data-category={card.category}
