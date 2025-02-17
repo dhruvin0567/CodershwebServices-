@@ -1,5 +1,5 @@
 import BreadCrumb from "../../components/common/Breadcrumb";
-import Itdigitalagencydata from "../../components/home-one/solutions/itdigitalagencydata";
+import Itdigitalagencydata from "../../components/solutions/itdigitalagencydata";
 
 function Itdigitalagency() {
     return (

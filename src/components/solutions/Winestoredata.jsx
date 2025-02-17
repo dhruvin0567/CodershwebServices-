@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";  // Import Link from react-router-dom
-import Star2Img from "../../../assets/images/v1/star2.png";
+import Star2Img from "../../assets/images/v1/icon/star.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 

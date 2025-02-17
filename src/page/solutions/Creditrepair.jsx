@@ -1,5 +1,5 @@
 import BreadCrumb from "../../components/common/Breadcrumb";
-import Creditrepairdata from "../../components/home-one/solutions/Creditrepairdata";
+import Creditrepairdata from "../../components/solutions/Creditrepairdata";
 
 function Creditrepair() {
     return (

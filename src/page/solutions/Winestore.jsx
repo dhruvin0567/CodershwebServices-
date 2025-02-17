@@ -1,6 +1,6 @@
 // import React from 'react'
 import BreadCrumb from "../../components/common/Breadcrumb";
-import Winestoredata from "../../components/home-one/solutions/Winestoredata";
+import Winestoredata from "../../components/solutions/Winestoredata";
 
 function Winestore() {
     return (
