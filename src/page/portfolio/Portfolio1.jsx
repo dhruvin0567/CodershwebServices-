@@ -1,6 +1,6 @@
 
 import BreadCrumb from "../../components/common/Breadcrumb";
-import Portfolio1content from "../../components/portfolio/portfolio1/portfolio1content";
+import Portfolio1content from "../../components/portfolio/portfolio1/Portfolio1content";
 
 
 function Portfolio1() {
