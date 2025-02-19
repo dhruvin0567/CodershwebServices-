@@ -10,7 +10,7 @@ function HeroContent() {
 		<div className="aximo-hero-content">
 			<FadeInStaggerTwo>
 				<FadeInStaggerTwoChildren>
-					<h1>
+					<h1 style={{ fontSize: '57px' }}>
 						<span className="aximo-title-animation">
 							Trusted Ecommerce
 							{/* <img src={StarImg} alt="StarImg" /> */}

@@ -47,7 +47,10 @@ import Blog1 from "../page/blog/Blog1.jsx";
 import CaseStudies from "../page/projects/CaseStudies.jsx";
 import OurWork from "../page/projects/OurWork.jsx";
 import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
-
+import Brand from "../page/Brand.jsx";
+import Categories from "../page/portfolio/Categories.jsx";
+import Countries from "../page/portfolio/Countries.jsx";
+import Industries from "../page/portfolio/Industries.jsx";
 
 export const router = createBrowserRouter([
 	{
@@ -83,6 +86,10 @@ export const router = createBrowserRouter([
 					{
 						path: "/pricing",
 						element: <Pricing />,
+					},
+					{
+						path: "/brand",
+						element: <Brand />,
 					},
 					{
 						path: "/blog",
@@ -163,6 +170,18 @@ export const router = createBrowserRouter([
 					{
 						path: "/portfolio2",
 						element: <Portfolio2 />,
+					},
+					{
+						path: "/categories",
+						element: <Categories />,
+					},
+					{
+						path: "/countries",
+						element: <Countries />,
+					},
+					{
+						path: "/industries",
+						element: <Industries />,
 					},
 					{
 						path: "*",

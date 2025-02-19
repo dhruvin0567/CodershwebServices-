@@ -32,6 +32,7 @@ function Header() {
 								<Dropdown>
 									<DropdownItem url="about-us">About Us</DropdownItem>
 									<DropdownItem url="pricing">Pricing</DropdownItem>
+									<DropdownItem url="brand">brand</DropdownItem>
 									<DropdownItem dropdown title="Blog">
 										<Dropdown noShape>
 											<DropdownItem url="blog">Our Blog</DropdownItem>
@@ -55,6 +56,18 @@ function Header() {
 											<DropdownItem url="businessdirectory">Business Directory</DropdownItem>
 										</Dropdown>
 									</DropdownItem>
+									<DropdownItem dropdown title={"Portfolio"}>
+										<Dropdown noShape>
+											<DropdownItem url="portfolio-one">Portfolio One Column</DropdownItem>
+											<DropdownItem url="portfolio-two">Portfolio Two Column</DropdownItem>
+											<DropdownItem url="single-portfolio">Portfolio Details</DropdownItem>
+											<DropdownItem url="portfolio1">Portfolio1</DropdownItem>
+											<DropdownItem url="portfolio2">Portfolio2</DropdownItem>
+											<DropdownItem url="categories">Categories</DropdownItem>
+											<DropdownItem url="countries">Countries</DropdownItem>
+											<DropdownItem url="industries">Industries</DropdownItem>
+										</Dropdown>
+									</DropdownItem>
 									<DropdownItem dropdown title="Projects">
 										<Dropdown noShape>
 											<DropdownItem url="casestudies">Case Studies</DropdownItem>
@@ -65,15 +78,6 @@ function Header() {
 										<Dropdown noShape>
 											<DropdownItem url="team">Team</DropdownItem>
 											<DropdownItem url="single-team">Team Details</DropdownItem>
-										</Dropdown>
-									</DropdownItem>
-									<DropdownItem dropdown title={"Portfolio"}>
-										<Dropdown noShape>
-											<DropdownItem url="portfolio-one">Portfolio One Column</DropdownItem>
-											<DropdownItem url="portfolio-two">Portfolio Two Column</DropdownItem>
-											<DropdownItem url="single-portfolio">Portfolio Details</DropdownItem>
-											<DropdownItem url="portfolio1">Portfolio1</DropdownItem>
-											<DropdownItem url="portfolio2">Portfolio2</DropdownItem>
 										</Dropdown>
 									</DropdownItem>
 									<DropdownItem dropdown title="Utility">

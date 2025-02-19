@@ -66,11 +66,11 @@ const pricingPlanData = [
 ];
 function PricingPlan() {
 	const frequencies = [
-		{ id: 1, label: "Annually" },
-		{ id: 2, label: "Monthly" },
+		{ id: 2, label: "Annually" },
+		{ id: 1, label: "Monthly" },
 	];
 
-	const [frequency, setFrequency] = useState(frequencies[0]);
+	const [frequency, setFrequency] = useState(frequencies[1]);
 
 	function handleChange(e) {
 		if (e.target.checked) {
@@ -100,6 +100,7 @@ function PricingPlan() {
 						<input
 							className="form-check-input btn-toggle price-deck-trigger"
 							type="checkbox"
+							checked={frequency.id === 1}
 							onChange={handleChange}
 						/>
 					</div>

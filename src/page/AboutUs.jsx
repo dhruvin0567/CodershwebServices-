@@ -7,7 +7,7 @@ import Teams from "../components/home-one/teams";
 import Team1Img from "../assets/images/team/team1.png";
 import Team2Img from "../assets/images/team/team2.png";
 import Team3Img from "../assets/images/team/team3.png";
-import Team4Img from "../assets/images/team/team4.png";
+import Team8Img from "../assets/images/team/team8.png";
 
 const teamsData = [
 	{
@@ -32,7 +32,7 @@ const teamsData = [
 		id: crypto.randomUUID(),
 		name: "Sweta Parmar",
 		designation: "Sr. Wordpress Developer",
-		img: Team4Img,
+		img: Team8Img,
 	},
 	// {
 	// 	id: crypto.randomUUID(),

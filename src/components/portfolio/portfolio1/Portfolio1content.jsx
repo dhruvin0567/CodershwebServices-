@@ -348,7 +348,7 @@ const Portfolio1content = () => {
             </div>
 
             {/* Project Cards Section */}
-            <div className="project-cards-section">
+            <div className="project-cards-section py-5">
                 <div className="container-fluid">
                     <div className="row">
                         {filteredCards.map((card, index) => (

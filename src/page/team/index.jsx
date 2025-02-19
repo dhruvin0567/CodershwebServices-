@@ -37,7 +37,7 @@ const teamsData = [
 		id: crypto.randomUUID(),
 		name: "Sweta Parmar",
 		designation: "Sr. Wordpress Developer",
-		img: Team4Img,
+		img: Team8Img,
 	},
 	{
 		id: crypto.randomUUID(),
@@ -49,19 +49,19 @@ const teamsData = [
 		id: crypto.randomUUID(),
 		name: "Maitri Gandhi",
 		designation: "Frontend Developer",
-		img: Team6Img,
+		img: Team4Img,
 	},
 	{
 		id: crypto.randomUUID(),
 		name: "Bhavik Hadiyel",
 		designation: "Frontend Developer",
-		img: Team7Img,
+		img: Team6Img,
 	},
 	{
 		id: crypto.randomUUID(),
 		name: "Dhruv Parmar",
 		designation: "Shopify Developer",
-		img: Team8Img,
+		img: Team7Img,
 	},
 	{
 		id: crypto.randomUUID(),

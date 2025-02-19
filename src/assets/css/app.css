@@ -5370,7 +5370,7 @@ span.aximo-hero-shape-title2 {
 
 .aximo-team-thumb {
 	position: relative;
-	border-radius: 15px;
+	border-radius: 50%;
 	overflow: hidden;
 	border: 5px solid var(--dark-bg);
 }
@@ -6004,6 +6004,7 @@ a.aximo-service-icon:hover {
 	border-radius: 20px;
 	transition: all 0.4s;
 	border: 2px solid var(--dark-bg);
+	background-color: #fffff5;
 }
 
 .aximo-accordion-wrap h3.accordion-header {
