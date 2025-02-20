@@ -16,7 +16,7 @@ function Header() {
 					<HeaderLogo />
 					<div className="menu-block-wrapper">
 						<DesktopNav>
-							<NavItem dropdown title="Demo">
+							{/* <NavItem dropdown title="Demo">
 								<Dropdown>
 									<DropdownItem url="/">Design Agency</DropdownItem>
 									<DropdownItem url="home-two">Startup Agency</DropdownItem>
@@ -26,13 +26,25 @@ function Header() {
 									<DropdownItem url="home-six">Interior Design Agency</DropdownItem>
 									<DropdownItem url="home-seven">Advertising agency</DropdownItem>
 								</Dropdown>
-							</NavItem>
+							</NavItem> */}
 							<NavItem url="about-us">About Us</NavItem>
+							<NavItem dropdown title="Services">
+								<Dropdown>
+									<DropdownItem url="service">Service</DropdownItem>
+								</Dropdown>
+							</NavItem>
+							<NavItem dropdown title="Projects">
+								<Dropdown>
+									<DropdownItem url="casestudies">Case Studies</DropdownItem>
+									<DropdownItem url="Ourwork">Our Work</DropdownItem>
+								</Dropdown>
+							</NavItem>
 							<NavItem dropdown title="Pages">
 								<Dropdown>
-									<DropdownItem url="about-us">About Us</DropdownItem>
+									{/* <DropdownItem url="about-us">About Us</DropdownItem> */}
 									<DropdownItem url="pricing">Pricing</DropdownItem>
 									<DropdownItem url="brand">brand</DropdownItem>
+									<DropdownItem url="team">Team</DropdownItem>
 									<DropdownItem dropdown title="Blog">
 										<Dropdown noShape>
 											<DropdownItem url="blog">Our Blog</DropdownItem>
@@ -42,25 +54,25 @@ function Header() {
 											<DropdownItem url="singleblog2">Single Blog 2</DropdownItem>
 										</Dropdown>
 									</DropdownItem>
-									<DropdownItem dropdown title="Service">
+									{/* <DropdownItem dropdown title="Service">
 										<Dropdown noShape>
 											<DropdownItem url="service">Service</DropdownItem>
 											<DropdownItem url="single-service">Service Details</DropdownItem>
 										</Dropdown>
-									</DropdownItem>
-									<DropdownItem dropdown title="Solutions">
+									</DropdownItem> */}
+									{/* <DropdownItem dropdown title="Solutions">
 										<Dropdown noShape>
 											<DropdownItem url="creditrepair">Credit Repair</DropdownItem>
 											<DropdownItem url="itdigitalagency">It Digital Agency</DropdownItem>
 											<DropdownItem url="winestore">Wine store</DropdownItem>
 											<DropdownItem url="businessdirectory">Business Directory</DropdownItem>
 										</Dropdown>
-									</DropdownItem>
+									</DropdownItem> */}
 									<DropdownItem dropdown title={"Portfolio"}>
 										<Dropdown noShape>
-											<DropdownItem url="portfolio-one">Portfolio One Column</DropdownItem>
+											{/* <DropdownItem url="portfolio-one">Portfolio One Column</DropdownItem>
+											<DropdownItem url="single-portfolio">Portfolio Details</DropdownItem>  */}
 											<DropdownItem url="portfolio-two">Portfolio Two Column</DropdownItem>
-											<DropdownItem url="single-portfolio">Portfolio Details</DropdownItem>
 											<DropdownItem url="portfolio1">Portfolio1</DropdownItem>
 											<DropdownItem url="portfolio2">Portfolio2</DropdownItem>
 											<DropdownItem url="categories">Categories</DropdownItem>
@@ -68,18 +80,18 @@ function Header() {
 											<DropdownItem url="industries">Industries</DropdownItem>
 										</Dropdown>
 									</DropdownItem>
-									<DropdownItem dropdown title="Projects">
+									{/* <DropdownItem dropdown title="Projects">
 										<Dropdown noShape>
 											<DropdownItem url="casestudies">Case Studies</DropdownItem>
 											<DropdownItem url="Ourwork">Our Work</DropdownItem>
 										</Dropdown>
-									</DropdownItem>
-									<DropdownItem dropdown title={"Team"}>
+									</DropdownItem> */}
+									{/* <DropdownItem dropdown title={"Team"}>
 										<Dropdown noShape>
 											<DropdownItem url="team">Team</DropdownItem>
 											<DropdownItem url="single-team">Team Details</DropdownItem>
 										</Dropdown>
-									</DropdownItem>
+									</DropdownItem> */}
 									<DropdownItem dropdown title="Utility">
 										<Dropdown noShape>
 											<DropdownItem url="faq">FAQ</DropdownItem>
@@ -97,11 +109,19 @@ function Header() {
 									</DropdownItem>
 								</Dropdown>
 							</NavItem>
-							<NavItem dropdown title="Blog">
+							{/* <NavItem dropdown title="Blog">
 								<Dropdown>
 									<DropdownItem url="blog">Our Blog</DropdownItem>
 									<DropdownItem url="blog-grid">Blog Grid</DropdownItem>
 									<DropdownItem url="single-blog">Blog Details</DropdownItem>
+								</Dropdown>
+							</NavItem> */}
+							<NavItem dropdown title="Solutions">
+								<Dropdown>
+									<DropdownItem url="creditrepair">Credit Repair</DropdownItem>
+									<DropdownItem url="itdigitalagency">It Digital Agency</DropdownItem>
+									<DropdownItem url="winestore">Wine store</DropdownItem>
+									<DropdownItem url="businessdirectory">Business Directory</DropdownItem>
 								</Dropdown>
 							</NavItem>
 							<NavItem url="contact-us">Contact Us</NavItem>

@@ -5,94 +5,65 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import Star2Img from "../../assets/images/v1/icon/star2.png";
 import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 
-function Winestoredata() {
+const ReviewSection = () => {
 
-    const [playingIndex, setPlayingIndex] = useState(null); // Track which video is playing
-    const swiperRef = useRef(null);
-    const videoRefs = useRef([]); // To store references to all video elements
+    const [currentVideo, setCurrentVideo] = useState(null);  // Track the currently playing video
+    const videoRefs = useRef([]); // Store references to video elements
+    const swiperRef = useRef(null); // Reference to Swiper instance
 
-    // Event handlers for play and pause events
-    const handlePlay = (index, video) => {
-        const allVideos = videoRefs.current;
-        if (swiperRef.current) swiperRef.current.swiper.autoplay.stop();
+    // Manually handle the "Play/Pause" of videos
+    const handlePlayPause = (index) => {
+        const videoElement = videoRefs.current[index];
 
-        // Pause all other videos and show their play buttons
-        allVideos.forEach((v, i) => {
-            if (i !== index) {
-                v.pause();
-                const playButton = v.closest('.video-wrap')?.querySelector('.custom-play-button');
-                if (playButton) {
-                    playButton.style.display = 'block';
-                }
-            }
-        });
-
-        // Hide play button for the currently playing video
-        const playButton = video.closest('.video-wrap')?.querySelector('.custom-play-button');
-        if (playButton) {
-            playButton.style.display = 'none';
+        if (currentVideo === index) {
+            // Pause the video if it's the currently playing one
+            videoElement.pause();
+            setCurrentVideo(null);
+        } else {
+            // Play the new video and pause the previous one
+            videoElement.play();
+            setCurrentVideo(index);
+            // Pause other videos
+            videoRefs.current.forEach((video, i) => {
+                if (i !== index) video.pause();
+            });
         }
     };
 
-    const handlePause = () => {
-        const allVideos = videoRefs.current;
-        allVideos.forEach((v) => {
-            const playButton = v.closest('.video-wrap')?.querySelector('.custom-play-button');
-            if (playButton) {
-                playButton.style.display = 'block';
-            }
-        });
-
-        // Check if all videos are paused
-        const allPaused = allVideos.every((v) => v.paused);
-        if (allPaused && swiperRef.current) {
-            swiperRef.current.swiper.autoplay.start();
+    // Close video when clicked outside of the video container
+    const handleClickOutside = (e) => {
+        if (!e.target.closest('.video-wrap')) {
+            videoRefs.current.forEach((video) => video.pause());
+            setCurrentVideo(null);
         }
     };
 
     useEffect(() => {
-        const allVideos = videoRefs.current;
-
-        // Attach event listeners for each video
-        allVideos.forEach((video, index) => {
-            if (video) {
-                video.addEventListener('play', () => handlePlay(index, video));
-                video.addEventListener('pause', handlePause);
-            }
-        });
-
-        // Cleanup function to remove event listeners when the component unmounts
+        document.addEventListener('click', handleClickOutside);
         return () => {
-            allVideos.forEach((video, index) => {
-                if (video) {
-                    video.removeEventListener('play', () => handlePlay(index, video));
-                    video.removeEventListener('pause', handlePause);
-                }
-            });
+            document.removeEventListener('click', handleClickOutside);
         };
-    }, []); // Empty dependency array means this effect runs once when the component mounts
+    }, []);
 
-    // Function to handle video play/pause click
-    const handlePlayClick = (index) => {
-        const video = videoRefs.current[index];
-
-        if (video.paused) {
-            video.play();
-        } else {
-            video.pause();
+    // Custom navigation button handlers
+    const goToNextSlide = () => {
+        if (swiperRef.current) {
+            swiperRef.current.swiper.slideNext();
         }
-
-        // Update playingIndex to track which video is playing
-        setPlayingIndex(index);
     };
 
-
+    const goToPrevSlide = () => {
+        if (swiperRef.current) {
+            swiperRef.current.swiper.slidePrev();
+        }
+    };
 
     return (
         <div>
 
             <div className="section aximo-project-page aximo-section-padding5">
                 <div className="container-fluid">
+
                     <Swiper
                         spaceBetween={30} // Space between slides
                         slidesPerView={4} // Number of slides visible at once
@@ -121,118 +92,172 @@ function Winestoredata() {
                                 slidesPerView: 4, // 4 slides per view
                             },
                         }}
-
                     >
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.1s">
-                                <img src="/src/assets/assets/images/artisan-f-p.webp" alt="" />
+                                <img src="/src/assets/assets/images/artisan-f-p.webp" alt="Credi Coach" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
                                             <h3>Credi Coach</h3>
                                         </Link>
                                     </div>
-                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }} >
-                                        <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }}>
+                                        <svg
+                                            width="34"
+                                            height="28"
+                                            viewBox="0 0 34 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
                                             <path
                                                 d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26"
-                                                stroke="#FDFDE1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                                stroke="#FDFDE1"
+                                                strokeWidth="3"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
                                         </svg>
                                     </Link>
                                 </div>
                             </div>
                         </SwiperSlide>
 
+                        {/* Slide 2 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.2s">
-                                <img src="/src/assets/assets/images/asterley-bros-f-p.webp" alt="" />
+                                <img src="/src/assets/assets/images/asterley-bros-f-p.webp" alt="Credit Saint" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
                                             <h3>Credit Saint</h3>
                                         </Link>
                                     </div>
-                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }} >
-                                        <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }}>
+                                        <svg
+                                            width="34"
+                                            height="28"
+                                            viewBox="0 0 34 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
                                             <path
                                                 d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26"
-                                                stroke="#FDFDE1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                                stroke="#FDFDE1"
+                                                strokeWidth="3"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
                                         </svg>
                                     </Link>
                                 </div>
                             </div>
                         </SwiperSlide>
 
+                        {/* Slide 3 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.3s">
-                                <img src="/src/assets/assets/images/bone-f-p.webp" alt="" />
+                                <img src="/src/assets/assets/images/bone-f-p.webp" alt="Credit 101" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
                                             <h3>Credit 101</h3>
                                         </Link>
                                     </div>
-                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }} >
-                                        <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }}>
+                                        <svg
+                                            width="34"
+                                            height="28"
+                                            viewBox="0 0 34 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
                                             <path
                                                 d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26"
-                                                stroke="#FDFDE1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                                stroke="#FDFDE1"
+                                                strokeWidth="3"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
                                         </svg>
                                     </Link>
                                 </div>
                             </div>
                         </SwiperSlide>
 
+                        {/* Slide 4 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.4s">
-                                <img src="/src/assets/assets/images/Claudine-f-p.webp" alt="" />
+                                <img src="/src/assets/assets/images/Claudine-f-p.webp" alt="Framework Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
                                             <h3>Framework Credit</h3>
                                         </Link>
                                     </div>
-                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }} >
-                                        <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }}>
+                                        <svg
+                                            width="34"
+                                            height="28"
+                                            viewBox="0 0 34 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
                                             <path
                                                 d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26"
-                                                stroke="#FDFDE1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                                stroke="#FDFDE1"
+                                                strokeWidth="3"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
                                         </svg>
                                     </Link>
                                 </div>
                             </div>
                         </SwiperSlide>
 
+                        {/* Slide 5 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.5s">
-                                <img src="/src/assets/assets/images/Double-Dutch-f-p.webp" alt="" />
+                                <img src="/src/assets/assets/images/Double-Dutch-f-p.webp" alt="Premier Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
                                             <h3>Premier Credit</h3>
                                         </Link>
                                     </div>
-                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }} >
-                                        <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }}>
+                                        <svg
+                                            width="34"
+                                            height="28"
+                                            viewBox="0 0 34 28"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
                                             <path
                                                 d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26"
-                                                stroke="#FDFDE1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                                stroke="#FDFDE1"
+                                                strokeWidth="3"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
                                         </svg>
                                     </Link>
                                 </div>
                             </div>
                         </SwiperSlide>
 
+                        {/* Slide 1 */}
                         <SwiperSlide>
-                            <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.6s">
-                                <img src="/src/assets/assets/images/gattertop-f-p.webp" alt="" />
+                            <div className="aximo-project-thumb wow fadeInUpX" data-wow-delay="0.6s">
+                                <img src="/src/assets/assets/images/gattertop-f-p.webp" alt="SD Capital" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
                                             <h3>SD Capital</h3>
                                         </Link>
                                     </div>
-                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }} >
+                                    <Link className="aximo-project-icon" to="#">
                                         <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26"
@@ -243,16 +268,17 @@ function Winestoredata() {
                             </div>
                         </SwiperSlide>
 
+                        {/* Slide 2 */}
                         <SwiperSlide>
-                            <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.7s">
-                                <img src="/src/assets/assets/images/liberation-f-p.webp" alt="" />
+                            <div className="aximo-project-thumb wow fadeInUpX" data-wow-delay="0.7s">
+                                <img src="/src/assets/assets/images/liberation-f-p.webp" alt="Stellar Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
                                             <h3>Stellar Credit</h3>
                                         </Link>
                                     </div>
-                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }} >
+                                    <Link className="aximo-project-icon" to="#">
                                         <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26"
@@ -263,16 +289,17 @@ function Winestoredata() {
                             </div>
                         </SwiperSlide>
 
+                        {/* Slide 3 */}
                         <SwiperSlide>
-                            <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.7s">
-                                <img src="/src/assets/assets/images/madamef-f-p.webp" alt="" />
+                            <div className="aximo-project-thumb wow fadeInUpX" data-wow-delay="0.7s">
+                                <img src="/src/assets/assets/images/madamef-f-p.webp" alt="Stellar Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
                                             <h3>Stellar Credit</h3>
                                         </Link>
                                     </div>
-                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }} >
+                                    <Link className="aximo-project-icon" to="#">
                                         <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26"
@@ -283,16 +310,17 @@ function Winestoredata() {
                             </div>
                         </SwiperSlide>
 
+                        {/* Slide 4 */}
                         <SwiperSlide>
-                            <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.7s">
-                                <img src="/src/assets/assets/images/negroni-soc-f-p.webp" alt="" />
+                            <div className="aximo-project-thumb wow fadeInUpX" data-wow-delay="0.7s">
+                                <img src="/src/assets/assets/images/negroni-soc-f-p.webp" alt="Stellar Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
                                             <h3>Stellar Credit</h3>
                                         </Link>
                                     </div>
-                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }} >
+                                    <Link className="aximo-project-icon" to="#">
                                         <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26"
@@ -303,16 +331,17 @@ function Winestoredata() {
                             </div>
                         </SwiperSlide>
 
+                        {/* Slide 5 */}
                         <SwiperSlide>
-                            <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.7s">
-                                <img src="/src/assets/assets/images/van-hunks-f-p.webp" alt="" />
+                            <div className="aximo-project-thumb wow fadeInUpX" data-wow-delay="0.7s">
+                                <img src="/src/assets/assets/images/van-hunks-f-p.webp" alt="Stellar Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
                                             <h3>Stellar Credit</h3>
                                         </Link>
                                     </div>
-                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }} >
+                                    <Link className="aximo-project-icon" to="#">
                                         <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26"
@@ -322,7 +351,7 @@ function Winestoredata() {
                                 </div>
                             </div>
                         </SwiperSlide>
-                        {/* Add more SwiperSlides as needed */}
+
                     </Swiper>
                 </div>
             </div>
@@ -339,24 +368,20 @@ function Winestoredata() {
                         <br />
                         Design and Maximize Conversions
                     </h2>
-
                     <p className="section-description light-text">
-                        A beautifully redesigned wine store with an optimized user journey can
-                        make all the difference in attracting wine enthusiasts and turning
-                        visitors into loyal customers. Whether you’re running a boutique wine
-                        shop or a large online store, our expertise in website redesign and
-                        conversion rate optimization (CRO) is tailored to your unique needs. With
-                        a focus on elegant design, seamless navigation, and strategic
-                        optimization, we ensure that your website not only looks stunning but
-                        also drives measurable results. Let’s create a wine store experience that
-                        captivates your audience and boosts your sales like never before.
+                        A beautifully redesigned wine store with an optimized user journey can make all the difference in
+                        attracting wine enthusiasts and turning visitors into loyal customers. Whether you’re running a boutique
+                        wine shop or a large online store, our expertise in website redesign and conversion rate optimization
+                        (CRO) is tailored to your unique needs. With a focus on elegant design, seamless navigation, and
+                        strategic optimization, we ensure that your website not only looks stunning but also drives measurable
+                        results. Let’s create a wine store experience that captivates your audience and boosts your sales like
+                        never before.
                     </p>
                     <Link className="get-in-touch-btn aximo-header-btn pill " to="/contact-us" style={{ borderRadius: "50px" }} >
                         Get In Touch
                     </Link>
                 </div>
             </div>
-            {/* End */}
 
             <div className="section aximo-project-page logo-slider dark-bg">
                 <div className="container border-top py-5">
@@ -393,31 +418,31 @@ function Winestoredata() {
                         }}
                     >
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/bone-logo.webp" alt="Bone Logo" />
+                            <img src="/src/assets/assets/Images/bone-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/Claudine-logo.webp" alt="Claudine Logo" />
+                            <img src="/src/assets/assets/Images/Claudine-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/artisan-logo.webp" alt="Artisan Logo" />
+                            <img src="/src/assets/assets/Images/artisan-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/asterley-bros.webp" alt="Asterley Bros Logo" />
+                            <img src="/src/assets/assets/Images/asterley-bros.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/Double-Dutch-logo.webp" alt="Double Dutch Logo" />
+                            <img src="/src/assets/assets/Images/Double-Dutch-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/gattertop-logo.webp" alt="Gattertop Logo" />
+                            <img src="/src/assets/assets/Images/gattertop-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/liberation-logo.webp" alt="Liberation Logo" />
+                            <img src="/src/assets/assets/Images/liberation-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/madamef-logo.webp" alt="Madamef Logo" />
+                            <img src="/src/assets/assets/Images/madamef-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/van-hunks.webp" alt="Van Hunks Logo" />
+                            <img src="/src/assets/assets/Images/van-hunks.webp" alt="" />
                         </SwiperSlide>
                     </Swiper>
                 </div>
@@ -429,29 +454,31 @@ function Winestoredata() {
                         Features of Our Service
                     </h3>
                     <div className="services-list d-md-flex justify-content-around">
-                        <ul>
-                            <li><i className="fa-regular fa-circle-check"></i> Modern and Elegant Website Redesign</li>
-                            <li><i className="fa-regular fa-circle-check"></i> Mobile-Friendly and Responsive Design</li>
-                            <li><i className="fa-regular fa-circle-check"></i> Streamlined Product Browsing and Search</li>
+                        <ul className>
+                            <li><i className="fa-regular fa-circle-check" /> Modern and Elegant Website Redesign</li>
+                            <li><i className="fa-regular fa-circle-check" /> Mobile-Friendly and Responsive Design</li>
+                            <li><i className="fa-regular fa-circle-check" /> Streamlined Product Browsing and Search</li>
                         </ul>
-                        <ul>
-                            <li><i className="fa-regular fa-circle-check"></i> Simplified Checkout to Reduce Abandonment</li>
-                            <li><i className="fa-regular fa-circle-check"></i> Integrated Inventory and Shipping Systems</li>
-                            <li><i className="fa-regular fa-circle-check"></i> Data-Driven CRO Strategies</li>
+                        <ul className>
+                            <li><i className="fa-regular fa-circle-check" /> Simplified Checkout to Reduce Abandonment</li>
+                            <li><i className="fa-regular fa-circle-check" /> Integrated Inventory and Shipping Systems </li>
+                            <li><i className="fa-regular fa-circle-check" /> Data-Driven CRO Strategies </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div className="review-section text-center pb-5 ">
+
+            <div className="review-section text-center pb-5">
                 <div className="container border-top py-5">
                     <div>
                         <h3>Our Client's Reviews</h3>
-                        <p>We are very proud of the service we provide and stand by every product we carry. See our testimonials
+                        <p>
+                            We are very proud of the service we provide and stand by every product we carry. See our testimonials
                             from our happy customers.
                         </p>
                     </div>
-                    <div className="slider-wrapper d-flex">
+                    <div className="slider-wrapper">
                         <Swiper
                             ref={swiperRef}
                             spaceBetween={20}
@@ -470,83 +497,94 @@ function Winestoredata() {
                                 1024: { slidesPerView: 4 },
                             }}
                         >
-                            {[1, 2, 3, 4, 5, 6].map((index) => (
-                                <SwiperSlide key={index} style={{ padding: "0px 0px" }}>
+                            {['Video-1', 'Video-2', 'Video-3', 'Video-4', 'Video-5', 'Video-6'].map((video, index) => (
+                                <SwiperSlide key={index}>
                                     <button
                                         className="video-button"
-                                        onClick={() => handlePlayClick(index)}
-                                        style={{ position: 'relative' }}
+                                        onClick={() => handlePlayPause(index)}
                                     >
                                         <div className="video-wrap">
                                             <video
-                                                ref={(el) => (videoRefs.current[index] = el)}
-                                                onClick={() => handlePlayClick(index)}
                                                 className="myVideo"
-                                                width="380px"
+                                                width="100%" // Ensure the video takes up 100% of its slide space
                                                 height="auto"
-                                                autoPlay={playingIndex === index} // Auto play if this is the selected video
-                                                controls={playingIndex === index ? true : false} // Hide controls if this video is playing
-                                                onPause={() => setPlayingIndex(null)} // Reset when the video is paused
-                                                onEnded={() => setPlayingIndex(null)} // Reset when the video ends
+                                                ref={(el) => (videoRefs.current[index] = el)}
                                             >
                                                 <source
-                                                    src={`/src/assets/assets/Videos/Video-${index}-compressed.mp4`}
+                                                    src={`/src/assets/assets/Videos/${video}-compressed.mp4`}
                                                     type="video/mp4"
                                                 />
                                                 Your browser does not support the video tag.
                                             </video>
-                                            <span
-                                                className="custom-play-button"
-                                                style={{
-                                                    position: 'absolute',
-                                                    padding: '0',
-                                                    top: '50%',
-                                                    left: '50%',
-                                                    transform: 'translate(-50%, -50%)',
-                                                    fontSize: '40px',
-                                                    color: 'white',
-                                                    pointerEvents: playingIndex === index ? 'none' : 'auto', // Disable when video is playing
-                                                    display: playingIndex === index ? 'none' : 'block', // Hide play button if video is playing
-                                                }}
-                                            >
-                                                ▶
-                                            </span>
+                                            {/* Hide play button only for the currently playing video */}
+                                            {currentVideo !== index && (
+                                                <span className="custom-play-button">▶</span>
+                                            )}
                                         </div>
                                     </button>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
 
-                        {/* Custom navigation buttons */}
-                        <div className="swiper-button-prev prevBtn" onClick={() => swiperRef.current.swiper.slidePrev()}>
-                            {/* Left arrow SVG */}
-                            <svg fill="#000000" width={30} height={30} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="icon line">
+                        {/* Custom Navigation Buttons */}
+                        <div
+                            className="swiper-button-prev prevBtn"
+                            onClick={goToPrevSlide}
+                        >
+                            <svg
+                                fill="#000000"
+                                width="30"
+                                height="30"
+                                viewBox="0 0 24 24"
+                                id="left-arrow"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="icon line"
+                            >
                                 <path
                                     id="primary"
                                     d="M21,12H3M6,9,3,12l3,3"
-                                    style={{ fill: 'none', stroke: 'rgb(0, 0, 0)', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '1.5' }}
-                                ></path>
+                                    style={{
+                                        fill: 'none',
+                                        stroke: 'rgb(0, 0, 0)',
+                                        strokeLinecap: 'round',
+                                        strokeLinejoin: 'round',
+                                        strokeWidth: 1.5,
+                                    }}
+                                />
                             </svg>
                         </div>
-
-                        <div className="swiper-button-next nextBtn" onClick={() => swiperRef.current.swiper.slideNext()}>
-                            {/* Right arrow SVG */}
-                            <svg fill="#000000" width={30} height={30} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="icon line">
+                        <div
+                            className="swiper-button-next nextBtn"
+                            onClick={goToNextSlide}
+                        >
+                            <svg
+                                fill="#000000"
+                                width="30"
+                                height="30"
+                                viewBox="0 0 24 24"
+                                id="right-arrow"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="icon line"
+                            >
                                 <path
                                     id="primary"
                                     d="M3,12H21M18,9l3,3-3,3"
-                                    style={{ fill: 'none', stroke: 'rgb(0, 0, 0)', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '1.5' }}
-                                ></path>
+                                    style={{
+                                        fill: 'none',
+                                        stroke: 'rgb(0, 0, 0)',
+                                        strokeLinecap: 'round',
+                                        strokeLinejoin: 'round',
+                                        strokeWidth: 1.5,
+                                    }}
+                                />
                             </svg>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-
         </div>
-    )
-}
+    );
+};
 
-export default Winestoredata
+export default ReviewSection;

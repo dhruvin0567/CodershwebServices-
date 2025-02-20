@@ -7,85 +7,56 @@ import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 
 function Bussinessdirectorydata() {
 
-    const [playingIndex, setPlayingIndex] = useState(null); // Track which video is playing
-    const swiperRef = useRef(null);
-    const videoRefs = useRef([]); // To store references to all video elements
+    const [currentVideo, setCurrentVideo] = useState(null);  // Track the currently playing video
+    const videoRefs = useRef([]); // Store references to video elements
+    const swiperRef = useRef(null); // Reference to Swiper instance
 
-    // Event handlers for play and pause events
-    const handlePlay = (index, video) => {
-        const allVideos = videoRefs.current;
-        if (swiperRef.current) swiperRef.current.swiper.autoplay.stop();
+    // Manually handle the "Play/Pause" of videos
+    const handlePlayPause = (index) => {
+        const videoElement = videoRefs.current[index];
 
-        // Pause all other videos and show their play buttons
-        allVideos.forEach((v, i) => {
-            if (i !== index) {
-                v.pause();
-                const playButton = v.closest('.video-wrap')?.querySelector('.custom-play-button');
-                if (playButton) {
-                    playButton.style.display = 'block';
-                }
-            }
-        });
-
-        // Hide play button for the currently playing video
-        const playButton = video.closest('.video-wrap')?.querySelector('.custom-play-button');
-        if (playButton) {
-            playButton.style.display = 'none';
+        if (currentVideo === index) {
+            // Pause the video if it's the currently playing one
+            videoElement.pause();
+            setCurrentVideo(null);
+        } else {
+            // Play the new video and pause the previous one
+            videoElement.play();
+            setCurrentVideo(index);
+            // Pause other videos
+            videoRefs.current.forEach((video, i) => {
+                if (i !== index) video.pause();
+            });
         }
     };
 
-    const handlePause = () => {
-        const allVideos = videoRefs.current;
-        allVideos.forEach((v) => {
-            const playButton = v.closest('.video-wrap')?.querySelector('.custom-play-button');
-            if (playButton) {
-                playButton.style.display = 'block';
-            }
-        });
-
-        // Check if all videos are paused
-        const allPaused = allVideos.every((v) => v.paused);
-        if (allPaused && swiperRef.current) {
-            swiperRef.current.swiper.autoplay.start();
+    // Close video when clicked outside of the video container
+    const handleClickOutside = (e) => {
+        if (!e.target.closest('.video-wrap')) {
+            videoRefs.current.forEach((video) => video.pause());
+            setCurrentVideo(null);
         }
     };
 
     useEffect(() => {
-        const allVideos = videoRefs.current;
-
-        // Attach event listeners for each video
-        allVideos.forEach((video, index) => {
-            if (video) {
-                video.addEventListener('play', () => handlePlay(index, video));
-                video.addEventListener('pause', handlePause);
-            }
-        });
-
-        // Cleanup function to remove event listeners when the component unmounts
+        document.addEventListener('click', handleClickOutside);
         return () => {
-            allVideos.forEach((video, index) => {
-                if (video) {
-                    video.removeEventListener('play', () => handlePlay(index, video));
-                    video.removeEventListener('pause', handlePause);
-                }
-            });
+            document.removeEventListener('click', handleClickOutside);
         };
-    }, []); // Empty dependency array means this effect runs once when the component mounts
+    }, []);
 
-    // Function to handle video play/pause click
-    const handlePlayClick = (index) => {
-        const video = videoRefs.current[index];
-
-        if (video.paused) {
-            video.play();
-        } else {
-            video.pause();
+    // Custom navigation button handlers
+    const goToNextSlide = () => {
+        if (swiperRef.current) {
+            swiperRef.current.swiper.slideNext();
         }
-
-        // Update playingIndex to track which video is playing
-        setPlayingIndex(index);
     };
 
+    const goToPrevSlide = () => {
+        if (swiperRef.current) {
+            swiperRef.current.swiper.slidePrev();
+        }
+    };
 
 
     const [isLaptop, setIsLaptop] = useState(false);
@@ -334,15 +305,16 @@ function Bussinessdirectorydata() {
             </div>
             {/* End */}
 
-            <div className="review-section text-center pb-5 ">
+            <div className="review-section text-center pb-5">
                 <div className="container border-top py-5">
                     <div>
                         <h3>Our Client's Reviews</h3>
-                        <p>We are very proud of the service we provide and stand by every product we carry. See our testimonials
+                        <p>
+                            We are very proud of the service we provide and stand by every product we carry. See our testimonials
                             from our happy customers.
                         </p>
                     </div>
-                    <div className="slider-wrapper d-flex">
+                    <div className="slider-wrapper">
                         <Swiper
                             ref={swiperRef}
                             spaceBetween={20}
@@ -361,73 +333,86 @@ function Bussinessdirectorydata() {
                                 1024: { slidesPerView: 4 },
                             }}
                         >
-                            {[1, 2, 3, 4, 5, 6].map((index) => (
-                                <SwiperSlide key={index} style={{ padding: "0px 0px" }}>
+                            {['Video-1', 'Video-2', 'Video-3', 'Video-4', 'Video-5', 'Video-6'].map((video, index) => (
+                                <SwiperSlide key={index}>
                                     <button
                                         className="video-button"
-                                        onClick={() => handlePlayClick(index)}
-                                        style={{ position: 'relative' }}
+                                        onClick={() => handlePlayPause(index)}
                                     >
                                         <div className="video-wrap">
                                             <video
-                                                ref={(el) => (videoRefs.current[index] = el)}
-                                                onClick={() => handlePlayClick(index)}
                                                 className="myVideo"
-                                                width="380px"
+                                                width="100%" // Ensure the video takes up 100% of its slide space
                                                 height="auto"
-                                                autoPlay={playingIndex === index} // Auto play if this is the selected video
-                                                controls={playingIndex === index ? true : false} // Hide controls if this video is playing
-                                                onPause={() => setPlayingIndex(null)} // Reset when the video is paused
-                                                onEnded={() => setPlayingIndex(null)} // Reset when the video ends
+                                                ref={(el) => (videoRefs.current[index] = el)}
                                             >
                                                 <source
-                                                    src={`/src/assets/assets/Videos/Video-${index}-compressed.mp4`}
+                                                    src={`/src/assets/assets/Videos/${video}-compressed.mp4`}
                                                     type="video/mp4"
                                                 />
                                                 Your browser does not support the video tag.
                                             </video>
-                                            <span
-                                                className="custom-play-button"
-                                                style={{
-                                                    position: 'absolute',
-                                                    padding: '0',
-                                                    top: '50%',
-                                                    left: '50%',
-                                                    transform: 'translate(-50%, -50%)',
-                                                    fontSize: '40px',
-                                                    color: 'white',
-                                                    pointerEvents: playingIndex === index ? 'none' : 'auto', // Disable when video is playing
-                                                    display: playingIndex === index ? 'none' : 'block', // Hide play button if video is playing
-                                                }}
-                                            >
-                                                ▶
-                                            </span>
+                                            {/* Hide play button only for the currently playing video */}
+                                            {currentVideo !== index && (
+                                                <span className="custom-play-button">▶</span>
+                                            )}
                                         </div>
                                     </button>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
 
-                        {/* Custom navigation buttons */}
-                        <div className="swiper-button-prev prevBtn" onClick={() => swiperRef.current.swiper.slidePrev()}>
-                            {/* Left arrow SVG */}
-                            <svg fill="#000000" width={30} height={30} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="icon line">
+                        {/* Custom Navigation Buttons */}
+                        <div
+                            className="swiper-button-prev prevBtn"
+                            onClick={goToPrevSlide}
+                        >
+                            <svg
+                                fill="#000000"
+                                width="30"
+                                height="30"
+                                viewBox="0 0 24 24"
+                                id="left-arrow"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="icon line"
+                            >
                                 <path
                                     id="primary"
                                     d="M21,12H3M6,9,3,12l3,3"
-                                    style={{ fill: 'none', stroke: 'rgb(0, 0, 0)', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '1.5' }}
-                                ></path>
+                                    style={{
+                                        fill: 'none',
+                                        stroke: 'rgb(0, 0, 0)',
+                                        strokeLinecap: 'round',
+                                        strokeLinejoin: 'round',
+                                        strokeWidth: 1.5,
+                                    }}
+                                />
                             </svg>
                         </div>
-
-                        <div className="swiper-button-next nextBtn" onClick={() => swiperRef.current.swiper.slideNext()}>
-                            {/* Right arrow SVG */}
-                            <svg fill="#000000" width={30} height={30} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="icon line">
+                        <div
+                            className="swiper-button-next nextBtn"
+                            onClick={goToNextSlide}
+                        >
+                            <svg
+                                fill="#000000"
+                                width="30"
+                                height="30"
+                                viewBox="0 0 24 24"
+                                id="right-arrow"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="icon line"
+                            >
                                 <path
                                     id="primary"
                                     d="M3,12H21M18,9l3,3-3,3"
-                                    style={{ fill: 'none', stroke: 'rgb(0, 0, 0)', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '1.5' }}
-                                ></path>
+                                    style={{
+                                        fill: 'none',
+                                        stroke: 'rgb(0, 0, 0)',
+                                        strokeLinecap: 'round',
+                                        strokeLinejoin: 'round',
+                                        strokeWidth: 1.5,
+                                    }}
+                                />
                             </svg>
                         </div>
                     </div>

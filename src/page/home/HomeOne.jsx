@@ -81,6 +81,7 @@ function HomeOne() {
 			<WhyChooseUs />
 			<Testimonial />
 			<AutoSlider />
+			<div style={{ marginBottom: '20px' }}></div>
 			{/* <Teams teams={teamsData} /> */}
 		</>
 	);

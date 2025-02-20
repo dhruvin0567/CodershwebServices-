@@ -6615,6 +6615,13 @@ img.aximo-video-circle {
 	margin-bottom: 30px;
 	transition: all 0.4s;
 	border: 2px solid var(--heading-color);
+
+}
+
+@media (min-width: 900px) {
+	.aximo-testimonial-wrap {
+		height: 433px;
+	}
 }
 
 .aximo-testimonial-wrap:hover {

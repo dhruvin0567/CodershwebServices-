@@ -60,8 +60,11 @@ const swiperSettings = {
 		640: {
 			slidesPerView: 1,
 		},
+		768: {
+			slidesPerView: 2, // 3 slides per view
+		},
 		900: {
-			slidesPerView: 2,
+			slidesPerView: 3,
 		},
 		1600: {
 			slidesPerView: 3.5,

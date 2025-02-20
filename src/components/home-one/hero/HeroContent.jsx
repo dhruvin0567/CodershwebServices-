@@ -11,12 +11,12 @@ function HeroContent() {
 			<FadeInStaggerTwo>
 				<FadeInStaggerTwoChildren>
 					<h1 style={{ fontSize: '57px' }}>
+						Trusted Ecommerce
 						<span className="aximo-title-animation">
-							Trusted Ecommerce
 							{/* <img src={StarImg} alt="StarImg" /> */}
 
+							& Shopify Agency
 						</span>{" "}
-						& Shopify Agency
 					</h1>
 				</FadeInStaggerTwoChildren>
 				<FadeInStaggerTwoChildren>
