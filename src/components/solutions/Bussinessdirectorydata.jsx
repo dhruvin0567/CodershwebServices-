@@ -116,7 +116,7 @@ function Bussinessdirectorydata() {
                     >
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.1s">
-                                <img src="src/assets/Images_2/hpn-global-front-page.webp" alt="" />
+                                <img src="src/assets/images/Images_2/hpn-global-front-page.webp" alt="" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -136,7 +136,7 @@ function Bussinessdirectorydata() {
 
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.2s">
-                                <img src="src/assets/Images_2/tyrepages-front-page.webp" alt="" />
+                                <img src="src/assets/images/Images_2/tyrepages-front-page.webp" alt="" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -156,7 +156,7 @@ function Bussinessdirectorydata() {
 
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.3s">
-                                <img src="src/assets/Images_2/redesign-hub-front-page.webp" alt="" />
+                                <img src="src/assets/images/Images_2/redesign-hub-front-page.webp" alt="" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -215,13 +215,13 @@ function Bussinessdirectorydata() {
                     </h3>
                     <div className="logo-slider row">
                         <div className="col-lg-4">
-                            <img src="src/assets/Images_2/tyrepage.webp" alt className="mx-auto d-block" />
+                            <img src="src/assets/images/Images_2/tyrepage.webp" alt className="mx-auto d-block" />
                         </div>
                         <div className="col-lg-4">
-                            <img src="src/assets/Images_2/hpn-logo-1.webp" alt className="mx-auto d-block" />
+                            <img src="src/assets/images/Images_2/hpn-logo-1.webp" alt className="mx-auto d-block" />
                         </div>
                         <div className="col-lg-4">
-                            <img src="src/assets/Images_2/redesign-hub-logo.webp" alt className="mx-auto d-block" />
+                            <img src="src/assets/images/Images_2/redesign-hub-logo.webp" alt className="mx-auto d-block" />
                         </div>
                     </div>
                 </div>
@@ -262,22 +262,22 @@ function Bussinessdirectorydata() {
                         }}
                     >
                         <SwiperSlide>
-                            <img src="src/assets/Images_2/tyrepage.webp" alt="" className="mx-auto d-block" />
+                            <img src="src/assets/images/Images_2/tyrepage.webp" alt="" className="mx-auto d-block" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/Images_2/hpn-logo-1.webp" alt="" className="mx-auto d-block" />
+                            <img src="src/assets/images/Images_2/hpn-logo-1.webp" alt="" className="mx-auto d-block" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/Images_2/redesign-hub-logo.webp" alt="" className="mx-auto d-block" />
+                            <img src="src/assets/images/Images_2/redesign-hub-logo.webp" alt="" className="mx-auto d-block" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/Images_2/tyrepage.webp" alt="" className="mx-auto d-block" />
+                            <img src="src/assets/images/Images_2/tyrepage.webp" alt="" className="mx-auto d-block" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/Images_2/hpn-logo-1.webp" alt="" className="mx-auto d-block" />
+                            <img src="src/assets/images/Images_2/hpn-logo-1.webp" alt="" className="mx-auto d-block" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/Images_2/redesign-hub-logo.webp" alt="" className="mx-auto d-block" />
+                            <img src="src/assets/images/Images_2/redesign-hub-logo.webp" alt="" className="mx-auto d-block" />
                         </SwiperSlide>
                     </Swiper>
                 </div>
@@ -347,7 +347,7 @@ function Bussinessdirectorydata() {
                                                 ref={(el) => (videoRefs.current[index] = el)}
                                             >
                                                 <source
-                                                    src={`src/assets/videos/${video}-compressed.mp4`}
+                                                    src={`src/assets/images/Videos/${video}-compressed.mp4`}
                                                     type="video/mp4"
                                                 />
                                                 Your browser does not support the video tag.
