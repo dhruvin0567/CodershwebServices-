@@ -22,7 +22,7 @@ function Brand() {
                         {brandImages.map((image, index) => (
                             <div className="col-lg-3 col-sm-4 col-6 mb-3" key={index}>
                                 <Link className="brand-card" to="#">
-                                    <img src={`/src/assets/assets/Images/${image}`} alt={`brand ${index + 1}`} />
+                                    <img src={`/src/assets/Images_2/${image}`} alt={`brand ${index + 1}`} />
                                 </Link>
                             </div>
                         ))}

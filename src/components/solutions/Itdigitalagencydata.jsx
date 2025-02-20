@@ -100,7 +100,7 @@ function Itdigitalagencydata() {
 
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.1s">
-                                <img src="/src/assets/assets/images/all-it-nw-front-page.webp" alt="Credi Coach" />
+                                <img src="/src/assets/Images_2/all-it-nw-front-page.webp" alt="Credi Coach" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -130,7 +130,7 @@ function Itdigitalagencydata() {
 
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.2s">
-                                <img src="/src/assets/assets/images/alt-it-front-page.webp" alt="Credit Saint" />
+                                <img src="/src/assets/Images_2/alt-it-front-page.webp" alt="Credit Saint" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -160,7 +160,7 @@ function Itdigitalagencydata() {
 
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.3s">
-                                <img src="/src/assets/assets/images/global-it-front-page.webp" alt="Credit 101" />
+                                <img src="/src/assets/Images_2/global-it-front-page.webp" alt="Credit 101" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -189,7 +189,7 @@ function Itdigitalagencydata() {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.4s">
-                                <img src="/src/assets/assets/images/HoBarbe-front-page.webp" alt="Framework Credit" />
+                                <img src="/src/assets/Images_2/HoBarbe-front-page.webp" alt="Framework Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -218,7 +218,7 @@ function Itdigitalagencydata() {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.5s">
-                                <img src="/src/assets/assets/images/informadist-front-page.webp" alt="Premier Credit" />
+                                <img src="/src/assets/Images_2/informadist-front-page.webp" alt="Premier Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -247,7 +247,7 @@ function Itdigitalagencydata() {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.6s">
-                                <img src="/src/assets/assets/images/orangenexus-front-page.webp" alt="SD Capital" />
+                                <img src="/src/assets/Images_2/orangenexus-front-page.webp" alt="SD Capital" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -276,7 +276,7 @@ function Itdigitalagencydata() {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.7s">
-                                <img src="/src/assets/assets/images/The-IT-Consultancy-front-page.webp" alt="Stellar Credit" />
+                                <img src="/src/assets/Images_2/The-IT-Consultancy-front-page.webp" alt="Stellar Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -369,25 +369,25 @@ function Itdigitalagencydata() {
                         }}
                     >
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/alt-it-logo.webp" alt="Alt IT Logo" />
+                            <img src="/src/assets/Images_2/alt-it-logo.webp" alt="Alt IT Logo" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/HoBarbe-logo.webp" alt="HoBarbe Logo" />
+                            <img src="/src/assets/Images_2/HoBarbe-logo.webp" alt="HoBarbe Logo" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/ll-it-nw-logo.webp" alt="LL IT NW Logo" />
+                            <img src="/src/assets/Images_2/ll-it-nw-logo.webp" alt="LL IT NW Logo" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/informadist-logo.webp" alt="Informadist Logo" />
+                            <img src="/src/assets/Images_2/informadist-logo.webp" alt="Informadist Logo" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/orangenexus-logo.webp" alt="Orange Nexus Logo" />
+                            <img src="/src/assets/Images_2/orangenexus-logo.webp" alt="Orange Nexus Logo" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/The-IT-Consultancy-logo.webp" alt="The IT Consultancy Logo" />
+                            <img src="/src/assets/Images_2/The-IT-Consultancy-logo.webp" alt="The IT Consultancy Logo" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/assets/Images/global-tech-distribution.webp" alt="Global Tech Distribution Logo" />
+                            <img src="/src/assets/Images_2/global-tech-distribution.webp" alt="Global Tech Distribution Logo" />
                         </SwiperSlide>
                     </Swiper>
                 </div>
@@ -455,7 +455,7 @@ function Itdigitalagencydata() {
                                                 ref={(el) => (videoRefs.current[index] = el)}
                                             >
                                                 <source
-                                                    src={`/src/assets/assets/Videos/${video}-compressed.mp4`}
+                                                    src={`/src/assets/videos/${video}-compressed.mp4`}
                                                     type="video/mp4"
                                                 />
                                                 Your browser does not support the video tag.

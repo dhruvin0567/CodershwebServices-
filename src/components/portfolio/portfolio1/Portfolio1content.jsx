@@ -1,35 +1,35 @@
 import { useState } from 'react';
 
 
-import CardIMg1 from "/src/assets/assets/Images/Van-Hunks.png.webp";
-import CardImg2 from "/src/assets/assets/Images/Madame-F.png.webp";
-import CardImg3 from "/src/assets/assets/Images/Liberation-Cocktails.png.webp";
-import CardImg4 from "/src/assets/assets/Images/BONE-IDYLL.png.webp";
-import CardImg5 from "/src/assets/assets/Images/potown-homepage.png.webp";
-import CardImg6 from "/src/assets/assets/Images/Violet-Blanc-Beauty.png.webp";
-import CardImg7 from "/src/assets/assets/Images/TylersCoffee.png.webp";
-import CardImg8 from "/src/assets/assets/Images/BUY-VAPE-USA.png.webp";
-import CardImg9 from "/src/assets/assets/Images/No-Mo-Stache.png.webp";
-import CardImg10 from "/src/assets/assets/Images/SplitGrip.png.webp";
-import CardImg11 from "/src/assets/assets/Images/Infinity-Loops.png.webp";
-import CardImg12 from "/src/assets/assets/Images/wallplanks.png.webp";
-import CardImg13 from "/src/assets/assets/Images/Rowan-Oak-Clothing-Co.png.webp";
-import CardImg14 from "/src/assets/assets/Images/Aolithium-Professional.png";
-import CardImg15 from "/src/assets/assets/Images/Baby-Gold.png";
-import CardImg16 from "/src/assets/assets/Images/Aubi-Ramsa-Ice-Cream-Co-.png.webp";
-import CardImg17 from "/src/assets/assets/Images/Airpaq-Sustainability-meets-functionality-Airpaq-GmbH.png.webp";
-import CardImg18 from "/src/assets/assets/Images/Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box.png.webp";
-import CardImg19 from "/src/assets/assets/Images/thewelshproducestall-the-welsh-produce-stall.png.webp";
-import CardImg20 from "/src/assets/assets/Images/fuel.png";
-import CardImg21 from "/src/assets/assets/Images/oceans6media.png";
-import CardImg22 from "/src/assets/assets/Images/NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-.png.webp";
-import CardImg23 from "/src/assets/assets/Images/jojosdogwalking.png.webp";
-import CardImg24 from "/src/assets/assets/Images/Indulge-in-Hudson-Pecan-Natures-Tastiest-Guilt-Free-Snack-Hudson-Pecan-Company.png.webp";
-import CardImg25 from "/src/assets/assets/Images/IKKS-Official-Website-Women-s-Children-s-Men-s-Fashion-Fall-Winter-2023.png.webp";
-import CardImg26 from "/src/assets/assets/Images/IFC-Ideal-Food-Corp-.png.webp";
-import CardImg27 from "/src/assets/assets/Images/Bumperninja.png.webp";
-import CardImg28 from "/src/assets/assets/Images/Biotrust.png";
-import CardImg29 from "/src/assets/assets/Images/vidtre.png.webp";
+import CardIMg1 from "/src/assets/Images_2/Van-Hunks.png.webp";
+import CardImg2 from "/src/assets/Images_2/Madame-F.png.webp";
+import CardImg3 from "/src/assets/Images_2/Liberation-Cocktails.png.webp";
+import CardImg4 from "/src/assets/Images_2/BONE-IDYLL.png.webp";
+import CardImg5 from "/src/assets/Images_2/potown-homepage.png.webp";
+import CardImg6 from "/src/assets/Images_2/Violet-Blanc-Beauty.png.webp";
+import CardImg7 from "/src/assets/Images_2/TylersCoffee.png.webp";
+import CardImg8 from "/src/assets/Images_2/BUY-VAPE-USA.png.webp";
+import CardImg9 from "/src/assets/Images_2/No-Mo-Stache.png.webp";
+import CardImg10 from "/src/assets/Images_2/SplitGrip.png.webp";
+import CardImg11 from "/src/assets/Images_2/Infinity-Loops.png.webp";
+import CardImg12 from "/src/assets/Images_2/wallplanks.png.webp";
+import CardImg13 from "/src/assets/Images_2/Rowan-Oak-Clothing-Co.png.webp";
+import CardImg14 from "/src/assets/Images_2/Aolithium-Professional.png";
+import CardImg15 from "/src/assets/Images_2/Baby-Gold.png";
+import CardImg16 from "/src/assets/Images_2/Aubi-Ramsa-Ice-Cream-Co-.png.webp";
+import CardImg17 from "/src/assets/Images_2/Airpaq-Sustainability-meets-functionality-Airpaq-GmbH.png.webp";
+import CardImg18 from "/src/assets/Images_2/Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box.png.webp";
+import CardImg19 from "/src/assets/Images_2/thewelshproducestall-the-welsh-produce-stall.png.webp";
+import CardImg20 from "/src/assets/Images_2/fuel.png";
+import CardImg21 from "/src/assets/Images_2/oceans6media.png";
+import CardImg22 from "/src/assets/Images_2/NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-.png.webp";
+import CardImg23 from "/src/assets/Images_2/jojosdogwalking.png.webp";
+import CardImg24 from "/src/assets/Images_2/Indulge-in-Hudson-Pecan-Natures-Tastiest-Guilt-Free-Snack-Hudson-Pecan-Company.png.webp";
+import CardImg25 from "/src/assets/Images_2/IKKS-Official-Website-Women-s-Children-s-Men-s-Fashion-Fall-Winter-2023.png.webp";
+import CardImg26 from "/src/assets/Images_2/IFC-Ideal-Food-Corp-.png.webp";
+import CardImg27 from "/src/assets/Images_2/Bumperninja.png.webp";
+import CardImg28 from "/src/assets/Images_2/Biotrust.png";
+import CardImg29 from "/src/assets/Images_2/vidtre.png.webp";
 
 
 // Sample data for project cards (can be replaced with real data)

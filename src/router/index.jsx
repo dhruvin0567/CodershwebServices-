@@ -2,22 +2,22 @@ import { createBrowserRouter } from "react-router-dom";
 import LayoutOne from "../components/layout/LayoutOne.jsx";
 import LayoutEight from "../components/layout/LayoutEight.jsx";
 import Layout from "../components/layout/index.jsx";
-import ErrorPage from "../error-page";
 import AboutUs from "../page/AboutUs";
 import ContactUs from "../page/ContactUs";
 import Pricing from "../page/Pricing";
-import Reset from "../page/auth/ResetPassword.jsx";
-import SignIn from "../page/auth/SignIn";
-import SignUp from "../page/auth/SignUp";
-import CommingSoon from "../page/utility/CommingSoon.jsx";
 import Faq from "../page/utility/Faq.jsx";
 import TestimonialPage from "../page/utility/Testimonial.jsx";
 import HomeOne from "../page/home/HomeOne.jsx";
-import PortfolioTwoColumn from "../page/portfolio/PortfolioTwoColumn";
 import Team from "../page/team";
 import Service from "../page/service";
-import BlogGridPage from "../page/blog/BlogGridPage.jsx";
 
+// import ErrorPage from "../error-page";
+// import Reset from "../page/auth/ResetPassword.jsx";
+// import SignIn from "../page/auth/SignIn";
+// import SignUp from "../page/auth/SignUp";
+// import CommingSoon from "../page/utility/CommingSoon.jsx";
+// import BlogGridPage from "../page/blog/BlogGridPage.jsx";
+// import PortfolioTwoColumn from "../page/portfolio/PortfolioTwoColumn";
 // import LayoutFive from "../components/layout/LayoutFive.jsx";
 // import LayoutFour from "../components/layout/LayoutFour.jsx";
 // import LayoutSeven from "../components/layout/LayoutSeven.jsx";
@@ -38,8 +38,7 @@ import BlogGridPage from "../page/blog/BlogGridPage.jsx";
 // import SingleTeam from "../page/team/SingleTeam.jsx";
 
 // extrapages implimented
-import Portfolio1 from "../page/portfolio/Portfolio1.jsx";
-import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
+import Portfolio from "../page/portfolio/Portfolio.jsx";
 import Winestore from "../page/solutions/Winestore.jsx";
 import Businessdirectory from "../page/solutions/Businessdirectory.jsx";
 import Creditrepair from "../page/solutions/Creditrepair.jsx";
@@ -49,9 +48,11 @@ import CaseStudies from "../page/projects/CaseStudies.jsx";
 import OurWork from "../page/projects/OurWork.jsx";
 import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
 import Brand from "../page/Brand.jsx";
-import Categories from "../page/portfolio/Categories.jsx";
-import Countries from "../page/portfolio/Countries.jsx";
-import Industries from "../page/portfolio/Industries.jsx";
+
+// import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
+// import Categories from "../page/portfolio/Categories.jsx";
+// import Countries from "../page/portfolio/Countries.jsx";
+// import Industries from "../page/portfolio/Industries.jsx";
 
 export const router = createBrowserRouter([
 	{
@@ -101,10 +102,10 @@ export const router = createBrowserRouter([
 					// 	element: <SingleBlogPage />,
 					// },
 
-					{
-						path: "/blog-grid",
-						element: <BlogGridPage />,
-					},
+					// {
+					// 	path: "/blog-grid",
+					// 	element: <BlogGridPage />,
+					// },
 					{
 						path: "/singleblog2",
 						element: <SingleBlog2 />,
@@ -162,34 +163,34 @@ export const router = createBrowserRouter([
 					// 	path: "/single-portfolio",
 					// 	element: <SinglePortfolio />,
 					// },
+					// {
+					// 	path: "/portfolio-two",
+					// 	element: <PortfolioTwoColumn />,
+					// },
 					{
-						path: "/portfolio-two",
-						element: <PortfolioTwoColumn />,
+						path: "/portfolio",
+						element: <Portfolio />,
 					},
-					{
-						path: "/portfolio1",
-						element: <Portfolio1 />,
-					},
-					{
-						path: "/portfolio2",
-						element: <Portfolio2 />,
-					},
-					{
-						path: "/categories",
-						element: <Categories />,
-					},
-					{
-						path: "/countries",
-						element: <Countries />,
-					},
-					{
-						path: "/industries",
-						element: <Industries />,
-					},
-					{
-						path: "*",
-						element: <ErrorPage />,
-					},
+					// {
+					// 	path: "/portfolio2",
+					// 	element: <Portfolio2 />,
+					// },
+					// {
+					// 	path: "/categories",
+					// 	element: <Categories />,
+					// },
+					// {
+					// 	path: "/countries",
+					// 	element: <Countries />,
+					// },
+					// {
+					// 	path: "/industries",
+					// 	element: <Industries />,
+					// },
+					// {
+					// 	path: "*",
+					// 	element: <ErrorPage />,
+					// },
 				],
 			},
 			// {
@@ -256,22 +257,22 @@ export const router = createBrowserRouter([
 				path: "/",
 				element: <LayoutEight />,
 				children: [
-					{
-						path: "/coming-soon",
-						element: <CommingSoon />,
-					},
-					{
-						path: "/reset-password",
-						element: <Reset />,
-					},
-					{
-						path: "/sign-up",
-						element: <SignUp />,
-					},
-					{
-						path: "/sign-in",
-						element: <SignIn />,
-					},
+					// {
+					// 	path: "/coming-soon",
+					// 	element: <CommingSoon />,
+					// },
+					// {
+					// 	path: "/reset-password",
+					// 	element: <Reset />,
+					// },
+					// {
+					// 	path: "/sign-up",
+					// 	element: <SignUp />,
+					// },
+					// {
+					// 	path: "/sign-in",
+					// 	element: <SignIn />,
+					// },
 				],
 			},
 		],
