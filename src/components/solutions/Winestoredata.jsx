@@ -95,7 +95,7 @@ const ReviewSection = () => {
                     >
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.1s">
-                                <img src="/src/assets/Images_2/artisan-f-p.webp" alt="Credi Coach" />
+                                <img src="src/assets/Images_2/artisan-f-p.webp" alt="Credi Coach" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -126,7 +126,7 @@ const ReviewSection = () => {
                         {/* Slide 2 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.2s">
-                                <img src="/src/assets/Images_2/asterley-bros-f-p.webp" alt="Credit Saint" />
+                                <img src="src/assets/Images_2/asterley-bros-f-p.webp" alt="Credit Saint" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -157,7 +157,7 @@ const ReviewSection = () => {
                         {/* Slide 3 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.3s">
-                                <img src="/src/assets/Images_2/bone-f-p.webp" alt="Credit 101" />
+                                <img src="src/assets/Images_2/bone-f-p.webp" alt="Credit 101" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -188,7 +188,7 @@ const ReviewSection = () => {
                         {/* Slide 4 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.4s">
-                                <img src="/src/assets/Images_2/Claudine-f-p.webp" alt="Framework Credit" />
+                                <img src="src/assets/Images_2/Claudine-f-p.webp" alt="Framework Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -219,7 +219,7 @@ const ReviewSection = () => {
                         {/* Slide 5 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.5s">
-                                <img src="/src/assets/Images_2/Double-Dutch-f-p.webp" alt="Premier Credit" />
+                                <img src="src/assets/Images_2/Double-Dutch-f-p.webp" alt="Premier Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -250,7 +250,7 @@ const ReviewSection = () => {
                         {/* Slide 1 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" data-wow-delay="0.6s">
-                                <img src="/src/assets/Images_2/gattertop-f-p.webp" alt="SD Capital" />
+                                <img src="src/assets/Images_2/gattertop-f-p.webp" alt="SD Capital" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -271,7 +271,7 @@ const ReviewSection = () => {
                         {/* Slide 2 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" data-wow-delay="0.7s">
-                                <img src="/src/assets/Images_2/liberation-f-p.webp" alt="Stellar Credit" />
+                                <img src="src/assets/Images_2/liberation-f-p.webp" alt="Stellar Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -292,7 +292,7 @@ const ReviewSection = () => {
                         {/* Slide 3 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" data-wow-delay="0.7s">
-                                <img src="/src/assets/Images_2/madamef-f-p.webp" alt="Stellar Credit" />
+                                <img src="src/assets/Images_2/madamef-f-p.webp" alt="Stellar Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -313,7 +313,7 @@ const ReviewSection = () => {
                         {/* Slide 4 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" data-wow-delay="0.7s">
-                                <img src="/src/assets/Images_2/negroni-soc-f-p.webp" alt="Stellar Credit" />
+                                <img src="src/assets/Images_2/negroni-soc-f-p.webp" alt="Stellar Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -334,7 +334,7 @@ const ReviewSection = () => {
                         {/* Slide 5 */}
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" data-wow-delay="0.7s">
-                                <img src="/src/assets/Images_2/van-hunks-f-p.webp" alt="Stellar Credit" />
+                                <img src="src/assets/Images_2/van-hunks-f-p.webp" alt="Stellar Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -418,31 +418,31 @@ const ReviewSection = () => {
                         }}
                     >
                         <SwiperSlide>
-                            <img src="/src/assets/Images_2/bone-logo.webp" alt="" />
+                            <img src="src/assets/Images_2/bone-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/Images_2/Claudine-logo.webp" alt="" />
+                            <img src="src/assets/Images_2/Claudine-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/Images_2/artisan-logo.webp" alt="" />
+                            <img src="src/assets/Images_2/artisan-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/Images_2/asterley-bros.webp" alt="" />
+                            <img src="src/assets/Images_2/asterley-bros.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/Images_2/Double-Dutch-logo.webp" alt="" />
+                            <img src="src/assets/Images_2/Double-Dutch-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/Images_2/gattertop-logo.webp" alt="" />
+                            <img src="src/assets/Images_2/gattertop-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/Images_2/liberation-logo.webp" alt="" />
+                            <img src="src/assets/Images_2/liberation-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/Images_2/madamef-logo.webp" alt="" />
+                            <img src="src/assets/Images_2/madamef-logo.webp" alt="" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="/src/assets/Images_2/van-hunks.webp" alt="" />
+                            <img src="src/assets/Images_2/van-hunks.webp" alt="" />
                         </SwiperSlide>
                     </Swiper>
                 </div>
@@ -511,7 +511,7 @@ const ReviewSection = () => {
                                                 ref={(el) => (videoRefs.current[index] = el)}
                                             >
                                                 <source
-                                                    src={`/src/assets/videos/${video}-compressed.mp4`}
+                                                    src={`src/assets/videos/${video}-compressed.mp4`}
                                                     type="video/mp4"
                                                 />
                                                 Your browser does not support the video tag.
