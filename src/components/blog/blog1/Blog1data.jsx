@@ -1,32 +1,32 @@
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import Blog1Img from "/src/assets/images/Images_2/lcp-issue-768x404.png";
-import Blog2Img from "/src/assets/images/Images_2/1-768x403.png";
-import Blog3Img from "/src/assets/images/Images_2/step-by-step-guide-768x404.png";
-import Blog4Img from "/src/assets/images/Images_2/3-768x403.png";
-import Blog5Img from "/src/assets/images/Images_2/4-768x403.png";
-import Blog6Img from "/src/assets/images/Images_2/2-768x403.png";
-import Blog7Img from "/src/assets/images/Images_2/3-768x403 (1).png";
-import Blog8Img from "/src/assets/images/Images_2/4-1-768x403.png";
-import Blog9Img from "/src/assets/images/Images_2/5-768x403.png";
-import Blog10Img from "/src/assets/images/Images_2/6-768x403.png";
-import Blog11Img from "/src/assets/images/Images_2/7-768x403.png";
-import Blog12Img from "/src/assets/images/Images_2/8-768x403.png";
-import Blog13Img from "/src/assets/images/Images_2/Blog-Post-Thumbnail-Codersh-768x403.png";
-import Blog14Img from "/src/assets/images/Images_2/how-to-find-and-hire-the-best-shopify-developers-in-2023-768x403.png";
-import Blog15Img from "/src/assets/images/Images_2/Blog-Post-Thumbnail-Codersh-768x403 (1).png";
-import Blog16Img from "/src/assets/images/Images_2/The-Top-5-Shopify-Trends-768x403.png";
-import Blog17Img from "/src/assets/images/Images_2/Why-Choose-Shopify-768x403.png";
-import Blog18Img from "/src/assets/images/Images_2/shopify-intro-768x403.png";
-import Blog19Img from "/src/assets/images/Images_2/Blog-Post-Thumbnail-Codersh-768x403 (2).png";
-import Blog20Img from "/src/assets/images/Images_2/clay-banks-Ox6SW103KtM-unsplash-1024x683.jpg";
-import Blog21Img from "/src/assets/images/Images_2/Why-does-business-need-a-website-redesign-768x403.png";
-import Blog22Img from "/src/assets/images/Images_2/codersh-banner-1-768x403.jpeg";
-import Blog23Img from "/src/assets/images/Images_2/Choose-the-Best-Shopify-Development-Compnay-768x403.png";
-import Blog24Img from "/src/assets/images/Images_2/ISCC-Event-768x403.png";
-import Blog25Img from "/src/assets/images/Images_2/image_2021_12_27T12_30_06_074Z-1-768x403.png";
-import Blog26Img from "/src/assets/images/Images_2/Unleashing-the-Power-of-Shopify-768x404.png";
-import Blog27Img from "/src/assets/images/Images_2/Optimizing-Shopify-Store-Performance-A-Technical-Guide-768x404.png";
-import Blog28Img from "/src/assets/images/Images_2/codersh-1-768x512.png";
+import Blog1Img from "/src/assets/images/images2/lcp-issue-768x404.png";
+import Blog2Img from "/src/assets/images/images2/1-768x403.png";
+import Blog3Img from "/src/assets/images/images2/step-by-step-guide-768x404.png";
+import Blog4Img from "/src/assets/images/images2/3-768x403.png";
+import Blog5Img from "/src/assets/images/images2/4-768x403.png";
+import Blog6Img from "/src/assets/images/images2/2-768x403.png";
+import Blog7Img from "/src/assets/images/images2/3-768x403 (1).png";
+import Blog8Img from "/src/assets/images/images2/4-1-768x403.png";
+import Blog9Img from "/src/assets/images/images2/5-768x403.png";
+import Blog10Img from "/src/assets/images/images2/6-768x403.png";
+import Blog11Img from "/src/assets/images/images2/7-768x403.png";
+import Blog12Img from "/src/assets/images/images2/8-768x403.png";
+import Blog13Img from "/src/assets/images/images2/Blog-Post-Thumbnail-Codersh-768x403.png";
+import Blog14Img from "/src/assets/images/images2/how-to-find-and-hire-the-best-shopify-developers-in-2023-768x403.png";
+import Blog15Img from "/src/assets/images/images2/Blog-Post-Thumbnail-Codersh-768x403 (1).png";
+import Blog16Img from "/src/assets/images/images2/The-Top-5-Shopify-Trends-768x403.png";
+import Blog17Img from "/src/assets/images/images2/Why-Choose-Shopify-768x403.png";
+import Blog18Img from "/src/assets/images/images2/shopify-intro-768x403.png";
+import Blog19Img from "/src/assets/images/images2/Blog-Post-Thumbnail-Codersh-768x403 (2).png";
+import Blog20Img from "/src/assets/images/images2/clay-banks-Ox6SW103KtM-unsplash-1024x683.jpg";
+import Blog21Img from "/src/assets/images/images2/Why-does-business-need-a-website-redesign-768x403.png";
+import Blog22Img from "/src/assets/images/images2/codersh-banner-1-768x403.jpeg";
+import Blog23Img from "/src/assets/images/images2/Choose-the-Best-Shopify-Development-Compnay-768x403.png";
+import Blog24Img from "/src/assets/images/images2/ISCC-Event-768x403.png";
+import Blog25Img from "/src/assets/images/images2/image_2021_12_27T12_30_06_074Z-1-768x403.png";
+import Blog26Img from "/src/assets/images/images2/Unleashing-the-Power-of-Shopify-768x404.png";
+import Blog27Img from "/src/assets/images/images2/Optimizing-Shopify-Store-Performance-A-Technical-Guide-768x404.png";
+import Blog28Img from "/src/assets/images/images2/codersh-1-768x512.png";
 // import FadeInStagger from "../../animation/FadeInStagger";  // Assuming you have a fade-in stagger animation
 
 
@@ -235,7 +235,7 @@ function Blog1data() {
                     <Link to={blog.link} className="blog-link">
                       Read more
                       <img
-                        src="src/assets/images/Images_2/arrow-right.svg"
+                        src="src/assets/images/images2/arrow-right.svg"
                         alt="arrow"
                         className="readMore-btn"
                         height="17px"

@@ -3,50 +3,50 @@ import { motion } from "framer-motion";
 
 
 
-// import Case1Img from "src/assets/images/Images_2/image_2024_07_05T14_06_31_811Z-768x380.png";
+// import Case1Img from "src/assets/images/images2/image_2024_07_05T14_06_31_811Z-768x380.png";
 
 
 const caseStudiesData = [
   {
     id: crypto.randomUUID(),
     title: "Van Hunks: Spicing Up Their Shopify Store",
-    img: "src/assets/images/Images_2/image_2024_07_05T14_06_31_811Z-768x380.png",
+    img: "src/assets/images/images2/image_2024_07_05T14_06_31_811Z-768x380.png",
     link: "/casestudies/Van Hunks: Spicing Up Their Shopify Store",
   },
   {
     id: crypto.randomUUID(),
     title: "Madame F – Celebrating Diversity in Every Glass",
-    img: "src/assets/images/Images_2/Screenshot-2024-07-26-153702-768x379.png",
+    img: "src/assets/images/images2/Screenshot-2024-07-26-153702-768x379.png",
     link: "#",
   },
   {
     id: crypto.randomUUID(),
     title: "LIBERATION COCKTAILS – Elevating the Pre-Mixed Cocktail Experience with a Custom Shopify Solution",
-    img: "src/assets/images/Images_2/Screenshot-2024-07-26-153524-768x380.png",
+    img: "src/assets/images/images2/Screenshot-2024-07-26-153524-768x380.png",
     link: "#",
   },
   {
     id: crypto.randomUUID(),
     title: "Chez Omar – French Caribbean Cuisine: NYC’s Digital Flavor",
-    img: "src/assets/images/Images_2/Screenshot-2024-07-26-153615-768x381.png",
+    img: "src/assets/images/images2/Screenshot-2024-07-26-153615-768x381.png",
     link: "#",
   },
   {
     id: crypto.randomUUID(),
     title: "Shopify E-Commerce Development Project for ReinventU",
-    img: "src/assets/images/Images_2/Screenshot-2024-07-26-154119-768x380.png",
+    img: "src/assets/images/images2/Screenshot-2024-07-26-154119-768x380.png",
     link: "#",
   },
   {
     id: crypto.randomUUID(),
     title: "Shopify E-Commerce Development Project for a Kids Clothing Store",
-    img: "src/assets/images/Images_2/Screenshot-2024-07-15-173730-768x374.png",
+    img: "src/assets/images/images2/Screenshot-2024-07-15-173730-768x374.png",
     link: "#",
   },
   {
     id: crypto.randomUUID(),
     title: "How a luxury clothing brand utilized Codersh to bring their Stores online",
-    img: "src/assets/images/Images_2/Screenshot-2024-07-15-170221-768x338.png",
+    img: "src/assets/images/images2/Screenshot-2024-07-15-170221-768x338.png",
     link: "#",
   }
 ];
@@ -83,7 +83,7 @@ function CaseStudiesdata() {
                     <Link to={caseStudy.link} className="blog-link">
                       Read more
                       <img
-                        src="src/assets/images/Images_2/arrow-right.svg"
+                        src="src/assets/images/images2/arrow-right.svg"
                         alt="arrow"
                         className="readMore-btn"
                         height="17px"
