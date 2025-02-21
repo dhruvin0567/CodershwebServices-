@@ -9,8 +9,8 @@ import Faq from "../page/utility/Faq.jsx";
 import TestimonialPage from "../page/utility/Testimonial.jsx";
 import HomeOne from "../page/home/HomeOne.jsx";
 import Team from "../page/team";
-import Service from "../page/service";
 
+// import Service from "../page/service";
 // import ErrorPage from "../error-page";
 // import Reset from "../page/auth/ResetPassword.jsx";
 // import SignIn from "../page/auth/SignIn";
@@ -51,6 +51,8 @@ import Brand from "../page/Brand.jsx";
 import Blog1 from "../page/blog/Blog.jsx";
 import Pestrashop from "../page/service/Pestrashop.jsx";
 import Shift4shop from "../page/service/Shift4shop.jsx";
+import BigCommerce from "../page/service/BigCommerce.jsx";
+import WooCommerceDevelopment from "../page/service/WooCommerceDevelopment.jsx";
 
 // import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
 // import Categories from "../page/portfolio/Categories.jsx";
@@ -117,10 +119,10 @@ export const router = createBrowserRouter([
 						path: "/blog1",
 						element: <Blog1 />,
 					},
-					{
-						path: "/service",
-						element: <Service />,
-					},
+					// {
+					// 	path: "/service",
+					// 	element: <Service />,
+					// },
 					// {
 					// 	path: "/single-service",
 					// 	element: <SingleService />,
@@ -201,6 +203,14 @@ export const router = createBrowserRouter([
 					{
 						path: "/shift4shop",
 						element: <Shift4shop />,
+					},
+					{
+						path: "/bigcommerce",
+						element: <BigCommerce />,
+					},
+					{
+						path: "/woocommercedevelopment",
+						element: <WooCommerceDevelopment />,
 					},
 				],
 			},

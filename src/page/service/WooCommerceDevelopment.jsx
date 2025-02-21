@@ -1,9 +1,9 @@
+
 import BreadCrumb from '../../components/common/Breadcrumb'
 
-import Logo from '../../assets/images/images2/Sfhitforshop-logo-150x150.png'
+import Logo from '../../assets/images/images2/woo-logo.png'
 import Clutch from '../../assets/images/images2/clutch.svg'
 import StarImg from '../../assets/images/images2/star.png'
-
 
 import ServiceIcon1 from '../../assets/images/images2/cms-setup.png'
 import ServiceIcon2 from '../../assets/images/images2/psd-to-wordpress.png'
@@ -15,8 +15,8 @@ import ServiceIcon7 from '../../assets/images/images2/woo-commerce.png'
 import ServiceIcon8 from '../../assets/images/images2/blog.png'
 import ServiceIcon9 from '../../assets/images/images2/api.png'
 
-import Imgwithtxt1 from '../../assets/images/images2/hire-shift4shop-developer.png'
-import Imgwithtxt2 from '../../assets/images/images2/Inner-Sections-Imgs-Codersh.png'
+import Imgwithtxt1 from '../../assets/images/images2/Woocommerce-image.png'
+import Imgwithtxt2 from '../../assets/images/images2/Woocommerce-image-Project.png'
 
 import ProcessCard1 from '../../assets/images/images2/reauirement-gathering.png'
 import ProcessCard2 from '../../assets/images/images2/uiux.png'
@@ -30,29 +30,24 @@ import Workcard1 from '../../assets/images/ourwork/New-Project-1-1024x1024.jpg'
 import Workcard2 from '../../assets/images/ourwork/New-Project-3-1024x1024.jpg'
 import Workcard3 from '../../assets/images/ourwork/New-Project-1024x1024.jpg'
 
-
-
-function Shift4shop() {
+function WooCommerceDevelopment() {
     return (
         <div>
-            <BreadCrumb title="Shift4Shop" />
+            <BreadCrumb title="Woo Commerce" />
 
             <div className="aximo-breadcrumb">
                 <div className="container">
                     <img src={Logo} alt width={100} />
                     <h1 className="post__title mb-2" style={{ fontSize: '50px' }}>
-                        Shift4Shop Development Services
+                        Unleashing Potential with WooCommerce Development Service
                     </h1>
-                    <p className="banner-desciption">
-                        World - class Shift4Shop Development Company that assists businesses &amp; organisations in improving their
-                        web presence &amp; generating more leads.
+                    <p className="banner-desciption">Codersh Web Services is your dedicated partner in harnessing the power of
+                        WooCommerce for your online store. Our comprehensive WooCommerce Development Services are crafted to
+                        elevate your e-commerce experience, ensuring seamless functionality and an enhanced user journey.
                     </p>
-                    {/* <nav class="breadcrumbs">
-
-                  </nav> */}
+                    {/* <nav class="breadcrumbs"></nav> */}
                 </div>
             </div>
-
 
             <div className="top-rated">
                 <div className="container">
@@ -81,11 +76,10 @@ function Shift4shop() {
             <div className="services-section text-center py-5 my-lg-5">
                 <div className="container">
                     <h3 className="services-heading mb-4">
-                        Shift4Shop Development Services We Offer
+                        WooCommerce Development Services We Offer
                     </h3>
-                    <p>
-                        We are dedicated to aiding our clients in opening the doors to the virtual world by offering a diverse
-                        range of Shift4Shop solutions that enable the next-generation user experience for your target audience.
+                    <p>We are dedicated to aiding our clients in opening the doors to the virtual world by offering a diverse
+                        range of WooCommerce solutions that enable the next-generation user experience for your target audience.
                     </p>
                     <div className="row">
                         <div className="col-lg-4">
@@ -94,8 +88,7 @@ function Shift4shop() {
                                     <img src={ServiceIcon1} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop CMS Setup
-                                    and Configuration
+                                    WooCommerce Store Setup and Configuration
                                 </h6>
                             </div>
                         </div>
@@ -105,8 +98,7 @@ function Shift4shop() {
                                     <img src={ServiceIcon2} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Pixel perfect PSD to
-                                    Shift4Shop conversion
+                                    Conversion of Designs to <br /> Pixel-Perfect WooCommerce Websites
                                 </h6>
                             </div>
                         </div>
@@ -116,8 +108,7 @@ function Shift4shop() {
                                     <img src={ServiceIcon3} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop Custom
-                                    Website Development
+                                    Custom WooCommerce Website Development
                                 </h6>
                             </div>
                         </div>
@@ -127,7 +118,7 @@ function Shift4shop() {
                                     <img src={ServiceIcon4} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop theme development &amp; customization
+                                    WooCommerce Theme Development &amp; Customization
                                 </h6>
                             </div>
                         </div>
@@ -137,8 +128,7 @@ function Shift4shop() {
                                     <img src={ServiceIcon5} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop plugin
-                                    development Service
+                                    WooCommerce Plugin Development Service
                                 </h6>
                             </div>
                         </div>
@@ -148,8 +138,7 @@ function Shift4shop() {
                                     <img src={ServiceIcon6} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop migration and
-                                    maintenance services
+                                    WooCommerce Migration and Maintenance Services
                                 </h6>
                             </div>
                         </div>
@@ -159,8 +148,7 @@ function Shift4shop() {
                                     <img src={ServiceIcon7} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop Development
-                                    Service
+                                    WooCommerce Development Service
                                 </h6>
                             </div>
                         </div>
@@ -170,8 +158,7 @@ function Shift4shop() {
                                     <img src={ServiceIcon8} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop Blog
-                                    Development Service
+                                    WooCommerce Blog Development Service
                                 </h6>
                             </div>
                         </div>
@@ -181,15 +168,13 @@ function Shift4shop() {
                                     <img src={ServiceIcon9} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop API Integration
-                                    Service
+                                    WooCommerce API Integration Service
                                 </h6>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
 
             <div>
                 <div className="image-with-text">
@@ -202,12 +187,12 @@ function Shift4shop() {
                         <div className="col-lg-6 p-0">
                             <div className="image-with-text-text">
                                 <h3 className="iwt-heading mb-4">
-                                    Hire Shift4Shop Developer
+                                    Hire Dedicated WooCommerce Developer
                                 </h3>
                                 <p className="iwt-description mb-4">
-                                    We provide you with dedicated infrastructure and Expert Shift4Shop developers working only on
-                                    your project with this engagement model, giving WooCommerce Custom Development options. If you
-                                    want complete control over the project, this option is ideal.
+                                    Elevate your online store with our WooCommerce Custom Development options. Our dedicated
+                                    infrastructure and expert WooCommerce developers work exclusively on your project, offering
+                                    complete control and transparency.
                                 </p>
                                 <ul className="mb-5">
                                     <li>
@@ -220,11 +205,11 @@ function Shift4shop() {
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Guarantee of no hidden fees
+                                        Transparent Billing with Tracked Hours
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Calculate the Tracked hours and pay
+                                        Assurance of No Hidden Fees
                                     </li>
                                 </ul>
                                 <a href="#" className="iwt-button">
@@ -245,12 +230,11 @@ function Shift4shop() {
                         <div className="col-lg-6 p-0">
                             <div className="image-with-text-text">
                                 <h3 className="iwt-heading mb-4">
-                                    Why Choose Shift4Shop for Project
+                                    Why Choose WooCommerce for Your Online Store
                                 </h3>
                                 <p className="iwt-description mb-4">
-                                    You're operating a profitable business and have some excellent ideas! But you don't yet have a
-                                    good web presence! It's time to take the next step and allow our custom WordPress WooCommerce
-                                    Development Services for your Online eCommerce shop to revolutionize the way you do business.
+                                    Your business deserves a dynamic online presence. Choose our custom WooCommerce Development
+                                    Services to revolutionize your e-commerce venture, ensuring a robust and scalable platform.
                                 </p>
                                 <ul className="mb-5">
                                     <li>
@@ -259,23 +243,19 @@ function Shift4shop() {
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Easy to operate
+                                        Extensive Plugin Library
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Wide Range of Plugins
+                                        Flexibility and Adaptability
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Flexible &amp; Adaptive
+                                        Diverse Range of Themes
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Wide Range of Themes
-                                    </li>
-                                    <li>
-                                        <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Large Community
+                                        Active Community Support
                                     </li>
                                 </ul>
                                 <a href="#" className="iwt-button">
@@ -286,6 +266,8 @@ function Shift4shop() {
                     </div>
                 </div>
             </div>
+
+
 
 
             <div className="process-we-follow text-center py-5">
@@ -381,10 +363,8 @@ function Shift4shop() {
                     </div>
                 </div>
             </div>
-
-
         </div>
     )
 }
 
-export default Shift4shop
+export default WooCommerceDevelopment

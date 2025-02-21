@@ -1,9 +1,8 @@
-import BreadCrumb from '../../components/common/Breadcrumb'
 
-import Logo from '../../assets/images/images2/Sfhitforshop-logo-150x150.png'
+import BreadCrumb from '../../components/common/Breadcrumb'
+import Logo from '../../assets/images/images2/bigcommerce.png'
 import Clutch from '../../assets/images/images2/clutch.svg'
 import StarImg from '../../assets/images/images2/star.png'
-
 
 import ServiceIcon1 from '../../assets/images/images2/cms-setup.png'
 import ServiceIcon2 from '../../assets/images/images2/psd-to-wordpress.png'
@@ -15,8 +14,8 @@ import ServiceIcon7 from '../../assets/images/images2/woo-commerce.png'
 import ServiceIcon8 from '../../assets/images/images2/blog.png'
 import ServiceIcon9 from '../../assets/images/images2/api.png'
 
-import Imgwithtxt1 from '../../assets/images/images2/hire-shift4shop-developer.png'
-import Imgwithtxt2 from '../../assets/images/images2/Inner-Sections-Imgs-Codersh.png'
+import Imgwithtxt1 from '../../assets/images/images2/Bigcommerce-image-1.png'
+import Imgwithtxt2 from '../../assets/images/images2/Bigcommerce-image-2-1.png'
 
 import ProcessCard1 from '../../assets/images/images2/reauirement-gathering.png'
 import ProcessCard2 from '../../assets/images/images2/uiux.png'
@@ -30,29 +29,28 @@ import Workcard1 from '../../assets/images/ourwork/New-Project-1-1024x1024.jpg'
 import Workcard2 from '../../assets/images/ourwork/New-Project-3-1024x1024.jpg'
 import Workcard3 from '../../assets/images/ourwork/New-Project-1024x1024.jpg'
 
-
-
-function Shift4shop() {
+function BigCommerce() {
     return (
         <div>
-            <BreadCrumb title="Shift4Shop" />
+            <BreadCrumb title="Big Commerce" />
 
             <div className="aximo-breadcrumb">
                 <div className="container">
                     <img src={Logo} alt width={100} />
                     <h1 className="post__title mb-2" style={{ fontSize: '50px' }}>
-                        Shift4Shop Development Services
+                        Codersh Web Services - Your BigCommerce Development Partner
                     </h1>
                     <p className="banner-desciption">
-                        World - class Shift4Shop Development Company that assists businesses &amp; organisations in improving their
-                        web presence &amp; generating more leads.
+                        Embark on a journey of e-commerce excellence with Codersh Web Services, your dedicated partner in
+                        delivering comprehensive BigCommerce development services. Our team of skilled professionals is
+                        committed to creating a seamless and powerful online shopping experience tailored to your brand's unique
+                        requirements.
                     </p>
                     {/* <nav class="breadcrumbs">
 
                   </nav> */}
                 </div>
             </div>
-
 
             <div className="top-rated">
                 <div className="container">
@@ -81,12 +79,8 @@ function Shift4shop() {
             <div className="services-section text-center py-5 my-lg-5">
                 <div className="container">
                     <h3 className="services-heading mb-4">
-                        Shift4Shop Development Services We Offer
+                        BigCommerce Development Services We Offer
                     </h3>
-                    <p>
-                        We are dedicated to aiding our clients in opening the doors to the virtual world by offering a diverse
-                        range of Shift4Shop solutions that enable the next-generation user experience for your target audience.
-                    </p>
                     <div className="row">
                         <div className="col-lg-4">
                             <div className="services-card">
@@ -94,9 +88,11 @@ function Shift4shop() {
                                     <img src={ServiceIcon1} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop CMS Setup
-                                    and Configuration
+                                    BigCommerce Store Setup and Configuration
                                 </h6>
+                                <p>Establish a robust online presence with expert setup and configuration services for your
+                                    BigCommerce store.
+                                </p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -105,9 +101,11 @@ function Shift4shop() {
                                     <img src={ServiceIcon2} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Pixel perfect PSD to
-                                    Shift4Shop conversion
+                                    Custom BigCommerce Website Development
                                 </h6>
+                                <p>Elevate your brand with a unique and visually appealing website tailored to the BigCommerce
+                                    platform.
+                                </p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -116,9 +114,11 @@ function Shift4shop() {
                                     <img src={ServiceIcon3} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop Custom
-                                    Website Development
+                                    BigCommerce Theme Development &amp; Customization
                                 </h6>
+                                <p>Stand out in the competitive e-commerce landscape with bespoke theme development and
+                                    customization.
+                                </p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -127,8 +127,12 @@ function Shift4shop() {
                                     <img src={ServiceIcon4} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop theme development &amp; customization
+                                    BigCommerce App Development
                                 </h6>
+                                <p>
+                                    Extend the functionality of your store with custom app development services designed for
+                                    BigCommerce.
+                                </p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -137,9 +141,11 @@ function Shift4shop() {
                                     <img src={ServiceIcon5} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop plugin
-                                    development Service
+                                    BigCommerce Migration Services
                                 </h6>
+                                <p>Seamlessly transition your online store to BigCommerce, ensuring data integrity and minimal
+                                    downtime.
+                                </p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -148,9 +154,12 @@ function Shift4shop() {
                                     <img src={ServiceIcon6} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop migration and
-                                    maintenance services
+                                    BigCommerce API Integration
                                 </h6>
+                                <p>
+                                    Enhance the connectivity of your store by integrating third-party services seamlessly
+                                    through BigCommerce APIs.
+                                </p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -159,9 +168,11 @@ function Shift4shop() {
                                     <img src={ServiceIcon7} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop Development
-                                    Service
+                                    BigCommerce Maintenance and Support
                                 </h6>
+                                <p>Ensure the ongoing success of your BigCommerce store with dedicated maintenance and support
+                                    services.
+                                </p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -170,9 +181,12 @@ function Shift4shop() {
                                     <img src={ServiceIcon8} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop Blog
-                                    Development Service
+                                    BigCommerce SEO Optimization
                                 </h6>
+                                <p>
+                                    Boost your online visibility with our specialized SEO optimization services tailored for
+                                    BigCommerce.
+                                </p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -181,9 +195,11 @@ function Shift4shop() {
                                     <img src={ServiceIcon9} alt />
                                 </div>
                                 <h6 className="service-title">
-                                    Shift4Shop API Integration
-                                    Service
+                                    BigCommerce Consulting Services
                                 </h6>
+                                <p>Tap into our expertise for strategic insights and recommendations to maximize the potential
+                                    of your BigCommerce store.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -202,12 +218,12 @@ function Shift4shop() {
                         <div className="col-lg-6 p-0">
                             <div className="image-with-text-text">
                                 <h3 className="iwt-heading mb-4">
-                                    Hire Shift4Shop Developer
+                                    Hire BigCommerce Developer
                                 </h3>
                                 <p className="iwt-description mb-4">
-                                    We provide you with dedicated infrastructure and Expert Shift4Shop developers working only on
-                                    your project with this engagement model, giving WooCommerce Custom Development options. If you
-                                    want complete control over the project, this option is ideal.
+                                    Take control of your BigCommerce development project with Codersh Web Services. Our dedicated
+                                    infrastructure and expert BigCommerce developers ensure a customized engagement model, providing
+                                    flexibility and transparency for your e-commerce success.
                                 </p>
                                 <ul className="mb-5">
                                     <li>
@@ -220,11 +236,11 @@ function Shift4shop() {
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Guarantee of no hidden fees
+                                        Guarantee of No Hidden Fees
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Calculate the Tracked hours and pay
+                                        Track Hours and Pay with Precision
                                     </li>
                                 </ul>
                                 <a href="#" className="iwt-button">
@@ -245,37 +261,37 @@ function Shift4shop() {
                         <div className="col-lg-6 p-0">
                             <div className="image-with-text-text">
                                 <h3 className="iwt-heading mb-4">
-                                    Why Choose Shift4Shop for Project
+                                    Why Choose BigCommerce for Your Project
                                 </h3>
                                 <p className="iwt-description mb-4">
-                                    You're operating a profitable business and have some excellent ideas! But you don't yet have a
-                                    good web presence! It's time to take the next step and allow our custom WordPress WooCommerce
-                                    Development Services for your Online eCommerce shop to revolutionize the way you do business.
+                                    Choose Codersh Web Services and BigCommerce for a powerful, scalable, and customer-centric
+                                    online store. Discover the advantages of BigCommerce development for a seamless and successful
+                                    e-commerce presence.
                                 </p>
                                 <ul className="mb-5">
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Free to Use and Setup
+                                        User-Friendly Interface
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Easy to operate
+                                        Mobile Responsiveness
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Wide Range of Plugins
+                                        Robust Security Features
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Flexible &amp; Adaptive
+                                        Scalability for Growing Businesses
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Wide Range of Themes
+                                        Extensive App Marketplace
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '5px' }} />
-                                        Large Community
+                                        24/7 Support
                                     </li>
                                 </ul>
                                 <a href="#" className="iwt-button">
@@ -285,8 +301,8 @@ function Shift4shop() {
                         </div>
                     </div>
                 </div>
+                {/* End */}
             </div>
-
 
             <div className="process-we-follow text-center py-5">
                 <div className="container">
@@ -382,9 +398,8 @@ function Shift4shop() {
                 </div>
             </div>
 
-
         </div>
     )
 }
 
-export default Shift4shop
+export default BigCommerce

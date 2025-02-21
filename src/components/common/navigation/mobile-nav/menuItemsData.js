@@ -41,9 +41,22 @@ export const menuItemsData = [
 		title: "Services",
 		url: "#",
 		submenu: [
+			// s
 			{
-				title: "Services",
-				url: "service",
+				title: "PestraShop",
+				url: "pestrashop",
+			},
+			{
+				title: "Shift4Shop",
+				url: "shift4shop",
+			},
+			{
+				title: "BigCommerce",
+				url: "bigcommerce",
+			},
+			{
+				title: "WooCommerce",
+				url: "woocommercedevelopment",
 			},
 			// {
 			// 	title: "Blog Grid",

@@ -30,8 +30,11 @@ function Header() {
 							<NavItem url="about-us">About Us</NavItem>
 							<NavItem dropdown title="Services">
 								<Dropdown>
-									<DropdownItem url="service">Service</DropdownItem>
-									<DropdownItem url="pestrashop">Pestrashop</DropdownItem>
+									{/* <DropdownItem url="service">Service</DropdownItem> */}
+									<DropdownItem url="pestrashop">PestraShop</DropdownItem>
+									<DropdownItem url="shift4shop">Shift4Shop</DropdownItem>
+									<DropdownItem url="bigcommerce">BigCommerce</DropdownItem>
+									<DropdownItem url="woocommercedevelopment">WooCommerce</DropdownItem>
 								</Dropdown>
 							</NavItem>
 							<NavItem dropdown title="Projects">
