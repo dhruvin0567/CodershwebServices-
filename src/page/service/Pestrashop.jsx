@@ -1,6 +1,7 @@
 
 import BreadCrumb from '../../components/common/Breadcrumb'
-import Logo from '../../assets/images/images2/clutch.svg'
+import Logo from '../../assets/images/images2/prestashop.png'
+import Clutch from '../../assets/images/images2/clutch.svg'
 import StarImg from '../../assets/images/images2/star.png'
 
 import ServiceIcon1 from '../../assets/images/images2/cms-setup.png'
@@ -35,7 +36,7 @@ function Pestrashop() {
 
             <div className="aximo-breadcrumb">
                 <div className="container">
-                    <img src="/src/assets/images/images2/prestashop.png" alt width={100} />
+                    <img src={Logo} alt width={100} />
                     <h1 className="post__title mb-2" style={{ fontSize: '50px' }}>
                         Transforming Businesses with PrestaShop Development Service
                     </h1>
@@ -54,7 +55,7 @@ function Pestrashop() {
                             <a href="#" className="clutch-widget d-flex mb-4 mb-lg-0">
                                 <span className="me-2">
                                     <p className="mb-0">Reviewd On</p>
-                                    <img src={Logo} alt width={82} />
+                                    <img src={Clutch} alt width={82} />
                                 </span>
                                 <span className="d-flex flex-column justify-content-between">
                                     <img src={StarImg} alt width={90} />
