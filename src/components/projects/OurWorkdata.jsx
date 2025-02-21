@@ -1,18 +1,19 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import BackgroundImage from '../../assets/images/ourwork/Background-5.png';
 
 const projectData = [
     {
         id: crypto.randomUUID(),
         category: 'ecommerce-development',
-        img: '../../../src/assets/images/ourwork/Background-5.png',
+        img: BackgroundImage,
         name: 'Premium Supplements Brand',
         technology: 'Shopify | Bootstrap v5 | JavaScript',
     },
     {
         id: crypto.randomUUID(),
         category: "web-development",
-        img: "/src/assets/images/ourwork/New-Project-5.jpg",
+        img: "src/assets/images/ourwork/New-Project-5.jpg",
         name: "Digital Agency | USA",
         technology: "Wordpress | Bootstrap | Stripe",
     },
