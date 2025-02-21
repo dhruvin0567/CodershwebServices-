@@ -43,11 +43,12 @@ import Winestore from "../page/solutions/Winestore.jsx";
 import Businessdirectory from "../page/solutions/Businessdirectory.jsx";
 import Creditrepair from "../page/solutions/Creditrepair.jsx";
 import Itdigitalagency from "../page/solutions/Itdigitalagency.jsx";
-import Blog1 from "../page/blog/Blog1.jsx";
+
 import CaseStudies from "../page/projects/CaseStudies.jsx";
 import OurWork from "../page/projects/OurWork.jsx";
 import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
 import Brand from "../page/Brand.jsx";
+import Blog1 from "../page/blog/Blog.jsx";
 
 // import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
 // import Categories from "../page/portfolio/Categories.jsx";

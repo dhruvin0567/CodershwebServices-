@@ -27,6 +27,7 @@ import Blog25Img from "/src/assets/images/images2/image_2021_12_27T12_30_06_074Z
 import Blog26Img from "/src/assets/images/images2/Unleashing-the-Power-of-Shopify-768x404.png";
 import Blog27Img from "/src/assets/images/images2/Optimizing-Shopify-Store-Performance-A-Technical-Guide-768x404.png";
 import Blog28Img from "/src/assets/images/images2/codersh-1-768x512.png";
+import ArrowImg from "../../../assets/images/images2/arrow-right.svg";
 // import FadeInStagger from "../../animation/FadeInStagger";  // Assuming you have a fade-in stagger animation
 
 
@@ -235,7 +236,7 @@ function Blog1data() {
                     <Link to={blog.link} className="blog-link">
                       Read more
                       <img
-                        src="src/assets/images/images2/arrow-right.svg"
+                        src={ArrowImg}
                         alt="arrow"
                         className="readMore-btn"
                         height="17px"

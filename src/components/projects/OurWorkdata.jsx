@@ -1,82 +1,92 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import BackgroundImage from '../../assets/images/ourwork/Background-5.png';
+import Background1Image from '../../assets/images/ourwork/Background-5.png';
+import Background2Image from '../../assets/images/ourwork/New-Project-5.jpg';
+import Background3Image from '../../assets/images/ourwork/New-Project-4.jpg';
+import Background4Image from '../../assets/images/ourwork/m-1024x1024.jpg';
+import Background5Image from '../../assets/images/ourwork/IKKS.png';
+import Background6Image from '../../assets/images/ourwork/Background-6.png';
+import Background7Image from '../../assets/images/ourwork/New-Project-2-1024x1024.jpg';
+import Background8Image from '../../assets/images/ourwork/New-Project-1024x1024.jpg';
+import Background9Image from '../../assets/images/ourwork/New-Project-3-1024x1024.jpg';
+import Background10Image from '../../assets/images/ourwork/New-Project-1-1024x1024.jpg';
+
 
 const projectData = [
     {
         id: crypto.randomUUID(),
         category: 'ecommerce-development',
-        img: BackgroundImage,
+        img: Background1Image,
         name: 'Premium Supplements Brand',
         technology: 'Shopify | Bootstrap v5 | JavaScript',
     },
     {
         id: crypto.randomUUID(),
         category: "web-development",
-        img: "src/assets/images/ourwork/New-Project-5.jpg",
+        img: Background2Image,
         name: "Digital Agency | USA",
         technology: "Wordpress | Bootstrap | Stripe",
     },
     {
         id: crypto.randomUUID(),
         category: "ecommerce-development",
-        img: "/src/assets/images/ourwork/Background-5.png",
+        img: Background1Image,
         name: "Kids Primium Clothing Store",
         technology: "Shopify | Liquid | CSS3",
     },
     {
         id: crypto.randomUUID(),
         category: "ecommerce-development",
-        img: "/src/assets/images/ourwork/New-Project-4.jpg",
+        img: Background3Image,
         name: "Online Kitchen Accessories",
         technology: "Shopify | CSS3 | JavaScript",
     },
     {
         id: crypto.randomUUID(),
         category: "web-development",
-        img: "/src/assets/images/ourwork/m-1024x1024.jpg",
+        img: Background4Image,
         name: "Luxury Resort Website",
         technology: "Wordpress | Elementor Pro | Calendly",
     },
     {
         id: crypto.randomUUID(),
         category: "ecommerce-development",
-        img: "/src/assets/images/ourwork/IKKS.png",
+        img: Background5Image,
         name: "Luxury Clothing Brand",
         technology: "PHP | Heroku | Sass",
     },
     {
         id: crypto.randomUUID(),
         category: "ecommerce-development",
-        img: "/src/assets/images/ourwork/Background-6.png",
+        img: Background6Image,
         name: "Clean Water Store",
         technology: "Wordpress + MIVA",
     },
     {
         id: crypto.randomUUID(),
         category: "ecommerce-development",
-        img: "/src/assets/images/ourwork/New-Project-2-1024x1024.jpg",
+        img: Background7Image,
         name: "Take Flight",
         technology: "Wordpress | Elementor Pro | Woocommerce",
     },
     {
         id: crypto.randomUUID(),
         category: "web-development",
-        img: "/src/assets/images/ourwork/New-Project-1024x1024.jpg",
+        img: Background8Image,
         name: "Redesign Hub",
         technology: "Wordpress | Elementor Pro | Calendly",
     },
     {
         id: crypto.randomUUID(),
         category: "web-development",
-        img: "/src/assets/images/ourwork/New-Project-3-1024x1024.jpg",
+        img: Background9Image,
         name: "Texas Fowlers",
         technology: "Shift4shop | Bootstrap | JavaScript",
     },
     {
         id: crypto.randomUUID(),
         category: "web-development",
-        img: "/src/assets/images/ourwork/New-Project-1-1024x1024.jpg",
+        img: Background10Image,
         name: "Online Book Store",
         technology: "Shift4shop | React | Styled Components",
     },

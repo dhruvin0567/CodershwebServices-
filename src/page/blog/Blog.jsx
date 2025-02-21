@@ -5,7 +5,7 @@ import Blog1data from "../../components/blog/blog1/Blog1data";
 function Blog1() {
     return (
         <div>
-            <BreadCrumb title="Blog 1" />
+            <BreadCrumb title="Blog" />
             <Blog1data />
         </div>
     )

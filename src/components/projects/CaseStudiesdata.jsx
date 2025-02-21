@@ -1,52 +1,57 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import ArrowImg from '../../assets/images/images2/arrow-right.svg';
+import Case1Img from '../../assets/images/images2/image_2024_07_05T14_06_31_811Z-768x380.png';
+import Case2Img from '../../assets/images/images2/Screenshot-2024-07-26-153702-768x379.png';
+import Case3Img from '../../assets/images/images2/Screenshot-2024-07-26-153524-768x380.png';
+import Case4Img from '../../assets/images/images2/Screenshot-2024-07-26-153615-768x381.png';
+import Case5Img from '../../assets/images/images2/Screenshot-2024-07-26-154119-768x380.png';
+import Case6Img from '../../assets/images/images2/Screenshot-2024-07-15-173730-768x374.png';
+import Case7Img from '../../assets/images/images2/Screenshot-2024-07-15-170221-768x338.png';
 
-
-
-// import Case1Img from "src/assets/images/images2/image_2024_07_05T14_06_31_811Z-768x380.png";
 
 
 const caseStudiesData = [
   {
     id: crypto.randomUUID(),
     title: "Van Hunks: Spicing Up Their Shopify Store",
-    img: "src/assets/images/images2/image_2024_07_05T14_06_31_811Z-768x380.png",
+    img: Case1Img,
     link: "/casestudies/Van Hunks: Spicing Up Their Shopify Store",
   },
   {
     id: crypto.randomUUID(),
     title: "Madame F – Celebrating Diversity in Every Glass",
-    img: "src/assets/images/images2/Screenshot-2024-07-26-153702-768x379.png",
+    img: Case2Img,
     link: "#",
   },
   {
     id: crypto.randomUUID(),
     title: "LIBERATION COCKTAILS – Elevating the Pre-Mixed Cocktail Experience with a Custom Shopify Solution",
-    img: "src/assets/images/images2/Screenshot-2024-07-26-153524-768x380.png",
+    img: Case3Img,
     link: "#",
   },
   {
     id: crypto.randomUUID(),
     title: "Chez Omar – French Caribbean Cuisine: NYC’s Digital Flavor",
-    img: "src/assets/images/images2/Screenshot-2024-07-26-153615-768x381.png",
+    img: Case4Img,
     link: "#",
   },
   {
     id: crypto.randomUUID(),
     title: "Shopify E-Commerce Development Project for ReinventU",
-    img: "src/assets/images/images2/Screenshot-2024-07-26-154119-768x380.png",
+    img: Case5Img,
     link: "#",
   },
   {
     id: crypto.randomUUID(),
     title: "Shopify E-Commerce Development Project for a Kids Clothing Store",
-    img: "src/assets/images/images2/Screenshot-2024-07-15-173730-768x374.png",
+    img: Case6Img,
     link: "#",
   },
   {
     id: crypto.randomUUID(),
     title: "How a luxury clothing brand utilized Codersh to bring their Stores online",
-    img: "src/assets/images/images2/Screenshot-2024-07-15-170221-768x338.png",
+    img: Case7Img,
     link: "#",
   }
 ];
@@ -83,7 +88,7 @@ function CaseStudiesdata() {
                     <Link to={caseStudy.link} className="blog-link">
                       Read more
                       <img
-                        src="src/assets/images/images2/arrow-right.svg"
+                        src={ArrowImg}
                         alt="arrow"
                         className="readMore-btn"
                         height="17px"
