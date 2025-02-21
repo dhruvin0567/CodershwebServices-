@@ -5,7 +5,30 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import Star2Img from "../../assets/images/v1/icon/star2.png";
 import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 
+
+import Slider1Img from '../../assets/images/images2/hpn-global-front-page.webp';
+import Slider2Img from '../../assets/images/images2/tyrepages-front-page.webp';
+import Slider3Img from '../../assets/images/images2/redesign-hub-front-page.webp';
+
+import Logo1Img from '../../assets/images/images2/tyrepage.webp';
+import Logo2Img from '../../assets/images/images2/hpn-logo-1.webp';
+import Logo3Img from '../../assets/images/images2/redesign-hub-logo.webp';
+import Logo4Img from '../../assets/images/images2/tyrepage.webp';
+import Logo5Img from '../../assets/images/images2/hpn-logo-1.webp';
+import Logo6Img from '../../assets/images/images2/redesign-hub-logo.webp';
+
+import video1 from '../../assets/images/Videos/Video-1-compressed.mp4';
+import video2 from '../../assets/images/Videos/Video-2-compressed.mp4';
+import video3 from '../../assets/images/Videos/Video-3-compressed.mp4';
+import video4 from '../../assets/images/Videos/Video-4-compressed.mp4';
+import video5 from '../../assets/images/Videos/Video-5-compressed.mp4';
+import video6 from '../../assets/images/Videos/Video-6-compressed.mp4';
+
+
 function Bussinessdirectorydata() {
+
+    const videoFiles = [video1, video2, video3, video4, video5, video6];
+
 
     const [currentVideo, setCurrentVideo] = useState(null);  // Track the currently playing video
     const videoRefs = useRef([]); // Store references to video elements
@@ -116,7 +139,7 @@ function Bussinessdirectorydata() {
                     >
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.1s">
-                                <img src="src/assets/images/images2/hpn-global-front-page.webp" alt="" />
+                                <img src={Slider1Img} alt="" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -136,7 +159,7 @@ function Bussinessdirectorydata() {
 
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.2s">
-                                <img src="src/assets/images/images2/tyrepages-front-page.webp" alt="" />
+                                <img src={Slider2Img} alt="" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -156,7 +179,7 @@ function Bussinessdirectorydata() {
 
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.3s">
-                                <img src="src/assets/images/images2/redesign-hub-front-page.webp" alt="" />
+                                <img src={Slider3Img} alt="" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -262,22 +285,22 @@ function Bussinessdirectorydata() {
                         }}
                     >
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/tyrepage.webp" alt="" className="mx-auto d-block" />
+                            <img src={Logo1Img} alt="" className="mx-auto d-block" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/hpn-logo-1.webp" alt="" className="mx-auto d-block" />
+                            <img src={Logo2Img} alt="" className="mx-auto d-block" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/redesign-hub-logo.webp" alt="" className="mx-auto d-block" />
+                            <img src={Logo3Img} alt="" className="mx-auto d-block" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/tyrepage.webp" alt="" className="mx-auto d-block" />
+                            <img src={Logo4Img} alt="" className="mx-auto d-block" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/hpn-logo-1.webp" alt="" className="mx-auto d-block" />
+                            <img src={Logo5Img} alt="" className="mx-auto d-block" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/redesign-hub-logo.webp" alt="" className="mx-auto d-block" />
+                            <img src={Logo6Img} alt="" className="mx-auto d-block" />
                         </SwiperSlide>
                     </Swiper>
                 </div>
@@ -333,7 +356,7 @@ function Bussinessdirectorydata() {
                                 1024: { slidesPerView: 4 },
                             }}
                         >
-                            {['Video-1', 'Video-2', 'Video-3', 'Video-4', 'Video-5', 'Video-6'].map((video, index) => (
+                            {videoFiles.map((video, index) => (
                                 <SwiperSlide key={index}>
                                     <button
                                         className="video-button"
@@ -347,7 +370,7 @@ function Bussinessdirectorydata() {
                                                 ref={(el) => (videoRefs.current[index] = el)}
                                             >
                                                 <source
-                                                    src={`src/assets/images/Videos/${video}-compressed.mp4`}
+                                                    src={video} // Use the imported video file here
                                                     type="video/mp4"
                                                 />
                                                 Your browser does not support the video tag.

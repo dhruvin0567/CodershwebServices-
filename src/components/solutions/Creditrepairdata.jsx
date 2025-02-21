@@ -5,7 +5,35 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import Star2Img from "../../assets/images/v1/icon/star2.png";
 import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 
+import Slider1Img from '../../assets/images/images2/credi-coach-front-page.png';
+import Slider2Img from '../../assets/images/images2/Credit-Saint-Ranked-1-By-Top-Financial-Sites-front-page.png';
+import Slider3Img from '../../assets/images/images2/Credit101-front-page.png';
+import Slider4Img from '../../assets/images/images2/Framework-Credit-front-page.png';
+import Slider5Img from '../../assets/images/images2/preimier-credit-front-page.png';
+import Slider6Img from '../../assets/images/images2/sd-capital-front-page.png';
+import Slider7Img from '../../assets/images/images2/stellar-credit-front-page.png';
+
+import Logo1Img from '../../assets/images/images2/logo-1.webp';
+import Logo2Img from '../../assets/images/images2/logo-2.webp';
+import Logo3Img from '../../assets/images/images2/logo-3.webp';
+import Logo4Img from '../../assets/images/images2/logo-4.webp';
+import Logo5Img from '../../assets/images/images2/logo-5.webp';
+import Logo6Img from '../../assets/images/images2/credit-101-logo.webp';
+import Logo7Img from '../../assets/images/images2/credit-saint-logo.webp';
+
+import video1 from '../../assets/images/Videos/Video-1-compressed.mp4';
+import video2 from '../../assets/images/Videos/Video-2-compressed.mp4';
+import video3 from '../../assets/images/Videos/Video-3-compressed.mp4';
+import video4 from '../../assets/images/Videos/Video-4-compressed.mp4';
+import video5 from '../../assets/images/Videos/Video-5-compressed.mp4';
+import video6 from '../../assets/images/Videos/Video-6-compressed.mp4';
+
+
+
+
 function Creditrepairdata() {
+
+    const videoFiles = [video1, video2, video3, video4, video5, video6];
 
 
     const [currentVideo, setCurrentVideo] = useState(null);  // Track the currently playing video
@@ -98,7 +126,7 @@ function Creditrepairdata() {
                     >
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.1s">
-                                <img src="src/assets/images/images2/credi-coach-front-page.png" alt="Credi Coach" />
+                                <img src={Slider1Img} alt="Credi Coach" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -122,7 +150,7 @@ function Creditrepairdata() {
 
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.2s">
-                                <img src="src/assets/images/images2/Credit-Saint-Ranked-1-By-Top-Financial-Sites-front-page.png" alt="Credit Saint" />
+                                <img src={Slider2Img} alt="Credit Saint" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -146,7 +174,7 @@ function Creditrepairdata() {
 
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.3s">
-                                <img src="src/assets/images/images2/Credit101-front-page.png" alt="Credit 101" />
+                                <img src={Slider3Img} alt="Credit 101" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -170,7 +198,7 @@ function Creditrepairdata() {
 
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.4s">
-                                <img src="src/assets/images/images2/Framework-Credit-front-page.png" alt="Framework Credit" />
+                                <img src={Slider4Img} alt="Framework Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -193,7 +221,7 @@ function Creditrepairdata() {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.5s">
-                                <img src="src/assets/images/images2/preimier-credit-front-page.png" alt="Premier Credit" />
+                                <img src={Slider5Img} alt="Premier Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -217,7 +245,7 @@ function Creditrepairdata() {
 
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.6s">
-                                <img src="src/assets/images/images2/sd-capital-front-page.png" alt="SD Capital" />
+                                <img src={Slider6Img} alt="SD Capital" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -241,7 +269,7 @@ function Creditrepairdata() {
 
                         <SwiperSlide>
                             <div className="aximo-project-thumb wow fadeInUpX" style={{ cursor: "grab" }} data-wow-delay="0.7s">
-                                <img src="src/assets/images/images2/stellar-credit-front-page.png" alt="Stellar Credit" />
+                                <img src={Slider7Img} alt="Stellar Credit" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -333,25 +361,25 @@ function Creditrepairdata() {
                         }}
                     >
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/logo-1.webp" alt="Logo 1" />
+                            <img src={Logo1Img} alt="Logo 1" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/logo-2.webp" alt="Logo 2" />
+                            <img src={Logo2Img} alt="Logo 2" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/logo-3.webp" alt="Logo 3" />
+                            <img src={Logo3Img} alt="Logo 3" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/logo-4.webp" alt="Logo 4" />
+                            <img src={Logo4Img} alt="Logo 4" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/logo-5.webp" alt="Logo 5" />
+                            <img src={Logo5Img} alt="Logo 5" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/credit-101-logo.webp" alt="Credit 101 Logo" />
+                            <img src={Logo6Img} alt="Credit 101 Logo" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="src/assets/images/images2/credit-saint-logo.webp" alt="Credit Saint Logo" />
+                            <img src={Logo7Img} alt="Credit Saint Logo" />
                         </SwiperSlide>
                     </Swiper>
                 </div>
@@ -406,7 +434,7 @@ function Creditrepairdata() {
                                 1024: { slidesPerView: 4 },
                             }}
                         >
-                            {['Video-1', 'Video-2', 'Video-3', 'Video-4', 'Video-5', 'Video-6'].map((video, index) => (
+                            {videoFiles.map((video, index) => (
                                 <SwiperSlide key={index}>
                                     <button
                                         className="video-button"
@@ -420,7 +448,7 @@ function Creditrepairdata() {
                                                 ref={(el) => (videoRefs.current[index] = el)}
                                             >
                                                 <source
-                                                    src={`src/assets/images/Videos/${video}-compressed.mp4`}
+                                                    src={video} // Use the imported video file here
                                                     type="video/mp4"
                                                 />
                                                 Your browser does not support the video tag.
