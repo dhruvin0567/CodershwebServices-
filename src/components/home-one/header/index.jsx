@@ -31,6 +31,7 @@ function Header() {
 							<NavItem dropdown title="Services">
 								<Dropdown>
 									<DropdownItem url="service">Service</DropdownItem>
+									<DropdownItem url="pestrashop">Pestrashop</DropdownItem>
 								</Dropdown>
 							</NavItem>
 							<NavItem dropdown title="Projects">

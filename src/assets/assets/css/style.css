@@ -474,7 +474,8 @@ p.review-ammount {
 
 .top-rated {
     padding: 2.5rem 0;
-    background-color: var(--white-smoke);
+    /* background-color: var(--white-smoke); */
+    box-shadow: 1px 1px 17px 0px #dfdede;
 }
 
 .top-rated .container {
@@ -486,7 +487,7 @@ p.review-ammount {
 }
 
 .services-card {
-    background-color: var(--white-smoke);
+    /* background-color: var(--white-smoke); */
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 40px 30px;
@@ -522,7 +523,7 @@ a.iwt-button:hover {
 }
 
 .image-with-text {
-    background-color: var(--white-smoke);
+    /* background-color: var(--white-smoke); */
 }
 
 .image-with-text.reverse .row {
@@ -534,7 +535,7 @@ a.iwt-button:hover {
 }
 
 .process-card {
-    background-color: var(--white-smoke);
+    /* background-color: var(--white-smoke); */
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 40px 0px;

@@ -49,6 +49,8 @@ import OurWork from "../page/projects/OurWork.jsx";
 import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
 import Brand from "../page/Brand.jsx";
 import Blog1 from "../page/blog/Blog.jsx";
+import Pestrashop from "../page/service/Pestrashop.jsx";
+import Shift4shop from "../page/service/Shift4shop.jsx";
 
 // import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
 // import Categories from "../page/portfolio/Categories.jsx";
@@ -192,6 +194,14 @@ export const router = createBrowserRouter([
 					// 	path: "*",
 					// 	element: <ErrorPage />,
 					// },
+					{
+						path: "/pestrashop",
+						element: <Pestrashop />,
+					},
+					{
+						path: "/shift4shop",
+						element: <Shift4shop />,
+					},
 				],
 			},
 			// {

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from 'swiper/modules';
 import Star2Img from "../../assets/images/v1/icon/star2.png";
 import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
+
 import Slider1Img from '../../assets/images/images2/artisan-f-p.webp';
 import Slider2Img from '../../assets/images/images2/asterley-bros-f-p.webp';
 import Slider3Img from '../../assets/images/images2/bone-f-p.webp';
