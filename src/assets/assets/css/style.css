@@ -158,7 +158,6 @@ button.filter-btn:hover {
 
 .filter-container .form-select {
     height: 47px;
-    width: 25%;
     font-family: 'circular', sans-serif;
     padding: 10px;
     color: #636262;
@@ -616,6 +615,24 @@ button.video-play-button {
 
 .aximo-footer-logo img {
     max-width: 125px;
+}
+
+@media only screen and (min-width:1024px) {
+    .filter-container .form-select {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width:1023px) {
+    .filter-container .form-select {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .filter-container .form-select {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1400px) {
