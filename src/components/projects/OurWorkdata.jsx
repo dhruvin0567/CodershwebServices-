@@ -5,7 +5,7 @@ const projectData = [
     {
         id: crypto.randomUUID(),
         category: 'ecommerce-development',
-        img: '/src/assets/images/ourwork/Background-5.png',
+        img: '../../../src/assets/images/ourwork/Background-5.png',
         name: 'Premium Supplements Brand',
         technology: 'Shopify | Bootstrap v5 | JavaScript',
     },
