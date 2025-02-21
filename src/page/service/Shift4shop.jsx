@@ -1,6 +1,6 @@
 import BreadCrumb from '../../components/common/Breadcrumb'
 
-import Logo from '../../assets/images/images2/Sfhitforshop-logo-150x150.png'
+// import Logo from '../../assets/images/images2/Sfhitforshop-logo-150x150.png'
 import Clutch from '../../assets/images/images2/clutch.svg'
 import StarImg from '../../assets/images/images2/star.png'
 
@@ -37,7 +37,7 @@ function Shift4shop() {
         <div>
             <BreadCrumb title="Shift4Shop" />
 
-            <div className="aximo-breadcrumb">
+            {/* <div className="aximo-breadcrumb">
                 <div className="container">
                     <img src={Logo} alt width={100} />
                     <h1 className="post__title mb-2" style={{ fontSize: '50px' }}>
@@ -47,11 +47,8 @@ function Shift4shop() {
                         World - class Shift4Shop Development Company that assists businesses &amp; organisations in improving their
                         web presence &amp; generating more leads.
                     </p>
-                    {/* <nav class="breadcrumbs">
-
-                  </nav> */}
                 </div>
-            </div>
+            </div> */}
 
 
             <div className="top-rated">

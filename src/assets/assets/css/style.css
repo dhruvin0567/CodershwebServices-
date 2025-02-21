@@ -318,6 +318,12 @@ h6.blog-title:hover {
     position: relative;
     overflow: visible;
     margin: 50px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 1px rgb(194, 194, 194);
+}
+
+.work-image {
+    border-radius: 5px;
 }
 
 .about-work {

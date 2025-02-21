@@ -1,6 +1,6 @@
 
 import BreadCrumb from '../../components/common/Breadcrumb'
-import Logo from '../../assets/images/images2/prestashop.png'
+// import Logo from '../../assets/images/images2/prestashop.png'
 import Clutch from '../../assets/images/images2/clutch.svg'
 import StarImg from '../../assets/images/images2/star.png'
 
@@ -34,7 +34,7 @@ function Pestrashop() {
         <div>
             <BreadCrumb title="Pestrashop" />
 
-            <div className="aximo-breadcrumb">
+            {/* <div className="aximo-breadcrumb">
                 <div className="container">
                     <img src={Logo} alt width={100} />
                     <h1 className="post__title mb-2" style={{ fontSize: '50px' }}>
@@ -46,7 +46,7 @@ function Pestrashop() {
                         online store's performance, delivering a seamless and engaging shopping experience.
                     </p>
                 </div>
-            </div>
+            </div> */}
 
             <div className="top-rated">
                 <div className="container">

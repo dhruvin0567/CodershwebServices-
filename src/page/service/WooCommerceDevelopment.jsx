@@ -1,7 +1,7 @@
 
 import BreadCrumb from '../../components/common/Breadcrumb'
 
-import Logo from '../../assets/images/images2/woo-logo.png'
+// import Logo from '../../assets/images/images2/woo-logo.png'
 import Clutch from '../../assets/images/images2/clutch.svg'
 import StarImg from '../../assets/images/images2/star.png'
 
@@ -35,7 +35,7 @@ function WooCommerceDevelopment() {
         <div>
             <BreadCrumb title="Woo Commerce" />
 
-            <div className="aximo-breadcrumb">
+            {/* <div className="aximo-breadcrumb">
                 <div className="container">
                     <img src={Logo} alt width={100} />
                     <h1 className="post__title mb-2" style={{ fontSize: '50px' }}>
@@ -45,9 +45,9 @@ function WooCommerceDevelopment() {
                         WooCommerce for your online store. Our comprehensive WooCommerce Development Services are crafted to
                         elevate your e-commerce experience, ensuring seamless functionality and an enhanced user journey.
                     </p>
-                    {/* <nav class="breadcrumbs"></nav> */}
+                   
                 </div>
-            </div>
+            </div> */}
 
             <div className="top-rated">
                 <div className="container">

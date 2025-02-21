@@ -1,6 +1,6 @@
 
 import BreadCrumb from '../../components/common/Breadcrumb'
-import Logo from '../../assets/images/images2/bigcommerce.png'
+// import Logo from '../../assets/images/images2/bigcommerce.png'
 import Clutch from '../../assets/images/images2/clutch.svg'
 import StarImg from '../../assets/images/images2/star.png'
 
@@ -34,7 +34,7 @@ function BigCommerce() {
         <div>
             <BreadCrumb title="Big Commerce" />
 
-            <div className="aximo-breadcrumb">
+            {/* <div className="aximo-breadcrumb">
                 <div className="container">
                     <img src={Logo} alt width={100} />
                     <h1 className="post__title mb-2" style={{ fontSize: '50px' }}>
@@ -46,11 +46,8 @@ function BigCommerce() {
                         committed to creating a seamless and powerful online shopping experience tailored to your brand's unique
                         requirements.
                     </p>
-                    {/* <nav class="breadcrumbs">
-
-                  </nav> */}
                 </div>
-            </div>
+            </div> */}
 
             <div className="top-rated">
                 <div className="container">
