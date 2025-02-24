@@ -137,7 +137,7 @@ function Header() {
 					</div>
 					<HeaderButton />
 
-					<MobileNavbar menuItemsData={menuItemsData} title="Aximo" />
+					<MobileNavbar menuItemsData={menuItemsData} title="CWS" />
 				</nav>
 			</div>
 		</header>

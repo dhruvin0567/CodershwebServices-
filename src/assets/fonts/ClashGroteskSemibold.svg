@@ -199,7 +199,7 @@ d="M409 0h-150v242l-261 428h170l105 -176l58 -99h10l57 99l105 176h167l-261 -428v-
 d="M582 0h-562v124l344 401v10h-325v135h529v-124l-347 -401v-10h361v-135z" />
     <glyph glyph-name="bracketleft" unicode="[" horiz-adv-x="313" 
 d="M295 -60h-249v790h249v-124h-110v-542h110v-124z" />
-    <glyph glyph-name="backslash" unicode="\" horiz-adv-x="480" 
+    <glyph glyph-name="backslash" unicode="" horiz-adv-x="480" 
 d="M500 -20h-160l-360 710h160z" />
     <glyph glyph-name="bracketright" unicode="]" horiz-adv-x="313" 
 d="M2 64h110v542h-110v124h249v-790h-249v124z" />
