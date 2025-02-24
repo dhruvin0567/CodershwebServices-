@@ -29,16 +29,16 @@ function Video() {
 	};
 
 	const videoStyles = {
-		width: "80%",
+		width: "60%",
 		height: "auto",
-		maxHeight: "90%",
+		maxHeight: "80%",
 		borderRadius: "10px"
 	};
 
 	const closeButtonStyles = {
 		position: "absolute",
-		top: "30px",
-		right: "90px",
+		top: "100px",
+		right: "225px",
 		background: "rgba(255, 255, 255, 0.7)",
 		border: "none",
 		color: "#000",
