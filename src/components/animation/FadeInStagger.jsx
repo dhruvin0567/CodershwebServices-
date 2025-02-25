@@ -10,7 +10,7 @@ const animationVariants = {
 		opacity: 1,
 		y: 0,
 		transition: {
-			duration: 0.3 * index,
+			duration: 0.7,
 			delay: 0.03 * index,
 		},
 	}),

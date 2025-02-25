@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import ArrowImg from '../../assets/images/images2/arrow-right.svg';
+import FadeInStagger from "../../components/animation/FadeInStagger";
+import GridBlogCard from "../../components/blog/grid-blog/GridBlogCard";
+
 import Case1Img from '../../assets/images/images2/image_2024_07_05T14_06_31_811Z-768x380.png';
 import Case2Img from '../../assets/images/images2/Screenshot-2024-07-26-153702-768x379.png';
 import Case3Img from '../../assets/images/images2/Screenshot-2024-07-26-153524-768x380.png';
@@ -11,12 +11,12 @@ import Case7Img from '../../assets/images/images2/Screenshot-2024-07-15-170221-7
 
 
 
-const caseStudiesData = [
+const gridBlogData = [
   {
     id: crypto.randomUUID(),
     title: "Van Hunks: Spicing Up Their Shopify Store",
     img: Case1Img,
-    link: "/casestudies/Van Hunks: Spicing Up Their Shopify Store",
+    link: "#",
   },
   {
     id: crypto.randomUUID(),
@@ -24,12 +24,7 @@ const caseStudiesData = [
     img: Case2Img,
     link: "#",
   },
-  {
-    id: crypto.randomUUID(),
-    title: "LIBERATION COCKTAILS – Elevating the Pre-Mixed Cocktail Experience with a Custom Shopify Solution",
-    img: Case3Img,
-    link: "#",
-  },
+
   {
     id: crypto.randomUUID(),
     title: "Chez Omar – French Caribbean Cuisine: NYC’s Digital Flavor",
@@ -53,7 +48,13 @@ const caseStudiesData = [
     title: "How a luxury clothing brand utilized Codersh to bring their Stores online",
     img: Case7Img,
     link: "#",
-  }
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "LIBERATION COCKTAILS – Elevating the Pre-Mixed Cocktail Experience with a Custom Shopify Solution",
+    img: Case3Img,
+    link: "#",
+  },
 ];
 
 
@@ -62,43 +63,18 @@ function CaseStudiesdata() {
   return (
     <div>
 
-      <div className="blogs">
+      <div className="section aximo-section-padding2">
         <div className="container">
           <div className="row">
-            {caseStudiesData.map((caseStudy, index) => (
-              <motion.div
-                key={caseStudy.id}
-                className="col-lg-4 col-sm-6"
-                initial={{ opacity: 0 }} // Initial state: invisible
-                animate={{ opacity: 1 }} // Animate to full opacity
-                transition={{
-                  delay: index * 0.2, // Stagger delay based on index
-                  duration: 0.6, // Duration of fade-in
-                }}
-              >
-                <div className="blog-card">
-                  {/* Blog Image */}
-                  <img className="blog-image" src={caseStudy.img} alt={caseStudy.title} />
-                  <div className="blog-content">
-                    {/* Blog Title Link */}
-                    <Link to={caseStudy.link}>
-                      <h6 className="blog-title">{caseStudy.title}</h6>
-                    </Link>
-                    {/* Read more link */}
-                    <Link to={caseStudy.link} className="blog-link">
-                      Read more
-                      <img
-                        src={ArrowImg}
-                        alt="arrow"
-                        className="readMore-btn"
-                        height="17px"
-                        style={{ marginLeft: "5px" }}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
+            <div className="col-lg-12">
+              <div className="row">
+                {gridBlogData.map((blog, index) => (
+                  <FadeInStagger className="col-xl-4" key={blog.id} index={index}>
+                    <GridBlogCard blog={blog} />
+                  </FadeInStagger>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

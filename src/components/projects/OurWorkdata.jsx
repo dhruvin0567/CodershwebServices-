@@ -5,6 +5,7 @@ import Background2Image from '../../assets/images/ourwork/New-Project-5.jpg';
 import Background3Image from '../../assets/images/ourwork/New-Project-4.jpg';
 import Background4Image from '../../assets/images/ourwork/m-1024x1024.jpg';
 import Background5Image from '../../assets/images/ourwork/IKKS.png';
+import Background11Image from '../../assets/images/ourwork/Background-3-1.png';
 import Background6Image from '../../assets/images/ourwork/Background-6.png';
 import Background7Image from '../../assets/images/ourwork/New-Project-2-1024x1024.jpg';
 import Background8Image from '../../assets/images/ourwork/New-Project-1024x1024.jpg';
@@ -30,7 +31,7 @@ const projectData = [
     {
         id: crypto.randomUUID(),
         category: "ecommerce-development",
-        img: Background1Image,
+        img: Background11Image,
         name: "Kids Primium Clothing Store",
         technology: "Shopify | Liquid | CSS3",
     },
@@ -102,16 +103,56 @@ function OurWorkdata() {
         setActiveFilter(filter);
     };
 
+    const buttonStyle = {
+        padding: '9px 24px',
+        marginRight: '6px',
+        marginBottom: '10px',
+        fontStyle: 'normal',
+        fontWeight: '400',
+        fontSize: '16px',
+        lineHeight: '23px',
+        display: 'inline-block',
+        borderRadius: '50px',
+        letterSpacing: '0.5px',
+        color: 'black',
+        backgroundColor: 'rgba(0, 0, 0, 0.05)',
+    };
+
+    const activeButtonStyle = {
+        ...buttonStyle,
+        backgroundColor: '#bff747', // Example active background color
+        color: 'black',
+    };
+
     return (
         <div>
 
 
             <div className="our-work-section">
                 <div className="tab-container">
-                    <button className={`tab-btn ${activeFilter === 'all' ? 'active' : ''}`} onClick={() => handleTabClick('all')} data-filter="all">All Projects</button>
-                    <button className={`tab-btn ${activeFilter === 'ecommerce-development' ? 'active' : ''}`} onClick={() => handleTabClick('ecommerce-development')} data-filter="ecommerce-development">Ecommerce Development</button>
-                    <button className={`tab-btn ${activeFilter === 'web-development' ? 'active' : ''}`} onClick={() => handleTabClick('web-development')} data-filter="web-development">Web Development</button>
+                    <button
+                        style={activeFilter === 'all' ? activeButtonStyle : buttonStyle}
+                        onClick={() => handleTabClick('all')}
+                        data-filter="all"
+                    >
+                        All Projects
+                    </button>
+                    <button
+                        style={activeFilter === 'ecommerce-development' ? activeButtonStyle : buttonStyle}
+                        onClick={() => handleTabClick('ecommerce-development')}
+                        data-filter="ecommerce-development"
+                    >
+                        Ecommerce Development
+                    </button>
+                    <button
+                        style={activeFilter === 'web-development' ? activeButtonStyle : buttonStyle}
+                        onClick={() => handleTabClick('web-development')}
+                        data-filter="web-development"
+                    >
+                        Web Development
+                    </button>
                 </div>
+
                 <div className="container-fluid pb-5">
                     <div className="row">
                         {projectData.map((project) => (

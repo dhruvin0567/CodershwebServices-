@@ -6620,7 +6620,7 @@ img.aximo-video-circle {
 
 @media (min-width: 900px) {
 	.aximo-testimonial-wrap {
-		height: 433px;
+		height: auto;
 	}
 }
 

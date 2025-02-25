@@ -27,7 +27,15 @@ function Header() {
 									<DropdownItem url="home-seven">Advertising agency</DropdownItem>
 								</Dropdown>
 							</NavItem> */}
-							<NavItem url="about-us">About Us</NavItem>
+							<NavItem dropdown title="Company">
+								<Dropdown>
+									{/* <DropdownItem url="service">Service</DropdownItem> */}
+									<DropdownItem url="about-us">About Us</DropdownItem>
+									<DropdownItem url="team">Team</DropdownItem>
+									<DropdownItem url="testimonial">Testimonial</DropdownItem>
+									<DropdownItem url="faq">FAQ</DropdownItem>
+								</Dropdown>
+							</NavItem>
 							<NavItem dropdown title="Services">
 								<Dropdown>
 									{/* <DropdownItem url="service">Service</DropdownItem> */}
@@ -41,6 +49,7 @@ function Header() {
 								<Dropdown>
 									<DropdownItem url="casestudies">Case Studies</DropdownItem>
 									<DropdownItem url="Ourwork">Our Work</DropdownItem>
+									<DropdownItem url="Ourwork2">Our Work 2</DropdownItem>
 								</Dropdown>
 							</NavItem>
 							<NavItem dropdown title="Pages">
@@ -48,11 +57,11 @@ function Header() {
 									{/* <DropdownItem url="about-us">About Us</DropdownItem> */}
 									<DropdownItem url="pricing">Pricing</DropdownItem>
 									<DropdownItem url="brand">brand</DropdownItem>
-									<DropdownItem url="team">Team</DropdownItem>
+
 									<DropdownItem url="portfolio">Portfolio</DropdownItem>
 									<DropdownItem url="blog1">Blog</DropdownItem>
-									<DropdownItem url="testimonial">Testimonial</DropdownItem>
-									<DropdownItem url="faq">FAQ</DropdownItem>
+									<DropdownItem url="blog-grid">Blog Grid</DropdownItem>
+
 									{/* <DropdownItem dropdown title="Blog">
 										<Dropdown noShape>
 											<DropdownItem url="blog">Our Blog</DropdownItem>

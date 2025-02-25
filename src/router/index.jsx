@@ -11,12 +11,12 @@ import HomeOne from "../page/home/HomeOne.jsx";
 import Team from "../page/team";
 
 // import Service from "../page/service";
-// import ErrorPage from "../error-page";
+import ErrorPage from "../error-page";
 // import Reset from "../page/auth/ResetPassword.jsx";
 // import SignIn from "../page/auth/SignIn";
 // import SignUp from "../page/auth/SignUp";
 // import CommingSoon from "../page/utility/CommingSoon.jsx";
-// import BlogGridPage from "../page/blog/BlogGridPage.jsx";
+import BlogGridPage from "../page/blog/BlogGridPage.jsx";
 // import PortfolioTwoColumn from "../page/portfolio/PortfolioTwoColumn";
 // import LayoutFive from "../components/layout/LayoutFive.jsx";
 // import LayoutFour from "../components/layout/LayoutFour.jsx";
@@ -53,6 +53,7 @@ import Pestrashop from "../page/service/Pestrashop.jsx";
 import Shift4shop from "../page/service/Shift4shop.jsx";
 import BigCommerce from "../page/service/BigCommerce.jsx";
 import WooCommerceDevelopment from "../page/service/WooCommerceDevelopment.jsx";
+import OurWork2 from "../page/projects/OurWork2.jsx";
 
 // import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
 // import Categories from "../page/portfolio/Categories.jsx";
@@ -107,10 +108,10 @@ export const router = createBrowserRouter([
 					// 	element: <SingleBlogPage />,
 					// },
 
-					// {
-					// 	path: "/blog-grid",
-					// 	element: <BlogGridPage />,
-					// },
+					{
+						path: "/blog-grid",
+						element: <BlogGridPage />,
+					},
 					{
 						path: "/singleblog2",
 						element: <SingleBlog2 />,
@@ -134,6 +135,10 @@ export const router = createBrowserRouter([
 					{
 						path: "/ourwork",
 						element: <OurWork />,
+					},
+					{
+						path: "/ourwork2",
+						element: <OurWork2 />,
 					},
 					{
 						path: "/Businessdirectory",
@@ -192,10 +197,10 @@ export const router = createBrowserRouter([
 					// 	path: "/industries",
 					// 	element: <Industries />,
 					// },
-					// {
-					// 	path: "*",
-					// 	element: <ErrorPage />,
-					// },
+					{
+						path: "*",
+						element: <ErrorPage />,
+					},
 					{
 						path: "/pestrashop",
 						element: <Pestrashop />,

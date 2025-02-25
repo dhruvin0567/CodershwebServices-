@@ -1,4 +1,4 @@
-function TestimonialCard({ testimonial: { rating, title, description, author, designation, img } }) {
+function TestimonialCard({ testimonial: { rating, title, description, author, designation, } }) {
 	return (
 		<div className="aximo-testimonial-wrap">
 			<div className="aximo-testimonial-rating">
@@ -15,12 +15,13 @@ function TestimonialCard({ testimonial: { rating, title, description, author, de
 				<p>{description}</p>
 			</div>
 			<div className="aximo-testimonial-author">
-				<div className="aximo-testimonial-author-thumb">
+				{/* <div className="aximo-testimonial-author-thumb">
 					<img src={img} alt={title} />
-				</div>
+				</div> */}
 				<div className="aximo-testimonial-author-data">
 					<p>
-						{author} <span>{designation}</span>
+						{author} <br />
+						<span>{designation}</span>
 					</p>
 				</div>
 			</div>

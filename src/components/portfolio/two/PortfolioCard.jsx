@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
-function PortfolioCard({ portfolio: { title, description, img } }) {
+function PortfolioCard({ portfolio: { name, technology, img } }) {
 
 
 
 
 	return (
 		<div className="aximo-project-thumb">
-			<img src={img} alt={title} />
+			<img src={img} alt={name} />
 			<div className="aximo-project-wrap">
 				<div className="aximo-project-data">
 					<Link to="/single-portfolio">
-						<h3>{title}</h3>
+						<h3>{name}</h3>
 					</Link>
-					<p>{description}</p>
+					<p>{technology}</p>
 				</div>
 				<Link className="aximo-project-icon" to="/single-portfolio">
 					<svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">

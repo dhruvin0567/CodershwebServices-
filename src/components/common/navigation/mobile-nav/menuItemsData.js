@@ -33,15 +33,34 @@ export const menuItemsData = [
 	// 		},
 	// 	],
 	// },
+
 	{
-		title: "About Us",
-		url: "about-us",
+		title: "Company",
+		url: "#",
+		submenu: [
+			{
+				title: "About Us",
+				url: "about-us",
+			},
+			{
+				title: "Team",
+				url: "team",
+			},
+			{
+				title: "Testimonial",
+				url: "testimonial",
+			},
+			{
+				title: "FAQ",
+				url: "faq",
+			},
+		],
 	},
 	{
 		title: "Services",
 		url: "#",
 		submenu: [
-			// s
+
 			{
 				title: "PestraShop",
 				url: "pestrashop",
@@ -80,10 +99,11 @@ export const menuItemsData = [
 				title: "Our Work",
 				url: "ourwork",
 			},
-			// {
-			// 	title: "Blog Details",
-			// 	url: "single-blog",
-			// },
+			{
+				title: "Our Work2",
+				url: "ourwork2",
+			},
+
 		],
 	},
 	{
@@ -99,10 +119,7 @@ export const menuItemsData = [
 				title: "Brand",
 				url: "brand",
 			},
-			{
-				title: "Team",
-				url: "team",
-			},
+
 			{
 				title: "Portfolio",
 				url: "portfolio",
@@ -112,13 +129,10 @@ export const menuItemsData = [
 				url: "blog1",
 			},
 			{
-				title: "Testimonial",
-				url: "testimonial",
+				title: "Blog Grid",
+				url: "blog-grid",
 			},
-			{
-				title: "FAQ",
-				url: "faq",
-			},
+
 			// {
 			// 	title: "Blog",
 			// 	url: "#",
