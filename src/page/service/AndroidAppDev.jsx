@@ -9,9 +9,6 @@ import BreadCrumb from '../../components/common/Breadcrumb'
 import Clutch from '../../assets/images/images2/clutch.svg'
 import StarImg from '../../assets/images/images2/star.png'
 
-// import CheckImg from "../../assets/images/v3/check.svg";
-// import FeatureCard from "../../components/home-five/features/FeatureCard";
-// import Logo from '../../assets/images/images2/bigcommerce.png'
 import Icon1 from '../../assets/images/images2/cms-setup.png'
 import Icon2 from '../../assets/images/images2/psd-to-wordpress.png'
 import Icon3 from '../../assets/images/images2/web-custom-development.png'
@@ -22,8 +19,8 @@ import Icon7 from '../../assets/images/images2/woo-commerce.png'
 import Icon8 from '../../assets/images/images2/blog.png'
 import Icon9 from '../../assets/images/images2/api.png'
 
-import Thumb1Img from '../../assets/images/images2/Android-1.png'
-import Thumb2Img from '../../assets/images/images2/Android-2.png'
+import Thumb1Img from '../../assets/images/images2/Prestashop-1.png'
+import Thumb2Img from '../../assets/images/images2/Prestashop-2.png'
 
 import ProcessImg1 from '../../assets/images/images2/reauirement-gathering.png'
 import ProcessImg2 from '../../assets/images/images2/uiux.png'
@@ -44,56 +41,47 @@ const serviceData = [
     {
         id: crypto.randomUUID(),
         title: "PrestaShop Store Setup and Configuration",
-        description: "",
         iconImg: Icon1,
     },
     {
         id: crypto.randomUUID(),
         title: "PrestaShop Plugin Development Service",
-        description: "",
         iconImg: Icon5,
     },
     {
         id: crypto.randomUUID(),
         title: "Custom PrestaShop Website Development",
-        description: "",
         iconImg: Icon3,
     },
     {
         id: crypto.randomUUID(),
         title: "Precision Conversion from Design to PrestaShop Websites",
-        description: "",
         iconImg: Icon2,
     },
     {
         id: crypto.randomUUID(),
         title: "PrestaShop Theme Development & Customization",
-        description: "",
         iconImg: Icon4,
     },
 
     {
         id: crypto.randomUUID(),
         title: "PrestaShop Migration and Maintenance Services",
-        description: "",
         iconImg: Icon6,
     },
     {
         id: crypto.randomUUID(),
         title: "PrestaShop Development Service",
-        description: "",
         iconImg: Icon7,
     },
     {
         id: crypto.randomUUID(),
         title: "PrestaShop Blog Development Service",
-        description: "",
         iconImg: Icon8,
     },
     {
         id: crypto.randomUUID(),
         title: "PrestaShop API Integration Service",
-        description: "",
         iconImg: Icon9,
     },
 ];
@@ -141,17 +129,12 @@ const blogsData = [
         id: crypto.randomUUID(),
         title: "Online Book Store",
         content: "Shift4shop | React | Styled Components",
-        category: "Home Decoration",
-        date: "June 15, 2024",
         img: Workcard1,
     },
     {
         id: crypto.randomUUID(),
         title: "Texas Fowlers",
-        content:
-            "Shift4shop | Bootstrap | JavaScript",
-        category: "Office Interior",
-        date: "June 10, 2024",
+        content: "Shift4shop | Bootstrap | JavaScript",
         img: Workcard2,
     },
     {
@@ -159,8 +142,6 @@ const blogsData = [
         title: "Redesign Hub",
         content:
             "Wordpress | Elementor Pro | Calendly",
-        category: "Office Interior",
-        date: "June 10, 2024",
         img: Workcard3,
     },
 ];
@@ -170,7 +151,7 @@ function AndroidAppDev() {
 
     return (
         <div>
-            <BreadCrumb title="Pestrashop" />
+            <BreadCrumb title="Android App Development" />
 
             <div className="top-rated">
                 <div className="container">
@@ -201,7 +182,7 @@ function AndroidAppDev() {
                     <div className="mb-5 text-center">
                         <div className="row">
                             <div className="col">
-                                <h3 style={{ fontSize: '2.5rem' }}> PrestaShop Development Services We Offer</h3>
+                                <h3 style={{ fontSize: '2.5rem' }}> Android App Development Services We Offer</h3>
                             </div>
                         </div>
                     </div>
@@ -218,12 +199,12 @@ function AndroidAppDev() {
             <div className="section ">
                 <div className="container">
                     <div className="row pb-5">
-                        <div className="col-lg-5">
+                        <div className="col-lg-6">
                             <FadeInLeft className="aximo-content-thumb3">
                                 <img src={Thumb1Img} alt="Thumb" />
                             </FadeInLeft>
                         </div>
-                        <div className="col-lg-7 d-flex align-items-center">
+                        <div className="col-lg-6 d-flex align-items-center">
                             <div className="aximo-default-content2 libre-font m-left-gap-small">
                                 <h3 className="mb-4">Hire Dedicated PrestaShop Developer</h3>
                                 <p className="fs-18 mb-4">
@@ -260,7 +241,7 @@ function AndroidAppDev() {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-7 d-flex align-items-center order-lg-1 order-2">
+                        <div className="col-lg-6 mt-sm-5 d-flex align-items-center order-lg-1 order-2">
                             <div className="aximo-default-content2 libre-font m-left-gap-small">
                                 <h3 className="mb-4">
                                     Why Choose PrestaShop for Your <br />
@@ -306,7 +287,7 @@ function AndroidAppDev() {
                                 </FadeInUp>
                             </div>
                         </div>
-                        <div className="col-lg-5 mt-sm-5 order-lg-2 order-1">
+                        <div className="col-lg-6 mt-sm-5 order-lg-2 order-1">
                             <FadeInRight className="aximo-content-thumb3">
                                 <img src={Thumb2Img} alt="Thumb" />
                             </FadeInRight>
