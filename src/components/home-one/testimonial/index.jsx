@@ -101,7 +101,7 @@ function Testimonial() {
 				</div>
 				<div className="row">
 					{testimonialsData.map((testimonial, index) => (
-						<FadeInStagger index={index} className="col-lg-4" key={testimonial.id}>
+						<FadeInStagger index={index} className="col-lg-4 col-md-6" key={testimonial.id}>
 							<TestimonialCard testimonial={testimonial} />
 						</FadeInStagger>
 					))}

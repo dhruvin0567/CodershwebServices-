@@ -54,6 +54,7 @@ import Shift4shop from "../page/service/Shift4shop.jsx";
 import BigCommerce from "../page/service/BigCommerce.jsx";
 import WooCommerceDevelopment from "../page/service/WooCommerceDevelopment.jsx";
 import OurWork2 from "../page/projects/OurWork2.jsx";
+import AndroidAppDev from "../page/service/AndroidAppDev.jsx";
 
 // import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
 // import Categories from "../page/portfolio/Categories.jsx";
@@ -216,6 +217,10 @@ export const router = createBrowserRouter([
 					{
 						path: "/woocommercedevelopment",
 						element: <WooCommerceDevelopment />,
+					},
+					{
+						path: "/androidappdev",
+						element: <AndroidAppDev />,
 					},
 				],
 			},

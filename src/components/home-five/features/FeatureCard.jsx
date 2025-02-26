@@ -5,7 +5,7 @@ function FeatureCard({ feature: { img, title, description } }) {
 				<img src={img} alt={title} />
 			</div>
 			<div className="aximo-iconbox-data6">
-				<h3>{title}</h3>
+				<h4>{title}</h4>
 				<p>{description}</p>
 			</div>
 		</div>
