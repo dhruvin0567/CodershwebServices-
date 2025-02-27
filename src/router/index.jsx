@@ -49,12 +49,13 @@ import OurWork from "../page/projects/OurWork.jsx";
 import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
 import Brand from "../page/Brand.jsx";
 import Blog1 from "../page/blog/Blog.jsx";
-import Pestrashop from "../page/service/Pestrashop.jsx";
-import Shift4shop from "../page/service/Shift4shop.jsx";
-import BigCommerce from "../page/service/BigCommerce.jsx";
-import WooCommerceDevelopment from "../page/service/WooCommerceDevelopment.jsx";
+import Pestrashop from "../page/service/ecommerece/Pestrashop.jsx";
+import Shift4shop from "../page/service/ecommerece/Shift4shop.jsx";
+import BigCommerce from "../page/service/ecommerece/BigCommerce.jsx";
+import WooCommerceDevelopment from "../page/service/ecommerece/WooCommerceDevelopment.jsx";
 import OurWork2 from "../page/projects/OurWork2.jsx";
-import AndroidAppDev from "../page/service/AndroidAppDev.jsx";
+import AndroidAppDev from "../page/service/mobileapp/AndroidAppDev.jsx";
+import IosAppDev from "../page/service/mobileapp/IosAppDev.jsx";
 
 // import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
 // import Categories from "../page/portfolio/Categories.jsx";
@@ -221,6 +222,10 @@ export const router = createBrowserRouter([
 					{
 						path: "/androidappdev",
 						element: <AndroidAppDev />,
+					},
+					{
+						path: "/iosappdev",
+						element: <IosAppDev />,
 					},
 				],
 			},

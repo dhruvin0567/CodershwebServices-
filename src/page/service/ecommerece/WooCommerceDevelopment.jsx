@@ -1,83 +1,83 @@
 import { Link } from 'react-router-dom';
-import FadeInStagger from "../../components/animation/FadeInStagger";
-import FadeInLeft from "../../components/animation/FadeInLeft";
-import FadeInRight from "../../components/animation/FadeInRight";
-import FadeInUp from "../../components/animation/FadeInUp";
-import ServiceCard from "../../components/home-four/services/ServiceCard";
-import BlogCard from "../../components/home-six/blogs/BlogCard";
-import BreadCrumb from '../../components/common/Breadcrumb'
-import Clutch from '../../assets/images/images2/clutch.svg'
-import StarImg from '../../assets/images/images2/star.png'
+import FadeInStagger from "../../../components/animation/FadeInStagger";
+import FadeInLeft from "../../../components/animation/FadeInLeft";
+import FadeInRight from "../../../components/animation/FadeInRight";
+import FadeInUp from "../../../components/animation/FadeInUp";
+import ServiceCard from "../../../components/home-four/services/ServiceCard";
+import BlogCard from "../../../components/home-six/blogs/BlogCard";
+import BreadCrumb from '../../../components/common/Breadcrumb'
+import Clutch from '../../../assets/images/images2/clutch.svg'
+import StarImg from '../../../assets/images/images2/star.png'
 
-import ServiceIcon1 from '../../assets/images/images2/cms-setup.png'
-import ServiceIcon2 from '../../assets/images/images2/psd-to-wordpress.png'
-import ServiceIcon3 from '../../assets/images/images2/web-custom-development.png'
-import ServiceIcon4 from '../../assets/images/images2/web-development.png'
-import ServiceIcon5 from '../../assets/images/images2/plugin.png'
-import ServiceIcon6 from '../../assets/images/images2/maintenance.png'
-import ServiceIcon7 from '../../assets/images/images2/woo-commerce.png'
-import ServiceIcon8 from '../../assets/images/images2/blog.png'
-import ServiceIcon9 from '../../assets/images/images2/api.png'
+import ServiceIcon1 from '../../../assets/images/images2/cms-setup.png'
+import ServiceIcon2 from '../../../assets/images/images2/psd-to-wordpress.png'
+import ServiceIcon3 from '../../../assets/images/images2/web-custom-development.png'
+import ServiceIcon4 from '../../../assets/images/images2/web-development.png'
+import ServiceIcon5 from '../../../assets/images/images2/plugin.png'
+import ServiceIcon6 from '../../../assets/images/images2/maintenance.png'
+import ServiceIcon7 from '../../../assets/images/images2/woo-commerce.png'
+import ServiceIcon8 from '../../../assets/images/images2/blog.png'
+import ServiceIcon9 from '../../../assets/images/images2/api.png'
 
-import Thumb1Img from '../../assets/images/images2/Bigcommerce-image-1.png'
-import Thumb2Img from '../../assets/images/images2/Bigcommerce-image-2-1.png'
+import Thumb1Img from '../../../assets/images/images2/Woocommerce-image.png'
+import Thumb2Img from '../../../assets/images/images2/Woocommerce-image-Project.png'
 
-import ProcessImg1 from '../../assets/images/images2/reauirement-gathering.png'
-import ProcessImg2 from '../../assets/images/images2/uiux.png'
-import ProcessImg3 from '../../assets/images/images2/prototype.png'
-import ProcessImg4 from '../../assets/images/images2/dynamic-development.png'
-import ProcessImg5 from '../../assets/images/images2/testing.png'
-import ProcessImg6 from '../../assets/images/images2/live-development.png'
-import ProcessImg7 from '../../assets/images/images2/question.png'
+import ProcessImg1 from '../../../assets/images/images2/reauirement-gathering.png'
+import ProcessImg2 from '../../../assets/images/images2/uiux.png'
+import ProcessImg3 from '../../../assets/images/images2/prototype.png'
+import ProcessImg4 from '../../../assets/images/images2/dynamic-development.png'
+import ProcessImg5 from '../../../assets/images/images2/testing.png'
+import ProcessImg6 from '../../../assets/images/images2/live-development.png'
+import ProcessImg7 from '../../../assets/images/images2/question.png'
 
-import Workcard1 from '../../assets/images/ourwork/New-Project-1-1024x1024.jpg'
-import Workcard2 from '../../assets/images/ourwork/New-Project-3-1024x1024.jpg'
-import Workcard3 from '../../assets/images/ourwork/New-Project-1024x1024.jpg'
+import Workcard1 from '../../../assets/images/ourwork/New-Project-1-1024x1024.jpg'
+import Workcard2 from '../../../assets/images/ourwork/New-Project-3-1024x1024.jpg'
+import Workcard3 from '../../../assets/images/ourwork/New-Project-1024x1024.jpg'
 
 const serviceData = [
     {
         id: crypto.randomUUID(),
-        title: "BigCommerce Store Setup and Configuration",
+        title: "WooCommerce Store Setup and Configuration",
         iconImg: ServiceIcon1,
     },
     {
         id: crypto.randomUUID(),
-        title: "Custom BigCommerce Website Development",
+        title: "Conversion of Designs to Pixel-Perfect WooCommerce Websites",
         iconImg: ServiceIcon2,
     },
     {
         id: crypto.randomUUID(),
-        title: "BigCommerce Theme Development & Customization",
+        title: "Custom WooCommerce Website Development",
         iconImg: ServiceIcon3,
     },
     {
         id: crypto.randomUUID(),
-        title: "BigCommerce App Development",
+        title: "WooCommerce Theme Development & Customization",
         iconImg: ServiceIcon4,
     },
     {
         id: crypto.randomUUID(),
-        title: "BigCommerce Migration Services",
+        title: "WooCommerce Plugin Development Service",
         iconImg: ServiceIcon5,
     },
     {
         id: crypto.randomUUID(),
-        title: "BigCommerce API Integration",
+        title: "WooCommerce Migration and Maintenance Services",
         iconImg: ServiceIcon6,
     },
     {
         id: crypto.randomUUID(),
-        title: "BigCommerce Maintenance and Support",
+        title: "WooCommerce Development Service",
         iconImg: ServiceIcon7,
     },
     {
         id: crypto.randomUUID(),
-        title: "BigCommerce SEO Optimization",
+        title: "WooCommerce Blog Development Service",
         iconImg: ServiceIcon8,
     },
     {
         id: crypto.randomUUID(),
-        title: "BigCommerce Consulting Services",
+        title: "WooCommerce API Integration Service",
         iconImg: ServiceIcon9,
     },
 ];
@@ -143,10 +143,12 @@ const blogsData = [
     },
 ];
 
-function BigCommerce() {
+
+
+function WooCommerceDevelopment() {
     return (
         <div>
-            <BreadCrumb title="Big Commerce" />
+            <BreadCrumb title="Woo Commerce" />
 
             <div className="top-rated">
                 <div className="container">
@@ -177,10 +179,10 @@ function BigCommerce() {
                     <div className="mb-5 text-center">
                         <div className="row">
                             <div className="col">
-                                <h3 style={{ fontSize: '2.5rem' }} className='mb-3'> BigCommerce Development Services We Offer</h3>
+                                <h3 style={{ fontSize: '2.5rem' }} className='mb-3'> WooCommerce Development Services We Offer</h3>
                                 <p >
                                     We are dedicated to aiding our clients in opening the doors to the virtual world by offering a diverse
-                                    range of BigCommerce solutions that enable the next-generation user experience for your target audience.
+                                    range of WooCommerce solutions that enable the next-generation user experience for your target audience.
                                 </p>
                             </div>
                         </div>
@@ -205,11 +207,9 @@ function BigCommerce() {
                         </div>
                         <div className="col-lg-6 d-flex align-items-center">
                             <div className="aximo-default-content2 libre-font m-left-gap-small">
-                                <h3 className="mb-4"> Hire BigCommerce Developer</h3>
+                                <h3 className="mb-4">Hire Dedicated WooCommerce Developer</h3>
                                 <p className="fs-18 mb-4">
-                                    Take control of your BigCommerce development project with Codersh Web Services. Our dedicated
-                                    infrastructure and expert BigCommerce developers ensure a customized engagement model, providing
-                                    flexibility and transparency for your e-commerce success.
+                                    Elevate your online store with our WooCommerce Custom Development options. Our dedicated infrastructure and expert WooCommerce developers work exclusively on your project, offering complete control and transparency.
                                 </p>
 
                                 <ul className="mb-4">
@@ -223,11 +223,11 @@ function BigCommerce() {
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Guarantee of No Hidden Fees
+                                        Transparent Billing with Tracked Hours
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Track Hours and Pay with Precision
+                                        Assurance of No Hidden Fees
                                     </li>
                                 </ul>
 
@@ -243,36 +243,32 @@ function BigCommerce() {
                         <div className="col-lg-6 mt-sm-5 d-flex align-items-center order-lg-1 order-2">
                             <div className="aximo-default-content2 libre-font m-left-gap-small">
                                 <h3 className="mb-4">
-                                    Why Choose BigCommerce <br /> for Your Project
+                                    Why Choose WooCommerce <br /> for Your Online Store
                                 </h3>
                                 <p className="fs-18 mb-4">
-                                    Choose Codersh Web Services and BigCommerce for a powerful, scalable, and customer-centric online store. Discover the advantages of BigCommerce development for a seamless and successful e-commerce presence.
+                                    Your business deserves a dynamic online presence. Choose our custom WooCommerce Development Services to revolutionize your e-commerce venture, ensuring a robust and scalable platform.
                                 </p>
 
                                 <ul className="mb-4">
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        User-Friendly Interface
+                                        Free to Use and Setup
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Mobile Responsiveness
+                                        Extensive Plugin Library
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Robust Security Features
+                                        Flexibility and Adaptability
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Scalability for Growing Businesses
+                                        Diverse Range of Themes
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Extensive App Marketplace
-                                    </li>
-                                    <li>
-                                        <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        24/7 Support
+                                        Active Community Support
                                     </li>
                                 </ul>
 
@@ -336,9 +332,8 @@ function BigCommerce() {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }
 
-export default BigCommerce
+export default WooCommerceDevelopment
