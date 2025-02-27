@@ -19,8 +19,8 @@ import Icon7 from '../../assets/images/images2/woo-commerce.png'
 import Icon8 from '../../assets/images/images2/blog.png'
 import Icon9 from '../../assets/images/images2/api.png'
 
-import Thumb1Img from '../../assets/images/images2/Prestashop-1.png'
-import Thumb2Img from '../../assets/images/images2/Prestashop-2.png'
+import Thumb1Img from '../../assets/images/images2/Android-1.png'
+import Thumb2Img from '../../assets/images/images2/Android-2.png'
 
 import ProcessImg1 from '../../assets/images/images2/reauirement-gathering.png'
 import ProcessImg2 from '../../assets/images/images2/uiux.png'
@@ -36,55 +36,62 @@ import Workcard3 from '../../assets/images/ourwork/New-Project-1024x1024.jpg'
 
 
 const serviceData = [
-    // Import your images/SVGs at the top
-
     {
         id: crypto.randomUUID(),
-        title: "PrestaShop Store Setup and Configuration",
+        title: "Android App Design and Development",
         iconImg: Icon1,
+        description: "Craft visually appealing and functional Android applications that enhance user engagement and satisfaction."
     },
     {
         id: crypto.randomUUID(),
-        title: "PrestaShop Plugin Development Service",
-        iconImg: Icon5,
-    },
-    {
-        id: crypto.randomUUID(),
-        title: "Custom PrestaShop Website Development",
-        iconImg: Icon3,
-    },
-    {
-        id: crypto.randomUUID(),
-        title: "Precision Conversion from Design to PrestaShop Websites",
+        title: "Custom Android App Development",
         iconImg: Icon2,
+        description: "Develop tailor-made Android apps that align with your brand's identity and provide a unique mobile experience."
     },
     {
         id: crypto.randomUUID(),
-        title: "PrestaShop Theme Development & Customization",
+        title: "Android UI/UX Design",
+        iconImg: Icon3,
+        description: "Create intuitive and user-friendly interfaces that ensure a smooth and delightful user experience."
+    },
+    {
+        id: crypto.randomUUID(),
+        title: "Cross-Platform App Development",
         iconImg: Icon4,
+        description: "Extend your app's reach with cross-platform development, ensuring compatibility across various devices and operating systems."
     },
-
     {
         id: crypto.randomUUID(),
-        title: "PrestaShop Migration and Maintenance Services",
+        title: "Android E-commerce App Development",
+        iconImg: Icon5,
+        description: "Elevate your online presence with customized e-commerce solutions designed specifically for the Android platform."
+    },
+    {
+        id: crypto.randomUUID(),
+        title: "Android App Integration Services",
         iconImg: Icon6,
+        description: "Seamlessly integrate third-party services and APIs to enhance the functionality and features of your Android app."
     },
     {
         id: crypto.randomUUID(),
-        title: "PrestaShop Development Service",
+        title: "Android App Maintenance and Support",
         iconImg: Icon7,
+        description: "Ensure the continuous success of your Android app with dedicated maintenance and support services."
     },
     {
         id: crypto.randomUUID(),
-        title: "PrestaShop Blog Development Service",
+        title: "Android App Testing Services",
         iconImg: Icon8,
+        description: "Guarantee the reliability and performance of your app with thorough testing services, including functionality, usability, and security testing."
     },
     {
         id: crypto.randomUUID(),
-        title: "PrestaShop API Integration Service",
+        title: "Android App Consultation Services",
         iconImg: Icon9,
+        description: "Tap into our expertise for strategic insights and recommendations tailored to your business objectives in the Android app ecosystem."
     },
 ];
+
 
 const featuresData = [
     {
@@ -206,11 +213,9 @@ function AndroidAppDev() {
                         </div>
                         <div className="col-lg-6 d-flex align-items-center">
                             <div className="aximo-default-content2 libre-font m-left-gap-small">
-                                <h3 className="mb-4">Hire Dedicated PrestaShop Developer</h3>
+                                <h3 className="mb-4">Hire Android App Developer</h3>
                                 <p className="fs-18 mb-4">
-                                    Elevate your online store with our PrestaShop Custom Development options. Our dedicated
-                                    infrastructure and expert PrestaShop developers work exclusively on your project, offering
-                                    complete control and transparent development processes.
+                                    Take charge of your Android app development project with Codersh Web Services. Our dedicated infrastructure and expert Android app developers ensure a customized engagement model that aligns with your vision, providing flexibility and transparency for your mobile success.
                                 </p>
 
                                 <ul className="mb-4">
@@ -224,11 +229,11 @@ function AndroidAppDev() {
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Transparent Billing with Tracked Hours
+                                        Guarantee of no hidden fees
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Assurance of No Hidden Fees
+                                        Track Hours and Pay with Precision
                                     </li>
                                 </ul>
 
@@ -244,39 +249,36 @@ function AndroidAppDev() {
                         <div className="col-lg-6 mt-sm-5 d-flex align-items-center order-lg-1 order-2">
                             <div className="aximo-default-content2 libre-font m-left-gap-small">
                                 <h3 className="mb-4">
-                                    Why Choose PrestaShop for Your <br />
-                                    E-commerce Venture
+                                    Why Choose Android App Development for Your Project
                                 </h3>
                                 <p className="fs-18 mb-4">
-                                    Propel your business forward with a dynamic online presence. Opt for our custom PrestaShop
-                                    Development Services to revolutionize your e-commerce platform, ensuring scalability,
-                                    flexibility, and a robust foundation.
+                                    Choose Codersh Web Services and Android app development for a powerful, user-centric, and scalable mobile solution. Discover the advantages of Android app development for a vast user base and a seamless mobile experience.
                                 </p>
 
                                 <ul className="mb-4">
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Free to Use and Setup
+                                        Extensive User Base
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        User-Friendly Operation
+                                        Open Source Platform
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Extensive Plugin Library
+                                        Customizable User Interface
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Flexibility and Adaptability
+                                        Rich App Ecosystem
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Diverse Range of Themes
+                                        Google Play Store Visibility
                                     </li>
                                     <li>
                                         <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
-                                        Supportive Community
+                                        Continuous Updates and Innovations
                                     </li>
                                 </ul>
 

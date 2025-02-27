@@ -8,8 +8,8 @@ function ServiceCard({ service: { title, description, iconImg } }) {
 				<img src={iconImg} alt={title} />
 			</div>
 			<div className="aximo-iconbox-data4">
-				<h6>{title}</h6>
-				<p>{description}</p>
+				<h6 style={{ marginBottom: "15px" }}>{title}</h6>
+				<p >{description}</p>
 			</div>
 		</div>
 	);
