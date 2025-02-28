@@ -30,6 +30,7 @@ import CardImg26 from "/src/assets/images/images2/IFC-Ideal-Food-Corp-.png.webp"
 import CardImg27 from "/src/assets/images/images2/Bumperninja.png.webp";
 import CardImg28 from "/src/assets/images/images2/Biotrust.png";
 import CardImg29 from "/src/assets/images/images2/vidtre.png.webp";
+import FadeInStagger from '../../animation/FadeInStagger';
 
 
 // Sample data for project cards (can be replaced with real data)
@@ -352,7 +353,7 @@ const Portfolio1content = () => {
                 <div className="container-fluid">
                     <div className="row">
                         {filteredCards.map((card, index) => (
-                            <div
+                            <FadeInStagger
                                 key={index}
                                 className="col-lg-3 col-sm-6 project-card"
                                 data-category={card.category}
@@ -367,7 +368,7 @@ const Portfolio1content = () => {
                                     />
                                 </div>
                                 <h3 className="project-name py-3 text-center">{card.name}</h3>
-                            </div>
+                            </FadeInStagger>
                         ))}
                     </div>
                 </div>

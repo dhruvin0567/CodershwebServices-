@@ -81,10 +81,10 @@ function MessageForm() {
 			</div>
 			<div className="aximo-form-field">
 				<input
-					{...register("number")}
+					{...register("number", { required: "Number is required." })}
 					type="text"
 					name="number"
-					placeholder="+088-234-6849"
+					placeholder="Your Number"
 					style={autofillStyles}
 				/>
 			</div>

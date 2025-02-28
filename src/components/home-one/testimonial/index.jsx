@@ -1,90 +1,91 @@
+// import React from "react";
+import Slider from "react-slick";
 import Star2Img from "../../../assets/images/v1/star2.png";
-// import Thumb1Img from "../../../assets/images/v1/t_thumb1.png";
-
-import FadeInStagger from "../../animation/FadeInStagger";
+import Thumb1Img from "../../../assets/images/v1/t_thumb1.png";
+import Thumb2Img from "../../../assets/images/v1/t_thumb2.png";
+import Thumb4Img from "../../../assets/images/v1/t_thumb4.png";
 import TestimonialCard from "./TestimonialCard";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const testimonialsData = [
-
 	{
 		id: crypto.randomUUID(),
 		rating: 5,
+		title: "Absolutely Fantastic",
 		description:
-			"I had a great experience with Shah. The design is very nice. And he was really fast to understand what I needed !",
-		author: "Jay Rowland",
-		designation: "Co - founder - Vidste",
+			"The Biggest thing was he got the design from the beginning mockup and didn't waste any time and everything ran on schedule with making lots of minor didn't waste any time and everything ran on schedule with making adjustments to a level of amazing quality!",
+		author: "Amber Page",
+		designation: "Portland,Oregon",
+		img: Thumb1Img
+	},
+	{
+		id: crypto.randomUUID(),
+		rating: 5,
+		title: "Work was great!",
+		description:
+			"Working with Shah was a game-changer for our brand. Their exceptional creativity & vision breathed new life into our visual. The logo they perfectly captures our essence & has become instantly recognizable. We couldn't be happier the results!",
+		author: "Phillip Hunt ",
+		designation: "Detroit,Michigan",
+		img: Thumb4Img
 	},
 	{
 		id: crypto.randomUUID(),
 		rating: 4,
+		title: "Great to work with!",
 		description:
-			"Arvind was super responsive and answered any questions I had in a timely manner.",
-		author: "Victoria Johnson",
-		designation: "VP @ Turtles and Tees",
+			"Made an amazing website for our org. We have him our vision and everything came out even better than imagined. Use him for all website needs you will be pleased! Use him for all website needs you will be pleased!",
+		author: "Milano Joe",
+		designation: "Seattle,Washington",
+		img: Thumb1Img
 	},
 	{
 		id: crypto.randomUUID(),
 		rating: 5,
+		title: "Excellent Developer",
 		description:
-			"Very good communication, good listener, very skilled at what he does and only offers the best!",
-		author: "Natalie Morris",
-		designation: "CEO - Christianbookbag",
+			"His work went beyond what I was expecting and I would love to continue working with him. His work went beyond what I was expecting and I would love to continue working with him continue working with him.",
+		author: "Danial Mark",
+		designation: "San Antonio,Texas",
+		img: Thumb2Img
 	},
-	{
-		id: crypto.randomUUID(),
-		rating: 5,
-		description:
-			"Shah was a great communicator and the quality of his work was good",
-		author: "Mihir Sukhtankar",
-		designation: "President - Bimmeronly",
-	},
-
-	{
-		id: crypto.randomUUID(),
-		rating: 5,
-		description:
-			"Arvind is as professional as it gets. Works fast and efficiently. Gets jobs done everytime.",
-		author: "Theo Doussineau",
-		designation: "Founder - Redesignhub",
-	},
-
-	{
-		id: crypto.randomUUID(),
-		rating: 5,
-		description:
-			"Arvind was an excellent developer with great communication skills. His work went beyond what I was expecting and I would love to continue working with him.",
-		author: "Julia Dennis",
-		designation: "Bungalow Creative",
-	},
-	{
-		id: crypto.randomUUID(),
-		rating: 4,
-		description:
-			"Work was great! I Will definitely use in the future. Arvind delivered good work on this project and I enjoyed working with him. His communication was top-notch, he met all deadlines, and his skills were reasonably strong",
-		author: "Margarita Chen",
-		designation: "Owner - chenchef",
-	},
-	{
-		id: crypto.randomUUID(),
-		rating: 5,
-		description:
-			"Best service provider I have ever worked with.I had a problem with my website and Mr.Shah was so helpful in getting it up and running again.",
-		author: "David Wickers",
-		designation: "Owner | New Frontier Hobbies",
-	},
-	{
-		id: crypto.randomUUID(),
-		rating: 4,
-		description:
-			"Great help with problems that I didn't know how to solve myself. Provided great improvements to my website that I did not know were available. Communication was prompt and thorough.",
-		author: "Derrest Williamss",
-		designation: "Owner - 500belowcars",
-	},
-
-
 ];
 
 function Testimonial() {
+	const settings = {
+		infinite: true,
+		speed: 1000,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		pauseOnHover: false,
+		cssEase: "linear",
+		responsive: [
+			{
+				breakpoint: 1024, // Define the breakpoint for large screens like laptops
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 768, // Define the breakpoint for tablets
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 480, // Define the breakpoint for mobile screens
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			}
+		]
+	};
+
 	return (
 		<div className="section aximo-section-padding3">
 			<div className="container">
@@ -99,13 +100,13 @@ function Testimonial() {
 						</span>
 					</h2>
 				</div>
-				<div className="row">
-					{testimonialsData.map((testimonial, index) => (
-						<FadeInStagger index={index} className="col-lg-4 col-md-6" key={testimonial.id}>
+				<Slider {...settings}>
+					{testimonialsData.map((testimonial) => (
+						<div key={testimonial.id} style={{ padding: "0 15px" }}>
 							<TestimonialCard testimonial={testimonial} />
-						</FadeInStagger>
+						</div>
 					))}
-				</div>
+				</Slider>
 			</div>
 		</div>
 	);

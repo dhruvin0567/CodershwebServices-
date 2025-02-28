@@ -457,7 +457,7 @@ function Itdigitalagencydata() {
                             modules={[Navigation, Autoplay]}
                             autoplay={{
                                 delay: 3000, // Slide change delay in milliseconds
-                                disableOnInteraction: false, // Autoplay will not be disabled after interactions
+                                disableOnInteraction: true, // Autoplay will not be disabled after interactions
                             }}
                             breakpoints={{
                                 320: { slidesPerView: 1 },

@@ -9,14 +9,14 @@ import Faq from "../page/utility/Faq.jsx";
 import TestimonialPage from "../page/utility/Testimonial.jsx";
 import HomeOne from "../page/home/HomeOne.jsx";
 import Team from "../page/team";
+import ErrorPage from "../error-page";
+import BlogGridPage from "../page/blog/BlogGridPage.jsx";
 
 // import Service from "../page/service";
-import ErrorPage from "../error-page";
 // import Reset from "../page/auth/ResetPassword.jsx";
 // import SignIn from "../page/auth/SignIn";
 // import SignUp from "../page/auth/SignUp";
 // import CommingSoon from "../page/utility/CommingSoon.jsx";
-import BlogGridPage from "../page/blog/BlogGridPage.jsx";
 // import PortfolioTwoColumn from "../page/portfolio/PortfolioTwoColumn";
 // import LayoutFive from "../components/layout/LayoutFive.jsx";
 // import LayoutFour from "../components/layout/LayoutFour.jsx";
@@ -45,18 +45,19 @@ import Creditrepair from "../page/solutions/Creditrepair.jsx";
 import Itdigitalagency from "../page/solutions/Itdigitalagency.jsx";
 
 import CaseStudies from "../page/projects/CaseStudies.jsx";
-import OurWork from "../page/projects/OurWork.jsx";
-import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
 import Brand from "../page/Brand.jsx";
-import Blog1 from "../page/blog/Blog.jsx";
 import Pestrashop from "../page/service/ecommerece/Pestrashop.jsx";
 import Shift4shop from "../page/service/ecommerece/Shift4shop.jsx";
 import BigCommerce from "../page/service/ecommerece/BigCommerce.jsx";
 import WooCommerceDevelopment from "../page/service/ecommerece/WooCommerceDevelopment.jsx";
-import OurWork2 from "../page/projects/OurWork2.jsx";
 import AndroidAppDev from "../page/service/mobileapp/AndroidAppDev.jsx";
 import IosAppDev from "../page/service/mobileapp/IosAppDev.jsx";
+import SingleBlogPage from "../page/blog/SingleBlog.jsx";
 
+// import Blog1 from "../page/blog/Blog.jsx";
+// import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
+// import OurWork from "../page/projects/OurWork.jsx";
+// import OurWork2 from "../page/projects/OurWork2.jsx";
 // import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
 // import Categories from "../page/portfolio/Categories.jsx";
 // import Countries from "../page/portfolio/Countries.jsx";
@@ -101,47 +102,27 @@ export const router = createBrowserRouter([
 						path: "/brand",
 						element: <Brand />,
 					},
-					// {
-					// 	path: "/blog",
-					// 	element: <BlogPage />,
-					// },
-					// {
-					// 	path: "/single-blog",
-					// 	element: <SingleBlogPage />,
-					// },
 
 					{
-						path: "/blog-grid",
+						path: "/portfolio",
+						element: <Portfolio />,
+					},
+					{
+						path: "/ourblog",
 						element: <BlogGridPage />,
 					},
+
+
 					{
-						path: "/singleblog2",
-						element: <SingleBlog2 />,
+						path: "/blog/:slug",
+						element: <SingleBlogPage />,
 					},
-					{
-						path: "/blog1",
-						element: <Blog1 />,
-					},
-					// {
-					// 	path: "/service",
-					// 	element: <Service />,
-					// },
-					// {
-					// 	path: "/single-service",
-					// 	element: <SingleService />,
-					// },
+
 					{
 						path: "/casestudies",
 						element: <CaseStudies />,
 					},
-					{
-						path: "/ourwork",
-						element: <OurWork />,
-					},
-					{
-						path: "/ourwork2",
-						element: <OurWork2 />,
-					},
+
 					{
 						path: "/Businessdirectory",
 						element: <Businessdirectory />,
@@ -162,43 +143,6 @@ export const router = createBrowserRouter([
 						path: "/team",
 						element: <Team />,
 					},
-					// {
-					// 	path: "/single-team",
-					// 	element: <SingleTeam />,
-					// },
-					// {
-					// 	path: "/portfolio-one",
-					// 	element: <PortfolioOneColumn />,
-					// },
-
-					// {
-					// 	path: "/single-portfolio",
-					// 	element: <SinglePortfolio />,
-					// },
-					// {
-					// 	path: "/portfolio-two",
-					// 	element: <PortfolioTwoColumn />,
-					// },
-					{
-						path: "/portfolio",
-						element: <Portfolio />,
-					},
-					// {
-					// 	path: "/portfolio2",
-					// 	element: <Portfolio2 />,
-					// },
-					// {
-					// 	path: "/categories",
-					// 	element: <Categories />,
-					// },
-					// {
-					// 	path: "/countries",
-					// 	element: <Countries />,
-					// },
-					// {
-					// 	path: "/industries",
-					// 	element: <Industries />,
-					// },
 					{
 						path: "*",
 						element: <ErrorPage />,
@@ -227,6 +171,69 @@ export const router = createBrowserRouter([
 						path: "/iosappdev",
 						element: <IosAppDev />,
 					},
+					// {
+					// 	path: "/singleblog2",
+					// 	element: <SingleBlog2 />,
+					// },
+					// {
+					// 	path: "/service",
+					// 	element: <Service />,
+					// },
+					// {
+					// 	path: "/single-service",
+					// 	element: <SingleService />,
+					// },
+					// {
+					// 	path: "/blog",
+					// 	element: <BlogPage />,
+					// },
+					// {
+					// 	path: "/blog1",
+					// 	element: <Blog1 />,
+					// },
+					// {
+					// 	path: "/single-team",
+					// 	element: <SingleTeam />,
+					// },
+					// {
+					// 	path: "/portfolio-one",
+					// 	element: <PortfolioOneColumn />,
+					// },
+
+					// {
+					// 	path: "/single-portfolio",
+					// 	element: <SinglePortfolio />,
+					// },
+					// {
+					// 	path: "/portfolio-two",
+					// 	element: <PortfolioTwoColumn />,
+					// },
+
+					// {
+					// 	path: "/portfolio2",
+					// 	element: <Portfolio2 />,
+					// },
+					// {
+					// 	path: "/categories",
+					// 	element: <Categories />,
+					// },
+					// {
+					// 	path: "/countries",
+					// 	element: <Countries />,
+					// },
+					// {
+					// 	path: "/industries",
+					// 	element: <Industries />,
+					// },
+					// {
+					// 	path: "/ourwork",
+					// 	element: <OurWork />,
+					// },
+					// {
+					// 	path: "/ourwork2",
+					// 	element: <OurWork2 />,
+					// },
+
 				],
 			},
 			// {

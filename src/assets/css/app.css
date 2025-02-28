@@ -3017,6 +3017,10 @@ textarea {
 	border-radius: 20px;
 }
 
+.input-textarea {
+	height: 100px !important;
+}
+
 @media (max-width: 767px) {
 	textarea {
 		height: 100px;
@@ -6623,7 +6627,7 @@ img.aximo-video-circle {
 .aximo-testimonial-wrap {
 	padding: 30px;
 	border-radius: 20px;
-	margin-bottom: 30px;
+	margin: 0px 20px 30px;
 	transition: all 0.4s;
 	border: 2px solid var(--heading-color);
 
@@ -10994,6 +10998,7 @@ a.aximo-connect-login img {
 
 h3.entry-title {
 	margin-bottom: 15px;
+	font-size: 25px;
 }
 
 a.post-read-more {
@@ -11016,6 +11021,7 @@ a.post-read-more:hover img {
 @media (max-width: 991px) {
 	.right-sidebar {
 		margin-top: 50px;
+
 	}
 }
 
@@ -11213,13 +11219,45 @@ button#wp-block-search__button {
 	margin-bottom: 20px;
 }
 
+.entry-content h1,
+.entry-content h2,
 .entry-content h3 {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-size: 35px;
+}
+
+
+.entry-content h2,
+.entry-content h3,
+.entry-content ul {
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+.entry-content h2 b {
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+
+.entry-content b,
+.entry-content strong,
+.entry-content h2 strong,
+.entry-content p strong,
+.entry-content span,
+.entry-content p span,
+.entry-content p b {
+	font-family: syne, sans-serif;
+	font-size: 20px;
+	margin-bottom: 15px;
+	font-weight: 700;
+}
+
+.entry-content p {
+	font-size: 20px;
 	margin-bottom: 15px;
 }
 
-.entry-content span {
-	font-weight: 600;
-}
 
 .post-tag {
 	display: flex;
@@ -11792,6 +11830,15 @@ button#aximo-notified-btn {
 	position: absolute;
 	top: 5px;
 	right: 5px;
+}
+
+.right-sidebar {
+	position: sticky;
+	top: 5.5em;
+}
+
+.form-input {
+	height: 45px !important;
 }
 
 /*1.4 themes css*/

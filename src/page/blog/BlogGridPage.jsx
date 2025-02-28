@@ -3,7 +3,7 @@ import BreadCrumb from "../../components/common/Breadcrumb";
 function BlogGridPage() {
 	return (
 		<>
-			<BreadCrumb title="Blog Grid" />
+			<BreadCrumb title="Our Blog" />
 			<GridBlog />
 		</>
 	);
