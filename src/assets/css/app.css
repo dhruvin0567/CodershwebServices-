@@ -11843,3 +11843,15 @@ button#aximo-notified-btn {
 
 /*1.4 themes css*/
 /*# sourceMappingURL=app.css.map */
+
+
+/* blod loader */
+.blod-fetch {
+	text-align: center;
+}
+
+.blod-fetch .aximo-preloader div {
+	background-color: #000;
+}
+
+/* end*/

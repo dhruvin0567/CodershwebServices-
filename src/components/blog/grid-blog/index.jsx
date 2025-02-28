@@ -32,7 +32,14 @@ function GridBlog() {
 			});
 	}, []);
 
-	if (loading) return <p style={{ textAlign: "center", marginTop: "20px" }}>Loading posts...</p>;
+	if (loading) return <div className="blod-fetch">
+		<div className="aximo-preloader">;
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>;
 
 	return (
 		<div className="section aximo-section-padding2">

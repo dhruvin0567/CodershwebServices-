@@ -58,7 +58,7 @@ function Testimonial() {
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplaySpeed: 3000,
 		pauseOnHover: false,
 		cssEase: "linear",
 		responsive: [

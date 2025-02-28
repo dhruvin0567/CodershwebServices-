@@ -38,7 +38,14 @@ function BlogDetails() {
 			});
 	}, [slug]);
 
-	if (loading) return <p style={{ textAlign: "center" }}>Loading post...</p>;
+	if (loading) return <div className="blod-fetch">
+		<div className="aximo-preloader">;
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>;
 	if (!post) return <p style={{ textAlign: "center" }}>Post not found</p>;
 
 	return (
