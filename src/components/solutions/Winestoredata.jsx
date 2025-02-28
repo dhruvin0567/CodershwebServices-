@@ -95,6 +95,71 @@ const ReviewSection = () => {
     return (
         <div>
 
+            <div className="section aximo-project-page logo-slider dark-bg border-top">
+                <div className="container py-5">
+                    <h3 className="light-text text-center mb-5" >
+                        Partnering with Leading Wine Retailers Worldwide.
+                    </h3>
+                    <Swiper
+                        spaceBetween={30} // Space between slides
+                        slidesPerView={5} // Number of slides visible at once
+                        loop={true} // Infinite loop of the slides
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }} // Autoplay settings
+                        speed={1000}  // Transition speed in ms (1000ms = 1 second)
+                        modules={[Autoplay]} // Adding the Autoplay module
+                        breakpoints={{
+                            // When window width is >= 320px
+                            320: {
+                                slidesPerView: 3, // 1 slide per view
+                            },
+                            // When window width is >= 480px
+                            480: {
+                                slidesPerView: 3, // 2 slides per view
+                            },
+                            // When window width is >= 768px
+                            768: {
+                                slidesPerView: 3, // 3 slides per view
+                            },
+                            // When window width is >= 1024px
+                            1024: {
+                                slidesPerView: 5, // 4 slides per view
+                            },
+                        }}
+                    >
+                        <SwiperSlide>
+                            <img src={Logo1Img} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={Logo2Img} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={Logo3Img} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={Logo4Img} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={Logo5Img} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={Logo6Img} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={Logo7Img} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={Logo8Img} alt="" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={Logo9Img} alt="" />
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </div>
+
             <div className="section aximo-project-page aximo-section-padding5">
                 <div className="container-fluid">
 
@@ -417,70 +482,7 @@ const ReviewSection = () => {
                 </div>
             </div>
 
-            <div className="section aximo-project-page logo-slider dark-bg">
-                <div className="container border-top py-5">
-                    <h3 className="light-text text-center mb-3">
-                        Partnering with Leading Wine Retailers Worldwide.
-                    </h3>
-                    <Swiper
-                        spaceBetween={30} // Space between slides
-                        slidesPerView={5} // Number of slides visible at once
-                        loop={true} // Infinite loop of the slides
-                        autoplay={{
-                            delay: 2500,
-                            disableOnInteraction: false,
-                        }} // Autoplay settings
-                        speed={1000}  // Transition speed in ms (1000ms = 1 second)
-                        modules={[Autoplay]} // Adding the Autoplay module
-                        breakpoints={{
-                            // When window width is >= 320px
-                            320: {
-                                slidesPerView: 3, // 1 slide per view
-                            },
-                            // When window width is >= 480px
-                            480: {
-                                slidesPerView: 3, // 2 slides per view
-                            },
-                            // When window width is >= 768px
-                            768: {
-                                slidesPerView: 3, // 3 slides per view
-                            },
-                            // When window width is >= 1024px
-                            1024: {
-                                slidesPerView: 5, // 4 slides per view
-                            },
-                        }}
-                    >
-                        <SwiperSlide>
-                            <img src={Logo1Img} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={Logo2Img} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={Logo3Img} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={Logo4Img} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={Logo5Img} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={Logo6Img} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={Logo7Img} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={Logo8Img} alt="" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={Logo9Img} alt="" />
-                        </SwiperSlide>
-                    </Swiper>
-                </div>
-            </div>
+
 
             <div className="section aximo-project-page py-5 services">
                 <div className="container my-5">

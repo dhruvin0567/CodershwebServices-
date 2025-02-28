@@ -3618,7 +3618,9 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 .aximo-breadcrumb {
 	text-align: center;
 	padding: 195px 0 130px;
-	background-color: var(--dark-bg);
+	/* background-color: var(--dark-bg); */
+	background-image: url(../images/images2/angularjs.png);
+	filter: brightness(150%);
 }
 
 @media (max-width: 991px) {
