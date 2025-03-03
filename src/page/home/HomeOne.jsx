@@ -6,6 +6,7 @@ import WhyChooseUs from "../../components/home-one/why-choose-us";
 // import Teams from "../../components/home-one/teams";
 // import Testimonial from "../../components/home-one/testimonial";
 import AutoSlider from "../../components/home-one/auto-slider";
+import TestimonialSwiper from "../../components/home-one/testimonial/TestimonialSwiper";
 
 // Teams images
 // import Team1Img from "../../assets/images/team/team1.png";
@@ -79,6 +80,7 @@ function HomeOne() {
 			<About />
 			<Projects />
 			<WhyChooseUs />
+			<TestimonialSwiper />
 			{/* <Testimonial /> */}
 			<AutoSlider />
 			<div style={{ marginBottom: '20px' }}></div>

@@ -11893,3 +11893,11 @@ button#aximo-notified-btn {
 }
 
 /* end*/
+
+/* Solution-slider css */
+.Solution-slider::before {
+
+	background: transparent !important;
+}
+
+/* end */
