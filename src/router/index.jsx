@@ -50,10 +50,11 @@ import Pestrashop from "../page/service/ecommerece/Pestrashop.jsx";
 import Shift4shop from "../page/service/ecommerece/Shift4shop.jsx";
 import BigCommerce from "../page/service/ecommerece/BigCommerce.jsx";
 import WooCommerceDevelopment from "../page/service/ecommerece/WooCommerceDevelopment.jsx";
-import AndroidAppDev from "../page/service/mobileapp/AndroidAppDev.jsx";
-import IosAppDev from "../page/service/mobileapp/IosAppDev.jsx";
+// import AndroidAppDev from "../page/service/mobileapp/AndroidAppDev.jsx";
+// import IosAppDev from "../page/service/mobileapp/IosAppDev.jsx";
 import SingleBlogPage from "../page/blog/SingleBlog.jsx";
 import LandingPage from "../page/projects/LandingPage.jsx";
+import CustomStore from "../page/service/shopifyServices/CustomStore.jsx";
 
 // import Blog1 from "../page/blog/Blog.jsx";
 // import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
@@ -164,17 +165,21 @@ export const router = createBrowserRouter([
 						path: "/woocommercedevelopment",
 						element: <WooCommerceDevelopment />,
 					},
-					{
-						path: "/androidappdev",
-						element: <AndroidAppDev />,
-					},
-					{
-						path: "/iosappdev",
-						element: <IosAppDev />,
-					},
+					// {
+					// 	path: "/androidappdev",
+					// 	element: <AndroidAppDev />,
+					// },
+					// {
+					// 	path: "/iosappdev",
+					// 	element: <IosAppDev />,
+					// },
 					{
 						path: "/landingpage",
 						element: <LandingPage />,
+					},
+					{
+						path: "/customStore",
+						element: <CustomStore />,
 					},
 					// {
 					// 	path: "/singleblog2",

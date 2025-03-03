@@ -25,29 +25,31 @@ function Header() {
 									<DropdownItem url="faq">FAQ</DropdownItem>
 								</Dropdown>
 							</NavItem>
-							<NavItem dropdown title="Shopify Services">
+							<NavItem dropdown title="Services">
 								<Dropdown>
+									<DropdownItem url="customStore">Custom Store</DropdownItem>
+								</Dropdown>
+								{/* <Dropdown>
 									<DropdownItem dropdown title="Shopify Services">
-										{/* <Dropdown noShape>
+										<Dropdown noShape>
 											<DropdownItem url="woocommercedevelopment">WooCommerce-Development</DropdownItem>
 											<DropdownItem url="pestrashop">PestraShop  Development</DropdownItem>
 											<DropdownItem url="shift4shop">Shift4Shop  Development</DropdownItem>
 											<DropdownItem url="bigcommerce">BigCommerce  Development</DropdownItem>
-										</Dropdown> */}
+										</Dropdown>
 									</DropdownItem>
-									{/* <DropdownItem dropdown title="Mobile App Development">
+									<DropdownItem dropdown title="Mobile App Development">
 										<Dropdown noShape>
 											<DropdownItem url="androidappdev">AndroidAppDev  Development</DropdownItem>
 										</Dropdown>
-									</DropdownItem> */}
-								</Dropdown>
+									</DropdownItem>
+								</Dropdown> */}
 							</NavItem>
 							<NavItem dropdown title="Work">
 								<Dropdown>
 									<DropdownItem url="casestudies">Case Studies</DropdownItem>
 									<DropdownItem url="portfolio">Portfolio</DropdownItem>
 									<DropdownItem url="ourblog">Our Blog</DropdownItem>
-
 									<DropdownItem url="brand">brand</DropdownItem>
 								</Dropdown>
 							</NavItem>

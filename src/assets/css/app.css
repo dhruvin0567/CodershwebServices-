@@ -3619,8 +3619,8 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 	text-align: center;
 	padding: 195px 0 130px;
 	/* background-color: var(--dark-bg); */
-	background-image: url(../images/images2/angularjs.png);
-	filter: brightness(150%);
+	background-image: url(../images/images2/angularjs_1.png);
+	/* filter: brightness(150%); */
 }
 
 @media (max-width: 991px) {
@@ -10109,6 +10109,7 @@ a.aximo-connect-login img {
 
 .aximo-content-thumb {
 	position: relative;
+
 }
 
 @media (max-width: 991px) {
@@ -11901,3 +11902,44 @@ button#aximo-notified-btn {
 }
 
 /* end */
+
+.shopify-services-img {
+	display: flex;
+	justify-content: center;
+}
+
+.shopify-services-img img {
+	border-radius: 30px;
+	max-height: 600px;
+}
+
+.shopify-services-data {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 991px) {
+
+	.shopify-services-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	.shopify-services-data h2 {
+		font-size: 30px !important;
+		margin-bottom: 24px;
+	}
+
+	.shopify-services-data h3 {
+		font-size: 24px !important;
+	}
+
+	.shopify-services-data p {
+		font-size: 21px !important;
+	}
+
+}
