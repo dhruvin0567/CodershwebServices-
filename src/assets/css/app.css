@@ -3773,6 +3773,7 @@ h1.post__title {
 .aximo-hero-thumb {
 	right: -5%;
 	max-width: 490px;
+	/* height: 490px; */
 	overflow: hidden;
 	border-radius: 20px;
 	position: absolute;
@@ -3782,6 +3783,10 @@ h1.post__title {
 .aximo-hero-thumb img {
 	transition: all 0.5s;
 	transform: translate3d(0, -20px, 0) scale(1.1);
+	max-width: 490px;
+	width: 100%;
+
+	/* height: 490px; */
 }
 
 .aximo-hero-thumb img:hover {
@@ -3798,6 +3803,26 @@ h1.post__title {
 	.aximo-hero-thumb {
 		margin: 0 auto;
 		margin-top: 50px;
+		right: 0%;
+	}
+}
+
+@media (max-width: 576px) {
+	.aximo-hero-thumb {
+		margin: 0 auto;
+		margin-top: 50px;
+		right: 0%;
+		width: 350px !important;
+	}
+}
+
+@media (max-width: 375px) {
+	.aximo-hero-thumb {
+		margin: 0 auto;
+		margin-top: 50px;
+		right: 0%;
+		width: 300px !important;
+		height: auto;
 	}
 }
 
@@ -11854,6 +11879,17 @@ button#aximo-notified-btn {
 
 .blod-fetch .aximo-preloader div {
 	background-color: #000;
+}
+
+/* end*/
+
+/* Hero content adjsutment */
+@media (max-width: 991px) {
+	.hero-adjsutment {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 /* end*/

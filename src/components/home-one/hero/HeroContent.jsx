@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import ShapeImg from "../../../assets/images/v1/shape1.png";
-// import StarImg from "../../../assets/images/v1/star.png";
+import StarImg from "../../../assets/images/v1/star2.png";
 import User1Img from "../../../assets/images/v1/user1.png";
 import User2Img from "../../../assets/images/v1/user2.png";
 import User3Img from "../../../assets/images/v1/user3.png";
@@ -13,7 +13,7 @@ function HeroContent() {
 					<h1 style={{ fontSize: '57px' }}>
 						Trusted Ecommerce
 						<span className="aximo-title-animation">
-							{/* <img src={StarImg} alt="StarImg" /> */}
+							<img src={StarImg} alt="StarImg" style={{ top: '7px' }} />
 
 							& Shopify Agency
 						</span>{" "}

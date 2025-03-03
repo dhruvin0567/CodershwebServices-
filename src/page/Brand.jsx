@@ -10,7 +10,7 @@ function Brand() {
 
     return (
         <div>
-            <BreadCrumb title="brand" />
+            <BreadCrumb title="Brand" />
 
             <div className="brands-section py-5 my-sm-5">
                 <div className="container-fluid">

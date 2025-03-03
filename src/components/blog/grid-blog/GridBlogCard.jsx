@@ -12,7 +12,7 @@ function GridBlogCard({ blog: { img, title, link } }) {
 					<h3 className="entry-title">{title}</h3>
 				</Link>
 				<Link className="post-read-more" to={link}>
-					read more <img src={ArrayRightImg} alt="Arrow" />
+					Read more <img src={ArrayRightImg} alt="Arrow" />
 				</Link>
 			</div>
 		</div>

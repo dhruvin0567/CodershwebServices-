@@ -19,7 +19,7 @@ function BlogCard({ blog: { title, category, content, date, img } }) {
 				</Link>
 				<p>{content}...</p>
 				<Link className="post-read-more" to="/single-blog">
-					read more <img src={ArrowRight} alt="Arrow Right" />
+					Read more <img src={ArrowRight} alt="Arrow Right" />
 				</Link>
 			</div>
 		</>

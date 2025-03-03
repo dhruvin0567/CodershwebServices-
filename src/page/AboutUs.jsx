@@ -43,6 +43,7 @@ function AboutUs() {
 			<About />
 			<Story />
 			<AutoSlider />
+			<br />
 			{/* <Teams teams={teamsData} /> */}
 		</>
 	);

@@ -18,7 +18,7 @@ import video4 from '../../../assets/images/Videos/Video-4-compressed.mp4';
 import video5 from '../../../assets/images/Videos/Video-5-compressed.mp4';
 import video6 from '../../../assets/images/Videos/Video-6-compressed.mp4';
 import FadeInStagger from "../../animation/FadeInStagger";
-import FadeInLeft from "../../animation/FadeInLeft";
+
 
 
 const testimonialsData = [
@@ -208,28 +208,28 @@ function Testimonial() {
 							>
 								{videoFiles.map((video, index) => (
 									<SwiperSlide key={index}>
-										<FadeInLeft>
-											<button className="video-button" onClick={() => handlePlayPause(index)}>
-												<div className="video-wrap">
-													<video
-														className="myVideo"
-														width="100%" // Ensure the video takes up 100% of its slide space
-														height="auto"
-														ref={(el) => (videoRefs.current[index] = el)}
-													>
-														<source
-															src={video} // Use the imported video file here
-															type="video/mp4"
-														/>
-														Your browser does not support the video tag.
-													</video>
-													{/* Hide play button only for the currently playing video */}
-													{currentVideo !== index && (
-														<span className="custom-play-button">▶</span>
-													)}
-												</div>
-											</button>
-										</FadeInLeft>
+
+										<button className="video-button" onClick={() => handlePlayPause(index)}>
+											<div className="video-wrap">
+												<video
+													className="myVideo"
+													width="100%" // Ensure the video takes up 100% of its slide space
+													height="auto"
+													ref={(el) => (videoRefs.current[index] = el)}
+												>
+													<source
+														src={video} // Use the imported video file here
+														type="video/mp4"
+													/>
+													Your browser does not support the video tag.
+												</video>
+												{/* Hide play button only for the currently playing video */}
+												{currentVideo !== index && (
+													<span className="custom-play-button">▶</span>
+												)}
+											</div>
+										</button>
+
 									</SwiperSlide>
 								))}
 							</Swiper>

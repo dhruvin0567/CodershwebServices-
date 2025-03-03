@@ -53,6 +53,7 @@ import WooCommerceDevelopment from "../page/service/ecommerece/WooCommerceDevelo
 import AndroidAppDev from "../page/service/mobileapp/AndroidAppDev.jsx";
 import IosAppDev from "../page/service/mobileapp/IosAppDev.jsx";
 import SingleBlogPage from "../page/blog/SingleBlog.jsx";
+import LandingPage from "../page/projects/LandingPage.jsx";
 
 // import Blog1 from "../page/blog/Blog.jsx";
 // import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
@@ -170,6 +171,10 @@ export const router = createBrowserRouter([
 					{
 						path: "/iosappdev",
 						element: <IosAppDev />,
+					},
+					{
+						path: "/landingpage",
+						element: <LandingPage />,
 					},
 					// {
 					// 	path: "/singleblog2",

@@ -1,11 +1,11 @@
 import About from "../../components/home-one/about";
-import AutoSlider from "../../components/home-one/auto-slider";
 import Hero from "../../components/home-one/hero";
 import Projects from "../../components/home-one/projects";
 import Services from "../../components/home-one/services";
-// import Teams from "../../components/home-one/teams";
-import Testimonial from "../../components/home-one/testimonial";
 import WhyChooseUs from "../../components/home-one/why-choose-us";
+// import Teams from "../../components/home-one/teams";
+// import Testimonial from "../../components/home-one/testimonial";
+import AutoSlider from "../../components/home-one/auto-slider";
 
 // Teams images
 // import Team1Img from "../../assets/images/team/team1.png";
@@ -79,7 +79,7 @@ function HomeOne() {
 			<About />
 			<Projects />
 			<WhyChooseUs />
-			<Testimonial />
+			{/* <Testimonial /> */}
 			<AutoSlider />
 			<div style={{ marginBottom: '20px' }}></div>
 			{/* <Teams teams={teamsData} /> */}
