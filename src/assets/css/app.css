@@ -7130,15 +7130,16 @@ img.aximo-video-circle {
 }
 
 .aximo-cta2-wrap h2 {
+	font-size: 50px;
 	margin-bottom: 24px;
 	color: var(--light-color4);
-	font-family: "Libre Baskerville", serif;
+	font-family: "Syne", sans-serif;
 }
 
 .aximo-cta2-wrap p {
 	font-size: 21px;
 	color: var(--light-color4);
-	max-width: 740px;
+	max-width: 100%;
 	margin: 0 auto 50px;
 }
 
@@ -8870,17 +8871,18 @@ img.aximo-video-circle {
 .aximo-service-increase-row {
 	transition: all 0.4s;
 	border-radius: 5px;
-	padding: 0 20px;
+	padding: 0 20PX;
 	background-color: var(--light-bg2);
+
 }
 
 .aximo-service-increase-row:hover {
-	background-color: var(--heading-color2);
+	background-color: var(--body-color);
 }
 
 .aximo-service-increase-row:hover .aximo-service-increase-title h3,
 .aximo-service-increase-row:hover .aximo-service-increase-body p {
-	color: var(--light-color1);
+	color: var(--white-color);
 }
 
 .aximo-service-increase-row:hover .aximo-service-increase-icon i {
@@ -8898,6 +8900,8 @@ img.aximo-video-circle {
 	display: flex;
 	align-items: center;
 	border-bottom: 1px solid var(--heading-color2);
+	justify-content: space-around;
+
 }
 
 @media (max-width: 850px) {
@@ -8921,7 +8925,7 @@ img.aximo-video-circle {
 
 .aximo-service-increase-title h3 {
 	transition: all 0.4s;
-	font-family: "ClashGroteskSemibold";
+	font-family: "Syne", sans-serif;
 	color: var(--heading-color2);
 }
 
@@ -10980,12 +10984,15 @@ a.aximo-connect-login img {
 .post-thumbnail {
 	overflow: hidden;
 	border-radius: 20px;
+
+
 }
 
 .post-thumbnail img {
 	border-radius: 20px;
 	transition: all 0.5s;
 	transform: scale(1);
+
 }
 
 .single-post-item:hover .post-thumbnail img {
@@ -10995,6 +11002,8 @@ a.aximo-connect-login img {
 .post-content {
 	padding-top: 24px;
 }
+
+
 
 .post-meta {
 	display: flex;
@@ -11245,6 +11254,13 @@ button#wp-block-search__button {
 
 .post-details-page .post-thumbnail {
 	margin-bottom: 20px;
+}
+
+.entry-content img {
+	border-radius: 25px;
+	object-fit: contain;
+	width: 100%;
+	height: auto;
 }
 
 .entry-content h1,
@@ -11930,7 +11946,7 @@ button#aximo-notified-btn {
 
 
 	.shopify-services-data h2 {
-		font-size: 30px !important;
+		font-size: 32px !important;
 		margin-bottom: 24px;
 	}
 
@@ -11939,7 +11955,7 @@ button#aximo-notified-btn {
 	}
 
 	.shopify-services-data p {
-		font-size: 21px !important;
+		font-size: 18px !important;
 	}
 
 }

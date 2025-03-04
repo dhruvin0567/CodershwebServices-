@@ -39,7 +39,7 @@ function BlogDetails() {
 	}, [slug]);
 
 	if (loading) return <div className="blod-fetch">
-		<div className="aximo-preloader">;
+		<div className="aximo-preloader">
 			<div></div>
 			<div></div>
 			<div></div>

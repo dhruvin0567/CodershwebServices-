@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 function ServiceCard({ service: { title, description, img } }) {
 	return (
 		<div className="aximo-service-increase-row">
@@ -10,9 +10,9 @@ function ServiceCard({ service: { title, description, img } }) {
 				<div className="aximo-service-increase-body">
 					<p>{description}</p>
 				</div>
-				<Link to="/single-service" className="aximo-service-increase-icon">
+				{/* <Link to="/single-service" className="aximo-service-increase-icon">
 					<i className="icon-arrow-right"></i>
-				</Link>
+				</Link> */}
 			</div>
 		</div>
 	);

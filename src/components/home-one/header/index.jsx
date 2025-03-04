@@ -27,7 +27,8 @@ function Header() {
 							</NavItem>
 							<NavItem dropdown title="Services">
 								<Dropdown>
-									<DropdownItem url="customStore">Custom Store</DropdownItem>
+									<DropdownItem url="customStore">Custom Store Project</DropdownItem>
+									<DropdownItem url="shopify-migrations">Shopify Migrations</DropdownItem>
 								</Dropdown>
 								{/* <Dropdown>
 									<DropdownItem dropdown title="Shopify Services">
@@ -47,7 +48,7 @@ function Header() {
 							</NavItem>
 							<NavItem dropdown title="Work">
 								<Dropdown>
-									<DropdownItem url="casestudies">Case Studies</DropdownItem>
+									<DropdownItem url="case-studies">Case Studies</DropdownItem>
 									<DropdownItem url="portfolio">Portfolio</DropdownItem>
 									<DropdownItem url="ourblog">Our Blog</DropdownItem>
 									<DropdownItem url="brand">brand</DropdownItem>

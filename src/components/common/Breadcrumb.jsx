@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 function BreadCrumb({ title }) {
-
 	return (
 		<div className="aximo-breadcrumb">
 			<div className="container">
@@ -13,7 +12,12 @@ function BreadCrumb({ title }) {
 						</li>
 						{title === "Blog Details" && (
 							<li>
-								<Link to="/ourblog">Our Blog</Link>
+								<Link to="/blog-grid">Blog</Link>
+							</li>
+						)}
+						{title === "Case Study Details" && (
+							<li>
+								<Link to="/case-studies">Case Studies</Link>
 							</li>
 						)}
 						<li aria-current="page">{title}</li>

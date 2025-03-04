@@ -55,6 +55,8 @@ import WooCommerceDevelopment from "../page/service/ecommerece/WooCommerceDevelo
 import SingleBlogPage from "../page/blog/SingleBlog.jsx";
 import LandingPage from "../page/projects/LandingPage.jsx";
 import CustomStore from "../page/service/shopifyServices/CustomStore.jsx";
+import ShopifyMigrations from "../page/service/shopifyServices/ShopifyMigrations.jsx";
+import SingleCaseStudyPage from "../page/projects/SingleCaseStudyPage.jsx";
 
 // import Blog1 from "../page/blog/Blog.jsx";
 // import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
@@ -121,8 +123,12 @@ export const router = createBrowserRouter([
 					},
 
 					{
-						path: "/casestudies",
+						path: "/case-studies",
 						element: <CaseStudies />,
+					},
+					{
+						path: "/case-studies/:slug",
+						element: <SingleCaseStudyPage />
 					},
 
 					{
@@ -180,6 +186,10 @@ export const router = createBrowserRouter([
 					{
 						path: "/customStore",
 						element: <CustomStore />,
+					},
+					{
+						path: "/shopify-migrations",
+						element: <ShopifyMigrations />,
 					},
 					// {
 					// 	path: "/singleblog2",
