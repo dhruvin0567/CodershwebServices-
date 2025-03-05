@@ -77,7 +77,7 @@ function CustomStore() {
                 </div>
             </div>
 
-            <div className="section aximo-section-padding2">
+            <div className="section aximo-section-padding6">
                 <div className="container">
                     <div className="row d-flex">
                         <div className="col-lg-5">
@@ -137,7 +137,7 @@ function CustomStore() {
                 </div>
             </div>
 
-            <div className="section aximo-section-padding2">
+            <div className="section aximo-section-padding6">
                 <div className="container">
                     <div className="row d-flex">
                         <div className="col-lg-5">
@@ -197,7 +197,7 @@ function CustomStore() {
                 </div>
             </div>
 
-            <div className="section aximo-section-padding2">
+            <div className="section aximo-section-padding6">
                 <div className="container">
                     <div className="row d-flex">
                         <div className="col-lg-5">

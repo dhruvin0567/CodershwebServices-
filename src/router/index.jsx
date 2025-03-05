@@ -59,6 +59,10 @@ import ShopifyMigrations from "../page/service/shopifyServices/ShopifyMigrations
 import SingleCaseStudyPage from "../page/projects/SingleCaseStudyPage.jsx";
 import ShopifyPlus from "../page/service/shopifyServices/ShopifyPlus.jsx";
 import Headless from "../page/service/shopifyServices/Headless.jsx";
+import Support_Maintanace from "../page/service/shopifyServices/Support_Maintanace.jsx";
+import ConversionRate from "../page/service/shopifyServices/ConversionRate.jsx";
+import Internationalization from "../page/service/shopifyServices/Internationalization.jsx";
+import EmailSmsMarketing from "../page/service/shopifyServices/EmailSmsMarketing.jsx";
 
 // import Blog1 from "../page/blog/Blog.jsx";
 // import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
@@ -200,6 +204,22 @@ export const router = createBrowserRouter([
 					{
 						path: "/shopify-plus",
 						element: <ShopifyPlus />,
+					},
+					{
+						path: "/support-&-maintanance",
+						element: <Support_Maintanace />,
+					},
+					{
+						path: "/conversion-rate",
+						element: <ConversionRate />,
+					},
+					{
+						path: "/selling-internationally-on-shopify",
+						element: <Internationalization />,
+					},
+					{
+						path: "/email-marketing-agency",
+						element: <EmailSmsMarketing />,
 					},
 					// {
 					// 	path: "/singleblog2",

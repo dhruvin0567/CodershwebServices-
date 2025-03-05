@@ -9832,6 +9832,7 @@ a.aximo-connect-login img {
 	margin-bottom: 24px;
 }
 
+
 @media (max-width: 991px) {
 	.aximo-default-content h2 {
 		margin-bottom: 15px;
@@ -11944,7 +11945,6 @@ button#aximo-notified-btn {
 		justify-content: center;
 	}
 
-
 	.shopify-services-data h2 {
 		font-size: 32px !important;
 		margin-bottom: 24px;
@@ -11958,4 +11958,22 @@ button#aximo-notified-btn {
 		font-size: 18px !important;
 	}
 
+}
+
+/* icontext */
+.icon-text {
+	background-color: #bff747;
+	/* Green background */
+	color: black;
+	/* White text color */
+	font-size: 24px;
+	/* Larger font size */
+	font-weight: bolder;
+	/* Bold text */
+	padding: 5px;
+	/* Add some padding for better appearance */
+	border-radius: 50%;
+	/* Rounded corners for the background */
+	display: inline-block;
+	/* To make it behave like an icon */
 }

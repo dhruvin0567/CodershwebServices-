@@ -17,6 +17,7 @@ import FeatureImg6 from "../../../assets/images/images2/applepay-300x300.jpg.web
 import FeatureImg7 from "../../../assets/images/images2/feefo-300x300.jpg.webp";
 import FeatureImg8 from "../../../assets/images/images2/zendesk-300x300.jpg.webp";
 import FeatureImg9 from "../../../assets/images/images2/loyaltylion-300x300.jpg.webp";
+import Check from "../../../assets/images/icon/check.svg";
 
 const servicesData = [
     {
@@ -401,19 +402,19 @@ function ShopifyMigrations() {
                                             <h3>Our Advantage:</h3>
                                             <ul>
                                                 <li>
-                                                    <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     Monthly Payment
                                                 </li>
                                                 <li>
-                                                    <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     No Setup Expenses
                                                 </li>
                                                 <li>
-                                                    <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     Transparent Billing with Tracked Hours
                                                 </li>
                                                 <li>
-                                                    <i className="fa-solid fa-check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     Assurance of No Hidden Fees
                                                 </li>
                                             </ul>
@@ -434,9 +435,6 @@ function ShopifyMigrations() {
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     )
 }

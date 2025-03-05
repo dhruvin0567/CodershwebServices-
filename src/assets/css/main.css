@@ -11,7 +11,7 @@
 .brand-logo,
 .default-logo,
 .responsive-logo {
-	max-width: 175px;
+	max-width: 255px;
 	transition: all 0.4s;
 	position: relative;
 	margin-right: 35px;

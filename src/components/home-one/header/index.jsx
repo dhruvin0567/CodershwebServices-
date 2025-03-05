@@ -16,7 +16,6 @@ function Header() {
 					<HeaderLogo />
 					<div className="menu-block-wrapper">
 						<DesktopNav>
-
 							<NavItem dropdown title="Company">
 								<Dropdown>
 									<DropdownItem url="about-us">About Us</DropdownItem>
@@ -25,12 +24,29 @@ function Header() {
 									<DropdownItem url="faq">FAQ</DropdownItem>
 								</Dropdown>
 							</NavItem>
-							<NavItem dropdown title="Services">
+							<NavItem dropdown title="Shopify">
 								<Dropdown>
-									<DropdownItem url="customStore">Custom Store Project</DropdownItem>
-									<DropdownItem url="shopify-migrations">Shopify Migrations</DropdownItem>
-									<DropdownItem url="headless-shopify">Headless & Shopify</DropdownItem>
-									<DropdownItem url="shopify-plus">Shopify Plus</DropdownItem>
+									<DropdownItem dropdown title="New Shopify Stores">
+										<Dropdown noShape>
+											<DropdownItem url="customStore">Custom Store Project</DropdownItem>
+											<DropdownItem url="shopify-migrations">Shopify Migrations</DropdownItem>
+											<DropdownItem url="headless-shopify">Headless & Shopify</DropdownItem>
+											<DropdownItem url="shopify-plus">Shopify Plus</DropdownItem>
+										</Dropdown>
+									</DropdownItem>
+									<DropdownItem dropdown title="Existing Shopify Stores">
+										<Dropdown noShape>
+											<DropdownItem url="support-&-maintanance">Support & Maintanance</DropdownItem>
+											<DropdownItem url="conversion-rate">Conversion Rate Optimization</DropdownItem>
+											<DropdownItem url="selling-internationally-on-shopify">Internationalization</DropdownItem>
+											<DropdownItem url="email-marketing-agency">Internationalization</DropdownItem>
+										</Dropdown>
+									</DropdownItem>
+									<DropdownItem dropdown title="Other Services">
+										<Dropdown noShape>
+											<DropdownItem url="email-marketing-agency">Email & Sms Marketing </DropdownItem>
+										</Dropdown>
+									</DropdownItem>
 								</Dropdown>
 								{/* <Dropdown>
 									<DropdownItem dropdown title="Shopify Services">
@@ -73,7 +89,7 @@ function Header() {
 						</DesktopNav>
 					</div>
 					<HeaderButton />
-					<MobileNavbar menuItemsData={menuItemsData} title="CWS" />
+					<MobileNavbar menuItemsData={menuItemsData} title="CODERSH" />
 				</nav>
 			</div>
 		</header>
