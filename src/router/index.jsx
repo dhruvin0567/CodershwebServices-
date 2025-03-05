@@ -58,6 +58,7 @@ import CustomStore from "../page/service/shopifyServices/CustomStore.jsx";
 import ShopifyMigrations from "../page/service/shopifyServices/ShopifyMigrations.jsx";
 import SingleCaseStudyPage from "../page/projects/SingleCaseStudyPage.jsx";
 import ShopifyPlus from "../page/service/shopifyServices/ShopifyPlus.jsx";
+import Headless from "../page/service/shopifyServices/Headless.jsx";
 
 // import Blog1 from "../page/blog/Blog.jsx";
 // import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
@@ -191,6 +192,10 @@ export const router = createBrowserRouter([
 					{
 						path: "/shopify-migrations",
 						element: <ShopifyMigrations />,
+					},
+					{
+						path: "/headless-shopify",
+						element: <Headless />,
 					},
 					{
 						path: "/shopify-plus",
