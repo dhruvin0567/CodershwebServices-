@@ -29,6 +29,7 @@ function Header() {
 								<Dropdown>
 									<DropdownItem url="customStore">Custom Store Project</DropdownItem>
 									<DropdownItem url="shopify-migrations">Shopify Migrations</DropdownItem>
+									<DropdownItem url="shopify-plus">Shopify Plus</DropdownItem>
 								</Dropdown>
 								{/* <Dropdown>
 									<DropdownItem dropdown title="Shopify Services">
