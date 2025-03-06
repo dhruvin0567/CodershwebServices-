@@ -1,5 +1,5 @@
 import BreadCrumb from "../../../components/common/Breadcrumb"
-import Star2Img from "../../../assets/images/v1/icon/star2.png";
+// import Star2Img from "../../../assets/images/v1/icon/star2.png";
 // import FadeInStagger from "../../../components/animation/FadeInStagger";
 import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
@@ -33,13 +33,14 @@ function Headless() {
                     <div className="section aximo-project-page text-center dark-bg">
                         <div className="container aximo-section-padding5 shopify-services-data">
                             <h2 className="mb-4 light-text" style={{ fontSize: '50px' }}>
-                                <span className="aximo-title-animation">
+                                Exploring Decoupled Commerce <br /> on Shopify Plus?
+                                {/* <span className="aximo-title-animation">
                                     Exploring Decoupled
                                     <span className="aximo-title-icon">
                                         <img src={Star2Img} alt="Star2Img" />
                                     </span>
                                 </span>
-                                <br />Commerce on Shopify Plus?
+                                <br />Commerce on Shopify Plus? */}
                             </h2>
                             <p className="section-description light-text">
                                 Headless e-commerce with Shopify Plus separates the front-end from the back-end, offering unmatched design flexibility. We power the back-end with Shopify Plus and build custom front-ends using React, enabling tailored, complex store experiences. This architecture boosts site speed, custom URL structures, SEO, and allows for unique shopping experiences. Headless provides full control over the tech stack, supporting scalability and fast growth strategies for large brands. While more technically complex, headless stores offer developers the freedom to create fully customized features aligned with customer expectations, without being limited by pre-built themes or the back-end system. The setup requires specialized expertise, customized support, and thorough device QA, but delivers a powerful, tailored e-commerce solution.

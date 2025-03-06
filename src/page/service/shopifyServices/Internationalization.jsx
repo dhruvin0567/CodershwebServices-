@@ -204,6 +204,7 @@ function Internationalization() {
                     </p>
                 </div>
             </div>
+
             <div className="section aximo-section-padding">
                 <div className="container">
                     <div className="row">
@@ -268,8 +269,6 @@ function Internationalization() {
                     </div>
                 </div>
             </div>
-
-
 
             <div className="section">
                 <div className="container">

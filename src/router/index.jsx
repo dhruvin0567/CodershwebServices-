@@ -63,6 +63,10 @@ import Support_Maintanace from "../page/service/shopifyServices/Support_Maintana
 import ConversionRate from "../page/service/shopifyServices/ConversionRate.jsx";
 import Internationalization from "../page/service/shopifyServices/Internationalization.jsx";
 import EmailSmsMarketing from "../page/service/shopifyServices/EmailSmsMarketing.jsx";
+import ShopifyAppDev from "../page/service/shopifyServices/ShopifyAppDev.jsx";
+import EcommerceSeo from "../page/service/shopifyServices/EcommerceSeo.jsx";
+import B2BWholsales from "../page/service/shopifyServices/B2BWholsales.jsx";
+import Subscriptions from "../page/service/shopifyServices/Subscriptions.jsx";
 
 // import Blog1 from "../page/blog/Blog.jsx";
 // import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
@@ -218,8 +222,24 @@ export const router = createBrowserRouter([
 						element: <Internationalization />,
 					},
 					{
+						path: "/subscriptions-on-shopify",
+						element: <Subscriptions />,
+					},
+					{
 						path: "/email-marketing-agency",
 						element: <EmailSmsMarketing />,
+					},
+					{
+						path: "/shopify-app-development",
+						element: <ShopifyAppDev />,
+					},
+					{
+						path: "/seo-agency",
+						element: <EcommerceSeo />,
+					},
+					{
+						path: "/shopify-b2b-wholesale",
+						element: <B2BWholsales />,
 					},
 					// {
 					// 	path: "/singleblog2",

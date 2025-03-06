@@ -1,56 +1,49 @@
 import ArrowRight3Img from "../../../assets/images/icon/arrow-right3.svg";
 import { useForm } from "react-hook-form";
 import Field from "../../common/Field";
-import emailjs from '@emailjs/browser';
 
 function MessageForm() {
 	const {
 		register,
 		handleSubmit,
 		formState: { errors },
-		reset // Add reset function here
+		reset,
 	} = useForm();
 
-	const submitForm = (formData) => {
+	const submitForm = async (formData) => {
 		console.log("Submitted Form Data =", formData);
 
-		// Send email to admin
-		emailjs.send('service_gqkh37e', 'template_h4wpbbi', formData, 'K_wd5BSwBzwzzQXjf')
-			.then(
-				() => {
-					console.log('Admin email sent successfully.');
+		try {
+			const response = await fetch("https://projects.codersh.com/aximo/wp-json/wp/v2/form-submit", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
 				},
-				(error) => {
-					console.error('Failed to send admin email:', error.text);
-				}
-			);
+				body: JSON.stringify(formData),
+			});
 
-		// Send thank-you email to user
-		emailjs.send('service_gqkh37e', 'template_pwefvuc', {
-			user_name: formData.name,
-			user_email: formData.email,
-			user_number: formData.number,
-			message: formData.message,
-			to_email: formData.email
-		}, 'K_wd5BSwBzwzzQXjf')
-			.then(
-				() => {
-					console.log('Thank-you email sent successfully.');
-					alert('Thank you! Your form has been submitted.');
-					reset(); // Reset the form fields after successful submission
-				},
-				(error) => {
-					console.error('Failed to send thank-you email:', error.text);
-				}
-			);
+			const result = await response.json();
+
+			if (response.ok) {
+				console.log("Form submitted successfully:", result);
+				alert("Thank you! Your form has been submitted.");
+				reset(); // Reset the form fields after successful submission
+			} else {
+				console.error("Form submission failed:", result);
+				alert("Form submission failed. Please try again.");
+			}
+		} catch (error) {
+			console.error("Error submitting form:", error);
+			alert("An error occurred. Please try again.");
+		}
 	};
 
 	const autofillStyles = {
-		WebkitAppearance: 'none',
-		backgroundImage: 'none',
-		backgroundColor: 'transparent',
-		color: '#ccc', // Set text color to white
-		transition: 'background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s', // Transition for color as well
+		WebkitAppearance: "none",
+		backgroundImage: "none",
+		backgroundColor: "transparent",
+		color: "#ccc",
+		transition: "background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s",
 	};
 
 	return (
@@ -81,10 +74,10 @@ function MessageForm() {
 			</div>
 			<div className="aximo-form-field">
 				<input
-					{...register("number", { required: "Number is required." })}
+					{...register("number")}
 					type="text"
 					name="number"
-					placeholder="Your Number"
+					placeholder="+088-234-6849"
 					style={autofillStyles}
 				/>
 			</div>
@@ -107,3 +100,6 @@ function MessageForm() {
 }
 
 export default MessageForm;
+
+
+

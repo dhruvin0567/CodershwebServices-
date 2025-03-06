@@ -9,8 +9,10 @@ import ThumbImg2 from "../../../assets/images/images2/Services4_2.png";
 import ThumbImg3 from "../../../assets/images/images2/Services4_3.png";
 import ThumbImg4 from "../../../assets/images/images2/service4_card1.png";
 import ThumbImg5 from "../../../assets/images/images2/service4_card2.png";
-import Shape4Img from "../../../assets/images/v5/shape4.png";
 import { Link } from 'react-router-dom';
+import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
+
+// import Shape4Img from "../../../assets/images/v5/shape4.png";
 // import ServiceCardImg1 from "../../../assets/images/images2/service4_card1_2.png";
 // import ServiceCardImg2 from "../../../assets/images/images2/service4_card2_1.png";
 
@@ -52,30 +54,32 @@ function ShopifyPlus() {
     return (
         <div>
             <BreadCrumb title="Shopify Plus" />
-            <br />
 
-            <div className="aximo-cta2-section aximo-section-padding extra-side-margin dark-bg my-5 py-5" >
-                <div className="container">
-                    <div className="aximo-cta2-wrap shopify-services-data">
-                        <h2>  As a Certified Shopify Plus Partner We Build, Develop, and Scale Digital Retail Brands</h2>
-                        <h3 className="mb-4 light-text">
-                            Your Trusted Shopify Plus Experts: Empowering  E-Commerce Growth from Concept to Expansion</h3>
-                        <p>
-                            Codersh Web Services is a trusted Shopify Plus agency specializing in helping e-commerce brands launch new stores and scale existing ones. With expertise in design, development, SEO, and email marketing, Codersh delivers comprehensive solutions tailored to drive growth. From Shopify Plus upgrades and seamless migrations to new store launches, our team of experts ensures that brands fully leverage the platform's potential. Partner with Codersh to create innovative, high-performing e-commerce experiences that set your business apart.
 
-                        </p>
-                        {/* <FadeInUp>
-                            <Link className="aximo-default-btn corn-btn pill" style={{ backgroundColor: "#bff747", color: "#000" }} to="/contact-us">
-                                <span className="aximo-label-up">Get In Touch</span>
-                                <span className="aximo-label-up">Get In Touch</span>
-                            </Link>
-                        </FadeInUp> */}
+            <FadeInStaggerTwo>
+                <FadeInStaggerTwoChildren>
+                    <div className="section aximo-project-page text-center dark-bg">
+                        <div className="container aximo-section-padding5 shopify-services-data">
+                            <h2 className="mb-4 light-text" style={{ fontSize: '50px' }}>
+                                As a Certified Shopify Plus Partner We Build, Develop, and Scale Digital Retail Brands
+                                {/* <span className="aximo-title-animation">
+                                    Exploring Decoupled
+                                    <span className="aximo-title-icon">
+                                        <img src={Star2Img} alt="Star2Img" />
+                                    </span>
+                                </span>
+                                <br />Commerce on Shopify Plus? */}
+                            </h2>
+                            <h3 className="mb-4 light-text">
+                                Your Trusted Shopify Plus Experts: Empowering  E-Commerce Growth from Concept to Expansion</h3>
+                            <p className="section-description light-text">
+                                Codersh Web Services is a trusted Shopify Plus agency specializing in helping e-commerce brands launch new stores and scale existing ones. With expertise in design, development, SEO, and email marketing, Codersh delivers comprehensive solutions tailored to drive growth. From Shopify Plus upgrades and seamless migrations to new store launches, our team of experts ensures that brands fully leverage the platform's potential. Partner with Codersh to create innovative, high-performing e-commerce experiences that set your business apart.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className="aximo-cta-shape3">
-                    <img src={Shape4Img} alt="shape" />
-                </div>
-            </div>
+                </FadeInStaggerTwoChildren>
+            </FadeInStaggerTwo>
+
 
 
             <div className="section aximo-section-padding2">
@@ -230,7 +234,7 @@ function ShopifyPlus() {
                 </div>
             </div>
 
-            <div className="section aximo-section-padding4">
+            <div className="section aximo-section-padding4 pt-0">
                 <div className="container">
                     <div className="aximo-service-wrap">
                         <div className="row">

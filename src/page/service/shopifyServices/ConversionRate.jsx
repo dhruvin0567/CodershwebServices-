@@ -123,7 +123,7 @@ function ConversionRate() {
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
                                         <Link to="#" className="iwt-button">
-                                            Contacty Us Now!
+                                            Contact Us Now!
                                         </Link>
                                     </FadeInUp>
                                 </div>
@@ -182,7 +182,7 @@ function ConversionRate() {
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
                                         <Link to="#" className="iwt-button">
-                                            Contacty Us Now!
+                                            Contact Us Now!
                                         </Link>
                                     </FadeInUp>
                                 </div>
