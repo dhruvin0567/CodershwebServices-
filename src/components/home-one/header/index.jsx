@@ -8,6 +8,7 @@ import MobileNavbar from "../../common/navigation/mobile-nav/MobileNavbar";
 import HeaderButton from "./HeaderButton";
 import HeaderLogo from "./HeaderLogo";
 
+
 function Header() {
 	return (
 		<header className="site-header aximo-header-section aximo-header1 dark-bg" id="sticky-menu">
@@ -51,21 +52,6 @@ function Header() {
 										</Dropdown>
 									</DropdownItem>
 								</Dropdown>
-								{/* <Dropdown>
-									<DropdownItem dropdown title="Shopify Services">
-										<Dropdown noShape>
-											<DropdownItem url="woocommercedevelopment">WooCommerce-Development</DropdownItem>
-											<DropdownItem url="pestrashop">PestraShop  Development</DropdownItem>
-											<DropdownItem url="shift4shop">Shift4Shop  Development</DropdownItem>
-											<DropdownItem url="bigcommerce">BigCommerce  Development</DropdownItem>
-										</Dropdown>
-									</DropdownItem>
-									<DropdownItem dropdown title="Mobile App Development">
-										<Dropdown noShape>
-											<DropdownItem url="androidappdev">AndroidAppDev  Development</DropdownItem>
-										</Dropdown>
-									</DropdownItem>
-								</Dropdown> */}
 							</NavItem>
 							<NavItem dropdown title="Work">
 								<Dropdown>
