@@ -407,7 +407,7 @@
 	background-color: #fff;
 	box-shadow: -2px 2px 70px -25px rgb(0 0 0 / 30%);
 	position: absolute;
-	left: 0;
+	left: -50px;
 	top: 61px;
 	margin: 0;
 	padding: 12px 0;
@@ -428,7 +428,7 @@
 	background-color: #fff;
 	position: absolute;
 	top: 0;
-	left: 22px;
+	left: 82px;
 	transform: rotate(45deg) translatey(-11px);
 	z-index: 8;
 }

@@ -45,7 +45,7 @@ import Creditrepair from "../page/solutions/Creditrepair.jsx";
 import Itdigitalagency from "../page/solutions/Itdigitalagency.jsx";
 
 import CaseStudies from "../page/projects/CaseStudies.jsx";
-import Brand from "../page/Brand.jsx";
+import Brand from "../page/brand/Brand.jsx";
 import Pestrashop from "../page/service/ecommerece/Pestrashop.jsx";
 import Shift4shop from "../page/service/ecommerece/Shift4shop.jsx";
 import BigCommerce from "../page/service/ecommerece/BigCommerce.jsx";
@@ -67,6 +67,7 @@ import ShopifyAppDev from "../page/service/shopifyServices/ShopifyAppDev.jsx";
 import EcommerceSeo from "../page/service/shopifyServices/EcommerceSeo.jsx";
 import B2BWholsales from "../page/service/shopifyServices/B2BWholsales.jsx";
 import Subscriptions from "../page/service/shopifyServices/Subscriptions.jsx";
+import SingleBrand from "../page/brand/SingleBrand.jsx";
 
 // import Blog1 from "../page/blog/Blog.jsx";
 // import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
@@ -240,6 +241,10 @@ export const router = createBrowserRouter([
 					{
 						path: "/shopify-b2b-wholesale",
 						element: <B2BWholsales />,
+					},
+					{
+						path: "/single-brand",
+						element: <SingleBrand />,
 					},
 					// {
 					// 	path: "/singleblog2",

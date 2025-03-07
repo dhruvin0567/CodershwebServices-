@@ -7,6 +7,7 @@ import { menuItemsData } from "../../common/navigation/mobile-nav/menuItemsData"
 import MobileNavbar from "../../common/navigation/mobile-nav/MobileNavbar";
 import HeaderButton from "./HeaderButton";
 import HeaderLogo from "./HeaderLogo";
+import Mega_Menu from "./Mega_Menu";
 
 
 function Header() {
@@ -27,30 +28,7 @@ function Header() {
 							</NavItem>
 							<NavItem dropdown title="Shopify">
 								<Dropdown>
-									<DropdownItem dropdown title="New Shopify Stores">
-										<Dropdown noShape>
-											<DropdownItem url="customStore">Custom Store Project</DropdownItem>
-											<DropdownItem url="shopify-migrations">Shopify Migrations</DropdownItem>
-											<DropdownItem url="headless-shopify">Headless & Shopify</DropdownItem>
-											<DropdownItem url="shopify-plus">Shopify Plus</DropdownItem>
-										</Dropdown>
-									</DropdownItem>
-									<DropdownItem dropdown title="Existing Shopify Stores">
-										<Dropdown noShape>
-											<DropdownItem url="support-&-maintanance">Support & Maintanance</DropdownItem>
-											<DropdownItem url="conversion-rate">Conversion Rate Optimization</DropdownItem>
-											<DropdownItem url="selling-internationally-on-shopify">Internationalization</DropdownItem>
-											<DropdownItem url="subscriptions-on-shopify">Subscriptions</DropdownItem>
-										</Dropdown>
-									</DropdownItem>
-									<DropdownItem dropdown title="Other Services">
-										<Dropdown noShape>
-											<DropdownItem url="email-marketing-agency">Email & Sms Marketing </DropdownItem>
-											<DropdownItem url="shopify-app-development">Shopify App Development</DropdownItem>
-											<DropdownItem url="seo-agency">Ecommerce SEO</DropdownItem>
-											<DropdownItem url="shopify-b2b-wholesale">Shopify B2B & Wholesale</DropdownItem>
-										</Dropdown>
-									</DropdownItem>
+									<Mega_Menu />
 								</Dropdown>
 							</NavItem>
 							<NavItem dropdown title="Work">

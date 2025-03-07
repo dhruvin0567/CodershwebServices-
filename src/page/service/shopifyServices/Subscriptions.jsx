@@ -233,7 +233,7 @@ function Subscriptions() {
                 </div>
             </div>
 
-            <div className="section aximo-section-padding pt-0">
+            <div className="section aximo-section-padding pt-0 pb-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
@@ -376,7 +376,7 @@ function Subscriptions() {
                 </div>
             </div>
 
-            <div className="section aximo-section-padding6">
+            <div className="section aximo-section-padding6 ">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 order-lg-2">

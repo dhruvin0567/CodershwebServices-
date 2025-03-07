@@ -1,5 +1,5 @@
-import FadeInStagger from "../components/animation/FadeInStagger";
-import BreadCrumb from "../components/common/Breadcrumb";
+import FadeInStagger from "../../components/animation/FadeInStagger";
+import BreadCrumb from "../../components/common/Breadcrumb";
 import { Link } from 'react-router-dom';
 
 function Brand() {

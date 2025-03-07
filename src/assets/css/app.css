@@ -11977,3 +11977,72 @@ button#aximo-notified-btn {
 	display: inline-block;
 	/* To make it behave like an icon */
 }
+
+
+.mega-menu{
+	width: 700px;
+	height: auto;
+}
+.mega-menu-title{
+	font-size: 18px;
+	margin-bottom: 10px;
+	/* margin-left: 10px; */
+	color: #92d600;
+}
+
+.site-menu-main .mega-menu-item {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .site-menu-main .mega-menu-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 992px) {
+  .site-menu-main .mega-menu-item {
+    color: #000;
+  }
+}
+
+.site-menu-main .mega-menu-item>a {
+  color: inherit;
+  padding: 4px;
+  font-weight: 700;
+  color: #000;
+  position: relative;
+}
+
+.site-menu-main .mega-menu-item>a .menu-item-text {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.site-menu-main .mega-menu-item>a .menu-item-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background-color: #202030;
+  transition: all 0.3s ease;
+}
+
+.site-menu-main .mega-menu-item>a:hover .menu-item-text::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .site-menu-main .mega-menu-item>a {
+    transition: .4s;
+  }
+}
+
