@@ -1,39 +1,4 @@
 export const menuItemsData = [
-	// {
-	// 	title: "Demo",
-	// 	url: "#",
-	// 	submenu: [
-	// 		{
-	// 			title: "Design Agency",
-	// 			url: "/",
-	// 		},
-	// 		{
-	// 			title: "Startup Agency",
-	// 			url: "home-two",
-	// 		},
-	// 		{
-	// 			title: "SEO Agency",
-	// 			url: "home-three",
-	// 		},
-	// 		{
-	// 			title: "Business Consultation",
-	// 			url: "home-four",
-	// 		},
-	// 		{
-	// 			title: "Digital Marketing",
-	// 			url: "home-five",
-	// 		},
-	// 		{
-	// 			title: "Interior Design Agency",
-	// 			url: "home-six",
-	// 		},
-	// 		{
-	// 			title: "Advertising agency",
-	// 			url: "home-seven",
-	// 		},
-	// 	],
-	// },
-
 	{
 		title: "Company",
 		url: "#",
@@ -57,186 +22,98 @@ export const menuItemsData = [
 		],
 	},
 	{
-		title: "Services",
+		title: "Shopify",
 		url: "#",
 		submenu: [
-
 			{
-				title: "PestraShop",
-				url: "pestrashop",
+				title: "New Shopify Stores",
+				url: "#",
+				submenu: [
+					{
+						title: "Custome Store Project",
+						url: "customStore",
+					},
+					{
+						title: "Shopify Migrations",
+						url: "shopify-migrations",
+					},
+					{
+						title: "Headless & Shopify",
+						url: "headless-shopify",
+					},
+					{
+						title: "Shopify plus",
+						url: "shopify-plus",
+					},
+				],
 			},
 			{
-				title: "Shift4Shop",
-				url: "shift4shop",
+				title: "Existing Shopify Stores",
+				url: "#",
+				submenu: [
+					{
+						title: "Support & Maintanancet",
+						url: "support-&-maintanance",
+					},
+					{
+						title: "Shopify CRO Agency",
+						url: "conversion-rate",
+					},
+					{
+						title: "HInternationalization",
+						url: "selling-internationally-on-shopify",
+					},
+					{
+						title: "Subscriptions",
+						url: "subscriptions-on-shopify",
+					},
+				],
 			},
 			{
-				title: "BigCommerce",
-				url: "bigcommerce",
+				title: "Other Services",
+				url: "#",
+				submenu: [
+					{
+						title: "Email & Sms Marketing",
+						url: "email-marketing-agency",
+					},
+					{
+						title: "Shopify App Development",
+						url: "shopify-app-development",
+					},
+					{
+						title: "commerce SEO",
+						url: "seo-agency",
+					},
+					{
+						title: "Shopify B2B & Wholesale",
+						url: "shopify-b2b-wholesale",
+					},
+				],
 			},
-			{
-				title: "WooCommerce",
-				url: "woocommercedevelopment",
-			},
-			// {
-			// 	title: "Blog Grid",
-			// 	url: "blog-grid",
-			// },
-			// {
-			// 	title: "Blog Details",
-			// 	url: "single-blog",
-			// },
 		],
 	},
+
 	{
-		title: "Projects",
+		title: "Work",
 		url: "#",
 		submenu: [
 			{
 				title: "Case Studies",
-				url: "casestudies",
+				url: "case-studies",
 			},
-			{
-				title: "Our Work",
-				url: "ourwork",
-			},
-			{
-				title: "Our Work2",
-				url: "ourwork2",
-			},
-
-		],
-	},
-	{
-		title: "Pages",
-		url: "#",
-		submenu: [
-
-			{
-				title: "Pricing",
-				url: "pricing",
-			},
-			{
-				title: "Brand",
-				url: "brand",
-			},
-
 			{
 				title: "Portfolio",
 				url: "portfolio",
 			},
 			{
-				title: "Blog",
-				url: "blog1",
+				title: "Our Blog",
+				url: "ourblog",
 			},
 			{
-				title: "Blog Grid",
-				url: "blog-grid",
+				title: "Brand",
+				url: "brand",
 			},
-
-			// {
-			// 	title: "Blog",
-			// 	url: "#",
-			// 	submenu: [
-			// 		{
-			// 			title: "Our Blog",
-			// 			url: "blog",
-			// 		},
-			// 		{
-			// 			title: "Blog Grid",
-			// 			url: "blog-grid",
-			// 		},
-			// 		{
-			// 			title: "Blog Details",
-			// 			url: "single-blog",
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	title: "Service",
-			// 	url: "#",
-			// 	submenu: [
-			// 		{
-			// 			title: "Service",
-			// 			url: "service",
-			// 		},
-			// 		{
-			// 			title: "Service Details",
-			// 			url: "single-service",
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	title: "Team",
-			// 	url: "#",
-			// 	submenu: [
-			// 		{
-			// 			title: "Team",
-			// 			url: "team",
-			// 		},
-			// 		{
-			// 			title: "Team Details",
-			// 			url: "single-team",
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	title: "Portfolio",
-			// 	url: "#",
-			// 	submenu: [
-			// 		{
-			// 			title: "Portfolio One Column",
-			// 			url: "portfolio-one",
-			// 		},
-			// 		{
-			// 			title: "Portfolio Two Column",
-			// 			url: "portfolio-two",
-			// 		},
-			// 		{
-			// 			title: "Single Portfolio",
-			// 			url: "single-portfolio",
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	title: "Utility",
-			// 	url: "#",
-			// 	submenu: [
-			// 		{
-			// 			title: "Faq",
-			// 			url: "faq",
-			// 		},
-			// 		{
-			// 			title: "Error 404",
-			// 			url: "error-page",
-			// 		},
-			// 		{
-			// 			title: "Testimonial",
-			// 			url: "testimonial",
-			// 		},
-			// 		{
-			// 			title: "Coming Soon",
-			// 			url: "coming-soon",
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	title: "Account",
-			// 	url: "#",
-			// 	submenu: [
-			// 		{
-			// 			title: "Sign Up",
-			// 			url: "sign-up",
-			// 		},
-			// 		{
-			// 			title: "Sign In",
-			// 			url: "sign-in",
-			// 		},
-			// 		{
-			// 			title: "Reset Password",
-			// 			url: "reset-password",
-			// 		},
-			// 	],
-			// },
 		],
 	},
 	{

@@ -3652,6 +3652,13 @@ h1.post__title {
 	}
 }
 
+
+@media (max-width: 991px) {
+h1.post__title {
+		font-size: 36px;
+	}
+}
+
 .breadcrumbs ul li {
 	font-size: 21px;
 	font-weight: 700;
@@ -3772,7 +3779,7 @@ h1.post__title {
 
 .aximo-hero-thumb {
 	right: -5%;
-	max-width: 490px;
+	max-width: 425px;
 	/* height: 490px; */
 	overflow: hidden;
 	border-radius: 20px;
@@ -12046,3 +12053,18 @@ button#aximo-notified-btn {
   }
 }
 
+/* hero-section-title */
+.hero-section-title{
+	font-size: 70px;
+}
+
+@media (max-width: 576px) {
+	.hero-section-title {
+			font-size: 48px;
+		}
+}
+@media (max-width: 376) {
+	.hero-section-title {
+		font-size: 36px;
+	}
+}
