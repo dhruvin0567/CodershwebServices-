@@ -6,7 +6,9 @@
     color: var(--accent-color);
 }
 
-
+body {
+    overflow-x: hidden !important;
+}
 
 
 

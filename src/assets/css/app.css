@@ -112,8 +112,11 @@ body {
 	counter-reset: my-sec-counter;
 	font-size: 18px;
 	line-height: 30px;
+	overflow-x: hidden !important;
 }
-
+#root{
+	overflow-x: hidden !important;
+}
 body.styleguide {
 	background-color: #dcdfe8;
 }
