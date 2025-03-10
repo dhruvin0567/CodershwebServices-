@@ -1,6 +1,8 @@
 // import { useState, useEffect } from 'react';
 import HeroThumbImg1 from "../../../assets/images/v1/hero-thumb1.png";
-import HeroThumbImg2 from "../../../assets/images/v1/hero-thumb.png";
+import HeroThumbImg2 from "../../../assets/images/v1/icon/hero-thumb-2.jpg";
+import HeroThumbImg3 from "../../../assets/images/v1/icon/hero-thumb-3.jpg";
+import HeroThumbImg4 from "../../../assets/images/v1/icon/hero-thumb-4.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
 
@@ -45,13 +47,10 @@ function HeroThumbs() {
 					<img src={HeroThumbImg2} alt="" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={HeroThumbImg1} alt="" />
+					<img src={HeroThumbImg3} alt="" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={HeroThumbImg2} alt="" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={HeroThumbImg1} alt="" />
+					<img src={HeroThumbImg4} alt="" />
 				</SwiperSlide>
 
 			</Swiper>

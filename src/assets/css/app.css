@@ -11051,6 +11051,9 @@ a.post-read-more {
 	font-weight: 700;
 	text-transform: capitalize;
 	color: var(--heading-color);
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 }
 
 a.post-read-more img {
