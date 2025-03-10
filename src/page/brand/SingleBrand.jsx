@@ -51,18 +51,20 @@ function SingleBrand() {
                 </div>
             </div>
 
-            <div className="cs-richtext text-center mx-auto">
-                <h2 className="mb-5">Lorem ipsum, dolor sit</h2>
-                <div className="cs-richtext-paragraph mx-auto">
-                    <p className="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde necessitatibus hic suscipit
-                        optio aliquid
-                        voluptatem nam dolor non. Assumenda tempore quo nisi minus alias. Sint autem dolore doloribus aut
-                        fugiat.
-                    </p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde necessitatibus hic suscipit optio aliquid
-                        voluptatem nam dolor non. Assumenda tempore quo nisi minus alias. Sint autem dolore doloribus aut
-                        fugiat.
-                    </p>
+            <div className="cs-richtext text-center m-5">
+                <div className="container">
+                    <h2 className="mb-5">Lorem ipsum, dolor sit</h2>
+                    <div className="cs-richtext-paragraph mx-5 px-5">
+                        <p className="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde necessitatibus hic suscipit
+                            optio aliquid
+                            voluptatem nam dolor non. Assumenda tempore quo nisi minus alias. Sint autem dolore doloribus aut
+                            fugiat.
+                        </p>
+                        <p className="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde necessitatibus hic suscipit optio aliquid
+                            voluptatem nam dolor non. Assumenda tempore quo nisi minus alias. Sint autem dolore doloribus aut
+                            fugiat.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -83,8 +85,55 @@ function SingleBrand() {
                 </div>
             </div>
 
+            <div className="cs-richtext text-center m-5 ">
+                <div className="container">
+                    <h2 className="mb-5">Lorem ipsum dolor sit amet <br /> consectetur adipisicing elit.</h2>
+                    <div className="cs-richtext-paragraph mx-5">
+                        <p className="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde necessitatibus hic suscipit
+                            optio aliquid
+                            voluptatem nam dolor non. Assumenda tempore quo nisi minus alias. Sint autem dolore doloribus aut
+                            fugiat.
+                        </p>
+                        <p className="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde necessitatibus hic suscipit optio aliquid
+                            voluptatem nam dolor non. Assumenda tempore quo nisi minus alias. Sint autem dolore doloribus aut
+                            fugiat.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
+            <div>
+                <div className="image-section">
+                    <div className="case-study-section-img d-flex justify-content-center">
+                        <img src="https://placehold.co/1365x757/png" alt />
+                    </div>
+                </div>
+                {/* End */}
+                <div className="cs-video-section">
+                    <div className="cs-video">
+                        {/* <video>
+                  <source src="" type="">
+              </video> */}
+                        <img src="https://placehold.co/1920x570/png" alt />
+                    </div>
+                </div>
+            </div>
 
+            <div className="image-cards-section py-5">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-4">
+                            <img src="https://placehold.co/400x550/png" alt />
+                        </div>
+                        <div className="col-lg-4">
+                            <img src="https://placehold.co/400x550/png" alt />
+                        </div>
+                        <div className="col-lg-4">
+                            <img src="https://placehold.co/400x550/png" alt />
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     )

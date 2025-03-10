@@ -43,7 +43,13 @@ function MessageForm() {
 		backgroundImage: "none",
 		backgroundColor: "transparent",
 		color: "#ccc",
+
 		transition: "background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s",
+
+	};
+
+	const additionalStyles = {
+		fontWeight: "400",
 	};
 
 	return (
@@ -78,7 +84,7 @@ function MessageForm() {
 					type="text"
 					name="number"
 					placeholder="+088-234-6849"
-					style={autofillStyles}
+					style={Object.assign({}, autofillStyles, additionalStyles)}
 				/>
 			</div>
 			<div className="aximo-form-field">
