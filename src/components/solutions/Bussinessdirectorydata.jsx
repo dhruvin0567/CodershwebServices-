@@ -5,6 +5,7 @@ import { Autoplay } from 'swiper/modules';
 import Star2Img from "../../assets/images/v1/icon/star2.png";
 import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 import VideoSlider from '../common/VideoSlider';
+import Check from "../../assets/images/icon/check.svg";
 
 
 import Slider1Img from '../../assets/images/images2/hpn-global-front-page.webp';
@@ -269,14 +270,14 @@ function Bussinessdirectorydata() {
                         </h3>
                         <div className="services-list d-md-flex justify-content-around">
                             <ul className>
-                                <li><i className="fa-regular fa-circle-check" /> Advanced Search and Filter Functionality</li>
-                                <li><i className="fa-regular fa-circle-check" /> User-Friendly Business Listings</li>
-                                <li><i className="fa-regular fa-circle-check" /> Mobile and SEO-Optimized Design</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Advanced Search and Filter Functionality</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> User-Friendly Business Listings</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Mobile and SEO-Optimized Design</li>
                             </ul>
                             <ul className>
-                                <li><i className="fa-regular fa-circle-check" /> Reviews and Ratings Integration</li>
-                                <li><i className="fa-regular fa-circle-check" /> Easy Admin Panel for Updates</li>
-                                <li><i className="fa-regular fa-circle-check" /> Monetization Features (e.g., paid listings,
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Reviews and Ratings Integration</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Easy Admin Panel for Updates</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Monetization Features (e.g., paid listings,
                                     advertisements)</li>
                             </ul>
                         </div>

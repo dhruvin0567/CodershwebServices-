@@ -41,25 +41,26 @@ const sliderData = [
 	},
 ];
 
-const swiperSettings = {
-	centeredSlides: true,
-	speed: 6000,
-	autoplay: {
-		delay: 1,
-	},
-	loop: true,
-	slidesPerView: "auto",
-	allowTouchMove: false,
-	modules: [Autoplay],
 
-};
 
 function AutoSlider() {
 	return (
 		<div className="aximo-auto-slider-section">
 			<div className="swiper aximo-auto-slider">
 				{
-					<Swiper {...swiperSettings}>
+					<Swiper
+						allowTouchMove={false}
+						centeredSlides={true}
+						speed={6000}
+						spaceBetween={30} // Space between slides
+						slidesPerView={"auto"} // Number of slides visible at once
+						loop={true} // Infinite loop of the slides
+						autoplay={{
+							delay: 1,
+							disableOnInteraction: false,
+						}} // Autoplay settings
+						modules={[Autoplay]} // Adding the Autoplay module
+					>
 						{sliderData.map((item) => (
 							<SwiperSlide key={item.id}>
 								<div className="aximo-auto-slider-item">

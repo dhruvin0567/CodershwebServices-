@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
 import Star2Img from "../../assets/images/v1/icon/star2.png";
 import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
+import Check from "../../assets/images/icon/check.svg";
 
 import Slider1Img from '../../assets/images/images2/all-it-nw-front-page.webp';
 import Slider2Img from '../../assets/images/images2/alt-it-front-page.webp';
@@ -365,14 +366,14 @@ function Itdigitalagencydata() {
                         </h3>
                         <div className="services-list d-md-flex justify-content-around">
                             <ul className>
-                                <li><i className="fa-regular fa-circle-check" /> Fully Responsive and Mobile-Friendly Design</li>
-                                <li><i className="fa-regular fa-circle-check" /> SEO-Optimized Structure</li>
-                                <li><i className="fa-regular fa-circle-check" /> Services Showcase and Portfolio Integration</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Fully Responsive and Mobile-Friendly Design</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> SEO-Optimized Structure</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Services Showcase and Portfolio Integration</li>
                             </ul>
                             <ul className>
-                                <li><i className="fa-regular fa-circle-check" /> Fast and Secure Performance</li>
-                                <li><i className="fa-regular fa-circle-check" /> Blog and Resource Center</li>
-                                <li><i className="fa-regular fa-circle-check" /> Social Media Integration</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Fast and Secure Performance</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Blog and Resource Center</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Social Media Integration</li>
                             </ul>
                         </div>
                     </div>

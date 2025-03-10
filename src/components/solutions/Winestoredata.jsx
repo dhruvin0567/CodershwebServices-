@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
 import Star2Img from "../../assets/images/v1/icon/star2.png";
 import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
+import Check from "../../assets/images/icon/check.svg";
 
 import Slider1Img from '../../assets/images/images2/artisan-f-p.webp';
 import Slider2Img from '../../assets/images/images2/asterley-bros-f-p.webp';
@@ -436,14 +437,14 @@ const ReviewSection = () => {
                         </h3>
                         <div className="services-list d-md-flex justify-content-around">
                             <ul className>
-                                <li><i className="fa-regular fa-circle-check" /> Modern and Elegant Website Redesign</li>
-                                <li><i className="fa-regular fa-circle-check" /> Mobile-Friendly and Responsive Design</li>
-                                <li><i className="fa-regular fa-circle-check" /> Streamlined Product Browsing and Search</li>
+                                <li> <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Modern and Elegant Website Redesign</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Mobile-Friendly and Responsive Design</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Streamlined Product Browsing and Search</li>
                             </ul>
                             <ul className>
-                                <li><i className="fa-regular fa-circle-check" /> Simplified Checkout to Reduce Abandonment</li>
-                                <li><i className="fa-regular fa-circle-check" /> Integrated Inventory and Shipping Systems </li>
-                                <li><i className="fa-regular fa-circle-check" /> Data-Driven CRO Strategies </li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Simplified Checkout to Reduce Abandonment</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Integrated Inventory and Shipping Systems </li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Data-Driven CRO Strategies </li>
                             </ul>
                         </div>
                     </div>

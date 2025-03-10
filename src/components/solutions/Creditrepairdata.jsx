@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
 import Star2Img from "../../assets/images/v1/icon/star2.png";
 import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
+import Check from "../../assets/images/icon/check.svg";
 
 import Slider1Img from '../../assets/images/images2/credi-coach-front-page.png';
 import Slider2Img from '../../assets/images/images2/Credit-Saint-Ranked-1-By-Top-Financial-Sites-front-page.png';
@@ -332,14 +333,14 @@ function Creditrepairdata() {
                         </h3>
                         <div className="services-list d-md-flex justify-content-around">
                             <ul className>
-                                <li><i className="fa-regular fa-circle-check" /> Mobile-Responsive Design</li>
-                                <li><i className="fa-regular fa-circle-check" /> SEO-Optimized Pages</li>
-                                <li><i className="fa-regular fa-circle-check" /> Integrated Lead Capture Forms</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Mobile-Responsive Design</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> SEO-Optimized Pages</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Integrated Lead Capture Forms</li>
                             </ul>
                             <ul className>
-                                <li><i className="fa-regular fa-circle-check" /> User-Friendly Dashboard</li>
-                                <li><i className="fa-regular fa-circle-check" /> Fast Load Times</li>
-                                <li><i className="fa-regular fa-circle-check" /> Secure Payment Integration (if applicable)</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> User-Friendly Dashboard</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Fast Load Times</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Secure Payment Integration (if applicable)</li>
                             </ul>
                         </div>
                     </div>
