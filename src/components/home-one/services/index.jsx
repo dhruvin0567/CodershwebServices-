@@ -10,7 +10,7 @@ function Services({ services }) {
 					<h2>
 						We provide Shopify
 						<span className="aximo-title-animation">
-							Design&Developmnet
+							Design & Developmnet
 							<span className="aximo-title-icon">
 								<img src={Star2Img} alt="Star2Img" />
 							</span>

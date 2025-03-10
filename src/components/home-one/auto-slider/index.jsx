@@ -3,81 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
 const sliderData = [
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Let's create new experiences",
-		img: Star3Img,
-	},
+
 	{
 		id: crypto.randomUUID(),
 		title: "Let's create new experiences",
@@ -125,15 +51,7 @@ const swiperSettings = {
 	slidesPerView: "auto",
 	allowTouchMove: false,
 	modules: [Autoplay],
-	// slidesPerView: 1,
-	// breakpoints: {
-	// 	1200: {
-	// 		slidesPerView: 2,
-	// 	},
-	// 	1400: {
-	// 		slidesPerView: 2.5,
-	// 	},
-	// },
+
 };
 
 function AutoSlider() {

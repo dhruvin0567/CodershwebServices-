@@ -20,7 +20,7 @@ const testimonialsData = [
         description:
             "The Biggest thing was he got the design from the beginning mockup and didn't waste any time and everything ran on schedule with making lots of minor didn't waste any time and everything ran on schedule with making adjustments to a level of amazing quality!",
         author: "Amber Page",
-        designation: "Portland,Oregon",
+        designation: "Portland, Oregon",
         img: Thumb1Img
     },
     {
@@ -30,7 +30,7 @@ const testimonialsData = [
         description:
             "Working with Shah was a game-changer for our brand. Their exceptional creativity & vision breathed new life into our visual. The logo they perfectly captures our essence & has become instantly recognizable. We couldn't be happier the results!",
         author: "Phillip Hunt ",
-        designation: "Detroit,Michigan",
+        designation: "Detroit, Michigan",
         img: Thumb4Img
     },
     {
@@ -40,7 +40,7 @@ const testimonialsData = [
         description:
             "Made an amazing website for our org. We have him our vision and everything came out even better than imagined. Use him for all website needs you will be pleased! Use him for all website needs you will be pleased!",
         author: "Milano Joe",
-        designation: "Seattle,Washington",
+        designation: "Seattle, Washington",
         img: Thumb1Img
     },
     {
@@ -50,7 +50,7 @@ const testimonialsData = [
         description:
             "His work went beyond what I was expecting and I would love to continue working with him. His work went beyond what I was expecting and I would love to continue working with him continue working with him.",
         author: "Danial Mark",
-        designation: "San Antonio,Texas",
+        designation: "San Antonio, Texas",
         img: Thumb2Img
     },
 ];

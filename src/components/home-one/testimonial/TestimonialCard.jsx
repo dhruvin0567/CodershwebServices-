@@ -20,7 +20,8 @@ function TestimonialCard({ testimonial: { rating, title, description, author, de
 				</div>
 				<div className="aximo-testimonial-author-data">
 					<p>
-						{author} <br />
+						{author}
+						<br />
 						<span>{designation}</span>
 					</p>
 				</div>
