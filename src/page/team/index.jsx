@@ -12,7 +12,7 @@ import Team5Img from "../../assets/images/team/team5.png";
 import Team6Img from "../../assets/images/team/team6.png";
 import Team7Img from "../../assets/images/team/team7.png";
 import Team8Img from "../../assets/images/team/team8.png";
-import Team9Img from "../../assets/images/team/team9.png";
+// import Team9Img from "../../assets/images/team/team9.png";
 
 const teamsData = [
 	{
@@ -63,12 +63,12 @@ const teamsData = [
 		designation: "Shopify Developer",
 		img: Team7Img,
 	},
-	{
-		id: crypto.randomUUID(),
-		name: "Ravi Gajariya",
-		designation: "Web Designer",
-		img: Team9Img,
-	},
+	// {
+	// 	id: crypto.randomUUID(),
+	// 	name: "Ravi Gajariya",
+	// 	designation: "Web Designer",
+	// 	img: Team9Img,
+	// },
 	// {
 	// 	id: crypto.randomUUID(),
 	// 	name: "Fradik Hazbag",

@@ -15,13 +15,70 @@ import spin from "../../assets/images/images2/circle1.png";
 import wrapperImg1 from "../../assets/images/images2/image_2025_02_24T07_59_50_301Z.png";
 import wrapperImg2 from "../../assets/images/images2/image_2025_02_24T07_59_58_147Z.png";
 import Marquee from "react-fast-marquee";
+import { Link } from 'react-router-dom';
+import logo from "../../assets/images/logo/logo-white.svg";
+import Cloud from "../../assets/images/images2/614b5b07b77be58b407afc62_stacked-area-up.svg";
+
+
+
 
 function LandingPage() {
     return (
         <div>
             <BreadCrumb title="Landing Page" />
 
-            <div className="design-section py-5">
+            <header>
+                <nav className="navbar navbar-expand-lg dark-bg">
+                    <div className="container-fluid">
+                        <div className="brand-logo pe-4 me-0" style={{ borderRight: "2px solid white", width: "250px" }}>
+                            <Link to="index.html">
+                                <img src={logo} alt="Logo" className="light-version-logo" />
+                            </Link>
+                        </div>
+                        <span className="text-light ps-4">
+                            We design beautiful web experiences that convert 286% more business
+                            <img src={Cloud} alt="" />
+                        </span>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form className="d-block d-sm-flex gap-1" role="search">
+                                <input className="form-control landing-form-input2" type="email" placeholder="alex.carter@example.com*" aria-label="Search" />
+                                <button className="btn landing-form-btn" type="submit">Get A Free Audit</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div className="hero-section mx-sm-5 pt-sm-5 pt-4 mb-4 overflow-hidden">
+                <div className="container">
+                    <h1 className="ani-h1 text-center mb-4 light-text">"We Build High-Converting Websites That Turn Visitors Into
+                        Customers."</h1>
+                    <h4 className="text-center mx-auto mb-4 light-text">"Elevate your business with a stunning, conversion-optimized
+                        website designed to turn visitors into customers. And the best part? Our Guarantee: Love the design or
+                        you don’t pay!"
+                    </h4>
+                    <form className="d-block d-sm-flex gap-1 justify-content-center mb-5" role="search">
+                        <input className="form-control mb-2 mb-sm-0  landing-form-input3" type="email" placeholder="alex.carter@example.com*" aria-label="Search" />
+                        <button className="btn  landing-form-btn" type="submit">Get A Free Audit</button>
+                    </form>
+                </div>
+                {/* <div className="swiper projects-slider">
+                    <div className="swiper-wrapper">
+                        <img className="swiper-slide" src="assets/image/artisan-f-p.webp" alt />
+                        <img className="swiper-slide" src="assets/image/asterley-bros-f-p.webp" alt />
+                        <img className="swiper-slide" src="assets/image/bone-f-p.webp" alt />
+                        <img className="swiper-slide" src="assets/image/Claudine-f-p.webp" alt />
+                        <img className="swiper-slide" src="assets/image/Double-Dutch-f-p.webp" alt />
+                        <img className="swiper-slide" src="assets/image/gattertop-f-p.webp" alt />
+                        <img className="swiper-slide" src="assets/image/liberation-f-p.webp" alt />
+                        <img className="swiper-slide" src="assets/image/madamef-f-p.webp" alt />
+                        <img className="swiper-slide" src="assets/image/negroni-soc-f-p.webp" alt />
+                        <img className="swiper-slide" src="assets/image/van-hunks-f-p.webp" alt />
+                    </div>
+                </div> */}
+            </div>
+
+            <div className="design-section p-2 p-sm-2 p-md-5 ">
                 <div className="container-fluid container-big py-3 py-lg-5">
                     <div className="row pb-5">
                         <div className="col-lg-9">
@@ -33,7 +90,7 @@ function LandingPage() {
                             </p>
                         </div>
                         <div className="col-lg-3">
-                            <div className="image-spinner">
+                            <div className="image-spinner mt-sm-5 mt-lg-0 mt-5">
                                 <img src={static2} alt className="static-image" width={150} />
                                 <img src={spin} alt className="spinning-image" />
                             </div>
@@ -69,12 +126,61 @@ function LandingPage() {
                 </div>
             </div>
 
-            <div className="about-owner pt-5">
-                <div className="container-fluid container-big">
-                    <div className="about-us1">
-                        <h3>Wondering what makes us different from other web development agencies?</h3>
-                        <h2>We are digital marketing experts with a passion for development.</h2>
-                        <h5>
+            <div className="row align-items-center dark-bg m-2 m-md-5 m-sm-2 p-2 p-md-5 landing-form">
+                <div className="row d-flex align-items-center py-4">
+                    <div className="col-lg-5 col-12 mb-md-4 mb-0 mb-lg-0">
+                        <h3 className="ani-h3 light-text mb-3 mb-0 ">
+                            Ready to bring your project to life?
+                        </h3>
+                    </div>
+                    <div className="col-lg-7 col-12">
+                        <form className="d-block d-sm-flex gap-1 justify-content-center" role="search">
+                            <input className="form-control mb-2 mb-sm-0 landing-form-input" type="email" placeholder="alex.carter@example.com*" aria-label="Search" />
+                            <button className="btn landing-form-btn" type="submit">Get A Free Audit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div className="sliding-text p-5 d-none d-lg-block">
+                <div className="container container-big">
+                    <div className="row">
+                        <div className="col-lg-8 d-flex flex-column justify-content-end">
+                            <h2>CONVERT</h2>
+                            <div className="text-slider-wrapper d-flex align-items-center">
+                                {/* <span class="swiper text-slider">
+                              <div class="swiper-wrapper">
+                                  <h3 class="swiper-slide"> HIGH-END DESIGN</h3>
+                                  <h3 class="swiper-slide"> HIGH-END DESIGN</h3>
+                              </div>
+                          </span> */}
+                                <div className="marquee_container">
+                                    <div className="marquee">
+                                        <h3><Marquee speed={70} loop={0}>HIGH-END DESIGN</Marquee></h3>
+                                    </div>
+                                </div>
+                                <h2> YOUR</h2>
+                            </div>
+                            <h2> VISITORS</h2>
+                        </div>
+                        <div className="col-lg-4">
+                            <div className="image-wrapper mb-5">
+                                <img src={wrapperImg1} alt width={400} className="mb-5" />
+                            </div>
+                            <div className="image-wrapper mt-5">
+                                <img className="ms-auto d-block" src={wrapperImg2} alt width={400} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="about-owner px-2 py-5 p-md-5 p-sm-2 pb-0 pb-md-0">
+                <div className="container-fluid container-big ">
+                    <div className="about-us1 mx-0">
+                        <h3 className="mb-3">Wondering what makes us different from other web development agencies?</h3>
+                        <h2 className="mb-3">We are digital marketing experts with a passion for development.</h2>
+                        <h5 className="mb-3">
                             Unlike traditional web development agencies that focus solely on coding, our background in digital
                             marketing has given us deep insights into what makes a website convert—and what doesn’t.
                         </h5>
@@ -126,29 +232,29 @@ function LandingPage() {
                                     they land on your website is absolutely essential.
                                 </p>
                             </div>
-                            <h2>We build trust with your audience then turn them into loyal, paying customers.</h2>
+                            <h2 className="mb-5 mb-md-0">We build trust with your audience then turn them into loyal, paying customers.</h2>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="countdown-index pt-5">
+            <div className="countdown-index py-5 px-2 p-md-5 pt-0">
                 <div className="container pt-0 pt-sm-5">
                     <div className="row">
                         <div className="col-lg-6">
-                            <h5>Discover how an underperforming website could be holding your business back.</h5>
+                            <h5 className="mb-3">Discover how an underperforming website could be holding your business back.</h5>
                         </div>
                     </div>
                     <div className="row pb-5">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mb-3">
                             <h2>74% </h2>
                             <p>of users admit to judging a company's credibility based on its website design.</p>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4  mb-3">
                             <h2>86% </h2>
                             <p>of B2C customers admit that design is the number one factor influencing their purchase decision.</p>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4  mb-3">
                             <h2>78% </h2>
                             <p>of a website visitor’s first impressions are purely based on design.</p>
                         </div>
@@ -156,10 +262,10 @@ function LandingPage() {
                 </div>
             </div>
 
-            <div className="dark-bg we-invest py-5">
+            <div className="dark-bg we-invest py-5 px-2 p-md-5">
                 <div className="container-fluid container-big">
                     <div className="heading-wrapper mb-5 text-center" style={{ margin: "auto", maxWidth: "800px" }}>
-                        <h2 className="light-text">We Invest Upfront</h2>
+                        <h2 className="light-text mb-3">We Invest Upfront</h2>
                         <p className="light-text">
                             You shouldn’t have to bear all the risk upfront. Our philosophy is to invest in people first that’s why we
                             design, develop, and launch your site before payment even crosses your mind.
@@ -182,32 +288,32 @@ function LandingPage() {
                 </div>
             </div>
 
-            <div className="counts py-5">
+            <div className="counts py-5 px-2 p-md-5 pb-0">
                 <div className="container-fluid container-big">
-                    <h5 className="text-center">That also works.</h5>
+                    <h5 className="text-center mb-3">That also works.</h5>
                     <h2 className="text-center">You can see for yourself <br /> that we’re getting results.</h2>
                     <div className="row py-5">
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 col-md-6 mb-3 mb-lg-0">
                             <div className="dark-bg p-4 counts-card">
-                                <h2 className="light-text">38%</h2>
+                                <h2 className="light-text  mb-3 mb-lg-0">38%</h2>
                                 <p className="light-text">Lower customer acquisition costs on Meta (Facebook &amp; Instagram).</p>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 col-md-6 mb-3 mb-lg-0">
                             <div className="dark-bg p-4 counts-card">
-                                <h2 className="light-text">25%</h2>
+                                <h2 className="light-text  mb-3 mb-lg-0">25%</h2>
                                 <p className="light-text">Landing page to checkout click-through rate.</p>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 col-md-6 mb-3 mb-lg-0">
                             <div className="dark-bg p-4 counts-card">
-                                <h2 className="light-text">285%</h2>
+                                <h2 className="light-text  mb-3 mb-lg-0">285%</h2>
                                 <p className="light-text">Growth in conversion rate versus industry standards.</p>
                             </div>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3  col-md-6 mb-3 mb-lg-0">
                             <div className="dark-bg p-4 counts-card">
-                                <h2 className="light-text">96%</h2>
+                                <h2 className="light-text  mb-3 mb-lg-0">96%</h2>
                                 <p className="light-text">Boost in ad spend post-Solvexmedia design integration.</p>
                             </div>
                         </div>
@@ -216,26 +322,26 @@ function LandingPage() {
             </div>
 
             <div className="awards">
-                <div className="container-fluid py-5 container-big border-top">
+                <div className="container-fluid p-5 container-big border-top">
                     <h2 className="text-center">Top Rated Web Development Company Since 2014</h2>
                     <div className="row mt-5">
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 col-md-6 col-12">
                             <img className="d-flex mx-auto" src={badge1} alt />
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3  col-md-6 col-12">
                             <img className="d-flex mx-auto" src={badge2} alt />
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3  col-md-6 col-12">
                             <img className="d-flex mx-auto" src={badge3} alt />
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-3  col-md-6 col-12">
                             <img className="d-flex mx-auto" src={badge4} alt />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="comparing-us py-5 d-none d-md-flex">
+            <div className="comparing-us p-5 d-none d-md-flex">
                 <div className="container" >
                     <div className="heading-wrapper" style={{ margin: "auto", maxWidth: "800px" }}>
                         <h2 className="text-center">Why Choose Us</h2>
@@ -247,7 +353,7 @@ function LandingPage() {
                             <tbody><tr>
                                 <td />
                                 <td className="dark-bg">
-                                    <div className="d-flex justify-content-center company-logo">
+                                    <div className="d-flex justify-content-center company-logo p-3">
                                         <img src={Logo} alt width={200} />
                                     </div>
                                 </td>
@@ -255,7 +361,7 @@ function LandingPage() {
                                 <td className="text-center">Freelancers</td>
                             </tr>
                                 <tr>
-                                    <td>Comprehensive, Hassle-Free Solution</td>
+                                    <td className="p-2">Comprehensive, Hassle-Free Solution</td>
                                     <td className="dark-bg">
                                         <div className="d-flex justify-content-center">
                                             <img src={Group1} alt width={15} />
@@ -273,7 +379,7 @@ function LandingPage() {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>288% Higher Average Conversion Rate Than Industry Standard</td>
+                                    <td className="p-2">288% Higher Average Conversion Rate Than Industry Standard</td>
                                     <td className="dark-bg">
                                         <div className="d-flex justify-content-center">
                                             <img src={Group1} alt width={15} />
@@ -291,7 +397,7 @@ function LandingPage() {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Designed by Experts with a Proven $28M+ Revenue Track Record</td>
+                                    <td className="p-2">Designed by Experts with a Proven $28M+ Revenue Track Record</td>
                                     <td className="dark-bg">
                                         <div className="d-flex justify-content-center">
                                             <img src={Group1} alt width={15} />
@@ -309,7 +415,7 @@ function LandingPage() {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Love It or It’s Free Guarantee.</td>
+                                    <td className="p-2">Love It or It’s Free Guarantee.</td>
                                     <td className="dark-bg">
                                         <div className="d-flex justify-content-center">
                                             <img src={Group1} alt width={15} />
@@ -327,7 +433,7 @@ function LandingPage() {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Endless Revisions at No Extra Cost</td>
+                                    <td className="p-2">Endless Revisions at No Extra Cost</td>
                                     <td className="dark-bg">
                                         <div className="d-flex justify-content-center">
                                             <img src={Group1} alt width={15} />
@@ -353,59 +459,15 @@ function LandingPage() {
                 </div>
             </div>
 
-            <div className="sliding-text py-5 d-none d-lg-block">
-                <div className="container container-big">
-                    <div className="row">
-                        <div className="col-lg-8 d-flex flex-column justify-content-end">
-                            <h2>CONVERT</h2>
-                            <div className="text-slider-wrapper d-flex align-items-center">
-                                {/* <span class="swiper text-slider">
-                              <div class="swiper-wrapper">
-                                  <h3 class="swiper-slide"> HIGH-END DESIGN</h3>
-                                  <h3 class="swiper-slide"> HIGH-END DESIGN</h3>
-                              </div>
-                          </span> */}
-                                <div className="marquee_container">
-                                    <div className="marquee">
-                                        <h3> <Marquee speed={70}>
-                                            HIGH-END DESIGN HIGH-END DESIGN HIGH-END DESIGN
-                                        </Marquee></h3>
-                                    </div>
-
-                                </div>
-                                <h2> YOUR</h2>
-                            </div>
-                            <h2> VISITORS</h2>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="image-wrapper mb-5">
-                                <img src={wrapperImg1} alt width={400} className="mb-5" />
-                            </div>
-                            <div className="image-wrapper mt-5">
-                                <img className="ms-auto d-block" src={wrapperImg2} alt width={400} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
-            <div>
-                <div className="row align-items-center dark-bg mx-5">
-                    <div className="col-lg-6    ">
-                        <h3 className="ani-h3 light-text">
-                            Ready to bring your project to life?
-                        </h3>
-                    </div>
-                    <div className="col-lg-6">
-                        <form className="d-block d-sm-flex gap-1 justify-content-center" role="search">
-                            <input className="form-control mb-2 mb-sm-0 landing-form-input" type="email" placeholder="alex.carter@example.com*" aria-label="Search" />
-                            <button className="btn landing-form-btn" type="submit">Get A Free Audit</button>
-                        </form>
-                    </div>
 
-                </div>
-            </div >
+
+
+
+
+
+
 
 
 
