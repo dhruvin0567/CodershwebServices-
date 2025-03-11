@@ -14,6 +14,7 @@ import static2 from "../../assets/images/images2/image 2.png";
 import spin from "../../assets/images/images2/circle1.png";
 import wrapperImg1 from "../../assets/images/images2/image_2025_02_24T07_59_50_301Z.png";
 import wrapperImg2 from "../../assets/images/images2/image_2025_02_24T07_59_58_147Z.png";
+import Marquee from "react-fast-marquee";
 
 function LandingPage() {
     return (
@@ -366,11 +367,11 @@ function LandingPage() {
                           </span> */}
                                 <div className="marquee_container">
                                     <div className="marquee">
-                                        <h3>HIGH-END DESIGN</h3>
+                                        <h3> <Marquee speed={70}>
+                                            HIGH-END DESIGN HIGH-END DESIGN HIGH-END DESIGN
+                                        </Marquee></h3>
                                     </div>
-                                    <div className="marquee">
-                                        <h3>HIGH-END DESIGN</h3>
-                                    </div>
+
                                 </div>
                                 <h2> YOUR</h2>
                             </div>
@@ -389,8 +390,27 @@ function LandingPage() {
             </div>
 
 
+            <div>
+                <div className="row align-items-center dark-bg mx-5">
+                    <div className="col-lg-6    ">
+                        <h3 className="ani-h3 light-text">
+                            Ready to bring your project to life?
+                        </h3>
+                    </div>
+                    <div className="col-lg-6">
+                        <form className="d-block d-sm-flex gap-1 justify-content-center" role="search">
+                            <input className="form-control mb-2 mb-sm-0 landing-form-input" type="email" placeholder="alex.carter@example.com*" aria-label="Search" />
+                            <button className="btn landing-form-btn" type="submit">Get A Free Audit</button>
+                        </form>
+                    </div>
 
-        </div>
+                </div>
+            </div >
+
+
+
+
+        </div >
     );
 }
 

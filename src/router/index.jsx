@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
 import LayoutOne from "../components/layout/LayoutOne.jsx";
-import LayoutEight from "../components/layout/LayoutEight.jsx";
 import Layout from "../components/layout/index.jsx";
 import AboutUs from "../page/AboutUs";
 import ContactUs from "../page/ContactUs";
@@ -12,6 +11,7 @@ import Team from "../page/team";
 import ErrorPage from "../error-page";
 import BlogGridPage from "../page/blog/BlogGridPage.jsx";
 
+// import LayoutEight from "../components/layout/LayoutEight.jsx";
 // import Service from "../page/service";
 // import Reset from "../page/auth/ResetPassword.jsx";
 // import SignIn from "../page/auth/SignIn";
@@ -43,15 +43,8 @@ import Winestore from "../page/solutions/Winestore.jsx";
 import Businessdirectory from "../page/solutions/Businessdirectory.jsx";
 import Creditrepair from "../page/solutions/Creditrepair.jsx";
 import Itdigitalagency from "../page/solutions/Itdigitalagency.jsx";
-
 import CaseStudies from "../page/projects/CaseStudies.jsx";
 import Brand from "../page/brand/Brand.jsx";
-import Pestrashop from "../page/service/ecommerece/Pestrashop.jsx";
-import Shift4shop from "../page/service/ecommerece/Shift4shop.jsx";
-import BigCommerce from "../page/service/ecommerece/BigCommerce.jsx";
-import WooCommerceDevelopment from "../page/service/ecommerece/WooCommerceDevelopment.jsx";
-// import AndroidAppDev from "../page/service/mobileapp/AndroidAppDev.jsx";
-// import IosAppDev from "../page/service/mobileapp/IosAppDev.jsx";
 import SingleBlogPage from "../page/blog/SingleBlog.jsx";
 import LandingPage from "../page/projects/LandingPage.jsx";
 import CustomStore from "../page/service/shopifyServices/CustomStore.jsx";
@@ -69,6 +62,12 @@ import B2BWholsales from "../page/service/shopifyServices/B2BWholsales.jsx";
 import Subscriptions from "../page/service/shopifyServices/Subscriptions.jsx";
 import SingleBrand from "../page/brand/SingleBrand.jsx";
 
+// import Pestrashop from "../page/service/ecommerece/Pestrashop.jsx";
+// import Shift4shop from "../page/service/ecommerece/Shift4shop.jsx";
+// import BigCommerce from "../page/service/ecommerece/BigCommerce.jsx";
+// import WooCommerceDevelopment from "../page/service/ecommerece/WooCommerceDevelopment.jsx";
+// import AndroidAppDev from "../page/service/mobileapp/AndroidAppDev.jsx";
+// import IosAppDev from "../page/service/mobileapp/IosAppDev.jsx";
 // import Blog1 from "../page/blog/Blog.jsx";
 // import SingleBlog2 from "../page/blog/SingleBlog2.jsx";
 // import OurWork from "../page/projects/OurWork.jsx";
@@ -166,22 +165,22 @@ export const router = createBrowserRouter([
 						path: "*",
 						element: <ErrorPage />,
 					},
-					{
-						path: "/pestrashop",
-						element: <Pestrashop />,
-					},
-					{
-						path: "/shift4shop",
-						element: <Shift4shop />,
-					},
-					{
-						path: "/bigcommerce",
-						element: <BigCommerce />,
-					},
-					{
-						path: "/woocommercedevelopment",
-						element: <WooCommerceDevelopment />,
-					},
+					// {
+					// 	path: "/pestrashop",
+					// 	element: <Pestrashop />,
+					// },
+					// {
+					// 	path: "/shift4shop",
+					// 	element: <Shift4shop />,
+					// },
+					// {
+					// 	path: "/bigcommerce",
+					// 	element: <BigCommerce />,
+					// },
+					// {
+					// 	path: "/woocommercedevelopment",
+					// 	element: <WooCommerceDevelopment />,
+					// },
 					// {
 					// 	path: "/androidappdev",
 					// 	element: <AndroidAppDev />,
@@ -371,28 +370,28 @@ export const router = createBrowserRouter([
 			// 		},
 			// 	],
 			// },
-			{
-				path: "/",
-				element: <LayoutEight />,
-				children: [
-					// {
-					// 	path: "/coming-soon",
-					// 	element: <CommingSoon />,
-					// },
-					// {
-					// 	path: "/reset-password",
-					// 	element: <Reset />,
-					// },
-					// {
-					// 	path: "/sign-up",
-					// 	element: <SignUp />,
-					// },
-					// {
-					// 	path: "/sign-in",
-					// 	element: <SignIn />,
-					// },
-				],
-			},
+			// {
+			// 	path: "/",
+			// 	element: <LayoutEight />,
+			// 	children: [
+			// 		{
+			// 			path: "/coming-soon",
+			// 			element: <CommingSoon />,
+			// 		},
+			// 		{
+			// 			path: "/reset-password",
+			// 			element: <Reset />,
+			// 		},
+			// 		{
+			// 			path: "/sign-up",
+			// 			element: <SignUp />,
+			// 		},
+			// 		{
+			// 			path: "/sign-in",
+			// 			element: <SignIn />,
+			// 		},
+			// 	],
+			// },
 		],
 	},
 ]);

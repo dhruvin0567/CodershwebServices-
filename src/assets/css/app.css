@@ -8887,12 +8887,13 @@ img.aximo-video-circle {
 }
 
 .aximo-service-increase-row:hover {
-	background-color: var(--body-color);
+	background-color: var(--accent-bg);
+	
 }
 
 .aximo-service-increase-row:hover .aximo-service-increase-title h3,
 .aximo-service-increase-row:hover .aximo-service-increase-body p {
-	color: var(--white-color);
+	color: var(--heading-color);
 }
 
 .aximo-service-increase-row:hover .aximo-service-increase-icon i {

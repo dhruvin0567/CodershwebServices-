@@ -1231,3 +1231,13 @@ td:has(.company-logo) {
 }
 
 /* Aximo New Index End */
+
+/*  landing-form-input css */
+.landing-form-input{
+ height: 75px !important;
+ background-color: white !important;
+ border-radius: 0px !important;
+}
+.landing-form-btn:hover{
+    background-color: #BFF747 !important;
+}
