@@ -22,7 +22,7 @@ function HeroContent() {
 				</FadeInStaggerTwoChildren>
 				<FadeInStaggerTwoChildren>
 					<p>
-						{`We're a leading Shopify & Shopify Plus agency who design and develop strategic ecommerce websites, also grown from humble roots and become a versatile digital marketing partner for our clients.`}
+						We're a leading Shopify & Shopify Plus agency who design and develop strategic ecommerce websites, also grown from humble roots and become a versatile digital marketing partner for our clients.
 					</p>
 				</FadeInStaggerTwoChildren>
 				<FadeInStaggerTwoChildren>
