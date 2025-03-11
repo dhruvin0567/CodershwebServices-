@@ -239,7 +239,7 @@ function B2BWholsales() {
                                         Shopify Plus also offers a dedicated Wholesale Channel, enabling you to create a password-protected storefront for wholesale customers. This ensures retail clients can’t access B2B pricing, and product pricing adjusts automatically for wholesale buyers. You can also customize the domain for a branded B2B storefront. However, for advanced features or greater customization, Codersh Web Services can help enhance and expand your B2B operations.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Let's Connect
                                         </Link>
                                     </FadeInUp>
@@ -316,7 +316,7 @@ function B2BWholsales() {
                                         By empowering clients to manage their orders independently, you reduce the need for manual support, saving time and lowering administrative overhead. This efficiency frees up your team to focus on higher-priority tasks, like marketing and strategy, leading to a more streamlined wholesale operation and potentially higher profits. Shopify’s B2B capabilities offer a valuable return on investment in both time savings and enhanced customer experience.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>

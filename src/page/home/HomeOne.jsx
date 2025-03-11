@@ -7,6 +7,7 @@ import WhyChooseUs from "../../components/home-one/why-choose-us";
 // import Testimonial from "../../components/home-one/testimonial";
 import AutoSlider from "../../components/home-one/auto-slider";
 import TestimonialSwiper from "../../components/home-one/testimonial/TestimonialSwiper";
+import { Helmet } from 'react-helmet';
 
 // Teams images
 // import Team1Img from "../../assets/images/team/team1.png";
@@ -75,6 +76,17 @@ const servicesData = [
 function HomeOne() {
 	return (
 		<>
+			<Helmet>
+				<title>Codersh Web Services - Your Trusted Shopify Service Agency</title>
+				<meta
+					name="description"
+					content="Empowering e-commerce brands with top-notch Shopify solutions. Seamless migration, custom design, and advanced features to grow your online business."
+				/>
+				<meta
+					name="keywords"
+					content="Shopify migration, Shopify design, Shopify customization, e-commerce growth, Shopify service agency"
+				/>
+			</Helmet>
 			<Hero />
 			<Services services={servicesData} />
 			<About />

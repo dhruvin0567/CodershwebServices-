@@ -65,7 +65,7 @@ function Support_Maintanace() {
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>
@@ -95,7 +95,7 @@ function Support_Maintanace() {
 
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>
@@ -124,7 +124,7 @@ function Support_Maintanace() {
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Contact Us Now!
                                         </Link>
                                     </FadeInUp>
@@ -153,7 +153,7 @@ function Support_Maintanace() {
                                         Running an online store can be challenging, but Codersh is here to help. Through email and ongoing communication, we provide comprehensive support to your team, handling queries and troubleshooting issues specific to your store. Unlike standard Shopify support, we delve deep into your store’s unique needs. For businesses seeking urgent assistance or priority development, our service level agreement add-on, "Codersh Response," ensures rapid and reliable support.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Contact Us Now
                                         </Link>
                                     </FadeInUp>

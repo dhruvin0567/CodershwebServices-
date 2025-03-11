@@ -78,31 +78,31 @@ const ReviewSection = () => {
                             }}
                         >
                             <SwiperSlide>
-                                <img src={Logo1Img} alt="" />
+                                <img src={Logo1Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo2Img} alt="" />
+                                <img src={Logo2Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo3Img} alt="" />
+                                <img src={Logo3Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo4Img} alt="" />
+                                <img src={Logo4Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo5Img} alt="" />
+                                <img src={Logo5Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo6Img} alt="" />
+                                <img src={Logo6Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo7Img} alt="" />
+                                <img src={Logo7Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo8Img} alt="" />
+                                <img src={Logo8Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo9Img} alt="" />
+                                <img src={Logo9Img} alt="Brand Logo" />
                             </SwiperSlide>
                         </Swiper>
                     </div>

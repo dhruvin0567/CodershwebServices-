@@ -152,7 +152,7 @@ function BigCommerce() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3">
-                            <Link to="#" className="clutch-widget d-flex mb-4 mb-lg-0">
+                            <Link to="/contact-us" className="clutch-widget d-flex mb-4 mb-lg-0">
                                 <span className="me-2">
                                     <p className="mb-0">Reviewed On</p>
                                     <img src={Clutch} alt width={82} />
@@ -232,7 +232,7 @@ function BigCommerce() {
                                 </ul>
 
                                 <FadeInUp className="aximo-btn-wrap2">
-                                    <Link to="#" className="iwt-button">
+                                    <Link to="/contact-us" className="iwt-button">
                                         Hire Us Now
                                     </Link>
                                 </FadeInUp>
@@ -277,7 +277,7 @@ function BigCommerce() {
                                 </ul>
 
                                 <FadeInUp className="aximo-btn-wrap2">
-                                    <Link to="#" className="iwt-button">
+                                    <Link to="/contact-us" className="iwt-button">
                                         Get Free Quotes Now!
                                     </Link>
                                 </FadeInUp>

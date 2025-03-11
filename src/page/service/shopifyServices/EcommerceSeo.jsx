@@ -72,7 +72,7 @@ function EcommerceSeo() {
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>
@@ -105,7 +105,7 @@ function EcommerceSeo() {
                                         As a Shopify SEO agency, we specialize in on-site content optimization, refining your core pages so Google clearly understands your business. Beyond improving existing content, we expand coverage on relevant topics to increase keyword relevance and build trust with search engines. Our team optimizes editorial content, product page layouts, navigation, and schema to ensure everything works seamlessly for maximum SEO impact. We continuously monitor performance and make ongoing improvements to keep your content strategy effective in the long run.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>
@@ -137,7 +137,7 @@ function EcommerceSeo() {
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Contact Us Now!
                                         </Link>
                                     </FadeInUp>
@@ -169,7 +169,7 @@ function EcommerceSeo() {
                                         Our comprehensive technical audits cover everything from page structure and URL optimization to performance, speed, and security. We address issues like 404 errors, schema validation, product descriptions, and internal linking, while developing a clear roadmap to drive results. Our team also manages HREFLang tags for international SEO and optimizes your store for faster load times, including image and JavaScript improvements, to align with Core Web Vitals.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Contact Us Now
                                         </Link>
                                     </FadeInUp>
@@ -202,7 +202,7 @@ function EcommerceSeo() {
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>
@@ -232,7 +232,7 @@ function EcommerceSeo() {
 
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>

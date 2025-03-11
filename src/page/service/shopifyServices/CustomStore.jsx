@@ -36,7 +36,7 @@ function CustomStore() {
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>
@@ -66,7 +66,7 @@ function CustomStore() {
 
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>
@@ -95,7 +95,7 @@ function CustomStore() {
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Contact Us Now!
                                         </Link>
                                     </FadeInUp>
@@ -126,7 +126,7 @@ function CustomStore() {
 
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Contact Us Now
                                         </Link>
                                     </FadeInUp>
@@ -155,7 +155,7 @@ function CustomStore() {
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Let's Built It
                                         </Link>
                                     </FadeInUp>
@@ -186,7 +186,7 @@ function CustomStore() {
                                         Before your store goes live, we conduct rigorous testing to eliminate bugs and ensure a smooth experience for your customers. Our team handles every detail, so your launch day is as seamless as possible.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Let's Built It
                                         </Link>
                                     </FadeInUp>
@@ -214,7 +214,7 @@ function CustomStore() {
                                         Our commitment doesn’t end at launch. We offer ongoing optimization and support to ensure your store evolves to meet your customers’ needs. From performance enhancements to feature updates, we’re here to help your business thrive long-term.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>

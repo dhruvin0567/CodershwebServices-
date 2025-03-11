@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import ArrowRightImg from "../../../assets/images/icon/arrow-right.svg";
+// import { Link } from "react-router-dom";
+// import ArrowRightImg from "../../../assets/images/icon/arrow-right.svg";
 function ServiceCard({ service: { title, description, icon } }) {
 	return (
 		<div className="aximo-iconbox-wrap">
@@ -9,9 +9,9 @@ function ServiceCard({ service: { title, description, icon } }) {
 			<div className="aximo-iconbox-data">
 				<h3>{title}</h3>
 				<p>{description}</p>
-				<Link to="/single-service" className="aximo-icon">
+				{/* <Link to="/single-service" className="aximo-icon">
 					<img src={ArrowRightImg} alt="arrow right" />
-				</Link>
+				</Link> */}
 			</div>
 		</div>
 	);

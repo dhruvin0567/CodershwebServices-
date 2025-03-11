@@ -30,7 +30,7 @@ function ShopifyAppDev() {
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>
@@ -59,7 +59,7 @@ function ShopifyAppDev() {
                                         As experts in Shopify integrations, we work closely with leading apps like ReCharge, Yotpo, Klaviyo, and Klevu to build seamless integrations that enhance your store’s capabilities. These integrations enable us to provide a highly customized experience, all while keeping your brand’s vision at the forefront of the solution.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get in Touch
                                         </Link>
                                     </FadeInUp>
@@ -88,7 +88,7 @@ function ShopifyAppDev() {
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Contact Us Now!
                                         </Link>
                                     </FadeInUp>

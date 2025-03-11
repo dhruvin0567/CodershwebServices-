@@ -99,7 +99,7 @@ function ShopifyPlus() {
 
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get In Touch
                                         </Link>
                                     </FadeInUp>
@@ -132,7 +132,7 @@ function ShopifyPlus() {
 
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Start Your Journey!
                                         </Link>
                                     </FadeInUp>
@@ -162,7 +162,7 @@ function ShopifyPlus() {
 
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Connect With Us
                                         </Link>
                                     </FadeInUp>
@@ -192,7 +192,7 @@ function ShopifyPlus() {
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>
@@ -222,7 +222,7 @@ function ShopifyPlus() {
 
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Contact Us
                                         </Link>
                                     </FadeInUp>

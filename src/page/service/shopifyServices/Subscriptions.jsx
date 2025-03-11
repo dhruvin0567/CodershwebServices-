@@ -393,7 +393,7 @@ function Subscriptions() {
                                         Build-a-box is a powerful feature gaining popularity among subscription-based businesses, offering customers greater flexibility. It’s especially effective for brands selling low-cost items in bulk, like small food packages. Customers can personalize their box to meet minimum order thresholds, enhancing their experience while supporting the merchant's business model. At Codersh Web Services, we specialize in integrating branded build-a-box functionality with ReCharge Bundles, ensuring a seamless, customized experience for your customers.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get in Touch
                                         </Link>
                                     </FadeInUp>
@@ -421,7 +421,7 @@ function Subscriptions() {
                                         Integrating subscriptions into your Shopify store streamlines financial management and sales forecasting. With predictable recurring revenue, you can more effectively plan inventory, allocate resources, and focus on growth. Subscription pricing also helps reduce customer acquisition costs by fostering loyalty, allowing businesses to rely less on ads and promotions. This model ensures steady cash flow, providing better planning and peace of mind.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Contact Us Now!
                                         </Link>
                                     </FadeInUp>
@@ -451,7 +451,7 @@ function Subscriptions() {
                                         Subscriptions foster consistent customer interactions, providing valuable insights into behavior and preferences. This allows you to refine your offerings, increasing satisfaction and loyalty. Subscription-based businesses typically see higher lifetime value (LTV) and average order value (AOV), as recurring customers spend more over time. By building trust and delivering seamless experiences, you’re positioned to upsell additional products and drive long-term growth. For expert subscription management and integrations, Codersh Web Services is your trusted partner. Contact us to unlock the full potential of Shopify subscriptions!
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Connect to Us
                                         </Link>
                                     </FadeInUp>

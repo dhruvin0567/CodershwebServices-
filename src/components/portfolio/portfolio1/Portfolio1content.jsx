@@ -363,6 +363,7 @@ const Portfolio1content = () => {
                                 <div className="imagescrolling-wrapper portfolio-image-wrapper">
                                     <img
                                         src={card.image}
+                                        loading="lazy"
                                         alt={card.name}
                                         className="image-scrolling portfolio-image"
                                     />

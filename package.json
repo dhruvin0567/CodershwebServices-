@@ -32,6 +32,7 @@
 		"react-countup": "^6.5.3",
 		"react-dom": "^18.2.0",
 		"react-fast-marquee": "^1.6.5",
+		"react-helmet": "^6.1.0",
 		"react-hook-form": "^7.51.5",
 		"react-lazy-load-image-component": "^1.6.0",
 		"react-modal-video": "^2.0.2",

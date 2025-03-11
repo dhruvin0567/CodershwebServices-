@@ -17,7 +17,7 @@ export default function ErrorPage() {
 							<span className="aximo-title-animation">
 								you are looking for
 								<span className="aximo-title-icon">
-									<img src={Star2Img} alt="" />
+									<img src={Star2Img} alt="StarImg" />
 								</span>
 							</span>
 						</h2>

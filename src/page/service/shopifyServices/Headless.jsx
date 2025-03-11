@@ -69,7 +69,7 @@ function Headless() {
                                         While headless stores offer great potential, they’re not suitable for every business and require careful evaluation of your specific needs and resources.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Learn More
                                         </Link>
                                     </FadeInUp>
@@ -96,7 +96,7 @@ function Headless() {
                                         Headless eCommerce stores decouple the front end from Shopify Plus, offering a more flexible content management system than the standard Shopify CMS. By partnering with leading CMSs like Contentful and Shopify's Hydrogen, we deliver powerful content management while maintaining top site performance. This separation gives merchants greater control over product management and storefront APIs, offering unmatched freedom to customize the user experience while still benefiting from Shopify Plus's robust backend.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get in touch today!
                                         </Link>
                                     </FadeInUp>
@@ -123,7 +123,7 @@ function Headless() {
                                         Shopify’s API and third-party integrations enable seamless communication between your store's front end and backend, securely managing data like cart contents, transactions, and product info. The headless architecture allows merchants to leverage Shopify Plus's powerful backend—customer, order, and product management—while maintaining full control over the front end. Our headless solutions handle complex integrations and business needs, specializing in Shopify's Hydrogen framework to create storefronts that follow Shopify's best practices. This flexible approach allows us to use the latest technologies while ensuring enterprise-grade security.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Learn More
                                         </Link>
                                     </FadeInUp>
@@ -152,7 +152,7 @@ function Headless() {
 
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get in touch today!
                                         </Link>
                                     </FadeInUp>

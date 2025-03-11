@@ -62,7 +62,7 @@ function EmailSmsMarketing() {
                                     <p>We go beyond basic behavior analysis, incorporating touchpoints like loyalty programs, reviews, and quiz participation. With data-driven insights and tailored strategies, we create personalized experiences that strengthen customer relationships and drive long-term growth.</p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>
@@ -93,7 +93,7 @@ function EmailSmsMarketing() {
                                     </p>
                                     <p>We focus on automating key eCommerce KPIs, such as abandoned cart recovery emails and personalized product recommendations, to maximize ROI. Powered by predictive analytics and dynamic content delivery, our strategies deliver measurable results, helping you boost customer lifetime value and optimize your eCommerce performance.</p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
                                     </FadeInUp>
@@ -123,7 +123,7 @@ function EmailSmsMarketing() {
                                     <p>We design emails that reflect your brand’s identity—logos, colors, and messaging—while using compelling visuals, clear calls to action (CTAs), and dynamic product placements to encourage customer engagement. Our focus on UI/UX design creates a seamless experience that leads to conversions. Coupled with bespoke copywriting, we craft messages that resonate with your audience, ensuring consistent, performance-driven communication aligned with your brand voice and goals.</p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Contact Us Now!
                                         </Link>
                                     </FadeInUp>
@@ -152,7 +152,7 @@ function EmailSmsMarketing() {
                                         Unlock the power of SMS marketing with open rates up to 94% and 5.5x more clicks than email, as 1 in 3 consumers prefer SMS from their favorite brands. At Codersh Web Services, we specialize in crafting tailored SMS campaigns to engage customers at the right moment—whether welcoming new subscribers, promoting products, or announcing sales. Our campaigns deliver personalized content and seamless customer support, ensuring high engagement and conversions. With a focus on opt-in consent and A/B testing, we continuously optimize strategies to drive results and maximize customer engagement. Contact Codersh Web Services for a free SMS consultation and elevate your customer communication.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Contact Us Now!
                                         </Link>
                                     </FadeInUp>
@@ -182,7 +182,7 @@ function EmailSmsMarketing() {
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
-                                        <Link to="#" className="iwt-button">
+                                        <Link to="/contact-us" className="iwt-button">
                                             Let's Built It
                                         </Link>
                                     </FadeInUp>

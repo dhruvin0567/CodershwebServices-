@@ -69,10 +69,10 @@ function SignInForm() {
 							<p>or</p>
 						</div>
 
-						<a href="https://google.com" target="_blank" className="aximo-connect-login">
+						<a href="https://google.com" target="_blank" rel="noopener noreferrer" className="aximo-connect-login">
 							Sign up with Google
 						</a>
-						<a href="https://fb.com" target="_blank" className="aximo-connect-login">
+						<a href="https://fb.com" target="_blank" rel="noopener noreferrer" className="aximo-connect-login">
 							Sign up with Facebook
 						</a>
 

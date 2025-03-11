@@ -37,7 +37,7 @@ function LandingPage() {
                         </div>
                         <span className="text-light ps-4">
                             We design beautiful web experiences that convert 286% more business
-                            <img src={Cloud} alt="" />
+                            <img src={Cloud} alt="Cloud Logo" />
                         </span>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <form className="d-block d-sm-flex gap-1" role="search">
@@ -220,7 +220,7 @@ function LandingPage() {
                         </div>
                         <div className="col-lg-6">
                             <div className="owner-image">
-                                <img src={ShahImg} alt="" width="100%" />
+                                <img src={ShahImg} alt="Harsh-Shah CEO" width="100%" />
                             </div>
                         </div>
                     </div>
@@ -276,13 +276,13 @@ function LandingPage() {
                             <p className="light-text">
                                 <b>1. </b> We’ll design your entire site and offer unlimited revisions.
                             </p>
-                            <img src={vape1} alt="" />
+                            <img src={vape1} alt=" Product Image1" />
                         </div>
                         <div className="col-lg-6">
                             <p className="light-text">
                                 <b>2. </b> We’ll build and launch your site before you complete payment.
                             </p>
-                            <img src={vape1} alt="" />
+                            <img src={vape1} alt="Product Image2" />
                         </div>
                     </div>
                 </div>

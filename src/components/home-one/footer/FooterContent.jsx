@@ -38,22 +38,22 @@ function FooterContent() {
 			<div className="aximo-social-icon social-large">
 				<ul>
 					<li>
-						<a href="https://x.com/CodershWeb/" target="_blank">
+						<a href="https://x.com/CodershWeb/" target="_blank" rel="noopener noreferrer" aria-label="Visit CodershWeb on x">
 							<i className="icon-twitter"></i>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.facebook.com/Codershweb/" target="_blank">
+						<a href="https://www.facebook.com/Codershweb/" target="_blank" rel="noopener noreferrer" aria-label="Visit CodershWeb on facebook">
 							<i className="icon-facebook"></i>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.instagram.com/codersh.web/" target="_blank">
+						<a href="https://www.instagram.com/codersh.web/" target="_blank" rel="noopener noreferrer" aria-label="Visit CodershWeb on instagram">
 							<i className="icon-instagram"></i>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.linkedin.com/company/30213091/admin/analytics/followers/" target="_blank">
+						<a href="https://www.linkedin.com/company/30213091/admin/analytics/followers/" target="_blank" rel="noopener noreferrer" aria-label="Visit CodershWeb on linkdin">
 							<i className="icon-linkedin"></i>
 						</a>
 					</li>
