@@ -305,6 +305,12 @@ button.filter-btn:hover {
     background-color: #FFFFF5;
 }
 
+@media (max-width: 512px) {
+    .filter-container .form-select {
+            width: 100%;
+        }
+}
+
 .filter-container .form-select:focus {
     border: 2px solid #ced4da;
     box-shadow: none;
@@ -1229,7 +1235,7 @@ td:has(.company-logo) {
 @media (max-width: 512px) {
     .landing-form-input {
 
-        width: 250px !important;
+        width: 310px !important;
     }
 }
 
@@ -1272,3 +1278,4 @@ td:has(.company-logo) {
     background-color: #BFF747 !important;
    
 }
+

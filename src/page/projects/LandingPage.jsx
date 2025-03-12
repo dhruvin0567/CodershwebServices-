@@ -19,10 +19,223 @@ import { Link } from 'react-router-dom';
 import logo from "../../assets/images/logo/logo-white.svg";
 import Cloud from "../../assets/images/images2/614b5b07b77be58b407afc62_stacked-area-up.svg";
 
+import video1 from '../../assets/images/Videos/Video-1-compressed.mp4';
+import video2 from '../../assets/images/Videos/Video-2-compressed.mp4';
+import video3 from '../../assets/images/Videos/Video-3-compressed.mp4';
+import video4 from '../../assets/images/Videos/Video-4-compressed.mp4';
+import video5 from '../../assets/images/Videos/Video-5-compressed.mp4';
+import video6 from '../../assets/images/Videos/Video-6-compressed.mp4';
+import { useState, useRef, useEffect } from 'react';  // Import Link from react-router-dom
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from 'swiper/modules';
+// import FadeInStagger from "../animation/FadeInStagger";
+import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
+import FadeInStagger from "../../components/animation/FadeInStagger";
 
+
+const projects = [
+    {
+        name: 'Van Hunks',
+        image: '/src/assets/images/images2/Van-Hunks.png.webp',
+    },
+    {
+        name: 'Madame F',
+        image: '/src/assets/images/images2/Madame-F.png.webp',
+    },
+    {
+        name: 'Liberation Cocktails',
+        image: '/src/assets/images/images2/Liberation-Cocktails.png.webp',
+    },
+    {
+        name: 'Bone Idyll',
+        image: '/src/assets/images/images2/BONE-IDYLL.png.webp',
+    },
+    {
+        name: 'Violet Blanc',
+        image: '/src/assets/images/images2/Violet-Blanc-Beauty.png.webp',
+    },
+    {
+        name: 'Tylers Coffee',
+        image: '/src/assets/images/images2/TylersCoffee.png.webp',
+    },
+    {
+        name: 'Buy Vape USA',
+        image: '/src/assets/images/images2/BUY-VAPE-USA.png.webp',
+    },
+    {
+        name: 'No Mo-Stache',
+        image: '/src/assets/images/images2/No-Mo-Stache.png.webp',
+    },
+    {
+        name: 'Split Grip',
+        image: '/src/assets/images/images2/SplitGrip.png.webp',
+    },
+    {
+        name: 'Wallplanks',
+        image: '/src/assets/images/images2/wallplanks.png.webp',
+    },
+    {
+        name: 'Rowan Oak',
+        image: '/src/assets/images/images2/Rowan-Oak-Clothing-Co.png.webp',
+    },
+    {
+        name: 'Aolithium',
+        image: '/src/assets/images/images2/Aolithium-Professional.png',
+    },
+    {
+        name: 'Baby Gold',
+        image: '/src/assets/images/images2/Baby-Gold.png',
+    },
+    {
+        name: 'Aubi & Ramsa',
+        image: '/src/assets/images/images2/Aubi-Ramsa-Ice-Cream-Co-.png.webp',
+    },
+    {
+        name: 'Airpaq',
+        image: '/src/assets/images/images2/Airpaq-Sustainability-meets-functionality-Airpaq-GmbH.png.webp',
+    },
+    {
+        name: 'CUBIC',
+        image: '/src/assets/images/images2/Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box.png.webp',
+    },
+    {
+        name: 'The Welsh Produce Stall',
+        image: '/src/assets/images/images2/thewelshproducestall-the-welsh-produce-stall.png.webp',
+    },
+    {
+        name: 'Fuel',
+        image: '/src/assets/images/images2/fuel.png',
+    },
+    {
+        name: 'Ocean 6 Media',
+        image: '/src/assets/images/images2/oceans6media.png',
+    },
+    {
+        name: 'Neux',
+        image: '/src/assets/images/images2/NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-.png.webp',
+    }
+];
+
+const images = [
+    '/src/assets/images/images2/artisan-f-p.webp',
+    '/src/assets/images/images2/asterley-bros-f-p.webp',
+    '/src/assets/images/images2/bone-f-p.webp',
+    '/src/assets/images/images2/Claudine-f-p.webp',
+    '/src/assets/images/images2/Double-Dutch-f-p.webp',
+    '/src/assets/images/images2/gattertop-f-p.webp',
+    '/src/assets/images/images2/liberation-f-p.webp',
+    '/src/assets/images/images2/madamef-f-p.webp',
+    '/src/assets/images/images2/negroni-soc-f-p.webp',
+    '/src/assets/images/images2/van-hunks-f-p.webp',
+];
+
+const logos = [
+    "/src/assets/images/images2/shopify-plus-experts-mp (2).png",
+    "/src/assets/images/images2/facebook-mp.png",
+    "/src/assets/images/images2/klaviyo-mp.png",
+    "/src/assets/images/images2/shopify-patrner-mp.png",
+    "/src/assets/images/images2/google-partners-mp.png"
+];
+
+const reviews = [
+    {
+        image: "/src/assets/images/images2/rating.png",
+        quote: "They exceeded my expectations, delivering everything I requested and more.",
+        feedback: "The website has a sleek, modern design, and the in-house team is highly satisfied with the exceptional customer service they received. Codersh Web Services expertise, dedication, and proactive approach ensured a smooth process, successfully meeting all requirements.",
+        name: "Alex Carter",
+    },
+    {
+        image: "/src/assets/images/images2/rating.png",
+        quote: "\"37% Conversion Rate Boost Following Website Redesign!\"",
+        feedback: "Shah and Codersh Web Services provide a turnkey DFY solution for improving conversion rates. After seeing one of his ads, I scheduled a call, and within five minutes, I was confident he was the right choice. We began with a website redesign, which immediately boosted our conversion rate by 39%.",
+        name: "Jordan Reynolds",
+    },
+    {
+        image: "/src/assets/images/images2/rating.png",
+        quote: "\"DFY Website – Optimized for Maximum Conversions!\"",
+        feedback: "I needed a high-converting website, and after reviewing their conversion checklist and case studies, I decided to move forward. The results exceeded my expectations—the site is converting better than I ever imagined, and the best part? They handled everything for me.",
+        name: "Taylor Mitchell",
+    },
+    {
+        image: "/src/assets/images/images2/rating.png",
+        quote: "\"The skilled and versatile team at Codersh Web Services collaborated seamlessly.\"",
+        feedback: "The client is delighted with Codersh Web Services' service. The team maintained a smooth workflow throughout the engagement, actively seeking feedback and ensuring the client felt like a top priority through responsive communication. Their diverse expertise also enabled them to deliver complex solutions effectively.",
+        name: "Casey Bennett",
+    },
+    {
+        image: "/src/assets/images/images2/rating.png",
+        quote: "\"I truly appreciated their collaborative approach.\"",
+        feedback: "Thanks to Codersh Web Services' support, the client tripled their follower base and saw a significant increase in email leads. The team established an efficient workflow, shared valuable insights, and provided prompt responses. Additionally, they consistently had the right solutions to every question.",
+        name: "Morgan Sullivan",
+    },
+    {
+        image: "/src/assets/images/images2/rating.png",
+        quote: "\"Shah and his team are top-tier marketers.\"",
+        feedback: "Partnering with Shah & his team has been an incredible experience. They built and optimized our landing pages, dramatically improving our ROI on paid traffic campaigns. In fact, we saw a 25% increase in our landing page conversion rates. Shah’s expertise, combined with Monica and Cecelia’s dedication, has been invaluable to our success. Amazing work, team!",
+        name: "Riley Thompson",
+    },
+    {
+        image: "/src/assets/images/images2/rating.png",
+        quote: "\"The most impressive aspect is that Codersh Web Services truly understood our vision and brand.\"",
+        feedback: "Codersh Web Services delivered a professional, robust, and visually stunning website with clean wireframes and seamless navigation. The team excels in content writing and communication, ensuring clarity throughout the process. Along with efficient project management, they also provide valuable insights and recommendations.",
+        name: "Jamie Parker",
+    }
+];
 
 
 function LandingPage() {
+
+    const videoFiles = [video1, video2, video3, video4, video5, video6];
+    const [currentVideo, setCurrentVideo] = useState(null);  // Track the currently playing video
+    const videoRefs = useRef([]); // Store references to video elements
+    const swiperRef = useRef(null); // Reference to Swiper instance
+
+    // Manually handle the "Play/Pause" of videos
+    const handlePlayPause = (index) => {
+        const videoElement = videoRefs.current[index];
+
+        if (currentVideo === index) {
+            // Pause the video if it's the currently playing one
+            videoElement.pause();
+            setCurrentVideo(null);
+        } else {
+            // Play the new video and pause the previous one
+            videoElement.play();
+            setCurrentVideo(index);
+            // Pause other videos
+            videoRefs.current.forEach((video, i) => {
+                if (i !== index) video.pause();
+            });
+        }
+    };
+
+    // Close video when clicked outside of the video container
+    const handleClickOutside = (e) => {
+        if (!e.target.closest('.video-wrap')) {
+            videoRefs.current.forEach((video) => video.pause());
+            setCurrentVideo(null);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('click', handleClickOutside);
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, []);
+
+    // Custom navigation button handlers
+    const goToNextSlide = () => {
+        if (swiperRef.current) {
+            swiperRef.current.swiper.slideNext();
+        }
+    };
+    const goToPrevSlide = () => {
+        if (swiperRef.current) {
+            swiperRef.current.swiper.slidePrev();
+        }
+    };
+
     return (
         <div>
             <BreadCrumb title="Landing Page" />
@@ -62,20 +275,197 @@ function LandingPage() {
                         <button className="btn  landing-form-btn" type="submit">Get A Free Audit</button>
                     </form>
                 </div>
-                {/* <div className="swiper projects-slider">
-                    <div className="swiper-wrapper">
-                        <img className="swiper-slide" src="assets/image/artisan-f-p.webp" alt />
-                        <img className="swiper-slide" src="assets/image/asterley-bros-f-p.webp" alt />
-                        <img className="swiper-slide" src="assets/image/bone-f-p.webp" alt />
-                        <img className="swiper-slide" src="assets/image/Claudine-f-p.webp" alt />
-                        <img className="swiper-slide" src="assets/image/Double-Dutch-f-p.webp" alt />
-                        <img className="swiper-slide" src="assets/image/gattertop-f-p.webp" alt />
-                        <img className="swiper-slide" src="assets/image/liberation-f-p.webp" alt />
-                        <img className="swiper-slide" src="assets/image/madamef-f-p.webp" alt />
-                        <img className="swiper-slide" src="assets/image/negroni-soc-f-p.webp" alt />
-                        <img className="swiper-slide" src="assets/image/van-hunks-f-p.webp" alt />
+                <div className="swiper-container pb-2">
+                    <Swiper
+                        ref={swiperRef}
+                        spaceBetween={20}
+                        loop={true}
+                        slidesPerView={5}
+                        speed={5000}
+                        modules={[Autoplay]}
+                        autoplay={{
+                            delay: 0, // Slide change delay in milliseconds
+                            disableOnInteraction: false, // Autoplay will not be disabled after interactions
+                        }}
+                        breakpoints={{
+                            320: { slidesPerView: 1 },
+                            480: { slidesPerView: 1 },
+                            768: { slidesPerView: 3 },
+                            1024: { slidesPerView: 5 },
+                        }}
+                    >
+                        {images.map((image, index) => (
+                            <SwiperSlide key={index}>
+                                <img src={image} alt={`Slide ${index + 1}`} />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+
+
+            </div>
+
+            <section className="section d-none d-md-block dark-bg p-5">
+                <div className="row">
+                    <div className="content-one col-lg-6 col-sm-12">
+                        <div className="img-part">
+                            <div className="first-part-img">
+                                <img className="first-img" src="/src/assets/images/images2/asterley-landing.webp" alt />
+                            </div>
+                            <div className="second-img-part">
+
+                                <img className="second-img" src="/src/assets/images/images2/madamef-landing.webp" alt />
+                            </div>
+                        </div>
+                        <img id="stickyImage" className="landing-sticky-img" src="/src/assets/images/images2/hero_window.png" alt="Sticky Image" />
                     </div>
-                </div> */}
+                    <div className="content-two col-lg-6 col-sm-12">
+                        <div className="content-two-img">
+                            <div>
+                                <img src="/src/assets/images/images2/levels_window.png" alt />
+                            </div>
+                            <div className="mobile-img-part">
+                                <img className="mobile-bg-img" src="/src/assets/images/images2/jewelry_window.png" alt />
+                                <img className="mobile-img" src="/src/assets/images/images2/mobile-img.png" alt />
+                                <img className="arrow-img" src="/src/assets/images/images2/drop.png" alt />
+                            </div>
+                        </div>
+                        <div className="sticky-section-content">
+                            <h3 className="content-two-headline mb-4 text-light">We’re experts in building visually stunning, user-friendly websites and funnels.</h3>
+                            <ul className="content-two-des text-light">
+                                <li className="mb-4">
+                                    <h6 className="text-light">Premium-Grade Design</h6>
+                                    <p>
+                                        Our designs make an impact. Your new site will attract attention and turn visitors into
+                                        customers.
+                                    </p>
+                                </li>
+                                <li className="mb-4">
+                                    <h6 className="text-light">Seamlessly Adapts to Any Device</h6>
+                                    <p>
+                                        Since 78% of all traffic is mobile, your site needs to be as seamless on phones as it is on
+                                        desktops.
+                                    </p>
+                                </li>
+                                <li className="mb-4">
+                                    <h6 className="text-light">Premium-Grade Design</h6>
+                                    <p>
+                                        With battle-tested conversion design techniques, we help transform visitors into long-term
+                                        customers.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div className="our-work">
+                <div className="container-fluid mt-5">
+                    <h2 className="mb-2 text-center">
+                        Take a look at <br /> our latest work!
+                    </h2>
+                    <h4 className="mb-5 text-center">"Designed to captivate, engage, and convert your visitors into loyal
+                        customers."</h4>
+                    <div className="row">
+                        {projects.map((project, index) => (
+                            <div key={index} className="col-lg-3 col-sm-6 col-6 project-card mb-4">
+                                <FadeInStagger>
+                                    <div className="imagescrolling-wrapper portfolio-image-wrapper">
+                                        <img
+                                            src={project.image}
+                                            alt={project.name}
+                                            className="image-scrolling portfolio-image"
+                                        />
+                                    </div>
+                                    <h3 className="project-name py-3 text-center">{project.name}</h3>
+                                </FadeInStagger>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div className="reviewsSection dark-bg py-5">
+                <div className="container py-3">
+                    <h4 className="light-text text-center">
+                        Business Owners Say It All!
+                    </h4>
+                    <div className="partner-logo-carousel swiper">
+                        <div className="partner-logo-slider">
+                            <Swiper
+                                spaceBetween={50}
+                                loop={true}
+                                slidesPerView={4}
+                                speed={5000}
+                                modules={[Autoplay]}
+                                autoplay={{
+                                    delay: 0, // Slide change delay in milliseconds
+                                    disableOnInteraction: false, // Autoplay will not be disabled after interactions
+                                }}
+                                breakpoints={{
+                                    320: { slidesPerView: 2 },
+                                    480: { slidesPerView: 2 },
+                                    768: { slidesPerView: 3 },
+                                    1024: { slidesPerView: 4 },
+                                }}
+                            >
+                                {logos.map((logo, index) => (
+                                    <SwiperSlide key={index} className="partner-logo">
+                                        <img className="mx-auto d-block" width="150" src={logo} alt={`Partner ${index + 1}`} />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
+                    </div>
+                    <div className="reviews-comments light-text">
+                        <h6 className="light-text text-center mb-4">Our Customers Speak Highly of Us
+                            <img src="/src/assets/images/images2/rating.png" alt width={100} />
+                        </h6>
+                        <div className="row justify-content-center align-items-center g-2">
+                            <div className="col-lg-3 text-center d-none d-lg-block">
+                                <h5 className="light-text">Excellent</h5>
+                                <img src="/src/assets/images/images2/rating.png" alt width={150} /><br />
+                                <small>Based on 43 reviews</small> <br />
+                                Trustpilot
+                            </div>
+                            <div className="col-lg-9">
+                                <div className="swiper client-comment-carousel">
+                                    <div className="client-review-slider">
+                                        <Swiper
+                                            spaceBetween={30}
+                                            loop={true}
+                                            slidesPerView={3}
+                                            speed={1000}
+                                            modules={[Navigation, Autoplay]}
+                                            autoplay={{
+                                                delay: 2500, // Slide change delay in milliseconds
+                                                disableOnInteraction: false, // Autoplay will not be disabled after interactions
+                                            }}
+                                            breakpoints={{
+                                                320: { slidesPerView: 1 },
+                                                480: { slidesPerView: 1 },
+                                                768: { slidesPerView: 2 },
+                                                1024: { slidesPerView: 3 },
+                                            }}
+                                        >
+                                            {reviews.map((review, index) => (
+                                                <SwiperSlide key={index} className="client-review-cmnt">
+                                                    <img src={review.image} alt="Rating" width={80} />
+                                                    <h6 className="light-text">{review.quote}</h6>
+                                                    <p>{review.feedback}</p>
+                                                    <small>{review.name}</small>
+                                                </SwiperSlide>
+                                            ))}
+                                        </Swiper>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className="design-section p-2 p-sm-2 p-md-5 ">
@@ -126,7 +516,7 @@ function LandingPage() {
                 </div>
             </div>
 
-            <div className="row align-items-center dark-bg m-2 m-md-5 m-sm-2 p-2 p-md-5 landing-form">
+            <div className="row d-flex justify-content-center align-items-center dark-bg m-2 m-md-5 m-sm-2 p-2 p-md-5 landing-form">
                 <div className="row d-flex align-items-center py-4">
                     <div className="col-lg-5 col-12 mb-md-4 mb-0 mb-lg-0">
                         <h3 className="ani-h3 light-text mb-3 mb-0 ">
@@ -171,6 +561,126 @@ function LandingPage() {
                                 <img className="ms-auto d-block" src={wrapperImg2} alt width={400} />
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="dark-bg py-4 py-lg-5">
+                <div className="container container-big py-0 py-lg-5">
+                    <h2 className="light-text light-text mb-4 mb-lg-5 pb-0 pb-lg-5">
+                        Design shapes culture —<br />
+                        Culture builds values —<br />
+                        Values define the <span className="highlight">future</span><br />
+                    </h2>
+                    <div >
+                        <FadeInStagger>
+                            <div className="review-section text-center pb-5">
+                                <div className="container">
+                                    <div className="slider-wrapper">
+                                        <Swiper
+                                            ref={swiperRef}
+                                            spaceBetween={20}
+                                            loop={true}
+                                            slidesPerView={5}
+                                            speed={1000}
+                                            modules={[Navigation, Autoplay]}
+                                            autoplay={{
+                                                delay: 3000, // Slide change delay in milliseconds
+                                                disableOnInteraction: false, // Autoplay will not be disabled after interactions
+                                            }}
+                                            breakpoints={{
+                                                320: { slidesPerView: 1 },
+                                                480: { slidesPerView: 1 },
+                                                768: { slidesPerView: 3 },
+                                                1024: { slidesPerView: 5 },
+                                            }}
+                                        >
+                                            {videoFiles.map((video, index) => (
+                                                <SwiperSlide key={index}>
+
+                                                    <button className="video-button" onClick={() => handlePlayPause(index)}>
+                                                        <div className="video-wrap">
+                                                            <video
+                                                                className="myVideo"
+                                                                width="100%" // Ensure the video takes up 100% of its slide space
+                                                                height="auto"
+                                                                ref={(el) => (videoRefs.current[index] = el)}
+                                                            >
+                                                                <source
+                                                                    src={video} // Use the imported video file here
+                                                                    type="video/mp4"
+                                                                />
+                                                                Your browser does not support the video tag.
+                                                            </video>
+                                                            {/* Hide play button only for the currently playing video */}
+                                                            {currentVideo !== index && (
+                                                                <span className="custom-play-button">▶</span>
+                                                            )}
+                                                        </div>
+                                                    </button>
+
+                                                </SwiperSlide>
+                                            ))}
+                                        </Swiper>
+
+
+                                        {/* Custom Navigation Buttons */}
+                                        <div
+                                            className="swiper-button-prev prevBtn"
+                                            onClick={goToPrevSlide}
+                                        >
+                                            <svg
+                                                fill="#000000"
+                                                width="30"
+                                                height="30"
+                                                viewBox="0 0 24 24"
+                                                id="left-arrow"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className="icon line"
+                                            >
+                                                <path
+                                                    id="primary"
+                                                    d="M21,12H3M6,9,3,12l3,3"
+                                                    style={{
+                                                        fill: 'none',
+                                                        stroke: 'rgb(0, 0, 0)',
+                                                        strokeLinecap: 'round',
+                                                        strokeLinejoin: 'round',
+                                                        strokeWidth: 1.5,
+                                                    }}
+                                                />
+                                            </svg>
+                                        </div>
+                                        <div
+                                            className="swiper-button-next nextBtn"
+                                            onClick={goToNextSlide}
+                                        >
+                                            <svg
+                                                fill="#000000"
+                                                width="30"
+                                                height="30"
+                                                viewBox="0 0 24 24"
+                                                id="right-arrow"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className="icon line"
+                                            >
+                                                <path
+                                                    id="primary"
+                                                    d="M3,12H21M18,9l3,3-3,3"
+                                                    style={{
+                                                        fill: 'none',
+                                                        stroke: 'rgb(0, 0, 0)',
+                                                        strokeLinecap: 'round',
+                                                        strokeLinejoin: 'round',
+                                                        strokeWidth: 1.5,
+                                                    }}
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </FadeInStagger>
                     </div>
                 </div>
             </div>
@@ -459,13 +969,62 @@ function LandingPage() {
                 </div>
             </div>
 
+            {/* <section className="section d-none d-md-block dark-bg">
+                <div className="row">
+                    <div className="content-one col-lg-6 col-sm-12">
+                        <div className="img-part">
+                            <div className="first-part-img">
+                                <img className="first-img" src="/src/assets/images/images2/asterley-landing.webp" alt />
+                            </div>
+                            <div className="second-img-part">
 
-
-
-
-
-
-
+                                <img className="second-img" src="/src/assets/images/images2/madamef-landing.webp" alt />
+                            </div>
+                        </div>
+                        <img id="stickyImage" src="/src/assets/images/images2/hero_window.png" alt="Sticky Image" />
+                    </div>
+                    <div className="content-two col-lg-6 col-sm-12">
+                        <div className="content-two-img">
+                            <div>
+                                <img src="/src/assets/images/images2/levels_window.png" alt />
+                            </div>
+                            <div className="mobile-img-part">
+                                <img className="mobile-bg-img" src="/src/assets/images/images2/jewelry_window.png" alt />
+                                <img className="mobile-img" src="/src/assets/images/images2/mobile-img.png" alt />
+                                <img className="arrow-img" src="/src/assets/images/images2/drop.png" alt />
+                            </div>
+                        </div>
+                        <div className="sticky-section-content">
+                            <h3 className="content-two-headline mb-4 text-light">We’re experts in building visually stunning, user-friendly websites and funnels.</h3>
+                            <ul className="content-two-des text-light">
+                                <li className="mb-4">
+                                    <h6 className="text-light">Premium-Grade Design</h6>
+                                    <p>
+                                        Our designs make an impact. Your new site will attract attention and turn visitors into
+                                        customers.
+                                    </p>
+                                </li>
+                                <li className="mb-4">
+                                    <h6 className="text-light">Seamlessly Adapts to Any Device</h6>
+                                    <p>
+                                        Since 78% of all traffic is mobile, your site needs to be as seamless on phones as it is on
+                                        desktops.
+                                    </p>
+                                </li>
+                                <li className="mb-4">
+                                    <h6 className="text-light">Premium-Grade Design</h6>
+                                    <p>
+                                        With battle-tested conversion design techniques, we help transform visitors into long-term
+                                        customers.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </section> */}
 
 
 

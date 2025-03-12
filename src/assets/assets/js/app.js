@@ -369,9 +369,9 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     });
   }); /*End document ready*/
 
-  $(window).on("resize", function () {}); // end window resize
+  $(window).on("resize", function () { }); // end window resize
 
-  $(window).on("load", function () {}); // End window LODE
+  $(window).on("load", function () { }); // End window LODE
 
   /*--------------------------------------------------------------
   AXIMO MAP JS
