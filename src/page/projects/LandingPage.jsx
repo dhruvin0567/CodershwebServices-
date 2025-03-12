@@ -117,7 +117,7 @@ const projects = [
 ];
 
 const images = [
-    '/src/assets/images/images2/artisan-f-p.webp',
+    '../../assets/images/images2/artisan-f-p.webp',
     '/src/assets/images/images2/asterley-bros-f-p.webp',
     '/src/assets/images/images2/bone-f-p.webp',
     '/src/assets/images/images2/Claudine-f-p.webp',
@@ -317,7 +317,7 @@ function LandingPage() {
                                 <img className="second-img" src="/src/assets/images/images2/madamef-landing.webp" alt />
                             </div>
                         </div>
-                        <img id="stickyImage" className="landing-sticky-img" src="/src/assets/images/images2/hero_window.png" alt="Sticky Image" />
+                        <img id="stickyImage" src="/src/assets/images/images2/hero_window.png" alt="Sticky Image" />
                     </div>
                     <div className="content-two col-lg-6 col-sm-12">
                         <div className="content-two-img">
