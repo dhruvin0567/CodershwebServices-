@@ -117,7 +117,7 @@ const projects = [
 ];
 
 const images = [
-    '../../assets/images/images2/artisan-f-p.webp',
+    '/src/assets/images/images2/artisan-f-p.webp',
     '/src/assets/images/images2/asterley-bros-f-p.webp',
     '/src/assets/images/images2/bone-f-p.webp',
     '/src/assets/images/images2/Claudine-f-p.webp',

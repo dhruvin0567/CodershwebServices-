@@ -46,6 +46,7 @@ import Itdigitalagency from "../page/solutions/Itdigitalagency.jsx";
 import CaseStudies from "../page/projects/CaseStudies.jsx";
 import Brand from "../page/brand/Brand.jsx";
 import SingleBlogPage from "../page/blog/SingleBlog.jsx";
+import LandingPage from "../page/projects/LandingPage.jsx";
 import CustomStore from "../page/service/shopifyServices/CustomStore.jsx";
 import ShopifyMigrations from "../page/service/shopifyServices/ShopifyMigrations.jsx";
 import SingleCaseStudyPage from "../page/projects/SingleCaseStudyPage.jsx";
@@ -60,7 +61,6 @@ import EcommerceSeo from "../page/service/shopifyServices/EcommerceSeo.jsx";
 import B2BWholsales from "../page/service/shopifyServices/B2BWholsales.jsx";
 import Subscriptions from "../page/service/shopifyServices/Subscriptions.jsx";
 import SingleBrand from "../page/brand/SingleBrand.jsx";
-import LandingPage from "../page/projects/LandingPage.jsx";
 
 // import Pestrashop from "../page/service/ecommerece/Pestrashop.jsx";
 // import Shift4shop from "../page/service/ecommerece/Shift4shop.jsx";
@@ -191,7 +191,7 @@ export const router = createBrowserRouter([
 					// 	element: <IosAppDev />,
 					// },
 					{
-						path: "/landing-page",
+						path: "/landingpage",
 						element: <LandingPage />,
 					},
 					{
