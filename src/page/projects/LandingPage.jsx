@@ -228,8 +228,8 @@ function LandingPage() {
 
             <header>
                 <nav className="navbar navbar-expand-lg dark-bg">
-                    <div className="container-fluid">
-                        <div className="brand-logo pe-4 me-0" style={{ borderRight: "2px solid white", width: "250px" }}>
+                    <div className="container-fluid landing-nav-container">
+                        <div className="brand-logo pe-4 me-0 mt-2 mb-4 mb-lg-0 mt-lg-0" style={{ borderRight: "2px solid white", width: "250px" }}>
                             <Link to="index.html">
                                 <img src={logo} alt="Logo" className="light-version-logo" />
                             </Link>
@@ -458,7 +458,7 @@ function LandingPage() {
                 <div className="container-fluid container-big py-3 py-lg-5">
                     <div className="row pb-5">
                         <div className="col-lg-9">
-                            <h2 className="ani-h2">
+                            <h2 className="ani-h2 mb-2">
                                 Premium Design That Speaks Volumes.
                             </h2>
                             <p>Our team of expertly vetted designers has mastered their craft, allowing us to deliver
@@ -551,9 +551,9 @@ function LandingPage() {
                 </div>
             </div>
 
-            <div className="dark-bg py-4 py-lg-5">
+            <div className="dark-bg py-4 p-md-5">
                 <div className="container container-big py-0 py-lg-5">
-                    <h2 className="light-text light-text mb-4 mb-lg-5 pb-0 pb-lg-5">
+                    <h2 className="light-text light-text mb-5 mb-lg-5 pb-0 pb-lg-5">
                         Design shapes culture —<br />
                         Culture builds values —<br />
                         Values define the <span className="highlight">future</span><br />
@@ -673,7 +673,7 @@ function LandingPage() {
 
             <div className="about-owner px-2 py-5 p-md-5 p-sm-2 pb-0 pb-md-0">
                 <div className="container-fluid container-big ">
-                    <div className="about-us1 mx-0">
+                    <div className="about-us1 mx-md-0">
                         <h3 className="mb-3">Wondering what makes us different from other web development agencies?</h3>
                         <h2 className="mb-3">We are digital marketing experts with a passion for development.</h2>
                         <h5 className="mb-3">
@@ -738,7 +738,7 @@ function LandingPage() {
                 <div className="container pt-0 pt-sm-5">
                     <div className="row">
                         <div className="col-lg-6">
-                            <h5 className="mb-3">Discover how an underperforming website could be holding your business back.</h5>
+                            <h5 className="mb-3 ">Discover how an underperforming website could be holding your business back.</h5>
                         </div>
                     </div>
                     <div className="row pb-5">
@@ -775,7 +775,7 @@ function LandingPage() {
                             <img src={vape1} alt=" Product Image1" />
                         </div>
                         <div className="col-lg-6">
-                            <p className="light-text">
+                            <p className="light-text mt-5 mt-sm-5 mt-lg-0">
                                 <b>2. </b> We’ll build and launch your site before you complete payment.
                             </p>
                             <img src={vape1} alt="Product Image2" />

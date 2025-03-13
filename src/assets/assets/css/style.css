@@ -1278,3 +1278,10 @@ td:has(.company-logo) {
     background-color: #BFF747 !important;
    
 }
+
+.navbar-collapse{
+        flex-grow: 0 !important;
+}
+.landing-nav-container{
+    justify-content: center !important;
+}
