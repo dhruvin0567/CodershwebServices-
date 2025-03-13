@@ -69,6 +69,14 @@ import Project18 from '/src/assets/images/images2/fuel.png';
 import Project19 from '/src/assets/images/images2/oceans6media.png';
 import Project20 from '/src/assets/images/images2/NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-.png.webp';
 
+import StickyImg from '/src/assets/images/images2/hero_window.png';
+import SlidingImg1 from '/src/assets/images/images2/asterley-landing.webp';
+import SlidingImg2 from '/src/assets/images/images2/madamef-landing.webp';
+import WindowImg from '/src/assets/images/images2/levels_window.png';
+import JewelryImg from '/src/assets/images/images2/jewelry_window.png';
+import MobileImg from '/src/assets/images/images2/mobile-img.png';
+import ArrowImg from '/src/assets/images/images2/drop.png';
+
 import ReviewImg1 from '/src/assets/images/images2/rating.png';
 
 const projects = [
@@ -288,24 +296,24 @@ function LandingPage() {
                     <div className="content-one col-lg-6 col-sm-12">
                         <div className="img-part">
                             <div className="first-part-img">
-                                <img className="first-img" src="/src/assets/images/images2/asterley-landing.webp" alt />
+                                <img className="first-img" src={SlidingImg1} alt />
                             </div>
                             <div className="second-img-part">
 
-                                <img className="second-img" src="/src/assets/images/images2/madamef-landing.webp" alt />
+                                <img className="second-img" src={SlidingImg2} alt />
                             </div>
                         </div>
-                        <img id="stickyImage" src="/src/assets/images/images2/hero_window.png" alt="Sticky Image" />
+                        <img id="stickyImage" src={StickyImg} alt="Sticky Image" />
                     </div>
                     <div className="content-two col-lg-6 col-sm-12">
                         <div className="content-two-img">
                             <div>
-                                <img src="/src/assets/images/images2/levels_window.png" alt />
+                                <img src={WindowImg} alt />
                             </div>
                             <div className="mobile-img-part">
-                                <img className="mobile-bg-img" src="/src/assets/images/images2/jewelry_window.png" alt />
-                                <img className="mobile-img" src="/src/assets/images/images2/mobile-img.png" alt />
-                                <img className="arrow-img" src="/src/assets/images/images2/drop.png" alt />
+                                <img className="mobile-bg-img" src={JewelryImg} alt />
+                                <img className="mobile-img" src={MobileImg} alt />
+                                <img className="arrow-img" src={ArrowImg} alt />
                             </div>
                         </div>
                         <div className="sticky-section-content">
@@ -400,12 +408,12 @@ function LandingPage() {
                     </div>
                     <div className="reviews-comments light-text">
                         <h6 className="light-text text-center mb-4">Our Customers Speak Highly of Us
-                            <img src="/src/assets/images/images2/rating.png" alt width={100} />
+                            <img src={ReviewImg1} alt width={100} />
                         </h6>
                         <div className="row justify-content-center align-items-center g-2">
                             <div className="col-lg-3 text-center d-none d-lg-block">
                                 <h5 className="light-text">Excellent</h5>
-                                <img src="/src/assets/images/images2/rating.png" alt width={150} /><br />
+                                <img src={ReviewImg1} alt width={150} /><br />
                                 <small>Based on 43 reviews</small> <br />
                                 Trustpilot
                             </div>
@@ -947,62 +955,7 @@ function LandingPage() {
                 </div>
             </div>
 
-            {/* <section className="section d-none d-md-block dark-bg">
-                <div className="row">
-                    <div className="content-one col-lg-6 col-sm-12">
-                        <div className="img-part">
-                            <div className="first-part-img">
-                                <img className="first-img" src="/src/assets/images/images2/asterley-landing.webp" alt />
-                            </div>
-                            <div className="second-img-part">
 
-                                <img className="second-img" src="/src/assets/images/images2/madamef-landing.webp" alt />
-                            </div>
-                        </div>
-                        <img id="stickyImage" src="/src/assets/images/images2/hero_window.png" alt="Sticky Image" />
-                    </div>
-                    <div className="content-two col-lg-6 col-sm-12">
-                        <div className="content-two-img">
-                            <div>
-                                <img src="/src/assets/images/images2/levels_window.png" alt />
-                            </div>
-                            <div className="mobile-img-part">
-                                <img className="mobile-bg-img" src="/src/assets/images/images2/jewelry_window.png" alt />
-                                <img className="mobile-img" src="/src/assets/images/images2/mobile-img.png" alt />
-                                <img className="arrow-img" src="/src/assets/images/images2/drop.png" alt />
-                            </div>
-                        </div>
-                        <div className="sticky-section-content">
-                            <h3 className="content-two-headline mb-4 text-light">We’re experts in building visually stunning, user-friendly websites and funnels.</h3>
-                            <ul className="content-two-des text-light">
-                                <li className="mb-4">
-                                    <h6 className="text-light">Premium-Grade Design</h6>
-                                    <p>
-                                        Our designs make an impact. Your new site will attract attention and turn visitors into
-                                        customers.
-                                    </p>
-                                </li>
-                                <li className="mb-4">
-                                    <h6 className="text-light">Seamlessly Adapts to Any Device</h6>
-                                    <p>
-                                        Since 78% of all traffic is mobile, your site needs to be as seamless on phones as it is on
-                                        desktops.
-                                    </p>
-                                </li>
-                                <li className="mb-4">
-                                    <h6 className="text-light">Premium-Grade Design</h6>
-                                    <p>
-                                        With battle-tested conversion design techniques, we help transform visitors into long-term
-                                        customers.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
 
 
 
