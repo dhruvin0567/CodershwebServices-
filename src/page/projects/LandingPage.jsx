@@ -18,6 +18,11 @@ import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
 import logo from "../../assets/images/logo/logo-white.svg";
 import Cloud from "../../assets/images/images2/614b5b07b77be58b407afc62_stacked-area-up.svg";
+import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
+import FadeInStagger from "../../components/animation/FadeInStagger";
+import { useState, useRef, useEffect } from 'react';  // Import Link from react-router-dom
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from 'swiper/modules';
 
 import video1 from '../../assets/images/Videos/Video-1-compressed.mp4';
 import video2 from '../../assets/images/Videos/Video-2-compressed.mp4';
@@ -25,157 +30,130 @@ import video3 from '../../assets/images/Videos/Video-3-compressed.mp4';
 import video4 from '../../assets/images/Videos/Video-4-compressed.mp4';
 import video5 from '../../assets/images/Videos/Video-5-compressed.mp4';
 import video6 from '../../assets/images/Videos/Video-6-compressed.mp4';
-import { useState, useRef, useEffect } from 'react';  // Import Link from react-router-dom
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from 'swiper/modules';
-// import FadeInStagger from "../animation/FadeInStagger";
-import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
-import FadeInStagger from "../../components/animation/FadeInStagger";
 
+import Images1 from '/src/assets/images/images2/artisan-f-p.webp';
+import Images2 from '/src/assets/images/images2/asterley-bros-f-p.webp';
+import Images3 from '/src/assets/images/images2/bone-f-p.webp';
+import Images4 from '/src/assets/images/images2/Claudine-f-p.webp';
+import Images5 from '/src/assets/images/images2/Double-Dutch-f-p.webp';
+import Images6 from '/src/assets/images/images2/gattertop-f-p.webp';
+import Images7 from '/src/assets/images/images2/liberation-f-p.webp';
+import Images8 from '/src/assets/images/images2/madamef-f-p.webp';
+import Images9 from '/src/assets/images/images2/negroni-soc-f-p.webp';
+import Images10 from '/src/assets/images/images2/van-hunks-f-p.webp'
+
+import Logos1 from '/src/assets/images/images2/shopify-plus-experts-mp (2).png';
+import Logos2 from '/src/assets/images/images2/facebook-mp.png';
+import Logos3 from '/src/assets/images/images2/klaviyo-mp.png';
+import Logos4 from '/src/assets/images/images2/shopify-patrner-mp.png';
+import Logos5 from '/src/assets/images/images2/google-partners-mp.png'
+
+import Project1 from '/src/assets/images/images2/Van-Hunks.png.webp';
+import Project2 from '/src/assets/images/images2/Madame-F.png.webp';
+import Project3 from '/src/assets/images/images2/Liberation-Cocktails.png.webp';
+import Project4 from '/src/assets/images/images2/BONE-IDYLL.png.webp';
+import Project5 from '/src/assets/images/images2/Violet-Blanc-Beauty.png.webp';
+import Project6 from '/src/assets/images/images2/TylersCoffee.png.webp';
+import Project7 from '/src/assets/images/images2/BUY-VAPE-USA.png.webp';
+import Project8 from '/src/assets/images/images2/No-Mo-Stache.png.webp';
+import Project9 from '/src/assets/images/images2/SplitGrip.png.webp';
+import Project10 from '/src/assets/images/images2/wallplanks.png.webp';
+import Project11 from '/src/assets/images/images2/Rowan-Oak-Clothing-Co.png.webp';
+import Project12 from '/src/assets/images/images2/Aolithium-Professional.png';
+import Project13 from '/src/assets/images/images2/Baby-Gold.png';
+import Project14 from '/src/assets/images/images2/Aubi-Ramsa-Ice-Cream-Co-.png.webp';
+import Project15 from '/src/assets/images/images2/Airpaq-Sustainability-meets-functionality-Airpaq-GmbH.png.webp';
+import Project16 from '/src/assets/images/images2/Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box.png.webp';
+import Project17 from '/src/assets/images/images2/thewelshproducestall-the-welsh-produce-stall.png.webp';
+import Project18 from '/src/assets/images/images2/fuel.png';
+import Project19 from '/src/assets/images/images2/oceans6media.png';
+import Project20 from '/src/assets/images/images2/NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-.png.webp';
+
+import ReviewImg1 from '/src/assets/images/images2/rating.png';
 
 const projects = [
-    {
-        name: 'Van Hunks',
-        image: '/src/assets/images/images2/Van-Hunks.png.webp',
-    },
-    {
-        name: 'Madame F',
-        image: '/src/assets/images/images2/Madame-F.png.webp',
-    },
-    {
-        name: 'Liberation Cocktails',
-        image: '/src/assets/images/images2/Liberation-Cocktails.png.webp',
-    },
-    {
-        name: 'Bone Idyll',
-        image: '/src/assets/images/images2/BONE-IDYLL.png.webp',
-    },
-    {
-        name: 'Violet Blanc',
-        image: '/src/assets/images/images2/Violet-Blanc-Beauty.png.webp',
-    },
-    {
-        name: 'Tylers Coffee',
-        image: '/src/assets/images/images2/TylersCoffee.png.webp',
-    },
-    {
-        name: 'Buy Vape USA',
-        image: '/src/assets/images/images2/BUY-VAPE-USA.png.webp',
-    },
-    {
-        name: 'No Mo-Stache',
-        image: '/src/assets/images/images2/No-Mo-Stache.png.webp',
-    },
-    {
-        name: 'Split Grip',
-        image: '/src/assets/images/images2/SplitGrip.png.webp',
-    },
-    {
-        name: 'Wallplanks',
-        image: '/src/assets/images/images2/wallplanks.png.webp',
-    },
-    {
-        name: 'Rowan Oak',
-        image: '/src/assets/images/images2/Rowan-Oak-Clothing-Co.png.webp',
-    },
-    {
-        name: 'Aolithium',
-        image: '/src/assets/images/images2/Aolithium-Professional.png',
-    },
-    {
-        name: 'Baby Gold',
-        image: '/src/assets/images/images2/Baby-Gold.png',
-    },
-    {
-        name: 'Aubi & Ramsa',
-        image: '/src/assets/images/images2/Aubi-Ramsa-Ice-Cream-Co-.png.webp',
-    },
-    {
-        name: 'Airpaq',
-        image: '/src/assets/images/images2/Airpaq-Sustainability-meets-functionality-Airpaq-GmbH.png.webp',
-    },
-    {
-        name: 'CUBIC',
-        image: '/src/assets/images/images2/Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box.png.webp',
-    },
-    {
-        name: 'The Welsh Produce Stall',
-        image: '/src/assets/images/images2/thewelshproducestall-the-welsh-produce-stall.png.webp',
-    },
-    {
-        name: 'Fuel',
-        image: '/src/assets/images/images2/fuel.png',
-    },
-    {
-        name: 'Ocean 6 Media',
-        image: '/src/assets/images/images2/oceans6media.png',
-    },
-    {
-        name: 'Neux',
-        image: '/src/assets/images/images2/NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-.png.webp',
-    }
+    { name: 'Van Hunks', image: Project1 },
+    { name: 'Madame F', image: Project2 },
+    { name: 'Liberation Cocktails', image: Project3 },
+    { name: 'Bone Idyll', image: Project4 },
+    { name: 'Violet Blanc', image: Project5 },
+    { name: 'Tylers Coffee', image: Project6 },
+    { name: 'Buy Vape USA', image: Project7 },
+    { name: 'No Mo-Stache', image: Project8 },
+    { name: 'Split Grip', image: Project9 },
+    { name: 'Wallplanks', image: Project10 },
+    { name: 'Rowan Oak', image: Project11 },
+    { name: 'Aolithium', image: Project12 },
+    { name: 'Baby Gold', image: Project13 },
+    { name: 'Aubi & Ramsa', image: Project14 },
+    { name: 'Airpaq', image: Project15 },
+    { name: 'CUBIC', image: Project16 },
+    { name: 'The Welsh Produce Stall', image: Project17 },
+    { name: 'Fuel', image: Project18 },
+    { name: 'Ocean 6 Media', image: Project19 },
+    { name: 'Neux', image: Project20 }
 ];
 
 const images = [
-    '/src/assets/images/images2/artisan-f-p.webp',
-    '/src/assets/images/images2/asterley-bros-f-p.webp',
-    '/src/assets/images/images2/bone-f-p.webp',
-    '/src/assets/images/images2/Claudine-f-p.webp',
-    '/src/assets/images/images2/Double-Dutch-f-p.webp',
-    '/src/assets/images/images2/gattertop-f-p.webp',
-    '/src/assets/images/images2/liberation-f-p.webp',
-    '/src/assets/images/images2/madamef-f-p.webp',
-    '/src/assets/images/images2/negroni-soc-f-p.webp',
-    '/src/assets/images/images2/van-hunks-f-p.webp',
+    Images1,
+    Images2,
+    Images3,
+    Images4,
+    Images5,
+    Images6,
+    Images7,
+    Images8,
+    Images9,
+    Images10
 ];
 
 const logos = [
-    "/src/assets/images/images2/shopify-plus-experts-mp (2).png",
-    "/src/assets/images/images2/facebook-mp.png",
-    "/src/assets/images/images2/klaviyo-mp.png",
-    "/src/assets/images/images2/shopify-patrner-mp.png",
-    "/src/assets/images/images2/google-partners-mp.png"
+    Logos1,
+    Logos2,
+    Logos3,
+    Logos4,
+    Logos5
 ];
 
 const reviews = [
     {
-        image: "/src/assets/images/images2/rating.png",
+        image: ReviewImg1,
         quote: "They exceeded my expectations, delivering everything I requested and more.",
         feedback: "The website has a sleek, modern design, and the in-house team is highly satisfied with the exceptional customer service they received. Codersh Web Services expertise, dedication, and proactive approach ensured a smooth process, successfully meeting all requirements.",
         name: "Alex Carter",
     },
     {
-        image: "/src/assets/images/images2/rating.png",
+        image: ReviewImg1,
         quote: "\"37% Conversion Rate Boost Following Website Redesign!\"",
         feedback: "Shah and Codersh Web Services provide a turnkey DFY solution for improving conversion rates. After seeing one of his ads, I scheduled a call, and within five minutes, I was confident he was the right choice. We began with a website redesign, which immediately boosted our conversion rate by 39%.",
         name: "Jordan Reynolds",
     },
     {
-        image: "/src/assets/images/images2/rating.png",
+        image: ReviewImg1,
         quote: "\"DFY Website – Optimized for Maximum Conversions!\"",
         feedback: "I needed a high-converting website, and after reviewing their conversion checklist and case studies, I decided to move forward. The results exceeded my expectations—the site is converting better than I ever imagined, and the best part? They handled everything for me.",
         name: "Taylor Mitchell",
     },
     {
-        image: "/src/assets/images/images2/rating.png",
+        image: ReviewImg1,
         quote: "\"The skilled and versatile team at Codersh Web Services collaborated seamlessly.\"",
         feedback: "The client is delighted with Codersh Web Services' service. The team maintained a smooth workflow throughout the engagement, actively seeking feedback and ensuring the client felt like a top priority through responsive communication. Their diverse expertise also enabled them to deliver complex solutions effectively.",
         name: "Casey Bennett",
     },
     {
-        image: "/src/assets/images/images2/rating.png",
+        image: ReviewImg1,
         quote: "\"I truly appreciated their collaborative approach.\"",
         feedback: "Thanks to Codersh Web Services' support, the client tripled their follower base and saw a significant increase in email leads. The team established an efficient workflow, shared valuable insights, and provided prompt responses. Additionally, they consistently had the right solutions to every question.",
         name: "Morgan Sullivan",
     },
     {
-        image: "/src/assets/images/images2/rating.png",
+        image: ReviewImg1,
         quote: "\"Shah and his team are top-tier marketers.\"",
         feedback: "Partnering with Shah & his team has been an incredible experience. They built and optimized our landing pages, dramatically improving our ROI on paid traffic campaigns. In fact, we saw a 25% increase in our landing page conversion rates. Shah’s expertise, combined with Monica and Cecelia’s dedication, has been invaluable to our success. Amazing work, team!",
         name: "Riley Thompson",
     },
     {
-        image: "/src/assets/images/images2/rating.png",
+        image: ReviewImg1,
         quote: "\"The most impressive aspect is that Codersh Web Services truly understood our vision and brand.\"",
         feedback: "Codersh Web Services delivered a professional, robust, and visually stunning website with clean wireframes and seamless navigation. The team excels in content writing and communication, ensuring clarity throughout the process. Along with efficient project management, they also provide valuable insights and recommendations.",
         name: "Jamie Parker",
