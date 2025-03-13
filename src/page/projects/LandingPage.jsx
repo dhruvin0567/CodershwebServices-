@@ -31,53 +31,53 @@ import video4 from '../../assets/images/Videos/Video-4-compressed.mp4';
 import video5 from '../../assets/images/Videos/Video-5-compressed.mp4';
 import video6 from '../../assets/images/Videos/Video-6-compressed.mp4';
 
-import Images1 from '/src/assets/images/images2/artisan-f-p.webp';
-import Images2 from '/src/assets/images/images2/asterley-bros-f-p.webp';
-import Images3 from '/src/assets/images/images2/bone-f-p.webp';
-import Images4 from '/src/assets/images/images2/Claudine-f-p.webp';
-import Images5 from '/src/assets/images/images2/Double-Dutch-f-p.webp';
-import Images6 from '/src/assets/images/images2/gattertop-f-p.webp';
-import Images7 from '/src/assets/images/images2/liberation-f-p.webp';
-import Images8 from '/src/assets/images/images2/madamef-f-p.webp';
-import Images9 from '/src/assets/images/images2/negroni-soc-f-p.webp';
-import Images10 from '/src/assets/images/images2/van-hunks-f-p.webp'
+import Images1 from '../../assets/images/images2/artisan-f-p.webp';
+import Images2 from '../../assets/images/images2/asterley-bros-f-p.webp';
+import Images3 from '../../assets/images/images2/bone-f-p.webp';
+import Images4 from '../../assets/images/images2/Claudine-f-p.webp';
+import Images5 from '../../assets/images/images2/Double-Dutch-f-p.webp';
+import Images6 from '../../assets/images/images2/gattertop-f-p.webp';
+import Images7 from '../../assets/images/images2/liberation-f-p.webp';
+import Images8 from '../../assets/images/images2/madamef-f-p.webp';
+import Images9 from '../../assets/images/images2/negroni-soc-f-p.webp';
+import Images10 from '../../assets/images/images2/van-hunks-f-p.webp'
 
-import Logos1 from '/src/assets/images/images2/shopify-plus-experts-mp (2).png';
-import Logos2 from '/src/assets/images/images2/facebook-mp.png';
-import Logos3 from '/src/assets/images/images2/klaviyo-mp.png';
-import Logos4 from '/src/assets/images/images2/shopify-patrner-mp.png';
-import Logos5 from '/src/assets/images/images2/google-partners-mp.png'
+import Logos1 from '../../assets/images/images2/shopify-plus-experts-mp (2).png';
+import Logos2 from '../../assets/images/images2/facebook-mp.png';
+import Logos3 from '../../assets/images/images2/klaviyo-mp.png';
+import Logos4 from '../../assets/images/images2/shopify-patrner-mp.png';
+import Logos5 from '../../assets/images/images2/google-partners-mp.png'
 
-import Project1 from '/src/assets/images/images2/Van-Hunks.png.webp';
-import Project2 from '/src/assets/images/images2/Madame-F.png.webp';
-import Project3 from '/src/assets/images/images2/Liberation-Cocktails.png.webp';
-import Project4 from '/src/assets/images/images2/BONE-IDYLL.png.webp';
-import Project5 from '/src/assets/images/images2/Violet-Blanc-Beauty.png.webp';
-import Project6 from '/src/assets/images/images2/TylersCoffee.png.webp';
-import Project7 from '/src/assets/images/images2/BUY-VAPE-USA.png.webp';
-import Project8 from '/src/assets/images/images2/No-Mo-Stache.png.webp';
-import Project9 from '/src/assets/images/images2/SplitGrip.png.webp';
-import Project10 from '/src/assets/images/images2/wallplanks.png.webp';
-import Project11 from '/src/assets/images/images2/Rowan-Oak-Clothing-Co.png.webp';
-import Project12 from '/src/assets/images/images2/Aolithium-Professional.png';
-import Project13 from '/src/assets/images/images2/Baby-Gold.png';
-import Project14 from '/src/assets/images/images2/Aubi-Ramsa-Ice-Cream-Co-.png.webp';
-import Project15 from '/src/assets/images/images2/Airpaq-Sustainability-meets-functionality-Airpaq-GmbH.png.webp';
-import Project16 from '/src/assets/images/images2/Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box.png.webp';
-import Project17 from '/src/assets/images/images2/thewelshproducestall-the-welsh-produce-stall.png.webp';
-import Project18 from '/src/assets/images/images2/fuel.png';
-import Project19 from '/src/assets/images/images2/oceans6media.png';
-import Project20 from '/src/assets/images/images2/NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-.png.webp';
+import Project1 from '../../assets/images/images2/Van-Hunks.png.webp';
+import Project2 from '../../assets/images/images2/Madame-F.png.webp';
+import Project3 from '../../assets/images/images2/Liberation-Cocktails.png.webp';
+import Project4 from '../../assets/images/images2/BONE-IDYLL.png.webp';
+import Project5 from '../../assets/images/images2/Violet-Blanc-Beauty.png.webp';
+import Project6 from '../../assets/images/images2/TylersCoffee.png.webp';
+import Project7 from '../../assets/images/images2/BUY-VAPE-USA.png.webp';
+import Project8 from '../../assets/images/images2/No-Mo-Stache.png.webp';
+import Project9 from '../../assets/images/images2/SplitGrip.png.webp';
+import Project10 from '../../assets/images/images2/wallplanks.png.webp';
+import Project11 from '../../assets/images/images2/Rowan-Oak-Clothing-Co.png.webp';
+import Project12 from '../../assets/images/images2/Aolithium-Professional.png';
+import Project13 from '../../assets/images/images2/Baby-Gold.png';
+import Project14 from '../../assets/images/images2/Aubi-Ramsa-Ice-Cream-Co-.png.webp';
+import Project15 from '../../assets/images/images2/Airpaq-Sustainability-meets-functionality-Airpaq-GmbH.png.webp';
+import Project16 from '../../assets/images/images2/Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box.png.webp';
+import Project17 from '../../assets/images/images2/thewelshproducestall-the-welsh-produce-stall.png.webp';
+import Project18 from '../../assets/images/images2/fuel.png';
+import Project19 from '../../assets/images/images2/oceans6media.png';
+import Project20 from '../../assets/images/images2/NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-.png.webp';
 
-import StickyImg from '/src/assets/images/images2/hero_window.png';
-import SlidingImg1 from '/src/assets/images/images2/asterley-landing.webp';
-import SlidingImg2 from '/src/assets/images/images2/madamef-landing.webp';
-import WindowImg from '/src/assets/images/images2/levels_window.png';
-import JewelryImg from '/src/assets/images/images2/jewelry_window.png';
-import MobileImg from '/src/assets/images/images2/mobile-img.png';
-import ArrowImg from '/src/assets/images/images2/drop.png';
+import StickyImg from '../../assets/images/images2/hero_window.png';
+import SlidingImg1 from '../../assets/images/images2/asterley-landing.webp';
+import SlidingImg2 from '../../assets/images/images2/madamef-landing.webp';
+import WindowImg from '../../assets/images/images2/levels_window.png';
+import JewelryImg from '../../assets/images/images2/jewelry_window.png';
+import MobileImg from '../../assets/images/images2/mobile-img.png';
+import ArrowImg from '../../assets/images/images2/drop.png';
 
-import ReviewImg1 from '/src/assets/images/images2/rating.png';
+import ReviewImg1 from '../../assets/images/images2/rating.png';
 
 const projects = [
     { name: 'Van Hunks', image: Project1 },
@@ -293,7 +293,7 @@ function LandingPage() {
 
             <section className="section d-none d-md-block dark-bg p-5">
                 <div className="row">
-                    <div className="content-one col-lg-6 col-sm-12">
+                    <div className="content-one col-lg-6 col-sm-12 p-5">
                         <div className="img-part">
                             <div className="first-part-img">
                                 <img className="first-img" src={SlidingImg1} alt />
@@ -305,7 +305,7 @@ function LandingPage() {
                         </div>
                         <img id="stickyImage" src={StickyImg} alt="Sticky Image" />
                     </div>
-                    <div className="content-two col-lg-6 col-sm-12">
+                    <div className="content-two col-lg-6 col-sm-12 p-5">
                         <div className="content-two-img">
                             <div>
                                 <img src={WindowImg} alt />

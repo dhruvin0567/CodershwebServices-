@@ -1243,7 +1243,7 @@ td:has(.company-logo) {
     height: 75px !important;
     background-color: white !important;
     border-radius: 0px !important;
-    width: 315px !important;
+    width: 500px !important;
 }
 .landing-form-input3 {
     height: 75px !important;
@@ -1280,7 +1280,8 @@ td:has(.company-logo) {
 }
 
 .navbar-collapse{
-        flex-grow: 0 !important;
+        flex-grow: 1 !important;
+        justify-content: end;
 }
 .landing-nav-container{
     justify-content: center !important;
