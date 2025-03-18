@@ -12139,3 +12139,17 @@ button#aximo-notified-btn {
 .brand-info-li p {
 	margin-bottom: 0px;
 }
+
+.cs-video {
+	overflow: hidden;
+}
+
+@media (max-width: 912px) {
+	.cs-video {
+		height: 450px;
+	}
+
+	.cs-video video {
+		object-fit: contain !important;
+	}
+}

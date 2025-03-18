@@ -3,6 +3,11 @@ import BrandImg2 from "../../assets/images/brand/split-grip-2.png"
 import BrandImg3 from "../../assets/images/brand/split-grip-3.png"
 import BrandImg4 from "../../assets/images/brand/Screenshot 2025-03-18 113553.png"
 
+import Brandcard1 from "../../assets/images/images2/1.png"
+import Brandcard2 from "../../assets/images/images2/2.png"
+import Brandcard3 from "../../assets/images/images2/3.png"
+
+
 function SingleBrand() {
     return (
         <div>
@@ -127,10 +132,12 @@ function SingleBrand() {
                 {/* End */}
                 <div className="cs-video-section">
                     <div className="cs-video">
-                        {/* <video>
-                  <source src="" type="">
-              </video> */}
-                        <img src="https://placehold.co/1920x570/png" alt />
+                        <video
+                            src="/src/assets/images/brand/6222e2cd1b48d34290cc67b7ba43dc6c.mp4"
+                            controls
+                            style={{ width: '100%', height: '800px', objectFit: 'cover', objectPosition: "top" }}
+                        />
+
                     </div>
                 </div>
             </div>
@@ -138,14 +145,14 @@ function SingleBrand() {
             <div className="image-cards-section py-5">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-4">
-                            <img src="https://placehold.co/400x550/png" alt />
+                        <div className="col-md-4 my-3 my-sm-3 my-md-0">
+                            <img src={Brandcard1} style={{ borderRadius: "25px" }} alt />
                         </div>
-                        <div className="col-md-4">
-                            <img src="https://placehold.co/400x550/png" alt />
+                        <div className="col-md-4 my-3 my-sm-3 my-md-0">
+                            <img src={Brandcard2} style={{ borderRadius: "25px" }} alt />
                         </div>
-                        <div className="col-md-4">
-                            <img src="https://placehold.co/400x550/png" alt />
+                        <div className="col-md-4 my-3 my-sm-3 my-md-0">
+                            <img src={Brandcard3} style={{ borderRadius: "25px" }} alt />
                         </div>
                     </div>
                 </div>
