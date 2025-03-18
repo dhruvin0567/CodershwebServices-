@@ -28,25 +28,32 @@ body {
     z-index: 5;
 }
 
-img.second-img {
-    max-width: 800px;
-    margin-left: 20px;
-    position: absolute;
-    bottom: 50px;
-    padding: 65px 20px 0px 20px;
-}
 
 #stickyImage {
     position: -webkit-sticky;
     position: sticky !important;
-    bottom: 0;
+    bottom: 2em;
     width: 100%;
     max-width: 800px;
     margin: auto 20px;
     display: block;
-    height: 620px;
+    height: auto;
+    /* Auto height to maintain aspect ratio */
+    max-height: 620px;
+    /* Set max height to prevent it from becoming too large */
     transition: position 0.3s ease;
-    margin-top: 50px !important;
+
+}
+
+@media (max-width: 912px) {
+    #stickyImage {
+        max-width: 100%;
+        /* Ensure it doesn't overflow on smaller screens */
+        height: auto;
+        /* Allow height to adjust based on width */
+        max-height: 500px;
+        /* Set max height for small screens */
+    }
 }
 
 .content-two.col-lg-6.col-sm-12 {
@@ -109,19 +116,60 @@ img.arrow-img {
     align-items: end;
 }
 
+.img-part {
+    position: relative;
+    width: 100%;
+}
+
+.first-part-img,
+.second-img-part {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    /* Ensure full width */
+}
+
 img.first-img {
-    max-width: 800px;
-    margin-left: 20px;
-    margin-top: 50px !important;
-    padding: 65px 20px 0px 20px;
+    width: 100%;
+    /* Responsive width */
+    margin: 15px 20px 0px;
+    /* padding: 65px 20px 0px 20px; */
+    padding: 20px;
+    object-fit: cover;
+    /* Maintain aspect ratio */
+}
+
+@media (max-width: 912px) {
+    img.first-img {
+        width: 100%;
+        /* Make sure the first image is responsive */
+        padding: 20px;
+        /* margin-top: 0px; */
+    }
 }
 
 img.second-img {
-    max-width: 800px;
-    margin-left: 20px;
+    width: 100%;
+    /* Ensure image is responsive */
     position: absolute;
-    bottom: 50px;
+    top: 0;
+    /* Position it inside the container */
+    left: 0;
+    margin: 15px 20px 0px;
+    padding: 20px;
+    object-fit: cover;
+    /* Maintain aspect ratio */
 }
+
+@media (max-width: 912px) {
+    img.second-img {
+        width: 100%;
+        /* Make sure the second image resizes */
+        padding: 20px;
+    }
+}
+
+
 
 .img-part {
     display: flex;

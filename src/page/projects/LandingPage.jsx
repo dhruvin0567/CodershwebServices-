@@ -293,14 +293,13 @@ function LandingPage() {
 
             <section className="section d-none d-md-block dark-bg p-5">
                 <div className="row">
-                    <div className="content-one col-lg-6 col-sm-12 p-5">
+                    <div className="content-one col-lg-6  p-5">
                         <div className="img-part">
                             <div className="first-part-img">
-                                <img className="first-img" src={SlidingImg1} alt />
+                                <img className="first-img" src={SlidingImg1} alt="First Image" />
                             </div>
                             <div className="second-img-part">
-
-                                <img className="second-img" src={SlidingImg2} alt />
+                                <img className="second-img" src={SlidingImg2} alt="Second Image" />
                             </div>
                         </div>
                         <img id="stickyImage" src={StickyImg} alt="Sticky Image" />
