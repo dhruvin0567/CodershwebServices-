@@ -385,6 +385,12 @@ function B2BWholsales() {
                             If you're ready to start selling wholesale, Codersh can simplify the process. We assist with data migration, custom theme design, and advanced B2B features, ensuring a smooth transition from platforms like Magento or BigCommerce.
                         </p>
                         <p>We help businesses of all sizes launch or migrate their Shopify B2B stores, unlocking the full potential of Shopify and Shopify Plus. Our experts will tailor your storefront, integrate custom apps, and optimize for success. Contact Codersh to create your ideal Shopify B2B store today.</p>
+                        <FadeInUp>
+                            <Link className="aximo-default-btn corn-btn pill" style={{ backgroundColor: "#bff747", color: "#000" }} to="/contact-us">
+                                <span className="aximo-label-up">Get In Touch</span>
+                                <span className="aximo-label-up">Get In Touch</span>
+                            </Link>
+                        </FadeInUp>
                     </div>
                 </div>
                 <div className="aximo-cta-shape3">

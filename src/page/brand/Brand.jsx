@@ -16,7 +16,7 @@ function Brand() {
                 <div className="container-fluid">
                     <div className="row">
                         {brandImages.map((image, index) => (
-                            <div className="col-lg-3 col-sm-4 col-6 mb-3" key={index}>
+                            <div className="col-lg-3 col-sm-4 col-6 mb-3 p-3" key={index}>
                                 <FadeInStagger>
                                     <Link className="brand-card" to="#">
                                         <img src={`/images/${image}`} alt={`brand ${index + 1}`} />

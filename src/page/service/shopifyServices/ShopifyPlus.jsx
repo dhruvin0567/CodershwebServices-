@@ -1,5 +1,5 @@
 import BreadCrumb from "../../../components/common/Breadcrumb"
-import ArrowRightImg from "../../../assets/images/icon/arrow-right.svg";
+// import ArrowRightImg from "../../../assets/images/icon/arrow-right.svg";
 import FadeInStagger from "../../../components/animation/FadeInStagger";
 import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
@@ -251,9 +251,9 @@ function ShopifyPlus() {
                                         <div className="aximo-iconbox-data">
                                             <h3>{item.title}</h3>
                                             <p>{item.description}</p>
-                                            <Link className="post-read-more aximo-icon" to="#" style={{ fontSize: '18px' }}>
+                                            {/* <Link className="post-read-more aximo-icon" to="#" style={{ fontSize: '18px' }}>
                                                 Read more <img src={ArrowRightImg} alt="Arrow" />
-                                            </Link>
+                                            </Link> */}
                                         </div>
                                     </div>
                                 </FadeInStagger>

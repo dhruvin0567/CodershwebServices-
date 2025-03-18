@@ -1,10 +1,14 @@
+import BrandImg1 from "../../assets/images/brand/split-grip-1.png"
+import BrandImg2 from "../../assets/images/brand/split-grip-2.png"
+import BrandImg3 from "../../assets/images/brand/split-grip-3.png"
+import BrandImg4 from "../../assets/images/brand/Screenshot 2025-03-18 113553.png"
 
 function SingleBrand() {
     return (
         <div>
 
             <div className="case-study-hero-section">
-                <img src="/src/assets/images/brand/split-grip-1.png" alt />
+                <img src={BrandImg1} alt />
                 {/* <div className="case-study-hero-section-img"></div> */}
             </div>
 
@@ -57,7 +61,7 @@ function SingleBrand() {
 
             <div className="image-section">
                 <div className="case-study-section-img">
-                    <img src="/src/assets/images/brand/split-grip-2.png" alt />
+                    <img src={BrandImg2} alt />
                 </div>
             </div>
 
@@ -77,12 +81,12 @@ function SingleBrand() {
                     <div className="row">
                         <div className="col-md-6 ">
                             <div className="cs-img">
-                                <img src="/src/assets/images/brand/split-grip-3.png" alt />
+                                <img src={BrandImg3} alt />
                             </div>
                         </div>
                         <div className="col-md-6 col-12 mt-sm-5 mt-5 mt-md-0">
                             <div className="cs-img">
-                                <img src="/src/assets/images/brand/Screenshot 2025-03-18 113553.png" alt />
+                                <img src={BrandImg4} alt />
                             </div>
                         </div>
                     </div>
@@ -116,7 +120,7 @@ function SingleBrand() {
                 <div className="container-lg cs-images-section-container px-lg-0">
 
                     <div className="cs-image-section d-flex justify-content-center">
-                        <img src="/src/assets/images/brand/split-grip-2.png" alt />
+                        <img src={BrandImg2} alt />
                     </div>
 
                 </div>
