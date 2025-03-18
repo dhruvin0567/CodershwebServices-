@@ -10,10 +10,18 @@ import ThumbImg3 from "../../../assets/images/images2/h3.png";
 import ThumbImg4 from "../../../assets/images/images2/h4.png";
 import { Link } from 'react-router-dom';
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
+import { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+  #root {
+	 overflow-x: hidden; 
+  }
+`;
+
 
 function Headless() {
     return (
         <div>
+            <GlobalStyle />
             <BreadCrumb title="Headless & Shopify" />
             <FadeInStaggerTwo>
                 <FadeInStaggerTwoChildren>

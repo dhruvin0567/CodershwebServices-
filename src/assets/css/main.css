@@ -7,9 +7,11 @@
 	justify-content: space-between;
 	padding-top: 0px;
 }
-body{
-	overflow-x: hidden !important;
+
+body {
+	/* overflow-x: hidden !important; */
 }
+
 .brand-logo,
 .default-logo,
 .responsive-logo {

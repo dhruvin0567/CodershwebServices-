@@ -9,10 +9,17 @@ import ThumbImg2 from "../../../assets/images/images2/service5_2.png";
 import ThumbImg3 from "../../../assets/images/images2/service5_3.png";
 import ThumbImg4 from "../../../assets/images/images2/service5_4.png";
 // import Star2Img from "../../../assets/images/v1/icon/star2.png";
+import { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+  #root {
+	 overflow-x: hidden; 
+  }
+`;
 
 function Support_Maintanace() {
     return (
         <div>
+            <GlobalStyle />
             <BreadCrumb title="Support & Maintanance" />
 
             <FadeInStaggerTwo>

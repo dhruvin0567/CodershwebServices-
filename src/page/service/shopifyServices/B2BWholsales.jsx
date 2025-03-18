@@ -11,6 +11,13 @@ import ThumbImg3 from "../../../assets/images/images2/service12_3.png";
 import ThumbImg4 from "../../../assets/images/images2/service12_4.webp";
 import ThumbImg5 from "../../../assets/images/images2/services12_5.jpg";
 import Shape4Img from "../../../assets/images/v5/shape4.png";
+import { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+  #root {
+     overflow-x: hidden; 
+  }
+`;
+
 
 const faqData = {
     faq1: [
@@ -42,6 +49,7 @@ const faqData = {
 function B2BWholsales() {
     return (
         <div>
+            <GlobalStyle />
             <BreadCrumb title="Shopify B2B & Wholesale" />
 
             <div className="section aximo-project-page text-center dark-bg border-top">

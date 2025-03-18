@@ -11,10 +11,18 @@ import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
 import { Link } from 'react-router-dom';
 // import CheckImg from "../../../assets/images/v7/check.png";
+import { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+  #root {
+	 overflow-x: hidden; 
+  }
+`;
+
 
 function CustomStore() {
     return (
         <div>
+            <GlobalStyle />
             <BreadCrumb title="Custom Store projects" />
 
             <div className="section aximo-section-padding2">

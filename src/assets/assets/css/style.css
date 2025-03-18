@@ -7,7 +7,7 @@
 }
 
 body {
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
 }
 
 
@@ -307,8 +307,8 @@ button.filter-btn:hover {
 
 @media (max-width: 512px) {
     .filter-container .form-select {
-            width: 100%;
-        }
+        width: 100%;
+    }
 }
 
 .filter-container .form-select:focus {
@@ -1073,8 +1073,8 @@ h3.ani-h3 {
 }
 
 .marquee h3 {
-  font-size: 76px !important;
- margin-left: 10px !important;
+    font-size: 76px !important;
+    margin-left: 10px !important;
 }
 
 
@@ -1223,13 +1223,14 @@ td:has(.company-logo) {
 /* Aximo New Index End */
 
 /*  landing-form-input css */
-.landing-form{
+.landing-form {
     border-radius: 12px;
 }
-.landing-form-input{
- height: 75px !important;
- background-color: white !important;
- border-radius: 0px !important;
+
+.landing-form-input {
+    height: 75px !important;
+    background-color: white !important;
+    border-radius: 0px !important;
 }
 
 @media (max-width: 512px) {
@@ -1239,12 +1240,13 @@ td:has(.company-logo) {
     }
 }
 
-.landing-form-input2{
+.landing-form-input2 {
     height: 75px !important;
     background-color: white !important;
     border-radius: 0px !important;
     width: 500px !important;
 }
+
 .landing-form-input3 {
     height: 75px !important;
     background-color: white !important;
@@ -1254,10 +1256,11 @@ td:has(.company-logo) {
 
 @media (max-width: 512px) {
     .landing-form-input3 {
-           
-            width: 365px !important;
-        }
+
+        width: 365px !important;
+    }
 }
+
 @media (max-width: 375px) {
     .landing-form-input3 {
         width: 290px !important;
@@ -1265,7 +1268,7 @@ td:has(.company-logo) {
 }
 
 .landing-form-btn {
-   
+
     width: 365px !important;
 }
 
@@ -1274,15 +1277,17 @@ td:has(.company-logo) {
         width: 290px !important;
     }
 }
-.landing-form-btn:hover{
+
+.landing-form-btn:hover {
     background-color: #BFF747 !important;
-   
+
 }
 
-.navbar-collapse{
-        flex-grow: 1 !important;
-        justify-content: end;
+.navbar-collapse {
+    flex-grow: 1 !important;
+    justify-content: end;
 }
-.landing-nav-container{
+
+.landing-nav-container {
     justify-content: center !important;
 }

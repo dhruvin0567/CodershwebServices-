@@ -8,9 +8,18 @@ import ThumbImg1 from "../../../assets/images/images2/service5_1_2.png";
 import ThumbImg2 from "../../../assets/images/images2/service5_2.png";
 import ThumbImg3 from "../../../assets/images/images2/service5_3.png";
 import ThumbImg4 from "../../../assets/images/images2/service5_4.png";
+import { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+  #root {
+	 overflow-x: hidden; 
+  }
+`;
+
+
 function ConversionRate() {
     return (
         <div>
+            <GlobalStyle />
             <BreadCrumb title="Conversion Rate Optimization" />
 
             <FadeInStaggerTwo>

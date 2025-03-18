@@ -107,16 +107,16 @@ body {
 	vertical-align: baseline;
 	text-rendering: optimizeLegibility;
 	font-weight: 400;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	background-color: var(--light-bg1);
 	counter-reset: my-sec-counter;
 	font-size: 18px;
 	line-height: 30px;
-	overflow-x: hidden !important;
+	/* overflow-x: hidden !important; */
 }
 
 #root {
-	overflow-x: hidden !important;
+	/* overflow-x: hidden; */
 }
 
 body.styleguide {

@@ -11,6 +11,12 @@ import ThumbImg4 from "../../../assets/images/images2/service4_card1.png";
 import ThumbImg5 from "../../../assets/images/images2/service4_card2.png";
 import { Link } from 'react-router-dom';
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
+import { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+  #root {
+	 overflow-x: hidden; 
+  }
+`;
 
 // import Shape4Img from "../../../assets/images/v5/shape4.png";
 // import ServiceCardImg1 from "../../../assets/images/images2/service4_card1_2.png";
@@ -53,6 +59,7 @@ function ShopifyPlus() {
 
     return (
         <div>
+            <GlobalStyle />
             <BreadCrumb title="Shopify Plus" />
 
 

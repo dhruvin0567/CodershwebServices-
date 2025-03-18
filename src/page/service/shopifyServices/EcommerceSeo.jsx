@@ -11,11 +11,16 @@ import ThumbImg4 from "../../../assets/images/images2/h4.png";
 // import ThumbImg5 from "../../../assets/images/images2/service5_4.png";
 import ThumbImg6 from "../../../assets/images/images2/h4.png";
 // import Star2Img from "../../../assets/images/v1/icon/star2.png";
-
+import { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+  #root {
+     overflow-x: hidden; 
+  }
+`;
 function EcommerceSeo() {
     return (
         <div>
-
+            <GlobalStyle />
             <BreadCrumb title="SEO Agency" />
 
             <FadeInStaggerTwo>

@@ -9,10 +9,18 @@ import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
 import { Link } from 'react-router-dom';
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
+import { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+  #root {
+	 overflow-x: hidden; 
+  }
+`;
+
 
 function EmailSmsMarketing() {
     return (
         <div>
+            <GlobalStyle />
             <BreadCrumb title="Email & Sms Marketing Agency" />
 
             <FadeInStaggerTwo>

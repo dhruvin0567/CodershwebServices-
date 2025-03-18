@@ -6,9 +6,17 @@ import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
 import { Link } from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+  #root {
+	 overflow-x: hidden; 
+  }
+`;
+
 function ShopifyAppDev() {
     return (
         <div>
+            <GlobalStyle />
             <BreadCrumb title="Shopify App Development" />
 
             <div className="section aximo-section-padding2">

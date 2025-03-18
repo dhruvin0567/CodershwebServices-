@@ -9,6 +9,16 @@ import AutoSlider from "../../components/home-one/auto-slider";
 import TestimonialSwiper from "../../components/home-one/testimonial/TestimonialSwiper";
 import { Helmet } from 'react-helmet';
 
+import { createGlobalStyle } from 'styled-components';
+
+
+const GlobalStyle = createGlobalStyle`
+  #root {
+     overflow-x: hidden; 
+  }
+`;
+
+
 // Teams images
 // import Team1Img from "../../assets/images/team/team1.png";
 // import Team2Img from "../../assets/images/team/team2.png";
@@ -76,6 +86,7 @@ const servicesData = [
 function HomeOne() {
 	return (
 		<>
+			<GlobalStyle />
 			<Helmet>
 				<title>Codersh Web Services - Your Trusted Shopify Service Agency</title>
 				<meta

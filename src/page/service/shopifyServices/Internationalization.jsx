@@ -14,6 +14,12 @@ import FeatureImg7 from "../../../assets/images/images2/feefo-300x300.jpg.webp";
 import FeatureImg8 from "../../../assets/images/images2/zendesk-300x300.jpg.webp";
 import FeatureImg9 from "../../../assets/images/images2/loyaltylion-300x300.jpg.webp";
 import Check from "../../../assets/images/icon/check.svg";
+import { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+  #root {
+	 overflow-x: hidden; 
+  }
+`;
 // import QuestionImg from "../../../assets/images/icon/question.svg";
 import { Link } from 'react-router-dom';
 
@@ -156,6 +162,7 @@ function Internationalization() {
 
     return (
         <div>
+            <GlobalStyle />
             <BreadCrumb title="Internationalization With Shopify & Shopify Plus" />
 
             <div className="section aximo-section-padding2">
