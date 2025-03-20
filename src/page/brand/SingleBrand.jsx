@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import VideoSlider from "../../components/common/VideoSlider";
 import useBrands from "../../hooks/useBrands";
+import VideoSlider_2 from "../../components/common/VideoSlider_2";
 
 const SINGLE_BRAND_API_URL = "https://codersh.com/wp-json/wp/v2/brands?_embed&slug=";
 const MEDIA_API_URL = "https://codersh.com/wp-json/wp/v2/media/";
@@ -143,14 +144,14 @@ function SingleBrand() {
             </div>
 
             <div className="cs-images-section ">
-                <div className="container-lg p-5">
+                <div className="container-lg p-4 p-md-5">
                     <div className="row">
                         <div className="col-md-6 ">
                             <div className="cs-img">
                                 <img src={brand?.image3} alt />
                             </div>
                         </div>
-                        <div className="col-md-6 col-12 mt-sm-5 mt-5 mt-md-0">
+                        <div className="col-md-6 mt-4 mt-md-0">
                             <div className="cs-img">
                                 <img src={brand?.image4} alt />
                             </div>
@@ -180,16 +181,16 @@ function SingleBrand() {
                 {/* End */}
                 <div className="cs-video-section">
                     <div className="cs-video">
-                        <VideoSlider />
+                        <VideoSlider_2 />
                     </div>
                 </div>
             </div>
 
-            <div className="image-cards-section py-5">
+            <div className="image-cards-section pb-5">
                 <div className="container">
                     <div className="row">
-                        {brands.map((brand, index) => (
-                            <div className="col-md-4 m-3 m-sm-3 m-md-0" key={brand.id} index={index}>
+                        {brands.slice(-3).reverse().map((brand, index) => (
+                            <div className="col-md-4 p-4 p-md-3" key={brand.id} index={index}>
                                 <Link className="brand-card" to={brand.link}>
                                     <img src={brand.img} alt={brand.title} />
                                 </Link>
