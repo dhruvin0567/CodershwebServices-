@@ -61,6 +61,8 @@ import EcommerceSeo from "../page/service/shopifyServices/EcommerceSeo.jsx";
 import B2BWholsales from "../page/service/shopifyServices/B2BWholsales.jsx";
 import Subscriptions from "../page/service/shopifyServices/Subscriptions.jsx";
 import SingleBrand from "../page/brand/SingleBrand.jsx";
+import SingleBrandCustom from "../page/brand/SingleBrandCustom.jsx";
+import BrandCustom from "../page/brand/BrandCustom.jsx";
 
 // import Pestrashop from "../page/service/ecommerece/Pestrashop.jsx";
 // import Shift4shop from "../page/service/ecommerece/Shift4shop.jsx";
@@ -243,8 +245,16 @@ export const router = createBrowserRouter([
 						element: <B2BWholsales />,
 					},
 					{
-						path: "/single-brand",
+						path: "/brand/:slug",
 						element: <SingleBrand />,
+					},
+					{
+						path: "/custom-brand-single",
+						element: <SingleBrandCustom />,
+					},
+					{
+						path: "/custom-brand",
+						element: <BrandCustom />,
 					},
 					// {
 					// 	path: "/singleblog2",
