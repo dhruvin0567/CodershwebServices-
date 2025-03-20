@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const BRAND_API_URL = "https://codersh.com/wp-json/wp/v2/brands?_embed";
+const BRAND_API_URL = "https://codersh.com/wp-json/wp/v2/brands?_embed&per_page=20";
 
 function Brand() {
 	const [brands, setBrands] = useState([]);
