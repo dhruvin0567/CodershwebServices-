@@ -12131,6 +12131,11 @@ button#aximo-notified-btn {
 	object-position: top;
 }
 
+.case-study-section-img img {
+	width: 100%;
+
+}
+
 .brand-text {
 	font-size: 24px;
 	line-height: 32px;
