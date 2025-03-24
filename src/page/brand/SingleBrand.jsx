@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import VideoSlider from "../../components/common/VideoSlider";
 import useBrands from "../../hooks/useBrands";
-import VideoSlider_2 from "../../components/common/VideoSlider_2";
+// import VideoSlider_2 from "../../components/common/VideoSlider_2";
+import VideoSlider from "../../components/common/VideoSlider";
+import FadeInStagger from "../../components/animation/FadeInStagger";
 
 const SINGLE_BRAND_API_URL = "https://codersh.com/wp-json/wp/v2/brands?_embed&slug=";
 const MEDIA_API_URL = "https://codersh.com/wp-json/wp/v2/media/";
@@ -67,9 +68,17 @@ function SingleBrand() {
             });
     }, [slug]);
 
-    if (loading) return <div className="brand-fetch">Loading...</div>;
+    // if (loading) return <div className="brand-fetch">Loading...</div>;
 
-    if (!brand) return <div className="brand-fetch">Brand not found.</div>;
+    // if (!brand) return <div className="brand-fetch">Brand not found.</div>;
+    if (loading) return <div className="blod-fetch">
+        <div className="aximo-preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>;
     return (
         <div style={{ overflowX: "hidden" }}>
             <div className="Brand-breadcrumb">
@@ -181,12 +190,28 @@ function SingleBrand() {
                 {/* End */}
                 <div className="cs-video-section">
                     <div className="cs-video">
-                        <VideoSlider_2 />
+                        <FadeInStagger>
+                            <div className="review-section text-center">
+                                <div className="container py-5">
+                                    <div>
+                                        <h2 className="mb-4">Our Client's Reviews</h2>
+                                        <p className="brand-text mx-lg-5 px-lg-5 mb-4">
+                                            We are very proud of the service we provide and stand by every product we carry.
+                                            See our testimonials from our happy customers.
+                                        </p>
+                                    </div>
+                                    <VideoSlider />
+                                </div>
+                            </div>
+                        </FadeInStagger>
                     </div>
                 </div>
             </div>
 
-            <div className="image-cards-section pb-5">
+            <div className="image-cards-section py-5">
+                <div className="container text-center">
+                    <h2 className="mb-4">Related Brands We Support</h2>
+                </div>
                 <div className="container">
                     <div className="row">
                         {brands.slice(-3).reverse().map((brand, index) => (

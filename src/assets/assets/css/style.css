@@ -132,9 +132,9 @@ img.arrow-img {
 img.first-img {
     width: 100%;
     /* Responsive width */
-    margin: 15px 20px 0px;
+    margin: 20px;
     /* padding: 65px 20px 0px 20px; */
-    padding: 20px;
+    padding: 40px;
     object-fit: cover;
     /* Maintain aspect ratio */
 }
@@ -155,8 +155,8 @@ img.second-img {
     top: 0;
     /* Position it inside the container */
     left: 0;
-    margin: 15px 20px 0px;
-    padding: 20px;
+    margin: 20px;
+    padding: 40px;
     object-fit: cover;
     /* Maintain aspect ratio */
 }

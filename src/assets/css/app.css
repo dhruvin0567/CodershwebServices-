@@ -12090,7 +12090,6 @@ button#aximo-notified-btn {
 
 /* single brand img ajustments */
 
-
 @media (max-width: 767px) {
 	.Brand-breadcrumb {
 		/* padding: 170px 0 80px; */
@@ -12165,12 +12164,5 @@ button#aximo-notified-btn {
 
 	.brand-info-li {
 		margin-bottom: 26px;
-	}
-}
-
-@media (min-width: 991px) {
-	.videoslider-brandpage {
-		width: 90%;
-
 	}
 }

@@ -64,7 +64,7 @@ import SingleBrand from "../page/brand/SingleBrand.jsx";
 import SingleBrandCustom from "../page/brand/SingleBrandCustom.jsx";
 import BrandCustom from "../page/brand/BrandCustom.jsx";
 
-// import Pestrashop from "../page/service/ecommerece/Pestrashop.jsx";
+import Pestrashop from "../page/service/ecommerece/Pestrashop.jsx";
 // import Shift4shop from "../page/service/ecommerece/Shift4shop.jsx";
 // import BigCommerce from "../page/service/ecommerece/BigCommerce.jsx";
 // import WooCommerceDevelopment from "../page/service/ecommerece/WooCommerceDevelopment.jsx";
@@ -168,10 +168,10 @@ export const router = createBrowserRouter([
 						path: "*",
 						element: <ErrorPage />,
 					},
-					// {
-					// 	path: "/pestrashop",
-					// 	element: <Pestrashop />,
-					// },
+					{
+						path: "/pestrashop",
+						element: <Pestrashop />,
+					},
 					// {
 					// 	path: "/shift4shop",
 					// 	element: <Shift4shop />,

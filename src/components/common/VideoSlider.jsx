@@ -1,188 +1,207 @@
+import React, { useState, useRef, useEffect, useCallback } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from 'swiper/modules';
+// import FadeInStagger from "../../components/animation/FadeInStagger";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
+
+// Static imports
 import video1 from '../../assets/images/Videos/Video-1-compressed.mp4';
 import video2 from '../../assets/images/Videos/Video-2-compressed.mp4';
 import video3 from '../../assets/images/Videos/Video-3-compressed.mp4';
 import video4 from '../../assets/images/Videos/Video-4-compressed.mp4';
 import video5 from '../../assets/images/Videos/Video-5-compressed.mp4';
 import video6 from '../../assets/images/Videos/Video-6-compressed.mp4';
-import { useState, useRef, useEffect } from 'react';  // Import Link from react-router-dom
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from 'swiper/modules';
-import FadeInStagger from "../animation/FadeInStagger";
-import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 
-function VideoSlider() {
+const videoFiles = [video1, video2, video3, video4, video5, video6];
 
-    const videoFiles = [video1, video2, video3, video4, video5, video6];
-    const [currentVideo, setCurrentVideo] = useState(null);  // Track the currently playing video
-    const videoRefs = useRef([]); // Store references to video elements
-    const swiperRef = useRef(null); // Reference to Swiper instance
+const VideoSlider = () => {
+    const [currentVideoIndex, setCurrentVideoIndex] = useState(null);
+    const videoRefs = useRef([]);
+    const swiperRef = useRef(null);
+    const containerRef = useRef(null);
 
-    // Manually handle the "Play/Pause" of videos
-    const handlePlayPause = (index) => {
+    // Handle play/pause through the button
+    const handlePlayPause = useCallback((index) => {
         const videoElement = videoRefs.current[index];
+        const swiperInstance = swiperRef.current?.swiper;
 
-        if (currentVideo === index) {
-            // Pause the video if it's the currently playing one
+        if (currentVideoIndex === index) {
+            // Pause if clicking the currently playing video's button
             videoElement.pause();
-            setCurrentVideo(null);
+            setCurrentVideoIndex(null);
+            // Resume autoplay when video is paused
+            if (swiperInstance) {
+                swiperInstance.autoplay.start();
+            }
         } else {
-            // Play the new video and pause the previous one
-            videoElement.play();
-            setCurrentVideo(index);
-            // Pause other videos
-            videoRefs.current.forEach((video, i) => {
-                if (i !== index) video.pause();
+            // Pause all other videos first
+            videoRefs.current.forEach(video => {
+                if (video) video.pause();
             });
+            // Play the selected video
+            videoElement.play()
+                .then(() => {
+                    setCurrentVideoIndex(index);
+                    // Stop autoplay when video starts playing
+                    if (swiperInstance) {
+                        swiperInstance.autoplay.stop();
+                    }
+                })
+                .catch(e => console.error("Video play failed:", e));
         }
-    };
+    }, [currentVideoIndex]);
 
-    // Close video when clicked outside of the video container
-    const handleClickOutside = (e) => {
-        if (!e.target.closest('.video-wrap')) {
-            videoRefs.current.forEach((video) => video.pause());
-            setCurrentVideo(null);
+    // Handle pausing when clicking the video itself
+    const handleVideoClick = useCallback((index, e) => {
+        e.preventDefault();
+        const swiperInstance = swiperRef.current?.swiper;
+
+        if (currentVideoIndex === index) {
+            videoRefs.current[index].pause();
+            setCurrentVideoIndex(null);
+            // Resume autoplay when video is paused
+            if (swiperInstance) {
+                swiperInstance.autoplay.start();
+            }
         }
-    };
+    }, [currentVideoIndex]);
+
+    // Close video when clicked outside
+    const handleClickOutside = useCallback((e) => {
+        // Check if click is outside both the video container and play button
+        const isVideoClick = e.target.closest('.video-container');
+        const isButtonClick = e.target.closest('.video-play-button');
+        const swiperInstance = swiperRef.current?.swiper;
+
+        if (!isVideoClick && !isButtonClick && currentVideoIndex !== null) {
+            videoRefs.current.forEach(video => {
+                if (video) video.pause();
+            });
+            setCurrentVideoIndex(null);
+            // Resume autoplay when video is paused
+            if (swiperInstance) {
+                swiperInstance.autoplay.start();
+            }
+        }
+    }, [currentVideoIndex]);
 
     useEffect(() => {
         document.addEventListener('click', handleClickOutside);
         return () => {
             document.removeEventListener('click', handleClickOutside);
         };
+    }, [handleClickOutside]);
+
+    const goToNextSlide = useCallback(() => {
+        swiperRef.current?.swiper.slideNext();
     }, []);
 
-    // Custom navigation button handlers
-    const goToNextSlide = () => {
-        if (swiperRef.current) {
-            swiperRef.current.swiper.slideNext();
-        }
-    };
-    const goToPrevSlide = () => {
-        if (swiperRef.current) {
-            swiperRef.current.swiper.slidePrev();
-        }
-    };
+    const goToPrevSlide = useCallback(() => {
+        swiperRef.current?.swiper.slidePrev();
+    }, []);
 
+    const Arrow = ({ direction }) => (
+        <svg
+            fill="#000000"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon line"
+        >
+            <path
+                d={direction === 'prev' ?
+                    "M21,12H3M6,9,3,12l3,3" :
+                    "M3,12H21M18,9l3,3-3,3"}
+                style={{
+                    fill: 'none',
+                    stroke: 'rgb(0, 0, 0)',
+                    strokeLinecap: 'round',
+                    strokeLinejoin: 'round',
+                    strokeWidth: 1.5,
+                }}
+            />
+        </svg>
+    );
 
     return (
-        <div>
-            <FadeInStagger>
-                <div className="review-section text-center pb-5">
-                    <div className="container border-top py-5">
-                        <div>
-                            <h3>Our Client's Reviews</h3>
-                            <p>
-                                We are very proud of the service we provide and stand by every product we carry. See our testimonials
-                                from our happy customers.
-                            </p>
-                        </div>
-                        <div className="slider-wrapper">
-                            <Swiper
-                                ref={swiperRef}
-                                spaceBetween={20}
-                                loop={true}
-                                slidesPerView={5}
-                                speed={1000}
-                                modules={[Navigation, Autoplay]}
-                                autoplay={{
-                                    delay: 3000, // Slide change delay in milliseconds
-                                    disableOnInteraction: false, // Autoplay will not be disabled after interactions
-                                }}
-                                breakpoints={{
-                                    320: { slidesPerView: 1 },
-                                    480: { slidesPerView: 1 },
-                                    768: { slidesPerView: 3 },
-                                    1024: { slidesPerView: 5 },
-                                }}
-                            >
-                                {videoFiles.map((video, index) => (
-                                    <SwiperSlide key={index}>
-
-                                        <button className="video-button" onClick={() => handlePlayPause(index)}>
-                                            <div className="video-wrap">
-                                                <video
-                                                    className="myVideo"
-                                                    width="100%" // Ensure the video takes up 100% of its slide space
-                                                    height="auto"
-                                                    ref={(el) => (videoRefs.current[index] = el)}
-                                                >
-                                                    <source
-                                                        src={video} // Use the imported video file here
-                                                        type="video/mp4"
-                                                    />
-                                                    Your browser does not support the video tag.
-                                                </video>
-                                                {/* Hide play button only for the currently playing video */}
-                                                {currentVideo !== index && (
-                                                    <span className="custom-play-button">▶</span>
-                                                )}
-                                            </div>
-                                        </button>
-
-                                    </SwiperSlide>
-                                ))}
-                            </Swiper>
+        <div ref={containerRef}>
 
 
-                            {/* Custom Navigation Buttons */}
-                            <div
-                                className="swiper-button-prev prevBtn"
-                                onClick={goToPrevSlide}
-                            >
-                                <svg
-                                    fill="#000000"
-                                    width="30"
-                                    height="30"
-                                    viewBox="0 0 24 24"
-                                    id="left-arrow"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="icon line"
+
+            <div className="slider-wrapper">
+                <Swiper
+                    ref={swiperRef}
+                    spaceBetween={20}
+                    loop
+                    slidesPerView={4}
+                    speed={1000}
+                    modules={[Navigation, Autoplay]}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: true, // Changed to true to stop on any interaction
+                    }}
+                    breakpoints={{
+                        320: { slidesPerView: 1 },
+                        480: { slidesPerView: 1 },
+                        768: { slidesPerView: 3 },
+                        1024: { slidesPerView: 4 },
+                    }}
+                >
+                    {videoFiles.map((video, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="video-container">
+                                <video
+                                    className="video-thumbnail"
+                                    width="100%"
+                                    height="auto"
+                                    ref={el => (videoRefs.current[index] = el)}
+                                    playsInline
+                                    muted
+                                    onClick={(e) => handleVideoClick(index, e)}
                                 >
-                                    <path
-                                        id="primary"
-                                        d="M21,12H3M6,9,3,12l3,3"
-                                        style={{
-                                            fill: 'none',
-                                            stroke: 'rgb(0, 0, 0)',
-                                            strokeLinecap: 'round',
-                                            strokeLinejoin: 'round',
-                                            strokeWidth: 1.5,
+                                    <source src={video} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+
+                                {currentVideoIndex !== index && (
+                                    <button
+                                        className="video-play-button"
+                                        aria-label="Play video"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            handlePlayPause(index);
                                         }}
-                                    />
-                                </svg>
+                                    >
+                                        <i className="fa-solid fa-play" />
+                                    </button>
+                                )}
                             </div>
-                            <div
-                                className="swiper-button-next nextBtn"
-                                onClick={goToNextSlide}
-                            >
-                                <svg
-                                    fill="#000000"
-                                    width="30"
-                                    height="30"
-                                    viewBox="0 0 24 24"
-                                    id="right-arrow"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="icon line"
-                                >
-                                    <path
-                                        id="primary"
-                                        d="M3,12H21M18,9l3,3-3,3"
-                                        style={{
-                                            fill: 'none',
-                                            stroke: 'rgb(0, 0, 0)',
-                                            strokeLinecap: 'round',
-                                            strokeLinejoin: 'round',
-                                            strokeWidth: 1.5,
-                                        }}
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </FadeInStagger>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+
+                <button
+                    className="swiper-button-prev prevBtn"
+                    onClick={goToPrevSlide}
+                    aria-label="Previous slide"
+                >
+                    <Arrow direction="prev" />
+                </button>
+                <button
+                    className="swiper-button-next nextBtn"
+                    onClick={goToNextSlide}
+                    aria-label="Next slide"
+                >
+                    <Arrow direction="next" />
+                </button>
+            </div>
+
+
         </div>
-    )
-}
+    );
+};
 
-export default VideoSlider
+export default React.memo(VideoSlider);

@@ -126,7 +126,7 @@ function SingleBrandCustom() {
             <div>
                 <div className="container-lg cs-images-section-container px-0">
 
-                    <div className="cs-image-section d-flex justify-content-center">
+                    <div className="cs-image-section d-flex justify-content-center pb-5">
                         <img src={BrandImg2} alt=" " />
                     </div>
 
