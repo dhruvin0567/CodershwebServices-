@@ -10,6 +10,7 @@ import TestimonialSwiper from "../../components/home-one/testimonial/Testimonial
 import { Helmet } from 'react-helmet';
 
 import { createGlobalStyle } from 'styled-components';
+import ComparisonTable from "../../components/common/ComparisonTable";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -103,6 +104,7 @@ function HomeOne() {
 			<About />
 			<Projects />
 			<WhyChooseUs />
+			<ComparisonTable />
 			<TestimonialSwiper />
 			{/* <Testimonial /> */}
 			<AutoSlider />

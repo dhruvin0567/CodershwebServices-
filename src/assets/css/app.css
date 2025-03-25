@@ -12166,3 +12166,58 @@ button#aximo-notified-btn {
 		margin-bottom: 26px;
 	}
 }
+
+/* home page table css */
+
+.comparison-table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	font-size: 21px
+}
+
+.comparison-table th {
+	background-color: rgba(255, 255, 255, 0);
+	padding: 12px;
+	border-bottom: 2px solid hsla(0, 0.00%, 20%, 0.20);
+}
+
+.comparison-table td {
+	padding: 12px;
+	border-bottom: 1px solid #dee2e6;
+	vertical-align: middle;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.comparison-table tr:hover {
+	background-color: hsla(0, 0.00%, 50%, 0.05);
+
+}
+
+.mobile-comparison .comparison-card {
+	transition: all 0.2s ease;
+}
+
+.mobile-comparison .comparison-card:hover {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	transform: translateY(-2px);
+}
+
+.comparison-row {
+	padding: 6px 0;
+
+}
+
+@media (max-width: 576px) {
+	.comparing-us {
+		padding: 1.5rem 0.5rem !important;
+	}
+
+	.comparison-card h5 {
+		font-size: 1.25rem;
+	}
+
+	.comparison-row {
+		font-size: 18px;
+	}
+}
