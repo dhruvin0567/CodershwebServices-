@@ -1,10 +1,10 @@
-import Star2Img from "../../../assets/images/v1/star2.png";
-import Project1Img from "../../../assets/images/v1/project1.png";
-import Project2Img from "../../../assets/images/v1/project2.png";
-import Project3Img from "../../../assets/images/v1/project3.png";
-import Project4Img from "../../../assets/images/v1/project4.png";
-import Project5Img from "../../../assets/images/v1/project5.png";
-import Project6Img from "../../../assets/images/v1/project6.png";
+import Star2Img from "../../../assets/images/v1/star2.webp";
+import Project1Img from "../../../assets/images/v1/project1.webp";
+import Project2Img from "../../../assets/images/v1/project2.webp";
+import Project3Img from "../../../assets/images/v1/project3.webp";
+import Project4Img from "../../../assets/images/v1/project4.webp";
+import Project5Img from "../../../assets/images/v1/project5.webp";
+import Project6Img from "../../../assets/images/v1/project6.webp";
 import ProjectCard from "./ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Mousewheel } from "swiper/modules";

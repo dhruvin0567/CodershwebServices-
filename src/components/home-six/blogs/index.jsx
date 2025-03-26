@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Blog1Img from "../../../assets/images/v6/blog-v6-1.png";
-import Blog2Img from "../../../assets/images/v6/blog-v6-2.png";
+import Blog1Img from "../../../assets/images/v6/blog-v6-1.webp";
+import Blog2Img from "../../../assets/images/v6/blog-v6-2.webp";
 import BlogCard from "./BlogCard";
 const blogsData = [
 	{

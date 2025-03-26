@@ -1,8 +1,8 @@
 import { Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Project1Img from "../../../assets/images/v4/project1.png";
-import Project2Img from "../../../assets/images/v4/project2.png";
-import Project3Img from "../../../assets/images/v4/project3.png";
+import Project1Img from "../../../assets/images/v4/project1.webp";
+import Project2Img from "../../../assets/images/v4/project2.webp";
+import Project3Img from "../../../assets/images/v4/project3.webp";
 import ProjectCard from "./ProjectCard";
 
 const projectsData = [

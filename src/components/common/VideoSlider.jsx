@@ -176,6 +176,7 @@ const VideoSlider = () => {
                                         }}
                                     >
                                         <i className="fa-solid fa-play" />
+
                                     </button>
                                 )}
                             </div>

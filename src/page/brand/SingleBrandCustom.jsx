@@ -2,9 +2,9 @@ import BrandImg1 from "../../assets/images/brand_Webp/queenv-1.webp"
 import BrandImg2 from "../../assets/images/brand_Webp/queenv-2.webp"
 import BrandImg3 from "../../assets/images/brand_Webp/queenv-3.webp"
 import BrandImg4 from "../../assets/images/brand_Webp/queenv-4.webp"
-import Brandcard1 from "../../assets/images/images2/1.png"
-import Brandcard2 from "../../assets/images/images2/2.png"
-import Brandcard3 from "../../assets/images/images2/3.png"
+import Brandcard1 from "../../assets/images/images2/1.webp"
+import Brandcard2 from "../../assets/images/images2/2.webp"
+import Brandcard3 from "../../assets/images/images2/3.webp"
 import VideoSlider_2 from "../../components/common/VideoSlider_2"
 
 

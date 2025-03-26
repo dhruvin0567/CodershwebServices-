@@ -1,8 +1,8 @@
-import InstaThumb1Img from "../../../assets/images/v4/instagram-thumb1.png";
-import InstaThumb2Img from "../../../assets/images/v4/instagram-thumb2.png";
-import InstaThumb3Img from "../../../assets/images/v4/instagram-thumb3.png";
-import InstaThumb4Img from "../../../assets/images/v4/instagram-thumb4.png";
-import InstaThumb5Img from "../../../assets/images/v4/instagram-thumb5.png";
+import InstaThumb1Img from "../../../assets/images/v4/instagram-thumb1.webp";
+import InstaThumb2Img from "../../../assets/images/v4/instagram-thumb2.webp";
+import InstaThumb3Img from "../../../assets/images/v4/instagram-thumb3.webp";
+import InstaThumb4Img from "../../../assets/images/v4/instagram-thumb4.webp";
+import InstaThumb5Img from "../../../assets/images/v4/instagram-thumb5.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const instagramsData = [

@@ -1,16 +1,16 @@
 import BreadCrumb from "../../../components/common/Breadcrumb"
-import ThumbImg1 from "../../../assets/images/images2/2.png";
-import ThumbImg2 from "../../../assets/images/images2/4.png";
-import ThumbImg3 from "../../../assets/images/images2/7.png";
-import ThumbImg4 from "../../../assets/images/images2/8.png";
-import ThumbImg5 from "../../../assets/images/images2/9.png";
-import ThumbImg6 from "../../../assets/images/images2/10.png";
-import ThumbImg7 from "../../../assets/images/images2/11.png";
+import ThumbImg1 from "../../../assets/images/images2/2.webp";
+import ThumbImg2 from "../../../assets/images/images2/4.webp";
+import ThumbImg3 from "../../../assets/images/images2/7.webp";
+import ThumbImg4 from "../../../assets/images/images2/8.webp";
+import ThumbImg5 from "../../../assets/images/images2/9.webp";
+import ThumbImg6 from "../../../assets/images/images2/10.webp";
+import ThumbImg7 from "../../../assets/images/images2/11.webp";
 import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
 import { Link } from 'react-router-dom';
-// import CheckImg from "../../../assets/images/v7/check.png";
+// import CheckImg from "../../../assets/images/v7/check.webp";
 import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   #root {

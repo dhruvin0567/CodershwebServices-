@@ -1,7 +1,7 @@
 import CountUp from "react-countup";
-import Thumb1Img from "../../../assets/images/v1/t_thumb1.png";
-import Thumb2Img from "../../../assets/images/v1/t_thumb2.png";
-import QuoteImg from "../../../assets/images/v4/quote.png";
+import Thumb1Img from "../../../assets/images/v1/t_thumb1.webp";
+import Thumb2Img from "../../../assets/images/v1/t_thumb2.webp";
+import QuoteImg from "../../../assets/images/v4/quote.webp";
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../animation/FadeInStaggerTwo";
 function TestimonialsCard() {
 	return (

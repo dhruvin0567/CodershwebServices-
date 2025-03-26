@@ -21,10 +21,10 @@ const GlobalStyle = createGlobalStyle`
 
 
 // Teams images
-// import Team1Img from "../../assets/images/team/team1.png";
-// import Team2Img from "../../assets/images/team/team2.png";
-// import Team3Img from "../../assets/images/team/team3.png";
-// import Team4Img from "../../assets/images/team/team4.png";
+// import Team1Img from "../../assets/images/team/team1.webp";
+// import Team2Img from "../../assets/images/team/team2.webp";
+// import Team3Img from "../../assets/images/team/team3.webp";
+// import Team4Img from "../../assets/images/team/team4.webp";
 
 const servicesData = [
 	{

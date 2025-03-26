@@ -2,8 +2,8 @@ import {
 	default as Illustrator1Img,
 	default as Illustrator2Img,
 	default as Illustrator3Img,
-} from "../../../assets/images/v2/illustrator1.png";
-import Shape2Img from "../../../assets/images/v2/shape2.png";
+} from "../../../assets/images/v2/illustrator1.webp";
+import Shape2Img from "../../../assets/images/v2/shape2.webp";
 import FadeInStagger from "../../animation/FadeInStagger";
 import FeatureCard from "./FeatureCard";
 const featuresData = [

@@ -3,17 +3,17 @@ import FadeInStagger from "../../components/animation/FadeInStagger";
 import PortfolioCard from "../../components/portfolio/two/PortfolioCard";
 import BreadCrumb from '../../components/common/Breadcrumb';
 
-import Background1Image from '../../assets/images/ourwork/Background-5.png';
-import Background2Image from '../../assets/images/ourwork/New-Project-5.jpg';
-import Background3Image from '../../assets/images/ourwork/New-Project-4.jpg';
-import Background4Image from '../../assets/images/ourwork/m-1024x1024.jpg';
-import Background5Image from '../../assets/images/ourwork/IKKS.png';
-import Background11Image from '../../assets/images/ourwork/Background-3-1.png';
-import Background6Image from '../../assets/images/ourwork/Background-6.png';
-import Background7Image from '../../assets/images/ourwork/New-Project-2-1024x1024.jpg';
-import Background8Image from '../../assets/images/ourwork/New-Project-1024x1024.jpg';
-import Background9Image from '../../assets/images/ourwork/New-Project-3-1024x1024.jpg';
-import Background10Image from '../../assets/images/ourwork/New-Project-1-1024x1024.jpg';
+import Background1Image from '../../assets/images/ourwork/Background-5.webp';
+import Background2Image from '../../assets/images/ourwork/New-Project-5.webp';
+import Background3Image from '../../assets/images/ourwork/New-Project-4.webp';
+import Background4Image from '../../assets/images/ourwork/m-1024x1024.webp';
+import Background5Image from '../../assets/images/ourwork/IKKS.webp';
+import Background11Image from '../../assets/images/ourwork/Background-3-1.webp';
+import Background6Image from '../../assets/images/ourwork/Background-6.webp';
+import Background7Image from '../../assets/images/ourwork/New-Project-2-1024x1024.webp';
+import Background8Image from '../../assets/images/ourwork/New-Project-1024x1024.webp';
+import Background9Image from '../../assets/images/ourwork/New-Project-3-1024x1024.webp';
+import Background10Image from '../../assets/images/ourwork/New-Project-1-1024x1024.webp';
 
 const portfolioListData = [
     { id: crypto.randomUUID(), category: 'ecommerce-development', img: Background1Image, name: 'Premium Supplements Brand', technology: 'Shopify | Bootstrap v5 | JavaScript' },

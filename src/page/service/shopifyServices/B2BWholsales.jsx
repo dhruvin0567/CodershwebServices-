@@ -5,12 +5,12 @@ import FadeInUp from "../../../components/animation/FadeInUp";
 import { Link } from 'react-router-dom';
 import Check from "../../../assets/images/icon/check.svg";
 import question from "../../../assets/images/icon/question.svg";
-import ThumbImg1 from "../../../assets/images/images2/b2bpic1.png";
-import ThumbImg2 from "../../../assets/images/images2/Shopify_connect.png";
-import ThumbImg3 from "../../../assets/images/images2/service12_3.png";
+import ThumbImg1 from "../../../assets/images/images2/b2bpic1.webp";
+import ThumbImg2 from "../../../assets/images/images2/Shopify_connect.webp";
+import ThumbImg3 from "../../../assets/images/images2/service12_3.webp";
 import ThumbImg4 from "../../../assets/images/images2/service12_4.webp";
-import ThumbImg5 from "../../../assets/images/images2/services12_5.jpg";
-import Shape4Img from "../../../assets/images/v5/shape4.png";
+import ThumbImg5 from "../../../assets/images/images2/services12_5.webp";
+import Shape4Img from "../../../assets/images/v5/shape4.webp";
 import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   #root {

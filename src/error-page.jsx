@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import FadeInUp from "./components/animation/FadeInUp";
-import ErrorImg from "/src/assets/images/about/404.png";
+import ErrorImg from "/src/assets/images/about/404.webp";
 import ArrowRightImg from "/src/assets/images/icon/arrow-right.svg";
-import Star2Img from "/src/assets/images/v1/star2.png";
+import Star2Img from "/src/assets/images/v1/star2.webp";
 export default function ErrorPage() {
 	return (
 		<div className="section">

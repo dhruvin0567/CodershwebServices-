@@ -7,34 +7,34 @@ import ServiceCard from "../../../components/home-four/services/ServiceCard";
 import BlogCard from "../../../components/home-six/blogs/BlogCard";
 import BreadCrumb from '../../../components/common/Breadcrumb'
 import Clutch from '../../../assets/images/images2/clutch.svg'
-import StarImg from '../../../assets/images/images2/star.png'
+import StarImg from '../../../assets/images/images2/star.webp'
 
 
-import ServiceIcon1 from '../../../assets/images/images2/cms-setup.png'
-import ServiceIcon2 from '../../../assets/images/images2/psd-to-wordpress.png'
-import ServiceIcon3 from '../../../assets/images/images2/web-custom-development.png'
-import ServiceIcon4 from '../../../assets/images/images2/web-development.png'
-import ServiceIcon5 from '../../../assets/images/images2/plugin.png'
-import ServiceIcon6 from '../../../assets/images/images2/maintenance.png'
-import ServiceIcon7 from '../../../assets/images/images2/woo-commerce.png'
-import ServiceIcon8 from '../../../assets/images/images2/blog.png'
-import ServiceIcon9 from '../../../assets/images/images2/api.png'
+import ServiceIcon1 from '../../../assets/images/images2/cms-setup.webp'
+import ServiceIcon2 from '../../../assets/images/images2/psd-to-wordpress.webp'
+import ServiceIcon3 from '../../../assets/images/images2/web-custom-development.webp'
+import ServiceIcon4 from '../../../assets/images/images2/web-development.webp'
+import ServiceIcon5 from '../../../assets/images/images2/plugin.webp'
+import ServiceIcon6 from '../../../assets/images/images2/maintenance.webp'
+import ServiceIcon7 from '../../../assets/images/images2/woo-commerce.webp'
+import ServiceIcon8 from '../../../assets/images/images2/blog.webp'
+import ServiceIcon9 from '../../../assets/images/images2/api.webp'
 
-import Thumb1Img from '../../../assets/images/images2/hire-shift4shop-developer.png'
-import Thumb2Img from '../../../assets/images/images2/Inner-Sections-Imgs-Codersh.png'
+import Thumb1Img from '../../../assets/images/images2/hire-shift4shop-developer.webp'
+import Thumb2Img from '../../../assets/images/images2/Inner-Sections-Imgs-Codersh.webp'
 
 
-import ProcessImg1 from '../../../assets/images/images2/reauirement-gathering.png'
-import ProcessImg2 from '../../../assets/images/images2/uiux.png'
-import ProcessImg3 from '../../../assets/images/images2/prototype.png'
-import ProcessImg4 from '../../../assets/images/images2/dynamic-development.png'
-import ProcessImg5 from '../../../assets/images/images2/testing.png'
-import ProcessImg6 from '../../../assets/images/images2/live-development.png'
-import ProcessImg7 from '../../../assets/images/images2/question.png'
+import ProcessImg1 from '../../../assets/images/images2/reauirement-gathering.webp'
+import ProcessImg2 from '../../../assets/images/images2/uiux.webp'
+import ProcessImg3 from '../../../assets/images/images2/prototype.webp'
+import ProcessImg4 from '../../../assets/images/images2/dynamic-development.webp'
+import ProcessImg5 from '../../../assets/images/images2/testing.webp'
+import ProcessImg6 from '../../../assets/images/images2/live-development.webp'
+import ProcessImg7 from '../../../assets/images/images2/question.webp'
 
-import Workcard1 from '../../../assets/images/ourwork/New-Project-1-1024x1024.jpg'
-import Workcard2 from '../../../assets/images/ourwork/New-Project-3-1024x1024.jpg'
-import Workcard3 from '../../../assets/images/ourwork/New-Project-1024x1024.jpg'
+import Workcard1 from '../../../assets/images/ourwork/New-Project-1-1024x1024.webp'
+import Workcard2 from '../../../assets/images/ourwork/New-Project-3-1024x1024.webp'
+import Workcard3 from '../../../assets/images/ourwork/New-Project-1024x1024.webp'
 
 const serviceData = [
     {

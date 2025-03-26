@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PlayBtnImg from "../../../assets/images/v1/play-btn.svg";
-import VideoBg from "../../../assets/images/v1/video-bg.png";
+import VideoBg from "../../../assets/images/v1/video-bg.webp";
 import FadeInUp from "../../animation/FadeInUp";
 import VideoPlay from "../../../assets/images/Videos/Asterley Bros, London.webm"
 

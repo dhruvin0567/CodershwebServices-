@@ -1,5 +1,5 @@
-import Shape3Img from "../../../assets/images/v3/shape3.png";
-import Thumb3Img from "../../../assets/images/v3/thumb3.png";
+import Shape3Img from "../../../assets/images/v3/shape3.webp";
+import Thumb3Img from "../../../assets/images/v3/thumb3.webp";
 import FadeInUp from "../../animation/FadeInUp";
 import StepsAccordion from "./StepsAccordion";
 function SeoSteps() {

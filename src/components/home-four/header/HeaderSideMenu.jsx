@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "../../../assets/images/logo/logo-white.svg";
-import InstagramThumb from "../../../assets/images/v4/instagram-thumb3.png";
+import InstagramThumb from "../../../assets/images/v4/instagram-thumb3.webp";
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../animation/FadeInStaggerTwo";
 function HeaderSideMenu({ showSideMenu, setShowSideMenu }) {
 	return (

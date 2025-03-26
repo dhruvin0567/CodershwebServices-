@@ -1,4 +1,4 @@
-import StarImg from "../../../assets/images/v7/star1.png";
+import StarImg from "../../../assets/images/v7/star1.webp";
 function TestimonialCard({ testimonial: { text, rating, author, designation } }) {
 	return (
 		<div className="aximo-testimonial-slider-wrap2">

@@ -15,6 +15,7 @@ import "./assets/css/fontawesome.css";
 import "./assets/css/icomoon.css";
 import "./font.js";
 
+
 //  Swiper styles
 import "swiper/css";
 import "swiper/css/autoplay";

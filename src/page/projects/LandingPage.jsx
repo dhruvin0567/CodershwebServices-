@@ -1,19 +1,19 @@
 import BreadCrumb from "../../components/common/Breadcrumb";
-import ShahImg from "../../assets/images/images2/shah.png";
-import vape1 from "../../assets/images/images2/Screenshot_1.png";
-import badge1 from "../../assets/images/images2/badge-1.png";
-import badge2 from "../../assets/images/images2/badge-2.png";
-import badge3 from "../../assets/images/images2/badge-3.png";
-import badge4 from "../../assets/images/images2/badge-4.png";
+import ShahImg from "../../assets/images/images2/shah.webp";
+import vape1 from "../../assets/images/images2/Screenshot_1.webp";
+import badge1 from "../../assets/images/images2/badge-1.webp";
+import badge2 from "../../assets/images/images2/badge-2.webp";
+import badge3 from "../../assets/images/images2/badge-3.webp";
+import badge4 from "../../assets/images/images2/badge-4.webp";
 import Logo from "../../assets/images/images2/logo-white.svg";
 import Group1 from "../../assets/images/images2/Group_3.svg";
 import Group2 from "../../assets/images/images2/Group_8_1.svg";
-import Trophy from "../../assets/images/images2/trophy.png";
-import Mobile from "../../assets/images/images2/mobile.png";
-import static2 from "../../assets/images/images2/image 2.png";
-import spin from "../../assets/images/images2/circle1.png";
-import wrapperImg1 from "../../assets/images/images2/image_2025_02_24T07_59_50_301Z.png";
-import wrapperImg2 from "../../assets/images/images2/image_2025_02_24T07_59_58_147Z.png";
+import Trophy from "../../assets/images/images2/trophy.webp";
+import Mobile from "../../assets/images/images2/mobile.webp";
+import static2 from "../../assets/images/images2/image 2.webp";
+import spin from "../../assets/images/images2/circle1.webp";
+import wrapperImg1 from "../../assets/images/images2/image_2025_02_24T07_59_50_301Z.webp";
+import wrapperImg2 from "../../assets/images/images2/image_2025_02_24T07_59_58_147Z.webp";
 import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
 import logo from "../../assets/images/logo/logo-white.svg";
@@ -36,11 +36,11 @@ import Images8 from '../../assets/images/images2/madamef-f-p.webp';
 import Images9 from '../../assets/images/images2/negroni-soc-f-p.webp';
 import Images10 from '../../assets/images/images2/van-hunks-f-p.webp'
 
-import Logos1 from '../../assets/images/images2/shopify-plus-experts-mp (2).png';
-import Logos2 from '../../assets/images/images2/facebook-mp.png';
-import Logos3 from '../../assets/images/images2/klaviyo-mp.png';
-import Logos4 from '../../assets/images/images2/shopify-patrner-mp.png';
-import Logos5 from '../../assets/images/images2/google-partners-mp.png'
+import Logos1 from '../../assets/images/images2/shopify-plus-experts-mp (2).webp';
+import Logos2 from '../../assets/images/images2/facebook-mp.webp';
+import Logos3 from '../../assets/images/images2/klaviyo-mp.webp';
+import Logos4 from '../../assets/images/images2/shopify-patrner-mp.webp';
+import Logos5 from '../../assets/images/images2/google-partners-mp.webp'
 
 import Project1 from '../../assets/images/images2/Van-Hunks.png.webp';
 import Project2 from '../../assets/images/images2/Madame-F.png.webp';
@@ -53,25 +53,25 @@ import Project8 from '../../assets/images/images2/No-Mo-Stache.png.webp';
 import Project9 from '../../assets/images/images2/SplitGrip.png.webp';
 import Project10 from '../../assets/images/images2/wallplanks.png.webp';
 import Project11 from '../../assets/images/images2/Rowan-Oak-Clothing-Co.png.webp';
-import Project12 from '../../assets/images/images2/Aolithium-Professional.png';
-import Project13 from '../../assets/images/images2/Baby-Gold.png';
+import Project12 from '../../assets/images/images2/Aolithium-Professional.webp';
+import Project13 from '../../assets/images/images2/Baby-Gold.webp';
 import Project14 from '../../assets/images/images2/Aubi-Ramsa-Ice-Cream-Co-.png.webp';
 import Project15 from '../../assets/images/images2/Airpaq-Sustainability-meets-functionality-Airpaq-GmbH.png.webp';
 import Project16 from '../../assets/images/images2/Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box.png.webp';
 import Project17 from '../../assets/images/images2/thewelshproducestall-the-welsh-produce-stall.png.webp';
-import Project18 from '../../assets/images/images2/fuel.png';
-import Project19 from '../../assets/images/images2/oceans6media.png';
+import Project18 from '../../assets/images/images2/fuel.webp';
+import Project19 from '../../assets/images/images2/oceans6media.webp';
 import Project20 from '../../assets/images/images2/NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-.png.webp';
 
-import StickyImg from '../../assets/images/images2/hero_window.png';
+import StickyImg from '../../assets/images/images2/hero_window.webp';
 import SlidingImg1 from '../../assets/images/images2/asterley-landing.webp';
 import SlidingImg2 from '../../assets/images/images2/madamef-landing.webp';
-import WindowImg from '../../assets/images/images2/levels_window.png';
-import JewelryImg from '../../assets/images/images2/jewelry_window.png';
-import MobileImg from '../../assets/images/images2/mobile-img.png';
-import ArrowImg from '../../assets/images/images2/drop.png';
+import WindowImg from '../../assets/images/images2/levels_window.webp';
+import JewelryImg from '../../assets/images/images2/jewelry_window.webp';
+import MobileImg from '../../assets/images/images2/mobile-img.webp';
+import ArrowImg from '../../assets/images/images2/drop.webp';
 
-import ReviewImg1 from '../../assets/images/images2/rating.png';
+import ReviewImg1 from '../../assets/images/images2/rating.webp';
 import VideoSlider from "../../components/common/VideoSlider";
 
 const projects = [

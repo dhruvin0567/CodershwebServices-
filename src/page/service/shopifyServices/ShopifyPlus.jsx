@@ -4,11 +4,11 @@ import FadeInStagger from "../../../components/animation/FadeInStagger";
 import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
-import ThumbImg1 from "../../../assets/images/images2/Services4_1.png";
-import ThumbImg2 from "../../../assets/images/images2/Services4_2.png";
-import ThumbImg3 from "../../../assets/images/images2/Services4_3.png";
-import ThumbImg4 from "../../../assets/images/images2/service4_card1.png";
-import ThumbImg5 from "../../../assets/images/images2/service4_card2.png";
+import ThumbImg1 from "../../../assets/images/images2/Services4_1.webp";
+import ThumbImg2 from "../../../assets/images/images2/Services4_2.webp";
+import ThumbImg3 from "../../../assets/images/images2/Services4_3.webp";
+import ThumbImg4 from "../../../assets/images/images2/service4_card1.webp";
+import ThumbImg5 from "../../../assets/images/images2/service4_card2.webp";
 import { Link } from 'react-router-dom';
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
 import { createGlobalStyle } from 'styled-components';
@@ -18,9 +18,9 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-// import Shape4Img from "../../../assets/images/v5/shape4.png";
-// import ServiceCardImg1 from "../../../assets/images/images2/service4_card1_2.png";
-// import ServiceCardImg2 from "../../../assets/images/images2/service4_card2_1.png";
+// import Shape4Img from "../../../assets/images/v5/shape4.webp";
+// import ServiceCardImg1 from "../../../assets/images/images2/service4_card1_2.webp";
+// import ServiceCardImg2 from "../../../assets/images/images2/service4_card2_1.webp";
 
 const services = [
     //    {
@@ -43,7 +43,7 @@ const services = [
         meta: 'Shopify Plus Agency - SEO',
         title: "Boost your store's visibility with expert e-commerce SEO.",
         description: 'Codersh offers data-driven e-commerce SEO strategies tailored to ambitious brands. Combining technical optimization, content marketing, and backlink analysis, we ensure your store ranks competitively in search engines while enhancing user experience. By utilizing powerful industry tools and in-depth data insights, we identify opportunities, outpace competitors, and drive long-term growth. Our holistic approach keeps your brand visible on major search engines while focusing on sustainable, organic growth beyond traditional paid advertising methods.',
-        // img: 'path/to/arrow-right-image1.jpg' // Make sure to replace with the actual path to your arrow-right image
+        // img: 'path/to/arrow-right-image1.webp' // Make sure to replace with the actual path to your arrow-right image
     },
     {
         id: crypto.randomUUID(),
@@ -51,7 +51,7 @@ const services = [
         meta: 'E-commerce Marketing Agencies',
         title: "Drive repeat business through strategic email campaigns.",
         description: "Retention is at the heart of our email marketing and customer loyalty services. Codersh designs strategic campaigns leveraging email, SMS, loyalty programs, and subscription strategies to maximize customer lifetime value. Our retention marketers tailor every approach to your business, ensuring increased ROI and improved customer retention. By integrating advanced technologies and refining strategies, we help you make the most of your e-commerce platform's capabilities. Partner with Codersh to turn first-time shoppers into loyal, repeat customers.",
-        // img: 'path/to/arrow-right-image2.jpg' // Make sure to replace with the actual path to your arrow-right image
+        // img: 'path/to/arrow-right-image2.webp' // Make sure to replace with the actual path to your arrow-right image
     },
 ];
 

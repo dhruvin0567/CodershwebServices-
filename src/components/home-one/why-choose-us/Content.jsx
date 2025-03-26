@@ -1,4 +1,4 @@
-import Star2Img from "../../../assets/images/v1/star2.png";
+import Star2Img from "../../../assets/images/v1/star2.webp";
 function Content() {
 	return (
 		<div className="aximo-default-content">

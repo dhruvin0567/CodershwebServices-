@@ -1,5 +1,5 @@
-import Shape1Img from "../../../assets/images/v1/shape1.png";
-import Star2Img from "../../../assets/images/v1/star2.png";
+import Shape1Img from "../../../assets/images/v1/shape1.webp";
+import Star2Img from "../../../assets/images/v1/star2.webp";
 function FooterContent() {
 	return (
 		<div className="aximo-default-content light position-relative">

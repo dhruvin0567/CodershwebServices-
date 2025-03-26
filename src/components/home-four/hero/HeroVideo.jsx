@@ -1,4 +1,4 @@
-import CirclePlayImg from "../../../assets/images/v4/circle-play.png";
+import CirclePlayImg from "../../../assets/images/v4/circle-play.webp";
 import PlayIconImg from "../../../assets/images/v4/play-icon.svg";
 import ModalVideo from "react-modal-video";
 import { useState } from "react";

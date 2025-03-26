@@ -4,13 +4,13 @@ import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
 import { Link } from 'react-router-dom';
-import ThumbImg1 from "../../../assets/images/images2/h1.png";
-import ThumbImg2 from "../../../assets/images/images2/service11_2.png";
-import ThumbImg3 from "../../../assets/images/images2/service11_3.png";
-import ThumbImg4 from "../../../assets/images/images2/h4.png";
-// import ThumbImg5 from "../../../assets/images/images2/service5_4.png";
-import ThumbImg6 from "../../../assets/images/images2/h4.png";
-// import Star2Img from "../../../assets/images/v1/icon/star2.png";
+import ThumbImg1 from "../../../assets/images/images2/h1.webp";
+import ThumbImg2 from "../../../assets/images/images2/service11_2.webp";
+import ThumbImg3 from "../../../assets/images/images2/service11_3.webp";
+import ThumbImg4 from "../../../assets/images/images2/h4.webp";
+// import ThumbImg5 from "../../../assets/images/images2/service5_4.webp";
+import ThumbImg6 from "../../../assets/images/images2/h4.webp";
+// import Star2Img from "../../../assets/images/v1/icon/star2.webp";
 import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   #root {

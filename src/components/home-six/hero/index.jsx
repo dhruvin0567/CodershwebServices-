@@ -1,7 +1,7 @@
-import Shape2Img from "../../../assets/images/v6/shapes2.png";
+import Shape2Img from "../../../assets/images/v6/shapes2.webp";
 import NextImg from "../../../assets/images/v6/next.svg";
 import NextWhiteImg from "../../../assets/images/v6/next-white.svg";
-import TextImg from "../../../assets/images/v6/image.png";
+import TextImg from "../../../assets/images/v6/image.webp";
 function Hero() {
 	return (
 		<div className="aximo-hero-section5 bg-light7 position-relative">

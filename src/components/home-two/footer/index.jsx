@@ -1,5 +1,5 @@
 import FooterBottom from "./FooterBottom";
-import FooterBg from "../../../assets/images/v2/footer-bg.png";
+import FooterBg from "../../../assets/images/v2/footer-bg.webp";
 import LogoDarkImg from "../../../assets/images/logo/logo-dark.svg";
 import { Link } from "react-router-dom";
 function Footer() {

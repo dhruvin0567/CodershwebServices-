@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Shape4Img from "../../../assets/images/v2/shape4.png";
-import StarImg from "../../../assets/images/v2/star.png";
+import Shape4Img from "../../../assets/images/v2/shape4.webp";
+import StarImg from "../../../assets/images/v2/star.webp";
 import FadeInUp from "../../animation/FadeInUp";
 function CallToAction() {
 	return (

@@ -1,7 +1,7 @@
 import CountUp from "react-countup";
 import { Link } from "react-router-dom";
-import ShapeImg from "../../../assets/images/v6/shapes.png";
-import Thumb1Img from "../../../assets/images/v6/thumb-v6-1.png";
+import ShapeImg from "../../../assets/images/v6/shapes.webp";
+import Thumb1Img from "../../../assets/images/v6/thumb-v6-1.webp";
 import FadeInUp from "../../animation/FadeInUp";
 function About() {
 	return (

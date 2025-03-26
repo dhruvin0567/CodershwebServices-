@@ -1,6 +1,6 @@
-import Thumb1Img from "../../../assets/images/v1/t_thumb1.png";
-import Thumb2Img from "../../../assets/images/v1/t_thumb2.png";
-import Thumb3Img from "../../../assets/images/v1/t_thumb3.png";
+import Thumb1Img from "../../../assets/images/v1/t_thumb1.webp";
+import Thumb2Img from "../../../assets/images/v1/t_thumb2.webp";
+import Thumb3Img from "../../../assets/images/v1/t_thumb3.webp";
 import TestimonialCard from "./TestimonialCard";
 const testimonialsData = [
 	{

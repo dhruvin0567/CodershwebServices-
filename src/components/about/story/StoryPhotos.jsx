@@ -1,9 +1,9 @@
-import Story1Img from "../../../assets/images/about/story_1.png";
-import Story2Img from "../../../assets/images/about/story_2.png";
-import Story3Img from "../../../assets/images/about/story_3.png";
-import Story4Img from "../../../assets/images/about/story_4.png";
-import Story5Img from "../../../assets/images/about/story_5.png";
-import Story6Img from "../../../assets/images/about/story_6.png";
+import Story1Img from "../../../assets/images/about/story_1.webp";
+import Story2Img from "../../../assets/images/about/story_2.webp";
+import Story3Img from "../../../assets/images/about/story_3.webp";
+import Story4Img from "../../../assets/images/about/story_4.webp";
+import Story5Img from "../../../assets/images/about/story_5.webp";
+import Story6Img from "../../../assets/images/about/story_6.webp";
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../animation/FadeInStaggerTwo";
 function StoryPhotos() {
 	return (

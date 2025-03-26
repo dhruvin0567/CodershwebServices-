@@ -2,8 +2,8 @@ import { useState, useMemo, useCallback } from 'react';
 import FadeInStagger from '../../animation/FadeInStagger';
 
 // Import all images at once using a more maintainable pattern
-const cardImages = import.meta.glob('/src/assets/images/images2/*.png*', { eager: true });
-const getImage = (name) => cardImages[`/src/assets/images/images2/${name}.png`]?.default ||
+const cardImages = import.meta.glob('/src/assets/images/images2/*.webp*', { eager: true });
+const getImage = (name) => cardImages[`/src/assets/images/images2/${name}.webp`]?.default ||
     cardImages[`/src/assets/images/images2/${name}.png.webp`]?.default;
 
 // Card data with lazy image loading

@@ -1,4 +1,4 @@
-import StarShapeHalfImg from "../../../assets/images/v3/star-shape-half2.png";
+import StarShapeHalfImg from "../../../assets/images/v3/star-shape-half2.webp";
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../animation/FadeInStaggerTwo";
 import ContactForm from "./ContactForm";
 function Contact() {

@@ -2,7 +2,7 @@ import Icon1Img from "../../../assets/images/v3/icon1.svg";
 import Icon2Img from "../../../assets/images/v3/icon2.svg";
 import Icon3Img from "../../../assets/images/v3/icon3.svg";
 import Icon4Img from "../../../assets/images/v3/icon4.svg";
-import StarShapeHalfImg from "../../../assets/images/v3/star-shape-half.png";
+import StarShapeHalfImg from "../../../assets/images/v3/star-shape-half.webp";
 import FadeInStagger from "../../animation/FadeInStagger";
 import ServiceCard from "./ServiceCard";
 const servicesData = [

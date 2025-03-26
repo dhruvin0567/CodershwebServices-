@@ -1,6 +1,6 @@
-import Icon1 from "../../../assets/images/v6/icon-v-6-1.png";
-import Icon2 from "../../../assets/images/v6/icon-v-6-2.png";
-import Icon3 from "../../../assets/images/v6/icon-v-6-3.png";
+import Icon1 from "../../../assets/images/v6/icon-v-6-1.webp";
+import Icon2 from "../../../assets/images/v6/icon-v-6-2.webp";
+import Icon3 from "../../../assets/images/v6/icon-v-6-3.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import ServiceCard from "./ServiceCard";

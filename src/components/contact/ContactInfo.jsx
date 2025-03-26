@@ -1,7 +1,7 @@
 import Call2Img from "../../assets/images/icon/call2.svg";
 import EmailImg from "../../assets/images/icon/email.svg";
 import MapImg from "../../assets/images/icon/map.svg";
-import Star2Img from "../../assets/images/v1/star2.png";
+import Star2Img from "../../assets/images/v1/star2.webp";
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../animation/FadeInStaggerTwo";
 function ContactInfo() {
 	return (

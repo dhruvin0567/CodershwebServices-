@@ -1,4 +1,4 @@
-import StarImg from "../../assets/images/v1/star2.png";
+import StarImg from "../../assets/images/v1/star2.webp";
 import NotifyForm from "./NotifyForm";
 
 function CountDownRenderer({ days, hours, minutes, seconds }) {

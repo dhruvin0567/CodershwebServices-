@@ -1,6 +1,6 @@
 import CheckImg from "../../../assets/images/v3/check.svg";
-import Shape1Img from "../../../assets/images/v3/shape1.png";
-import Thumb2Img from "../../../assets/images/v3/thumb2.png";
+import Shape1Img from "../../../assets/images/v3/shape1.webp";
+import Thumb2Img from "../../../assets/images/v3/thumb2.webp";
 import FadeInRight from "../../animation/FadeInRight";
 function AboutTwo() {
 	return (

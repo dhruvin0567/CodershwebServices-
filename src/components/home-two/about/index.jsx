@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ThumbImg from "../../../assets/images/v2/thumb.png";
+import ThumbImg from "../../../assets/images/v2/thumb.webp";
 import AboutCounter from "./AboutCounter";
 
 function About() {

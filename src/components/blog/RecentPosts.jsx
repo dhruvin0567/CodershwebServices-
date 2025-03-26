@@ -1,6 +1,6 @@
-import Blog1Img from "../../assets/images/blog/blog1.png";
-import Blog2Img from "../../assets/images/blog/blog2.png";
-import Blog3Img from "../../assets/images/blog/blog3.png";
+import Blog1Img from "../../assets/images/blog/blog1.webp";
+import Blog2Img from "../../assets/images/blog/blog2.webp";
+import Blog3Img from "../../assets/images/blog/blog3.webp";
 import { Link } from "react-router-dom";
 const recentPostData = [
 	{

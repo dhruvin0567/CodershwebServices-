@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Thumb1Img from "../../../assets/images/v5/thumb1.png";
+import Thumb1Img from "../../../assets/images/v5/thumb1.webp";
 import FadeInLeft from "../../animation/FadeInLeft";
 import FadeInUp from "../../animation/FadeInUp";
 function About() {

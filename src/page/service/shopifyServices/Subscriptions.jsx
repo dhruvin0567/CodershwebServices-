@@ -6,13 +6,13 @@ import FadeInStagger from "../../../components/animation/FadeInStagger";
 import { Link } from 'react-router-dom';
 import Check from "../../../assets/images/icon/check.svg";
 import question from "../../../assets/images/icon/question.svg";
-import ThumbImg1 from "../../../assets/images/images2/service8_2.png";
-import ThumbImg2 from "../../../assets/images/images2/service4_card1.png";
-import ThumbImg3 from "../../../assets/images/images2/service8_3.png";
-import ThumbImg4 from "../../../assets/images/images2/service8_1.png";
+import ThumbImg1 from "../../../assets/images/images2/service8_2.webp";
+import ThumbImg2 from "../../../assets/images/images2/service4_card1.webp";
+import ThumbImg3 from "../../../assets/images/images2/service8_3.webp";
+import ThumbImg4 from "../../../assets/images/images2/service8_1.webp";
 // import ThumbImg4 from "../../../assets/images/images2/service12_4.webp";
-// import ThumbImg5 from "../../../assets/images/images2/services12_5.jpg";
-// import Shape4Img from "../../../assets/images/v5/shape4.png";
+// import ThumbImg5 from "../../../assets/images/images2/services12_5.webp";
+// import Shape4Img from "../../../assets/images/v5/shape4.webp";
 import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   #root {

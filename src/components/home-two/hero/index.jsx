@@ -1,8 +1,8 @@
 import HeroContent from "./HeroContent";
 import HeroThumbs from "./HeroThumbs";
 
-import Shape1Img from "../../../assets/images/v2/shape1.png";
-import ShapeStarImg from "../../../assets/images/v2/shape-star.png";
+import Shape1Img from "../../../assets/images/v2/shape1.webp";
+import ShapeStarImg from "../../../assets/images/v2/shape-star.webp";
 
 function Hero() {
 	return (

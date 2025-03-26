@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ArrowRightImg from "../../assets/images/icon/arrow-right.svg";
 import QuestionImg from "../../assets/images/icon/question.svg";
-import StarImg from "../../assets/images/v1/star2.png";
+import StarImg from "../../assets/images/v1/star2.webp";
 function PricingFaq() {
 	return (
 		<div className="section">

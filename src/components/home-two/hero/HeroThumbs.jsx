@@ -1,8 +1,8 @@
-import Thumb1Img from "../../../assets/images/v2/h-thumb1.png";
-import Thumb2Img from "../../../assets/images/v2/h-thumb2.png";
-import Thumb3Img from "../../../assets/images/v2/h-thumb3.png";
-import Thumb4Img from "../../../assets/images/v2/h-thumb4.png";
-import Thumb5Img from "../../../assets/images/v2/h-thumb5.png";
+import Thumb1Img from "../../../assets/images/v2/h-thumb1.webp";
+import Thumb2Img from "../../../assets/images/v2/h-thumb2.webp";
+import Thumb3Img from "../../../assets/images/v2/h-thumb3.webp";
+import Thumb4Img from "../../../assets/images/v2/h-thumb4.webp";
+import Thumb5Img from "../../../assets/images/v2/h-thumb5.webp";
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../animation/FadeInStaggerTwo";
 
 function HeroThumbs() {

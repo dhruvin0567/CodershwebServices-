@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
-import PlayImg from "../../../assets/images/v2/play-btn.png";
-import VideoBg from "../../../assets/images/v2/video-bg.png";
+import PlayImg from "../../../assets/images/v2/play-btn.webp";
+import VideoBg from "../../../assets/images/v2/video-bg.webp";
 function Video() {
 	const [isOpen, setOpen] = useState(false);
 	return (

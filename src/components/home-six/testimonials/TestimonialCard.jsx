@@ -1,4 +1,4 @@
-import RatingImg from "../../../assets/images/v6/rating.png";
+import RatingImg from "../../../assets/images/v6/rating.webp";
 function TestimonialCard({ testimonial: { title, text, rating, author } }) {
 	return (
 		<div className="aximo-testimonial-wrap5">

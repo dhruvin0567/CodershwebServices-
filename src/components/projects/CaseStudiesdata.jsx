@@ -20,7 +20,7 @@ function GridBlog() {
 				const formattedPosts = data.map((post) => ({
 					id: post.id,
 					title: decodeHTML(post.title.rendered),
-					img: post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/blog1.png",
+					img: post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/blog1.webp",
 					link: `/case-studies/${post.slug}`
 				}));
 				setPosts(formattedPosts);

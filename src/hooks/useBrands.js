@@ -19,7 +19,7 @@ function Brand() {
 				const formattedBrands = data.map((brand) => ({
 					id: brand.id,
 					title: decodeHTML(brand.title.rendered),
-					img: brand._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/placeholder.png",
+					img: brand._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/placeholder.webp",
 					link: `/brand/${brand.slug}`
 				}));
 				setBrands(formattedBrands);

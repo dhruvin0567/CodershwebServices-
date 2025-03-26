@@ -1,8 +1,8 @@
 // import { useState, useEffect } from 'react';
-import HeroThumbImg1 from "../../../assets/images/v1/hero-thumb1.png";
-import HeroThumbImg2 from "../../../assets/images/v1/icon/hero-thumb-2.jpg";
-import HeroThumbImg3 from "../../../assets/images/v1/icon/hero-thumb-3.jpg";
-import HeroThumbImg4 from "../../../assets/images/v1/icon/hero-thumb-4.png";
+import HeroThumbImg1 from "../../../assets/images/v1/hero-thumb1.webp";
+import HeroThumbImg2 from "../../../assets/images/v1/icon/hero-thumb-2.webp";
+import HeroThumbImg3 from "../../../assets/images/v1/icon/hero-thumb-3.webp";
+import HeroThumbImg4 from "../../../assets/images/v1/icon/hero-thumb-4.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
 

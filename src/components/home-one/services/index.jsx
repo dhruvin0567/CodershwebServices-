@@ -1,4 +1,4 @@
-import Star2Img from "../../../assets/images/v1/star2.png";
+import Star2Img from "../../../assets/images/v1/star2.webp";
 import FadeInStagger from "../../animation/FadeInStagger";
 import ServiceCard from "./ServiceCard";
 

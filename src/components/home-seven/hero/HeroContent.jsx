@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import TitleShapImg from "../../../assets/images/v7/title-shape.png";
+import TitleShapImg from "../../../assets/images/v7/title-shape.webp";
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../animation/FadeInStaggerTwo";
 function HeroContent() {
 	return (

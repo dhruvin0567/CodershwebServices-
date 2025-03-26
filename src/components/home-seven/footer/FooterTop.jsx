@@ -1,4 +1,4 @@
-import TitleShapImg from "../../../assets/images/v7/title-shape.png";
+import TitleShapImg from "../../../assets/images/v7/title-shape.webp";
 import { Link } from "react-router-dom";
 function FooterTop() {
 	return (

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Shape4Img from "../../../assets/images/v5/shape4.png";
+import Shape4Img from "../../../assets/images/v5/shape4.webp";
 import FadeInUp from "../../animation/FadeInUp";
 function Cta() {
 	return (

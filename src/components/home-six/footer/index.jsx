@@ -1,4 +1,4 @@
-import ShapeImg from "../../../assets/images/v6/shapes.png";
+import ShapeImg from "../../../assets/images/v6/shapes.webp";
 import FooterContact from "./FooterContact";
 import FooterCopyright from "./FooterCopyright";
 import LogoWhiteImg from "../../../assets/images/logo/logo-white.svg";

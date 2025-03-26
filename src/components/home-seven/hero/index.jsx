@@ -1,6 +1,6 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import HeroShape from "../../../assets/images/v7/hero-shape.png";
-import HeroThumbImg from "../../../assets/images/v7/hero-thumb.png";
+import HeroShape from "../../../assets/images/v7/hero-shape.webp";
+import HeroThumbImg from "../../../assets/images/v7/hero-thumb.webp";
 import HeroContent from "./HeroContent";
 
 function Hero() {

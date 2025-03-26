@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Shape1Img from "../../../assets/images/v5/shape1.png";
+import Shape1Img from "../../../assets/images/v5/shape1.webp";
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../animation/FadeInStaggerTwo";
 function Hero() {
 	return (

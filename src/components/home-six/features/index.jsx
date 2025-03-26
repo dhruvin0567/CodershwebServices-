@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Box1Img from "../../../assets/images/v6/imagebox1.png";
+import Box1Img from "../../../assets/images/v6/imagebox1.webp";
 import FadeInStagger from "../../animation/FadeInStagger";
 import FeatureCard from "./FeatureCard";
 const featuresData = [

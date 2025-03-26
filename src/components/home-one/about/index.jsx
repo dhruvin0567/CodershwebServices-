@@ -1,5 +1,5 @@
 import Video from "./Video";
-import Star2Img from "../../../assets/images/v1/star2.png";
+import Star2Img from "../../../assets/images/v1/star2.webp";
 import AboutCounter from "./AboutCounter";
 
 function About() {
@@ -30,7 +30,7 @@ function About() {
 				</div>
 				<div className="row">
 					<div className="col-lg-8">
-                        
+
 						<Video />
 					</div>
 					<div className="col-lg-4">

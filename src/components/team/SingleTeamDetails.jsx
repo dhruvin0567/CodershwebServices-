@@ -1,5 +1,5 @@
-import Team1Img from "../../assets/images/team/team1.png";
-import Star2Img from "../../assets/images/v1/star2.png";
+import Team1Img from "../../assets/images/team/team1.webp";
+import Star2Img from "../../assets/images/v1/star2.webp";
 import FadeInUp from "../animation/FadeInUp";
 function SingleTeamDetails() {
 	return (

@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
-import ContactThumb from "../../assets/images/contact/contact-thumb.png";
-import Star2Img from "../../assets/images/v1/star2.png";
+import ContactThumb from "../../assets/images/contact/contact-thumb.webp";
+import Star2Img from "../../assets/images/v1/star2.webp";
 import FadeInRight from "../animation/FadeInRight";
 import Field from "../common/Field";
 // import emailjs from '@emailjs/browser';

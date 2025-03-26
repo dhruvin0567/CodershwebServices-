@@ -1,8 +1,8 @@
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
-import PlayBtnImg from "../../../assets/images/v5/play-btn.png";
-import Shape2Img from "../../../assets/images/v5/shape2.png";
-import VideoBg from "../../../assets/images/v5/video-bg.png";
+import PlayBtnImg from "../../../assets/images/v5/play-btn.webp";
+import Shape2Img from "../../../assets/images/v5/shape2.webp";
+import VideoBg from "../../../assets/images/v5/video-bg.webp";
 import FadeInUp from "../../animation/FadeInUp";
 function Video() {
 	const [isOpen, setOpen] = useState(false);

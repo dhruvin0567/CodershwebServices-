@@ -24,7 +24,7 @@ function BlogDetails() {
 						id: data[0].id,
 						title: data[0].title.rendered,
 						content: data[0].content.rendered,
-						img: data[0]._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/default-image.jpg",
+						img: data[0]._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/default-image.webp",
 					};
 					setPost(formattedPost);
 				} else {

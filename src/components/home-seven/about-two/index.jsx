@@ -1,5 +1,5 @@
-import CheckImg from "../../../assets/images/v7/check.png";
-import ThumbImg from "../../../assets/images/v7/thumb2.png";
+import CheckImg from "../../../assets/images/v7/check.webp";
+import ThumbImg from "../../../assets/images/v7/thumb2.webp";
 import FadeInRight from "../../animation/FadeInRight";
 function AboutTwo() {
 	return (

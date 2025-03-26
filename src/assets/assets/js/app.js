@@ -485,7 +485,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
       var marker = new google.maps.Marker({
         position: new google.maps.LatLng(40.6700, -73.9400),
         map: map,
-        // icon: 'assets/images/all-img/contact/map.png',
+        // icon: 'assets/images/all-img/contact/map.webp',
         title: 'fugu'
       });
       var contentString = '<div id="content">' + '<div id="tpw">' + '<h3>fugu' + '</div>';

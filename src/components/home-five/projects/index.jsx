@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import portfolioImg1 from "../../../assets/images/portfolio/p_12.png";
-import portfolioImg2 from "../../../assets/images/portfolio/p_13.png";
-import portfolioImg3 from "../../../assets/images/portfolio/p_14.png";
-import portfolioImg4 from "../../../assets/images/portfolio/p_15.png";
+import portfolioImg1 from "../../../assets/images/portfolio/p_12.webp";
+import portfolioImg2 from "../../../assets/images/portfolio/p_13.webp";
+import portfolioImg3 from "../../../assets/images/portfolio/p_14.webp";
+import portfolioImg4 from "../../../assets/images/portfolio/p_15.webp";
 import FadeInStagger from "../../animation/FadeInStagger";
 import ProjectCard from "./projectCard";
 

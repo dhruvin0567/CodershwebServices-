@@ -1,13 +1,13 @@
 import BreadCrumb from "../../../components/common/Breadcrumb"
-// import Star2Img from "../../../assets/images/v1/icon/star2.png";
+// import Star2Img from "../../../assets/images/v1/icon/star2.webp";
 // import FadeInStagger from "../../../components/animation/FadeInStagger";
 import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
-import ThumbImg1 from "../../../assets/images/images2/h2.png";
-import ThumbImg2 from "../../../assets/images/images2/h1.png";
-import ThumbImg3 from "../../../assets/images/images2/h3.png";
-import ThumbImg4 from "../../../assets/images/images2/h4.png";
+import ThumbImg1 from "../../../assets/images/images2/h2.webp";
+import ThumbImg2 from "../../../assets/images/images2/h1.webp";
+import ThumbImg3 from "../../../assets/images/images2/h3.webp";
+import ThumbImg4 from "../../../assets/images/images2/h4.webp";
 import { Link } from 'react-router-dom';
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
 import { createGlobalStyle } from 'styled-components';

@@ -1,6 +1,6 @@
-import Shape1Img from "../../../assets/images/v4/shape1.png";
-import TextThumb1Img from "../../../assets/images/v4/text-thumb1.png";
-import TextThumb2Img from "../../../assets/images/v4/text-thumb2.png";
+import Shape1Img from "../../../assets/images/v4/shape1.webp";
+import TextThumb1Img from "../../../assets/images/v4/text-thumb1.webp";
+import TextThumb2Img from "../../../assets/images/v4/text-thumb2.webp";
 function MissionVision() {
 	return (
 		<div className="aximo-content-section position-relative overflow-hidden">

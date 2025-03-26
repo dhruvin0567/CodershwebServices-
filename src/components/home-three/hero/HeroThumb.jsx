@@ -1,8 +1,8 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import ThumbImg from "../../../assets/images/v3/hero-thumb.png";
-import ShapeAynaImg from "../../../assets/images/v3/shape-ayna.png";
-import ShapeMonitorImg from "../../../assets/images/v3/shape-monitor.png";
-import StarShapeImg from "../../../assets/images/v3/star-shape.png";
+import ThumbImg from "../../../assets/images/v3/hero-thumb.webp";
+import ShapeAynaImg from "../../../assets/images/v3/shape-ayna.webp";
+import ShapeMonitorImg from "../../../assets/images/v3/shape-monitor.webp";
+import StarShapeImg from "../../../assets/images/v3/star-shape.webp";
 import FadeInRight from "../../animation/FadeInRight";
 function HeroThumb() {
 	return (

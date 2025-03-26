@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import Team1Img from "../../../assets/images/team/team13.png";
-import Team2Img from "../../../assets/images/team/team14.png";
-import Team3Img from "../../../assets/images/team/team15.png";
-import HeroShape from "../../../assets/images/v7/hero-shape.png";
+import Team1Img from "../../../assets/images/team/team13.webp";
+import Team2Img from "../../../assets/images/team/team14.webp";
+import Team3Img from "../../../assets/images/team/team15.webp";
+import HeroShape from "../../../assets/images/v7/hero-shape.webp";
 import FadeInStagger from "../../animation/FadeInStagger";
 import TeamCard from "./TeamCard";
 

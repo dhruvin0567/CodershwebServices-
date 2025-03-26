@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Shape2Img from "../../../assets/images/v3/shape2.png";
-import Thumb1Img from "../../../assets/images/v3/thumb1.png";
+import Shape2Img from "../../../assets/images/v3/shape2.webp";
+import Thumb1Img from "../../../assets/images/v3/thumb1.webp";
 import FadeInLeft from "../../animation/FadeInLeft";
 import FadeInUp from "../../animation/FadeInUp";
 function About() {

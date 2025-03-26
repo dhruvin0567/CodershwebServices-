@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";  // Import Link from react-router-dom
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
-import Star2Img from "../../assets/images/v1/icon/star2.png";
+import Star2Img from "../../assets/images/v1/icon/star2.webp";
 import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 import Check from "../../assets/images/icon/check.svg";
 

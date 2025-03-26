@@ -1,5 +1,5 @@
-import SingleImg from "../../assets/images/service/service-single.png";
-import Star2Img from "../../assets/images/v1/star2.png";
+import SingleImg from "../../assets/images/service/service-single.webp";
+import Star2Img from "../../assets/images/v1/star2.webp";
 import FadeInUp from "../animation/FadeInUp";
 import WorkingApproach from "./WorkingApproach";
 function ServiceDetails() {

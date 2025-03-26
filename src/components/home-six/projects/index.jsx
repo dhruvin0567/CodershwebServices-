@@ -1,8 +1,8 @@
-import Project1Img from "../../../assets/images/v6/p_1.png";
-import Project2Img from "../../../assets/images/v6/p_2.png";
-import Project3Img from "../../../assets/images/v6/p_3.png";
-import Project4Img from "../../../assets/images/v6/p_4.png";
-import Shape2Img from "../../../assets/images/v6/shapes2.png";
+import Project1Img from "../../../assets/images/v6/p_1.webp";
+import Project2Img from "../../../assets/images/v6/p_2.webp";
+import Project3Img from "../../../assets/images/v6/p_3.webp";
+import Project4Img from "../../../assets/images/v6/p_4.webp";
+import Shape2Img from "../../../assets/images/v6/shapes2.webp";
 import FadeInStagger from "../../animation/FadeInStagger";
 import ProjectCard from "./ProjectCard";
 

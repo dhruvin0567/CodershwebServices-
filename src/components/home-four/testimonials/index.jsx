@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Shape4Img from "../../../assets/images/v4/shape4.png";
+import Shape4Img from "../../../assets/images/v4/shape4.webp";
 import TestimonialsCard from "./TestimonialsCard";
 function Testimonials() {
 	return (

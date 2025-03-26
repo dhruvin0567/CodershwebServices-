@@ -1,5 +1,5 @@
-import Single2Img from "../../assets/images/service/service-single2.png";
-import Star2Img from "../../assets/images/v1/star2.png";
+import Single2Img from "../../assets/images/service/service-single2.webp";
+import Star2Img from "../../assets/images/v1/star2.webp";
 import FadeInRight from "../animation/FadeInRight";
 
 const workingApprochData = [

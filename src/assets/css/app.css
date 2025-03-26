@@ -3624,7 +3624,7 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 	text-align: center;
 	padding: 195px 0 130px;
 	/* background-color: var(--dark-bg); */
-	background-image: url(../images/images2/angularjs_1.png);
+	background-image: url(../images/images2/angularjs_1.webp);
 	/* filter: brightness(150%); */
 }
 
@@ -8461,7 +8461,7 @@ img.aximo-video-circle {
 	position: absolute;
 	background-size: cover;
 	background-color: transparent;
-	background-image: url(../images/v4/arrow.png);
+	background-image: url(../images/v4/arrow.webp);
 }
 
 .aximo-project-page .aximo-project-thumb {

@@ -3,7 +3,7 @@ import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInStagger from "../../../components/animation/FadeInStagger";
 import FadeInUp from "../../../components/animation/FadeInUp";
-import ThumbImg1 from "../../../assets/images/images2/service6-1.png";
+import ThumbImg1 from "../../../assets/images/images2/service6-1.webp";
 import FeatureImg1 from "../../../assets/images/images2/shopifyplus-300x300.jpg.webp";
 import FeatureImg2 from "../../../assets/images/images2/bold-300x300.jpg.webp";
 import FeatureImg3 from "../../../assets/images/images2/klarna-300x300.jpg.webp";

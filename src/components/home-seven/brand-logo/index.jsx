@@ -1,11 +1,11 @@
-import Brand1Img from "../../../assets/images/v7/brand1.png";
-import Brand2Img from "../../../assets/images/v7/brand2.png";
-import Brand3Img from "../../../assets/images/v7/brand3.png";
-import Brand4Img from "../../../assets/images/v7/brand4.png";
-import Brand5Img from "../../../assets/images/v7/brand5.png";
-import Brand6Img from "../../../assets/images/v7/brand6.png";
-import Brand7Img from "../../../assets/images/v7/brand7.png";
-import Brand8Img from "../../../assets/images/v7/brand8.png";
+import Brand1Img from "../../../assets/images/v7/brand1.webp";
+import Brand2Img from "../../../assets/images/v7/brand2.webp";
+import Brand3Img from "../../../assets/images/v7/brand3.webp";
+import Brand4Img from "../../../assets/images/v7/brand4.webp";
+import Brand5Img from "../../../assets/images/v7/brand5.webp";
+import Brand6Img from "../../../assets/images/v7/brand6.webp";
+import Brand7Img from "../../../assets/images/v7/brand7.webp";
+import Brand8Img from "../../../assets/images/v7/brand8.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 

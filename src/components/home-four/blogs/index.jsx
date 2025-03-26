@@ -1,6 +1,6 @@
-import Blog1Img from "../../../assets/images/blog/blog1.png";
-import Blog2Img from "../../../assets/images/blog/blog2.png";
-import Shape5Img from "../../../assets/images/v4/shape5.png";
+import Blog1Img from "../../../assets/images/blog/blog1.webp";
+import Blog2Img from "../../../assets/images/blog/blog2.webp";
+import Shape5Img from "../../../assets/images/v4/shape5.webp";
 import FadeInStagger from "../../animation/FadeInStagger";
 import BlogCard from "./BlogCard";
 

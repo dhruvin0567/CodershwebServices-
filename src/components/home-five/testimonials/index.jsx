@@ -1,4 +1,4 @@
-import TestimonialImg from "../../../assets/images/v5/testimonial1.png";
+import TestimonialImg from "../../../assets/images/v5/testimonial1.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import TestimonialCard from "./TestimonialCard";

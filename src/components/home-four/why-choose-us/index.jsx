@@ -1,5 +1,5 @@
-import Shape2Img from "../../../assets/images/v4/shape2.png";
-import Thumb1Img from "../../../assets/images/v4/thumb1.png";
+import Shape2Img from "../../../assets/images/v4/shape2.webp";
+import Thumb1Img from "../../../assets/images/v4/thumb1.webp";
 import FadeInLeft from "../../animation/FadeInLeft";
 function WhyChooseUs() {
 	return (

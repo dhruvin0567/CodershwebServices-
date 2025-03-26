@@ -1,4 +1,4 @@
-import Star2Img from "../../assets/images/v1/star2.png";
+import Star2Img from "../../assets/images/v1/star2.webp";
 import QuestionImg from "../../assets/images/icon/question.svg";
 const faqData = {
 	faq1: [

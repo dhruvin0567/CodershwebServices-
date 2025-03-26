@@ -4,10 +4,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 import TestimonialCard from "./TestimonialCard";
-import Star2Img from "../../../assets/images/v1/star2.png";
-import Thumb1Img from "../../../assets/images/v1/t_thumb1.png";
-import Thumb2Img from "../../../assets/images/v1/t_thumb2.png";
-import Thumb4Img from "../../../assets/images/v1/t_thumb4.png";
+import Star2Img from "../../../assets/images/v1/star2.webp";
+import Thumb1Img from "../../../assets/images/v1/t_thumb1.webp";
+import Thumb2Img from "../../../assets/images/v1/t_thumb2.webp";
+import Thumb4Img from "../../../assets/images/v1/t_thumb4.webp";
 import FadeInStagger from "../../animation/FadeInStagger";
 
 

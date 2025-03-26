@@ -1,6 +1,6 @@
-import Team5Img from "../../../assets/images/team/team5.png";
-import Team6Img from "../../../assets/images/team/team6.png";
-import Team7Img from "../../../assets/images/team/team7.png";
+import Team5Img from "../../../assets/images/team/team5.webp";
+import Team6Img from "../../../assets/images/team/team6.webp";
+import Team7Img from "../../../assets/images/team/team7.webp";
 const commentsData = [
 	{
 		id: crypto.randomUUID(),

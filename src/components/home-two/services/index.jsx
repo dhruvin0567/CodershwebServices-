@@ -1,9 +1,9 @@
-import StarImg from "../../../assets/images/v2/shape-star.png";
-import Thumb1Img from "../../../assets/images/v2/h-thumb1.png";
-import Thumb2Img from "../../../assets/images/v2/h-thumb2.png";
-import Thumb3Img from "../../../assets/images/v2/h-thumb3.png";
-import Thumb4Img from "../../../assets/images/v2/h-thumb4.png";
-import Thumb5Img from "../../../assets/images/v2/h-thumb5.png";
+import StarImg from "../../../assets/images/v2/shape-star.webp";
+import Thumb1Img from "../../../assets/images/v2/h-thumb1.webp";
+import Thumb2Img from "../../../assets/images/v2/h-thumb2.webp";
+import Thumb3Img from "../../../assets/images/v2/h-thumb3.webp";
+import Thumb4Img from "../../../assets/images/v2/h-thumb4.webp";
+import Thumb5Img from "../../../assets/images/v2/h-thumb5.webp";
 import ServiceCard from "./ServiceCard";
 
 const servicesData = [
