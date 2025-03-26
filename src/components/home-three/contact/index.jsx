@@ -51,7 +51,7 @@ function Contact() {
 				</FadeInStaggerTwo>
 			</div>
 			<div className="aximo-star-shape-half2">
-				<img src={StarShapeHalfImg} alt="StarShapeHalfImg" />
+				<img loading="lazy" src={StarShapeHalfImg} alt="StarShapeHalfImg" />
 			</div>
 		</div>
 	);

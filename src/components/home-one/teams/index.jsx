@@ -12,7 +12,7 @@ function Teams({ teams }) {
 						<span className="aximo-title-animation">
 							creative people
 							<span className="aximo-title-icon">
-								<img src={Star2Img} alt="Star2Img" />
+								<img loading="lazy" src={Star2Img} alt="Star2Img" />
 							</span>
 						</span>
 					</h2>

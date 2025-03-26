@@ -9,7 +9,7 @@ function HeaderSideMenu({ showSideMenu, setShowSideMenu }) {
 				<FadeInStaggerTwo className="aximo-sidemenu-body">
 					<FadeInStaggerTwoChildren className="aximo-sidemenu-logo">
 						<Link to="/">
-							<img src={Logo} alt="Logo" />
+							<img loading="lazy" src={Logo} alt="Logo" />
 						</Link>
 					</FadeInStaggerTwoChildren>
 					<FadeInStaggerTwoChildren>
@@ -20,7 +20,7 @@ function HeaderSideMenu({ showSideMenu, setShowSideMenu }) {
 						</p>
 					</FadeInStaggerTwoChildren>
 					<FadeInStaggerTwoChildren className="aximo-sidemenu-thumb">
-						<img src={InstagramThumb} alt="InstagramThumb" />
+						<img loading="lazy" src={InstagramThumb} alt="InstagramThumb" />
 					</FadeInStaggerTwoChildren>
 					<FadeInStaggerTwoChildren className="aximo-info-wrap">
 						<div className="aximo-info">

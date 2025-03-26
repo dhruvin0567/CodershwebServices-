@@ -89,7 +89,7 @@ function SingleBrand() {
                 </div>
             </div>
             <div className="case-study-hero-section">
-                <img src={brand?.["main-image"]} alt={brand.title.rendered} />
+                <img loading="lazy" src={brand?.["main-image"]} alt={brand.title.rendered} />
                 {/* <div className="case-study-hero-section-img"></div> */}
             </div>
 
@@ -138,7 +138,7 @@ function SingleBrand() {
 
             <div className="image-section">
                 <div className="case-study-section-img">
-                    <img src={brand?.image2} alt={brand.title.rendered} />
+                    <img loading="lazy" src={brand?.image2} alt={brand.title.rendered} />
                 </div>
             </div>
 
@@ -157,12 +157,12 @@ function SingleBrand() {
                     <div className="row">
                         <div className="col-md-6 ">
                             <div className="cs-img">
-                                <img src={brand?.image3} alt />
+                                <img loading="lazy" src={brand?.image3} alt />
                             </div>
                         </div>
                         <div className="col-md-6 mt-4 mt-md-0">
                             <div className="cs-img">
-                                <img src={brand?.image4} alt />
+                                <img loading="lazy" src={brand?.image4} alt />
                             </div>
                         </div>
                     </div>
@@ -183,7 +183,7 @@ function SingleBrand() {
                 <div className="container-lg cs-images-section-container px-lg-0">
 
                     <div className="cs-image-section d-flex justify-content-center">
-                        <img src={brand?.image5} alt />
+                        <img loading="lazy" src={brand?.image5} alt />
                     </div>
 
                 </div>
@@ -217,7 +217,7 @@ function SingleBrand() {
                         {brands.slice(-3).reverse().map((brand, index) => (
                             <div className="col-md-4 p-4 p-md-3" key={brand.id} index={index}>
                                 <Link className="brand-card" to={brand.link}>
-                                    <img src={brand.img} alt={brand.title} />
+                                    <img loading="lazy" src={brand.img} alt={brand.title} />
                                 </Link>
                             </div>
                         ))}

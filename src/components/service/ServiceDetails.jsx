@@ -8,7 +8,7 @@ function ServiceDetails() {
 			<div className="container">
 				<div className="aximo-service-details-wrap">
 					<FadeInUp className="aximo-service-details-thumb">
-						<img src={SingleImg} alt="Single img" />
+						<img loading="lazy" src={SingleImg} alt="Single img" />
 					</FadeInUp>
 					<div className="row">
 						<div className="col-lg-8">
@@ -17,7 +17,7 @@ function ServiceDetails() {
 									<span className="aximo-title-animation">
 										UI/UX for modern
 										<span className="aximo-title-icon">
-											<img src={Star2Img} alt="star" />
+											<img loading="lazy" src={Star2Img} alt="star" />
 										</span>
 									</span>
 									product development

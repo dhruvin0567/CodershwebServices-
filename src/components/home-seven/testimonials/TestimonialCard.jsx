@@ -6,7 +6,7 @@ function TestimonialCard({ testimonial: { text, rating, author, designation } })
 				<ul>
 					{[...Array(rating)].map(() => (
 						<li key={crypto.randomUUID()}>
-							<img src={StarImg} alt="star" />
+							<img loading="lazy" src={StarImg} alt="star" />
 						</li>
 					))}
 				</ul>

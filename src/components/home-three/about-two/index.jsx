@@ -9,9 +9,9 @@ function AboutTwo() {
 				<div className="row">
 					<div className="col-lg-5 order-lg-1 offset-lg-1">
 						<FadeInRight className="aximo-content-thumb ">
-							<img src={Thumb2Img} alt="Thumb2Img" />
+							<img loading="lazy" src={Thumb2Img} alt="Thumb2Img" />
 							<div className="aximo-thumb-shape2">
-								<img src={Shape1Img} alt="Shape1Img" />
+								<img loading="lazy" src={Shape1Img} alt="Shape1Img" />
 							</div>
 						</FadeInRight>
 					</div>
@@ -25,15 +25,15 @@ function AboutTwo() {
 							<div className="aximo-list-icon">
 								<ul>
 									<li>
-										<img src={CheckImg} alt="CheckImg" /> On-page optimizing your web pages to
+										<img loading="lazy" src={CheckImg} alt="CheckImg" /> On-page optimizing your web pages to
 										improve rankings
 									</li>
 									<li>
-										<img src={CheckImg} alt="CheckImg" /> Keyword research to identify relevant
+										<img loading="lazy" src={CheckImg} alt="CheckImg" /> Keyword research to identify relevant
 										search and phrases
 									</li>
 									<li>
-										<img src={CheckImg} alt="CheckImg" /> Continuously monitor search engine
+										<img loading="lazy" src={CheckImg} alt="CheckImg" /> Continuously monitor search engine
 										algorithm changes
 									</li>
 								</ul>

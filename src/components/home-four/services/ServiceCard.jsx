@@ -5,7 +5,7 @@ function ServiceCard({ service: { title, description, iconImg } }) {
 	return (
 		<div className="aximo-iconbox-wrap4">
 			<div className="aximo-iconbox-icon4">
-				<img src={iconImg} alt={title} />
+				<img loading="lazy" src={iconImg} alt={title} />
 			</div>
 			<div className="aximo-iconbox-data4">
 				<h6 style={{ marginBottom: "15px" }}>{title}</h6>

@@ -13,7 +13,7 @@ function Hero() {
 							<div className="aximo-infinite">
 								{[...Array(18)].map(() => (
 									<a key={crypto.randomUUID()} href="">
-										<img src={NextImg} alt="next" />
+										<img loading="lazy" src={NextImg} alt="next" />
 									</a>
 								))}
 							</div>
@@ -21,7 +21,7 @@ function Hero() {
 					</div>
 					<div className="aximo-hero-title">
 						<div className="aximo-hero-text">design</div>
-						<img src={TextImg} alt="TextImg" />
+						<img loading="lazy" src={TextImg} alt="TextImg" />
 						<div className="aximo-hero-text"> that speaks</div>
 					</div>
 					<div className="aximo-hero-title">
@@ -30,7 +30,7 @@ function Hero() {
 							<div className="aximo-infinite two">
 								{[...Array(18)].map(() => (
 									<a key={crypto.randomUUID()} href="">
-										to your style <img src={NextWhiteImg} alt="Next" />
+										to your style <img loading="lazy" src={NextWhiteImg} alt="Next" />
 									</a>
 								))}
 							</div>
@@ -39,7 +39,7 @@ function Hero() {
 				</div>
 			</div>
 			<div className="aximo-p-shape z-index">
-				<img src={Shape2Img} alt="Shape" />
+				<img loading="lazy" src={Shape2Img} alt="Shape" />
 			</div>
 		</div>
 	);

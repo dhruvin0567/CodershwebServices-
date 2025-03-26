@@ -6,7 +6,7 @@ function PortfolioCard({ portfolio: { name, technology, img } }) {
 
 	return (
 		<div className="aximo-project-thumb">
-			<img src={img} alt={name} />
+			<img loading="lazy" src={img} alt={name} />
 			<div className="aximo-project-wrap">
 				<div className="aximo-project-data">
 					<Link to="/single-portfolio">

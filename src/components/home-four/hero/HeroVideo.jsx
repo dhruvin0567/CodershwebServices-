@@ -15,8 +15,8 @@ function HeroVideo() {
 				onClose={() => setOpen(false)}
 			/>
 			<button className="aximo-video-popup3 video-init" onClick={() => setOpen(true)}>
-				<img className="aximo-video-circle" src={CirclePlayImg} alt="CirclePlayImg" />
-				<img className="aximo-video-icon" src={PlayIconImg} alt="PlayIconImg" />
+				<img loading="lazy" className="aximo-video-circle" src={CirclePlayImg} alt="CirclePlayImg" />
+				<img loading="lazy" className="aximo-video-icon" src={PlayIconImg} alt="PlayIconImg" />
 			</button>
 		</div>
 	);

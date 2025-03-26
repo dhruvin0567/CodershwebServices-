@@ -20,7 +20,7 @@ function SignUpForm() {
 						<span className="aximo-title-animation">
 							Create Account
 							<span className="aximo-title-icon">
-								<img src={StarImg} alt="Star" />
+								<img loading="lazy" src={StarImg} alt="Star" />
 							</span>
 						</span>
 					</h2>

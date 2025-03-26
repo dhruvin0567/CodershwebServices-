@@ -10,10 +10,10 @@ function Hero() {
 			<div className="container position-relative">
 				<HeroContent />
 				<div className="aximo-hero-shape1">
-					<img src={Shape1Img} alt="Shape" />
+					<img loading="lazy" src={Shape1Img} alt="Shape" />
 				</div>
 				<div className="aximo-hero-shape2">
-					<img src={ShapeStarImg} alt="ShapeStarImg" />
+					<img loading="lazy" src={ShapeStarImg} alt="ShapeStarImg" />
 				</div>
 			</div>
 			<HeroThumbs />

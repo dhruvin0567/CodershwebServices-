@@ -19,7 +19,7 @@ function Brand() {
                             <div className="col-lg-3 col-sm-4 col-6 mb-3 p-3" key={index}>
                                 <FadeInStagger>
                                     <Link className="brand-card" to="#">
-                                        <img src={`/images/${image}`} alt={`brand ${index + 1}`} />
+                                        <img loading="lazy" src={`/images/${image}`} alt={`brand ${index + 1}`} />
                                     </Link>
                                 </FadeInStagger>
                             </div>

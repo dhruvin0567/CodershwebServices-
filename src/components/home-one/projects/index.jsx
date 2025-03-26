@@ -81,7 +81,7 @@ function Projects() {
 						<span className="aximo-title-animation">
 							creative projects
 							<span className="aximo-title-icon">
-								<img src={Star2Img} alt="Star2Img" />
+								<img loading="lazy" src={Star2Img} alt="Star2Img" />
 							</span>
 						</span>
 					</h2>

@@ -8,7 +8,7 @@ function AboutOne() {
 				<div className="row">
 					<div className="col-lg-6">
 						<FadeInLeft className="aximo-content-thumb ">
-							<img src={ThumbImg} alt="Thumb" />
+							<img loading="lazy" src={ThumbImg} alt="Thumb" />
 						</FadeInLeft>
 					</div>
 					<div className="col-lg-6">
@@ -22,12 +22,12 @@ function AboutOne() {
 							<div className="aximo-list-icon2">
 								<ul>
 									<li>
-										<img src={CheckImg} alt="check mark" />
+										<img loading="lazy" src={CheckImg} alt="check mark" />
 										<span>Market Research: </span>Conducting market research to gather main
 										information about the target audience, competitors trends.
 									</li>
 									<li>
-										<img src={CheckImg} alt="check mark" />
+										<img loading="lazy" src={CheckImg} alt="check mark" />
 										<span>Strategic Planning:</span> We work closely with clients to define clear
 										advertising objectives and develop a comprehensive strategy.
 									</li>

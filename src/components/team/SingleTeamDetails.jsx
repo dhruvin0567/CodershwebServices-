@@ -8,7 +8,7 @@ function SingleTeamDetails() {
 				<div className="row">
 					<div className="col-lg-5">
 						<FadeInUp className="aximo-team-details-thumb">
-							<img src={Team1Img} alt="Team" />
+							<img loading="lazy" src={Team1Img} alt="Team" />
 						</FadeInUp>
 					</div>
 					<div className="col-lg-7 d-flex align-items-center">
@@ -17,7 +17,7 @@ function SingleTeamDetails() {
 								<span className="aximo-title-animation">
 									Let's introduce
 									<span className="aximo-title-icon">
-										<img src={Star2Img} alt="Star" />
+										<img loading="lazy" src={Star2Img} alt="Star" />
 									</span>
 								</span>{" "}
 								Mr. Andrew Mark

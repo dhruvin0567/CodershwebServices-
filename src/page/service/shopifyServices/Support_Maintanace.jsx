@@ -58,7 +58,7 @@ function Support_Maintanace() {
                     <div className="row d-flex">
                         <div className="col-lg-5">
                             <FadeInLeft className="aximo-content-thumb shopify-services-img">
-                                <img src={ThumbImg1} alt="Thumb" />
+                                <img loading="lazy" src={ThumbImg1} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-7  colo-12  shopify-services-data">
@@ -89,7 +89,7 @@ function Support_Maintanace() {
                     <div className="row">
                         <div className="col-lg-5 order-lg-2">
                             <FadeInRight className="aximo-content-thumb shopify-services-img">
-                                <img src={ThumbImg2} alt="thumb" />
+                                <img loading="lazy" src={ThumbImg2} alt="thumb" />
                             </FadeInRight>
                         </div>
                         <div className="col-lg-7 shopify-services-data">
@@ -118,7 +118,7 @@ function Support_Maintanace() {
                     <div className="row d-flex">
                         <div className="col-lg-5">
                             <FadeInLeft className="aximo-content-thumb shopify-services-img">
-                                <img src={ThumbImg3} alt="Thumb" />
+                                <img loading="lazy" src={ThumbImg3} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-7  colo-12  shopify-services-data">
@@ -148,7 +148,7 @@ function Support_Maintanace() {
                     <div className="row">
                         <div className="col-lg-5 order-lg-2">
                             <FadeInRight className="aximo-content-thumb shopify-services-img">
-                                <img src={ThumbImg4} alt="thumb" />
+                                <img loading="lazy" src={ThumbImg4} alt="thumb" />
                             </FadeInRight>
                         </div>
                         <div className="col-lg-7 shopify-services-data">

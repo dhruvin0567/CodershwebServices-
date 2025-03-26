@@ -92,19 +92,19 @@ function ComparisonTable() {
                                             <td className="text-left">{item.feature}</td>
                                             <td className="text-center">
                                                 <div className="d-flex justify-content-center align-items-center">
-                                                    <img src={item.codersh.icon} alt="" width={item.codersh.iconSize.desktop} className="me-2" />
+                                                    <img loading="lazy" src={item.codersh.icon} alt="" width={item.codersh.iconSize.desktop} className="me-2" />
                                                     {item.codersh.text}
                                                 </div>
                                             </td>
                                             <td className="text-center">
                                                 <div className="d-flex justify-content-center align-items-center">
-                                                    <img src={item.freelancers.icon} alt="" width={item.freelancers.iconSize.desktop} className="me-2" />
+                                                    <img loading="lazy" src={item.freelancers.icon} alt="" width={item.freelancers.iconSize.desktop} className="me-2" />
                                                     {item.freelancers.text}
                                                 </div>
                                             </td>
                                             <td className="text-center">
                                                 <div className="d-flex justify-content-center align-items-center">
-                                                    <img src={item.agencies.icon} alt="" width={item.agencies.iconSize.desktop} className="me-2" />
+                                                    <img loading="lazy" src={item.agencies.icon} alt="" width={item.agencies.iconSize.desktop} className="me-2" />
                                                     {item.agencies.text}
                                                 </div>
                                             </td>
@@ -143,21 +143,21 @@ function ComparisonTable() {
                                     <div className="comparison-row d-flex justify-content-between align-items-center mb-2">
                                         <span>Codersh</span>
                                         <div className="d-flex align-items-center">
-                                            <img src={item.codersh.icon} alt="" width={item.codersh.iconSize.mobile} className="me-1" />
+                                            <img loading="lazy" src={item.codersh.icon} alt="" width={item.codersh.iconSize.mobile} className="me-1" />
                                             <span>{item.codersh.text}</span>
                                         </div>
                                     </div>
                                     <div className="comparison-row d-flex justify-content-between align-items-center mb-2">
                                         <span>Freelancers</span>
                                         <div className="d-flex align-items-center">
-                                            <img src={item.freelancers.icon} alt="" width={item.freelancers.iconSize.mobile} className="me-1" />
+                                            <img loading="lazy" src={item.freelancers.icon} alt="" width={item.freelancers.iconSize.mobile} className="me-1" />
                                             <span>{item.freelancers.text}</span>
                                         </div>
                                     </div>
                                     <div className="comparison-row d-flex justify-content-between align-items-center">
                                         <span>Agencies</span>
                                         <div className="d-flex align-items-center">
-                                            <img src={item.agencies.icon} alt="" width={item.agencies.iconSize.mobile} className="me-1" />
+                                            <img loading="lazy" src={item.agencies.icon} alt="" width={item.agencies.iconSize.mobile} className="me-1" />
                                             <span>{item.agencies.text}</span>
                                         </div>
                                     </div>

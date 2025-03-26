@@ -10,7 +10,7 @@ function Hero() {
 						Increase your brand awareness
 						<span className="aximo-hero-shape-title">
 							digitally
-							<img className="aximo-hero-wave-shape" src={Shape1Img} alt="Shape" />
+							<img loading="lazy" className="aximo-hero-wave-shape" src={Shape1Img} alt="Shape" />
 						</span>
 					</h1>
 					<p>

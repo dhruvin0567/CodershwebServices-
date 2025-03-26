@@ -3,7 +3,7 @@ function TestimonialCard({ testimonial: { author, designation, title, descriptio
 		<div className="aximo-testimonial-slider-column">
 			<div className="aximo-testimonial-slider-wrap">
 				<div className="aximo-testimonial-slider-thumb">
-					<img src={img} alt={title} />
+					<img loading="lazy" src={img} alt={title} />
 				</div>
 				<div className="aximo-testimonial-slider-author">
 					<h5>{author}</h5>

@@ -74,22 +74,22 @@ function Bussinessdirectorydata() {
                             }}
                         >
                             <SwiperSlide>
-                                <img src={Logo1Img} alt="Brand Logo" className="mx-auto d-block" />
+                                <img loading="lazy" src={Logo1Img} alt="Brand Logo" className="mx-auto d-block" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo2Img} alt="Brand Logo" className="mx-auto d-block" />
+                                <img loading="lazy" src={Logo2Img} alt="Brand Logo" className="mx-auto d-block" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo3Img} alt="Brand Logo" className="mx-auto d-block" />
+                                <img loading="lazy" src={Logo3Img} alt="Brand Logo" className="mx-auto d-block" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo4Img} alt="Brand Logo" className="mx-auto d-block" />
+                                <img loading="lazy" src={Logo4Img} alt="Brand Logo" className="mx-auto d-block" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo5Img} alt="Brand Logo" className="mx-auto d-block" />
+                                <img loading="lazy" src={Logo5Img} alt="Brand Logo" className="mx-auto d-block" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo6Img} alt="Brand Logo" className="mx-auto d-block" />
+                                <img loading="lazy" src={Logo6Img} alt="Brand Logo" className="mx-auto d-block" />
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -131,7 +131,7 @@ function Bussinessdirectorydata() {
                         >
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.1s">
-                                    <img src={Slider1Img} alt="Project Image" />
+                                    <img loading="lazy" src={Slider1Img} alt="Project Image" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -151,7 +151,7 @@ function Bussinessdirectorydata() {
 
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.2s">
-                                    <img src={Slider2Img} alt="Project Image" />
+                                    <img loading="lazy" src={Slider2Img} alt="Project Image" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -171,7 +171,7 @@ function Bussinessdirectorydata() {
 
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.3s">
-                                    <img src={Slider3Img} alt="Project Image" />
+                                    <img loading="lazy" src={Slider3Img} alt="Project Image" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -191,7 +191,7 @@ function Bussinessdirectorydata() {
 
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.1s">
-                                    <img src={Slider1Img} alt="Project Image" />
+                                    <img loading="lazy" src={Slider1Img} alt="Project Image" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -222,7 +222,7 @@ function Bussinessdirectorydata() {
                             <span className="aximo-title-animation">
                                 Professional Business
                                 <span className="aximo-title-icon">
-                                    <img src={Star2Img} alt="Star2Img" />
+                                    <img loading="lazy" src={Star2Img} alt="Star2Img" />
                                 </span>
                             </span>
                             <br />
@@ -250,13 +250,13 @@ function Bussinessdirectorydata() {
                     </h3>
                     <div className="logo-slider row">
                         <div className="col-lg-4">
-                            <img src="src/assets/images/images2/tyrepage.webp" alt className="mx-auto d-block" />
+                            <img loading="lazy" src="src/assets/images/images2/tyrepage.webp" alt className="mx-auto d-block" />
                         </div>
                         <div className="col-lg-4">
-                            <img src="src/assets/images/images2/hpn-logo-1.webp" alt className="mx-auto d-block" />
+                            <img loading="lazy" src="src/assets/images/images2/hpn-logo-1.webp" alt className="mx-auto d-block" />
                         </div>
                         <div className="col-lg-4">
-                            <img src="src/assets/images/images2/redesign-hub-logo.webp" alt className="mx-auto d-block" />
+                            <img loading="lazy" src="src/assets/images/images2/redesign-hub-logo.webp" alt className="mx-auto d-block" />
                         </div>
                     </div>
                 </div>
@@ -269,14 +269,14 @@ function Bussinessdirectorydata() {
                         </h3>
                         <div className="services-list d-md-flex justify-content-around">
                             <ul className>
-                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Advanced Search and Filter Functionality</li>
-                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />  User-Friendly Business Listings</li>
-                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />  Mobile and SEO-Optimized Design</li>
+                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Advanced Search and Filter Functionality</li>
+                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />  User-Friendly Business Listings</li>
+                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />  Mobile and SEO-Optimized Design</li>
                             </ul>
                             <ul className>
-                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />  Reviews and Ratings Integration</li>
-                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />  Easy Admin Panel for Updates</li>
-                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />  Monetization Features (e.g., paid listings,
+                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />  Reviews and Ratings Integration</li>
+                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />  Easy Admin Panel for Updates</li>
+                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />  Monetization Features (e.g., paid listings,
                                     advertisements)</li>
                             </ul>
                         </div>

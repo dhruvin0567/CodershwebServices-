@@ -6,7 +6,7 @@ function HeaderButton({ setShowSideMenu }) {
 				className="aximo-default-btn aximo-header-btn outline-btn pill barger-menu"
 				onClick={() => setShowSideMenu(true)}
 			>
-				<img src={BargerMenuImg} alt="BargerMenuImg" />
+				<img loading="lazy" src={BargerMenuImg} alt="BargerMenuImg" />
 				Menu
 			</button>
 		</div>

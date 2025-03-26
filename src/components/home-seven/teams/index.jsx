@@ -54,7 +54,7 @@ function Teams() {
 				</div>
 			</div>
 			<div className="aximo-team-shapev7">
-				<img src={HeroShape} alt="shape" />
+				<img loading="lazy" src={HeroShape} alt="shape" />
 			</div>
 		</div>
 	);

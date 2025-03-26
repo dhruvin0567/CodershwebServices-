@@ -19,7 +19,7 @@ function ResetForm() {
 						<span className="aximo-title-animation">
 							Reset Password
 							<span className="aximo-title-icon">
-								<img src={StarImg} alt="star" />
+								<img loading="lazy" src={StarImg} alt="star" />
 							</span>
 						</span>
 					</h2>

@@ -3,7 +3,7 @@ function ProjectCard({ project: { title, description, img } }) {
 	return (
 		<div className="swiper-slide">
 			<div className="aximo-project-thumb">
-				<img src={img} alt={title} />
+				<img loading="lazy" src={img} alt={title} />
 				<div className="aximo-project-wrap">
 					<div className="aximo-project-data">
 						<Link to="/case-studies">

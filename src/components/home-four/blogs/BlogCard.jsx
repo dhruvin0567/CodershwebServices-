@@ -4,7 +4,7 @@ function BlogCard({ blog: { title, category, date, img } }) {
 		<div className="aximo-blog-wrap">
 			<div className="aximo-blog-thumb">
 				<Link to="/single-blog">
-					<img src={img} alt={title} />
+					<img loading="lazy" src={img} alt={title} />
 				</Link>
 			</div>
 			<div className="aximo-blog-content">

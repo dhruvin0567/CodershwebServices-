@@ -4,7 +4,7 @@ function PricingCard({ pricing: { plan, price, img, services, active } }) {
 	return (
 		<div className="aximo-pricing-wrap">
 			<div className="aximo-pricing-header">
-				<img src={img} alt={plan} />
+				<img loading="lazy" src={img} alt={plan} />
 				<h3>{plan}</h3>
 			</div>
 			<div className="aximo-pricing-price">
@@ -14,7 +14,7 @@ function PricingCard({ pricing: { plan, price, img, services, active } }) {
 				<ul>
 					{services.map((service) => (
 						<li key={service}>
-							<img src={LikeImg} alt="like" />
+							<img loading="lazy" src={LikeImg} alt="like" />
 							{service}
 						</li>
 					))}

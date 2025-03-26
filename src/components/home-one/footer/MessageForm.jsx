@@ -98,7 +98,7 @@ function MessageForm() {
 			<button id="aximo-submit-btn" type="submit">
 				Send message{" "}
 				<span>
-					<img src={ArrowRight3Img} alt="ArrowRight3Img" />
+					<img loading="lazy" src={ArrowRight3Img} alt="ArrowRight3Img" />
 				</span>
 			</button>
 		</form>

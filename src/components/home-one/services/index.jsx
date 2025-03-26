@@ -12,7 +12,7 @@ function Services({ services }) {
 						<span className="aximo-title-animation">
 							Design & Developmnet
 							<span className="aximo-title-icon" style={{ right: "-30px", position: "relative" }}>
-								<img src={Star2Img} alt="Star2Img" />
+								<img loading="lazy" src={Star2Img} alt="Star2Img" />
 							</span>
 						</span>
 					</h2>

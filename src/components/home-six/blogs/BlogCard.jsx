@@ -6,7 +6,7 @@ function BlogCard({ blog: { title, content, img } }) {
 			<div className="aximo-blog-wrap2">
 				<div className="aximo-blog-thumb2">
 					<Link to="#">
-						<img src={img} alt={title} />
+						<img loading="lazy" src={img} alt={title} />
 					</Link>
 				</div>
 				<div className="aximo-blog-content3">

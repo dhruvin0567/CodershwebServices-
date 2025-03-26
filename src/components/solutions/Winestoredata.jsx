@@ -78,31 +78,31 @@ const ReviewSection = () => {
                             }}
                         >
                             <SwiperSlide>
-                                <img src={Logo1Img} alt="Brand Logo" />
+                                <img loading="lazy" src={Logo1Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo2Img} alt="Brand Logo" />
+                                <img loading="lazy" src={Logo2Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo3Img} alt="Brand Logo" />
+                                <img loading="lazy" src={Logo3Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo4Img} alt="Brand Logo" />
+                                <img loading="lazy" src={Logo4Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo5Img} alt="Brand Logo" />
+                                <img loading="lazy" src={Logo5Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo6Img} alt="Brand Logo" />
+                                <img loading="lazy" src={Logo6Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo7Img} alt="Brand Logo" />
+                                <img loading="lazy" src={Logo7Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo8Img} alt="Brand Logo" />
+                                <img loading="lazy" src={Logo8Img} alt="Brand Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={Logo9Img} alt="Brand Logo" />
+                                <img loading="lazy" src={Logo9Img} alt="Brand Logo" />
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -142,7 +142,7 @@ const ReviewSection = () => {
                         >
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.1s">
-                                    <img src={Slider1Img} alt="Credi Coach" />
+                                    <img loading="lazy" src={Slider1Img} alt="Credi Coach" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -173,7 +173,7 @@ const ReviewSection = () => {
                             {/* Slide 2 */}
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.2s">
-                                    <img src={Slider2Img} alt="Credit Saint" />
+                                    <img loading="lazy" src={Slider2Img} alt="Credit Saint" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -204,7 +204,7 @@ const ReviewSection = () => {
                             {/* Slide 3 */}
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.3s">
-                                    <img src={Slider3Img} alt="Credit 101" />
+                                    <img loading="lazy" src={Slider3Img} alt="Credit 101" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -235,7 +235,7 @@ const ReviewSection = () => {
                             {/* Slide 4 */}
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.4s">
-                                    <img src={Slider4Img} alt="Framework Credit" />
+                                    <img loading="lazy" src={Slider4Img} alt="Framework Credit" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -266,7 +266,7 @@ const ReviewSection = () => {
                             {/* Slide 5 */}
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.5s">
-                                    <img src={Slider5Img} alt="Premier Credit" />
+                                    <img loading="lazy" src={Slider5Img} alt="Premier Credit" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -297,7 +297,7 @@ const ReviewSection = () => {
                             {/* Slide 1 */}
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.6s">
-                                    <img src={Slider6Img} alt="SD Capital" />
+                                    <img loading="lazy" src={Slider6Img} alt="SD Capital" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -318,7 +318,7 @@ const ReviewSection = () => {
                             {/* Slide 2 */}
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.7s">
-                                    <img src={Slider7Img} alt="Stellar Credit" />
+                                    <img loading="lazy" src={Slider7Img} alt="Stellar Credit" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -339,7 +339,7 @@ const ReviewSection = () => {
                             {/* Slide 3 */}
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.7s">
-                                    <img src={Slider8Img} alt="Stellar Credit" />
+                                    <img loading="lazy" src={Slider8Img} alt="Stellar Credit" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -360,7 +360,7 @@ const ReviewSection = () => {
                             {/* Slide 4 */}
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.7s">
-                                    <img src={Slider9Img} alt="Stellar Credit" />
+                                    <img loading="lazy" src={Slider9Img} alt="Stellar Credit" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -381,7 +381,7 @@ const ReviewSection = () => {
                             {/* Slide 5 */}
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.7s">
-                                    <img src={Slider10Img} alt="Stellar Credit" />
+                                    <img loading="lazy" src={Slider10Img} alt="Stellar Credit" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -409,7 +409,7 @@ const ReviewSection = () => {
                             <span className="aximo-title-animation">
                                 Elevate Your Wine Store’s
                                 <span className="aximo-title-icon">
-                                    <img src={Star2Img} alt="Star2Img" />
+                                    <img loading="lazy" src={Star2Img} alt="Star2Img" />
                                 </span>
                             </span>
                             <br />
@@ -437,14 +437,14 @@ const ReviewSection = () => {
                         </h3>
                         <div className="services-list d-md-flex justify-content-around">
                             <ul className>
-                                <li> <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Modern and Elegant Website Redesign</li>
-                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Mobile-Friendly and Responsive Design</li>
-                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Streamlined Product Browsing and Search</li>
+                                <li> <img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Modern and Elegant Website Redesign</li>
+                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Mobile-Friendly and Responsive Design</li>
+                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Streamlined Product Browsing and Search</li>
                             </ul>
                             <ul className>
-                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Simplified Checkout to Reduce Abandonment</li>
-                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Integrated Inventory and Shipping Systems </li>
-                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Data-Driven CRO Strategies </li>
+                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Simplified Checkout to Reduce Abandonment</li>
+                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Integrated Inventory and Shipping Systems </li>
+                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Data-Driven CRO Strategies </li>
                             </ul>
                         </div>
                     </div>

@@ -14,7 +14,7 @@ function PricingFaq() {
 									<span className="aximo-title-animation">
 										Read our FAQ
 										<span className="aximo-title-icon">
-											<img src={StarImg} alt="star" />
+											<img loading="lazy" src={StarImg} alt="star" />
 										</span>
 									</span>
 									for clarification
@@ -27,7 +27,7 @@ function PricingFaq() {
 							<Link className="aximo-errors-btn contact-us" to="/contact-us">
 								Contact us{" "}
 								<span>
-									<img src={ArrowRightImg} alt="arrow right" />
+									<img loading="lazy" src={ArrowRightImg} alt="arrow right" />
 								</span>
 							</Link>
 						</div>
@@ -35,7 +35,7 @@ function PricingFaq() {
 							<div className="aximo-accordion-normal-wrap m_top_responsive">
 								<div className="aximo-accordion-normal-item">
 									<div className="aximo-accordion-normal-icon">
-										<img src={QuestionImg} alt="question icon" />
+										<img loading="lazy" src={QuestionImg} alt="question icon" />
 									</div>
 									<div className="aximo-accordion-normal-data">
 										<h3>Can I buy multiple plans?</h3>
@@ -47,7 +47,7 @@ function PricingFaq() {
 								</div>
 								<div className="aximo-accordion-normal-item">
 									<div className="aximo-accordion-normal-icon">
-										<img src={QuestionImg} alt="question icon" />
+										<img loading="lazy" src={QuestionImg} alt="question icon" />
 									</div>
 									<div className="aximo-accordion-normal-data">
 										<h3>What is the cancelation policy?</h3>
@@ -59,7 +59,7 @@ function PricingFaq() {
 								</div>
 								<div className="aximo-accordion-normal-item">
 									<div className="aximo-accordion-normal-icon">
-										<img src={QuestionImg} alt="question icon" />
+										<img loading="lazy" src={QuestionImg} alt="question icon" />
 									</div>
 									<div className="aximo-accordion-normal-data">
 										<h3>How much does design work cost?</h3>

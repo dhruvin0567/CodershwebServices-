@@ -6,7 +6,7 @@ function TestimonialCard({ testimonial: { rating, content, author, designation, 
 				<ul>
 					{[...Array(rating)].map(() => (
 						<li key={crypto.randomUUID()}>
-							<img src={StarImg} alt="StarImg" />
+							<img loading="lazy" src={StarImg} alt="StarImg" />
 						</li>
 					))}
 				</ul>
@@ -16,7 +16,7 @@ function TestimonialCard({ testimonial: { rating, content, author, designation, 
 			</div>
 			<div className="aximo-testimonial-author">
 				<div className="aximo-testimonial-author-thumb">
-					<img src={img} alt="author" />
+					<img loading="lazy" src={img} alt="author" />
 				</div>
 				<div className="aximo-testimonial-author-data">
 					<p>

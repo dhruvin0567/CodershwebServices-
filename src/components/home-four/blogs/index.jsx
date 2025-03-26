@@ -38,7 +38,7 @@ function Blogs() {
 			</div>
 
 			<div className="aximo-v4-shape3">
-				<img src={Shape5Img} alt="Shape5Img" />
+				<img loading="lazy" src={Shape5Img} alt="Shape5Img" />
 			</div>
 		</div>
 	);

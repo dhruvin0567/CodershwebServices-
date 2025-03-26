@@ -48,7 +48,7 @@ function Projects() {
 				</div>
 			</div>
 			<div className="aximo-p-shape">
-				<img src={Shape2Img} alt="Shape" />
+				<img loading="lazy" src={Shape2Img} alt="Shape" />
 			</div>
 		</div>
 	);

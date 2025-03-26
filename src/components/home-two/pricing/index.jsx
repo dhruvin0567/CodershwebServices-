@@ -65,7 +65,7 @@ function Pricing() {
 			</div>
 
 			<div className="aximo-pricing-shape">
-				<img src={Shape3Img} alt="Shape3Img" />
+				<img loading="lazy" src={Shape3Img} alt="Shape3Img" />
 			</div>
 		</div>
 	);

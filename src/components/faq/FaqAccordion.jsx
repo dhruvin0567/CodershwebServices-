@@ -9,7 +9,7 @@ function FaqAccordion() {
 						<span className="aximo-title-animation">
 							These FAQs help
 							<span className="aximo-title-icon">
-								<img src={Star2Img} alt="Star" />
+								<img loading="lazy" src={Star2Img} alt="Star" />
 							</span>
 						</span>
 						clients learn about us

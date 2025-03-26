@@ -21,7 +21,7 @@ function SingleBrandCustom() {
             </div>
 
             <div className="case-study-hero-section">
-                <img src={BrandImg1} alt="Company_Site" className="img-fluid" />
+                <img loading="lazy" src={BrandImg1} alt="Company_Site" className="img-fluid" />
             </div>
 
             <div className="cs-text">
@@ -80,7 +80,7 @@ function SingleBrandCustom() {
 
             <div className="image-section">
                 <div className="case-study-section-img">
-                    <img src={BrandImg2} alt="LaptopView_Of_Site" />
+                    <img loading="lazy" src={BrandImg2} alt="LaptopView_Of_Site" />
                 </div>
             </div>
 
@@ -100,12 +100,12 @@ function SingleBrandCustom() {
                     <div className="row">
                         <div className="col-6 ">
                             <div className="cs-img">
-                                <img src={BrandImg3} alt="LaptopView_Of_Site " />
+                                <img loading="lazy" src={BrandImg3} alt="LaptopView_Of_Site " />
                             </div>
                         </div>
                         <div className="col-6">
                             <div className="cs-img">
-                                <img src={BrandImg4} alt="MobileView_Of_Site " />
+                                <img loading="lazy" src={BrandImg4} alt="MobileView_Of_Site " />
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ function SingleBrandCustom() {
                 <div className="container-lg cs-images-section-container px-0">
 
                     <div className="cs-image-section d-flex justify-content-center pb-5">
-                        <img src={BrandImg2} alt=" " />
+                        <img loading="lazy" src={BrandImg2} alt=" " />
                     </div>
 
                 </div>
@@ -143,13 +143,13 @@ function SingleBrandCustom() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4 col-12 my-4 my-sm-4 my-md-auto ">
-                            <img src={Brandcard1} style={{ borderRadius: "25px" }} alt=" " />
+                            <img loading="lazy" src={Brandcard1} style={{ borderRadius: "25px" }} alt=" " />
                         </div>
                         <div className="col-md-4 col-12 my-4 my-sm-4 my-md-auto ">
-                            <img src={Brandcard2} style={{ borderRadius: "25px" }} alt=" " />
+                            <img loading="lazy" src={Brandcard2} style={{ borderRadius: "25px" }} alt=" " />
                         </div>
                         <div className="col-md-4 col-12 my-4 my-sm-4 my-md-auto">
-                            <img src={Brandcard3} style={{ borderRadius: "25px" }} alt=" " />
+                            <img loading="lazy" src={Brandcard3} style={{ borderRadius: "25px" }} alt=" " />
                         </div>
                     </div>
                 </div>

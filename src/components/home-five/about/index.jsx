@@ -9,7 +9,7 @@ function About() {
 				<div className="row">
 					<div className="col-lg-5">
 						<FadeInLeft className="aximo-content-thumb3 ">
-							<img src={Thumb1Img} alt="Thumb" />
+							<img loading="lazy" src={Thumb1Img} alt="Thumb" />
 						</FadeInLeft>
 					</div>
 					<div className="col-lg-7 d-flex align-items-center">

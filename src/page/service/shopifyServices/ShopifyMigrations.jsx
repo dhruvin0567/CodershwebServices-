@@ -197,7 +197,7 @@ function ShopifyMigrations() {
                     <div className="row">
                         <div className="col-lg-5 order-lg-2">
                             <FadeInRight className="aximo-content-thumb shopify-services-img">
-                                <img src={ThumbImg1} alt="thumb" />
+                                <img loading="lazy" src={ThumbImg1} alt="thumb" />
                             </FadeInRight>
                         </div>
                         <div className="col-lg-7 shopify-services-data">
@@ -225,7 +225,7 @@ function ShopifyMigrations() {
                     <div className="row d-flex">
                         <div className="col-lg-5">
                             <FadeInLeft className="aximo-content-thumb shopify-services-img">
-                                <img src={ThumbImg2} alt="Thumb" />
+                                <img loading="lazy" src={ThumbImg2} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-7  colo-12  shopify-services-data">
@@ -374,7 +374,7 @@ function ShopifyMigrations() {
                     </div>
                 </div>
                 <div className="aximo-cta-shape3">
-                    <img src={Shape4Img} alt="shape" />
+                    <img loading="lazy" src={Shape4Img} alt="shape" />
                 </div>
             </div>
 
@@ -387,7 +387,7 @@ function ShopifyMigrations() {
                                     {featuresData.map((feature, index) => (
                                         <FadeInStagger key={feature.id} index={index} className="col-sm-6 col-lg-4 col-md-4 col-6" >
                                             <div className="aximo-iconbox-wrap2" style={{ padding: "0px" }}>
-                                                <img src={feature.img} alt="Illustrator1Img" />
+                                                <img loading="lazy" src={feature.img} alt="Illustrator1Img" />
                                             </div>
                                         </FadeInStagger>
                                     ))}
@@ -410,19 +410,19 @@ function ShopifyMigrations() {
                                             <h3>Our Advantage:</h3>
                                             <ul>
                                                 <li>
-                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     Monthly Payment
                                                 </li>
                                                 <li>
-                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     No Setup Expenses
                                                 </li>
                                                 <li>
-                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     Transparent Billing with Tracked Hours
                                                 </li>
                                                 <li>
-                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     Assurance of No Hidden Fees
                                                 </li>
                                             </ul>

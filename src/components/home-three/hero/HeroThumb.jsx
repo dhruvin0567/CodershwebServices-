@@ -10,15 +10,15 @@ function HeroThumb() {
 			<div className="aximo-hero-thumb3">
 				<LazyLoadImage src={ThumbImg} alt=" Thumb" effect="blur" />
 				<div className="aximo-hero-thumb-shape2">
-					<img src={ShapeMonitorImg} alt="ShapeMonitorImg" />
+					<img loading="lazy" src={ShapeMonitorImg} alt="ShapeMonitorImg" />
 				</div>
 				<div className="aximo-hero-thumb-shape3">
-					<img src={ShapeAynaImg} alt="ShapeAynaImg" />
+					<img loading="lazy" src={ShapeAynaImg} alt="ShapeAynaImg" />
 				</div>
 			</div>
 			<div className="aximo-hero-thumb-shape1">
 				<FadeInRight>
-					<img src={StarShapeImg} alt="StarShapeImg" />
+					<img loading="lazy" src={StarShapeImg} alt="StarShapeImg" />
 				</FadeInRight>
 			</div>
 		</div>

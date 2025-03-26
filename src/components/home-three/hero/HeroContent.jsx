@@ -30,11 +30,11 @@ function HeroContent() {
 				<div className="aximo-hero-rating">
 					<ul>
 						<li>
-							<img src={StarImg} alt="StarImg" />
-							<img src={StarImg} alt="StarImg" />
-							<img src={StarImg} alt="StarImg" />
-							<img src={StarImg} alt="StarImg" />
-							<img src={StarImg} alt="StarImg" />
+							<img loading="lazy" src={StarImg} alt="StarImg" />
+							<img loading="lazy" src={StarImg} alt="StarImg" />
+							<img loading="lazy" src={StarImg} alt="StarImg" />
+							<img loading="lazy" src={StarImg} alt="StarImg" />
+							<img loading="lazy" src={StarImg} alt="StarImg" />
 						</li>
 						<li>4.8/5 stars based on 1K client reviews</li>
 					</ul>

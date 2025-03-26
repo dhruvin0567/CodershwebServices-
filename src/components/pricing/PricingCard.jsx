@@ -23,7 +23,7 @@ function PricingCard({ plan: { title, description, price, features, highlighted 
 				<ul>
 					{features.map((feature) => (
 						<li key={feature}>
-							<img src={CheckImg} alt="check" />
+							<img loading="lazy" src={CheckImg} alt="check" />
 							{feature}
 						</li>
 					))}

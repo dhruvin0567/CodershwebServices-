@@ -14,7 +14,7 @@ function HeroContent() {
 					<h1 className="light-text hero-section-title">
 						Trusted Ecommerce
 						<span className="aximo-title-animation">
-							<img src={StarImg} alt="StarImg" style={{ top: '7px' }} />
+							<img loading="lazy" src={StarImg} alt="StarImg" style={{ top: '7px' }} />
 
 							& Shopify Agency
 						</span>{" "}
@@ -29,13 +29,13 @@ function HeroContent() {
 					<div className="aximo-hero-user-wrap">
 						<div className="aximo-hero-user-thumb">
 							<div className="aximo-hero-user-thumb-item">
-								<img src={User1Img} alt="User1Img" />
+								<img loading="lazy" src={User1Img} alt="User1Img" />
 							</div>
 							<div className="aximo-hero-user-thumb-item">
-								<img src={User3Img} alt="User3Img" />
+								<img loading="lazy" src={User3Img} alt="User3Img" />
 							</div>
 							<div className="aximo-hero-user-thumb-item">
-								<img src={User2Img} alt="User2Img" />
+								<img loading="lazy" src={User2Img} alt="User2Img" />
 							</div>
 						</div>
 						<div className="aximo-hero-user-data">
@@ -48,7 +48,7 @@ function HeroContent() {
 						Let's Talk About Your Project <i className="icon-call"></i>
 					</Link>
 					<div className="aximo-hero-shape">
-						<img src={ShapeImg} alt="ShapeImg" />
+						<img loading="lazy" src={ShapeImg} alt="ShapeImg" />
 					</div>
 				</FadeInStaggerTwoChildren>
 			</FadeInStaggerTwo>

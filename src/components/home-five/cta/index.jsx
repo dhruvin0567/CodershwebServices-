@@ -20,7 +20,7 @@ function Cta() {
 				</div>
 			</div>
 			<div className="aximo-cta-shape3">
-				<img src={Shape4Img} alt="shape" />
+				<img loading="lazy" src={Shape4Img} alt="shape" />
 			</div>
 		</div>
 	);

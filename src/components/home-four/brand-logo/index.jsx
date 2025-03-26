@@ -132,7 +132,7 @@ function BrandLogo() {
 						{sliderData.map((item) => (
 							<SwiperSlide key={item.id}>
 								<div className="aximo-brandlogo-item">
-									<img src={item.img} alt="brand logo" />
+									<img loading="lazy" src={item.img} alt="brand logo" />
 								</div>
 							</SwiperSlide>
 						))}

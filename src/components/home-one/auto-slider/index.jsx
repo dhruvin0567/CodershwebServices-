@@ -65,7 +65,7 @@ function AutoSlider() {
 							<SwiperSlide key={item.id}>
 								<div className="aximo-auto-slider-item">
 									<h3>{item.title}</h3>
-									<img src={item.img} alt={item.title} />
+									<img loading="lazy" src={item.img} alt={item.title} />
 								</div>
 							</SwiperSlide>
 						))}

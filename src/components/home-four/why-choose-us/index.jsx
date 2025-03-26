@@ -8,9 +8,9 @@ function WhyChooseUs() {
 				<div className="row">
 					<div className="col-lg-5">
 						<FadeInLeft className="aximo-content-thumb border-radius ">
-							<img src={Thumb1Img} alt="Thumb1Img" />
+							<img loading="lazy" src={Thumb1Img} alt="Thumb1Img" />
 							<div className="aximo-thumb-shape4">
-								<img src={Shape2Img} alt="Shape2Img" />
+								<img loading="lazy" src={Shape2Img} alt="Shape2Img" />
 							</div>
 						</FadeInLeft>
 					</div>

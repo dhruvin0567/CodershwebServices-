@@ -11,7 +11,7 @@ function SingleBlog2data() {
                                 <h1 className="blog-title mb-4">Unleashing the Power of Shopify: A Phenomenal $9.3 Billion BFCM
                                     Triumph!
                                 </h1>
-                                <img src="/src/assets/images/images2/Unleashing-the-Power-of-Shopify.jpg.webp" alt />
+                                <img loading="lazy" src="/src/assets/images/images2/Unleashing-the-Power-of-Shopify.jpg.webp" alt />
                                 <h3>Celebrating Shopify Merchants’ Record-Breaking Success
                                 </h3>
                                 <p>In the fast-paced realm of e-commerce, Shopify Inc. (NYSE, TSX: SHOP) has yet again etched
@@ -90,7 +90,7 @@ function SingleBlog2data() {
                                     🚀🛍️ #ShopifyTriumph #EcommerceSuccess #OptimizeForSuccess 🌐👩‍💻</p>
                             </div>
                             <div className="author">
-                                <img src="/src/assets/images/images2/codersh.webp" alt />
+                                <img loading="lazy" src="/src/assets/images/images2/codersh.webp" alt />
                                 <div className="comment">
                                     <b className="mb-0">Author: <span>Harsh Shah</span></b>
                                     <p>Mr. Harsh Shah is the founder and CEO of Codersh Web Services. He is a focused,

@@ -5,7 +5,7 @@ function BlogCard({ blog: { title, category, content, date, img } }) {
 	return (
 		<>
 			<div className="post-thumbnail">
-				<img src={img} alt={title} />
+				<img loading="lazy" src={img} alt={title} />
 			</div>
 			<div className="post-content">
 				<div className="post-meta">
@@ -19,7 +19,7 @@ function BlogCard({ blog: { title, category, content, date, img } }) {
 				</Link>
 				<p>{content}...</p>
 				<Link className="post-read-more" to="/single-blog">
-					Read more <img src={ArrowRight} alt="Arrow Right" />
+					Read more <img loading="lazy" src={ArrowRight} alt="Arrow Right" />
 				</Link>
 			</div>
 		</>

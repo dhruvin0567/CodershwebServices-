@@ -8,7 +8,7 @@ function AboutTwo() {
 				<div className="row">
 					<div className="col-lg-5 order-lg-2">
 						<FadeInRight className="aximo-content-thumb ">
-							<img src={ThumbImg} alt="thumb" />
+							<img loading="lazy" src={ThumbImg} alt="thumb" />
 						</FadeInRight>
 					</div>
 					<div className="col-lg-7">
@@ -22,12 +22,12 @@ function AboutTwo() {
 							<div className="aximo-list-icon2">
 								<ul>
 									<li>
-										<img src={CheckImg} alt="check mark" />
+										<img loading="lazy" src={CheckImg} alt="check mark" />
 										<span>Creative Development: </span> We are responsible for creating attractive
 										and eye-catching advertisements across various platforms.
 									</li>
 									<li>
-										<img src={CheckImg} alt="check mark" />
+										<img loading="lazy" src={CheckImg} alt="check mark" />
 										<span>Media Planning and Buying:</span> We negotiate and purchase advertising
 										space or time, optimizing placement for maximum impact.
 									</li>
