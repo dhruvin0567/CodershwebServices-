@@ -16,7 +16,7 @@ function TestimonialCard({ testimonial: { rating, title, description, author, de
 			</div>
 			<div className="aximo-testimonial-author">
 				<div className="aximo-testimonial-author-thumb">
-					<img loading="lazy" src={img} alt={title} />
+					<img src={img} alt={title} />
 				</div>
 				<div className="aximo-testimonial-author-data">
 					<p>

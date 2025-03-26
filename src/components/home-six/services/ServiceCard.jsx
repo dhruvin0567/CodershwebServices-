@@ -4,13 +4,13 @@ function ServiceCard({ service: { title, description, img, bgColor } }) {
 	return (
 		<div className={`aximo-iconbox-wrap8 ${bgColor}`}>
 			<div className="aximo-iconbox-icon8">
-				<img loading="lazy" src={img} alt="icon" />
+				<img src={img} alt="icon" />
 			</div>
 			<div className="aximo-iconbox-data8">
 				<h3>{title}</h3>
 				<p>{description}</p>
 				<Link to="/single-service">
-					<img loading="lazy" src={ArrowDarkImg} alt="Arrow" />
+					<img src={ArrowDarkImg} alt="Arrow" />
 				</Link>
 			</div>
 		</div>

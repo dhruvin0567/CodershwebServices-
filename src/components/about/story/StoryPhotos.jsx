@@ -10,32 +10,32 @@ function StoryPhotos() {
 		<FadeInStaggerTwo className="row">
 			<FadeInStaggerTwoChildren className="col-lg-8">
 				<div className="aximo-story-thumb">
-					<img loading="lazy" src={Story1Img} alt="Story1Img" />
+					<img src={Story1Img} alt="Story1Img" />
 				</div>
 			</FadeInStaggerTwoChildren>
 			<FadeInStaggerTwoChildren className="col-lg-4">
 				<div className="aximo-story-thumb">
-					<img loading="lazy" src={Story2Img} alt="StroryIMg 2" />
+					<img src={Story2Img} alt="StroryIMg 2" />
 				</div>
 			</FadeInStaggerTwoChildren>
 			<FadeInStaggerTwoChildren className="col-lg-4">
 				<div className="aximo-story-thumb">
-					<img loading="lazy" src={Story3Img} alt="StoryImg 3" />
+					<img src={Story3Img} alt="StoryImg 3" />
 				</div>
 			</FadeInStaggerTwoChildren>
 			<FadeInStaggerTwoChildren className="col-lg-8">
 				<div className="aximo-story-thumb">
-					<img loading="lazy" src={Story4Img} alt="StoryImg 4" />
+					<img src={Story4Img} alt="StoryImg 4" />
 				</div>
 			</FadeInStaggerTwoChildren>
 			<FadeInStaggerTwoChildren className="col-lg-8">
 				<div className="aximo-story-thumb">
-					<img loading="lazy" src={Story5Img} alt="StoryImg 5" />
+					<img src={Story5Img} alt="StoryImg 5" />
 				</div>
 			</FadeInStaggerTwoChildren>
 			<FadeInStaggerTwoChildren className="col-lg-4">
 				<div className="aximo-story-thumb">
-					<img loading="lazy" src={Story6Img} alt="StroryIMg 6" />
+					<img src={Story6Img} alt="StroryIMg 6" />
 				</div>
 			</FadeInStaggerTwoChildren>
 		</FadeInStaggerTwo>

@@ -2,7 +2,7 @@ function FeatureCard({ feature: { img, title, description } }) {
 	return (
 		<div className="aximo-iconbox-wrap6">
 			<div className="aximo-iconbox-icon6">
-				<img loading="lazy" src={img} alt={title} />
+				<img src={img} alt={title} />
 			</div>
 			<div className="aximo-iconbox-data6">
 				<h4>{title}</h4>

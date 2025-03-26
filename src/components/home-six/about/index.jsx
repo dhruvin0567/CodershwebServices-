@@ -16,7 +16,7 @@ function About() {
 				<div className="row">
 					<div className="col-lg-6 order-lg-2">
 						<FadeInUp className="aximo-v6-thumb1">
-							<img loading="lazy" src={Thumb1Img} alt="About" />
+							<img src={Thumb1Img} alt="About" />
 						</FadeInUp>
 					</div>
 					<div className="col-lg-6 d-flex align-items-center">
@@ -67,7 +67,7 @@ function About() {
 				</div>
 			</div>
 			<div className="aximo-footer-shape">
-				<img loading="lazy" src={ShapeImg} alt="Shape" />
+				<img src={ShapeImg} alt="Shape" />
 			</div>
 		</div>
 	);

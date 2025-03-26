@@ -31,7 +31,7 @@ function RecentPosts() {
 				<div className="post-item" key={post.id}>
 					<div className="post-thumb">
 						<Link to="/single-blog">
-							<img loading="lazy" src={post.img} alt={post.title} />
+							<img src={post.img} alt={post.title} />
 						</Link>
 					</div>
 					<div className="post-text">

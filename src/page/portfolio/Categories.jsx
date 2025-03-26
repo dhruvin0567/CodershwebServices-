@@ -44,7 +44,7 @@ const projectCategories = [
 const ProjectCard = ({ project }) => (
     <div className="col-lg-3 col-sm-6 project-card" data-category={project.category}>
         <div className="imagescrolling-wrapper portfolio-image-wrapper">
-            <img loading="lazy" src={project.imgSrc} alt="ProjectsImg" className="image-scrolling portfolio-image" />
+            <img src={project.imgSrc} alt="ProjectsImg" className="image-scrolling portfolio-image" />
         </div>
         <h3 className="project-name py-3 text-center">{project.name}</h3>
     </div>

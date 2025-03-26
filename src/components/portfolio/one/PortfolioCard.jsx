@@ -5,10 +5,10 @@ function PortfolioCard({ portfolio: { title, description, img } }) {
 	return (
 		<>
 			<div className="aximo-project-thumb3">
-				<img loading="lazy" src={img} alt={title} />
+				<img src={img} alt={title} />
 
 				<Link to="/single-portfolio" className="aximo-project-link">
-					<img loading="lazy" src={LinkImg} alt="Link" />
+					<img src={LinkImg} alt="Link" />
 				</Link>
 			</div>
 			<div className="aximo-project-data3">

@@ -67,25 +67,25 @@ function Creditrepairdata() {
                             }}
                         >
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo1Img} alt="Logo 1" />
+                                <img src={Logo1Img} alt="Logo 1" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo2Img} alt="Logo 2" />
+                                <img src={Logo2Img} alt="Logo 2" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo3Img} alt="Logo 3" />
+                                <img src={Logo3Img} alt="Logo 3" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo4Img} alt="Logo 4" />
+                                <img src={Logo4Img} alt="Logo 4" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo5Img} alt="Logo 5" />
+                                <img src={Logo5Img} alt="Logo 5" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo6Img} alt="Credit 101 Logo" />
+                                <img src={Logo6Img} alt="Credit 101 Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo7Img} alt="Credit Saint Logo" />
+                                <img src={Logo7Img} alt="Credit Saint Logo" />
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -125,7 +125,7 @@ function Creditrepairdata() {
                         >
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.1s">
-                                    <img loading="lazy" src={Slider1Img} alt="Credi Coach" />
+                                    <img src={Slider1Img} alt="Credi Coach" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -149,7 +149,7 @@ function Creditrepairdata() {
 
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.2s">
-                                    <img loading="lazy" src={Slider2Img} alt="Credit Saint" />
+                                    <img src={Slider2Img} alt="Credit Saint" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -173,7 +173,7 @@ function Creditrepairdata() {
 
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.3s">
-                                    <img loading="lazy" src={Slider3Img} alt="Credit 101" />
+                                    <img src={Slider3Img} alt="Credit 101" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -197,7 +197,7 @@ function Creditrepairdata() {
 
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.4s">
-                                    <img loading="lazy" src={Slider4Img} alt="Framework Credit" />
+                                    <img src={Slider4Img} alt="Framework Credit" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -220,7 +220,7 @@ function Creditrepairdata() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.5s">
-                                    <img loading="lazy" src={Slider5Img} alt="Premier Credit" />
+                                    <img src={Slider5Img} alt="Premier Credit" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -244,7 +244,7 @@ function Creditrepairdata() {
 
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.6s">
-                                    <img loading="lazy" src={Slider6Img} alt="SD Capital" />
+                                    <img src={Slider6Img} alt="SD Capital" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -268,7 +268,7 @@ function Creditrepairdata() {
 
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.7s">
-                                    <img loading="lazy" src={Slider7Img} alt="Stellar Credit" />
+                                    <img src={Slider7Img} alt="Stellar Credit" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -301,7 +301,7 @@ function Creditrepairdata() {
                             <span className="aximo-title-animation">
                                 Your Partner in Building
                                 <span className="aximo-title-icon">
-                                    <img loading="lazy" src={Star2Img} alt="Star2Img" />
+                                    <img src={Star2Img} alt="Star2Img" />
                                 </span>
                             </span>
                             <br />
@@ -333,14 +333,14 @@ function Creditrepairdata() {
                         </h3>
                         <div className="services-list d-md-flex justify-content-around">
                             <ul className>
-                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Mobile-Responsive Design</li>
-                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> SEO-Optimized Pages</li>
-                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Integrated Lead Capture Forms</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Mobile-Responsive Design</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> SEO-Optimized Pages</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Integrated Lead Capture Forms</li>
                             </ul>
                             <ul className>
-                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> User-Friendly Dashboard</li>
-                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Fast Load Times</li>
-                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Secure Payment Integration (if applicable)</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> User-Friendly Dashboard</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Fast Load Times</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Secure Payment Integration (if applicable)</li>
                             </ul>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ function Video() {
 	const [isOpen, setOpen] = useState(false);
 	return (
 		<FadeInUp className="aximo-video-section2 extra-side-margin">
-			<img loading="lazy" src={VideoBg} alt="VideoBg" />
+			<img src={VideoBg} alt="VideoBg" />
 			<ModalVideo
 				channel="youtube"
 				youtube={{ autoplay: 0 }}
@@ -18,13 +18,13 @@ function Video() {
 			/>
 
 			<button className="aximo-video-popup play-btn-size video-init" onClick={() => setOpen(true)}>
-				<img loading="lazy" src={PlayBtnImg} alt="PlayBtnImg" />
+				<img src={PlayBtnImg} alt="PlayBtnImg" />
 				<div className="waves wave-1"></div>
 				<div className="waves wave-2"></div>
 				<div className="waves wave-3"></div>
 			</button>
 			<div className="aximo-video-shape">
-				<img loading="lazy" src={Shape2Img} alt="Shape2Img" />
+				<img src={Shape2Img} alt="Shape2Img" />
 			</div>
 		</FadeInUp>
 	);

@@ -170,7 +170,7 @@ function Internationalization() {
                     <div className="row d-flex">
                         <div className="col-lg-5">
                             <FadeInLeft className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg1} alt="Thumb" />
+                                <img src={ThumbImg1} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-7  colo-12  shopify-services-data">
@@ -220,7 +220,7 @@ function Internationalization() {
                                 {faqData.faq1.map((faq) => (
                                     <div key={faq.id} className="aximo-accordion-normal-item">
                                         <div className="aximo-accordion-normal-icon">
-                                            <img loading="lazy" src={Check} alt="check" />
+                                            <img src={Check} alt="check" />
                                         </div>
                                         <div className="aximo-accordion-normal-data">
                                             <h3>{faq.title}</h3>
@@ -236,7 +236,7 @@ function Internationalization() {
                                 {faqData.faq2.map((faq) => (
                                     <div key={faq.id} className="aximo-accordion-normal-item">
                                         <div className="aximo-accordion-normal-icon">
-                                            <img loading="lazy" src={Check} alt="check" />
+                                            <img src={Check} alt="check" />
                                         </div>
                                         <div className="aximo-accordion-normal-data">
                                             <h3>{faq.title}</h3>
@@ -265,7 +265,7 @@ function Internationalization() {
                                             <h3>{item.title}</h3>
                                             <p>{item.description}</p>
                                             {/* <Link to="/single-service" className="aximo-icon">
-                                                <img loading="lazy" src={ArrowRightImg} alt="arrow right" />
+                                                <img src={ArrowRightImg} alt="arrow right" />
                                             </Link> */}
                                         </div>
                                     </div>
@@ -296,27 +296,27 @@ function Internationalization() {
 
                                             <ul>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     Custom Shopify Plus Websites
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     Tailored and Captivating Designs
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     Advanced Features and Functionalities
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     Seamless Platform Migrations
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     Strategies to Boost Conversions and Sales
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
+                                                    <img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} />
                                                     Trusted Expert Partner for Long-Term Growth
                                                 </li>
                                             </ul>
@@ -330,7 +330,7 @@ function Internationalization() {
                                     {featuresData.map((feature, index) => (
                                         <FadeInStagger key={feature.id} index={index} className="col-sm-6 col-lg-4 col-md-4 col-6" >
                                             <div className="aximo-iconbox-wrap2" style={{ padding: "0px" }}>
-                                                <img loading="lazy" src={feature.img} alt="Illustrator1Img" />
+                                                <img src={feature.img} alt="Illustrator1Img" />
                                             </div>
                                         </FadeInStagger>
                                     ))}

@@ -23,7 +23,7 @@ function TestimonialsCard() {
 				<div className="col-lg-8">
 					<div className="aximo-testimonial-wrap aximo-testimonial-wrap3">
 						<div className="aximo-testimonial-quote">
-							<img loading="lazy" src={QuoteImg} alt="QuoteImg" />
+							<img src={QuoteImg} alt="QuoteImg" />
 						</div>
 						<div className="aximo-testimonial-data">
 							<p>
@@ -34,7 +34,7 @@ function TestimonialsCard() {
 						</div>
 						<div className="aximo-testimonial-author">
 							<div className="aximo-testimonial-author-thumb">
-								<img loading="lazy" src={Thumb1Img} alt="Thumb1Img" />
+								<img src={Thumb1Img} alt="Thumb1Img" />
 							</div>
 							<div className="aximo-testimonial-author-data">
 								<span>William Jack </span>
@@ -61,7 +61,7 @@ function TestimonialsCard() {
 				<div className="col-lg-8">
 					<div className="aximo-testimonial-wrap aximo-testimonial-wrap3">
 						<div className="aximo-testimonial-quote">
-							<img loading="lazy" src={QuoteImg} alt="QuoteImg" />
+							<img src={QuoteImg} alt="QuoteImg" />
 						</div>
 						<div className="aximo-testimonial-data">
 							<p>
@@ -72,7 +72,7 @@ function TestimonialsCard() {
 						</div>
 						<div className="aximo-testimonial-author">
 							<div className="aximo-testimonial-author-thumb">
-								<img loading="lazy" src={Thumb2Img} alt="Thumb2Img" />
+								<img src={Thumb2Img} alt="Thumb2Img" />
 							</div>
 							<div className="aximo-testimonial-author-data">
 								<span>Andrew Smith </span>

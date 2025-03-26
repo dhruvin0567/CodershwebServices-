@@ -30,7 +30,7 @@ function WorkingApproach() {
 		<div className="row">
 			<div className="col-lg-5 offset-lg-1 order-lg-1">
 				<FadeInRight className="aximo-service-details-thumb2 ">
-					<img loading="lazy" src={Single2Img} alt="service" />
+					<img src={Single2Img} alt="service" />
 				</FadeInRight>
 			</div>
 			<div className="col-lg-6">
@@ -39,7 +39,7 @@ function WorkingApproach() {
 						<span className="aximo-title-animation">
 							Our Approach
 							<span className="aximo-title-icon">
-								<img loading="lazy" src={Star2Img} alt="star" />
+								<img src={Star2Img} alt="star" />
 							</span>
 						</span>
 					</h2>

@@ -14,7 +14,7 @@ function Video() {
 					<h2>Nurturing a robust brand identity</h2>
 				</div>
 				<FadeInUp className="aximo-video-wrap2">
-					<img loading="lazy" src={VideoBg} alt="video bg" />
+					<img src={VideoBg} alt="video bg" />
 					<ModalVideo
 						channel="youtube"
 						youtube={{ autoplay: 0 }}
@@ -23,14 +23,14 @@ function Video() {
 						onClose={() => setOpen(false)}
 					/>
 					<button className="aximo-video-popupv7 video-init" onClick={() => setOpen(true)}>
-						<img loading="lazy" src={PlayBtnImg} alt="PlayBtnImg" />
+						<img src={PlayBtnImg} alt="PlayBtnImg" />
 						<div className="waves waves7 wave-1"></div>
 						<div className="waves waves7 wave-2"></div>
 						<div className="waves waves7 wave-3"></div>
 					</button>
 
 					<div className="aximo-video-shapev7">
-						<img loading="lazy" src={ShapeImg} alt="Shape " />
+						<img src={ShapeImg} alt="Shape " />
 					</div>
 				</FadeInUp>
 			</div>

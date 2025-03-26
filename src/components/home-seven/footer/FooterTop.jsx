@@ -7,7 +7,7 @@ function FooterTop() {
 				<h2>
 					Let your brand rise to new heights
 					<span className="aximo-title-shape">
-						<img loading="lazy" src={TitleShapImg} alt="title shape" />
+						<img src={TitleShapImg} alt="title shape" />
 					</span>
 				</h2>
 			</div>

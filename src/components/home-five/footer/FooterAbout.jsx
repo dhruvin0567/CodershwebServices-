@@ -4,7 +4,7 @@ function FooterAbout() {
 	return (
 		<div className="aximo-footer-textarea">
 			<Link href="/">
-				<img loading="lazy" src={DarkLogoImg} alt="Logo" />
+				<img src={DarkLogoImg} alt="Logo" />
 			</Link>
 			<p>
 				We are a branding agency that digitally works to help companies grow. We have a successful track record

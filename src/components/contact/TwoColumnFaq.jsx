@@ -46,7 +46,7 @@ function TwoColumnFaq() {
 						<span className="aximo-title-animation">
 							clients learn about us
 							<span className="aximo-title-icon">
-								<img loading="lazy" src={Star2Img} alt="Star" />
+								<img src={Star2Img} alt="Star" />
 							</span>
 						</span>
 					</h2>
@@ -57,7 +57,7 @@ function TwoColumnFaq() {
 							{faqData.faq1.map((faq) => (
 								<div key={faq.id} className="aximo-accordion-normal-item">
 									<div className="aximo-accordion-normal-icon">
-										<img loading="lazy" src={QuestionImg} alt="QuestionImg" />
+										<img src={QuestionImg} alt="QuestionImg" />
 									</div>
 									<div className="aximo-accordion-normal-data">
 										<h3>{faq.title}</h3>
@@ -72,7 +72,7 @@ function TwoColumnFaq() {
 							{faqData.faq2.map((faq) => (
 								<div key={faq.id} className="aximo-accordion-normal-item">
 									<div className="aximo-accordion-normal-icon">
-										<img loading="lazy" src={QuestionImg} alt="QuestionImg" />
+										<img src={QuestionImg} alt="QuestionImg" />
 									</div>
 									<div className="aximo-accordion-normal-data">
 										<h3>{faq.title}</h3>

@@ -9,19 +9,19 @@ function HeroThumbs() {
 	return (
 		<FadeInStaggerTwo className="aximo-hero-thumb-wrap">
 			<FadeInStaggerTwoChildren className="aximo-hero-thumb-item">
-				<img loading="lazy" src={Thumb1Img} alt="Thumb images" />
+				<img src={Thumb1Img} alt="Thumb images" />
 			</FadeInStaggerTwoChildren>
 			<FadeInStaggerTwoChildren className="aximo-hero-thumb-item">
-				<img loading="lazy" src={Thumb2Img} alt="Thumb images" />
+				<img src={Thumb2Img} alt="Thumb images" />
 			</FadeInStaggerTwoChildren>
 			<FadeInStaggerTwoChildren className="aximo-hero-thumb-item">
-				<img loading="lazy" src={Thumb3Img} alt="Thumb images" />
+				<img src={Thumb3Img} alt="Thumb images" />
 			</FadeInStaggerTwoChildren>
 			<FadeInStaggerTwoChildren className="aximo-hero-thumb-item">
-				<img loading="lazy" src={Thumb4Img} alt="Thumb images" />
+				<img src={Thumb4Img} alt="Thumb images" />
 			</FadeInStaggerTwoChildren>
 			<FadeInStaggerTwoChildren className="aximo-hero-thumb-item">
-				<img loading="lazy" src={Thumb5Img} alt="Thumb images" />
+				<img src={Thumb5Img} alt="Thumb images" />
 			</FadeInStaggerTwoChildren>
 		</FadeInStaggerTwo>
 	);

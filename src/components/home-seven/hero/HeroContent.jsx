@@ -8,7 +8,7 @@ function HeroContent() {
 				<h1>
 					We present your brand creatively
 					<span className="aximo-hero-shape-title2">
-						<img loading="lazy" className="aximo-hero-wave-shape" src={TitleShapImg} alt="Shape Title" />
+						<img className="aximo-hero-wave-shape" src={TitleShapImg} alt="Shape Title" />
 					</span>
 				</h1>
 			</FadeInStaggerTwoChildren>

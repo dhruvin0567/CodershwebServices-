@@ -19,7 +19,7 @@ function Hero() {
 				</div>
 			</div>
 			<div className="aximo-hero-shapev7">
-				<img loading="lazy" src={HeroShape} alt="Hero Shape" />
+				<img src={HeroShape} alt="Hero Shape" />
 			</div>
 		</div>
 	);

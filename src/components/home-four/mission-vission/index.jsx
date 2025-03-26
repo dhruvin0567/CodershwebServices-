@@ -9,14 +9,14 @@ function MissionVision() {
 					<span className="aximo-subtitle">Our mission & vision</span>
 					<h2>
 						Our mission is to help businesses thrive a fast-paced
-						<img loading="lazy" src={TextThumb1Img} alt="TextThumb1Img" />
+						<img src={TextThumb1Img} alt="TextThumb1Img" />
 						competitive world by providing expert guidance
-						<img loading="lazy" src={TextThumb2Img} alt="TextThumb1Img" />& we're here to provide it.
+						<img src={TextThumb2Img} alt="TextThumb1Img" />& we're here to provide it.
 					</h2>
 				</div>
 			</div>
 			<div className="aximo-v4-shape1">
-				<img loading="lazy" src={Shape1Img} alt="Shape1Img" />
+				<img src={Shape1Img} alt="Shape1Img" />
 			</div>
 		</div>
 	);

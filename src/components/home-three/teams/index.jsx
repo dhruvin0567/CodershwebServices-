@@ -53,7 +53,7 @@ function Teams() {
 				</div>
 			</div>
 			<div className="aximo-star-shape-half ">
-				<img loading="lazy" src={StarShapeHalfImg} alt="StarShapeHalfImg" />
+				<img src={StarShapeHalfImg} alt="StarShapeHalfImg" />
 			</div>
 		</div>
 	);

@@ -66,25 +66,25 @@ function Itdigitalagencydata() {
                             }}
                         >
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo1Img} alt="Alt IT Logo" />
+                                <img src={Logo1Img} alt="Alt IT Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo2Img} alt="HoBarbe Logo" />
+                                <img src={Logo2Img} alt="HoBarbe Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo3Img} alt="LL IT NW Logo" />
+                                <img src={Logo3Img} alt="LL IT NW Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo4Img} alt="Informadist Logo" />
+                                <img src={Logo4Img} alt="Informadist Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo5Img} alt="Orange Nexus Logo" />
+                                <img src={Logo5Img} alt="Orange Nexus Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo6Img} alt="The IT Consultancy Logo" />
+                                <img src={Logo6Img} alt="The IT Consultancy Logo" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img loading="lazy" src={Logo7Img} alt="Global Tech Distribution Logo" />
+                                <img src={Logo7Img} alt="Global Tech Distribution Logo" />
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -125,7 +125,7 @@ function Itdigitalagencydata() {
 
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.1s">
-                                    <img loading="lazy" src={Slider1Img} alt="Credi Coach" />
+                                    <img src={Slider1Img} alt="Credi Coach" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -155,7 +155,7 @@ function Itdigitalagencydata() {
 
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.2s">
-                                    <img loading="lazy" src={Slider2Img} alt="Credit Saint" />
+                                    <img src={Slider2Img} alt="Credit Saint" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -185,7 +185,7 @@ function Itdigitalagencydata() {
 
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.3s">
-                                    <img loading="lazy" src={Slider3Img} alt="Credit 101" />
+                                    <img src={Slider3Img} alt="Credit 101" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -214,7 +214,7 @@ function Itdigitalagencydata() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.4s">
-                                    <img loading="lazy" src={Slider4Img} alt="Framework Credit" />
+                                    <img src={Slider4Img} alt="Framework Credit" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -243,7 +243,7 @@ function Itdigitalagencydata() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.5s">
-                                    <img loading="lazy" src={Slider5Img} alt="Premier Credit" />
+                                    <img src={Slider5Img} alt="Premier Credit" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -272,7 +272,7 @@ function Itdigitalagencydata() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.6s">
-                                    <img loading="lazy" src={Slider6Img} alt="SD Capital" />
+                                    <img src={Slider6Img} alt="SD Capital" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -301,7 +301,7 @@ function Itdigitalagencydata() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.7s">
-                                    <img loading="lazy" src={Slider7Img} alt="Stellar Credit" />
+                                    <img src={Slider7Img} alt="Stellar Credit" />
                                     {/* <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
                                         <Link to="#">
@@ -338,7 +338,7 @@ function Itdigitalagencydata() {
                             <span className="aximo-title-animation">
                                 Modern and Professional
                                 <span className="aximo-title-icon">
-                                    <img loading="lazy" src={Star2Img} alt="Star2Img" />
+                                    <img src={Star2Img} alt="Star2Img" />
                                 </span>
                             </span>
                             <br />
@@ -366,14 +366,14 @@ function Itdigitalagencydata() {
                         </h3>
                         <div className="services-list d-md-flex justify-content-around">
                             <ul className>
-                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Fully Responsive and Mobile-Friendly Design</li>
-                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> SEO-Optimized Structure</li>
-                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Services Showcase and Portfolio Integration</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Fully Responsive and Mobile-Friendly Design</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> SEO-Optimized Structure</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Services Showcase and Portfolio Integration</li>
                             </ul>
                             <ul className>
-                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Fast and Secure Performance</li>
-                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Blog and Resource Center</li>
-                                <li><img loading="lazy" src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Social Media Integration</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Fast and Secure Performance</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Blog and Resource Center</li>
+                                <li><img src={Check} alt="check" style={{ color: '#000000', marginRight: '20px' }} /> Social Media Integration</li>
                             </ul>
                         </div>
                     </div>

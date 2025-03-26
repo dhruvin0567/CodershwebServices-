@@ -53,7 +53,7 @@ function Services() {
 				</div>
 			</div>
 			<div className="aximo-increase-shape">
-				<img loading="lazy" src={StarImg} alt="StarImg" />
+				<img src={StarImg} alt="StarImg" />
 			</div>
 			<div className="aximo-service-increase-wrap">
 				{servicesData.map((service) => (

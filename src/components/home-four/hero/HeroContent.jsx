@@ -15,7 +15,7 @@ function HeroContent() {
 					<span className="aximo-hero-shape-title">
 						experiences
 						<span className="aximo-hero-round-shape">
-							<img loading="lazy" src={RoundShapeImg} alt="RoundShapeImg" />
+							<img src={RoundShapeImg} alt="RoundShapeImg" />
 						</span>
 					</span>
 				</h1>

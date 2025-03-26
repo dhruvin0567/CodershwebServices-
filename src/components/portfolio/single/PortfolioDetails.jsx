@@ -25,7 +25,7 @@ function PortfolioDetails() {
 		<div className="aximo-project-single-section">
 			<div className="container">
 				<FadeInUp className="aximo-project-single-thumb">
-					<img loading="lazy" src={Single1Img} alt="Single" />
+					<img src={Single1Img} alt="Single" />
 				</FadeInUp>
 				<div className="aximo-project-info-wrap">
 					<div className="aximo-project-info">
@@ -49,7 +49,7 @@ function PortfolioDetails() {
 					<div className="row">
 						<div className="col-lg-4 order-lg-2">
 							<FadeInRight className="aximo-project-single-thumb2 ">
-								<img loading="lazy" src={Single2Img} alt="Single 2" />
+								<img src={Single2Img} alt="Single 2" />
 							</FadeInRight>
 						</div>
 						<div className="col-lg-8">
@@ -59,7 +59,7 @@ function PortfolioDetails() {
 									<span className="aximo-title-animation">
 										resolve the project
 										<span className="aximo-title-icon">
-											<img loading="lazy" src={Star2Img} alt="star" />
+											<img src={Star2Img} alt="star" />
 										</span>
 									</span>
 								</h2>

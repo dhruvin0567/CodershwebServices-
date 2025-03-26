@@ -28,7 +28,7 @@ function Brand() {
 						{brands.map((brand, index) => (
 							<FadeInStagger className="col-lg-3 col-sm-4 col-6 mb-3 p-3" key={brand.id} index={index}>
 								<Link className="brand-card" to={brand.link}>
-									<img loading="lazy" src={brand.img} alt={brand.title} />
+									<img src={brand.img} alt={brand.title} />
 								</Link>
 							</FadeInStagger>
 						))}

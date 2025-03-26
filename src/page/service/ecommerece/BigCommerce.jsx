@@ -155,10 +155,10 @@ function BigCommerce() {
                             <Link to="/contact-us" className="clutch-widget d-flex mb-4 mb-lg-0">
                                 <span className="me-2">
                                     <p className="mb-0">Reviewed On</p>
-                                    <img loading="lazy" src={Clutch} alt width={82} />
+                                    <img src={Clutch} alt width={82} />
                                 </span>
                                 <span className="d-flex flex-column justify-content-between">
-                                    <img loading="lazy" src={StarImg} alt width={90} />
+                                    <img src={StarImg} alt width={90} />
                                     <p className="review-amount mb-0">16 Reviews</p>
                                 </span>
                             </Link>
@@ -200,7 +200,7 @@ function BigCommerce() {
                     <div className="row pb-5">
                         <div className="col-lg-6">
                             <FadeInLeft className="aximo-content-thumb3">
-                                <img loading="lazy" src={Thumb1Img} alt="Thumb" />
+                                <img src={Thumb1Img} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-6 d-flex align-items-center">
@@ -285,7 +285,7 @@ function BigCommerce() {
                         </div>
                         <div className="col-lg-6 mt-sm-5 order-lg-2 order-1">
                             <FadeInRight className="aximo-content-thumb3">
-                                <img loading="lazy" src={Thumb2Img} alt="Thumb" />
+                                <img src={Thumb2Img} alt="Thumb" />
                             </FadeInRight>
                         </div>
                     </div>

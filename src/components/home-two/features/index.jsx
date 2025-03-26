@@ -49,7 +49,7 @@ function Features() {
 				</div>
 			</div>
 			<div className="aximo-shape">
-				<img loading="lazy" src={Shape2Img} alt="Shape2Img" />
+				<img src={Shape2Img} alt="Shape2Img" />
 			</div>
 		</div>
 	);

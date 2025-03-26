@@ -4,7 +4,7 @@ function GridBlogCard({ blog: { img, title, link } }) {
 	return (
 		<div className="single-post-item">
 			<div className="post-thumbnail">
-				<img loading="lazy" src={img} alt={title} />
+				<img src={img} alt={title} />
 			</div>
 			<div className="post-content">
 
@@ -12,7 +12,7 @@ function GridBlogCard({ blog: { img, title, link } }) {
 					<h3 className="entry-title">{title}</h3>
 				</Link>
 				<Link className="post-read-more" to={link}>
-					Read more <img loading="lazy" src={ArrayRightImg} alt="Arrow" />
+					Read more <img src={ArrayRightImg} alt="Arrow" />
 				</Link>
 			</div>
 		</div>

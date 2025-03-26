@@ -10,10 +10,10 @@ function SeoSteps() {
 					<div className="col-lg-5">
 						<div className="aximo-content-thumb-wrap">
 							<FadeInUp className="aximo-content-thumb2">
-								<img loading="lazy" src={Thumb3Img} alt="Thumb3Img" />
+								<img src={Thumb3Img} alt="Thumb3Img" />
 							</FadeInUp>
 							<div className="aximo-thumb-shape1">
-								<img loading="lazy" src={Shape3Img} alt="Shape3Img" />
+								<img src={Shape3Img} alt="Shape3Img" />
 							</div>
 						</div>
 					</div>

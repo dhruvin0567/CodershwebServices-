@@ -3,7 +3,7 @@ function ServiceCard({ service: { title, description, img } }) {
 	return (
 		<div className="aximo-marketing-services-item">
 			<div className="aximo-marketing-services-icon">
-				<img loading="lazy" src={img} alt="icon" />
+				<img src={img} alt="icon" />
 				<h3>{title}:</h3>
 			</div>
 			<div className="aximo-marketing-services-data">

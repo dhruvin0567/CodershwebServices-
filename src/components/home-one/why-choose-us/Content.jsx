@@ -6,7 +6,7 @@ function Content() {
 				<span className="aximo-title-animation">
 					Our high-quality
 					<span className="aximo-title-icon">
-						<img loading="lazy" src={Star2Img} alt="Star2Img" />
+						<img src={Star2Img} alt="Star2Img" />
 					</span>
 				</span>{" "}
 				working processes

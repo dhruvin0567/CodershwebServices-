@@ -11,7 +11,7 @@ function Footer() {
 						<div className="col-xl-4 col-lg-12">
 							<div className="aximo-footer-textarea">
 								<Link to="/">
-									<img loading="lazy" src={LogoDarkImg} alt="logo" />
+									<img src={LogoDarkImg} alt="logo" />
 								</Link>
 								<p>
 									We are a branding agency that digitally works to help companies grow. We have a

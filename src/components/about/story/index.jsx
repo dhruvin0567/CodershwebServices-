@@ -10,7 +10,7 @@ function Story() {
 						<span className="aximo-title-animation">
 							We think our story is
 							<span className="aximo-title-icon">
-								<img loading="lazy" src={Star2Img} alt="star" />
+								<img src={Star2Img} alt="star" />
 							</span>
 						</span>
 						worth sharing with you

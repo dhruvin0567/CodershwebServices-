@@ -39,7 +39,7 @@ function CommentList() {
 					<li className={`${comment.children && "children"}`} key={comment.id}>
 						<div className="post-comment-wrap">
 							<div className="post-comment-thumb">
-								<img loading="lazy" src={comment.img} alt={comment.author} />
+								<img src={comment.img} alt={comment.author} />
 							</div>
 							<div className="post-comment-data">
 								<a className="comment-reply" href="">

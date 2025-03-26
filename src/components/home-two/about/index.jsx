@@ -28,7 +28,7 @@ function About() {
 							className="aximo-thumb"
 							id="rotatetwo"
 						>
-							<img loading="lazy" src={ThumbImg} alt="ThumbImg" />
+							<img src={ThumbImg} alt="ThumbImg" />
 						</motion.div>
 					</div>
 					<div className="col-lg-7">

@@ -27,7 +27,7 @@ function Testimonials() {
 				</div>
 			</div>
 			<div className="aximo-v4-shape2">
-				<img loading="lazy" src={Shape4Img} alt="Shape4Img" />
+				<img src={Shape4Img} alt="Shape4Img" />
 			</div>
 		</div>
 	);

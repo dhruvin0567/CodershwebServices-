@@ -72,7 +72,7 @@ function ShopifyPlus() {
                                 {/* <span className="aximo-title-animation">
                                     Exploring Decoupled
                                     <span className="aximo-title-icon">
-                                        <img loading="lazy" src={Star2Img} alt="Star2Img" />
+                                        <img src={Star2Img} alt="Star2Img" />
                                     </span>
                                 </span>
                                 <br />Commerce on Shopify Plus? */}
@@ -94,7 +94,7 @@ function ShopifyPlus() {
                     <div className="row d-flex">
                         <div className="col-lg-5">
                             <FadeInLeft className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg1} alt="Thumb" />
+                                <img src={ThumbImg1} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-7  colo-12  shopify-services-data">
@@ -123,7 +123,7 @@ function ShopifyPlus() {
                     <div className="row">
                         <div className="col-lg-5 order-lg-2">
                             <FadeInRight className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg2} alt="thumb" />
+                                <img src={ThumbImg2} alt="thumb" />
                             </FadeInRight>
                         </div>
                         <div className="col-lg-7 shopify-services-data">
@@ -155,7 +155,7 @@ function ShopifyPlus() {
                     <div className="row d-flex">
                         <div className="col-lg-5">
                             <FadeInLeft className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg3} alt="Thumb" />
+                                <img src={ThumbImg3} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-7  colo-12  shopify-services-data">
@@ -186,7 +186,7 @@ function ShopifyPlus() {
                     <div className="row">
                         <div className="col-lg-5 order-lg-2">
                             <FadeInRight className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg4} alt="thumb" />
+                                <img src={ThumbImg4} alt="thumb" />
                             </FadeInRight>
                         </div>
                         <div className="col-lg-7 shopify-services-data">
@@ -215,7 +215,7 @@ function ShopifyPlus() {
                     <div className="row d-flex">
                         <div className="col-lg-5">
                             <FadeInLeft className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg5} alt="Thumb" />
+                                <img src={ThumbImg5} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-7  colo-12  shopify-services-data">
@@ -259,7 +259,7 @@ function ShopifyPlus() {
                                             <h3>{item.title}</h3>
                                             <p>{item.description}</p>
                                             {/* <Link className="post-read-more aximo-icon" to="#" style={{ fontSize: '18px' }}>
-                                                Read more <img loading="lazy" src={ArrowRightImg} alt="Arrow" />
+                                                Read more <img src={ArrowRightImg} alt="Arrow" />
                                             </Link> */}
                                         </div>
                                     </div>

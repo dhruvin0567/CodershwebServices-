@@ -181,12 +181,12 @@ function LandingPage() {
                     <div className="container-fluid landing-nav-container">
                         <div className="brand-logo pe-4 me-0 mt-2 mb-4 mb-lg-0 mt-lg-0" style={{ borderRight: "2px solid white", width: "250px" }}>
                             <Link to="index.html">
-                                <img loading="lazy" src={logo} alt="Logo" className="light-version-logo" />
+                                <img src={logo} alt="Logo" className="light-version-logo" />
                             </Link>
                         </div>
                         <span className="text-light ps-4">
                             We design beautiful web experiences that convert 286% more business
-                            <img loading="lazy" src={Cloud} alt="Cloud Logo" />
+                            <img src={Cloud} alt="Cloud Logo" />
                         </span>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <form className="d-block d-sm-flex gap-1" role="search">
@@ -232,7 +232,7 @@ function LandingPage() {
                     >
                         {images.map((image, index) => (
                             <SwiperSlide key={index}>
-                                <img loading="lazy" src={image} alt={`Slide ${index + 1}`} />
+                                <img src={image} alt={`Slide ${index + 1}`} />
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -246,23 +246,23 @@ function LandingPage() {
                     <div className="content-one col-lg-6  p-5">
                         <div className="img-part">
                             <div className="first-part-img">
-                                <img loading="lazy" className="first-img" src={SlidingImg1} alt="First Image" />
+                                <img className="first-img" src={SlidingImg1} alt="First Image" />
                             </div>
                             <div className="second-img-part">
-                                <img loading="lazy" className="second-img" src={SlidingImg2} alt="Second Image" />
+                                <img className="second-img" src={SlidingImg2} alt="Second Image" />
                             </div>
                         </div>
-                        <img loading="lazy" id="stickyImage" src={StickyImg} alt="Sticky Image" />
+                        <img id="stickyImage" src={StickyImg} alt="Sticky Image" />
                     </div>
                     <div className="content-two col-lg-6 col-sm-12 p-5">
                         <div className="content-two-img">
                             <div>
-                                <img loading="lazy" src={WindowImg} alt />
+                                <img src={WindowImg} alt />
                             </div>
                             <div className="mobile-img-part">
-                                <img loading="lazy" className="mobile-bg-img" src={JewelryImg} alt />
-                                <img loading="lazy" className="mobile-img" src={MobileImg} alt />
-                                <img loading="lazy" className="arrow-img" src={ArrowImg} alt />
+                                <img className="mobile-bg-img" src={JewelryImg} alt />
+                                <img className="mobile-img" src={MobileImg} alt />
+                                <img className="arrow-img" src={ArrowImg} alt />
                             </div>
                         </div>
                         <div className="sticky-section-content">
@@ -349,7 +349,7 @@ function LandingPage() {
                             >
                                 {logos.map((logo, index) => (
                                     <SwiperSlide key={index} className="partner-logo">
-                                        <img loading="lazy" className="mx-auto d-block" width="150" src={logo} alt={`Partner ${index + 1}`} />
+                                        <img className="mx-auto d-block" width="150" src={logo} alt={`Partner ${index + 1}`} />
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
@@ -357,12 +357,12 @@ function LandingPage() {
                     </div>
                     <div className="reviews-comments light-text">
                         <h6 className="light-text text-center mb-4">Our Customers Speak Highly of Us
-                            <img loading="lazy" src={ReviewImg1} alt width={100} />
+                            <img src={ReviewImg1} alt width={100} />
                         </h6>
                         <div className="row justify-content-center align-items-center g-2">
                             <div className="col-lg-3 text-center d-none d-lg-block">
                                 <h5 className="light-text">Excellent</h5>
-                                <img loading="lazy" src={ReviewImg1} alt width={150} /><br />
+                                <img src={ReviewImg1} alt width={150} /><br />
                                 <small>Based on 43 reviews</small> <br />
                                 Trustpilot
                             </div>
@@ -388,7 +388,7 @@ function LandingPage() {
                                         >
                                             {reviews.map((review, index) => (
                                                 <SwiperSlide key={index} className="client-review-cmnt">
-                                                    <img loading="lazy" src={review.image} alt="Rating" width={80} />
+                                                    <img src={review.image} alt="Rating" width={80} />
                                                     <h6 className="light-text">{review.quote}</h6>
                                                     <p>{review.feedback}</p>
                                                     <small>{review.name}</small>
@@ -416,15 +416,15 @@ function LandingPage() {
                         </div>
                         <div className="col-lg-3">
                             <div className="image-spinner mt-sm-5 mt-lg-0 mt-5">
-                                <img loading="lazy" src={static2} alt className="static-image" width={150} />
-                                <img loading="lazy" src={spin} alt className="spinning-image" />
+                                <img src={static2} alt className="static-image" width={150} />
+                                <img src={spin} alt className="spinning-image" />
                             </div>
                         </div>
                     </div>
                     <div className="i-box-wrapper row">
                         <div className="col-lg-4 mb-5">
                             <div className="i-box">
-                                <h5>Make Your Brand Stand Out. <img loading="lazy" src={Trophy} alt /></h5>
+                                <h5>Make Your Brand Stand Out. <img src={Trophy} alt /></h5>
                                 <p>For any business, competition is everywhere. The best and most efficient way to stand out is
                                     with a website that immediately grabs your audience’s attention.
                                 </p>
@@ -432,7 +432,7 @@ function LandingPage() {
                         </div>
                         <div className="col-lg-4 mb-5">
                             <div className="i-box">
-                                <h5>Optimized for all devices. <img loading="lazy" src={Mobile} alt /></h5>
+                                <h5>Optimized for all devices. <img src={Mobile} alt /></h5>
                                 <p>For every business, competition is fierce. The fastest and most effective way to stand out
                                     is with a website that immediately captivates your audience.
                                 </p>
@@ -440,7 +440,7 @@ function LandingPage() {
                         </div>
                         <div className="col-lg-4">
                             <div className="i-box">
-                                <h5>Gain Trust &amp; Authority. <img loading="lazy" src={Trophy} alt /></h5>
+                                <h5>Gain Trust &amp; Authority. <img src={Trophy} alt /></h5>
                                 <p>
                                     First impressions define future interactions. We make sure your website leaves the best one
                                     every time.
@@ -490,10 +490,10 @@ function LandingPage() {
                         </div>
                         <div className="col-lg-4">
                             <div className="image-wrapper mb-5">
-                                <img loading="lazy" src={wrapperImg1} alt width={400} className="mb-5" />
+                                <img src={wrapperImg1} alt width={400} className="mb-5" />
                             </div>
                             <div className="image-wrapper mt-5">
-                                <img loading="lazy" className="ms-auto d-block" src={wrapperImg2} alt width={400} />
+                                <img className="ms-auto d-block" src={wrapperImg2} alt width={400} />
                             </div>
                         </div>
                     </div>
@@ -562,7 +562,7 @@ function LandingPage() {
                         </div>
                         <div className="col-lg-6">
                             <div className="owner-image">
-                                <img loading="lazy" src={ShahImg} alt="Harsh-Shah CEO" width="100%" />
+                                <img src={ShahImg} alt="Harsh-Shah CEO" width="100%" />
                             </div>
                         </div>
                     </div>
@@ -618,13 +618,13 @@ function LandingPage() {
                             <p className="light-text">
                                 <b>1. </b> We’ll design your entire site and offer unlimited revisions.
                             </p>
-                            <img loading="lazy" src={vape1} alt=" Product Image1" />
+                            <img src={vape1} alt=" Product Image1" />
                         </div>
                         <div className="col-lg-6">
                             <p className="light-text mt-5 mt-sm-5 mt-lg-0">
                                 <b>2. </b> We’ll build and launch your site before you complete payment.
                             </p>
-                            <img loading="lazy" src={vape1} alt="Product Image2" />
+                            <img src={vape1} alt="Product Image2" />
                         </div>
                     </div>
                 </div>
@@ -668,16 +668,16 @@ function LandingPage() {
                     <h2 className="text-center">Top Rated Web Development Company Since 2014</h2>
                     <div className="row mt-5">
                         <div className="col-lg-3 col-md-6 col-12">
-                            <img loading="lazy" className="d-flex mx-auto" src={badge1} alt />
+                            <img className="d-flex mx-auto" src={badge1} alt />
                         </div>
                         <div className="col-lg-3  col-md-6 col-12">
-                            <img loading="lazy" className="d-flex mx-auto" src={badge2} alt />
+                            <img className="d-flex mx-auto" src={badge2} alt />
                         </div>
                         <div className="col-lg-3  col-md-6 col-12">
-                            <img loading="lazy" className="d-flex mx-auto" src={badge3} alt />
+                            <img className="d-flex mx-auto" src={badge3} alt />
                         </div>
                         <div className="col-lg-3  col-md-6 col-12">
-                            <img loading="lazy" className="d-flex mx-auto" src={badge4} alt />
+                            <img className="d-flex mx-auto" src={badge4} alt />
                         </div>
                     </div>
                 </div>
@@ -696,7 +696,7 @@ function LandingPage() {
                                 <td />
                                 <td className="dark-bg">
                                     <div className="d-flex justify-content-center company-logo p-3">
-                                        <img loading="lazy" src={Logo} alt width={200} />
+                                        <img src={Logo} alt width={200} />
                                     </div>
                                 </td>
                                 <td className="text-center">Traditional Web Agencies</td>
@@ -706,17 +706,17 @@ function LandingPage() {
                                     <td className="p-2">Comprehensive, Hassle-Free Solution</td>
                                     <td className="dark-bg">
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group1} alt width={15} />
+                                            <img src={Group1} alt width={15} />
                                         </div>
                                     </td>
                                     <td>
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group2} alt width={15} />
+                                            <img src={Group2} alt width={15} />
                                         </div>
                                     </td>
                                     <td>
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group2} alt width={15} />
+                                            <img src={Group2} alt width={15} />
                                         </div>
                                     </td>
                                 </tr>
@@ -724,17 +724,17 @@ function LandingPage() {
                                     <td className="p-2">288% Higher Average Conversion Rate Than Industry Standard</td>
                                     <td className="dark-bg">
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group1} alt width={15} />
+                                            <img src={Group1} alt width={15} />
                                         </div>
                                     </td>
                                     <td>
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group2} alt width={15} />
+                                            <img src={Group2} alt width={15} />
                                         </div>
                                     </td>
                                     <td>
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group2} alt width={15} />
+                                            <img src={Group2} alt width={15} />
                                         </div>
                                     </td>
                                 </tr>
@@ -742,17 +742,17 @@ function LandingPage() {
                                     <td className="p-2">Designed by Experts with a Proven $28M+ Revenue Track Record</td>
                                     <td className="dark-bg">
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group1} alt width={15} />
+                                            <img src={Group1} alt width={15} />
                                         </div>
                                     </td>
                                     <td>
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group2} alt width={15} />
+                                            <img src={Group2} alt width={15} />
                                         </div>
                                     </td>
                                     <td>
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group2} alt width={15} />
+                                            <img src={Group2} alt width={15} />
                                         </div>
                                     </td>
                                 </tr>
@@ -760,17 +760,17 @@ function LandingPage() {
                                     <td className="p-2">Love It or It’s Free Guarantee.</td>
                                     <td className="dark-bg">
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group1} alt width={15} />
+                                            <img src={Group1} alt width={15} />
                                         </div>
                                     </td>
                                     <td>
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group2} alt width={15} />
+                                            <img src={Group2} alt width={15} />
                                         </div>
                                     </td>
                                     <td>
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group2} alt width={15} />
+                                            <img src={Group2} alt width={15} />
                                         </div>
                                     </td>
                                 </tr>
@@ -778,17 +778,17 @@ function LandingPage() {
                                     <td className="p-2">Endless Revisions at No Extra Cost</td>
                                     <td className="dark-bg">
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group1} alt width={15} />
+                                            <img src={Group1} alt width={15} />
                                         </div>
                                     </td>
                                     <td>
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group2} alt width={15} />
+                                            <img src={Group2} alt width={15} />
                                         </div>
                                     </td>
                                     <td>
                                         <div className="d-flex justify-content-center">
-                                            <img loading="lazy" src={Group2} alt width={15} />
+                                            <img src={Group2} alt width={15} />
                                         </div>
                                     </td>
                                 </tr>

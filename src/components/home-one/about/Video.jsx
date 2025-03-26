@@ -55,7 +55,7 @@ function Video() {
 
 	return (
 		<FadeInUp className="aximo-video-wrap" style={{ position: "relative" }}>
-			<img loading="lazy" src={VideoBg} alt="VideoBg" style={{ width: "100%" }} />
+			<img src={VideoBg} alt="VideoBg" style={{ width: "100%" }} />
 
 			{/* Custom Modal for Local Video */}
 			{isOpen && (
@@ -75,7 +75,7 @@ function Video() {
 
 			{/* Custom Play Button */}
 			<button className="aximo-video-popup play-btn1 video-init" onClick={() => setOpen(true)}>
-				<img loading="lazy" src={PlayBtnImg} alt="Play Button" />
+				<img src={PlayBtnImg} alt="Play Button" />
 			</button>
 		</FadeInUp>
 	);

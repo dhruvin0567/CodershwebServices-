@@ -16,7 +16,7 @@ function Footer() {
 						<div className="col-xl-4 col-lg-12">
 							<div className="aximo-footer-textarea light-two">
 								<Link to="/">
-									<img loading="lazy" src={LogoWhiteImg} alt="logo" />
+									<img src={LogoWhiteImg} alt="logo" />
 								</Link>
 								<p>
 									We are a branding agency that digitally works to help companies grow. We have a
@@ -80,7 +80,7 @@ function Footer() {
 				</div>
 			</div>
 			<div className="aximo-footer-shapev6">
-				<img loading="lazy" src={ShapeImg} alt="shape" />
+				<img src={ShapeImg} alt="shape" />
 			</div>
 		</footer>
 	);

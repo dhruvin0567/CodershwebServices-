@@ -17,10 +17,10 @@ function CallToAction() {
 				</div>
 			</div>
 			<div className="aximo-cta-shape1">
-				<img loading="lazy" src={Shape4Img} alt="Shape4Img" />
+				<img src={Shape4Img} alt="Shape4Img" />
 			</div>
 			<div className="aximo-cta-shape2">
-				<img loading="lazy" src={StarImg} alt="StarImg" />
+				<img src={StarImg} alt="StarImg" />
 			</div>
 		</div>
 	);

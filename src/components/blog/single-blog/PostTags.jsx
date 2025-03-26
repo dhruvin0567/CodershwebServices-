@@ -14,13 +14,13 @@ function PostTags() {
 				<ul>
 					<li>
 						<a href="#">
-							<img loading="lazy" src={LikeIcon} alt="like icon " />
+							<img src={LikeIcon} alt="like icon " />
 							175
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img loading="lazy" src={CommentIcon} alt="comment icon" />
+							<img src={CommentIcon} alt="comment icon" />
 							23
 						</a>
 					</li>

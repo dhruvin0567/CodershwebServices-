@@ -3,7 +3,7 @@ function TeamCard({ team: { name, designation, img } }) {
 	return (
 		<div className="aximo-team-wrap3">
 			<div className="aximo-team-thumb3">
-				<img loading="lazy" src={img} alt="author img" />
+				<img src={img} alt="author img" />
 			</div>
 			<div className="aximo-team-data3">
 				<Link to="/single-team">

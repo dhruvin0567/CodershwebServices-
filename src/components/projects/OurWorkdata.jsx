@@ -164,7 +164,7 @@ function OurWorkdata() {
                                         animate={{ opacity: 1 }}
                                         transition={{ duration: 0.6 }}
                                     >
-                                        <img loading="lazy" src={project.img} alt={project.name} className="work-image" />
+                                        <img src={project.img} alt={project.name} className="work-image" />
                                         <div className="about-work">
                                             <h5 className="work-name">{project.name}</h5>
                                             <p className="work-technology">{project.technology}</p>

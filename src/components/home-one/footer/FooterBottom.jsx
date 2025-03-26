@@ -6,7 +6,7 @@ function FooterBottom() {
 			<div className="col-lg-6">
 				<div className="aximo-footer-logo">
 					<Link to="/">
-						<img loading="lazy" src={LogoWhiteImg} alt="Logo" />
+						<img src={LogoWhiteImg} alt="Logo" />
 					</Link>
 				</div>
 			</div>

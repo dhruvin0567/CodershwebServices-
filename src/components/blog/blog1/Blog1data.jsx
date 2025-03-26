@@ -226,7 +226,7 @@ function Blog1data() {
 
                 <div className="blog-card">
                   {/* Blog Image */}
-                  <img loading="lazy" className="blog-image" src={blog.img} alt={blog.title} />
+                  <img className="blog-image" src={blog.img} alt={blog.title} />
                   <div className="blog-content">
                     {/* Blog Title Link */}
                     <Link to={blog.link}>

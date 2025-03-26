@@ -136,7 +136,7 @@ function Subscriptions() {
                     <div className="row d-flex">
                         <div className="col-lg-5">
                             <FadeInLeft className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg1} alt="Thumb" />
+                                <img src={ThumbImg1} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-7  colo-12  shopify-services-data">
@@ -148,25 +148,25 @@ function Subscriptions() {
                                         <div className="text-start">
                                             <ul>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Custom Design Integration:</span>
                                                     <p className="ms-5">Align subscription features with your brand’s identity.</p>
 
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Subscription Management Portals:</span>
                                                     <p className="ms-5"> Enable customers to manage their subscriptions effortlessly.</p>
 
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Optimized Retention Strategies:</span>
                                                     <p className="ms-5">Boost LTV with smart subscription offerings.</p>
 
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Powerful App Integration:</span>
                                                     <p className="ms-5">Leverage tools like ReCharge to streamline the process.</p>
                                                 </li>
@@ -213,7 +213,7 @@ function Subscriptions() {
                             <div className="aximo-accordion-normal-wrap responsive-margin">
                                 <div className="aximo-accordion-normal-item">
                                     <div className="aximo-accordion-normal-icon">
-                                        <img loading="lazy" src={question} alt="check" />
+                                        <img src={question} alt="check" />
                                     </div>
                                     <div className="aximo-accordion-normal-data">
                                         <h3>What Does a Shopify Subscription Service Offer?</h3>
@@ -227,7 +227,7 @@ function Subscriptions() {
                             <div className="aximo-accordion-normal-wrap">
                                 <div className="aximo-accordion-normal-item">
                                     <div className="aximo-accordion-normal-icon">
-                                        <img loading="lazy" src={question} alt="check" />
+                                        <img src={question} alt="check" />
                                     </div>
                                     <div className="aximo-accordion-normal-data">
                                         <h3>How Does Shopify Support Subscription Services?</h3>
@@ -249,7 +249,7 @@ function Subscriptions() {
 
                                 <div className="aximo-accordion-normal-item">
                                     <div className="aximo-accordion-normal-icon">
-                                        <img loading="lazy" src={question} alt="check" />
+                                        <img src={question} alt="check" />
                                     </div>
                                     <div className="aximo-accordion-normal-data">
                                         <h3>What Features are Included with Shopify Subscriptions?</h3>
@@ -305,7 +305,7 @@ function Subscriptions() {
 
                                 <div className="aximo-accordion-normal-item">
                                     <div className="aximo-accordion-normal-icon">
-                                        <img loading="lazy" src={question} alt="check" />
+                                        <img src={question} alt="check" />
                                     </div>
                                     <div className="aximo-accordion-normal-data">
                                         <h3>Which Apps Are Best for Enabling Subscriptions on Shopify?</h3>
@@ -389,7 +389,7 @@ function Subscriptions() {
                     <div className="row">
                         <div className="col-lg-5 order-lg-2">
                             <FadeInRight className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg2} alt="thumb" />
+                                <img src={ThumbImg2} alt="thumb" />
                             </FadeInRight>
                         </div>
                         <div className="col-lg-7 shopify-services-data">
@@ -417,7 +417,7 @@ function Subscriptions() {
                     <div className="row d-flex">
                         <div className="col-lg-5">
                             <FadeInLeft className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg3} alt="Thumb" />
+                                <img src={ThumbImg3} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-7  colo-12  shopify-services-data">
@@ -446,7 +446,7 @@ function Subscriptions() {
                     <div className="row">
                         <div className="col-lg-5 order-lg-2">
                             <FadeInRight className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg4} alt="thumb" />
+                                <img src={ThumbImg4} alt="thumb" />
                             </FadeInRight>
                         </div>
                         <div className="col-lg-7 shopify-services-data">
@@ -486,7 +486,7 @@ function Subscriptions() {
                             {servicesData2.map((item, index) => (
                                 <div className="aximo-service-increase-row" key={index}>
                                     <div className="aximo-service-increase-item">
-                                        <img loading="lazy" className="swipeimage" src={item.img} alt="thumb" />
+                                        <img className="swipeimage" src={item.img} alt="thumb" />
                                         <div className="aximo-service-increase-title">
                                             <h3>{item.title}:</h3>
                                         </div>

@@ -52,7 +52,7 @@ function Services() {
 			</div>
 
 			<div className="aximo-iconbox-shape">
-				<img loading="lazy" src={StarShapeHalfImg} alt="StarShapeHalfImg" />
+				<img src={StarShapeHalfImg} alt="StarShapeHalfImg" />
 			</div>
 		</div>
 	);

@@ -68,7 +68,7 @@ function B2BWholsales() {
                     <div className="row d-flex">
                         <div className="col-lg-5">
                             <FadeInLeft className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg1} alt="Thumb" />
+                                <img src={ThumbImg1} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-7  colo-12  shopify-services-data">
@@ -83,28 +83,28 @@ function B2BWholsales() {
                                         <div className="text-start">
                                             <ul>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Password-Protected Storefront</span>
                                                     {/* <p className="ms-5 mb-3">
                                                         Create a password-protected wholesale storefront that integrates smoothly with your main online store. This allows you to serve wholesale customers without disrupting your primary storefront.
                                                     </p> */}
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Shopify’s B2B Ecommerce Channel</span>
                                                     {/* <p className="ms-5 mb-3">
                                                         Unlock your store’s full potential with Shopify’s B2B features, including custom pricing, product bundles, volume-based discounts, customer profiles, and exclusive access for wholesale buyers—all within a single store.
                                                     </p> */}
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Shopify Plus for Advanced B2B Solutions</span>
                                                     {/* <p className="ms-5 mb-3">
                                                         For businesses with larger budgets, Shopify Plus offers advanced B2B solutions like dedicated wholesale channels, custom rates, and automation through APIs and apps. Starting at $2,000 per month, Shopify Plus scales with your business, offering extensive customization, automation, and robust wholesale management tools—ideal for growth-focused companies.
                                                     </p> */}
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">B2B Solutions Without Shopify Plus</span>
                                                     {/* <p className="ms-5 mb-3">
                                                         If Shopify Plus is out of your budget, third-party apps like SparkLayer, Wholesale Club, and Wholesale Lock Manager offer cost-effective alternatives. These apps integrate easily with Shopify, providing features like custom pricing, automated wholesale processes, and self-service options for wholesale customers—helping you scale without the high upfront cost.
@@ -128,7 +128,7 @@ function B2BWholsales() {
                                 {faqData.faq1.map((faq) => (
                                     <div key={faq.id} className="aximo-accordion-normal-item">
                                         <div className="aximo-accordion-normal-icon">
-                                            <img loading="lazy" src={question} alt="check" />
+                                            <img src={question} alt="check" />
                                         </div>
                                         <div className="aximo-accordion-normal-data">
                                             <h3>{faq.title}</h3>
@@ -166,7 +166,7 @@ function B2BWholsales() {
 
                                 <div className="aximo-accordion-normal-item">
                                     <div className="aximo-accordion-normal-icon">
-                                        <img loading="lazy" src={question} alt="check" />
+                                        <img src={question} alt="check" />
                                     </div>
                                     <div className="aximo-accordion-normal-data">
                                         <h3>What Features Does Shopify Offer for B2B and Wholesale?</h3>
@@ -232,7 +232,7 @@ function B2BWholsales() {
                     <div className="row">
                         <div className="col-lg-5 order-lg-2">
                             <FadeInRight className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg2} alt="thumb" />
+                                <img src={ThumbImg2} alt="thumb" />
                             </FadeInRight>
                         </div>
                         <div className="col-lg-7 shopify-services-data">
@@ -263,7 +263,7 @@ function B2BWholsales() {
                     <div className="row d-flex">
                         <div className="col-lg-5">
                             <FadeInLeft className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg3} alt="Thumb" />
+                                <img src={ThumbImg3} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-7  colo-12  shopify-services-data">
@@ -278,19 +278,19 @@ function B2BWholsales() {
                                         <div className="text-start">
                                             <ul>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Offer volume-based or percentage discounts</span>
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Set fixed wholesale prices for products</span>
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Apply minimum and maximum order quantity limits</span>
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Create custom pricing lists for different customer groups or business types</span>
                                                 </li>
                                             </ul>
@@ -309,7 +309,7 @@ function B2BWholsales() {
                     <div className="row">
                         <div className="col-lg-5 order-lg-2">
                             <FadeInRight className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg4} alt="thumb" />
+                                <img src={ThumbImg4} alt="thumb" />
                             </FadeInRight>
                         </div>
                         <div className="col-lg-7 shopify-services-data">
@@ -340,7 +340,7 @@ function B2BWholsales() {
                     <div className="row d-flex">
                         <div className="col-lg-5">
                             <FadeInLeft className="aximo-content-thumb shopify-services-img">
-                                <img loading="lazy" src={ThumbImg5} alt="Thumb" />
+                                <img src={ThumbImg5} alt="Thumb" />
                             </FadeInLeft>
                         </div>
                         <div className="col-lg-7  colo-12  shopify-services-data">
@@ -356,22 +356,22 @@ function B2BWholsales() {
                                             <p className="fw-bold fs-5 mb-3">Here’s how you can process orders:</p>
                                             <ul>
                                                 <li className="fw-bold">
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold"> invoices with payment requests by Shopify’s integrated payment provider.</span>
 
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Customize invoices and offer payment via methods like bank wire transfers.</span>
 
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Accept upfront payments through credit cards, checks, and other options.</span>
 
                                                 </li>
                                                 <li>
-                                                    <img loading="lazy" src={Check} alt="check" className=" text-dark me-3 mb-2" />
+                                                    <img src={Check} alt="check" className=" text-dark me-3 mb-2" />
                                                     <span className="fw-bold">Provide flexible payment terms with gateways.</span>
                                                 </li>
                                             </ul>
@@ -402,7 +402,7 @@ function B2BWholsales() {
                     </div>
                 </div>
                 <div className="aximo-cta-shape3">
-                    <img loading="lazy" src={Shape4Img} alt="shape" />
+                    <img src={Shape4Img} alt="shape" />
                 </div>
             </div>
 

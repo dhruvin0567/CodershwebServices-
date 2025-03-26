@@ -11,7 +11,7 @@ function Navigation() {
 						2
 					</a>
 					<a className="next page-numbers" href="">
-						<img loading="lazy" src={ArrowRightImg} alt="Arrow Right" />
+						<img src={ArrowRightImg} alt="Arrow Right" />
 					</a>
 				</div>
 			</nav>

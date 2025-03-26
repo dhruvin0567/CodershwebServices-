@@ -21,7 +21,7 @@ function SignInForm() {
 						<span className="aximo-title-animation">
 							Welcome back
 							<span className="aximo-title-icon">
-								<img loading="lazy" src={StarImg} alt="Star" />
+								<img src={StarImg} alt="Star" />
 							</span>
 						</span>
 					</h2>

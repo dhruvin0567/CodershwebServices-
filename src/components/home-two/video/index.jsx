@@ -6,7 +6,7 @@ function Video() {
 	const [isOpen, setOpen] = useState(false);
 	return (
 		<div className="aximo-video-section extra-side-margin">
-			<img loading="lazy" src={VideoBg} alt="VideoBg" />
+			<img src={VideoBg} alt="VideoBg" />
 			<ModalVideo
 				channel="youtube"
 				youtube={{ autoplay: 0 }}
@@ -16,7 +16,7 @@ function Video() {
 			/>
 
 			<button className="aximo-video-popup play-btn-size video-init" onClick={() => setOpen(true)}>
-				<img loading="lazy" src={PlayImg} alt="PlayImg" />
+				<img src={PlayImg} alt="PlayImg" />
 				<div className="waves wave-1"></div>
 				<div className="waves wave-2"></div>
 				<div className="waves wave-3"></div>

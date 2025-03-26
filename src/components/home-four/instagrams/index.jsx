@@ -86,7 +86,7 @@ function Instagrams() {
 					{instagramsData.map((item) => (
 						<SwiperSlide key={item.id}>
 							<div className="aximo-instagram-thumb">
-								<img loading="lazy" src={item.img} alt={item.handle} />
+								<img src={item.img} alt={item.handle} />
 								<div className="aximo-instagram-data">
 									<a href="https://www.instagram.com/">
 										<i className="icon-instagram"></i>
