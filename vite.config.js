@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import VitePluginPurgeCss from 'vite-plugin-purgecss'
+// import VitePluginPurgeCss from 'vite-plugin-purgecss'
 import VitePluginImagemin from 'vite-plugin-imagemin'
 import { VitePWA } from 'vite-plugin-pwa';
 
@@ -9,7 +9,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig({
   plugins: [
     react(),
-    VitePluginPurgeCss(),
+    // VitePluginPurgeCss(),
     VitePluginImagemin(),
     VitePWA()
   ],
