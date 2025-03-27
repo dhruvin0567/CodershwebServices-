@@ -8,7 +8,7 @@ import WhyChooseUs from "../../components/home-one/why-choose-us";
 import AutoSlider from "../../components/home-one/auto-slider";
 import TestimonialSwiper from "../../components/home-one/testimonial/TestimonialSwiper";
 import { Helmet } from 'react-helmet';
-
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { createGlobalStyle } from 'styled-components';
 import ComparisonTable from "../../components/common/ComparisonTable";
 
@@ -99,6 +99,7 @@ function HomeOne() {
 					content="Shopify migration, Shopify design, Shopify customization, e-commerce growth, Shopify service agency"
 				/>
 			</Helmet>
+			<SpeedInsights />
 			<Hero />
 			<Services services={servicesData} />
 			<About />
