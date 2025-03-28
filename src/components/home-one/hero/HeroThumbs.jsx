@@ -1,8 +1,8 @@
 // import { useState, useEffect } from 'react';
 import HeroThumbImg1 from "../../../assets/images/v1/hero-thumb1.webp";
-import HeroThumbImg2 from "../../../assets/images/v1/icon/hero-thumb-2.webp";
-import HeroThumbImg3 from "../../../assets/images/v1/icon/hero-thumb-3.webp";
-import HeroThumbImg4 from "../../../assets/images/v1/icon/hero-thumb-4.webp";
+// import HeroThumbImg2 from "../../../../public/images/hero-thumb-2.webp";
+import HeroThumbImg3 from "../../../../public/images/hero-thumb-3.webp";
+import HeroThumbImg4 from "../../../../public/images/hero-thumb-4.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
 
@@ -41,16 +41,16 @@ function HeroThumbs() {
 				}}
 			>
 				<SwiperSlide>
-					<img src={HeroThumbImg1} alt="HeroImg" width={"100%"} height={"auto"} />
+					<img src={HeroThumbImg1} alt="HeroImg" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={HeroThumbImg2} alt="HeroImg" width={"100%"} height={"auto"} />
+					<img src="/public/images/hero-thumb-2.webp" alt="HeroImg" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={HeroThumbImg3} alt="HeroImg" width={"100%"} height={"auto"} />
+					<img src={HeroThumbImg3} alt="HeroImg" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={HeroThumbImg4} alt="HeroImg" width={"100%"} height={"auto"} />
+					<img src={HeroThumbImg4} alt="HeroImg" />
 				</SwiperSlide>
 
 			</Swiper>
