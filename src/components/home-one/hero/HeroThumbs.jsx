@@ -41,16 +41,16 @@ function HeroThumbs() {
 				}}
 			>
 				<SwiperSlide>
-					<img src={HeroThumbImg1} alt="HeroImg" />
+					<img src={HeroThumbImg1} alt="HeroImg" width={"100%"} height={"auto"} />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={HeroThumbImg2} alt="HeroImg" />
+					<img src={HeroThumbImg2} alt="HeroImg" width={"100%"} height={"auto"} />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={HeroThumbImg3} alt="HeroImg" />
+					<img src={HeroThumbImg3} alt="HeroImg" width={"100%"} height={"auto"} />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={HeroThumbImg4} alt="HeroImg" />
+					<img src={HeroThumbImg4} alt="HeroImg" width={"100%"} height={"auto"} />
 				</SwiperSlide>
 
 			</Swiper>
