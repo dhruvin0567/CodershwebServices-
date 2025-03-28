@@ -44,13 +44,13 @@ function HeroThumbs() {
 					<img src={HeroThumbImg1} alt="HeroImg" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src="/public/images/hero-thumb-2.webp" alt="HeroImg" />
+					<img src="/images/hero-thumb-2.webp" alt="HeroImg" />
 				</SwiperSlide>
 				<SwiperSlide>
 					<img src={HeroThumbImg3} alt="HeroImg" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={HeroThumbImg4} alt="HeroImg" />
+					<img src={HeroThumbImg4} alt="HeroImg" y />
 				</SwiperSlide>
 
 			</Swiper>
