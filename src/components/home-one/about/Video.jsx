@@ -2,12 +2,12 @@ import { useState } from "react";
 import PlayBtnImg from "../../../assets/images/v1/play-btn.svg";
 import VideoBg from "../../../assets/images/v1/video-bg.webp";
 import FadeInUp from "../../animation/FadeInUp";
-import VideoPlay from "../../../assets/images/Videos/Asterley Bros, London.webm"
+import VideoPlay from "../../../assets/images/Videos/Asterley Bros, London.webm";
 
 function Video() {
 	const [isOpen, setOpen] = useState(false);
 
-	// Inline styles for modal and elements
+	// Responsive styles
 	const modalStyles = {
 		position: "fixed",
 		top: 0,
@@ -18,7 +18,9 @@ function Video() {
 		display: "flex",
 		justifyContent: "center",
 		alignItems: "center",
-		zIndex: 9999
+		zIndex: 9999,
+		padding: "20px",
+		boxSizing: "border-box"
 	};
 
 	const overlayStyles = {
@@ -28,17 +30,26 @@ function Video() {
 		cursor: "pointer"
 	};
 
+	const videoContainerStyles = {
+		width: "100%",
+		maxWidth: "1200px",
+		position: "relative",
+		aspectRatio: "16/9",
+		borderRadius: "10px", // Added border radius to container
+		overflow: "hidden" // This ensures the video respects the border radius
+	};
+
 	const videoStyles = {
-		width: "60%",
-		height: "auto",
-		maxHeight: "80%",
-		borderRadius: "10px"
+		width: "100%",
+		height: "100%",
+		borderRadius: "10px", // Also added to video element for browser compatibility
+		objectFit: "cover" // Changed from 'contain' to 'cover' for better appearance
 	};
 
 	const closeButtonStyles = {
-		position: "absolute",
-		top: "100px",
-		right: "225px",
+		position: "fixed",
+		top: "20px",
+		right: "20px",
 		background: "rgba(255, 255, 255, 0.7)",
 		border: "none",
 		color: "#000",
@@ -48,34 +59,69 @@ function Video() {
 		borderRadius: "50%",
 		cursor: "pointer",
 		zIndex: 10000
-
 	};
-
-
 
 	return (
 		<FadeInUp className="aximo-video-wrap" style={{ position: "relative" }}>
-			<img src={VideoBg} alt="VideoBg" style={{ width: "100%" }} />
+			<img
+				src={VideoBg}
+				alt="VideoBg"
+				style={{
+					width: "100%",
+					height: "auto",
+					display: "block",
+					borderRadius: "10px" // Added to preview image for consistency
+				}}
+			/>
 
 			{/* Custom Modal for Local Video */}
 			{isOpen && (
 				<div style={modalStyles}>
 					<div style={overlayStyles} onClick={() => setOpen(false)}></div>
 
-					{/* Close Button */}
-					<button style={closeButtonStyles} onClick={() => setOpen(false)}>✖</button>
+					<button style={closeButtonStyles} onClick={() => setOpen(false)}>
+						✖
+					</button>
 
-					{/* Video Player (Autoplay OFF) */}
-					<video controls style={videoStyles}>
-						<source src={VideoPlay} type="video/mp4" />
-						Your browser does not support the video tag.
-					</video>
+					<div style={videoContainerStyles}>
+						<video
+							controls
+							autoPlay
+							style={videoStyles}
+						>
+							<source src={VideoPlay} type="video/webm" />
+							Your browser does not support the video tag.
+						</video>
+					</div>
 				</div>
 			)}
 
 			{/* Custom Play Button */}
-			<button className="aximo-video-popup play-btn1 video-init" onClick={() => setOpen(true)}>
-				<img src={PlayBtnImg} alt="Play Button" />
+			<button
+				className="aximo-video-popup play-btn1 video-init"
+				onClick={() => setOpen(true)}
+				style={{
+					position: "absolute",
+					top: "50%",
+					left: "50%",
+					transform: "translate(-50%, -50%)",
+					background: "transparent",
+					border: "none",
+					cursor: "pointer",
+					padding: 0
+				}}
+			>
+				<img
+					src={PlayBtnImg}
+					alt="Play Button"
+					style={{
+						width: "125px",
+						"@media (max-width: 768px)": {
+							width: "60px",
+							height: "60px"
+						}
+					}}
+				/>
 			</button>
 		</FadeInUp>
 	);
