@@ -40,7 +40,7 @@ function FaqAccordion() {
 							</div>
 						</div>
 					</div>
-					<div className="accordion-item">
+					{/* <div className="accordion-item">
 						<h3 className="accordion-header" id="headingOne">
 							<button
 								className="accordion-button"
@@ -52,6 +52,30 @@ function FaqAccordion() {
 							</button>
 						</h3>
 						<div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#aximo-accordion">
+							<div className="accordion-body">
+								This question helps potential clients determine if the agency has experience in their
+								specific industry or with similar projects. Our agency stands out due to our creative
+								expertise, attention to detail, and commitment to delivering designs that not only look
+								great.
+							</div>
+						</div>
+					</div> */}
+					<div className="accordion-item">
+						<h3 className="accordion-header">
+							<button
+								className="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseTwo"
+							>
+								What industries or types of clients do you typically work with?
+							</button>
+						</h3>
+						<div
+							id="collapseTwo"
+							className="accordion-collapse collapse"
+							data-bs-parent="#aximo-accordion"
+						>
 							<div className="accordion-body">
 								This question helps potential clients determine if the agency has experience in their
 								specific industry or with similar projects. Our agency stands out due to our creative

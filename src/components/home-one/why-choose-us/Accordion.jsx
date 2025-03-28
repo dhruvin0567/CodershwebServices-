@@ -20,10 +20,27 @@ function Accordion() {
 					</div>
 				</div>
 			</FadeInStaggerTwoChildren>
-			<FadeInStaggerTwoChildren className="accordion-item">
+			{/* <FadeInStaggerTwoChildren className="accordion-item">
 				<h3 className="accordion-header" id="headingOne">
 					<button
 						className="accordion-button"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#collapseTwo"
+					>
+						02/ Development
+					</button>
+				</h3>
+				<div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#aximo-accordion">
+					<div className="accordion-body">
+						We transform designs into fully functional Shopify stores using clean, efficient code.
+					</div>
+				</div>
+			</FadeInStaggerTwoChildren> */}
+			<FadeInStaggerTwoChildren className="accordion-item">
+				<h3 className="accordion-header">
+					<button
+						className="accordion-button collapsed"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#collapseTwo"
