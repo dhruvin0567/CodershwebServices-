@@ -3624,7 +3624,8 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 	text-align: center;
 	padding: 195px 0 130px;
 	/* background-color: var(--dark-bg); */
-	background-image: url(../images/images2/angularjs_1.webp);
+	/* background-image: url(../images/images2/angularjs_1.webp); */
+	background-image: url(/src/assets/images/images2/angularjs_1.webp);
 	/* filter: brightness(150%); */
 }
 
@@ -10702,10 +10703,13 @@ a.aximo-connect-login img {
 	object-fit: cover;
 	object-position: center top;
 	transition: all 0.4s;
+	filter: grayscale(100%);
+	/* transition: filter 0.5s ease; */
 }
 
 .aximo-story-thumb:hover img {
 	transform: scale(1.05);
+	filter: grayscale(0%);
 }
 
 @media (max-width: 991px) {

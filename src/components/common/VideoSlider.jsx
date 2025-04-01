@@ -30,6 +30,7 @@ const VideoSlider = () => {
         if (currentVideoIndex === index) {
             // Pause if clicking the currently playing video's button
             videoElement.pause();
+            videoElement.muted = true; // Mute again when paused
             setCurrentVideoIndex(null);
             // Resume autoplay when video is paused
             if (swiperInstance) {
@@ -38,9 +39,13 @@ const VideoSlider = () => {
         } else {
             // Pause all other videos first
             videoRefs.current.forEach(video => {
-                if (video) video.pause();
+                if (video) {
+                    video.pause();
+                    video.muted = true; // Ensure other videos stay muted
+                }
             });
             // Play the selected video
+            videoElement.muted = false; // Unmute the selected video
             videoElement.play()
                 .then(() => {
                     setCurrentVideoIndex(index);
@@ -159,7 +164,7 @@ const VideoSlider = () => {
                                     height="auto"
                                     ref={el => (videoRefs.current[index] = el)}
                                     playsInline
-                                    muted
+                                    // muted
                                     onClick={(e) => handleVideoClick(index, e)}
                                 >
                                     <source src={video} type="video/mp4" />
