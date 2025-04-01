@@ -7,11 +7,12 @@ import WhyChooseUs from "../../components/home-one/why-choose-us";
 // import Testimonial from "../../components/home-one/testimonial";
 import AutoSlider from "../../components/home-one/auto-slider";
 import TestimonialSwiper from "../../components/home-one/testimonial/TestimonialSwiper";
-import { Helmet } from 'react-helmet';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { createGlobalStyle } from 'styled-components';
 import ComparisonTable from "../../components/common/ComparisonTable";
-import Favicon from "../../assets/images/images2/favicon.webp";
+// import Favicon from "../../assets/images/images2/favicon.webp";
+// import { Helmet } from 'react-helmet';
+import SEO from "../../components/common/SEO";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -89,14 +90,21 @@ function HomeOne() {
 	return (
 		<>
 			<GlobalStyle />
-			<Helmet>
+			<SEO
+				title="Codersh Web Services | Shopify Development Company"
+				description="Codersh Web Services helps e-commerce brands grow with expert Shopify solutions. From seamless store migration to custom design and performance optimization, we deliver success-driven Shopify development."
+				keywords="Shopify development, Shopify customization, Shopify experts, Shopify store design, Shopify migration, Shopify agency, e-commerce growth, Shopify performance optimization"
+				canonical="https://www.codersh.ca/"
+			/>
+
+			{/* <Helmet>
 				<title>Codersh Web Services | Shopify Development Company</title>
 				<link rel="icon" href={Favicon} type="image/x-icon" />
 				<meta name="description" content="Codersh Web Services specializes in Shopify development, custom store design, and seamless migration. Elevate your e-commerce business with expert solutions for growth, performance, and user experience." />
 				<meta name="keywords" content="Shopify development, Shopify customization, Shopify experts, e-commerce growth, online store optimization, Shopify service agency, Shopify web design, Codersh Web Services, Codersh" />
 				<meta name="author" content="Codersh Web Services" />
 				<link rel="canonical" href="https://www.codersh.ca/" />
-			</Helmet>
+			</Helmet> */}
 			<SpeedInsights />
 			<Hero />
 			<Services services={servicesData} />
