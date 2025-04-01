@@ -12,6 +12,7 @@ import FadeInUp from "../../../components/animation/FadeInUp";
 import { Link } from 'react-router-dom';
 // import CheckImg from "../../../assets/images/v7/check.webp";
 import { createGlobalStyle } from 'styled-components';
+import SEO from "../../../components/common/SEO";
 const GlobalStyle = createGlobalStyle`
   #root {
 	 overflow-x: hidden; 
@@ -23,6 +24,12 @@ function CustomStore() {
     return (
         <div>
             <GlobalStyle />
+            <SEO
+                title="Custom Shopify Store Development | Codersh Web Services"
+                description="Create a unique, high-performance Shopify store with Codersh Web Services. Our expert developers provide custom design, advanced functionality, and seamless integration."
+                keywords="Custom Shopify store, Shopify store development, Shopify design, custom store design, e-commerce solutions, Shopify experts, advanced Shopify features, Codersh Web Services"
+                canonical="https://www.codersh.ca/customStore"
+            />
             <BreadCrumb title="Custom Store projects" />
 
             <div className="section aximo-section-padding2">

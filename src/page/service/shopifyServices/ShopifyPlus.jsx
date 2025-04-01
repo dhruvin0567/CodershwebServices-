@@ -12,6 +12,7 @@ import ThumbImg5 from "../../../assets/images/images2/service4_card2.webp";
 import { Link } from 'react-router-dom';
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
 import { createGlobalStyle } from 'styled-components';
+import SEO from "../../../components/common/SEO";
 const GlobalStyle = createGlobalStyle`
   #root {
 	 overflow-x: hidden; 
@@ -60,9 +61,13 @@ function ShopifyPlus() {
     return (
         <div>
             <GlobalStyle />
+            <SEO
+                title="Shopify Plus Development | Enterprise E-commerce Solutions | Codersh Web Services"
+                description="Elevate your business with Shopify Plus. Codersh Web Services specializes in custom Shopify Plus development, offering advanced features and scalability for enterprise-level stores."
+                keywords="Shopify Plus, Shopify Plus development, enterprise e-commerce, Shopify Plus custom solutions, scalable Shopify store, Shopify Plus experts, Codersh Web Services"
+                canonical="https://www.codersh.ca/shopify-plus"
+            />
             <BreadCrumb title="Shopify Plus" />
-
-
             <FadeInStaggerTwo>
                 <FadeInStaggerTwoChildren>
                     <div className="section aximo-project-page text-center dark-bg">

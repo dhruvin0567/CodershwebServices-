@@ -19,6 +19,7 @@ import FeatureImg8 from "../../../assets/images/images2/zendesk-300x300.jpg.webp
 import FeatureImg9 from "../../../assets/images/images2/loyaltylion-300x300.jpg.webp";
 import Check from "../../../assets/images/icon/check.svg";
 import { createGlobalStyle } from 'styled-components';
+import SEO from "../../../components/common/SEO";
 const GlobalStyle = createGlobalStyle`
   #root {
 	 overflow-x: hidden; 
@@ -190,6 +191,12 @@ function ShopifyMigrations() {
     return (
         <div>
             <GlobalStyle />
+            <SEO
+                title="Shopify Migration Services | Seamless Store Transition | Codersh Web Services"
+                description="Migrate your e-commerce store to Shopify with Codersh Web Services. We offer smooth, secure, and hassle-free migration for all your data, products, and customer information."
+                keywords="Shopify migration, e-commerce migration, Shopify store migration, Shopify data migration, Shopify product migration, secure Shopify migration, Codersh Web Services"
+                canonical="https://www.codersh.ca/shopify-migrations"
+            />
             <BreadCrumb title="Shopify Migrations" />
 
             <div className="section aximo-section-padding2">

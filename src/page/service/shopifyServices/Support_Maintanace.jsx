@@ -10,6 +10,7 @@ import ThumbImg3 from "../../../assets/images/images2/service5_3.webp";
 import ThumbImg4 from "../../../assets/images/images2/service5_4.webp";
 // import Star2Img from "../../../assets/images/v1/icon/star2.webp";
 import { createGlobalStyle } from 'styled-components';
+import SEO from "../../../components/common/SEO";
 const GlobalStyle = createGlobalStyle`
   #root {
 	 overflow-x: hidden; 
@@ -20,6 +21,12 @@ function Support_Maintanace() {
     return (
         <div>
             <GlobalStyle />
+            <SEO
+                title="Shopify Support & Maintenance Services | Codersh Web Services"
+                description="Ensure your Shopify store runs smoothly with Codersh Web Services. Our comprehensive support and maintenance services cover updates, troubleshooting, and performance optimization."
+                keywords="Shopify support, Shopify maintenance, Shopify store updates, e-commerce troubleshooting, store performance optimization, Shopify experts, Codersh Web Services"
+                canonical="https://www.codersh.ca/support-&-maintanance"
+            />
             <BreadCrumb title="Support & Maintanance" />
 
             <FadeInStaggerTwo>
