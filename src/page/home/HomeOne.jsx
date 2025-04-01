@@ -11,6 +11,7 @@ import { Helmet } from 'react-helmet';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { createGlobalStyle } from 'styled-components';
 import ComparisonTable from "../../components/common/ComparisonTable";
+import Favicon from "../../assets/images/images2/favicon.webp";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -89,12 +90,12 @@ function HomeOne() {
 		<>
 			<GlobalStyle />
 			<Helmet>
-				<title>Codersh Web Services - Your Trusted Shopify Service Agency</title>
-				<meta name="description" content="Empowering e-commerce brands with top-notch Shopify solutions. Seamless migration, custom design, and advanced features to grow your online business." />
-				<meta name="keywords" content="Shopify migration, Shopify design, Shopify customization, e-commerce growth, Shopify service agency" />
-				{/* <meta name="description" content="Codersh Web Services offers expert Shopify development and innovative web design solutions to empower your online business." />
-				<meta name="keywords" content="Shopify development, web design, e-commerce, Codersh Web Services, digital solutions" /> */}
+				<title>Codersh Web Services | Shopify Development Company</title>
+				<link rel="icon" href={Favicon} type="image/x-icon" />
+				<meta name="description" content="Codersh Web Services specializes in Shopify development, custom store design, and seamless migration. Elevate your e-commerce business with expert solutions for growth, performance, and user experience." />
+				<meta name="keywords" content="Shopify development, Shopify customization, Shopify experts, e-commerce growth, online store optimization, Shopify service agency, Shopify web design, Codersh Web Services, Codersh" />
 				<meta name="author" content="Codersh Web Services" />
+				<link rel="canonical" href="https://www.codersh.ca/" />
 			</Helmet>
 			<SpeedInsights />
 			<Hero />
