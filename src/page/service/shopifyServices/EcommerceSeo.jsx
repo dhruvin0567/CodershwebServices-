@@ -12,6 +12,7 @@ import ThumbImg4 from "../../../assets/images/images2/h4.webp";
 import ThumbImg6 from "../../../assets/images/images2/h4.webp";
 // import Star2Img from "../../../assets/images/v1/icon/star2.webp";
 import { createGlobalStyle } from 'styled-components';
+import SEO from "../../../components/common/SEO";
 const GlobalStyle = createGlobalStyle`
   #root {
      overflow-x: hidden; 
@@ -21,6 +22,13 @@ function EcommerceSeo() {
     return (
         <div>
             <GlobalStyle />
+            <SEO
+                title="SEO Agency for Shopify Stores | Boost Your Search Rankings | Codersh Web Services"
+                description="Enhance your Shopify store's visibility with Codersh Web Services' expert SEO services. We specialize in on-page, off-page, and technical SEO to improve rankings, traffic, and conversions."
+                keywords="SEO agency for Shopify, Shopify SEO services, e-commerce SEO, SEO experts, Shopify store SEO, on-page SEO, off-page SEO, technical SEO, Codersh Web Services"
+                canonical="https://www.codersh.ca/seo-agency"
+            />
+
             <BreadCrumb title="SEO Agency" />
 
             <FadeInStaggerTwo>

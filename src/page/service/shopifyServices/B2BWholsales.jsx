@@ -12,6 +12,7 @@ import ThumbImg4 from "../../../assets/images/images2/service12_4.webp";
 import ThumbImg5 from "../../../assets/images/images2/services12_5.webp";
 import Shape4Img from "../../../assets/images/v5/shape4.webp";
 import { createGlobalStyle } from 'styled-components';
+import SEO from "../../../components/common/SEO";
 const GlobalStyle = createGlobalStyle`
   #root {
      overflow-x: hidden; 
@@ -50,6 +51,12 @@ function B2BWholsales() {
     return (
         <div>
             <GlobalStyle />
+            <SEO
+                title="Shopify B2B Wholesale Solutions | Expand Your Business Reach | Codersh Web Services"
+                description="Transform your Shopify store into a powerful B2B wholesale platform. Codersh Web Services offers custom solutions for wholesale pricing, bulk orders, and seamless B2B integrations."
+                keywords="Shopify B2B wholesale, wholesale Shopify solutions, B2B e-commerce, Shopify bulk orders, wholesale pricing on Shopify, Shopify B2B integrations, Codersh Web Services"
+                canonical="https://www.codersh.ca/shopify-b2b-wholesale"
+            />
             <BreadCrumb title="Shopify B2B & Wholesale" />
 
             <div className="section aximo-project-page text-center dark-bg border-top">

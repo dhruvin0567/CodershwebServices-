@@ -10,6 +10,7 @@ import FadeInUp from "../../../components/animation/FadeInUp";
 import { Link } from 'react-router-dom';
 import { FadeInStaggerTwo, FadeInStaggerTwoChildren } from "../../../components/animation/FadeInStaggerTwo";
 import { createGlobalStyle } from 'styled-components';
+import SEO from "../../../components/common/SEO";
 const GlobalStyle = createGlobalStyle`
   #root {
 	 overflow-x: hidden; 
@@ -21,6 +22,12 @@ function EmailSmsMarketing() {
     return (
         <div>
             <GlobalStyle />
+            <SEO
+                title="Email Marketing Agency for Shopify | Boost Engagement & Sales | Codersh Web Services"
+                description="Grow your e-commerce store with effective email marketing strategies. Codersh Web Services offers expert email campaigns, automation, and targeted outreach to increase engagement and sales."
+                keywords="email marketing for Shopify, Shopify email campaigns, Shopify email automation, email marketing agency, e-commerce email strategies, increase sales with email marketing, Codersh Web Services"
+                canonical="https://www.codersh.ca/email-marketing-agency"
+            />
             <BreadCrumb title="Email & Sms Marketing Agency" />
 
             <FadeInStaggerTwo>

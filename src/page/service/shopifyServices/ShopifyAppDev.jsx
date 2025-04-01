@@ -7,6 +7,7 @@ import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
 import { Link } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
+import SEO from "../../../components/common/SEO";
 const GlobalStyle = createGlobalStyle`
   #root {
 	 overflow-x: hidden; 
@@ -17,6 +18,12 @@ function ShopifyAppDev() {
     return (
         <div>
             <GlobalStyle />
+            <SEO
+                title="Shopify App Development | Custom Apps for Your E-commerce Needs | Codersh Web Services"
+                description="Enhance your Shopify store with custom app development by Codersh Web Services. We create tailor-made apps to boost functionality, streamline operations, and provide unique solutions for your business."
+                keywords="Shopify app development, custom Shopify apps, e-commerce app solutions, Shopify app development services, Shopify functionality, Shopify app experts, Codersh Web Services"
+                canonical="https://www.codersh.ca/shopify-app-development"
+            />
             <BreadCrumb title="Shopify App Development" />
 
             <div className="section aximo-section-padding2">

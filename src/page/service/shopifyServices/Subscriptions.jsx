@@ -14,6 +14,7 @@ import ThumbImg4 from "../../../assets/images/images2/service8_1.webp";
 // import ThumbImg5 from "../../../assets/images/images2/services12_5.webp";
 // import Shape4Img from "../../../assets/images/v5/shape4.webp";
 import { createGlobalStyle } from 'styled-components';
+import SEO from "../../../components/common/SEO";
 const GlobalStyle = createGlobalStyle`
   #root {
 	 overflow-x: hidden; 
@@ -118,6 +119,12 @@ function Subscriptions() {
     return (
         <div>
             <GlobalStyle />
+            <SEO
+                title="Shopify Subscription Services | Build Recurring Revenue | Codersh Web Services"
+                description="Offer subscriptions on your Shopify store with ease. Codersh Web Services provides expert setup for subscription models, recurring payments, and subscription box services."
+                keywords="Shopify subscriptions, recurring payments on Shopify, subscription services Shopify, Shopify subscription model, Shopify subscription box, build recurring revenue, Codersh Web Services"
+                canonical="https://www.codersh.ca/subscriptions-on-shopify"
+            />
             <BreadCrumb title="Subscriptions On Shopify" />
 
             <div className="section aximo-project-page text-center dark-bg border-top">

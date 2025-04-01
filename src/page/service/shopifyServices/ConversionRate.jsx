@@ -9,6 +9,7 @@ import ThumbImg2 from "../../../assets/images/images2/service5_2.webp";
 import ThumbImg3 from "../../../assets/images/images2/service5_3.webp";
 import ThumbImg4 from "../../../assets/images/images2/service5_4.webp";
 import { createGlobalStyle } from 'styled-components';
+import SEO from "../../../components/common/SEO";
 const GlobalStyle = createGlobalStyle`
   #root {
 	 overflow-x: hidden; 
@@ -20,6 +21,12 @@ function ConversionRate() {
     return (
         <div>
             <GlobalStyle />
+            <SEO
+                title="Conversion Rate Optimization for Shopify | Boost E-commerce Sales | Codersh Web Services"
+                description="Maximize your Shopify store’s potential with expert Conversion Rate Optimization (CRO) services from Codersh Web Services. Increase sales and improve customer engagement with data-driven strategies."
+                keywords="Conversion rate optimization, Shopify CRO, e-commerce sales optimization, Shopify store conversion, improve store sales, increase Shopify conversions, Shopify experts, Codersh Web Services"
+                canonical="https://www.codersh.ca/conversion-rate"
+            />
             <BreadCrumb title="Conversion Rate Optimization" />
 
             <FadeInStaggerTwo>
