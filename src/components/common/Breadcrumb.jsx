@@ -12,7 +12,7 @@ function BreadCrumb({ title }) {
 						</li>
 						{title === "Blog Details" && (
 							<li>
-								<Link to="/blog-grid">Blog</Link>
+								<Link to="/ourblog">Blog</Link>
 							</li>
 						)}
 						{title === "Case Study Details" && (
