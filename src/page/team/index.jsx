@@ -12,7 +12,8 @@ import Team5Img from "../../assets/images/team/team5.webp";
 import Team6Img from "../../assets/images/team/team6.webp";
 import Team7Img from "../../assets/images/team/team7.webp";
 import Team8Img from "../../assets/images/team/team8.webp";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import SEO from "../../components/common/SEO";
 // import Team9Img from "../../assets/images/team/team9.webp";
 
 const teamsData = [
@@ -92,11 +93,12 @@ const teamsData = [
 function Team() {
 	return (
 		<>
-			<Helmet>
-				<meta name="description" content="Meet the talented team at Codersh Web Services – experts in Shopify development, web design, and e-commerce solutions, dedicated to delivering innovative digital experiences." />
-				<meta name="keywords" content="Codersh Web Services team, Shopify development, web design, e-commerce, digital solutions, professional team" />
-				<meta name="author" content="Codersh Web Services" />
-			</Helmet>
+			<SEO
+				title="Meet the Codersh Team | Shopify Development Experts"
+				description="Get to know the expert team behind Codersh Web Services. Our Shopify developers, designers, and strategists are dedicated to building high-performing e-commerce solutions."
+				keywords="Codersh team, Shopify experts, Shopify developers, Shopify designers, e-commerce professionals, Shopify agency team, Shopify customization specialists"
+				canonical="https://www.codersh.ca/team"
+			/>
 			<BreadCrumb title="Our Team" />
 			<Teams teams={teamsData} />
 		</>

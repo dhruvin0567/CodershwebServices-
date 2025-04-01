@@ -90,13 +90,6 @@ function HomeOne() {
 	return (
 		<>
 			<GlobalStyle />
-			<SEO
-				title="Codersh Web Services | Shopify Development Company"
-				description="Codersh Web Services helps e-commerce brands grow with expert Shopify solutions. From seamless store migration to custom design and performance optimization, we deliver success-driven Shopify development."
-				keywords="Shopify development, Shopify customization, Shopify experts, Shopify store design, Shopify migration, Shopify agency, e-commerce growth, Shopify performance optimization"
-				canonical="https://www.codersh.ca/"
-			/>
-
 			{/* <Helmet>
 				<title>Codersh Web Services | Shopify Development Company</title>
 				<link rel="icon" href={Favicon} type="image/x-icon" />
@@ -105,6 +98,12 @@ function HomeOne() {
 				<meta name="author" content="Codersh Web Services" />
 				<link rel="canonical" href="https://www.codersh.ca/" />
 			</Helmet> */}
+			<SEO
+				title="Codersh Web Services | Shopify Development Company"
+				description="Codersh Web Services helps e-commerce brands grow with expert Shopify solutions. From seamless store migration to custom design and performance optimization, we deliver success-driven Shopify development."
+				keywords="Shopify development, Shopify customization, Shopify experts, Shopify store design, Shopify migration, Shopify agency, e-commerce growth, Shopify performance optimization, Shopify Services agency, Codersh Web Services, Codersh, Codersh Website"
+				canonical="https://www.codersh.ca/"
+			/>
 			<SpeedInsights />
 			<Hero />
 			<Services services={servicesData} />
