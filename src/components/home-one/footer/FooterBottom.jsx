@@ -12,9 +12,9 @@ function FooterBottom() {
 			</div>
 			<div className="col-lg-6">
 				<div className="aximo-copywright one">
-					<p> &copy;  All Rights Reserved 2025. | Powered by Codersh.</p>
+					<p> &copy;  All Rights Reserved 2025. | Powered by <a href="https://codersh.com/" style={{ fontSize: "18px", color: "white" }}>Codersh.</a></p>
 				</div>
-			</div>
+			</div >
 		</>
 	);
 }

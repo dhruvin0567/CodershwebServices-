@@ -9205,6 +9205,7 @@ a.forgot-password {
 
 .aximo-account-field input {
 	font-weight: 400;
+
 }
 
 .aximo-account-checkbox input {
@@ -11492,7 +11493,7 @@ a.comment-reply {
 }
 
 .aximo-main-field label {
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 700;
 	display: block;
 	margin-bottom: 10px;
@@ -11503,7 +11504,7 @@ a.comment-reply {
 	height: 60px;
 	display: flex;
 	color: #fffdf8;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 700;
 	align-items: center;
 	justify-content: center;

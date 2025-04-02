@@ -1,12 +1,7 @@
-// import ContactForm from "../../contact/ContactForm";
-// import Categories from "../Categories";
-// import RecentPosts from "../RecentPosts";
-// import Search from "../Search";
-// import Tags from "../Tags";
-import BlogDetails from "./BlogDetails";
-import Field from "../../common/Field";
-// import emailjs from '@emailjs/browser';
 import { useForm } from "react-hook-form";
+import Field from "../../common/Field";
+import BlogDetails from "./BlogDetails";
+
 function SingleBlog() {
 	const {
 		register,
@@ -44,12 +39,14 @@ function SingleBlog() {
 	};
 
 	const autofillStyles = {
+		fontSize: "18px",
 		WebkitAppearance: 'none',
 		backgroundImage: 'none',
 		backgroundColor: 'transparent',
-		color: '#000', // Set text color to white
+		color: '#000', // Set text color to black
 		transition: 'background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s', // Transition for color as well
 	};
+
 	return (
 		<div className="section post-details-page aximo-section-padding2">
 			<div className="container">
@@ -59,17 +56,16 @@ function SingleBlog() {
 					</div>
 					<div className="col-lg-4">
 						<div className="right-sidebar">
-							{/* <Search />
-							<Categories />
-							<RecentPosts />
-							<Tags /> */}
 							<div className="aximo-main-form">
 								<form onSubmit={handleSubmit(submitForm)}>
+									{/* Name Field */}
 									<div className="aximo-main-field">
 										<Field label="Your Name" error={errors.name}>
 											<input
-												{...register("name", { required: "Name is required." })}
-												type="name"
+												{...register("name", {
+													required: "Name is required.",
+												})}
+												type="text"
 												name="name"
 												id="name"
 												className="form-input"
@@ -77,10 +73,18 @@ function SingleBlog() {
 											/>
 										</Field>
 									</div>
+
+									{/* Email Field */}
 									<div className="aximo-main-field">
 										<Field label="Enter email address" error={errors.email}>
 											<input
-												{...register("email", { required: "Email is required." })}
+												{...register("email", {
+													required: "Email is required.",
+													pattern: {
+														value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/, // Validate email format
+														message: "Please enter a valid email address.",
+													},
+												})}
 												type="email"
 												name="email"
 												id="email"
@@ -89,11 +93,23 @@ function SingleBlog() {
 											/>
 										</Field>
 									</div>
+
+									{/* Phone Number Field */}
 									<div className="aximo-main-field">
 										<Field label="Enter Phone Number" error={errors.number}>
 											<input
-												{...register("number", { required: "Phone is required." })}
-												type="phone"
+												{...register("number", {
+													required: "Phone number is required.",
+													pattern: {
+														value: /^[0-9+()-\s]+$/, // Allow numbers, +, (), -, and spaces
+														message: "Please enter a valid phone number.",
+													},
+													maxLength: {
+														value: 15, // Maximum length of 15 characters
+														message: "Phone number cannot exceed 15 characters.",
+													},
+												})}
+												type="tel"
 												name="number"
 												id="number"
 												className="form-input"
@@ -101,15 +117,27 @@ function SingleBlog() {
 											/>
 										</Field>
 									</div>
+
+									{/* Message Field */}
 									<div className="aximo-main-field">
-										<label>Write your message here...</label>
-										<textarea
-											{...register("message")}
-											name="message"
-											className="input-textarea"
-										></textarea>
+										<Field label="Write your message here..." error={errors.message}>
+											<textarea
+												{...register("message", {
+													required: "Message is required.",
+												})}
+												name="message"
+												className="input-textarea"
+												style={{ fontSize: "18px" }}
+											></textarea>
+										</Field>
 									</div>
-									<button id="aximo-main-btn" type="submit" className="form-input">
+
+									{/* Submit Button */}
+									<button
+										id="aximo-main-btn"
+										type="submit"
+										className="form-input"
+									>
 										Send Message
 									</button>
 								</form>

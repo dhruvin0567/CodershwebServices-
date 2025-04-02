@@ -13,6 +13,7 @@ function ContactForm() {
 		reset,
 	} = useForm();
 
+	// Submit form
 	const submitForm = async (formData) => {
 		console.log("Submitted Form Data =", formData);
 
@@ -42,6 +43,7 @@ function ContactForm() {
 	};
 
 	const autofillStyles = {
+		fontSize: "18px",
 		WebkitAppearance: 'none',
 		backgroundImage: 'none',
 		backgroundColor: 'transparent',
@@ -70,7 +72,7 @@ function ContactForm() {
 
 				<div className="row">
 					<div className="col-lg-5 order-lg-2">
-						<FadeInRight className="aximo-contact-thumb ">
+						<FadeInRight className="aximo-contact-thumb">
 							<img src={ContactThumb} alt="Contact Thumb" />
 						</FadeInRight>
 					</div>
@@ -81,7 +83,7 @@ function ContactForm() {
 									<Field label="Your Name" error={errors.name}>
 										<input
 											{...register("name", { required: "Name is required." })}
-											type="name"
+											type="text"
 											name="name"
 											id="name"
 											style={autofillStyles}
@@ -91,7 +93,13 @@ function ContactForm() {
 								<div className="aximo-main-field">
 									<Field label="Enter email address" error={errors.email}>
 										<input
-											{...register("email", { required: "Email is required." })}
+											{...register("email", {
+												required: "Email is required.",
+												pattern: {
+													value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+													message: "Please enter a valid email address.",
+												},
+											})}
 											type="email"
 											name="email"
 											id="email"
@@ -102,8 +110,18 @@ function ContactForm() {
 								<div className="aximo-main-field">
 									<Field label="Enter Phone Number" error={errors.number}>
 										<input
-											{...register("number", { required: "Phone is required." })}
-											type="phone"
+											{...register("number", {
+												required: "Phone is required.",
+												pattern: {
+													value: /^[0-9+\-()\s]+$/,
+													message: "Phone number can only contain numbers, spaces, +, and -.",
+												},
+												maxLength: {
+													value: 15,
+													message: "Phone number cannot exceed 15 characters.",
+												},
+											})}
+											type="tel"
 											name="number"
 											id="number"
 											style={autofillStyles}
@@ -113,8 +131,9 @@ function ContactForm() {
 								<div className="aximo-main-field">
 									<label>Write your message here...</label>
 									<textarea
-										{...register("message")}
+										{...register("message", { required: "Message is required." })}
 										name="message"
+										style={{ fontSize: "18px" }}
 									></textarea>
 								</div>
 								<button id="aximo-main-btn" type="submit">
