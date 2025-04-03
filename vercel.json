@@ -4,5 +4,12 @@
             "source": "/(.*)",
             "destination": "/"
         }
-    ]
+    ],
+     "redirects": [
+    {
+      "source": "https://codersh.ca/:path*",
+      "destination": "https://www.codersh.ca/:path*",
+      "permanent": true
+    }
+  ]
 }
