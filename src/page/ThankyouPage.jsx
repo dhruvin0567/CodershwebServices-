@@ -6,7 +6,7 @@ import Check from "../assets/images/icon/check.svg";
 // import NotifyForm from "../components/coming-soon/NotifyForm"
 import ArrowRightImg from "../assets/images/v1/icon/arrow-right.svg";
 import ThumbImg1 from "../assets/images/team/team1.webp";
-function thankyoupage() {
+function ThankyouPage() {
     return (
         <div>
             <div className="Brand-breadcrumb">
@@ -90,7 +90,7 @@ function thankyoupage() {
     )
 }
 
-export default thankyoupage
+export default ThankyouPage
 
 
 

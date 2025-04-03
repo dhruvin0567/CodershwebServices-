@@ -61,7 +61,7 @@ import ShopifyAppDev from "../page/service/shopifyServices/ShopifyAppDev.jsx";
 import EcommerceSeo from "../page/service/shopifyServices/EcommerceSeo.jsx";
 import B2BWholsales from "../page/service/shopifyServices/B2BWholsales.jsx";
 import Subscriptions from "../page/service/shopifyServices/Subscriptions.jsx";
-import ThankyouPage from "../page/thankyoupage.jsx";
+import ThankyouPage from "../page/ThankyouPage.jsx";
 
 // import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
 // import SingleBrandCustom from "../page/brand/SingleBrandCustom.jsx";
