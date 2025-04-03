@@ -25,6 +25,16 @@ export default defineConfig({
       priority: 1.0
     })
   ],
-  assetsInclude: ['**/*.PNG']
+  assetsInclude: ['**/*.PNG'],
+  server: {
+    proxy: {
+      // Proxy API requests to the backend
+      '/wp-json': {
+        target: 'https://codersh.com/',  // Replace with your backend URL
+        changeOrigin: true,              // Allows the proxy to change the origin of the request
+        rewrite: (path) => path.replace(/^\/wp-json/, '/wp-json'), // Optional: removes `/api` prefix when forwarding the request
+      },
+    },
+  },
 })
 

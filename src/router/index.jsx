@@ -10,20 +10,20 @@ import HomeOne from "../page/home/HomeOne.jsx";
 import Team from "../page/team";
 import ErrorPage from "../error-page";
 import BlogGridPage from "../page/blog/BlogGridPage.jsx";
+// import PortfolioTwoColumn from "../page/portfolio/PortfolioTwoColumn";
 
-// import LayoutEight from "../components/layout/LayoutEight.jsx";
 // import Service from "../page/service";
 // import Reset from "../page/auth/ResetPassword.jsx";
 // import SignIn from "../page/auth/SignIn";
 // import SignUp from "../page/auth/SignUp";
 // import CommingSoon from "../page/utility/CommingSoon.jsx";
-// import PortfolioTwoColumn from "../page/portfolio/PortfolioTwoColumn";
-// import LayoutFive from "../components/layout/LayoutFive.jsx";
-// import LayoutFour from "../components/layout/LayoutFour.jsx";
-// import LayoutSeven from "../components/layout/LayoutSeven.jsx";
-// import LayoutSix from "../components/layout/LayoutSix.jsx";
-// import LayoutThree from "../components/layout/LayoutThree.jsx";
 // import LayoutTwo from "../components/layout/LayoutTwo.jsx";
+// import LayoutThree from "../components/layout/LayoutThree.jsx";
+// import LayoutFour from "../components/layout/LayoutFour.jsx";
+// import LayoutFive from "../components/layout/LayoutFive.jsx";
+// import LayoutSix from "../components/layout/LayoutSix.jsx";
+// import LayoutSeven from "../components/layout/LayoutSeven.jsx";
+// import LayoutEight from "../components/layout/LayoutEight.jsx";
 // import BlogPage from "../page/blog/BlogPage.jsx";
 // import SingleBlogPage from "../page/blog/SingleBlog.jsx";
 // import HomeFive from "../page/home/HomeFive.jsx";
@@ -45,6 +45,7 @@ import Creditrepair from "../page/solutions/Creditrepair.jsx";
 import Itdigitalagency from "../page/solutions/Itdigitalagency.jsx";
 import CaseStudies from "../page/projects/CaseStudies.jsx";
 import Brand from "../page/brand/Brand.jsx";
+import SingleBrand from "../page/brand/SingleBrand.jsx";
 import SingleBlogPage from "../page/blog/SingleBlog.jsx";
 import LandingPage from "../page/projects/LandingPage.jsx";
 import CustomStore from "../page/service/shopifyServices/CustomStore.jsx";
@@ -60,11 +61,12 @@ import ShopifyAppDev from "../page/service/shopifyServices/ShopifyAppDev.jsx";
 import EcommerceSeo from "../page/service/shopifyServices/EcommerceSeo.jsx";
 import B2BWholsales from "../page/service/shopifyServices/B2BWholsales.jsx";
 import Subscriptions from "../page/service/shopifyServices/Subscriptions.jsx";
-import SingleBrand from "../page/brand/SingleBrand.jsx";
-import SingleBrandCustom from "../page/brand/SingleBrandCustom.jsx";
-import BrandCustom from "../page/brand/BrandCustom.jsx";
+import ThankyouPage from "../page/thankyoupage.jsx";
 
-import Pestrashop from "../page/service/ecommerece/Pestrashop.jsx";
+// import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
+// import SingleBrandCustom from "../page/brand/SingleBrandCustom.jsx";
+// import BrandCustom from "../page/brand/BrandCustom.jsx";
+// import Pestrashop from "../page/service/ecommerece/Pestrashop.jsx";
 // import Shift4shop from "../page/service/ecommerece/Shift4shop.jsx";
 // import BigCommerce from "../page/service/ecommerece/BigCommerce.jsx";
 // import WooCommerceDevelopment from "../page/service/ecommerece/WooCommerceDevelopment.jsx";
@@ -124,6 +126,10 @@ export const router = createBrowserRouter([
 						path: "/portfolio",
 						element: <Portfolio />,
 					},
+					// {
+					// 	path: "/portfolio-two",
+					// 	element: <PortfolioTwoColumn />,
+					// },
 					{
 						path: "/ourblog",
 						element: <BlogGridPage />,
@@ -168,30 +174,6 @@ export const router = createBrowserRouter([
 						path: "*",
 						element: <ErrorPage />,
 					},
-					{
-						path: "/pestrashop",
-						element: <Pestrashop />,
-					},
-					// {
-					// 	path: "/shift4shop",
-					// 	element: <Shift4shop />,
-					// },
-					// {
-					// 	path: "/bigcommerce",
-					// 	element: <BigCommerce />,
-					// },
-					// {
-					// 	path: "/woocommercedevelopment",
-					// 	element: <WooCommerceDevelopment />,
-					// },
-					// {
-					// 	path: "/androidappdev",
-					// 	element: <AndroidAppDev />,
-					// },
-					// {
-					// 	path: "/iosappdev",
-					// 	element: <IosAppDev />,
-					// },
 					{
 						path: "/landingpage",
 						element: <LandingPage />,
@@ -249,13 +231,17 @@ export const router = createBrowserRouter([
 						element: <SingleBrand />,
 					},
 					{
-						path: "/custom-brand-single",
-						element: <SingleBrandCustom />,
+						path: "/thank-you",
+						element: <ThankyouPage />,
 					},
-					{
-						path: "/custom-brand",
-						element: <BrandCustom />,
-					},
+					// {
+					// 	path: "/custom-brand-single",
+					// 	element: <SingleBrandCustom />,
+					// },
+					// {
+					// 	path: "/custom-brand",
+					// 	element: <BrandCustom />,
+					// },
 					// {
 					// 	path: "/singleblog2",
 					// 	element: <SingleBlog2 />,
@@ -290,11 +276,6 @@ export const router = createBrowserRouter([
 					// 	element: <SinglePortfolio />,
 					// },
 					// {
-					// 	path: "/portfolio-two",
-					// 	element: <PortfolioTwoColumn />,
-					// },
-
-					// {
 					// 	path: "/portfolio2",
 					// 	element: <Portfolio2 />,
 					// },
@@ -318,7 +299,30 @@ export const router = createBrowserRouter([
 					// 	path: "/ourwork2",
 					// 	element: <OurWork2 />,
 					// },
-
+					// {
+					// 	path: "/pestrashop",
+					// 	element: <Pestrashop />,
+					// },
+					// {
+					// 	path: "/shift4shop",
+					// 	element: <Shift4shop />,
+					// },
+					// {
+					// 	path: "/bigcommerce",
+					// 	element: <BigCommerce />,
+					// },
+					// {
+					// 	path: "/woocommercedevelopment",
+					// 	element: <WooCommerceDevelopment />,
+					// },
+					// {
+					// 	path: "/androidappdev",
+					// 	element: <AndroidAppDev />,
+					// },
+					// {
+					// 	path: "/iosappdev",
+					// 	element: <IosAppDev />,
+					// },
 				],
 			},
 			// {
@@ -385,6 +389,10 @@ export const router = createBrowserRouter([
 			// 	path: "/",
 			// 	element: <LayoutEight />,
 			// 	children: [
+			// 		{
+			// 			path: "/thank-you",
+			// 			element: <ThankyouPage />,
+			// 		},
 			// 		{
 			// 			path: "/coming-soon",
 			// 			element: <CommingSoon />,

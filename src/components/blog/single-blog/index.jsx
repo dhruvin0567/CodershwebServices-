@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";  // Import useNavigate hook from React Router
+
 import { useForm } from "react-hook-form";
 import Field from "../../common/Field";
 import BlogDetails from "./BlogDetails";
@@ -9,6 +11,8 @@ function SingleBlog() {
 		formState: { errors },
 		reset,
 	} = useForm();
+
+	const navigate = useNavigate();  // Initialize navigate function
 
 	const submitForm = async (formData) => {
 		console.log("Submitted Form Data =", formData);
@@ -26,8 +30,12 @@ function SingleBlog() {
 
 			if (response.ok) {
 				console.log("Form submitted successfully:", result);
-				alert("Thank you! Your form has been submitted.");
+				// alert("Thank you! Your form has been submitted.");
 				reset(); // Reset the form fields after successful submission
+
+				// Navigate to the Thank You page
+				navigate("/thank-you");  // Use React Router to navigate to the Thank You page
+
 			} else {
 				console.error("Form submission failed:", result);
 				alert("Form submission failed. Please try again.");

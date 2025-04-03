@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";  // Import useNavigate hook from React Router
+
 import { useForm } from "react-hook-form";
 import ContactThumb from "../../assets/images/contact/contact-thumb.webp";
 import Star2Img from "../../assets/images/v1/star2.webp";
@@ -12,6 +14,8 @@ function ContactForm() {
 		formState: { errors },
 		reset,
 	} = useForm();
+
+	const navigate = useNavigate();  // Initialize navigate function
 
 	// Submit form
 	const submitForm = async (formData) => {
@@ -30,8 +34,13 @@ function ContactForm() {
 
 			if (response.ok) {
 				console.log("Form submitted successfully:", result);
-				alert("Thank you! Your form has been submitted.");
+				// alert("Thank you! Your form has been submitted.");
 				reset(); // Reset the form fields after successful submission
+
+				// Navigate to the Thank You page
+				navigate("/thank-you");  // Use React Router to navigate to the Thank You page
+
+
 			} else {
 				console.error("Form submission failed:", result);
 				alert("Form submission failed. Please try again.");

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-function PortfolioCard({ portfolio: { name, technology, img } }) {
+function PortfolioCard({ portfolio: { description, title, img } }) {
 
 
 
@@ -10,9 +10,9 @@ function PortfolioCard({ portfolio: { name, technology, img } }) {
 			<div className="aximo-project-wrap">
 				<div className="aximo-project-data">
 					<Link to="/single-portfolio">
-						<h3>{name}</h3>
+						<h3>{title}</h3>
 					</Link>
-					<p>{technology}</p>
+					<p>{description}</p>
 				</div>
 				<Link className="aximo-project-icon" to="/single-portfolio" aria-label="View single-portfolio">
 					<svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">

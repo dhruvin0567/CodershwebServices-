@@ -25,7 +25,8 @@ function FaqAccordion() {
 								data-bs-toggle="collapse"
 								data-bs-target="#collapseOne"
 							>
-								What services does your design agency offer?
+								What is Shopify Optimization?
+
 							</button>
 						</h3>
 						<div
@@ -34,9 +35,7 @@ function FaqAccordion() {
 							data-bs-parent="#aximo-accordion"
 						>
 							<div className="accordion-body">
-								Clients often seek to understand the range of design services an agency provides, such
-								as graphic design, web design, branding, and more. We offer a wide range of design
-								services, including graphic design, web design, branding, UI/UX design, and more.
+								Shopify Optimization improves your store’s speed, user experience, and conversion rates by refining design, performance, and functionality.
 							</div>
 						</div>
 					</div>
@@ -68,7 +67,7 @@ function FaqAccordion() {
 								data-bs-toggle="collapse"
 								data-bs-target="#collapseTwo"
 							>
-								What industries or types of clients do you typically work with?
+								How do you optimize Shopify store speed?
 							</button>
 						</h3>
 						<div
@@ -77,10 +76,7 @@ function FaqAccordion() {
 							data-bs-parent="#aximo-accordion"
 						>
 							<div className="accordion-body">
-								This question helps potential clients determine if the agency has experience in their
-								specific industry or with similar projects. Our agency stands out due to our creative
-								expertise, attention to detail, and commitment to delivering designs that not only look
-								great.
+								We optimize images, remove unused apps, minimize code, enable Shopify’s CDN, and implement best practices to improve load time.
 							</div>
 						</div>
 					</div>
@@ -92,7 +88,7 @@ function FaqAccordion() {
 								data-bs-toggle="collapse"
 								data-bs-target="#collapseThree"
 							>
-								Can you provide examples of your previous work/portfolio?
+								Can you help increase my store’s conversion rate?
 							</button>
 						</h3>
 						<div
@@ -101,10 +97,7 @@ function FaqAccordion() {
 							data-bs-parent="#aximo-accordion"
 						>
 							<div className="accordion-body">
-								Yes, we're proud to showcase a portfolio of our previous projects. You can find examples
-								of our work on our website or request a tailored portfolio relevant to your needs.
-								Clients often want to see examples of the agency's previous projects to assess the
-								quality and style.
+								Yes! We enhance product pages, streamline checkout, and optimize calls-to-action to turn visitors into buyers.
 							</div>
 						</div>
 					</div>
@@ -116,7 +109,7 @@ function FaqAccordion() {
 								data-bs-toggle="collapse"
 								data-bs-target="#collapseFour"
 							>
-								What is your design process like?
+								Will optimization affect my store’s design?
 							</button>
 						</h3>
 						<div
@@ -125,8 +118,7 @@ function FaqAccordion() {
 							data-bs-parent="#aximo-accordion"
 						>
 							<div className="accordion-body">
-								Explaining the design agency's process from initial concept to final delivery helps
-								clients understand what to expect.
+								No, we refine performance without compromising your store’s design. If needed, we make subtle UI improvements for a better user experience.
 							</div>
 						</div>
 					</div>
@@ -138,7 +130,7 @@ function FaqAccordion() {
 								data-bs-toggle="collapse"
 								data-bs-target="#collapseFive"
 							>
-								How do you handle revisions and feedback during a project?
+								How long does Shopify Optimization take?
 							</button>
 						</h3>
 						<div
@@ -147,9 +139,7 @@ function FaqAccordion() {
 							data-bs-parent="#aximo-accordion"
 						>
 							<div className="accordion-body">
-								Clients are interested in knowing how the agency manages feedback and makes revisions to
-								ensure the final design meets their expectations. We value client feedback and work
-								closely with you to make sure you're happy with the final design.
+								Depending on the level of optimization needed, it usually takes between 5 to 10 days.
 							</div>
 						</div>
 					</div>
@@ -161,15 +151,12 @@ function FaqAccordion() {
 								data-bs-toggle="collapse"
 								data-bs-target="#collapseSix"
 							>
-								Do you offer ongoing support after project completion?
+								Do you provide ongoing support after optimization?
 							</button>
 						</h3>
 						<div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#aximo-accordion">
 							<div className="accordion-body">
-								Yes, we offer ongoing support, maintenance, and updates as needed, ensuring that your
-								design assets and projects remain up to date and functional. Some clients may have
-								urgent projects, so it's important to communicate if the agency can accommodate rush
-								orders.
+								Yes! We offer continuous monitoring and updates to ensure long-term store performance.
 							</div>
 						</div>
 					</div>

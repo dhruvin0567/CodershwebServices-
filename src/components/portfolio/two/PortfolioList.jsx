@@ -25,24 +25,29 @@ const portfolioListData = [
 		title: "Madame F",
 		description: "Queer Owned Wine Brand Supporting UK’s first LGBTQ+ Museum.",
 		img: Portfolio2Img,
+		category: "shopify", country: "uk", industry: "wine",
 	},
 	{
 		id: crypto.randomUUID(),
 		title: "Van Hunks",
 		description: "Van Hunks Sparkling Wine is a captivating drink that delights and surprises.",
 		img: Portfolio3Img,
+		category: "shopify", country: "south africa", industry: "wine",
+
 	},
 	{
 		id: crypto.randomUUID(),
 		title: "Liberation Cocktails",
 		description: "We’ve Created and Crafted our Classic Range to be on-tap and in Cans and Bottles, Free Flowing.",
 		img: Portfolio4Img,
+		category: "shopify", country: "uk", industry: "wine",
 	},
 	{
 		id: crypto.randomUUID(),
 		title: "Bone Idyl",
 		description: "An Urban Distillery + Bar on the Banks of the River Thames.",
 		img: Portfolio5Img,
+		category: "shopify", country: "uk", industry: "wine",
 	},
 	{
 		id: crypto.randomUUID(),
@@ -73,12 +78,14 @@ const portfolioListData = [
 		title: "Buy Vapes USA",
 		description: "We're your ultimate destination for premium Disposable Vapes, directly from the biggest brands in the industry.",
 		img: Portfolio9Img,
+		category: "shopify", country: "usa",
 	},
 	{
 		id: crypto.randomUUID(),
 		title: "Tylers Coffees",
 		description: "Our Acid-Free Coffee Range Offers a Symphony of Flavor, Minus the Sour Aftertaste.",
 		img: Portfolio11Img,
+		category: "shopify", country: "usa", industry: "food & beverages",
 	},
 	{
 		id: crypto.randomUUID(),

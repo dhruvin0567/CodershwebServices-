@@ -1,4 +1,6 @@
 // import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";  // Import useNavigate hook from React Router
+
 import { useForm } from "react-hook-form";
 import Field from "../../common/Field";
 import ArrowRight3Img from "../../../assets/images/icon/arrow-right3.svg";
@@ -11,6 +13,8 @@ function MessageForm() {
 		reset,
 	} = useForm();
 	// const [countryCode, setCountryCode] = useState("+1"); // Default country code
+
+	const navigate = useNavigate();  // Initialize navigate function
 
 	const submitForm = async (formData) => {
 		console.log("Submitted Form Data =", formData);
@@ -28,8 +32,12 @@ function MessageForm() {
 
 			if (response.ok) {
 				console.log("Form submitted successfully:", result);
-				alert("Thank you! Your form has been submitted.");
+				// alert("Thank you! Your form has been submitted.");
 				reset(); // Reset the form fields after successful submission
+
+				// Navigate to the Thank You page
+				navigate("/thank-you");  // Use React Router to navigate to the Thank You page
+
 			} else {
 				console.error("Form submission failed:", result);
 				alert("Form submission failed. Please try again.");
@@ -46,6 +54,7 @@ function MessageForm() {
 		backgroundColor: "transparent",
 		color: "#ccc",
 		transition: "background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s",
+		fontSize: "18px",  // Added font size here
 	};
 
 	return (
