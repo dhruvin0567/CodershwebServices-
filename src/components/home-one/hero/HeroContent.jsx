@@ -14,7 +14,7 @@ function HeroContent() {
 					<h1 className="light-text hero-section-title">
 						Trusted Ecommerce
 						<span className="aximo-title-animation">
-							<img src={StarImg} alt="StarImg" style={{ top: '20px', right: "-80px" }} />
+							<img src={StarImg} alt="StarImg" style={{ top: '5px', right: "-80px" }} />
 
 							& Shopify Agency
 						</span>{" "}
