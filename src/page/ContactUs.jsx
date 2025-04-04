@@ -2,7 +2,7 @@ import BreadCrumb from "../components/common/Breadcrumb";
 import SEO from "../components/common/SEO";
 import ContactForm from "../components/contact/ContactForm";
 import ContactInfo from "../components/contact/ContactInfo";
-import GoogleMap from "../components/contact/GoogleMap";
+// import GoogleMap from "../components/contact/GoogleMap";
 import TwoColumnFaq from "../components/contact/TwoColumnFaq";
 
 import { createGlobalStyle } from 'styled-components';
@@ -26,7 +26,7 @@ function ContactUs() {
 			<BreadCrumb title="Contact Us" />
 			<ContactForm />
 			<ContactInfo />
-			<GoogleMap />
+			{/* <GoogleMap /> */}
 			<TwoColumnFaq />
 		</>
 	);

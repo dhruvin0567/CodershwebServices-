@@ -8,6 +8,7 @@ import Star2Img from "../../../assets/images/v1/star2.webp";
 import Thumb1Img from "../../../assets/images/v1/t_thumb1.webp";
 import Thumb2Img from "../../../assets/images/v1/t_thumb2.webp";
 import Thumb4Img from "../../../assets/images/v1/t_thumb4.webp";
+import Thumb3Img from "../../../assets/images/v1/t_thumb3.webp";
 import FadeInStagger from "../../animation/FadeInStagger";
 
 
@@ -41,7 +42,7 @@ const testimonialsData = [
             "Made an amazing website for our org. We have him our vision and everything came out even better than imagined. Use him for all website needs you will be pleased! Use him for all website needs you will be pleased!",
         author: "Milano Joe",
         designation: "Seattle, Washington",
-        img: Thumb1Img
+        img: Thumb3Img
     },
     {
         id: crypto.randomUUID(),

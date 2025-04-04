@@ -42,7 +42,7 @@ function HeroContent() {
 							</div>
 						</div>
 						<div className="aximo-hero-user-data">
-							<p>Trusted by 1000+ people</p>
+							<p>Trusted by 1000+ Clients</p>
 						</div>
 					</div>
 				</FadeInStaggerTwoChildren>
