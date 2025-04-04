@@ -17,8 +17,8 @@ function ContactInfo() {
 						</span>
 					</h2>
 				</div>
-				<FadeInStaggerTwo className="row">
-					<FadeInStaggerTwoChildren className="col-xl-4 offset-xl-2 col-md-6">
+				<FadeInStaggerTwo className="row d-flex justify-content-center">
+					<FadeInStaggerTwoChildren className="col-xl-4 col-md-6">
 
 						<div className="aximo-contact-info-box">
 							<div className="aximo-contact-info-icon">
@@ -32,7 +32,7 @@ function ContactInfo() {
 							</div>
 						</div>
 					</FadeInStaggerTwoChildren>
-					<FadeInStaggerTwoChildren className="col-xl-4   col-md-6">
+					<FadeInStaggerTwoChildren className="col-xl-4 col-md-6">
 
 						<div className="aximo-contact-info-box">
 							<div className="aximo-contact-info-icon">
@@ -45,9 +45,6 @@ function ContactInfo() {
 							</div>
 						</div>
 					</FadeInStaggerTwoChildren>
-					{/* <FadeInStaggerTwoChildren className="col-xl-4   col-md-6">
-
-					</FadeInStaggerTwoChildren> */}
 					{/* <FadeInStaggerTwoChildren className="col-xl-4 col-md-6">
 						<div className="aximo-contact-info-box">
 							<div className="aximo-contact-info-icon">

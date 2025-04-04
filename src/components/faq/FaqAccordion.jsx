@@ -25,7 +25,7 @@ function FaqAccordion() {
 								data-bs-toggle="collapse"
 								data-bs-target="#collapseOne"
 							>
-								What is Shopify Optimization?
+								Can you help increase my store’s conversion rate?
 
 							</button>
 						</h3>
@@ -35,7 +35,7 @@ function FaqAccordion() {
 							data-bs-parent="#aximo-accordion"
 						>
 							<div className="accordion-body">
-								Shopify Optimization improves your store’s speed, user experience, and conversion rates by refining design, performance, and functionality.
+								Yes! We enhance product pages, streamline checkout, and optimize calls-to-action to turn visitors into buyers.
 							</div>
 						</div>
 					</div>
@@ -59,7 +59,7 @@ function FaqAccordion() {
 							</div>
 						</div>
 					</div> */}
-					<div className="accordion-item">
+					{/* <div className="accordion-item">
 						<h3 className="accordion-header">
 							<button
 								className="accordion-button collapsed"
@@ -79,8 +79,8 @@ function FaqAccordion() {
 								We optimize images, remove unused apps, minimize code, enable Shopify’s CDN, and implement best practices to improve load time.
 							</div>
 						</div>
-					</div>
-					<div className="accordion-item">
+					</div> */}
+					{/* <div className="accordion-item">
 						<h3 className="accordion-header">
 							<button
 								className="accordion-button collapsed"
@@ -100,7 +100,7 @@ function FaqAccordion() {
 								Yes! We enhance product pages, streamline checkout, and optimize calls-to-action to turn visitors into buyers.
 							</div>
 						</div>
-					</div>
+					</div> */}
 					<div className="accordion-item">
 						<h3 className="accordion-header">
 							<button

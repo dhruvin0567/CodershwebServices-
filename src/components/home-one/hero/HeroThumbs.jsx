@@ -1,8 +1,8 @@
 // import { useState, useEffect } from 'react';
-import HeroThumbImg1 from "../../../assets/images/v1/hero-thumb1.webp";
-import HeroThumbImg2 from "../../../assets/images/v1/icon/hero-thumb-2.webp";
-import HeroThumbImg3 from "../../../assets/images/v1/icon/hero-thumb-3.webp";
-import HeroThumbImg4 from "../../../assets/images/v1/icon/hero-thumb-4.webp";
+import HeroThumbImg1 from "../../../assets/images/v1/Techless.webp";
+import HeroThumbImg2 from "../../../assets/images/v1/Cohort.webp";
+import HeroThumbImg3 from "../../../assets/images/v1/Kinvara.webp";
+// import HeroThumbImg4 from "../../../assets/images/v1/icon/hero-thumb-4.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
 
@@ -49,9 +49,9 @@ function HeroThumbs() {
 				<SwiperSlide>
 					<img src={HeroThumbImg3} alt="HeroImg" />
 				</SwiperSlide>
-				<SwiperSlide>
+				{/* <SwiperSlide>
 					<img src={HeroThumbImg4} alt="HeroImg" y />
-				</SwiperSlide>
+				</SwiperSlide> */}
 
 			</Swiper>
 		</div>
