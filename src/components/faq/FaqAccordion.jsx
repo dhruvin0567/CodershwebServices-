@@ -12,7 +12,7 @@ function FaqAccordion() {
 								<img src={Star2Img} alt="Star" />
 							</span>
 						</span>
-						clients learn about us
+						<br />clients learn about us
 					</h2>
 				</div>
 

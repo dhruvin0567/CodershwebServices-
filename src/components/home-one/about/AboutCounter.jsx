@@ -16,8 +16,8 @@ function AboutCounter() {
 	}, [inView]);
 
 	return (
-		<div className="aximo-counter-wrap" ref={ref} key={key}>
-			<div className="aximo-counter-data">
+		<div className="aximo-counter-wrap row mx-1 mx-md-0" ref={ref} key={key}>
+			<div className="aximo-counter-data col-lg-12 col-md-6 col-12">
 				<h2 className="aximo-counter-number">
 					<span className="aximo-counter">
 						{inView && <CountUp end={100} duration={3} />}
@@ -26,7 +26,7 @@ function AboutCounter() {
 				</h2>
 				<p>Success Ratio</p>
 			</div>
-			<div className="aximo-counter-data">
+			<div className="aximo-counter-data col-lg-12 col-md-6 col-12">
 				<h2 className="aximo-counter-number">
 					<span className="aximo-counter">
 						{inView && <CountUp end={92} duration={3} />}
@@ -35,7 +35,7 @@ function AboutCounter() {
 				</h2>
 				<p>Recurring Clients</p>
 			</div>
-			<div className="aximo-counter-data">
+			<div className="aximo-counter-data col-lg-12 col-md-6 col-12">
 				<h2 className="aximo-counter-number">
 					<span className="aximo-counter">
 						{inView && <CountUp end={5} duration={3} />}
@@ -44,7 +44,7 @@ function AboutCounter() {
 				</h2>
 				<p>Ratings On Clutch.co</p>
 			</div>
-			<div className="aximo-counter-data">
+			<div className="aximo-counter-data col-lg-12 col-md-6 col-12 aboutcoutner-bottom ">
 				<h2 className="aximo-counter-number">
 					<span className="aximo-counter">
 						{inView && <CountUp end={1000} duration={3} />}

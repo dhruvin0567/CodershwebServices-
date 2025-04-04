@@ -17,7 +17,7 @@ function About() {
 										<img src={Star2Img} alt="Star2Img" />
 									</span>
 								</span>{" "}
-								business stand out
+								<br />	business stand out
 							</h2>
 						</div>
 						<div className="col-lg-4 offset-lg-1 d-flex align-items-center">
@@ -29,7 +29,7 @@ function About() {
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-lg-8">
+					<div className="col-lg-8 d-flex justify-content-center align-items-center">
 
 						<Video />
 					</div>

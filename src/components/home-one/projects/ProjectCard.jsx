@@ -4,15 +4,15 @@ function ProjectCard({ project: { title, description, img } }) {
 		<div className="swiper-slide">
 			<div className="aximo-project-thumb">
 				<img src={img} alt={title} />
-				<div className="aximo-project-wrap">
-					<div className="aximo-project-data">
+				<div className="aximo-project-wrap home-proj-wrap">
+					<div className="aximo-project-data home-proj-data">
 						<Link to="/case-studies">
 							<h3>{title}</h3>
 						</Link>
-						<p className="home-projectcard-description">{description}</p>
+						<p className="home-projcard-description">{description}</p>
 
 					</div>
-					<Link className="aximo-project-icon" to="/case-studies" aria-label="View case studies">
+					<Link className="aximo-project-icon home-proj-icon" to="/case-studies" aria-label="View case studies">
 
 						<svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
 							<path

@@ -7,7 +7,7 @@ function Services({ services }) {
 		<div className="section aximo-section-padding4">
 			<div className="container">
 				<div className="aximo-section-title center">
-					<h2>
+					<h2 className="home-service-header">
 						We provide Shopify
 						<span className="aximo-title-animation">
 							Design & Developmnet

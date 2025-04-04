@@ -68,12 +68,12 @@ function ContactForm() {
 						<div className="aximo-section-title">
 							<h2>
 								<span className="aximo-title-animation">
-									Contact us for a
+									Contact us for
 									<span className="aximo-title-icon">
 										<img src={Star2Img} alt="Star" />
 									</span>
 								</span>
-								personal experience
+								<br />personal experience
 							</h2>
 						</div>
 					</div>

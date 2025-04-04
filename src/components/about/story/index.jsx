@@ -13,7 +13,7 @@ function Story() {
 								<img src={Star2Img} alt="star" />
 							</span>
 						</span>
-						worth sharing with you
+						<br />worth sharing with you
 					</h2>
 					<p>
 						Founded in 2019, Codersh Web Services is a global leader in website design, development, and digital marketing, helping businesses across the US, UK, Asia, and the Netherlands to achieve their goals.
