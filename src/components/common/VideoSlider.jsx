@@ -2,9 +2,9 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from 'swiper/modules';
 // import FadeInStagger from "../../components/animation/FadeInStagger";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/autoplay';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/autoplay';
 
 // Static imports
 import video1 from '../../assets/images/Videos/Video-1-compressed.mp4';
