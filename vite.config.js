@@ -12,19 +12,21 @@ import SitemapPlugin from 'vite-plugin-sitemap';
 export default defineConfig({
   plugins: [
     react(),
+
     // VitePluginPurgeCss(),
     VitePluginImagemin(),
     VitePWA(),
     ViteSitemap({
       // The root URL of your site
-      hostname: 'https://codersh-web-services.vercel.app/',
+      hostname: 'https://www.codersh.ca/',
     }),
     SitemapPlugin({
-      baseUrl: 'https://codersh-web-services.vercel.app/',
+      baseUrl: 'https://www.codersh.ca/',
       changefreq: 'daily',
       priority: 1.0
     })
   ],
+  base: '/',
   assetsInclude: ['**/*.PNG'],
   server: {
     proxy: {

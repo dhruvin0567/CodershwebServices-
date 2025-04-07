@@ -102,10 +102,10 @@ export const menuItemsData = [
 				title: "Case Studies",
 				url: "case-studies",
 			},
-			{
-				title: "Portfolio",
-				url: "portfolio",
-			},
+			// {
+			// 	title: "Portfolio",
+			// 	url: "portfolio",
+			// },
 			{
 				title: "Our Blog",
 				url: "ourblog",

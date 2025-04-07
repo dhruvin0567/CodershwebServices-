@@ -34,7 +34,7 @@ function Header() {
 							<NavItem dropdown title="Work">
 								<Dropdown>
 									<DropdownItem url="case-studies">Case Studies</DropdownItem>
-									<DropdownItem url="portfolio">Portfolio</DropdownItem>
+									{/* <DropdownItem url="portfolio">Portfolio</DropdownItem> */}
 									<DropdownItem url="ourblog">Our Blog</DropdownItem>
 									<DropdownItem url="brand">brand</DropdownItem>
 								</Dropdown>
