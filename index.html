@@ -23,65 +23,64 @@
 	<link rel="icon" href="/src/assets/images/images2/favicon.webp" type="image/x-icon">
 
 	<!-- Preload critical resources -->
-	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" as="style"
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=optional" as="style"
 		crossorigin>
 	<link rel="preload" href="/src/assets/assets/css/main.css" as="style">
 
-	<!-- Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" crossorigin>
-
-	<!-- CSS -->
-	<link rel="stylesheet" rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"  as="style" media="print" onload="this.media='all'">
+	<!-- Critical CSS (inlined would be better) -->
 	<link rel="stylesheet" href="/src/assets/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/src/assets/assets/css/main.css">
-	<link rel="stylesheet" href="/src/assets/assets/css/style.css">
 
-	<!-- Deferred non-critical CSS -->
+	<!-- Non-critical CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=optional"
+		crossorigin>
+	<link rel="stylesheet" href="/src/assets/assets/css/style.css" media="print" onload="this.media='all'">
 	<link rel="stylesheet" href="/src/assets/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
 	<link rel="stylesheet" href="/src/assets/assets/css/animate.css" media="print" onload="this.media='all'">
 	<link rel="stylesheet" href="/src/assets/assets/css/aos.css" media="print" onload="this.media='all'">
+
+	<!-- Font Awesome with better loading -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
 </head>
 
 <body class="light">
 	<div id="root"></div>
 
-	<!-- Scripts -->
-	<script src="/src/assets/assets/js/jquery-3.6.0.min.js"  type="module" defer></script>
+	<!-- Main React bundle (loaded as module) -->
 	<script type="module" src="/src/main.jsx"></script>
 
-	<!-- Preload critical JS -->
-	<script src="/src/assets/assets/js/app.js"  type="module" defer></script>
+	<!-- Critical JS (loaded with defer) -->
+	<script src="/src/assets/assets/js/jquery-3.6.0.min.js" defer></script>
+	<script src="/src/assets/assets/js/app.js" defer></script>
 
-	<!-- Deferred non-critical JS -->
-	<script src="/src/assets/assets/js/aos.js"  type="module" defer></script>
-	<script src="/src/assets/assets/js/swiper-bundle.min.js"  type="module" defer></script>
-	<script src="/src/assets/assets/js/gsap.min.js"  type="module" defer></script>
-	<script src="/src/assets/assets/js/ScrollTrigger.min.js"  type="module" defer></script>
-
-	<!-- Load other scripts after DOM is ready -->
-	<script defer>
+	<!-- Non-critical JS (loaded after DOMContentLoaded) -->
+	<script>
 		window.addEventListener('DOMContentLoaded', function () {
 			// Load non-critical scripts
 			const scripts = [
-				'/src/assets/assets/js/menu/menu.js',
-				'/src/assets/assets/js/isotope.pkgd.min.js',
-				'/src/assets/assets/js/jquery.magnific-popup.min.js',
-				'/src/assets/assets/js/wow.min.js',
-				'/src/assets/assets/js/SplitText.min.js',
-				'/src/assets/assets/js/ScrollSmoother.min.js',
-				'/src/assets/assets/js/skill-bar.js',
-				'/src/assets/assets/js/infinite-slider.js',
-				'/src/assets/assets/js/image-resizing.js',
-				'/src/assets/assets/js/faq.js',
-				'/src/assets/assets/js/script.js'
+				{ src: '/src/assets/assets/js/aos.js', type: '' },
+				{ src: '/src/assets/assets/js/swiper-bundle.min.js', type: '' },
+				{ src: '/src/assets/assets/js/gsap.min.js', type: '' },
+				{ src: '/src/assets/assets/js/ScrollTrigger.min.js', type: '' },
+				{ src: '/src/assets/assets/js/menu/menu.js', type: '' },
+				{ src: '/src/assets/assets/js/isotope.pkgd.min.js', type: '' },
+				{ src: '/src/assets/assets/js/jquery.magnific-popup.min.js', type: '' },
+				{ src: '/src/assets/assets/js/wow.min.js', type: '' },
+				{ src: '/src/assets/assets/js/SplitText.min.js', type: '' },
+				{ src: '/src/assets/assets/js/ScrollSmoother.min.js', type: '' },
+				{ src: '/src/assets/assets/js/skill-bar.js', type: '' },
+				{ src: '/src/assets/assets/js/infinite-slider.js', type: '' },
+				{ src: '/src/assets/assets/js/image-resizing.js', type: '' },
+				{ src: '/src/assets/assets/js/faq.js', type: '' },
+				{ src: '/src/assets/assets/js/script.js', type: '' }
 			];
 
-			scripts.forEach(src => {
+			scripts.forEach(scriptData => {
 				const script = document.createElement('script');
-				script.src = src;
-				script.defer = true;
+				script.src = scriptData.src;
+				if (scriptData.type) script.type = scriptData.type;
 				document.body.appendChild(script);
 			});
 
@@ -93,11 +92,7 @@
 				document.body.appendChild(gmap);
 			}
 		});
-
-		
 	</script>
-
-	<!-- latest changes are at 2e2d22e3518ecf95252c6fccbfc9e31825bde859 -->
 </body>
 
 </html>
