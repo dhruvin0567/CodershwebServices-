@@ -23,21 +23,15 @@
 	<link rel="icon" href="/src/assets/images/images2/favicon.webp" type="image/x-icon">
 
 	<!-- Preload critical resources -->
-	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=optional" as="style"
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" as="style"
 		crossorigin>
-	<link rel="preload" href="/src/assets/assets/css/main.css" as="style">
-	<link rel="preload" href="/src/assets/css/fontawesome.css" as="style">
-	<link rel="preload" href="/src/assets/css/icomoon.css" as="style">
-	<link rel="preload" href="/src/assets/css/custom-font.css" as="style">
-	<link rel="preload" href="/src/assets/css/custom-font.css" as="style">
 
 	<!-- Critical CSS (inlined would be better) -->
-	<!-- <link rel="stylesheet" href="/src/assets/assets/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="/src/assets/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/src/assets/assets/css/main.css">
 
 	<!-- Non-critical CSS -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=optional"
-		crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" crossorigin>
 	<link rel="stylesheet" href="/src/assets/assets/css/style.css" media="print" onload="this.media='all'">
 	<link rel="stylesheet" href="/src/assets/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
 	<link rel="stylesheet" href="/src/assets/assets/css/animate.css" media="print" onload="this.media='all'">
@@ -47,6 +41,16 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
+
+	<!-- Inline critical font CSS for immediate loading -->
+	<style>
+		@font-face {
+			font-family: 'Syne';
+			src: url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+			font-display: swap;
+			/* Ensure the text is displayed with fallback fonts until Syne loads */
+		}
+	</style>
 </head>
 
 <body class="light">
@@ -54,11 +58,10 @@
 
 	<!-- Main React bundle (loaded as module) -->
 	<script type="module" src="/src/main.jsx"></script>
-	<script type="module" src="/src/main.jsx"></script>
 
 	<!-- Critical JS (loaded with defer) -->
-<script type="module" src="/src/assets/assets/js/jquery-3.6.0.min.js" defer></script>
-<script type="module" src="/src/assets/assets/js/app.js" defer></script>
+	<script type="module" src="/src/assets/assets/js/jquery-3.6.0.min.js" defer></script>
+	<script type="module" src="/src/assets/assets/js/app.js" defer></script>
 
 	<!-- Non-critical JS (loaded after DOMContentLoaded) -->
 	<script>

@@ -4,15 +4,24 @@ import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
 
 // Critical CSS (loaded synchronously)
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./assets/css/main.css";
 import "./assets/css/app.css";
+
+// Inline font-display for critical font loading (Ensures early display)
+const fontCSS = document.createElement('style');
+fontCSS.innerHTML = `
+  @font-face {
+    font-family: 'Syne';
+    src: url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+    font-display: swap;
+  }
+`;
+document.head.appendChild(fontCSS);
 
 // Lazy-loaded non-critical CSS
 const loadNonCriticalCSS = () => {
 	// Bootstrap JS (deferred)
-	// import("bootstrap/dist/js/bootstrap.bundle.min");
+	import("bootstrap/dist/js/bootstrap.bundle.min");
 
 	// React Modal Video (only loads when needed)
 	import("react-modal-video/css/modal-video.css");
@@ -42,7 +51,7 @@ const loadNonCriticalCSS = () => {
 };
 
 // Start loading non-critical resources after hydration
-setTimeout(loadNonCriticalCSS, 0);
+setTimeout(loadNonCriticalCSS, 2000);
 
 // Create root and render
 ReactDOM.createRoot(document.getElementById("root")).render(
