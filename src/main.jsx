@@ -4,7 +4,8 @@ import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
 
 // Critical CSS (loaded synchronously)
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./assets/css/main.css";
 import "./assets/css/app.css";
 

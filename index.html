@@ -26,9 +26,13 @@
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=optional" as="style"
 		crossorigin>
 	<link rel="preload" href="/src/assets/assets/css/main.css" as="style">
+	<link rel="preload" href="/src/assets/css/fontawesome.css" as="style">
+	<link rel="preload" href="/src/assets/css/icomoon.css" as="style">
+	<link rel="preload" href="/src/assets/css/custom-font.css" as="style">
+	<link rel="preload" href="/src/assets/css/custom-font.css" as="style">
 
 	<!-- Critical CSS (inlined would be better) -->
-	<link rel="stylesheet" href="/src/assets/assets/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="/src/assets/assets/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="/src/assets/assets/css/main.css">
 
 	<!-- Non-critical CSS -->
@@ -50,11 +54,11 @@
 
 	<!-- Main React bundle (loaded as module) -->
 	<script type="module" src="/src/main.jsx"></script>
+	<script type="module" src="/src/main.jsx"></script>
 
 	<!-- Critical JS (loaded with defer) -->
 <script type="module" src="/src/assets/assets/js/jquery-3.6.0.min.js" defer></script>
 <script type="module" src="/src/assets/assets/js/app.js" defer></script>
-<script type="module" src="/src/assets/assets/js/bootstrap.bundle.min.js" defer></script>
 
 	<!-- Non-critical JS (loaded after DOMContentLoaded) -->
 	<script>
@@ -91,8 +95,6 @@
 				gmap.src = 'https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y';
 				gmap.defer = true;
 				document.body.appendChild(gmap);
-
-				//new
 			}
 		});
 	</script>
