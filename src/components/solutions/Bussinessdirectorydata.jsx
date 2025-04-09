@@ -209,6 +209,46 @@ function Bussinessdirectorydata() {
                                 </div>
                             </SwiperSlide>
 
+                            <SwiperSlide>
+                                <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.2s">
+                                    <img src={Slider2Img} alt="Project Image" />
+                                    {/* <div className="aximo-project-wrap">
+                                    <div className="aximo-project-data">
+                                        <Link to="#">
+                                            <h3>Credit Saint</h3>
+                                        </Link>
+                                    </div>
+                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }} >
+                                        <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26"
+                                                stroke="#FDFDE1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </Link>
+                                </div> */}
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className="aximo-project-thumb wow fadeInUpX Solution-slider" style={{ cursor: "grab" }} data-wow-delay="0.3s">
+                                    <img src={Slider3Img} alt="Project Image" />
+                                    {/* <div className="aximo-project-wrap">
+                                    <div className="aximo-project-data">
+                                        <Link to="#">
+                                            <h3>Credit 101</h3>
+                                        </Link>
+                                    </div>
+                                    <Link className="aximo-project-icon" to="#" style={{ cursor: "pointer" }} >
+                                        <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26"
+                                                stroke="#FDFDE1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </Link>
+                                </div> */}
+                                </div>
+                            </SwiperSlide>
+
 
 
                             {/* Add more SwiperSlides as needed */}

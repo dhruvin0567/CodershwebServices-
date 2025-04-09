@@ -134,7 +134,7 @@ export const menuItemsData = [
 			},
 			{
 				title: "Business Directory",
-				url: "business directory",
+				url: "businessdirectory",
 			},
 		],
 	},
