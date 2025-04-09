@@ -7,9 +7,9 @@ import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 import VideoSlider from '../common/VideoSlider';
 import Check from "../../assets/images/icon/check.svg";
 
-import Slider1Img from '../../assets/images/images2/hpn-global-front-page.webp';
-import Slider2Img from '../../assets/images/images2/tyrepages-front-page.webp';
-import Slider3Img from '../../assets/images/images2/redesign-hub-front-page.webp';
+import Slider1Img from '../../assets/images/images2/tinified/hpn-global-front-page.webp';
+import Slider2Img from '../../assets/images/images2/tinified/tyrepages-front-page.webp';
+import Slider3Img from '../../assets/images/images2/tinified/redesign-hub-front-page.webp';
 
 import Logo1Img from '../../assets/images/images2/tyrepage.webp';
 import Logo2Img from '../../assets/images/images2/hpn-logo-1.webp';

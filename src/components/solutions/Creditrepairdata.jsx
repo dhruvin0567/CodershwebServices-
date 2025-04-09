@@ -5,13 +5,13 @@ import Star2Img from "../../assets/images/v1/icon/star2.webp";
 import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 import Check from "../../assets/images/icon/check.svg";
 
-import Slider1Img from '../../assets/images/images2/credi-coach-front-page.webp';
-import Slider2Img from '../../assets/images/images2/Credit-Saint-Ranked-1-By-Top-Financial-Sites-front-page.webp';
-import Slider3Img from '../../assets/images/images2/Credit101-front-page.webp';
-import Slider4Img from '../../assets/images/images2/Framework-Credit-front-page.webp';
-import Slider5Img from '../../assets/images/images2/preimier-credit-front-page.webp';
-import Slider6Img from '../../assets/images/images2/sd-capital-front-page.webp';
-import Slider7Img from '../../assets/images/images2/stellar-credit-front-page.webp';
+import Slider1Img from '../../assets/images/images2/tinified/credi-coach-front-page.webp';
+import Slider2Img from '../../assets/images/images2/tinified/Credit-Saint-Ranked-1-By-Top-Financial-Sites-front-page.webp';
+import Slider3Img from '../../assets/images/images2/tinified/Credit101-front-page.webp';
+import Slider4Img from '../../assets/images/images2/tinified/Framework-Credit-front-page.webp';
+import Slider5Img from '../../assets/images/images2/tinified/preimier-credit-front-page.webp';
+import Slider6Img from '../../assets/images/images2/tinified/sd-capital-front-page.webp';
+import Slider7Img from '../../assets/images/images2/tinified/stellar-credit-front-page.webp';
 
 import Logo1Img from '../../assets/images/images2/logo-1.webp';
 import Logo2Img from '../../assets/images/images2/logo-2.webp';

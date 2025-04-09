@@ -5,13 +5,13 @@ import Star2Img from "../../assets/images/v1/icon/star2.webp";
 import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 import Check from "../../assets/images/icon/check.svg";
 
-import Slider1Img from '../../assets/images/images2/all-it-nw-front-page.webp';
-import Slider2Img from '../../assets/images/images2/alt-it-front-page.webp';
+import Slider1Img from '../../assets/images/images2/tinified/all-it-nw-front-page.webp';
+import Slider2Img from '../../assets/images/images2/tinified/alt-it-front-page.webp';
 import Slider3Img from '../../assets/images/images2/global-it-front-page.webp';
-import Slider4Img from '../../assets/images/images2/HoBarbe-front-page.webp';
-import Slider5Img from '../../assets/images/images2/informadist-front-page.webp';
-import Slider6Img from '../../assets/images/images2/orangenexus-front-page.webp';
-import Slider7Img from '../../assets/images/images2/The-IT-Consultancy-front-page.webp';
+import Slider4Img from '../../assets/images/images2/tinified/HoBarbe-front-page.webp';
+import Slider5Img from '../../assets/images/images2/tinified/informadist-front-page.webp';
+import Slider6Img from '../../assets/images/images2/tinified/orangenexus-front-page.webp';
+import Slider7Img from '../../assets/images/images2/tinified/The-IT-Consultancy-front-page.webp';
 
 import Logo1Img from '../../assets/images/images2/alt-it-logo.webp';
 import Logo2Img from '../../assets/images/images2/HoBarbe-logo.webp';

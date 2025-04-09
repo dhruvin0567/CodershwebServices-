@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";  // Import useNavigate hook from React Router
 
 import { useForm } from "react-hook-form";
-import ContactThumb from "../../assets/images/contact/contact-thumb.webp";
+import ContactThumb from "../../assets/images/contact/contact-thumb-1.webp";
 import Star2Img from "../../assets/images/v1/star2.webp";
 import FadeInRight from "../animation/FadeInRight";
 import Field from "../common/Field";

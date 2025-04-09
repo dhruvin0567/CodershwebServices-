@@ -6,16 +6,16 @@ import Star2Img from "../../assets/images/v1/icon/star2.webp";
 import '../../assets/assets/css/swiper-bundle.min.css'; // Import Swiper styles
 import Check from "../../assets/images/icon/check.svg";
 
-import Slider1Img from '../../assets/images/images2/artisan-f-p.webp';
-import Slider2Img from '../../assets/images/images2/asterley-bros-f-p.webp';
-import Slider3Img from '../../assets/images/images2/bone-f-p.webp';
-import Slider4Img from '../../assets/images/images2/Claudine-f-p.webp';
-import Slider5Img from '../../assets/images/images2/Double-Dutch-f-p.webp';
-import Slider6Img from '../../assets/images/images2/gattertop-f-p.webp';
-import Slider7Img from '../../assets/images/images2/liberation-f-p.webp';
-import Slider8Img from '../../assets/images/images2/madamef-f-p.webp';
-import Slider9Img from '../../assets/images/images2/negroni-soc-f-p.webp';
-import Slider10Img from '../../assets/images/images2/van-hunks-f-p.webp';
+import Slider1Img from '../../assets/images/images2/tinified/artisan-f-p.webp';
+import Slider2Img from '../../assets/images/images2/tinified/asterley-bros-f-p.webp';
+import Slider3Img from '../../assets/images/images2/tinified/bone-f-p.webp';
+import Slider4Img from '../../assets/images/images2/tinified/Claudine-f-p.webp';
+import Slider5Img from '../../assets/images/images2/tinified/Double-Dutch-f-p.webp';
+import Slider6Img from '../../assets/images/images2/tinified/gattertop-f-p.webp';
+import Slider7Img from '../../assets/images/images2/tinified/liberation-f-p.webp';
+import Slider8Img from '../../assets/images/images2/tinified/madamef-f-p.webp';
+import Slider9Img from '../../assets/images/images2/tinified/negroni-soc-f-p.webp';
+import Slider10Img from '../../assets/images/images2/tinified/van-hunks-f-p.webp';
 
 import Logo1Img from '../../assets/images/images2/bone-logo.webp';
 import Logo2Img from '../../assets/images/images2/Claudine-logo.webp';
