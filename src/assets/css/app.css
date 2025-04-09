@@ -12280,3 +12280,9 @@ button#aximo-notified-btn {
 		border-bottom: 1px solid #333 !important;
 	}
 }
+
+/* brand logo slider */
+.aximo-brandlogo-item {
+	border-radius: 20px;
+	width: 80%;
+}
