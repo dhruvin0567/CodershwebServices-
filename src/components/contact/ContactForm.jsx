@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";  // Import useNavigate hook from React Router
+import { InstagramEmbed } from 'react-social-media-embed';
 
 import { useForm } from "react-hook-form";
-import ContactThumb from "../../assets/images/contact/contact-thumb-1.webp";
+// import ContactThumb from "../../assets/images/contact/contact-thumb-1.webp";
 import Star2Img from "../../assets/images/v1/star2.webp";
-import FadeInRight from "../animation/FadeInRight";
+// import FadeInRight from "../animation/FadeInRight";
 import Field from "../common/Field";
 // import emailjs from '@emailjs/browser';
 
@@ -80,10 +81,11 @@ function ContactForm() {
 				</div>
 
 				<div className="row">
-					<div className="col-lg-5 order-lg-2">
-						<FadeInRight className="aximo-contact-thumb">
-							<img src={ContactThumb} alt="Contact Thumb" />
-						</FadeInRight>
+					<div className="col-lg-5 order-lg-2 instapost-column">
+
+						{/* <img src={ContactThumb} alt="Contact Thumb" /> */}
+						<InstagramEmbed url="https://www.instagram.com/reel/DII_lBxoQzs/?utm_source=ig_web_copy_link" className="iframe-insta coustom-instaframe" />
+
 					</div>
 					<div className="col-lg-7">
 						<div className="aximo-main-form">

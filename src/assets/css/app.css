@@ -5673,9 +5673,21 @@ p.aximo-skillbar-lable {
 
 .aximo-iconbox-wrap2 {
 	padding: 24px;
-	border-radius: 5px;
 	margin-bottom: 30px;
-	border: 2px solid var(--heading-color2);
+	/* border-radius: 5px; */
+	/* border: 2px solid var(--heading-color2); */
+}
+
+.aximo-iconbox-wrap2 img {
+	transition: transform 0.3s ease;
+	margin-bottom: 30px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px rgb(194, 184, 184);
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
+}
+
+.aximo-iconbox-wrap2 img:hover {
+	transform: scale(1.1);
 }
 
 .aximo-iconbox-icon2 {
@@ -12285,4 +12297,35 @@ button#aximo-notified-btn {
 .aximo-brandlogo-item {
 	border-radius: 20px;
 	width: 80%;
+}
+
+.iframe-insta {
+	border-radius: 30px !important;
+	overflow: hidden;
+	margin-left: 40px;
+	border: 7px solid black;
+	object-fit: cover;
+	padding: 0px !important;
+	max-width: 430px;
+	width: 100%;
+}
+
+@media (max-width: 991px) {
+	.instapost-column {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+
+	.iframe-insta {
+		margin-left: 0px;
+	}
+
+}
+
+
+iframe#instagram-embed-0 {
+	width: 101% !important;
+	margin: 0px -2px 0px !important;
 }
