@@ -7,12 +7,12 @@ import { Navigation, Autoplay } from 'swiper/modules';
 // import 'swiper/css/autoplay';
 
 // Static imports
-import video1 from '../../assets/images/Videos/Video-1-compressed.mp4';
-import video2 from '../../assets/images/Videos/Video-2-compressed.mp4';
-import video3 from '../../assets/images/Videos/Video-3-compressed.mp4';
-import video4 from '../../assets/images/Videos/Video-4-compressed.mp4';
-import video5 from '../../assets/images/Videos/Video-5-compressed.mp4';
-import video6 from '../../assets/images/Videos/Video-6-compressed.mp4';
+import video1 from '../../assets/images/Videos/optimized/Video-1-compressed.mp4';
+import video2 from '../../assets/images/Videos/optimized/Video-2-compressed.mp4';
+import video3 from '../../assets/images/Videos/optimized/Video-3-compressed.mp4';
+import video4 from '../../assets/images/Videos/optimized/Video-4-compressed.mp4';
+import video5 from '../../assets/images/Videos/optimized/Video-5-compressed.mp4';
+import video6 from '../../assets/images/Videos/optimized/Video-6-compressed.mp4';
 
 const videoFiles = [video1, video2, video3, video4, video5, video6];
 

@@ -3784,7 +3784,7 @@ h1.post__title {
 }
 
 .aximo-hero-thumb {
-	right: -5%;
+	/* right: -5%; */
 	max-width: 425px;
 	/* height: 490px; */
 	overflow: hidden;

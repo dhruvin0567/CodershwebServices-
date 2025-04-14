@@ -60,7 +60,7 @@ export const menuItemsData = [
 						url: "conversion-rate",
 					},
 					{
-						title: "HInternationalization",
+						title: "Internationalization",
 						url: "selling-internationally-on-shopify",
 					},
 					{
@@ -82,7 +82,7 @@ export const menuItemsData = [
 						url: "shopify-app-development",
 					},
 					{
-						title: "commerce SEO",
+						title: "Commerce SEO",
 						url: "seo-agency",
 					},
 					{

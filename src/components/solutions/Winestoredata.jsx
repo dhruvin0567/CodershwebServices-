@@ -7,27 +7,27 @@ import SolutionPageLogoSlider from "./SolutionPageLogoSlider";
 import SolutionTestimonialSlider from "./SolutionTestimonialSlider";
 import SolutionDynamicInfo from "./SolutionDynamicInfo";
 
-import Slider1Img from '../../assets/images/images2/tinified/artisan-f-p.webp';
-import Slider2Img from '../../assets/images/images2/tinified/asterley-bros-f-p.webp';
-import Slider3Img from '../../assets/images/images2/tinified/bone-f-p.webp';
-import Slider4Img from '../../assets/images/images2/tinified/Claudine-f-p.webp';
-import Slider5Img from '../../assets/images/images2/tinified/Double-Dutch-f-p.webp';
-import Slider6Img from '../../assets/images/images2/tinified/gattertop-f-p.webp';
-import Slider7Img from '../../assets/images/images2/tinified/liberation-f-p.webp';
-import Slider8Img from '../../assets/images/images2/tinified/madamef-f-p.webp';
-import Slider9Img from '../../assets/images/images2/tinified/negroni-soc-f-p.webp';
-import Slider10Img from '../../assets/images/images2/tinified/van-hunks-f-p.webp';
+import ProjImg1 from '../../assets/images/images2/tinified2/artisan.webp';
+import ProjImg2 from '../../assets/images/images2/tinified2/asterley-bros.webp';
+import ProjImg3 from '../../assets/images/images2/tinified2/bone.webp';
+import ProjImg4 from '../../assets/images/images2/tinified2/Claudine.webp';
+import ProjImg5 from '../../assets/images/images2/tinified2/Double-Dutch.webp';
+import ProjImg6 from '../../assets/images/images2/tinified2/gattertop.webp';
+import ProjImg7 from '../../assets/images/images2/tinified2/liberation.webp';
+import ProjImg8 from '../../assets/images/images2/tinified2/madamef.webp';
+import ProjImg9 from '../../assets/images/images2/tinified2/negroni-soc.webp';
+import ProjImg10 from '../../assets/images/images2/tinified2/van-hunks.webp';
 const slidesData = [
-    { image: Slider1Img, alt: "Credi Coach" },
-    { image: Slider2Img, alt: "Credit Saint" },
-    { image: Slider3Img, alt: "Credit 101" },
-    { image: Slider4Img, alt: "Framework Credit" },
-    { image: Slider5Img, alt: "Premier Credit" },
-    { image: Slider6Img, alt: "SD Capital" },
-    { image: Slider7Img, alt: "Stellar Credit 1" },
-    { image: Slider8Img, alt: "Stellar Credit 2" },
-    { image: Slider9Img, alt: "Stellar Credit 3" },
-    { image: Slider10Img, alt: "Stellar Credit 4" },
+    { image: ProjImg1, alt: "artisan-homepage" },
+    { image: ProjImg2, alt: "asterley-bros-homepaget" },
+    { image: ProjImg3, alt: "bone-ideal-homepaget" },
+    { image: ProjImg4, alt: "claudine-homepaget" },
+    { image: ProjImg5, alt: "double-duotch-homepaget" },
+    { image: ProjImg6, alt: "gattertop-homepaget" },
+    { image: ProjImg7, alt: "liberation-homepaget" },
+    { image: ProjImg8, alt: "madamef-homepaget" },
+    { image: ProjImg9, alt: "negoinesoc-homepaget" },
+    { image: ProjImg10, alt: "van-hunks-homepaget" },
 ];
 
 import Logo1Img from '../../assets/images/images2/bone-logo.webp';

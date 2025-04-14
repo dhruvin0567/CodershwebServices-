@@ -1,4 +1,6 @@
 User-agent: *
 Disallow: /private/
 Allow: /
+
+
 Sitemap: https://react-vite-codersh.vercel.app/sitemap.xml

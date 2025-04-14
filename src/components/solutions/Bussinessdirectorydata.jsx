@@ -7,16 +7,16 @@ import SolutionPageLogoSlider from "./SolutionPageLogoSlider";
 import SolutionTestimonialSlider from "./SolutionTestimonialSlider";
 import SolutionDynamicInfo from "./SolutionDynamicInfo";
 
-import Slider1Img from '../../assets/images/images2/tinified/hpn-global-front-page.webp';
-import Slider2Img from '../../assets/images/images2/tinified/tyrepages-front-page.webp';
-import Slider3Img from '../../assets/images/images2/tinified/redesign-hub-front-page.webp';
+import projImg1 from '../../assets/images/images2/tinified2/hpn-global.webp';
+import projImg2 from '../../assets/images/images2/tinified2/tyrepages.webp';
+import projImg3 from '../../assets/images/images2/tinified2/redesign-hub.webp';
 const slidesData = [
-    { image: Slider1Img, alt: "HPN Global Front Page" },
-    { image: Slider2Img, alt: "Tyrepages Front Page" },
-    { image: Slider3Img, alt: "Redesign Hub Front Page" },
-    { image: Slider1Img, alt: "HPN Global Front Page" },
-    { image: Slider2Img, alt: "Tyrepages Front Page" },
-    { image: Slider3Img, alt: "Redesign Hub Front Page" },
+    { image: projImg1, alt: "HPN Global Front Page" },
+    { image: projImg2, alt: "Tyrepages Front Page" },
+    { image: projImg3, alt: "Redesign Hub Front Page" },
+    { image: projImg1, alt: "HPN Global Front Page" },
+    { image: projImg2, alt: "Tyrepages Front Page" },
+    { image: projImg3, alt: "Redesign Hub Front Page" },
 ];
 
 import Logo1Img from '../../assets/images/images2/tyrepage.webp';
