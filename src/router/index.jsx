@@ -10,7 +10,7 @@ import HomeOne from "../page/home/HomeOne.jsx";
 import Team from "../page/team";
 import ErrorPage from "../error-page";
 import BlogGridPage from "../page/blog/BlogGridPage.jsx";
-// import PortfolioTwoColumn from "../page/portfolio/PortfolioTwoColumn";
+import PortfolioTwoColumn from "../page/portfolio/PortfolioTwoColumn";
 
 // import Service from "../page/service";
 // import Reset from "../page/auth/ResetPassword.jsx";
@@ -38,7 +38,7 @@ import BlogGridPage from "../page/blog/BlogGridPage.jsx";
 // import SingleTeam from "../page/team/SingleTeam.jsx";
 
 // extrapages implimented
-import Portfolio from "../page/portfolio/Portfolio.jsx";
+// import Portfolio from "../page/portfolio/Portfolio.jsx";
 import Winestore from "../page/solutions/Winestore.jsx";
 import Businessdirectory from "../page/solutions/Businessdirectory.jsx";
 import Creditrepair from "../page/solutions/Creditrepair.jsx";
@@ -123,14 +123,14 @@ export const router = createBrowserRouter([
 						element: <Brand />,
 					},
 
-					{
-						path: "/portfolio",
-						element: <Portfolio />,
-					},
 					// {
 					// 	path: "/portfolio-two",
-					// 	element: <PortfolioTwoColumn />,
+					// 	element: <Portfolio />,
 					// },
+					{
+						path: "/portfolio",
+						element: <PortfolioTwoColumn />,
+					},
 					{
 						path: "/ourblog",
 						element: <BlogGridPage />,
