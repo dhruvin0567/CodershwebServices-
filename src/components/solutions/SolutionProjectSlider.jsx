@@ -22,7 +22,7 @@ function SolutionProjectSlider({ slides }) {
                             320: { slidesPerView: 1 },
                             480: { slidesPerView: 2 },
                             768: { slidesPerView: 2 },
-                            1024: { slidesPerView: 3 },
+                            1024: { slidesPerView: 4 },
                         }}
                     >
                         {slides.map((slide, index) => (

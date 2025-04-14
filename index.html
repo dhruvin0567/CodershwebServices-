@@ -20,7 +20,7 @@
 	<meta property="og:title" content="Codersh Web Services | Shopify Development Services">
 	<meta property="og:description"
 		content="Codersh Web Services delivers expert Shopify development services—custom store designs, seamless migrations, and advanced customizations to elevate your e-commerce brand.">
-	<meta property="og:url" content="https://codersh-web-services.vercel.app/">
+	<meta property="og:url" content="https://www.codersh.ca/">
 	<meta property="og:type" content="website">
 
 	<!-- Favicon -->
@@ -32,15 +32,15 @@
 
 	<!-- Critical CSS (inlined would be better) -->
 	<!-- <link rel="stylesheet" href="/src/assets/assets/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="/src/assets/assets/css/main.css">
+	<!-- <link rel="stylesheet" href="/src/assets/assets/css/main.css"> -->
 
 
 	<!-- Non-critical CSS -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" crossorigin>
 	<link rel="stylesheet" href="/src/assets/assets/css/style.css" media="print" onload="this.media='all'">
-	<link rel="stylesheet" href="/src/assets/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
+	<!-- <link rel="stylesheet" href="/src/assets/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
 	<link rel="stylesheet" href="/src/assets/assets/css/animate.css" media="print" onload="this.media='all'">
-	<link rel="stylesheet" href="/src/assets/assets/css/aos.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="/src/assets/assets/css/aos.css" media="print" onload="this.media='all'"> -->
 
 	<!-- Font Awesome with better loading -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -65,45 +65,45 @@
 	<script type="module" src="/src/main.jsx"></script>
 
 	<!-- Critical JS (loaded with defer) -->
-	<script type="module" src="/src/assets/assets/js/jquery-3.6.0.min.js" defer></script>
-	<script type="module" src="/src/assets/assets/js/app.js" defer></script>
+	<!-- <script type="module" src="/src/assets/assets/js/jquery-3.6.0.min.js" defer></script> -->
+	<!-- <script type="module" src="/src/assets/assets/js/app.js" defer></script> -->
 
 	<!-- Non-critical JS (loaded after DOMContentLoaded) -->
 	<script>
 		window.addEventListener('DOMContentLoaded', function () {
 			// Load non-critical scripts
-			const scripts = [
-				{ src: '/src/assets/assets/js/aos.js', type: '' },
-				{ src: '/src/assets/assets/js/swiper-bundle.min.js', type: '' },
-				{ src: '/src/assets/assets/js/gsap.min.js', type: '' },
-				{ src: '/src/assets/assets/js/ScrollTrigger.min.js', type: '' },
-				{ src: '/src/assets/assets/js/menu/menu.js', type: '' },
-				{ src: '/src/assets/assets/js/isotope.pkgd.min.js', type: '' },
-				{ src: '/src/assets/assets/js/jquery.magnific-popup.min.js', type: '' },
-				{ src: '/src/assets/assets/js/wow.min.js', type: '' },
-				{ src: '/src/assets/assets/js/SplitText.min.js', type: '' },
-				{ src: '/src/assets/assets/js/ScrollSmoother.min.js', type: '' },
-				{ src: '/src/assets/assets/js/skill-bar.js', type: '' },
-				{ src: '/src/assets/assets/js/infinite-slider.js', type: '' },
-				{ src: '/src/assets/assets/js/image-resizing.js', type: '' },
-				{ src: '/src/assets/assets/js/faq.js', type: '' },
-				{ src: '/src/assets/assets/js/script.js', type: '' }
-			];
+			// const scripts = [
+			// 	{ src: '/src/assets/assets/js/aos.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/swiper-bundle.min.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/gsap.min.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/ScrollTrigger.min.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/menu/menu.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/isotope.pkgd.min.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/jquery.magnific-popup.min.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/wow.min.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/SplitText.min.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/ScrollSmoother.min.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/skill-bar.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/infinite-slider.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/image-resizing.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/faq.js', type: '' },
+			// 	{ src: '/src/assets/assets/js/script.js', type: '' }
+			// ];
 
-			scripts.forEach(scriptData => {
-				const script = document.createElement('script');
-				script.src = scriptData.src;
-				if (scriptData.type) script.type = scriptData.type;
-				document.body.appendChild(script);
-			});
+			// scripts.forEach(scriptData => {
+			// 	const script = document.createElement('script');
+			// 	script.src = scriptData.src;
+			// 	if (scriptData.type) script.type = scriptData.type;
+			// 	document.body.appendChild(script);
+			// });
 
-			// Load Google Maps API only if needed
-			if (document.querySelector('.needs-map')) {
-				const gmap = document.createElement('script');
-				gmap.src = 'https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y';
-				gmap.defer = true;
-				document.body.appendChild(gmap);
-			}
+			// // Load Google Maps API only if needed
+			// if (document.querySelector('.needs-map')) {
+			// 	const gmap = document.createElement('script');
+			// 	gmap.src = 'https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y';
+			// 	gmap.defer = true;
+			// 	document.body.appendChild(gmap);
+			// }
 		});
 	</script>
 </body>
