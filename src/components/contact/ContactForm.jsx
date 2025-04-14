@@ -1,14 +1,53 @@
 import { useNavigate } from "react-router-dom";  // Import useNavigate hook from React Router
-import { InstagramEmbed } from 'react-social-media-embed';
-
+// import { InstagramEmbed } from 'react-social-media-embed';
 import { useForm } from "react-hook-form";
 // import ContactThumb from "../../assets/images/contact/contact-thumb-1.webp";
 import Star2Img from "../../assets/images/v1/star2.webp";
-// import FadeInRight from "../animation/FadeInRight";
+import FadeInRight from "../animation/FadeInRight";
 import Field from "../common/Field";
+import VideoFile from "../../assets/images/Videos/reel.mp4";
+// import VideoPoster from "../../assets/images/Videos/Screenshot 2025-04-14 120605.png";
 // import emailjs from '@emailjs/browser';
+import { useRef, useState, useEffect } from "react";
 
 function ContactForm() {
+
+
+	const videoRef = useRef(null);
+	const [isPlaying, setIsPlaying] = useState(false);
+	const [showControls, setShowControls] = useState(false);
+
+	const handlePlayPause = () => {
+		const video = videoRef.current;
+		if (!video) return;
+
+		if (video.paused) {
+			video.play();
+			setIsPlaying(true);
+		} else {
+			video.pause();
+			setIsPlaying(false);
+		}
+	};
+
+	// Pause video on outside click
+	useEffect(() => {
+		const handleBodyClick = (e) => {
+			if (videoRef.current && !videoRef.current.contains(e.target)) {
+				videoRef.current.pause();
+				setIsPlaying(false);
+			}
+		};
+
+		document.addEventListener("click", handleBodyClick);
+		return () => {
+			document.removeEventListener("click", handleBodyClick);
+		};
+	}, []);
+
+
+
+
 	const {
 		register,
 		handleSubmit,
@@ -82,10 +121,50 @@ function ContactForm() {
 
 				<div className="row">
 					<div className="col-lg-5 order-lg-2 instapost-column">
+						<FadeInRight className="aximo-contact-thumb video-container">
+							<div
+								className="video-wrapper"
+								onMouseEnter={() => setShowControls(true)}
+								onMouseLeave={() => setShowControls(false)}
+								style={{ position: "relative" }}
+							>
+								<video
+									// poster={VideoPoster}
+									ref={videoRef}
+									loop
+									playsInline
+									className="contact-video"
+									src={VideoFile}
+									preload="metadata"
+									style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+								>
+									Your browser does not support the video tag.
+								</video>
 
-						{/* <img src={ContactThumb} alt="Contact Thumb" /> */}
-						<InstagramEmbed url="https://www.instagram.com/reel/DII_lBxoQzs/?utm_source=ig_web_copy_link" className="iframe-insta coustom-instaframe" />
-
+								{showControls && (
+									<button
+										onClick={(e) => {
+											e.stopPropagation(); // prevent click from bubbling to body
+											handlePlayPause();
+										}}
+										style={{
+											position: "absolute",
+											top: "50%",
+											left: "50%",
+											transform: "translate(-50%, -50%)",
+											background: "rgba(0,0,0,0.6)",
+											border: "none",
+											color: "#fff",
+											padding: "10px 20px",
+											borderRadius: "50px",
+											cursor: "pointer",
+										}}
+									>
+										{isPlaying ? <i className="fa-solid fa-pause" /> : <i className="fa-solid fa-play" />}
+									</button>
+								)}
+							</div>
+						</FadeInRight>
 					</div>
 					<div className="col-lg-7">
 						<div className="aximo-main-form">

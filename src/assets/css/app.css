@@ -11534,8 +11534,11 @@ a.comment-reply {
 	border-radius: 17px;
 	overflow: hidden;
 	margin-left: 40px;
+	max-height: 747px;
 	border: 7px solid var(--heading-color);
 }
+
+
 
 @media (max-width: 991px) {
 	.aximo-contact-thumb {
@@ -12328,4 +12331,17 @@ button#aximo-notified-btn {
 iframe#instagram-embed-0 {
 	width: 101% !important;
 	margin: 0px -2px 0px !important;
+}
+
+.contact-video {
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+
+	.contact-video {
+		width: 100%;
+		height: 100%;
+	}
 }
