@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import Star2Img from "../../assets/images/v1/star2.webp";
 import FadeInRight from "../animation/FadeInRight";
 import Field from "../common/Field";
-import VideoFile from "../../assets/images/Videos/reel.mp4";
+import ContactVideo from "../../assets/images/Videos/reel.mp4";
 // import VideoPoster from "../../assets/images/Videos/Screenshot 2025-04-14 120605.png";
 // import emailjs from '@emailjs/browser';
 import { useRef, useState, useEffect } from "react";
@@ -134,9 +134,10 @@ function ContactForm() {
 									loop
 									playsInline
 									className="contact-video"
-									src={VideoFile}
+									src={ContactVideo}
 									preload="metadata"
 									style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+									alt="User Review Video"
 								>
 									Your browser does not support the video tag.
 								</video>
