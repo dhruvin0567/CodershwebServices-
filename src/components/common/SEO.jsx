@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet';
-import Favicon from "../../../public/favicon.webp";
+import Favicon from "../../assets/images/images2/favicon.webp";
 
 
 function SEO({ title, description, keywords, canonical }) {
