@@ -3625,7 +3625,7 @@ button#aximo-submit-btn2:hover .aximo-label-up {
 	padding: 195px 0 130px;
 	/* background-color: var(--dark-bg); */
 	/* background-image: url(../images/images2/angularjs_1.webp); */
-	background-image: url(/src/assets/images/images2/tinified/angularjs_1.webp);
+	/* background-image: url(/src/assets/images/images2/tinified/angularjs_1.webp); */
 	/* filter: brightness(150%); */
 }
 
@@ -11531,21 +11531,36 @@ a.comment-reply {
 }
 
 .aximo-contact-thumb {
-	border-radius: 17px;
+	border-radius: 25px;
 	overflow: hidden;
-	margin-left: 40px;
-	max-height: 747px;
-	border: 7px solid var(--heading-color);
+	/* margin-left: 40px;
+	max-height: 747px; */
+	max-width: 400px;
+	width: 100%;
+	height: fit-content;
+	border: 5px solid var(--heading-color);
 }
 
-
+.Video-Column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 @media (max-width: 991px) {
 	.aximo-contact-thumb {
 		margin-left: 0;
 		margin-bottom: 40px;
+		max-width: 300px;
 	}
 }
+
+@media (max-width: 375px) {
+	.aximo-contact-thumb {
+		max-width: 250px;
+	}
+}
+
 
 .aximo-contact-info-section {
 	padding-bottom: 36px;
@@ -12302,7 +12317,7 @@ button#aximo-notified-btn {
 	width: 80%;
 }
 
-.iframe-insta {
+/* .iframe-insta {
 	border-radius: 30px !important;
 	overflow: hidden;
 	margin-left: 40px;
@@ -12327,21 +12342,17 @@ button#aximo-notified-btn {
 
 }
 
-
 iframe#instagram-embed-0 {
 	width: 101% !important;
 	margin: 0px -2px 0px !important;
-}
+} */
 
-.contact-video {
-	width: 100%;
-	height: 100%;
-}
 
-@media (min-width: 991px) and (max-width: 1200px) {
+
+/* @media (min-width: 991px) and (max-width: 1200px) {
 
 	.contact-video {
 		width: 100%;
 		height: 100%;
 	}
-}
+} */

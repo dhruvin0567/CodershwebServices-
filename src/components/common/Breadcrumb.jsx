@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-
+import BreadcrumbBG from "../../assets/images/images2/tinified/angularjs_1.webp";
 function BreadCrumb({ title }) {
 	return (
-		<div className="aximo-breadcrumb">
+		<div className="aximo-breadcrumb" style={{ backgroundImage: `url(${BreadcrumbBG})` }}>
 			<div className="container">
 				<h1 className="post__title">{title}</h1>
 				<nav className="breadcrumbs">

@@ -120,8 +120,8 @@ function ContactForm() {
 				</div>
 
 				<div className="row">
-					<div className="col-lg-5 order-lg-2 instapost-column">
-						<FadeInRight className="aximo-contact-thumb video-container">
+					<div className="col-lg-5 order-lg-2 Video-Column">
+						<FadeInRight className="aximo-contact-thumb">
 							<div
 								className="video-wrapper"
 								onMouseEnter={() => setShowControls(true)}
