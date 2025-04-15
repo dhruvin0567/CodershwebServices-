@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import FadeInStagger from "../../animation/FadeInStagger";
-import GridBlogCard from "./GridBlogCard";
+// import GridBlogCard from "./GridBlogCard";
+import PortfolioCard from "../../portfolio/two/PortfolioCard";
 
 const WP_API_URL = "https://codersh.com/wp-json/wp/v2/posts?_embed";
 
@@ -42,17 +43,31 @@ function GridBlog() {
 	</div>;
 
 	return (
-		<div className="section aximo-section-padding2">
-			<div className="container">
-				<div className="row">
-					<div className="col-lg-12">
-						<div className="row">
-							{posts.map((blog, index) => (
-								<FadeInStagger className="col-xl-4" key={blog.id} index={index}>
-									<GridBlogCard blog={blog} />
-								</FadeInStagger>
-							))}
+		<div>
+			{/* <div className="section aximo-section-padding2">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-12">
+							<div className="row">
+								{posts.map((blog, index) => (
+									<FadeInStagger className="col-xl-4" key={blog.id} index={index}>
+										<GridBlogCard blog={blog} />
+									</FadeInStagger>
+								))}
+							</div>
 						</div>
+					</div>
+				</div>
+			</div> */}
+
+			<div className="section aximo-section-padding2 aximo-project-page">
+				<div className="container">
+					<div className="row">
+						{posts.map((blog, index) => (
+							<FadeInStagger className="col-lg-6" key={blog.id} index={index}>
+								<PortfolioCard blog={blog} />
+							</FadeInStagger>
+						))}
 					</div>
 				</div>
 			</div>

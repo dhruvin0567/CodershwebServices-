@@ -12,10 +12,10 @@ import ErrorPage from "../error-page";
 import BlogGridPage from "../page/blog/BlogGridPage.jsx";
 // import PortfolioTwoColumn from "../page/portfolio/PortfolioTwoColumn";
 
-// import Service from "../page/service";
+// import Service from "../page/service"
 // import Reset from "../page/auth/ResetPassword.jsx";
-// import SignIn from "../page/auth/SignIn";
-// import SignUp from "../page/auth/SignUp";
+import SignIn from "../page/auth/SignIn";
+import SignUp from "../page/auth/SignUp";
 // import CommingSoon from "../page/utility/CommingSoon.jsx";
 // import LayoutTwo from "../components/layout/LayoutTwo.jsx";
 // import LayoutThree from "../components/layout/LayoutThree.jsx";
@@ -43,14 +43,14 @@ import Winestore from "../page/solutions/Winestore.jsx";
 import Businessdirectory from "../page/solutions/Businessdirectory.jsx";
 import Creditrepair from "../page/solutions/Creditrepair.jsx";
 import Itdigitalagency from "../page/solutions/Itdigitalagency.jsx";
-import CaseStudies from "../page/projects/CaseStudies.jsx";
-import Brand from "../page/brand/Brand.jsx";
+// import CaseStudies from "../page/projects/CaseStudies.jsx";
+// import Brand from "../page/brand/Brand.jsx";
 import SingleBrand from "../page/brand/SingleBrand.jsx";
 import SingleBlogPage from "../page/blog/SingleBlog.jsx";
 import LandingPage from "../page/projects/LandingPage.jsx";
 import CustomStore from "../page/service/shopifyServices/CustomStore.jsx";
 import ShopifyMigrations from "../page/service/shopifyServices/ShopifyMigrations.jsx";
-import SingleCaseStudyPage from "../page/projects/SingleCaseStudyPage.jsx";
+// import SingleCaseStudyPage from "../page/projects/SingleCaseStudyPage.jsx";
 import ShopifyPlus from "../page/service/shopifyServices/ShopifyPlus.jsx";
 import Headless from "../page/service/shopifyServices/Headless.jsx";
 import Support_Maintanace from "../page/service/shopifyServices/Support_Maintanace.jsx";
@@ -63,6 +63,7 @@ import B2BWholsales from "../page/service/shopifyServices/B2BWholsales.jsx";
 import Subscriptions from "../page/service/shopifyServices/Subscriptions.jsx";
 import ThankyouPage from "../page/ThankyouPage.jsx";
 import Logoslider from "../page/utility/Logoslider.jsx";
+import LayoutEight from "../components/layout/LayoutEight.jsx";
 
 // import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
 // import SingleBrandCustom from "../page/brand/SingleBrandCustom.jsx";
@@ -118,10 +119,10 @@ export const router = createBrowserRouter([
 						path: "/pricing",
 						element: <Pricing />,
 					},
-					{
-						path: "/brand",
-						element: <Brand />,
-					},
+					// {
+					// 	path: "/brand",
+					// 	element: <Brand />,
+					// },
 
 					// {
 					// 	path: "/portfolio-two",
@@ -142,14 +143,14 @@ export const router = createBrowserRouter([
 						element: <SingleBlogPage />,
 					},
 
-					{
-						path: "/case-studies",
-						element: <CaseStudies />,
-					},
-					{
-						path: "/case-studies/:slug",
-						element: <SingleCaseStudyPage />
-					},
+					// {
+					// 	path: "/case-studies",
+					// 	element: <CaseStudies />,
+					// },
+					// {
+					// 	path: "/case-studies/:slug",
+					// 	element: <SingleCaseStudyPage />
+					// },
 
 					{
 						path: "/Businessdirectory",
@@ -390,32 +391,32 @@ export const router = createBrowserRouter([
 			// 		},
 			// 	],
 			// },
-			// {
-			// 	path: "/",
-			// 	element: <LayoutEight />,
-			// 	children: [
-			// 		{
-			// 			path: "/thank-you",
-			// 			element: <ThankyouPage />,
-			// 		},
-			// 		{
-			// 			path: "/coming-soon",
-			// 			element: <CommingSoon />,
-			// 		},
-			// 		{
-			// 			path: "/reset-password",
-			// 			element: <Reset />,
-			// 		},
-			// 		{
-			// 			path: "/sign-up",
-			// 			element: <SignUp />,
-			// 		},
-			// 		{
-			// 			path: "/sign-in",
-			// 			element: <SignIn />,
-			// 		},
-			// 	],
-			// },
+			{
+				path: "/",
+				element: <LayoutEight />,
+				children: [
+					// 		{
+					// 			path: "/thank-you",
+					// 			element: <ThankyouPage />,
+					// 		},
+					// 		{
+					// 			path: "/coming-soon",
+					// 			element: <CommingSoon />,
+					// 		},
+					// 		{
+					// 			path: "/reset-password",
+					// 			element: <Reset />,
+					// 		},
+					{
+						path: "/sign-up",
+						element: <SignUp />,
+					},
+					{
+						path: "/sign-in",
+						element: <SignIn />,
+					},
+				],
+			},
 		],
 	},
 ]);

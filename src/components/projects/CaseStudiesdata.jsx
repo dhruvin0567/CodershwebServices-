@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import FadeInStagger from "../animation/FadeInStagger";
-import GridBlogCard from "../blog/grid-blog/GridBlogCard";
+// import GridBlogCard from "../blog/grid-blog/GridBlogCard";
+import PortfolioCard from "../portfolio/two/PortfolioCard";
 
 const WP_API_URL = "https://codersh.com/wp-json/wp/v2/case-studies?_embed";
 
@@ -42,20 +43,36 @@ function GridBlog() {
 	</div>;
 
 	return (
-		<div className="section aximo-section-padding2">
-			<div className="container">
-				<div className="row">
-					<div className="col-lg-12">
-						<div className="row">
-							{posts.map((caseStudy, index) => (
-								<FadeInStagger className="col-xl-4" key={caseStudy.id} index={index}>
-									<GridBlogCard blog={caseStudy} />
-								</FadeInStagger>
-							))}
+		<div>
+			{/* <div className="section aximo-section-padding2">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-12">
+							<div className="row">
+								{posts.map((caseStudy, index) => (
+									<FadeInStagger className="col-xl-4" key={caseStudy.id} index={index}>
+										<GridBlogCard blog={caseStudy} />
+									</FadeInStagger>
+								))}
+							</div>
 						</div>
 					</div>
 				</div>
+			</div> */}
+
+
+			<div className="section aximo-section-padding2 aximo-project-page">
+				<div className="container">
+					<div className="row">
+						{posts.map((caseStudy, index) => (
+							<FadeInStagger className="col-lg-6" key={caseStudy.id} index={index}>
+								<PortfolioCard blog={caseStudy} />
+							</FadeInStagger>
+						))}
+					</div>
+				</div>
 			</div>
+
 		</div>
 	);
 }

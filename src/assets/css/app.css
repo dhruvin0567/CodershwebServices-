@@ -8212,6 +8212,8 @@ img.aximo-video-circle {
 	border-radius: 20px;
 	position: relative;
 	border: 5px solid var(--white-smoke);
+
+
 }
 
 .aximo-project-thumb img {
@@ -8232,7 +8234,7 @@ img.aximo-video-circle {
 	height: 100%;
 	position: absolute;
 	transition: all 0.4s;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.42%, #000 100%);
+	background: linear-gradient(180deg, rgb(0 0 0 / 50%) 0%, #000000 100%);
 }
 
 .aximo-project-thumb img {
@@ -12356,3 +12358,32 @@ iframe#instagram-embed-0 {
 		height: 100%;
 	}
 } */
+
+
+/* case study page redesign */
+.section.aximo-section-padding2.aximo-project-page {
+	/* width: 95%; */
+	/* margin: auto; */
+}
+
+.casestudy-blog-card-container {
+	height: 350px;
+}
+
+@media (max-width: 1200px) {
+	.casestudy-blog-card-container {
+		height: 250px;
+	}
+}
+
+@media (max-width: 991px) {
+	.casestudy-blog-card-container {
+		height: 400px;
+	}
+}
+
+@media (max-width: 512px) {
+	.casestudy-blog-card-container {
+		height: 225px;
+	}
+}

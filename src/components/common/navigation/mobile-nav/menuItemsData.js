@@ -11,6 +11,10 @@ export const menuItemsData = [
 				title: "Team",
 				url: "team",
 			},
+			// {
+			// 	title: "Our Blog",
+			// 	url: "ourblog",
+			// },
 			{
 				title: "Testimonial",
 				url: "testimonial",
@@ -93,29 +97,28 @@ export const menuItemsData = [
 			},
 		],
 	},
-
-	{
-		title: "Work",
-		url: "#",
-		submenu: [
-			{
-				title: "Case Studies",
-				url: "case-studies",
-			},
-			// {
-			// 	title: "Portfolio",
-			// 	url: "portfolio",
-			// },
-			{
-				title: "Our Blog",
-				url: "ourblog",
-			},
-			{
-				title: "Brand",
-				url: "brand",
-			},
-		],
-	},
+	// {
+	// 	title: "Work",
+	// 	url: "#",
+	// 	submenu: [
+	// 		{
+	// 			title: "Case Studies",
+	// 			url: "case-studies",
+	// 		},
+	// 		// {
+	// 		// 	title: "Portfolio",
+	// 		// 	url: "portfolio",
+	// 		// },
+	// 		{
+	// 			title: "Our Blog",
+	// 			url: "ourblog",
+	// 		},
+	// 		{
+	// 			title: "Brand",
+	// 			url: "brand",
+	// 		},
+	// 	],
+	// },
 	{
 		title: "Solutions",
 		url: "#",
@@ -137,6 +140,10 @@ export const menuItemsData = [
 				url: "businessdirectory",
 			},
 		],
+	},
+	{
+		title: "Our Blog",
+		url: "ourblog",
 	},
 	{
 		title: "Contact Us",
