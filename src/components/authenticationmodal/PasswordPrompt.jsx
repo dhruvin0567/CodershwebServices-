@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { usePassword } from "../../context/authContext/PasswordContext";
 import { useNavigate } from "react-router-dom";
+import PopUpLogo from "../../assets/images/logo/codersh-horizontal-logo-black.png";
 
 const PasswordPrompt = () => {
     const { verifyPassword } = usePassword();
@@ -38,6 +39,7 @@ const PasswordPrompt = () => {
                     <button type="button" className="btn-close" aria-label="Close" onClick={handleClose}></button>
                 </div>
                 <form onSubmit={handleSubmit}>
+                    <div className="cart-logo d-flex align-items-center justify-content-center pt-4 pe-3"><img src={PopUpLogo} alt="Logo IMg" style={{ maxWidth: "200px", width: "100%" }} /></div>
                     <div className="card-body" style={{ padding: "1.5rem 2rem" }}>
                         <div className="my-3 position-relative">
                             <input
