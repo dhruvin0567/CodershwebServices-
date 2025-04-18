@@ -383,11 +383,19 @@ button.filter-btn:hover {
 }
 
 .imagescrolling-wrapper {
-    height: 500px;
+    height: 500px !important;
     overflow: hidden;
     position: relative;
     padding: 0;
 }
+
+@media (min-width: 2000px) {
+    .imagescrolling-wrapper {
+        height: 700px !important;
+
+    }
+}
+
 
 .imagescrolling-wrapper:hover img {
     transform: translateY(calc(-100% + 500px - 2.8em));

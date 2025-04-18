@@ -1,3 +1,4 @@
+
 export const menuItemsData = [
 	{
 		title: "Company",
@@ -11,10 +12,6 @@ export const menuItemsData = [
 				title: "Team",
 				url: "team",
 			},
-			// {
-			// 	title: "Our Blog",
-			// 	url: "ourblog",
-			// },
 			{
 				title: "Testimonial",
 				url: "testimonial",
@@ -34,7 +31,7 @@ export const menuItemsData = [
 				url: "#",
 				submenu: [
 					{
-						title: "Custome Store Project",
+						title: "Custom Store Projectt",
 						url: "customStore",
 					},
 					{
@@ -56,7 +53,7 @@ export const menuItemsData = [
 				url: "#",
 				submenu: [
 					{
-						title: "Support & Maintanancet",
+						title: "Support & Maintenance",
 						url: "support-&-maintanance",
 					},
 					{
@@ -97,28 +94,28 @@ export const menuItemsData = [
 			},
 		],
 	},
-	// {
-	// 	title: "Work",
-	// 	url: "#",
-	// 	submenu: [
-	// 		{
-	// 			title: "Case Studies",
-	// 			url: "case-studies",
-	// 		},
-	// 		// {
-	// 		// 	title: "Portfolio",
-	// 		// 	url: "portfolio",
-	// 		// },
-	// 		{
-	// 			title: "Our Blog",
-	// 			url: "ourblog",
-	// 		},
-	// 		{
-	// 			title: "Brand",
-	// 			url: "brand",
-	// 		},
-	// 	],
-	// },
+	{
+		title: "Work",
+		url: "#",
+		submenu: [
+			{
+				title: "Case Studies",
+				url: "case-studies",
+			},
+			{
+				title: "Portfolio",
+				url: "portfolio",
+			},
+			// {
+			// 	title: "Our Blog",
+			// 	url: "ourblog",
+			// },
+			{
+				title: "Brand",
+				url: "brand",
+			},
+		],
+	},
 	{
 		title: "Solutions",
 		url: "#",
@@ -149,4 +146,5 @@ export const menuItemsData = [
 		title: "Contact Us",
 		url: "contact-us",
 	},
+
 ];

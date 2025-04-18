@@ -22,7 +22,6 @@ function Header() {
 								<Dropdown>
 									<DropdownItem url="about-us">About Us</DropdownItem>
 									<DropdownItem url="team">Team</DropdownItem>
-									{/* <DropdownItem url="ourblog">Our Blog</DropdownItem> */}
 									<DropdownItem url="testimonial">Testimonial</DropdownItem>
 									<DropdownItem url="faq">FAQ</DropdownItem>
 								</Dropdown>
@@ -32,14 +31,13 @@ function Header() {
 									<Mega_Menu />
 								</Dropdown>
 							</NavItem>
-							{/* <NavItem dropdown title="Work">
+							<NavItem dropdown title="Work">
 								<Dropdown>
 									<DropdownItem url="case-studies">Case Studies</DropdownItem>
 									<DropdownItem url="portfolio">Portfolio</DropdownItem>
-									<DropdownItem url="ourblog">Our Blog</DropdownItem>
 									<DropdownItem url="brand">brand</DropdownItem>
 								</Dropdown>
-							</NavItem> */}
+							</NavItem>
 							{/* <NavItem dropdown title="Pages">
 								<Dropdown>	
 									<DropdownItem url="pricing">Pricing</DropdownItem>	

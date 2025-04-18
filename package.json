@@ -15,6 +15,7 @@
 		"aximo-react": "file:",
 		"body-parser": "^2.2.0",
 		"bootstrap": "^5.3.3",
+		"bootstrap-icons": "^1.11.3",
 		"cors": "^2.8.5",
 		"desandro-matches-selector": "^2.0.2",
 		"ev-emitter": "^2.1.2",

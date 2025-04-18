@@ -21,6 +21,16 @@ body {
 	margin-right: 35px;
 }
 
+@media (max-width: 514px) {
+
+	.brand-logo,
+	.default-logo,
+	.responsive-logo {
+		max-width: 225px;
+
+	}
+}
+
 @media (min-width: 576px) {
 	.site-navbar {
 		padding-top: 0px;
@@ -399,6 +409,39 @@ body {
 		padding-bottom: 15px !important;
 		padding-left: 19px !important;
 		padding-right: 19px !important;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+	.site-menu-main .nav-link-item {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.site-menu-main .nav-link-item {
+		padding-left: 7px !important;
+		padding-right: 7px !important;
+	}
+
+	.site-navbar .menu-block-wrapper {
+		flex-grow: 1;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.site-menu-main i {
+		margin-left: 7px !important;
+	}
+
+	.brand-logo {
+		max-width: 200px;
+		margin-right: 0px;
+	}
+
+	.aximo-default-btn.aximo-header-btn {
+		width: 155px;
 	}
 }
 

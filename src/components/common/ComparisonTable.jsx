@@ -5,6 +5,7 @@
 import Group1 from "../../assets/images/icon/check-mark.svg";
 import Group2 from "../../assets/images/images2/Group_8_1.svg";
 import Group3 from "../../assets/images/icon/alert-triangle.svg";
+import { Link } from "react-router-dom";
 
 function ComparisonTable() {
 
@@ -118,7 +119,7 @@ function ComparisonTable() {
                             <p style={{ fontSize: "21px" }}>
                                 At <strong>Codersh Web Services</strong>, we blend the agility of freelancers with the
                                 expertise of agencies - delivering the best of both worlds with unique benefits that
-                                set us apart. <strong>Get started for FREE!</strong>
+                                set us apart.<strong><Link to="/contact-us" style={{ color: "black" }}>Get started for FREE!</Link></strong>
                             </p>
                         </div>
                     </div>
@@ -169,7 +170,7 @@ function ComparisonTable() {
                             <p>
                                 At <strong>Codersh Web Services</strong>, we blend the agility of freelancers with the
                                 expertise of agencies - delivering the best of both worlds with unique benefits that
-                                set us apart. <strong>Get started for FREE!</strong>
+                                set us apart.<strong><Link to="/contact-us" style={{ color: "black" }}>Get started for FREE!</Link></strong>
                             </p>
                         </div>
                     </div>

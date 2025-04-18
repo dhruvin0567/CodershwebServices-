@@ -17,7 +17,6 @@ const cards = [
     { category: "shopify", country: "usa", industry: "food & beverages", image: "TylersCoffee", name: "Tylers Coffee" },
     { category: "shopify", country: "usa", image: "BUY-VAPE-USA", name: "Buy Vape USA" },
     { category: "shopify", country: "usa", image: "No-Mo-Stache", name: "No Mo-Stache" },
-    { category: "wordpress", country: "usa", industry: "sports", image: "SplitGrip", name: "Split Grip" },
     { category: "shopify", country: "usa", image: "Infinity-Loops", name: "Infinity Loops" },
     { category: "shopify", country: "usa", image: "wallplanks", name: "Wallplanks" },
     { category: "shopify", country: "usa", industry: "fashion", image: "Rowan-Oak-Clothing-Co", name: "Rowan Oak" },
@@ -30,10 +29,11 @@ const cards = [
     { category: "shopify", country: "uk", industry: "food & beverages", image: "fuel", name: "Fuel" },
     { category: "shopify", image: "oceans6media", name: "Ocean 6 Media" },
     { category: "shopify", country: "australia", industry: "fashion", image: "NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-", name: "Neux" },
-    { category: "wordpress", country: "usa", image: "jojosdogwalking", name: "jojos Dog Walking" },
     { category: "shopify", country: "usa", industry: "food & beverages", image: "Indulge-in-Hudson-Pecan-Natures-Tastiest-Guilt-Free-Snack-Hudson-Pecan-Company", name: "Hudson Pecan Company Inc" },
     { category: "shopify", country: "usa", industry: "fashion", image: "IKKS-Official-Website-Women-s-Children-s-Men-s-Fashion-Fall-Winter-2023", name: "IKKS" },
-    { category: "wordpress", country: "usa", industry: "food & beverages", image: "IFC-Ideal-Food-Corp-", name: "IFC" },
+    // { category: "wordpress", country: "usa", image: "jojosdogwalking", name: "jojos Dog Walking" },
+    // { category: "wordpress", country: "usa", industry: "sports", image: "SplitGrip", name: "Split Grip" },
+    // { category: "wordpress", country: "usa", industry: "food & beverages", image: "IFC-Ideal-Food-Corp-", name: "IFC" },
     { category: "shopify", country: "usa", industry: "auto mobile", image: "Bumperninja", name: "Bumper Ninja" },
     { category: "shopify", country: "usa", industry: "health care", image: "Biotrust", name: "Bio Trust" },
     { category: "shopify", image: "vidtre", name: "Video Platform" },
@@ -45,11 +45,11 @@ const cards = [
 
 // Predefined filter options for consistent UI
 const FILTER_OPTIONS = {
-    categories: ["all", "shopify", "wordpress"],
+    categories: ["all", "shopify"],
     countries: ["all", "south africa", "uk", "usa", "germany", "australia"],
     industries: [
         "all", "wine", "health", "food & beverages",
-        "sports", "fashion", "travel and tourist",
+        "fashion", "travel and tourist",
         "auto mobile", "health care"
     ]
 };
@@ -128,7 +128,7 @@ const Portfolio1content = () => {
             </div>
 
             {/* Project Cards Section */}
-            <div className="project-cards-section py-5">
+            <div className="project-cards-section py-5 px-2">
                 <div className="container-fluid">
                     <div className="row">
                         {filteredCards.map((card) => (
@@ -142,7 +142,7 @@ const Portfolio1content = () => {
                                 <div className="imagescrolling-wrapper portfolio-image-wrapper">
                                     <img
                                         src={card.image}
-                                        loading="lazy"
+                                        // loading="lazy"
                                         alt={card.name}
                                         className="image-scrolling portfolio-image"
                                     />

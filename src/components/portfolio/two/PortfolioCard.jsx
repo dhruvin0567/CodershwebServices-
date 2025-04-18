@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
 function PortfolioCard({ blog: { img, title, link } }) {
 
-
-
-
 	return (
 		<div className="aximo-project-thumb casestudy-blog-card-container">
 			<img src={img} alt={title} />

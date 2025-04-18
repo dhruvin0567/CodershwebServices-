@@ -10,12 +10,11 @@ import HomeOne from "../page/home/HomeOne.jsx";
 import Team from "../page/team";
 import ErrorPage from "../error-page";
 import BlogGridPage from "../page/blog/BlogGridPage.jsx";
+// import SignIn from "../page/auth/SignIn";
+// import SignUp from "../page/auth/SignUp";
 // import PortfolioTwoColumn from "../page/portfolio/PortfolioTwoColumn";
-
 // import Service from "../page/service"
 // import Reset from "../page/auth/ResetPassword.jsx";
-import SignIn from "../page/auth/SignIn";
-import SignUp from "../page/auth/SignUp";
 // import CommingSoon from "../page/utility/CommingSoon.jsx";
 // import LayoutTwo from "../components/layout/LayoutTwo.jsx";
 // import LayoutThree from "../components/layout/LayoutThree.jsx";
@@ -38,19 +37,19 @@ import SignUp from "../page/auth/SignUp";
 // import SingleTeam from "../page/team/SingleTeam.jsx";
 
 // extrapages implimented
-// import Portfolio from "../page/portfolio/Portfolio.jsx";
+import Portfolio from "../page/portfolio/Portfolio.jsx";
 import Winestore from "../page/solutions/Winestore.jsx";
 import Businessdirectory from "../page/solutions/Businessdirectory.jsx";
 import Creditrepair from "../page/solutions/Creditrepair.jsx";
 import Itdigitalagency from "../page/solutions/Itdigitalagency.jsx";
-// import CaseStudies from "../page/projects/CaseStudies.jsx";
-// import Brand from "../page/brand/Brand.jsx";
+import CaseStudies from "../page/projects/CaseStudies.jsx";
+import Brand from "../page/brand/Brand.jsx";
 import SingleBrand from "../page/brand/SingleBrand.jsx";
 import SingleBlogPage from "../page/blog/SingleBlog.jsx";
 import LandingPage from "../page/projects/LandingPage.jsx";
 import CustomStore from "../page/service/shopifyServices/CustomStore.jsx";
 import ShopifyMigrations from "../page/service/shopifyServices/ShopifyMigrations.jsx";
-// import SingleCaseStudyPage from "../page/projects/SingleCaseStudyPage.jsx";
+import SingleCaseStudyPage from "../page/projects/SingleCaseStudyPage.jsx";
 import ShopifyPlus from "../page/service/shopifyServices/ShopifyPlus.jsx";
 import Headless from "../page/service/shopifyServices/Headless.jsx";
 import Support_Maintanace from "../page/service/shopifyServices/Support_Maintanace.jsx";
@@ -63,8 +62,7 @@ import B2BWholsales from "../page/service/shopifyServices/B2BWholsales.jsx";
 import Subscriptions from "../page/service/shopifyServices/Subscriptions.jsx";
 import ThankyouPage from "../page/ThankyouPage.jsx";
 import Logoslider from "../page/utility/Logoslider.jsx";
-import LayoutEight from "../components/layout/LayoutEight.jsx";
-
+// import LayoutEight from "../components/layout/LayoutEight.jsx";
 // import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
 // import SingleBrandCustom from "../page/brand/SingleBrandCustom.jsx";
 // import BrandCustom from "../page/brand/BrandCustom.jsx";
@@ -82,6 +80,7 @@ import LayoutEight from "../components/layout/LayoutEight.jsx";
 // import Categories from "../page/portfolio/Categories.jsx";
 // import Countries from "../page/portfolio/Countries.jsx";
 // import Industries from "../page/portfolio/Industries.jsx";
+import ProtectedRoute from "../components/protectedroutes/ProtectedRoute.jsx";
 
 
 export const router = createBrowserRouter([
@@ -109,49 +108,66 @@ export const router = createBrowserRouter([
 						path: "/faq",
 						element: <Faq />,
 					},
-
 					{
 						path: "/testimonial",
 						element: <TestimonialPage />,
 					},
-
 					{
 						path: "/pricing",
 						element: <Pricing />,
 					},
-					// {
-					// 	path: "/brand",
-					// 	element: <Brand />,
-					// },
-
+					{
+						path: "/brand",
+						element: (
+							<ProtectedRoute>
+								<Brand />
+							</ProtectedRoute>
+						),
+					},
+					{
+						path: "/brand/:slug",
+						element: (
+							<ProtectedRoute>
+								<SingleBrand />
+							</ProtectedRoute>
+						),
+					},
+					{
+						path: "/case-studies",
+						element: (
+							<ProtectedRoute>
+								<CaseStudies />
+							</ProtectedRoute>
+						),
+					},
+					{
+						path: "/case-studies/:slug",
+						element: (
+							<ProtectedRoute>
+								<SingleCaseStudyPage />
+							</ProtectedRoute>
+						),
+					},
+					{
+						path: "/portfolio",
+						element: (
+							<ProtectedRoute>
+								<Portfolio />
+							</ProtectedRoute>
+						),
+					},
 					// {
 					// 	path: "/portfolio-two",
-					// 	element: <Portfolio />,
-					// },
-					// {
-					// 	path: "/portfolio",
 					// 	element: <PortfolioTwoColumn />,
 					// },
 					{
 						path: "/ourblog",
 						element: <BlogGridPage />,
 					},
-
-
 					{
 						path: "/blog/:slug",
 						element: <SingleBlogPage />,
 					},
-
-					// {
-					// 	path: "/case-studies",
-					// 	element: <CaseStudies />,
-					// },
-					// {
-					// 	path: "/case-studies/:slug",
-					// 	element: <SingleCaseStudyPage />
-					// },
-
 					{
 						path: "/Businessdirectory",
 						element: <Businessdirectory />,
@@ -171,10 +187,6 @@ export const router = createBrowserRouter([
 					{
 						path: "/team",
 						element: <Team />,
-					},
-					{
-						path: "*",
-						element: <ErrorPage />,
 					},
 					{
 						path: "/landingpage",
@@ -229,16 +241,16 @@ export const router = createBrowserRouter([
 						element: <B2BWholsales />,
 					},
 					{
-						path: "/brand/:slug",
-						element: <SingleBrand />,
-					},
-					{
 						path: "/thank-you",
 						element: <ThankyouPage />,
 					},
 					{
 						path: "/logo-slider",
 						element: <Logoslider />,
+					},
+					{
+						path: "*",
+						element: <ErrorPage />,
 					},
 					// {
 					// 	path: "/custom-brand-single",
@@ -391,32 +403,32 @@ export const router = createBrowserRouter([
 			// 		},
 			// 	],
 			// },
-			{
-				path: "/",
-				element: <LayoutEight />,
-				children: [
-					// 		{
-					// 			path: "/thank-you",
-					// 			element: <ThankyouPage />,
-					// 		},
-					// 		{
-					// 			path: "/coming-soon",
-					// 			element: <CommingSoon />,
-					// 		},
-					// 		{
-					// 			path: "/reset-password",
-					// 			element: <Reset />,
-					// 		},
-					{
-						path: "/sign-up",
-						element: <SignUp />,
-					},
-					{
-						path: "/sign-in",
-						element: <SignIn />,
-					},
-				],
-			},
+			// {
+			// 	path: "/",
+			// 	element: <LayoutEight />,
+			// 	children: [
+			// 		{
+			// 			path: "/thank-you",
+			// 			element: <ThankyouPage />,
+			// 		},
+			// 		{
+			// 			path: "/coming-soon",
+			// 			element: <CommingSoon />,
+			// 		},
+			// 		{
+			// 			path: "/reset-password",
+			// 			element: <Reset />,
+			// 		},
+			// {
+			// 	path: "/sign-up",
+			// 	element: <SignUp />,
+			// },
+			// {
+			// 	path: "/sign-in",
+			// 	element: <SignIn />,
+			// },
+			// 	],
+			// },
 		],
 	},
 ]);

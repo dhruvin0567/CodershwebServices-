@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import FadeInStagger from "../../animation/FadeInStagger";
 // import GridBlogCard from "./GridBlogCard";
-import PortfolioCard from "../../portfolio/two/PortfolioCard";
+// import PortfolioCard from "../../portfolio/two/PortfolioCard";
+import PortfolioCardTwo from "../../portfolio/two/PortfolioCardTwo";
 
 const WP_API_URL = "https://codersh.com/wp-json/wp/v2/posts?_embed";
 
@@ -65,7 +66,7 @@ function GridBlog() {
 					<div className="row">
 						{posts.map((blog, index) => (
 							<FadeInStagger className="col-lg-6" key={blog.id} index={index}>
-								<PortfolioCard blog={blog} />
+								<PortfolioCardTwo blog={blog} />
 							</FadeInStagger>
 						))}
 					</div>

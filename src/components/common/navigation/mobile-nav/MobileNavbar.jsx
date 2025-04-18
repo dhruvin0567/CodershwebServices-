@@ -64,6 +64,15 @@ const MobileNavbar = ({ menuItemsData, title }) => {
 								/>
 							);
 						})}
+
+
+						{/* External link added here */}
+						<li className="nav-item d-block d-sm-none">
+							<a href="https://calendly.com/codersh-web-services/15min" target="_blank" rel="noopener noreferrer">
+								Free Consultation
+							</a>
+						</li>
+
 					</ul>
 				</motion.nav>
 			)}
