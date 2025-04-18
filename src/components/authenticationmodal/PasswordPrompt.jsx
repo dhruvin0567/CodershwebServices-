@@ -39,7 +39,7 @@ const PasswordPrompt = () => {
                     <button type="button" className="btn-close" aria-label="Close" onClick={handleClose}></button>
                 </div>
                 <form onSubmit={handleSubmit}>
-                    <div className="cart-logo d-flex align-items-center justify-content-center pt-4 pe-3"><img src={PopUpLogo} alt="Logo IMg" style={{ maxWidth: "200px", width: "100%" }} /></div>
+                    <div className="cart-logo d-flex align-items-center justify-content-center pe-3" style={{ paddingTop: "40px" }}><img src={PopUpLogo} alt="Logo IMg" style={{ maxWidth: "300px", width: "100%" }} /></div>
                     <div className="card-body" style={{ padding: "1.5rem 2rem" }}>
                         <div className="my-3 position-relative">
                             <input
@@ -49,7 +49,6 @@ const PasswordPrompt = () => {
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                             />
-
                             {/* Eye icon */}
                             <span
                                 role="button"
@@ -66,7 +65,6 @@ const PasswordPrompt = () => {
                             >
                                 <i className={`bi ${showPassword ? "bi-eye-slash" : "bi-eye"}`}></i>
                             </span>
-
                             {/* Error message with fixed space */}
                             <div
                                 className="invalid-feedback"
@@ -78,8 +76,6 @@ const PasswordPrompt = () => {
                                 {error}
                             </div>
                         </div>
-
-
                         <div className="mb-3 d-flex justify-content-center">
                             <button type="submit" id="aximo-main-btn" className="btn btn-primary w-100 popupbtn-mobile" >
                                 Submit
