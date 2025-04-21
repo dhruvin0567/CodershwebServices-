@@ -12119,6 +12119,8 @@ button#aximo-notified-btn {
 	}
 }
 
+
+
 /* hero-section-title */
 .hero-section-title {
 	font-size: 56px;
@@ -12139,19 +12141,17 @@ button#aximo-notified-btn {
 
 
 /* single brand img ajustments */
-
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 	.Brand-breadcrumb {
-		/* padding: 170px 0 80px; */
+		padding: 170px 0 80px;
 	}
 }
 
 @media (max-width: 575px) {
 	.Brand-breadcrumb {
-		/* padding: 130px 0 80px; */
+		padding: 130px 0 80px;
 	}
-}
-
+} */
 .case-study-hero-section {
 	width: 100%;
 	height: auto;
@@ -12217,8 +12217,10 @@ button#aximo-notified-btn {
 	}
 }
 
-/* home page table css */
 
+
+
+/* home page table css */
 .comparison-table {
 	width: 100%;
 	border-collapse: separate;
@@ -12272,6 +12274,9 @@ button#aximo-notified-btn {
 	}
 }
 
+
+
+
 /* breadcrumn of thankyou page css*/
 .thanku-section-padding {
 	padding: 30px 0px 30px;
@@ -12317,6 +12322,9 @@ button#aximo-notified-btn {
 	}
 }
 
+
+
+
 /* about counter bottomone */
 @media (min-width: 1400px) {
 	.aboutcoutner-bottom {
@@ -12326,58 +12334,16 @@ button#aximo-notified-btn {
 	}
 }
 
+
+
+
 /* brand logo slider */
 .aximo-brandlogo-item {
 	border-radius: 20px;
 	width: 80%;
 }
 
-/* .iframe-insta {
-	border-radius: 30px !important;
-	overflow: hidden;
-	margin-left: 40px;
-	border: 7px solid black;
-	object-fit: cover;
-	padding: 0px !important;
-	max-width: 430px;
-	width: 100%;
-}
 
-@media (max-width: 991px) {
-	.instapost-column {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 40px;
-	}
-
-	.iframe-insta {
-		margin-left: 0px;
-	}
-
-}
-
-iframe#instagram-embed-0 {
-	width: 101% !important;
-	margin: 0px -2px 0px !important;
-} */
-
-
-
-/* @media (min-width: 991px) and (max-width: 1200px) {
-
-	.contact-video {
-		width: 100%;
-		height: 100%;
-	}
-} */
-
-
-/* case study page redesign */
-.section.aximo-section-padding2.aximo-project-page {
-	/* width: 95%; */
-	/* margin: auto; */
-}
 
 .casestudy-blog-card-container {
 	height: 350px;
@@ -12402,8 +12368,8 @@ iframe#instagram-embed-0 {
 }
 
 
-/* restricted pages popup css */
 
+/* restricted pages popup css */
 .popupbtn-mobile {
 	min-width: 200px !important;
 	max-width: 200px !important;
@@ -12414,3 +12380,15 @@ iframe#instagram-embed-0 {
 .popupbtn-mobile:hover {
 	background-color: #bff747 !important;
 }
+
+
+
+/* Universal selection */
+*::selection {
+	background: #aee636;
+	color: #000;
+}
+
+
+
+/* portfolio filter button css */
