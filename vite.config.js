@@ -15,13 +15,22 @@ export default defineConfig({
 
     // VitePluginPurgeCss(),
     // VitePluginImagemin(),
-    VitePWA(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      devOptions: {
+        enabled: true
+      },
+      workbox: {
+        skipWaiting: true,
+        clientsClaim: true
+      }
+    }),
     ViteSitemap({
       // The root URL of your site
-      hostname: 'https://react-vite-codersh.vercel.app/',
+      hostname: 'https://www.codersh.ca/',
     }),
     SitemapPlugin({
-      baseUrl: 'https://react-vite-codersh.vercel.app/',
+      baseUrl: 'https://www.codersh.ca/',
       changefreq: 'daily',
       priority: 1.0
     })
