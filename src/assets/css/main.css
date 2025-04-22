@@ -913,6 +913,16 @@ body {
 		margin-right: 80px;
 	}
 
+	@media (min-width: 512px) and (max-width: 768px) {
+		/* .site-navbar .header-btn {
+			margin-right: auto;
+		} */
+
+		.brand-logo {
+			margin-right: 0px;
+		}
+	}
+
 	.aximo-header1 .mobile-nav-wrap .mobile-menu-trigger span {
 		background-color: #fff;
 	}

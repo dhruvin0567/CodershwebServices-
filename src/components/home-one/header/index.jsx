@@ -13,7 +13,7 @@ import Mega_Menu from "./Mega_Menu";
 function Header() {
 	return (
 		<header className="site-header aximo-header-section aximo-header1 dark-bg" id="sticky-menu">
-			<div className="container">
+			<div className="container header-container-div">
 				<nav className="navbar site-navbar">
 					<HeaderLogo />
 					<div className="menu-block-wrapper">
