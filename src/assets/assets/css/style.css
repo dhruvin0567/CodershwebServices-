@@ -337,8 +337,8 @@ button.filter-btn:hover {
 .filter-container {
     gap: 15px;
     background-color: var(--light-bg1);
-    padding: 1.75rem 5.5rem;
-    box-shadow: 0px 0px 14px 1px #e0e0e0;
+    padding: 1.75rem 1.75rem;
+    /* box-shadow: 0px 0px 14px 1px #e0e0e0; */
     border-radius: 10px;
     flex-wrap: wrap;
     justify-content: center;
@@ -346,11 +346,12 @@ button.filter-btn:hover {
 
 .filter-container .form-select {
     height: 47px;
-    width: 25%;
-    font-family: 'circular', sans-serif;
+    width: 30%;
+    /* font-family: 'circular', sans-serif; */
     padding: 10px;
-    color: #636262;
+    /* color: #636262; */
     background-color: #FFFFF5;
+    border-radius: 10px;
 }
 
 @media (max-width: 512px) {

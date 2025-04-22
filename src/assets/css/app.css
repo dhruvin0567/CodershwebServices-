@@ -115,9 +115,9 @@ body {
 	/* overflow-x: hidden !important; */
 }
 
-#root {
-	/* overflow-x: hidden; */
-}
+/* #root {
+	overflow-x: hidden;
+} */
 
 body.styleguide {
 	background-color: #dcdfe8;
@@ -12392,3 +12392,18 @@ button#aximo-notified-btn {
 
 
 /* portfolio filter button css */
+.the-main-outerbox {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+	padding: 1rem 0;
+	border-radius: 15px;
+}
+
+@media (max-width: 512px) {
+	.categories-form-wrapper {
+		margin: 0px 10px !important;
+	}
+
+	.dropdownfilter-portfolio {
+		display: none !important;
+	}
+}
