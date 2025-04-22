@@ -52,58 +52,101 @@ const FILTER_OPTIONS = {
 };
 
 const Portfolio1content = () => {
+    // Unified filter state
     const [filters, setFilters] = useState({
+        // Dropdown filters
         category: "all",
         country: "all",
-        industry: "all"
+        industry: "all",
+        // Facet filters
+        activeFacets: {
+            countries: [],
+            industries: []
+        }
     });
 
-    const [facetFilters, setFacetFilters] = useState({
-        categories: [],
-        countries: [],
-        industries: []
-    });
-
-    // Toggle the facet filter checkbox selection
+    // Toggle facet filters
     const toggleFacetFilter = (type, value) => {
-        setFacetFilters(prev => {
-            const current = prev[type] || [];
+        setFilters(prev => {
+            const current = prev.activeFacets[type] || [];
             const updated = current.includes(value)
                 ? current.filter(v => v !== value)
                 : [...current, value];
-            return { ...prev, [type]: updated };
+
+            return {
+                ...prev,
+                activeFacets: {
+                    ...prev.activeFacets,
+                    [type]: updated
+                }
+            };
         });
     };
 
-    // Handle dropdown filter changes
+    // Handle dropdown changes
     const handleFilterChange = useCallback((filterType, value) => {
-        setFilters(prev => ({ ...prev, [filterType]: value }));
+        setFilters(prev => ({
+            ...prev,
+            [filterType]: value,
+            // When a dropdown is changed, clear the corresponding facet filters
+            activeFacets: {
+                ...prev.activeFacets,
+                ...(filterType === 'country' && { countries: [] }),
+                ...(filterType === 'industry' && { industries: [] })
+            }
+        }));
     }, []);
 
-    // Filter cards based on selected filters
+    // Clear all filters
+    const clearAllFilters = () => {
+        setFilters({
+            category: "all",
+            country: "all",
+            industry: "all",
+            activeFacets: {
+                countries: [],
+                industries: []
+            }
+        });
+    };
+
+    // Filter cards with combined logic
     const filteredCards = useMemo(() => {
         return cards.filter(card => {
-            const matchCategory =
-                (filters.category === "all" || card.category === filters.category) &&
-                (facetFilters.categories.length === 0 || facetFilters.categories.includes(card.category));
+            // Category must always match (only one category exists)
+            if (filters.category !== "all" && card.category !== filters.category) {
+                return false;
+            }
 
-            const matchCountry =
-                (filters.country === "all" || card.country === filters.country) &&
-                (facetFilters.countries.length === 0 || facetFilters.countries.includes(card.country));
+            // Country matching - either dropdown OR facet filters
+            const countryMatch =
+                (filters.country === "all" && filters.activeFacets.countries.length === 0) || // No filters
+                (filters.country !== "all" && card.country === filters.country) || // Dropdown match
+                (filters.activeFacets.countries.length > 0 && filters.activeFacets.countries.includes(card.country)); // Facet match
 
-            const matchIndustry =
-                (filters.industry === "all" || card.industry === filters.industry) &&
-                (facetFilters.industries.length === 0 || facetFilters.industries.includes(card.industry));
+            // Industry matching - either dropdown OR facet filters
+            const industryMatch =
+                (filters.industry === "all" && filters.activeFacets.industries.length === 0) || // No filters
+                (filters.industry !== "all" && card.industry === filters.industry) || // Dropdown match
+                (filters.activeFacets.industries.length > 0 && filters.activeFacets.industries.includes(card.industry)); // Facet match
 
-            return matchCategory && matchCountry && matchIndustry;
+            return countryMatch && industryMatch;
         });
-    }, [filters, facetFilters]);
+    }, [filters]);
+
+    // Check if any filters are active
+    const hasActiveFilters =
+        filters.category !== "all" ||
+        filters.country !== "all" ||
+        filters.industry !== "all" ||
+        filters.activeFacets.countries.length > 0 ||
+        filters.activeFacets.industries.length > 0;
 
     return (
         <div>
-            <div className="categories-form-wrapper py-5 ">
+            <div className="categories-form-wrapper py-5">
                 {/* Dropdown Filters */}
-                <div className="categories-form container the-main-outerbox ">
+                <div className="categories-form container the-main-outerbox">
                     <div className="filter-container d-flex flex-wrap gap-3 dropdownfilter-portfolio">
                         <select className="form-select" value={filters.category}
                             onChange={(e) => handleFilterChange('category', e.target.value)}>
@@ -128,85 +171,186 @@ const Portfolio1content = () => {
                                 <option key={option} value={option}>{option}</option>
                             ))}
                         </select>
+
+
                     </div>
 
                     {/* Modern Responsive Faceted Filters */}
-                    <div className="mx-4 mx-md-5">
+                    <div className="mx-4 mx-md-5 mt-3">
                         <div className="faceted-filters-container">
-                            {/* Desktop / Tablet View */}
+                            {/* Desktop/Tablet View */}
                             <div className="faceted-filters-scroll d-none d-md-flex">
-                                {Object.entries(FILTER_OPTIONS).map(([filterType, values]) => (
-                                    <div key={filterType} className="filter-group">
-                                        <div className="filter-group-label">{filterType}</div>
-                                        <div className="filter-options">
-                                            {values.map(value => (
-                                                <button
-                                                    key={value}
-                                                    className={`filter-chip ${facetFilters[filterType]?.includes(value) ? 'active' : ''}`}
-                                                    onClick={() => toggleFacetFilter(filterType, value)}
-                                                >
-                                                    {value.split(' & ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' & ')}
-                                                </button>
-                                            ))}
+                                {Object.entries(FILTER_OPTIONS)
+                                    .filter(([filterType]) => filterType !== 'categories')
+                                    .map(([filterType, values]) => (
+                                        <div key={filterType} className="filter-group">
+                                            <div className="filter-group-label">{filterType}</div>
+                                            <div className="filter-options">
+                                                {values.map(value => (
+                                                    <button
+                                                        key={value}
+                                                        className={`filter-chip ${filters.activeFacets[filterType]?.includes(value) ? 'active' : ''
+                                                            }`}
+                                                        onClick={() => toggleFacetFilter(filterType, value)}
+                                                        disabled={
+                                                            // Disable if corresponding dropdown is active
+                                                            (filterType === 'countries' && filters.country !== "all") ||
+                                                            (filterType === 'industries' && filters.industry !== "all")
+                                                        }
+                                                    >
+                                                        {value}
+                                                    </button>
+                                                ))}
+                                            </div>
                                         </div>
-                                    </div>
-                                ))}
+                                    ))}
                             </div>
 
                             {/* Mobile View */}
                             <div className="faceted-filters-mobile d-flex d-md-none flex-column gap-3">
-                                {Object.entries(FILTER_OPTIONS).map(([filterType, values]) => (
-                                    <div key={filterType} className="filter-group-mobile">
-                                        <details>
-                                            <summary className="filter-group-label">{filterType}</summary>
-                                            <div className="filter-options mt-2">
-                                                {values.map(value => (
-                                                    <button
-                                                        key={value}
-                                                        className={`filter-chip ${facetFilters[filterType]?.includes(value) ? 'active' : ''}`}
-                                                        onClick={() => toggleFacetFilter(filterType, value)}
-                                                    >
-                                                        {value.split(' & ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' & ')}
-                                                    </button>
-                                                ))}
-                                            </div>
-                                        </details>
-                                    </div>
-                                ))}
+                                {Object.entries(FILTER_OPTIONS)
+                                    .filter(([filterType]) => filterType !== 'categories')
+                                    .map(([filterType, values]) => (
+                                        <div key={filterType} className="filter-group-mobile">
+                                            <details>
+                                                <summary className="filter-group-label">
+                                                    {filterType}
+                                                    {filters.activeFacets[filterType]?.length > 0 && (
+                                                        <span className="badge   ms-2">
+                                                            {filters.activeFacets[filterType].length}
+                                                        </span>
+                                                    )}
+                                                </summary>
+                                                <div className="filter-options mt-2">
+                                                    {values.map(value => (
+                                                        <button
+                                                            key={value}
+                                                            className={`filter-chip ${filters.activeFacets[filterType]?.includes(value) ? 'active' : ''
+                                                                }`}
+                                                            onClick={() => toggleFacetFilter(filterType, value)}
+                                                            disabled={
+                                                                (filterType === 'countries' && filters.country !== "all") ||
+                                                                (filterType === 'industries' && filters.industry !== "all")
+                                                            }
+                                                        >
+                                                            {value}
+                                                        </button>
+                                                    ))}
+                                                </div>
+                                            </details>
+                                        </div>
+                                    ))}
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
 
+            {/* Active Filters Display */}
+            {hasActiveFilters && (
+                <div className="container mb-4">
+                    <div className="d-flex flex-wrap gap-3 align-items-center">
 
+                        {/* clear filter button */}
+                        {hasActiveFilters && (
+                            <button
+                                className="btn btn-outline-secondary clear-all-filter"
+                                onClick={clearAllFilters}
+                            >
+                                Clear All
+                            </button>
+                        )}
+                        <span className='devider'> | </span>
+                        <span className="me-2">Active filters:</span>
+                        {filters.category !== "all" && (
+                            <span className="badge  ">
+                                Category: {filters.category}
+                                <button
+                                    className="btn-close  ms-2"
+                                    onClick={() => handleFilterChange('category', 'all')}
+                                    aria-label="Remove category filter"
+                                ></button>
+                            </span>
+                        )}
+                        {filters.country !== "all" && (
+                            <span className="badge  ">
+                                Country: {filters.country}
+                                <button
+                                    className="btn-close  ms-2"
+                                    onClick={() => handleFilterChange('country', 'all')}
+                                    aria-label="Remove country filter"
+                                ></button>
+                            </span>
+                        )}
+                        {filters.industry !== "all" && (
+                            <span className="badge d-flex justify-content-center align-items-center">
+                                Industry: {filters.industry}
+                                <button
+                                    className="btn-close  ms-2"
+                                    onClick={() => handleFilterChange('industry', 'all')}
+                                    aria-label="Remove industry filter"
+                                ></button>
+                            </span>
+                        )}
+                        {filters.activeFacets.countries.map(country => (
+                            <span key={country} className="badge d-flex justify-content-center align-items-center">
+                                Country: {country}
+                                <button
+                                    className="btn-close  ms-2"
+                                    onClick={() => toggleFacetFilter('countries', country)}
+                                    aria-label={`Remove ${country} filter`}
+                                ></button>
+                            </span>
+                        ))}
+                        {filters.activeFacets.industries.map(industry => (
+                            <span key={industry} className="badge d-flex justify-content-center align-items-center">
+                                Industry: {industry}
+                                <button
+                                    className="btn-close  ms-2"
+                                    onClick={() => toggleFacetFilter('industries', industry)}
+                                    aria-label={`Remove ${industry} filter`}
+                                ></button>
+                            </span>
+                        ))}
+                    </div>
+                </div>
+            )}
 
             {/* Project Cards Section */}
             <div className="project-cards-section py-5 px-2">
                 <div className="container-fluid">
-                    <div className="row">
-                        {filteredCards.map((card) => (
-                            <FadeInStagger
-                                key={card.id}
-                                className="col-lg-3 col-sm-6 project-card"
-                                data-category={card.category}
-                                data-country={card.country}
-                                data-industry={card.industry}
+                    {filteredCards.length === 0 ? (
+                        <div className="text-center py-5">
+                            <h4>No projects match your filters</h4>
+                            {/* <button
+                                className="btn btn-primary mt-3"
+                                onClick={clearAllFilters}
                             >
-                                <div className="imagescrolling-wrapper portfolio-image-wrapper">
-                                    <img
-                                        src={card.image}
-                                        alt={card.name}
-                                        className="image-scrolling portfolio-image"
-                                    />
-                                </div>
-                                <h3 className="project-name py-3 text-center">{card.name}</h3>
-                            </FadeInStagger>
-                        ))}
-                    </div>
+                                Clear all filters
+                            </button> */}
+                        </div>
+                    ) : (
+                        <div className="row">
+                            {filteredCards.map((card) => (
+                                <FadeInStagger
+                                    key={card.id}
+                                    className="col-lg-3 col-sm-6 project-card"
+                                    data-category={card.category}
+                                    data-country={card.country}
+                                    data-industry={card.industry}
+                                >
+                                    <div className="imagescrolling-wrapper portfolio-image-wrapper">
+                                        <img
+                                            src={card.image}
+                                            alt={card.name}
+                                            className="image-scrolling portfolio-image"
+                                        />
+                                    </div>
+                                    <h3 className="project-name py-3 text-center">{card.name}</h3>
+                                </FadeInStagger>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
 
@@ -267,6 +411,11 @@ const Portfolio1content = () => {
                     transition: all 0.2s ease;
                     white-space: nowrap;
                     box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+                }
+
+                .filter-chip[disabled] {
+                    opacity: 0.5;
+                    pointer-events: none;
                 }
                 
                 .filter-chip:hover {
@@ -353,6 +502,24 @@ const Portfolio1content = () => {
 
                     .filter-group-mobile {
                         width: 100%;
+                    }
+
+                    .badge {
+                        display: inline-flex;
+                        align-items: center;
+                        padding: 0.5rem 0.75rem;
+                        font-size: 0.85rem;
+                       
+                    }
+                    
+                    .btn-close {
+                        font-size: 0.6rem;
+                        padding: 0.25rem;
+                        opacity: 0.8;
+                    }
+                    
+                    .btn-close:hover {
+                        opacity: 1;
                     }
                 }
             `}</style>

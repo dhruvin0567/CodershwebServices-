@@ -12409,13 +12409,44 @@ button#aximo-notified-btn {
 }
 
 
+
 /* header ccontainer div css  */
-
-
 @media (max-width: 767px) {
 	.header-container-div {
 		/* margin: auto 0px !important; */
 		width: 100% !important;
 		max-width: 100vw;
 	}
+}
+
+
+/* clear all filter buttton */
+.clear-all-filter {
+	padding: 25px !important;
+	min-width: fit-content !important;
+	max-width: fit-content !important;
+	width: 100% !important;
+	color: rgb(50, 50, 50) !important;
+	border-radius: 10px !important;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+	font-weight: 600 !important;
+}
+
+.clear-all-filter:hover {
+	background-color: #aee636 !important;
+}
+
+.badge {
+	background-color: #bff747 !important;
+	color: rgb(50, 50, 50);
+	padding: 10px;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.devider {
+	font-size: 30px;
+	color: #323232;
+	font-weight: 400;
+	margin: 0 20px;
 }
