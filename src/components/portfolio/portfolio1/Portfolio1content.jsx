@@ -8,32 +8,32 @@ const getImage = (name) => cardImages[`/src/assets/images/images2/${name}.webp`]
 
 // Cards data
 const cards = [
-    { category: "shopify", country: "south africa", industry: "wine", image: "Van-Hunks", name: "Vank Hunks" },
-    { category: "shopify", country: "uk", industry: "wine", image: "Madame-F", name: "Madame F" },
-    { category: "shopify", country: "uk", industry: "wine", image: "Liberation-Cocktails", name: "Liberation Cocktails" },
-    { category: "shopify", country: "uk", industry: "wine", image: "BONE-IDYLL", name: "Bone Idyll" },
-    { category: "shopify", country: "usa", image: "potown-homepage", name: "PowTown Store" },
-    { category: "shopify", country: "usa", industry: "health", image: "Violet-Blanc-Beauty", name: "Violet Blanc" },
-    { category: "shopify", country: "usa", industry: "food & beverages", image: "TylersCoffee", name: "Tylers Coffee" },
-    { category: "shopify", country: "usa", image: "BUY-VAPE-USA", name: "Buy Vape USA" },
-    { category: "shopify", country: "usa", image: "No-Mo-Stache", name: "No Mo-Stache" },
-    { category: "shopify", country: "usa", image: "Infinity-Loops", name: "Infinity Loops" },
-    { category: "shopify", country: "usa", image: "wallplanks", name: "Wallplanks" },
-    { category: "shopify", country: "usa", industry: "fashion", image: "Rowan-Oak-Clothing-Co", name: "Rowan Oak" },
-    { category: "shopify", country: "usa", image: "Aolithium-Professional", name: "Aolithium" },
-    { category: "shopify", country: "usa", industry: "fashion", image: "Baby-Gold", name: "Baby Gold" },
-    { category: "shopify", country: "usa", industry: "food & beverages", image: "Aubi-Ramsa-Ice-Cream-Co-", name: "Aubi & Ramsa" },
-    { category: "shopify", country: "germany", industry: "travel and tourist", image: "Airpaq-Sustainability-meets-functionality-Airpaq-GmbH", name: "Airpaq" },
-    { category: "shopify", country: "uk", industry: "fashion", image: "Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box", name: "CUBIC" },
-    { category: "shopify", country: "uk", industry: "food & beverages", image: "thewelshproducestall-the-welsh-produce-stall", name: "The Welsh Produce Stall" },
-    { category: "shopify", country: "uk", industry: "food & beverages", image: "fuel", name: "Fuel" },
-    { category: "shopify", image: "oceans6media", name: "Ocean 6 Media" },
-    { category: "shopify", country: "australia", industry: "fashion", image: "NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-", name: "Neux" },
-    { category: "shopify", country: "usa", industry: "food & beverages", image: "Indulge-in-Hudson-Pecan-Natures-Tastiest-Guilt-Free-Snack-Hudson-Pecan-Company", name: "Hudson Pecan Company Inc" },
-    { category: "shopify", country: "usa", industry: "fashion", image: "IKKS-Official-Website-Women-s-Children-s-Men-s-Fashion-Fall-Winter-2023", name: "IKKS" },
-    { category: "shopify", country: "usa", industry: "auto mobile", image: "Bumperninja", name: "Bumper Ninja" },
-    { category: "shopify", country: "usa", industry: "health care", image: "Biotrust", name: "Bio Trust" },
-    { category: "shopify", image: "vidtre", name: "Video Platform" },
+    { category: "Shopify", country: "South Africa", industry: "Wine", image: "Van-Hunks", name: "Vank Hunks" },
+    { category: "Shopify", country: "Germany", industry: "Travel and Tourist", image: "Airpaq-Sustainability-meets-functionality-Airpaq-GmbH", name: "Airpaq" },
+    { category: "Shopify", country: "Australia", industry: "Fashion", image: "NEUX-Ethically-Made-Australian-Designed-Quality-Womenswear-", name: "Neux" },
+    { category: "Shopify", country: "UK", industry: "Wine", image: "Madame-F", name: "Madame F" },
+    { category: "Shopify", country: "UK", industry: "Wine", image: "Liberation-Cocktails", name: "Liberation Cocktails" },
+    { category: "Shopify", country: "UK", industry: "Wine", image: "BONE-IDYLL", name: "Bone Idyll" },
+    { category: "Shopify", country: "UK", industry: "Fashion", image: "Women-s-Clothing-Store-Clothing-Boutique-CUBIC-Outside-the-Box", name: "CUBIC" },
+    { category: "Shopify", country: "UK", industry: "Food and Beverages", image: "thewelshproducestall-the-welsh-produce-stall", name: "The Welsh Produce Stall" },
+    { category: "Shopify", country: "UK", industry: "Food and Beverages", image: "fuel", name: "Fuel" },
+    { category: "Shopify", country: "USA", industry: "Online Retail", image: "potown-homepage", name: "PowTown Store" },
+    { category: "Shopify", country: "USA", industry: "Health Care", image: "Violet-Blanc-Beauty", name: "Violet Blanc" },
+    { category: "Shopify", country: "USA", industry: "Food and Beverages", image: "TylersCoffee", name: "Tylers Coffee" },
+    { category: "Shopify", country: "USA", industry: "      ", image: "BUY-VAPE-USA", name: "Buy Vape USA" },
+    { category: "Shopify", country: "USA", industry: "Fashion", image: "No-Mo-Stache", name: "No Mo-Stache" },
+    { category: "Shopify", country: "USA", industry: "Fashion", image: "Infinity-Loops", name: "Infinity Loops" },
+    { category: "Shopify", country: "USA", industry: "Online Retail", image: "wallplanks", name: "Wallplanks" },
+    { category: "Shopify", country: "USA", industry: "Fashion", image: "Rowan-Oak-Clothing-Co", name: "Rowan Oak" },
+    { category: "Shopify", country: "USA", industry: "Travel and Tourist", image: "Aolithium-Professional", name: "Aolithium" },
+    { category: "Shopify", country: "USA", industry: "Fashion", image: "Baby-Gold", name: "Baby Gold" },
+    { category: "Shopify", country: "USA", industry: "Food and Beverages", image: "Aubi-Ramsa-Ice-Cream-Co-", name: "Aubi & Ramsa" },
+    { category: "Shopify", country: "USA", industry: "Food and Beverages", image: "Indulge-in-Hudson-Pecan-Natures-Tastiest-Guilt-Free-Snack-Hudson-Pecan-Company", name: "Hudson Pecan Company Inc" },
+    { category: "Shopify", country: "USA", industry: "Fashion", image: "IKKS-Official-Website-Women-s-Children-s-Men-s-Fashion-Fall-Winter-2023", name: "IKKS" },
+    { category: "Shopify", country: "USA", industry: "Auto Mobile", image: "Bumperninja", name: "Bumper Ninja" },
+    { category: "Shopify", country: "USA", industry: "Health Care", image: "Biotrust", name: "Bio Trust" },
+    { category: "Shopify", country: "       ", industry: "Media Service", image: "vidtre", name: "Video Platform" },
+    { category: "Shopify", country: "       ", industry: "Media Service", image: "oceans6media", name: "Ocean 6 Media" },
 ].map(card => ({
     ...card,
     id: crypto.randomUUID(),
@@ -42,12 +42,12 @@ const cards = [
 
 // Filter options
 const FILTER_OPTIONS = {
-    categories: ["shopify"],
-    countries: ["south africa", "uk", "usa", "germany", "australia"],
+    categories: ["Shopify"],
+    countries: ["South Africa", "UK", "USA", "Germany", "Australia"],
     industries: [
-        "wine", "health", "food & beverages",
-        "fashion", "travel and tourist",
-        "auto mobile", "health care"
+        "Wine", "Health", "Food and Beverages",
+        "Fashion", "Travel and Tourist",
+        "Auto Mobile", "Health Care", "Online Retail"
     ]
 };
 
