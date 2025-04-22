@@ -45,7 +45,7 @@ const FILTER_OPTIONS = {
     categories: ["Shopify"],
     countries: ["South Africa", "UK", "USA", "Germany", "Australia"],
     industries: [
-        "Wine", "Health", "Food and Beverages",
+        "Wine", "Food and Beverages",
         "Fashion", "Travel and Tourist",
         "Auto Mobile", "Health Care", "Online Retail"
     ]
