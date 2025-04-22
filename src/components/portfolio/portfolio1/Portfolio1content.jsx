@@ -2,9 +2,9 @@ import { useState, useMemo, useCallback } from 'react';
 import FadeInStagger from '../../animation/FadeInStagger';
 
 // Import images
-const cardImages = import.meta.glob('/src/assets/images/images2/optimized images/*.webp*', { eager: true });
-const getImage = (name) => cardImages[`/src/assets/images/images2/optimized images/${name}.webp`]?.default ||
-    cardImages[`/src/assets/images/images2/optimized images/${name}.png.webp`]?.default;
+const cardImages = import.meta.glob('/src/assets/images/images2/*.webp*', { eager: true });
+const getImage = (name) => cardImages[`/src/assets/images/images2/${name}.webp`]?.default ||
+    cardImages[`/src/assets/images/images2/${name}.png.webp`]?.default;
 
 // Cards data
 const cards = [
