@@ -22,7 +22,7 @@ function ShopifyAppDev() {
                 title="Shopify App Development | Custom Apps for Your E-commerce Needs | Codersh Web Services"
                 description="Enhance your Shopify store with custom app development by Codersh Web Services. We create tailor-made apps to boost functionality, streamline operations, and provide unique solutions for your business."
                 keywords="Shopify app development, custom Shopify apps, e-commerce app solutions, Shopify app development services, Shopify functionality, Shopify app experts, Codersh Web Services"
-                canonical="https://www.codersh.ca/shopify-app-development"
+                canonical="https://react-vite-codersh.vercel.app/shopify-app-development"
             />
             <BreadCrumb title="Shopify App Development" />
 

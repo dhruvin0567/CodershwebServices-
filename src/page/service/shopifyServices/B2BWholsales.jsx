@@ -55,7 +55,7 @@ function B2BWholsales() {
                 title="Shopify B2B Wholesale Solutions | Expand Your Business Reach | Codersh Web Services"
                 description="Transform your Shopify store into a powerful B2B wholesale platform. Codersh Web Services offers custom solutions for wholesale pricing, bulk orders, and seamless B2B integrations."
                 keywords="Shopify B2B wholesale, wholesale Shopify solutions, B2B e-commerce, Shopify bulk orders, wholesale pricing on Shopify, Shopify B2B integrations, Codersh Web Services"
-                canonical="https://www.codersh.ca/shopify-b2b-wholesale"
+                canonical="https://react-vite-codersh.vercel.app/shopify-b2b-wholesale"
             />
             <BreadCrumb title="Shopify B2B & Wholesale" />
 

@@ -28,7 +28,7 @@ function CustomStore() {
                 title="Custom Shopify Store Development | Codersh Web Services"
                 description="Create a unique, high-performance Shopify store with Codersh Web Services. Our expert developers provide custom design, advanced functionality, and seamless integration."
                 keywords="Custom Shopify store, Shopify store development, Shopify design, custom store design, e-commerce solutions, Shopify experts, advanced Shopify features, Codersh Web Services"
-                canonical="https://www.codersh.ca/customStore"
+                canonical="https://react-vite-codersh.vercel.app/customStore"
             />
             <BreadCrumb title="Custom Store projects" />
 

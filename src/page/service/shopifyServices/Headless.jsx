@@ -26,7 +26,7 @@ function Headless() {
                 title="Headless Shopify Development | Custom Solutions for E-commerce | Codersh Web Services"
                 description="Unlock the full potential of Shopify with headless development. Codersh Web Services offers flexible, scalable, and performance-driven headless Shopify solutions tailored for your business needs."
                 keywords="Headless Shopify, Shopify headless development, headless e-commerce, Shopify custom solutions, headless architecture, scalable Shopify store, Codersh Web Services"
-                canonical="https://www.codersh.ca/headless-shopify"
+                canonical="https://react-vite-codersh.vercel.app/headless-shopify"
             />
             <GlobalStyle />
             <BreadCrumb title="Headless & Shopify" />

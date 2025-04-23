@@ -123,7 +123,7 @@ function Subscriptions() {
                 title="Shopify Subscription Services | Build Recurring Revenue | Codersh Web Services"
                 description="Offer subscriptions on your Shopify store with ease. Codersh Web Services provides expert setup for subscription models, recurring payments, and subscription box services."
                 keywords="Shopify subscriptions, recurring payments on Shopify, subscription services Shopify, Shopify subscription model, Shopify subscription box, build recurring revenue, Codersh Web Services"
-                canonical="https://www.codersh.ca/subscriptions-on-shopify"
+                canonical="https://react-vite-codersh.vercel.app/subscriptions-on-shopify"
             />
             <BreadCrumb title="Subscriptions On Shopify" />
 
