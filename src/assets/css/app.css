@@ -2310,6 +2310,7 @@ header.aximo-header-section.aximo-header7.sticky-menu {
 	}
 }
 
+
 .aximo-copywright.one {
 	text-align: right;
 }
@@ -11306,51 +11307,85 @@ button#wp-block-search__button {
 
 .entry-content img {
 	border-radius: 25px;
-	object-fit: contain;
-	width: 100%;
+	object-fit: cover;
+	/* width: 100%; */
+	/* height: auto; */
+	margin: 10px 0px !important;
+	display: block;
 	height: auto;
+	/* width: max-content; */
 }
 
 .entry-content h1,
 .entry-content h2,
-.entry-content h3 {
-	margin-top: 25px;
-	margin-bottom: 25px;
-	font-size: 35px;
-}
-
-
-.entry-content h2,
 .entry-content h3,
-.entry-content ul {
-	margin-bottom: 15px;
-	font-size: 20px;
+.entry-content h4 {
+	margin-bottom: 20px !important;
 }
 
-.entry-content h2 b {
-	margin-bottom: 15px;
-	font-size: 30px;
-	line-height: 2rem;
+.entry-content h1 {
+	font-size: 35px !important;
+}
+
+.entry-content h3,
+.entry-content h2,
+.entry-content h2 b,
+.entry-content h3 b,
+.entry-content h4 b,
+.entry-content h2 strong,
+.entry-content p strong,
+.entry-content ol li b {
+	font-size: 26px !important;
+
 }
 
 .entry-content b,
 .entry-content strong,
-.entry-content h2 strong,
-.entry-content p strong,
-.entry-content span,
-.entry-content p span,
 .entry-content p b {
 	font-family: syne, sans-serif;
 	font-size: 20px;
-	margin-bottom: 15px;
 	font-weight: 700;
 }
 
-.entry-content p {
+.entry-content p,
+.entry-content ul,
+.entry-content ol {
 	font-size: 20px;
-	margin-bottom: 15px;
+	margin-bottom: 10px !important;
 }
 
+.entry-content span {
+	font-family: "Inter", sans-serif !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	vertical-align: baseline !important;
+	text-rendering: optimizeLegibility !important;
+	/* font-size: 18px !important; */
+}
+
+.entry-content ol li span {
+	font-size: 20px !important;
+}
+
+.entry-content h4 span {
+	font-size: 20px !important;
+}
+
+.entry-content p span,
+.entry-content ul li span {
+	font-weight: 400 !important;
+}
+
+.entry-content code {
+	color: #000 !important;
+	font-size: 20px !important;
+	font-weight: 400 !important;
+}
+
+.entry-content a {
+	color: #000 !important;
+	font-size: 20px !important;
+}
 
 .post-tag {
 	display: flex;
@@ -12449,4 +12484,32 @@ button#aximo-notified-btn {
 	color: #323232;
 	font-weight: 400;
 	margin: 0 10px;
+}
+
+
+/* solution page logo img slider css */
+@media (max-width: 991px) {
+	.logo-img-slider {
+		justify-content: center !important;
+		align-items: center !important;
+		display: flex !important;
+	}
+}
+
+
+/* casestudy, blog page image responsive */
+.lazy-load-image-background.blur.lazy-load-image-loaded>img {
+	opacity: 1 !important;
+	transition: opacity .3s !important;
+	/* width: 100% !important; */
+	object-fit: cover !important;
+	height: auto !important;
+}
+
+
+span.lazy-load-image-background.blur.lazy-load-image-loaded {
+	color: transparent !important;
+	display: inline-block !important;
+	height: auto !important;
+	width: auto !important;
 }

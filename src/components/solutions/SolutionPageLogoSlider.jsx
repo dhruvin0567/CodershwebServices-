@@ -31,7 +31,7 @@ function SolutionPageLogoSlider({ logos, title }) {
                         }}
                     >
                         {logos.map((logo, index) => (
-                            <SwiperSlide key={index}>
+                            <SwiperSlide key={index} className="logo-img-slider">
                                 <img src={logo.image} alt={logo.alt || "Brand Logo"} />
                             </SwiperSlide>
                         ))}

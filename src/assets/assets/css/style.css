@@ -890,7 +890,8 @@ span.swiper-custom-next {
 }
 
 .aximo-footer-logo img {
-    max-width: 175px;
+    max-width: 200px !important;
+    width: 100%;
 }
 
 @media (min-width: 1400px) {

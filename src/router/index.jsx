@@ -61,7 +61,7 @@ import EcommerceSeo from "../page/service/shopifyServices/EcommerceSeo.jsx";
 import B2BWholsales from "../page/service/shopifyServices/B2BWholsales.jsx";
 import Subscriptions from "../page/service/shopifyServices/Subscriptions.jsx";
 import ThankyouPage from "../page/ThankyouPage.jsx";
-import Logoslider from "../page/utility/Logoslider.jsx";
+// import Logoslider from "../page/utility/Logoslider.jsx";
 // import LayoutEight from "../components/layout/LayoutEight.jsx";
 // import Portfolio2 from "../page/portfolio/Portfolio2.jsx";
 // import SingleBrandCustom from "../page/brand/SingleBrandCustom.jsx";
@@ -244,10 +244,10 @@ export const router = createBrowserRouter([
 						path: "/thank-you",
 						element: <ThankyouPage />,
 					},
-					{
-						path: "/logo-slider",
-						element: <Logoslider />,
-					},
+					// {
+					// 	path: "/logo-slider",
+					// 	element: <Logoslider />,
+					// },
 					{
 						path: "*",
 						element: <ErrorPage />,

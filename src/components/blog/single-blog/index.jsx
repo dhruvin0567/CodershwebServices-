@@ -64,6 +64,9 @@ function SingleBlog() {
 					</div>
 					<div className="col-lg-4">
 						<div className="right-sidebar">
+							<div className="px-2 mb-3">
+								<h3>Get answers to all your questions !</h3>
+							</div>
 							<div className="aximo-main-form">
 								<form onSubmit={handleSubmit(submitForm)}>
 									{/* Name Field */}
