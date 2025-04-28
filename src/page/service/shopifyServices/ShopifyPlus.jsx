@@ -5,7 +5,7 @@ import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
 import FadeInUp from "../../../components/animation/FadeInUp";
 import ThumbImg1 from "../../../assets/images/images2/Services4_1.webp";
-import ThumbImg2 from "../../../assets/images/images2/Service8_3.webp";
+import ThumbImg2 from "../../../assets/images/images2/patherrimgs/service8_3.webp";
 import ThumbImg3 from "../../../assets/images/images2/Services4_3.webp";
 import ThumbImg4 from "../../../assets/images/images2/service4_card1.webp";
 import ThumbImg5 from "../../../assets/images/images2/service4_card2.webp";
