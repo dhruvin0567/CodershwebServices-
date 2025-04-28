@@ -96,7 +96,7 @@ function TestimonialSwiper() {
             <FadeInStagger>
                 <div className="section aximo-section-padding3">
                     <div className="container">
-                        <div className="aximo-section-title center">
+                        <div className="aximo-section-title center pb-5">
                             <h2>
                                 Clients are always
                                 <span className="aximo-title-animation">

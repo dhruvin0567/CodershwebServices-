@@ -4,6 +4,7 @@ import useBrands from "../../hooks/useBrands";
 // import VideoSlider_2 from "../../components/common/VideoSlider_2";
 import VideoSlider from "../../components/common/VideoSlider";
 import FadeInStagger from "../../components/animation/FadeInStagger";
+import Star2Img from "../../assets/images/v1/icon/star2.webp";
 
 const SINGLE_BRAND_API_URL = "https://codersh.com/wp-json/wp/v2/brands?_embed&slug=";
 const MEDIA_API_URL = "https://codersh.com/wp-json/wp/v2/media/";
@@ -103,23 +104,23 @@ function SingleBrand() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-6 px-5 bg-light">
+                        <div className="col-md-6 px-5 brand-info-container">
                             <ul className="py-5">
-                                <li className="brand-info-li">
-                                    <p>Industry</p>
-                                    <p className="fw-bold" style={{ marginBottom: "27px" }} dangerouslySetInnerHTML={{ __html: brand?.industry }}></p>
+                                <li className="brand-info-li ">
+                                    <h5>Industry</h5>
+                                    <p className="brand-text-2" dangerouslySetInnerHTML={{ __html: brand?.industry }}></p>
                                 </li>
                                 <li className="brand-info-li">
-                                    <p>Project</p>
-                                    <p className="fw-bold" style={{ marginBottom: "27px" }} dangerouslySetInnerHTML={{ __html: brand?.project }}></p>
+                                    <h5>Project</h5>
+                                    <p className="brand-text-2" dangerouslySetInnerHTML={{ __html: brand?.project }}></p>
                                 </li>
                                 <li className="brand-info-li">
-                                    <p>Technology</p>
-                                    <p className="fw-bold" style={{ marginBottom: "27px" }} dangerouslySetInnerHTML={{ __html: brand?.technology }}></p>
+                                    <h5>Technology</h5>
+                                    <p className="brand-text-2" dangerouslySetInnerHTML={{ __html: brand?.technology }}></p>
                                 </li>
                                 <li className="brand-info-li">
-                                    <p>Visit</p>
-                                    <p className="fw-bold" style={{ marginBottom: "27px" }}>
+                                    <h5>Visit</h5>
+                                    <p className="brand-text-2">
                                         <a
                                             rel="noopener noreferrer"
                                             href={brand?.site_url}
@@ -143,8 +144,15 @@ function SingleBrand() {
             </div>
 
             <div className="cs-richtext text-center">
-                <div className="container-lg bg-light p-5">
-                    <h2 className="mb-5">Challange</h2>
+                <div className="container-lg  p-5">
+                    <h2 className="mb-5">
+                        <span className="aximo-title-animation">
+                            Challange
+                            <span className="aximo-title-icon">
+                                <img src={Star2Img} alt="starimg" />
+                            </span>
+                        </span>
+                    </h2>
                     <div className="cs-richtext-paragraph mx-lg-5 px-lg-5 pb-5">
                         <p className="brand-text" dangerouslySetInnerHTML={{ __html: brand?.challenge }}>
                         </p>
@@ -170,8 +178,16 @@ function SingleBrand() {
             </div>
 
             <div className="cs-richtext text-center">
-                <div className="container-lg bg-light p-5">
-                    <h2 className="mb-5">Solution & Results</h2>
+                <div className="container-lg  p-5">
+
+                    <h2 className="mb-5">
+                        <span className="aximo-title-animation">
+                            Solution & Results
+                            <span className="aximo-title-icon">
+                                <img src={Star2Img} alt="starimg" />
+                            </span>
+                        </span>
+                    </h2>
                     <div className="cs-richtext-paragraph mx-lg-5">
                         <p className="mb-3 brand-text" dangerouslySetInnerHTML={{ __html: brand?.solution_and_results }}>
                         </p>
@@ -193,11 +209,21 @@ function SingleBrand() {
                         <FadeInStagger>
                             <div className="review-section text-center">
                                 <div className="container py-5">
-                                    <div>
-                                        <h2 className="mb-4">Our Client's Reviews</h2>
-                                        <p className="brand-text mx-lg-5 px-lg-5 mb-4">
+                                    <div className="py-3">
+                                        <div className="aximo-section-title center pb-2">
+                                            <h2>
+                                                Clients are always
+                                                <span className="aximo-title-animation">
+                                                    satisfied with us
+                                                    <span className="aximo-title-icon">
+                                                        <img src={Star2Img} alt="Star2Img" />
+                                                    </span>
+                                                </span>
+                                            </h2>
+                                        </div>
+                                        <p className="brand-text mx-lg-5 px-lg-5 mb-4 text-center">
                                             We are very proud of the service we provide and stand by every product we carry.
-                                            See our testimonials from our happy customers.
+                                            <br /> See our testimonials from our happy customers.
                                         </p>
                                     </div>
                                     <VideoSlider />
@@ -209,8 +235,17 @@ function SingleBrand() {
             </div>
 
             <div className="image-cards-section py-5">
-                <div className="container text-center">
-                    <h2 className="mb-4">Related Brands We Support</h2>
+                <div className="container text-center pb-5">
+                    {/* <h2 className="mb-4">Related Brands We Support</h2> */}
+                    <h2>
+                        Related Brands
+                        <span className="aximo-title-animation">
+                            We Support
+                            <span className="aximo-title-icon">
+                                <img src={Star2Img} alt="Star2Img" />
+                            </span>
+                        </span>
+                    </h2>
                 </div>
                 <div className="container">
                     <div className="row">

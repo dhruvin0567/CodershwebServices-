@@ -64,7 +64,7 @@ function ComparisonTable() {
 
     return (
         <div>
-            <div className="comparison-section">
+            <div className="comparison-section" >
                 {/* Desktop View (hidden on mobile) */}
                 <div className="comparing-us p-5 d-none d-md-block">
                     <div className="container">
@@ -73,7 +73,7 @@ function ComparisonTable() {
                             <p className="mb-5" style={{ fontSize: "21px" }}>
                                 Fast-growing brands that need flexible, on-demand web development support.
                                 Whether you need just a few hours a month or dedicated resources for major projects,
-                                we provide expert solutions—without long-term commitments.
+                                we provide expert solutions-without long-term commitments.
                             </p>
                         </div>
 
@@ -133,7 +133,7 @@ function ComparisonTable() {
                             <p className="mb-4">
                                 Fast-growing brands that need flexible, on-demand web development support.
                                 Whether you need just a few hours a month or dedicated resources for major projects,
-                                we provide expert solutions—without long-term commitments.
+                                we provide expert solutions-without long-term commitments.
                             </p>
                         </div>
 

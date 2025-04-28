@@ -37,14 +37,12 @@ function ShopifyAppDev() {
                         <div className="col-lg-7  colo-12  shopify-services-data">
                             <FadeInRight>
                                 <div className="aximo-default-content">
-                                    <h2 style={{ fontSize: '50px' }}>Transform Your Store’s Functionality and User Experience with Custom Shopify Apps.</h2>
+                                    <h2 className="mb-2">Transform Your Store’s Functionality and User Experience with Custom Shopify Apps.</h2>
                                     {/* <h3 style={{ marginBottom: '16px' }}>Custom Shopify themes tailored to your brand needs.</h3> */}
-                                    <p>
+                                    <p className="mb-4">
                                         Codersh is a Shopify agency with extensive expertise in creating, developing, and launching custom Shopify apps. From tailored back-end features and custom API integrations to enhanced front-end functionality, our team is here to help you successfully launch your custom Shopify app.
-
                                     </p>
-
-                                    <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
+                                    <FadeInUp className="aximo-btn-wrap2 mt-0  shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
@@ -68,12 +66,12 @@ function ShopifyAppDev() {
                         <div className="col-lg-7 shopify-services-data">
                             <FadeInLeft>
                                 <div className="aximo-default-content">
-                                    <h2 style={{ fontSize: '50px' }}>Shopify app development partnerships.</h2>
+                                    <h2 className="mb-2">Shopify app development partnerships.</h2>
                                     {/* <h3 style={{ marginBottom: '16px' }}>Custom Shopify themes tailored to your brand needs.</h3> */}
-                                    <p>
+                                    <p className="mb-4">
                                         As experts in Shopify integrations, we work closely with leading apps like ReCharge, Yotpo, Klaviyo, and Klevu to build seamless integrations that enhance your store’s capabilities. These integrations enable us to provide a highly customized experience, all while keeping your brand’s vision at the forefront of the solution.
                                     </p>
-                                    <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
+                                    <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
                                             Get in Touch
                                         </Link>
@@ -96,13 +94,13 @@ function ShopifyAppDev() {
                         <div className="col-lg-7  colo-12  shopify-services-data">
                             <FadeInRight>
                                 <div className="aximo-default-content">
-                                    <h2 style={{ fontSize: '50px' }}>Case Study: Madame F Design & Development</h2>
-                                    <h3 style={{ marginBottom: '16px' }}>Every successful store starts with a solid foundation.</h3>
-                                    <p>
+                                    <h2 className="mb-2">Case Study: Madame F Design & Development</h2>
+                                    <h3 className="mb-2" >Every successful store starts with a solid foundation.</h3>
+                                    <p className="mb-4">
                                         We created the design in Canva and then implemented it in Shopify. User experience improvements included larger header navigation text, an enhanced logo, and a new "10% off your first order" CTA button. The "Who is Madame F?" section gained better readability with a black background, while the "Our Wines" section was refined by removing empty image boxes. Product pages were upgraded with a slider feature, and a Social Proof section was added to enhance customer trust.
                                     </p>
 
-                                    <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
+                                    <FadeInUp className="aximo-btn-wrap2 mt-0  shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
                                             Contact Us Now!
                                         </Link>

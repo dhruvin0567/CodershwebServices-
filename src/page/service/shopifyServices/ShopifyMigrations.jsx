@@ -1,6 +1,7 @@
 import BreadCrumb from "../../../components/common/Breadcrumb"
 import ThumbImg2 from "../../../assets/images/images2/Shopify_connect.webp";
 import ThumbImg1 from "../../../assets/images/images2/6.webp";
+import Star2Img from "../../../assets/images/v1/icon/star2.webp";
 import Shape4Img from "../../../assets/images/v5/shape4.webp";
 import FadeInLeft from "../../../components/animation/FadeInLeft";
 import FadeInRight from "../../../components/animation/FadeInRight";
@@ -210,12 +211,12 @@ function ShopifyMigrations() {
                         <div className="col-lg-7 shopify-services-data">
                             <FadeInLeft>
                                 <div className="aximo-default-content">
-                                    <h2 style={{ fontSize: '50px' }}>Shopify Migration Experts – Replatform to Shopify with Confidence</h2>
-                                    <p>
+                                    <h2 className="mb-2">Shopify Migration Experts - Let's Replatform to Shopify with Confidence</h2>
+                                    <p className="mb-4">
                                         At Codersh Web Services, we specialize in seamless Shopify migrations, helping businesses shift from platforms like Magento, WooCommerce, and BigCommerce to Shopify or Shopify Plus. With a focus on precision and strategy, our migration services ensure your transition is smooth, secure, and optimized for success.
 
                                     </p>
-                                    <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
+                                    <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
                                             Get in touch today!
                                         </Link>
@@ -238,21 +239,15 @@ function ShopifyMigrations() {
                         <div className="col-lg-7  colo-12  shopify-services-data">
                             <FadeInRight>
                                 <div className="aximo-default-content">
-                                    <h2 style={{ fontSize: '50px' }}>Shopify Migration Services</h2>
-
-                                    <p>
+                                    <h2 className="mb-2">Shopify Migration Services</h2>
+                                    <p className="mb-2">
                                         At Codersh Web Services, we specialize in seamless Shopify and Shopify Plus migrations. With years of experience in re-platforming, we help businesses smoothly transition to
                                     </p>
-                                    <p>
-                                        Migrating to a new e-commerce platform can feel overwhelming, but our expert team makes the process easy and efficient. From in-depth data analysis and exporting to secure importing, we handle everything to ensure that your store’s content, customer information, and order data are preserved and intact.
-
-                                    </p>
-                                    <p>
+                                    <p className="mb-4">
                                         Whether you're migrating from platforms like Magento, WooCommerce, BigCommerce, or others, Codersh Web Services is your trusted partner for a smooth, hassle-free transition to Shopify. Get in touch with us today to learn how we can help streamline your migration.
 
                                     </p>
-
-                                    <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
+                                    <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
                                             Learn More
                                         </Link>
@@ -268,8 +263,15 @@ function ShopifyMigrations() {
             <div className="section aximo-section-padding6">
                 <div className="container">
                     <div className="aximo-section-title center">
-                        <h2>
-                            Our Shopify Migration Process
+
+                        <h2 className="mb-5">
+                            Our Shopify Migration
+                            <span className="aximo-title-animation">
+                                Process
+                                <span className="aximo-title-icon">
+                                    <img src={Star2Img} alt="starimg" />
+                                </span>
+                            </span>
                         </h2>
                     </div>
                     <div className="aximo-service-wrap">
@@ -281,8 +283,8 @@ function ShopifyMigrations() {
                                         style={isMobileOrTablet ? iconboxWrapStyleMobile : iconboxWrapStyle2}
                                     >
                                         <div className="aximo-iconbox-data">
-                                            <h3 style={{ fontSize: '25px' }}>{item.title}</h3>
-                                            <p>{item.description}</p>
+                                            <h3 className="mb-2">{item.title}</h3>
+                                            <p className="aximo-p-second">{item.description}</p>
                                         </div>
                                     </div>
                                 </FadeInStagger>
@@ -296,8 +298,8 @@ function ShopifyMigrations() {
                                         style={isMobileOrTablet ? iconboxWrapStyleMobile : iconboxWrapStyle3}
                                     >
                                         <div className="aximo-iconbox-data">
-                                            <h3 style={{ fontSize: '25px' }}> {item.title}</h3>
-                                            <p>{item.description}</p>
+                                            <h3 className="mb-2"> {item.title}</h3>
+                                            <p className="aximo-p-second">{item.description}</p>
                                         </div>
                                     </div>
                                 </FadeInStagger>
@@ -366,16 +368,15 @@ function ShopifyMigrations() {
             <div className="aximo-cta2-section aximo-section-padding extra-side-margin dark-bg mb-5" style={{ padding: "30px 0px" }}>
                 <div className="container">
                     <div className="aximo-cta2-wrap shopify-services-data">
-                        <h2>Looking for a Shopify migration agency?</h2>
-                        <p>
+                        <h2 className="mb-4">Looking for a Shopify migration agency?</h2>
+                        <p className="mb-4">
                             We are an experienced Shopify migration agency partnering with world-renowned brands and ambitious start-ups supporting migrations from a multitude of e-commerce platforms.
                             Contact us to discuss our Shopify migration services today!
 
                         </p>
                         <FadeInUp>
-                            <Link className="aximo-default-btn corn-btn pill" style={{ backgroundColor: "#bff747", color: "#000" }} to="/contact-us">
-                                <span className="aximo-label-up">Get In Touch</span>
-                                <span className="aximo-label-up">Get In Touch</span>
+                            <Link to="/contact-us" className="aximo-default-btn pill aximo-header-btn">
+                                Contact Us
                             </Link>
                         </FadeInUp>
                     </div>

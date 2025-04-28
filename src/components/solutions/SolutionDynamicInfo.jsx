@@ -1,5 +1,6 @@
 // import React from 'react'
 import { Link } from "react-router-dom";
+import Star2Img from "../../assets/images/v1/icon/star2.webp"
 
 
 function SolutionDynamicInfo({
@@ -54,15 +55,23 @@ function SolutionDynamicInfo({
             {/* Features Section */}
             {features && features.length > 0 && (
                 <div className="section aximo-project-page py-5 services">
-                    <div className="container my-5">
-                        <h3 className="text-center mb-5">Features of Our Service</h3>
+                    <div className="container my-5 text-center">
+                        {/* <h2 className="text-center mb-4">Features of Our Service</h2> */}
+                        <h2 className="mb-5">
+                            <span className="aximo-title-animation">
+                                Features of Our Service
+                                <span className="aximo-title-icon">
+                                    <img src={Star2Img} alt="Star Img" />
+                                </span>
+                            </span>
+                        </h2>
                         <div className="services-list d-md-flex justify-content-around flex-wrap gap-4">
                             {[...Array(Math.ceil(features.length / 3))].map((_, colIndex) => (
                                 <ul key={colIndex} className="list-unstyled">
                                     {features
                                         .slice(colIndex * 3, colIndex * 3 + 3)
                                         .map((feature, index) => (
-                                            <li key={index} className="d-flex align-items-start mb-3">
+                                            <li key={index} className="d-flex align-items-start mb-1">
                                                 {feature.icon && (
                                                     <img
                                                         src={feature.icon}
@@ -72,7 +81,7 @@ function SolutionDynamicInfo({
                                                         height={30}
                                                     />
                                                 )}
-                                                <span>{feature.text}</span>
+                                                <p>{feature.text}</p>
                                             </li>
                                         ))}
                                 </ul>

@@ -9,7 +9,7 @@ function ProjectCard({ project: { title, description, img, link } }) {
 						<Link to={link}>
 							<h3>{title}</h3>
 						</Link>
-						<p className="home-projcard-description">{description}</p>
+						<p className="home-projcard-description aximo-p-second">{description}</p>
 
 					</div>
 					<Link className="aximo-project-icon home-proj-icon" to={link} aria-label="View case studies">

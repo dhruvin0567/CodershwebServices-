@@ -8,7 +8,7 @@ function ServiceCard({ service: { title, description, img } }) {
 					<h3>{title}:</h3>
 				</div>
 				<div className="aximo-service-increase-body">
-					<p>{description}</p>
+					<p className="aximo-p-second">{description}</p>
 				</div>
 				{/* <Link to="/single-service" className="aximo-service-increase-icon">
 					<i className="icon-arrow-right"></i>

@@ -147,7 +147,7 @@ const Portfolio1content = () => {
             <div className="categories-form-wrapper py-5">
                 {/* Dropdown Filters */}
                 <div className="categories-form container the-main-outerbox">
-                    <div className="filter-container d-flex flex-wrap gap-3 dropdownfilter-portfolio">
+                    {/* <div className="filter-container d-flex flex-wrap gap-3 dropdownfilter-portfolio">
                         <select className="form-select" value={filters.category}
                             onChange={(e) => handleFilterChange('category', e.target.value)}>
                             <option value="all">All Categories</option>
@@ -171,12 +171,10 @@ const Portfolio1content = () => {
                                 <option key={option} value={option}>{option}</option>
                             ))}
                         </select>
-
-
-                    </div>
+                    </div> */}
 
                     {/* Modern Responsive Faceted Filters */}
-                    <div className="mx-4 mx-md-5 mt-3">
+                    <div className="mx-4 mx-md-5">
                         <div className="faceted-filters-container">
                             {/* Desktop/Tablet View */}
                             <div className="faceted-filters-scroll d-none d-md-flex">
@@ -184,7 +182,7 @@ const Portfolio1content = () => {
                                     .filter(([filterType]) => filterType !== 'categories')
                                     .map(([filterType, values]) => (
                                         <div key={filterType} className="filter-group">
-                                            <div className="filter-group-label">{filterType}</div>
+                                            <div className="filter-group-label">{filterType}:</div>
                                             <div className="filter-options">
                                                 {values.map(value => (
                                                     <button
@@ -346,7 +344,7 @@ const Portfolio1content = () => {
                                             className="image-scrolling portfolio-image"
                                         />
                                     </div>
-                                    <h3 className="project-name py-3 text-center">{card.name}</h3>
+                                    <h4 className="py-4 text-center">{card.name}</h4>
                                 </FadeInStagger>
                             ))}
                         </div>
@@ -389,7 +387,7 @@ const Portfolio1content = () => {
                 
                 .filter-group-label {
                     font-weight: 600;
-                    font-size: 0.85rem;
+                    font-size: 18px;
                     color: #495057;
                     text-transform: capitalize;
                     white-space: nowrap;
@@ -402,15 +400,15 @@ const Portfolio1content = () => {
                 
                 .filter-chip {
                     border: none;
-                    background: #ffffff;
-                    color: #495057;
-                    padding: 0.5rem 1rem;
-                    border-radius: 10px;
-                    font-size: 0.85rem;
+                    background: rgba(0, 0, 0, 0.05);
+                    color: #000000;
+                    padding: 9px 24px;
+                    border-radius: 25px;
+                    font-size: 16px;
                     cursor: pointer;
-                    transition: all 0.2s ease;
+                    transition: all 0.25s ease-in-out;
                     white-space: nowrap;
-                    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+                    // box-shadow: 0 1px 3px rgba(0,0,0,0.25);
                 }
 
                 .filter-chip[disabled] {

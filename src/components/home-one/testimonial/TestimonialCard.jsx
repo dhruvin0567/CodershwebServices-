@@ -12,18 +12,18 @@ function TestimonialCard({ testimonial: { rating, title, description, author, de
 			</div>
 			<div className="aximo-testimonial-data">
 				<h3>{title}</h3>
-				<p>{description}</p>
+				<p className="aximo-p-second">{description}</p>
 			</div>
 			<div className="aximo-testimonial-author">
 				<div className="aximo-testimonial-author-thumb">
 					<img src={img} alt={title} />
 				</div>
 				<div className="aximo-testimonial-author-data">
-					<p>
+					<h5>
 						{author}
 						<br />
-						<span>{designation}</span>
-					</p>
+						<span style={{ fontWeight: "400", fontFamily: "inter", fontSize: "18px" }}>{designation}</span>
+					</h5>
 				</div>
 			</div>
 		</div>

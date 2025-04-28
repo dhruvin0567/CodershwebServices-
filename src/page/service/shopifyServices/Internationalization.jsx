@@ -184,17 +184,12 @@ function Internationalization() {
                             <FadeInRight>
                                 <div className="aximo-default-content">
                                     {/* <h3 style={{ marginBottom: '16px' }}>Shopify CRO Agency - Shopify developer</h3> */}
-                                    <h2 style={{ fontSize: '50px' }}>Shopify & Shopify Plus: The Key to Global Expansion</h2>
-                                    <p>
-                                        As more businesses expand globally on Shopify, adapting to international markets is essential. Going global allows merchants to reach a larger customer base, boost transactions, and increase revenue. Recent research shows that 35% of Shopify traffic comes from international visitors, highlighting the importance of a global ecommerce strategy. Furthermore, 92% of these visitors prefer shopping in their local currency, with 33% likely to abandon purchases if prices are only in US dollars.
-
-                                    </p>
-                                    <p>
-                                        Creating a dynamic product offering for global customers can seem challenging, but Shopify makes international selling easy. With tools like multi-currency support and localized storefronts, Shopify and Shopify Plus help merchants navigate the complexities of global ecommerce effortlessly. Here’s your ultimate guide to selling internationally with Shopify and Shopify Plus.
-
+                                    <h2 className="mb-2">Shopify & Shopify Plus: The Key to Global Expansion</h2>
+                                    <p className="mb-4">
+                                        As businesses expand globally on Shopify, adapting to international markets is crucial for growth. With 35% of Shopify traffic coming from international visitors-and 92% of them preferring to shop in their local currency-having a global ecommerce strategy is more important than ever. In fact, 33% of shoppers are likely to abandon purchases if prices are only listed in US dollars. Fortunately, Shopify and Shopify Plus simplify the complexities of international selling with powerful tools like multi-currency support and localized storefronts, making it easy for merchants to reach a wider audience, increase transactions, and boost revenue. Here's your ultimate guide to selling internationally with Shopify and Shopify Plus.
                                     </p>
 
-                                    <FadeInUp className="aximo-btn-wrap2 mt-3  shopify-services-btn">
+                                    <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
                                         </Link>
@@ -209,9 +204,9 @@ function Internationalization() {
 
             <div className="section aximo-project-page text-center dark-bg">
                 <div className="container aximo-section-padding5 shopify-services-data">
-                    <h2 className="mb-4 light-text" style={{ fontSize: '50px' }}>
+                    <h3 className="mb-2 light-text">
                         Global Commerce with Shopify Plus
-                    </h2>
+                    </h3>
                     <p className="section-description light-text">
                         Shopify Plus is designed for enterprise scalability, which is perfect for businesses expanding globally. It includes all the features of standard Shopify, such as multi-currency, multilingual support, dynamic pricing, and global shipping. Additionally, Shopify Plus offers up to nine expansion stores, allowing businesses to create tailored versions of their main store for different markets.
                         These expansion stores enable precise control over regional strategies, including localized content, pricing, and design. While this requires additional planning, it ensures an optimized shopping experience for diverse audiences, making Shopify Plus a powerful choice for global growth.
@@ -265,15 +260,11 @@ function Internationalization() {
                             {servicesData.map((item, index) => (
                                 <FadeInStagger key={item.id} index={index} className="col-lg-6">
                                     <div className="aximo-iconbox-wrap" style={isMobileOrTablet ? iconboxWrapStyleMobile : iconboxWrapStyle}>
-                                        {/* <div className="aximo-iconbox-icon">
-                                            <i className={`${icon}`}></i>
-                                        </div> */}
+
                                         <div className="aximo-iconbox-data">
                                             <h3>{item.title}</h3>
                                             <p>{item.description}</p>
-                                            {/* <Link to="/single-service" className="aximo-icon">
-                                                <img src={ArrowRightImg} alt="arrow right" />
-                                            </Link> */}
+
                                         </div>
                                     </div>
                                 </FadeInStagger>
