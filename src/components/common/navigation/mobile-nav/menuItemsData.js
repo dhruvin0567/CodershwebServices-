@@ -31,7 +31,7 @@ export const menuItemsData = [
 				url: "#",
 				submenu: [
 					{
-						title: "Custom Store Projectt",
+						title: "Custom Store Project",
 						url: "customStore",
 					},
 					{

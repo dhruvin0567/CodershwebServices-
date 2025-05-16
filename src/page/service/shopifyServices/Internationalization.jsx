@@ -29,13 +29,13 @@ const faqData = {
         {
             id: crypto.randomUUID(),
             title: "Localized Selling with a Multi-Store Approach on Shopify",
-            text1: "Selling internationally on Shopify offers two main strategies: localizing a single store or setting up separate stores for each region. While both have their benefits and challenges, the multi-store approach offers full control, allowing for tailored customization for each market. This includes unique product offerings, region-specific campaigns, and content adjustments to better connect with local audiences. Although localizing a single store is an option, managing multiple variations under one account can quickly become complex.",
-            text2: "A key advantage of using separate Shopify stores for each region is the level of control it offers. Merchants can easily tailor product catalogs, imagery, and content to meet the unique preferences of each market, creating a more personalized customer experience. This targeted approach boosts engagement and drives higher conversions. Plus, Shopify Plus includes up to nine expansion stores at no extra cost, making it a cost-effective solution for businesses looking to scale efficiently.",
+            text1: "Selling internationally on Shopify can be done by localizing a single store or creating separate stores for each region. While a single store simplifies management, the multi-store approach offers greater control-enabling tailored products, region-specific marketing, and localized content. This strategy enhances customer connection but requires more oversight and resources.",
+            text2: "A major advantage of using separate Shopify stores for each region is the ability to fully tailor product catalogs, visuals, and content to local preferences, creating personalized shopping experiences. This targeted approach increases engagement and boosts conversions. With Shopify Plus offering up to nine expansion stores at no extra cost, it’s also a cost-effective way to scale globally.",
         },
         {
             id: crypto.randomUUID(),
             title: "Why Shopify Plus is Ideal for International Expansion?",
-            text1: "Beyond its robust infrastructure, Shopify Plus equips merchants with features that empower marketing and e-commerce teams. Automations like inventory flagging or campaign launches are essential when managing a portfolio of stores, ensuring consistent performance across regions. Additionally, tools like Shopify’s Geolocation app redirect customers to region-specific stores seamlessly, improving their experience while optimizing store performance for localized markets.",
+            text1: "Shopify Plus goes beyond infrastructure, offering powerful features that support marketing and e-commerce teams. Automations like inventory flagging and campaign launches streamline multi-store management, while tools like Shopify’s Geolocation app seamlessly redirect customers to region-specific stores-enhancing user experience and optimizing performance across localized markets.",
         },
 
     ],
@@ -45,13 +45,13 @@ const faqData = {
         {
             id: crypto.randomUUID(),
             title: "Overcoming the Challenges of a Multi-Store Strategy",
-            text1: "Managing multiple Shopify stores comes with challenges like inventory synchronization, increased workload for updates, and logistical complexities. A centralized inventory management system is crucial for tracking stock levels across all channels. Additionally, using a Product Information Management (PIM) system, such as Akeneo, streamlines product updates and synchronization across stores. It’s also essential to address issues like cross-region purchasing and smooth currency transitions for global customers",
-            text2: "Shopify Plus is built to simplify international operations for high-demand businesses. Features like Shopify Flow automate tasks such as inventory alerts and VIP customer management, while Launchpad helps schedule global campaigns across time zones. Advanced checkout scripts offer customization for in-cart promotions, reducing complexity and boosting efficiency across multiple stores.",
+            text1: "Managing multiple Shopify stores presents challenges such as inventory synchronization, update workloads, and logistical complexity. A centralized inventory management system is key to tracking stock across channels, while a Product Information Management (PIM) tool like Akeneo streamlines product updates. Addressing cross-region purchasing and ensuring smooth currency transitions are also essential for delivering a seamless global shopping experience.",
+            text2: "Shopify Plus simplifies international operations for high-demand businesses with powerful automation and customization tools. Shopify Flow streamlines tasks like inventory alerts and VIP management, while Launchpad schedules global campaigns across time zones. Advanced checkout scripts enable in-cart promotion customization, reducing complexity and enhancing efficiency across multiple stores.",
         },
         {
             id: crypto.randomUUID(),
             title: "Final Thoughts",
-            text1: "Selling internationally with Shopify can be straightforward with the right strategy and tools in place. At Codersh Web Services, we’ve assisted merchants like Liberation Cocktails in creating successful multi-store setups driven by geolocation technology. Whether you’re considering a single or multi-store approach, we’re here to help you design and implement an international selling strategy that ensures a smooth, optimized shopping experience for customers worldwide.",
+            text1: "Selling internationally with Shopify is seamless with the right strategy and tools. At Codersh, we've helped brands like Liberation Cocktails succeed with multi-store setups powered by geolocation. Whether you choose a single or multi-store approach, we’ll craft and implement a global e-commerce strategy that delivers a smooth, optimized experience for customers worldwide.",
         },
 
     ],
@@ -186,7 +186,8 @@ function Internationalization() {
                                     {/* <h3 style={{ marginBottom: '16px' }}>Shopify CRO Agency - Shopify developer</h3> */}
                                     <h2 className="mb-2">Shopify & Shopify Plus: The Key to Global Expansion</h2>
                                     <p className="mb-4">
-                                        As businesses expand globally on Shopify, adapting to international markets is crucial for growth. With 35% of Shopify traffic coming from international visitors-and 92% of them preferring to shop in their local currency-having a global ecommerce strategy is more important than ever. In fact, 33% of shoppers are likely to abandon purchases if prices are only listed in US dollars. Fortunately, Shopify and Shopify Plus simplify the complexities of international selling with powerful tools like multi-currency support and localized storefronts, making it easy for merchants to reach a wider audience, increase transactions, and boost revenue. Here's your ultimate guide to selling internationally with Shopify and Shopify Plus.
+                                        As global traffic grows, adapting to international markets on Shopify is key-35% of visitors are international, and 92% prefer local currency. With 33% abandoning carts when prices are in USD only, a global strategy is essential. Shopify and Shopify Plus simplify international selling with multi-currency support and localized storefronts, helping merchants boost conversions and reach new markets.
+
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
@@ -205,11 +206,10 @@ function Internationalization() {
             <div className="section aximo-project-page text-center dark-bg">
                 <div className="container aximo-section-padding5 shopify-services-data">
                     <h3 className="mb-2 light-text">
-                        Global Commerce with Shopify Plus
+                        Global eCommerce Growth with Shopify Plus
                     </h3>
                     <p className="section-description light-text">
-                        Shopify Plus is designed for enterprise scalability, which is perfect for businesses expanding globally. It includes all the features of standard Shopify, such as multi-currency, multilingual support, dynamic pricing, and global shipping. Additionally, Shopify Plus offers up to nine expansion stores, allowing businesses to create tailored versions of their main store for different markets.
-                        These expansion stores enable precise control over regional strategies, including localized content, pricing, and design. While this requires additional planning, it ensures an optimized shopping experience for diverse audiences, making Shopify Plus a powerful choice for global growth.
+                        Shopify Plus empowers enterprise brands to scale globally with multi-currency, multilingual support, dynamic pricing, and up to nine expansion stores. Tailor content, pricing, and design for each market, and deliver localized shopping experiences that drive conversions. Ideal for high-growth businesses, Shopify Plus is built for seamless international expansion.
                     </p>
                 </div>
             </div>

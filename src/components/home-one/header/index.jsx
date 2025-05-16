@@ -8,6 +8,7 @@ import MobileNavbar from "../../common/navigation/mobile-nav/MobileNavbar";
 import HeaderButton from "./HeaderButton";
 import HeaderLogo from "./HeaderLogo";
 import Mega_Menu from "./Mega_Menu";
+import brandLogo from "../../../assets/images/logo/codersh-horizontal-logo-black.webp";
 
 
 function Header() {
@@ -56,7 +57,13 @@ function Header() {
 						</DesktopNav>
 					</div>
 					<HeaderButton />
-					<MobileNavbar menuItemsData={menuItemsData} title="CODERSH" />
+					<MobileNavbar menuItemsData={menuItemsData} title={
+						<img
+							src={brandLogo}
+							alt="CODERSH Logo"
+							style={{ height: '30px', cursor: 'pointer' }}
+						/>
+					} />
 				</nav>
 			</div>
 		</header>

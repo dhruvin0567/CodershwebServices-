@@ -62,10 +62,10 @@ function B2BWholsales() {
             <div className="section aximo-project-page text-center dark-bg border-top">
                 <div className="container aximo-section-padding5 shopify-services-data">
                     <h3 className="mb-2 light-text">
-                        Leverage Shopify and Shopify Plus to Build a Powerful B2B and Wholesale Channel for Effortless Bulk Sales.
+                        Build a Powerful B2B & Wholesale Channel with Shopify Plus
                     </h3>
                     <p className="section-description light-text">
-                        Codersh is a Shopify agency with extensive experience in designing, developing, optimizing, and launching Shopify B2B and Shopify Wholesale stores across diverse industries. We are dedicated to helping B2B businesses and partners achieve their long-term strategic goals by delivering exceptional wholesale eCommerce solutions. From intuitive navigation and seamless checkout processes to advanced shipping options, we leverage cutting-edge tools, APIs, and integrations to help B2B companies reach their full potential and stand out in competitive markets.
+                        We specializes in designing, developing, and optimizing Shopify B2B and Wholesale stores. We create seamless, high-performance eCommerce solutions with advanced shipping, integrations, and intuitive navigation to help businesses achieve strategic growth and stand out in competitive markets.
                     </p>
                 </div>
             </div>
@@ -248,10 +248,11 @@ function B2BWholsales() {
                                     <h2 className="mb-2">Create a Custom Domain and B2B Storefront on Shopify</h2>
                                     {/* <h3 style={{ marginBottom: '16px' }}>Custom Shopify themes tailored to your brand needs.</h3> */}
                                     <p className="mb-2">
-                                        Shopify’s B2B features integrate smoothly with your Shopify Plus storefront, allowing you to manage both retail and wholesale customers in one place. Pricing and checkout options automatically adjust based on the logged-in customer. For a fully customized B2B experience with dynamic content tailored to wholesale buyers, custom coding may be required.
+                                        Shopify’s B2B features integrate seamlessly with Shopify Plus, letting you manage retail and wholesale customers in one storefront. Pricing and checkout adjust automatically based on the logged-in customer. For a fully customized B2B experience with dynamic content, custom coding may be needed.
                                     </p>
                                     <p className="mb-4">
-                                        Shopify Plus also offers a dedicated Wholesale Channel, enabling you to create a password-protected storefront for wholesale customers. This ensures retail clients can’t access B2B pricing, and product pricing adjusts automatically for wholesale buyers. You can also customize the domain for a branded B2B storefront. However, for advanced features or greater customization, Codersh Web Services can help enhance and expand your B2B operations.
+                                        Shopify Plus offers a dedicated Wholesale Channel with a password-protected storefront for wholesale customers, keeping B2B pricing hidden from retail clients. Pricing adjusts automatically, and you can customize the domain for a branded B2B experience. For advanced features and deeper customization, We can help enhance your B2B operations.
+
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0  shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
@@ -303,7 +304,8 @@ function B2BWholsales() {
                                             </ul>
                                         </div>
                                     </div>
-                                    <p className="text-start mb-2">Shopify B2B and Wholesale enable merchants to automate payment terms like Net 7, Net 15, Net 30, Net 60, Net 90, or “Due on Fulfillment.” This flexibility aligns payment processes with your business needs and ensures efficient tracking. Shopify simplifies order management, payment tracking, and provides a smooth, personalized experience for B2B customers.</p>
+                                    <p className="text-start mb-2">Shopify B2B and Wholesale let merchants automate payment terms like Net 7, Net 15, Net 30, Net 60, Net 90, or “Due on Fulfillment.” This flexibility streamlines payment processes, supports efficient order tracking, and delivers a smooth, personalized experience for B2B customers.
+                                    </p>
                                 </div>
                             </FadeInRight>
                         </div>
@@ -325,10 +327,11 @@ function B2BWholsales() {
                                     <h2 className="mb-2">Streamlining Your B2B Account Area</h2>
                                     {/* <h3 style={{ marginBottom: '16px' }}>Custom Shopify themes tailored to your brand needs.</h3> */}
                                     <p className="mb-2">
-                                        Shopify’s B2B channel offers a dedicated account area for wholesale clients, featuring personalized logins and dashboards. This self-service option allows clients to place orders, track purchases, and access order details such as status, history, and tracking information directly through their accounts.
+                                        Shopify’s B2B channel provides a dedicated account area for wholesale clients with personalized logins and dashboards. This self-service feature lets clients place orders, view order history, track purchases, and access order status and shipping details directly from their accounts.
+
                                     </p>
                                     <p className="mb-4">
-                                        By empowering clients to manage their orders independently, you reduce the need for manual support, saving time and lowering administrative overhead. This efficiency frees up your team to focus on higher-priority tasks, like marketing and strategy, leading to a more streamlined wholesale operation and potentially higher profits. Shopify’s B2B capabilities offer a valuable return on investment in both time savings and enhanced customer experience.
+                                        By enabling clients to manage orders independently, Shopify’s B2B features reduce manual support needs, saving time and lowering admin costs. This efficiency lets your team focus on strategy and growth, streamlining operations and boosting profitability. The result is a stronger ROI through time savings and improved customer experience.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0  shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
@@ -394,10 +397,10 @@ function B2BWholsales() {
 
             <div className="aximo-cta2-section aximo-section-padding extra-side-margin dark-bg mb-5" style={{ padding: "30px 0px" }}>
                 <div className="container">
-                    <div className="aximo-cta2-wrap shopify-services-data">
-                        <h2 className="mb-4">How Can Codersh Help You Build Your Shopify B2B Store?</h2>
+                    <div className="aximo-cta2-wrap shopify-services-data" style={{ maxWidth: "1100px" }}>
+                        <h2 className="mb-4">How Codersh Helps You Launch or Migrate Your Shopify B2B Store</h2>
                         <p className="mb-3">
-                            If you're ready to start selling wholesale, Codersh makes the process seamless. We assist with data migration, custom theme design, and advanced B2B features to ensure a smooth transition from platforms like Magento or BigCommerce. Whether launching or migrating your Shopify B2B store, we help businesses of all sizes unlock the full potential of Shopify and Shopify Plus. Our experts will tailor your storefront, integrate custom apps, and optimize your store for long-term success. Contact Codersh today to create your ideal Shopify B2B store.
+                            We simplifies your B2B eCommerce journey with expert data migration, custom design, and advanced Shopify Plus features. Whether you're launching or switching from platforms like Magento or BigCommerce, we build tailored B2B solutions that scale with your business and drive long-term success.
                         </p>
                         <FadeInUp>
                             <Link to="/contact-us" className="aximo-default-btn pill aximo-header-btn">

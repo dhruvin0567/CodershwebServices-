@@ -3778,15 +3778,15 @@ h1.post__title {
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.aximo-hero-section {
-		padding: 170px 0 80px;
+		padding: 130px 0 80px;
 	}
 }
 
 @media (max-width: 575px) {
 	.aximo-hero-section {
-		padding: 130px 0 80px;
+		padding: 100px 0 80px;
 	}
 }
 
@@ -4020,8 +4020,16 @@ h1.post__title {
 
 @media (max-width: 400px) {
 	.aximo-call-btn {
+		margin-top: 50px;
 		width: 100%;
 		padding: 13px 10px 13px 25px;
+	}
+}
+
+@media (max-width: 576px) {
+	.aximo-call-btn {
+		margin-top: 30px;
+
 	}
 }
 
@@ -9019,7 +9027,8 @@ img.swipeimage {
 	object-fit: cover;
 	z-index: 9;
 	opacity: 0;
-	visibily: hidden;
+	visibility: hidden;
+	;
 	pointer-events: none;
 	border-radius: 7px;
 	border: 5px solid #fff;
@@ -12147,6 +12156,12 @@ button#aximo-notified-btn {
 	width: 100%;
 }
 
+.site-menu-main .mega-menu-item>a.active-link .menu-item-text::after {
+	left: 0;
+	right: auto;
+	width: 100%;
+}
+
 @media (min-width: 992px) {
 	.site-menu-main .mega-menu-item>a {
 		transition: .4s;
@@ -12284,6 +12299,14 @@ button#aximo-notified-btn {
 
 
 /* home page table css */
+.table-responsive {
+	/* box-shadow: 0 0 7px #333; */
+	border-radius: 20px;
+	/* background-color: rgba(0, 0, 0, 0.05); */
+	border: 1px solid black;
+
+}
+
 .comparison-table {
 	width: 100%;
 	border-collapse: separate;
@@ -12551,4 +12574,17 @@ span.lazy-load-image-background.blur.lazy-load-image-loaded {
 	display: inline-block !important;
 	height: auto !important;
 	width: auto !important;
+}
+
+
+/* 14-5-25 */
+@media (max-width: 576px) {
+	.headless-heading-to-correct {
+		font-size: 26px !important;
+	}
+}
+
+
+.slick-list {
+	border-radius: 20px !important;
 }

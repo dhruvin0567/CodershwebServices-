@@ -30,7 +30,7 @@ function CustomStore() {
                 keywords="Custom Shopify store, Shopify store development, Shopify design, custom store design, e-commerce solutions, Shopify experts, advanced Shopify features, Codersh Web Services"
                 canonical="https://react-vite-codersh.vercel.app/customStore"
             />
-            <BreadCrumb title="Custom Store projects" />
+            <BreadCrumb title="Custom Store Projects" />
 
             <div className="section aximo-section-padding2">
                 <div className="container">

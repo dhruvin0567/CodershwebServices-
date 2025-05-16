@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet';
 import Favicon from "../../assets/images/images2/patherrimgs/favicon-latest.ico";
 
-
 function SEO({ title, description, keywords, canonical }) {
     return (
         <div>

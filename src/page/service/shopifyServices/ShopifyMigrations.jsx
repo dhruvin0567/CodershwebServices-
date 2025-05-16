@@ -174,13 +174,13 @@ function ShopifyMigrations() {
     //     minHeight: '280px',
     // };
     const iconboxWrapStyle2 = {
-        minHeight: '360px',
+        minHeight: 'fit-content',
     };
     const iconboxWrapStyle3 = {
-        minHeight: '270px',
+        minHeight: 'fit-content',
     };
     const iconboxWrapStyleMobile = {
-        minHeight: 'auto',
+        minHeight: 'fit-content',
     };
     // Detect if the screen width is less than 992px (tablet and mobile)
     const isMobileOrTablet = window.innerWidth < 992;
@@ -213,7 +213,7 @@ function ShopifyMigrations() {
                                 <div className="aximo-default-content">
                                     <h2 className="mb-2">Shopify Migration Experts - Let's Replatform to Shopify with Confidence</h2>
                                     <p className="mb-4">
-                                        At Codersh Web Services, we specialize in seamless Shopify migrations, helping businesses shift from platforms like Magento, WooCommerce, and BigCommerce to Shopify or Shopify Plus. With a focus on precision and strategy, our migration services ensure your transition is smooth, secure, and optimized for success.
+                                        At Codersh, we specialize in seamless Shopify migrations, helping businesses shift from platforms like Magento, WooCommerce, and BigCommerce to Shopify or Shopify Plus. With a focus on precision and strategy, our migration services ensure your transition is smooth, secure, and optimized for success.
 
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
@@ -241,10 +241,10 @@ function ShopifyMigrations() {
                                 <div className="aximo-default-content">
                                     <h2 className="mb-2">Shopify Migration Services</h2>
                                     <p className="mb-2">
-                                        At Codersh Web Services, we specialize in seamless Shopify and Shopify Plus migrations. With years of experience in re-platforming, we help businesses smoothly transition to
+                                        At Codersh, we specialize in seamless Shopify and Shopify Plus migrations. With years of experience in re-platforming, we help businesses smoothly transition to
                                     </p>
                                     <p className="mb-4">
-                                        Whether you're migrating from platforms like Magento, WooCommerce, BigCommerce, or others, Codersh Web Services is your trusted partner for a smooth, hassle-free transition to Shopify. Get in touch with us today to learn how we can help streamline your migration.
+                                        Whether you're migrating from platforms like Magento, WooCommerce, BigCommerce, or others, We are your trusted partner for a smooth, hassle-free transition to Shopify. Get in touch with us today to learn how we can help streamline your migration.
 
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
@@ -318,7 +318,7 @@ function ShopifyMigrations() {
                                     Why Migrate to Shopify?
                                 </h2>
                                 <p style={{ marginBottom: "48px" }}>
-                                    At Codersh Web Services, we believe in using cutting-edge technology and growth-driven strategies to deliver exceptional results. When you migrate to Shopify & Shopify Plus, we ensure your store is fast, engaging, and easy to manage for the long haul. We follow best practices to make sure your store is optimized for performance and scalability, so you can focus on growing your business.
+                                    At Codersh, we believe in using cutting-edge technology and growth-driven strategies to deliver exceptional results. When you migrate to Shopify & Shopify Plus, we ensure your store is fast, engaging, and easy to manage for the long haul. We follow best practices to make sure your store is optimized for performance and scalability, so you can focus on growing your business.
                                 </p>
                             </div>
                         </div>
@@ -394,7 +394,7 @@ function ShopifyMigrations() {
                                 <div className="row">
                                     {featuresData.map((feature, index) => (
                                         <FadeInStagger key={feature.id} index={index} className="col-sm-6 col-lg-4 col-md-4 col-6" >
-                                            <div className="aximo-iconbox-wrap2" style={{ padding: "0px" }}>
+                                            <div className="aximo-iconbox-wrap2 mb-0" style={{ padding: "0px" }}>
                                                 <img src={feature.img} alt="Illustrator1Img" />
                                             </div>
                                         </FadeInStagger>

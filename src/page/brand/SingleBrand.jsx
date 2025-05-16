@@ -5,14 +5,38 @@ import useBrands from "../../hooks/useBrands";
 import VideoSlider from "../../components/common/VideoSlider";
 import FadeInStagger from "../../components/animation/FadeInStagger";
 import Star2Img from "../../assets/images/v1/icon/star2.webp";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import useIsMobile from "./useIsMobile";
+import Slider from "react-slick";
+
+
 
 const SINGLE_BRAND_API_URL = "https://codersh.com/wp-json/wp/v2/brands?_embed&slug=";
 const MEDIA_API_URL = "https://codersh.com/wp-json/wp/v2/media/";
 
 function SingleBrand() {
+
+
+    const sliderSettings = {
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        dots: true
+    };
+
+
     const { brands, loading } = useBrands();
+    const isMobile = useIsMobile();
     const { slug } = useParams();
     const [brand, setBrand] = useState(null);
+
+    const brandItems = (brands || []).slice(-3).reverse();
+
+
 
     const processImageFields = async (brandData) => {
         if (!brandData || !brandData.acf) return brandData;
@@ -249,13 +273,25 @@ function SingleBrand() {
                 </div>
                 <div className="container">
                     <div className="row">
-                        {brands.slice(-3).reverse().map((brand, index) => (
-                            <div className="col-md-4 p-4 p-md-3" key={brand.id} index={index}>
-                                <Link className="brand-card" to={brand.link}>
-                                    <img src={brand.img} alt={brand.title} />
-                                </Link>
-                            </div>
-                        ))}
+                        {isMobile ? (
+                            <Slider {...sliderSettings}>
+                                {brandItems.map((brand) => (
+                                    <div key={brand.id}>
+                                        <Link className="brand-card" to={brand.link}>
+                                            <img src={brand.img} alt={brand.title} style={{ width: "100%" }} />
+                                        </Link>
+                                    </div>
+                                ))}
+                            </Slider>
+                        ) : (
+                            brandItems.map((brand) => (
+                                <div className="col-md-4 p-4 p-md-3" key={brand.id}>
+                                    <Link className="brand-card" to={brand.link}>
+                                        <img src={brand.img} alt={brand.title} />
+                                    </Link>
+                                </div>
+                            ))
+                        )}
                     </div>
                 </div>
             </div>

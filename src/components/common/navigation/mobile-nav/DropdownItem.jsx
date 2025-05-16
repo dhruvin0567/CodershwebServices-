@@ -48,7 +48,7 @@ const DropdownItem = ({ items, depthLevel, showMenu, setShowMenu }) => {
 			{dropdown && <Dropdown depthLevel={depthLevel} submenus={items.submenu} dropdown={dropdown} />}
 		</li>
 	) : (
-		<li className="nav-item sub-menu-item" onClick={closeDropdown}>
+		<li className="nav-item sub-menu-item" onClick={closeDropdown} style={{ backgroundColor: "#0000000D" }}>
 			<Link to={items.url}>{items.title}</Link>
 		</li>
 	);

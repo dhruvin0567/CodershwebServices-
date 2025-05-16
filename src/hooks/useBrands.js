@@ -30,7 +30,8 @@ function Brand() {
 				setLoading(false);
 			});
 	}, []);
-	return { brands, loading };
+	return { brands, loading, setLoading };
+
 }
 
 export default Brand

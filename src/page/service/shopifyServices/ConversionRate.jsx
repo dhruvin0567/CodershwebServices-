@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import ThumbImg1 from "../../../assets/images/images2/service5_1_2.webp";
 import ThumbImg2 from "../../../assets/images/images2/service5_2.webp";
 import ThumbImg5 from "../../../assets/images/images2/srvice10_2.webp";
-import ThumbImg3 from "../../../assets/images/images2/service5_3.webp";
+import ThumbImg3 from "../../../assets/images/images2/Services4_3.webp";
 import ThumbImg4 from "../../../assets/images/images2/service8_3.webp";
 import { createGlobalStyle } from 'styled-components';
 import SEO from "../../../components/common/SEO";
@@ -30,15 +30,16 @@ function ConversionRate() {
             />
             <BreadCrumb title="Conversion Rate Optimization" />
 
-            <FadeInStaggerTwo>
+            <FadeInStaggerTwo className="d-none d-md-block">
                 <FadeInStaggerTwoChildren>
                     <div className="section aximo-project-page text-center light-bg">
                         <div className="container aximo-section-padding5  shopify-services-data">
                             <h3 className="mb-2 dark-text">
-                                As your trusted Shopify CRO partner, Codersh helps digital brands maximize their store's success and deliver powerful results.
+                                Your Trusted Shopify CRO Partner for Higher Conversions and Scalable Growth
                             </h3>
                             <p className="section-description dark-text">
-                                Codersh Web Services takes pride in delivering CRO services for ambitious brands across industries. Our Shopify-focused CRO agency helps online stores drive sustainable growth and unlock their full sales potential.
+                                Codersh helps Shopify and Shopify Plus stores achieve sustainable growth with expert CRO services. We optimize user experience and increase sales potential, delivering powerful results for brands across industries, ensuring your store’s long-term success.
+
                             </p>
 
                         </div>
@@ -48,11 +49,10 @@ function ConversionRate() {
                     <div className="section aximo-project-page text-center dark-bg">
                         <div className="container aximo-section-padding5 shopify-services-data">
                             <h3 className="mb-2 light-text">
-                                A trusted Shopify CRO partner ready to help your business excel. Transform your website's conversions today.
+                                Your Trusted Shopify CRO Partner for Boosting Conversions and Growth
                             </h3>
                             <p className="section-description light-text">
-
-                                Codersh Web Services offers specialized CRO agency services to help Shopify and Shopify Plus store owners achieve sustainable growth and hit their conversion rate targets. Our services encompass Shopify web design, development, technical support, and strategic consultancy, ensuring your store performs optimally at every stage. Delivered through our membership plans, we focus on changing user behavior to turn visitors into loyal customers, regardless of your business size or industry.
+                                We helps Shopify and Shopify Plus stores achieve sustainable growth with expert CRO services. From web design and development to strategic consultancy, we optimize user behavior, increase conversions, and turn visitors into loyal customers—delivered through flexible membership plans for any business size or industry.
 
                             </p>
 
@@ -75,7 +75,7 @@ function ConversionRate() {
                                     <h3 className="mb-2">Shopify CRO Agency - Shopify developer</h3>
                                     <h2 className="mb-2">Combining Technical Expertise with Growth Strategies to Turn Visitors into Loyal Customers.</h2>
                                     <p className="mb-4">
-                                        As an accredited Shopify expert, Codersh Web Services boasts a team of highly skilled developers who excel at creating bespoke features tailored to your business needs. We also integrate top-tier Shopify app technologies to enhance your store’s performance. By collaborating with you, we develop a strategic roadmap that prioritizes on-site performance and customer satisfaction, delivering features that drive tangible results.
+                                        As an accredited Shopify expert, We offers a team of skilled developers who create custom features tailored to your business needs. We integrate top-tier Shopify app technologies to enhance performance and collaborate with you to develop a strategic roadmap focused on on-site performance and customer satisfaction, delivering results-driven features that boost your store’s success.
 
                                     </p>
 
@@ -106,8 +106,7 @@ function ConversionRate() {
                                     <h3 className="mb-2">Shopify conversion rate optimization (CRO) - Design</h3>
                                     <h2 className="mb-2">Design Impactful Shopify Experiences that Engage and Resonate with Customers.</h2>
                                     <p className="mb-4">
-                                        An engaging design is key to increasing customer retention and boosting conversions. At Codersh, we craft designs that are visually appealing, brand-aligned, and user-friendly, presenting information in a clear and accessible way. By focusing on design as a critical component of conversion optimization, we help create a seamless customer journey that keeps users engaged and motivated to purchase.
-
+                                        At Codersh, we create visually appealing, brand-aligned, and user-friendly designs that boost customer retention and drive conversions. By presenting information clearly and optimizing the design for seamless navigation, we enhance the customer journey, keeping users engaged and motivated to make purchases.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0  shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
@@ -135,7 +134,7 @@ function ConversionRate() {
                                     <h3 className="mb-2">CRO agency - Split testing & reporting</h3>
                                     <h2 className="mb-2">Let data power your decisions.</h2>
                                     <p className="mb-4">
-                                        At Codersh, we believe that data is the cornerstone of effective e-commerce strategies. Our team employs tools like A/B testing, feature reporting, and monthly analytics to track performance and identify opportunities for improvement. By leveraging this data-driven approach, we ensure that every decision contributes to the continuous enhancement of your store’s metrics.
+                                        At Codersh, we believe data is key to successful e-commerce strategies. Using tools like A/B testing, feature reporting, and monthly analytics, our team tracks performance and uncovers opportunities for improvement. This data-driven approach ensures every decision drives continuous enhancement of your store’s metrics.
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
@@ -165,7 +164,7 @@ function ConversionRate() {
                                     <h3 className="mb-2">CRO - AOV, LTV & Engagement</h3>
                                     <h2 className="mb-2">Building success through essential metrics for sustainable growth.</h2>
                                     <p className="mb-4">
-                                        Beyond conversion rate optimization, Codersh Web Services considers key performance indicators like average order value (AOV), lifetime value (LTV), and engagement metrics such as session duration and bounce rates. We adopt a holistic approach to CRO strategies, focusing on creating exceptional customer experiences that not only drive sales but also foster long-term loyalty.
+                                        We takes a holistic approach to CRO, focusing on key performance indicators like average order value (AOV), lifetime value (LTV), and engagement metrics such as session duration and bounce rates. By enhancing customer experiences, we drive sales and foster long-term loyalty, ensuring sustainable growth.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0  shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
@@ -194,7 +193,7 @@ function ConversionRate() {
                                     <h2 className="mb-2">Merging knowledge and skill with tested strategies for
                                         consistent growth.</h2>
                                     <p className="mb-4">
-                                        For businesses seeking a dedicated partner in e-commerce growth, Codersh’s membership plans provide the ultimate solution. Our team works tirelessly to improve conversion rates through tailored design, feature development, and in-depth audits, all while offering day-to-day support. These memberships are designed to deliver long-term success and comprehensive KPI-driven optimization for Shopify and Shopify Plus stores.
+                                        Our membership plans offer the perfect solution for businesses seeking a dedicated e-commerce growth partner. Our team focuses on improving conversion rates through custom design, feature development, and detailed audits, alongside ongoing support. These plans are built to ensure long-term success and KPI-driven optimization for Shopify and Shopify Plus stores.
                                     </p>
 
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">

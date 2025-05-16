@@ -81,20 +81,23 @@ function ComparisonTable() {
                             <table className="table comparison-table">
                                 <thead>
                                     <tr>
-                                        <th className="text-left">Feature</th>
-                                        <th className="text-center">Codersh Web Services</th>
-                                        <th className="text-center">Freelancers</th>
-                                        <th className="text-center">Traditional Web Agencies</th>
+                                        <th className="text-left p-3">Feature</th>
+                                        <th className="text-center p-3">Codersh Web Services</th>
+                                        <th className="text-center p-3">Freelancers</th>
+                                        <th className="text-center p-3">Traditional Web Agencies</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {comparisonData.map((item, index) => (
                                         <tr key={index}>
                                             <td className="text-left">{item.feature}</td>
-                                            <td className="text-center">
+                                            <td className="text-center p-2">
                                                 <div className="d-flex justify-content-center align-items-center">
-                                                    <img src={item.codersh.icon} alt="" width={item.codersh.iconSize.desktop} className="me-2" />
-                                                    {item.codersh.text}
+                                                    <span className="prioratize" style={{ backgroundColor: "#bff747", padding: "5px 15px", borderRadius: "20px" }}>
+                                                        <img src={item.codersh.icon} alt="" width={item.codersh.iconSize.desktop} className="me-2" />
+                                                        {item.codersh.text}
+                                                    </span>
+
                                                 </div>
                                             </td>
                                             <td className="text-center">
@@ -144,8 +147,11 @@ function ComparisonTable() {
                                     <div className="comparison-row d-flex justify-content-between align-items-center mb-2">
                                         <span>Codersh</span>
                                         <div className="d-flex align-items-center">
-                                            <img src={item.codersh.icon} alt="" width={item.codersh.iconSize.mobile} className="me-1" />
-                                            <span>{item.codersh.text}</span>
+
+                                            <span className="prioratize" style={{ backgroundColor: "#bff747", padding: "5px 15px", borderRadius: "20px" }}>
+                                                <img src={item.codersh.icon} alt="" width={item.codersh.iconSize.mobile} className="me-1" />
+                                                {item.codersh.text}
+                                            </span>
                                         </div>
                                     </div>
                                     <div className="comparison-row d-flex justify-content-between align-items-center mb-2">

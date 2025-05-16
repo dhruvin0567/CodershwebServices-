@@ -30,15 +30,15 @@ function Headless() {
             />
             <GlobalStyle />
             <BreadCrumb title="Headless & Shopify" />
-            <FadeInStaggerTwo>
+            <FadeInStaggerTwo className="d-none d-md-block">
                 <FadeInStaggerTwoChildren>
                     <div className="section aximo-project-page text-center light-bg">
-                        <div className="container aximo-section-padding5  shopify-services-data">
-                            <h3 className="mb-2 dark-text">
+                        <div className="container aximo-section-padding5 shopify-services-data px-2 px-md-0">
+                            <h3 className="mb-2 dark-text headless-heading-to-correct">
                                 Crafting Fast, Sales-Driven Headless Storefronts  on Shopify Plus
                             </h3>
                             <p className="section-description dark-text">
-                                Headless e-commerce with Shopify Plus separates the front end from the back end, offering unlimited design flexibility. We power the back-end with Shopify Plus and build custom front-ends using React. This approach enables lightning-fast site speeds, custom URL structures, better SEO, and unique shopping experiences tailored to specific store requirements. With full control over the tech stack, headless stores scale quickly and meet the complex needs of large brands. While more technically challenging and requiring expert support, headless e-commerce empowers developers to create highly customized, seamless user experiences aligned with customer expectations
+                                We are a leading Shopify and Shopify Plus agency specializing in high-performance, headless e-commerce solutions. Partnering with top brands, we design, develop, and support conversion-driven stores using best-in-class tools and Shopify Plus. Our expert team delivers fast, scalable, and future-ready experiences tailored to your business goals-pushing the boundaries of what’s possible in modern e-commerce.
                             </p>
 
                         </div>
@@ -58,7 +58,7 @@ function Headless() {
                                 <br />Commerce on Shopify Plus? */}
                             </h3>
                             <p className="section-description light-text">
-                                Headless e-commerce with Shopify Plus separates the front-end from the back-end, offering unmatched design flexibility. We power the back-end with Shopify Plus and build custom front-ends using React, enabling tailored, complex store experiences. This architecture boosts site speed, custom URL structures, SEO, and allows for unique shopping experiences. Headless provides full control over the tech stack, supporting scalability and fast growth strategies for large brands. While more technically complex, headless stores offer developers the freedom to create fully customized features aligned with customer expectations, without being limited by pre-built themes or the back-end system. The setup requires specialized expertise, customized support, and thorough device QA, but delivers a powerful, tailored e-commerce solution.
+                                Headless e-commerce with Shopify Plus separates the front-end from the back-end, enabling full design flexibility and custom storefronts built with React. This setup boosts site speed, SEO, and scalability while supporting unique shopping experiences and custom URL structures. Ideal for fast-growing brands, headless architecture offers total control over the tech stack and allows developers to build advanced, tailored features-though it requires specialized expertise and thorough QA for optimal performance.
                             </p>
 
                         </div>
@@ -79,9 +79,7 @@ function Headless() {
                                 <div className="aximo-default-content">
                                     <h2 className="mb-2">Speed-Optimized Headless Shopify Plus Digital Stores</h2>
                                     <p className="mb-4">
-                                        Headless Shopify Plus stores, built with modern JavaScript frameworks, offer exceptional speed and consistently score highly in Google Lighthouse. Faster load times directly correlate with higher conversion rates, making speed a crucial factor for merchants.
-                                        The API-first architecture allows for precise control over resource loading and timing, delivering optimizations beyond what traditional platforms can offer. However, headless solutions require significant ongoing resources, expertise, and maintenance. They may also complicate content management, as the lack of a familiar CMS can affect your team’s workflow.
-                                        While headless stores offer great potential, they’re not suitable for every business and require careful evaluation of your specific needs and resources.
+                                        Headless Shopify Plus stores, built with modern JavaScript frameworks, deliver speed, high Google Lighthouse scores, and improved conversions. Their API-first architecture offers performance control and advanced optimizations. While perfect for scalability and flexibility, headless solutions require technical expertise, ongoing development, and may complicate content management. Businesses should evaluate goals, resources, and long-term needs before adopting headless to ensure it aligns with performance, SEO, and operational goals.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
@@ -108,7 +106,7 @@ function Headless() {
                                 <div className="aximo-default-content">
                                     <h2 className="mb-2">Total Content Control with Advanced Tools</h2>
                                     <p className="mb-4">
-                                        Headless eCommerce stores decouple the front end from Shopify Plus, offering a more flexible content management system than the standard Shopify CMS. By partnering with leading CMSs like Contentful and Shopify's Hydrogen, we deliver powerful content management while maintaining top site performance. This separation gives merchants greater control over product management and storefront APIs, offering unmatched freedom to customize the user experience while still benefiting from Shopify Plus's robust backend.
+                                        Headless eCommerce stores on Shopify Plus decouple the front end, enabling flexible use of modern CMS tools like Contentful and Hydrogen. This boosts performance, supports dynamic content, and allows full API control for custom user experiences. Merchants gain creative freedom while leveraging Shopify Plus’s robust back-end, resulting in a scalable, high-performing solution ideal for modern eCommerce demands.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
@@ -135,7 +133,7 @@ function Headless() {
                                 <div className="aximo-default-content">
                                     <h2 className="mb-2">Future-Ready Commerce backend with Shopify Plus</h2>
                                     <p className="mb-4">
-                                        Shopify’s API and third-party integrations enable seamless communication between your store's front end and backend, securely managing data like cart contents, transactions, and product info. The headless architecture allows merchants to leverage Shopify Plus's powerful backend—customer, order, and product management—while maintaining full control over the front end. Our headless solutions handle complex integrations and business needs, specializing in Shopify's Hydrogen framework to create storefronts that follow Shopify's best practices. This flexible approach allows us to use the latest technologies while ensuring enterprise-grade security.
+                                        Shopify’s API and third-party integrations enable secure, seamless communication between a headless store’s front end and Shopify Plus’s powerful backend. Using frameworks like Hydrogen, our headless solutions support complex business needs, custom storefronts, and enterprise-grade security—while maintaining full front-end control and leveraging the latest technologies.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0  shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
@@ -163,8 +161,7 @@ function Headless() {
                                 <div className="aximo-default-content">
                                     <h2 className="mb-2">Trusted Partners in Headless Solutions</h2>
                                     <p className="mb-4">
-                                        Implementing headless architecture for eCommerce increases complexity due to the separation from Shopify’s native frontend. We’ve partnered with top headless technology providers like Netlify, Klevu, and others to ensure your store launches with peak performance. While many partners offer pre-built integrations, some may lack open API support for seamless connectivity. We recommend reviewing their headless success cases to ensure compatibility. For expert guidance on your headless transformation, consult with experienced agencies like ours to meet your specific needs.
-
+                                        Implementing headless eCommerce adds complexity, but partnering with providers like Netlify and Klevu ensures peak performance and reliable integrations. While some tools lack open API support, reviewing headless case studies helps assess compatibility. For a seamless transformation, consult experienced agencies to align technology with your business goals.
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">

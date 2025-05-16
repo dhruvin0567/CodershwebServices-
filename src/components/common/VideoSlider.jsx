@@ -17,6 +17,18 @@ import video6 from '../../assets/images/Videos/optimized/Video-6-compressed.mp4'
 const videoFiles = [video1, video2, video3, video4, video5, video6];
 
 const VideoSlider = () => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+
     const [currentVideoIndex, setCurrentVideoIndex] = useState(null);
     const videoRefs = useRef([]);
     const swiperRef = useRef(null);
@@ -139,6 +151,7 @@ const VideoSlider = () => {
             <div className="slider-wrapper">
                 <Swiper
                     ref={swiperRef}
+                    centeredSlides={isMobile}
                     spaceBetween={20}
                     loop
                     slidesPerView={4}
@@ -149,8 +162,8 @@ const VideoSlider = () => {
                         disableOnInteraction: true, // Changed to true to stop on any interaction
                     }}
                     breakpoints={{
-                        320: { slidesPerView: 1 },
-                        480: { slidesPerView: 1 },
+                        320: { slidesPerView: 1.5 },
+                        480: { slidesPerView: 1.5 },
                         768: { slidesPerView: 3 },
                         1024: { slidesPerView: 4 },
                     }}

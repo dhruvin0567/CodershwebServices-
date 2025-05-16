@@ -35,9 +35,9 @@ function EmailSmsMarketing() {
                     <div className="section aximo-project-page text-center light-bg">
                         <div className="container aximo-section-padding5 shopify-services-data">
                             <h3 className="mb-2 dark-text" >
-                                Maximize Returns with Effective Email Campaign Strategies
+                                Maximize ROI with Proven Email & SMS Campaign Strategies
                             </h3>
-                            <p className="dark-text mb-2">Codersh Web Services leverages strategic email marketing, SMS campaigns, and loyalty-driven technology to boost customer value and retention. Tailored to your business, we focus on building lasting customer relationships that drive repeat purchases, reduce churn, and maximize lifetime value. Partner with us to optimize your retention strategy and elevate customer engagement.</p>
+                            <p className="dark-text mb-2">We uses targeted email marketing, SMS campaigns, and loyalty technology to enhance customer retention and lifetime value. We create personalized strategies that build lasting relationships, drive repeat purchases, and reduce churn, helping your business achieve sustainable growth and higher customer engagement.</p>
 
                         </div>
                     </div>
@@ -46,10 +46,12 @@ function EmailSmsMarketing() {
                     <div className="section aximo-project-page text-center dark-bg">
                         <div className="container aximo-section-padding5 shopify-services-data">
                             <h3 className="mb-4 light-text">
-                                Maximizing Customer Revenue with Integrated Digital Messaging, Loyalty, and Subscription Solutions
+                                Maximize Customer Revenue with Digital Messaging, Loyalty & Subscription Solutions
                             </h3>
                             <p className="section-description light-text">
-                                Codersh Retain combines email marketing, SMS, loyalty programs, and subscriptions into a single strategy to boost customer lifetime value. We tailor solutions to your business, enhancing ROI on customer acquisition and fostering lasting loyalty
+                                We Retain integrates email marketing, SMS, loyalty programs, and subscriptions into a unified strategy to increase customer lifetime value. Tailored to your business, our solutions drive higher ROI on customer acquisition while fostering long-term loyalty and engagement.
+
+
                             </p>
                         </div>
                     </div>
@@ -70,7 +72,8 @@ function EmailSmsMarketing() {
                                     <h3 className="mb-2">Email Marketing Agency</h3>
                                     <h2 className="mb-2">Tailored for Your Revenue Goals, Driven by Expertise</h2>
                                     <p className="mb-4">
-                                        Codersh integrates your eCommerce platform with email and SMS marketing, syncing customer data in real time for precise, targeted communication. Using advanced segmentation—based on location, discounts, purchase history, and predictive analytics—we engage customers at the ideal moment to drive retention. Our global approach customizes campaigns for regions like the US, UK, Australia, Canada, and Singapore.
+                                        Codersh integrates your eCommerce platform with email and SMS marketing, syncing customer data in real-time for precise, targeted communication. Through advanced segmentation-based on location, discounts, purchase history, and predictive analytics-we engage customers at the perfect moment to drive retention. Our global approach tailors campaigns for regions like the US, UK, Australia, Canada, and Singapore.
+
                                     </p>
                                     {/* <p className="mb-4">We go beyond basic behavior analysis, incorporating touchpoints like loyalty programs, reviews, and quiz participation. With data-driven insights and tailored strategies, we create personalized experiences that strengthen customer relationships and drive long-term growth.</p> */}
 
@@ -103,7 +106,8 @@ function EmailSmsMarketing() {
                                     {/* <p className="mb-4">
                                         At Codersh Web Services, we offer automation-driven email, SMS, and retention strategies to effortlessly engage and retain customers. Our personalized automation flows automatically enroll customers based on their behavior, from welcoming new subscribers to re-engaging cart abandoners. We continuously optimize these flows with A/B testing and improve lead capture through optimized pop-ups and forms.
                                     </p> */}
-                                    <p className="mb-4">We focus on automating key eCommerce KPIs, such as abandoned cart recovery emails and personalized product recommendations, to maximize ROI. Powered by predictive analytics and dynamic content delivery, our strategies deliver measurable results, helping you boost customer lifetime value and optimize your eCommerce performance.</p>
+                                    <p className="mb-4">We focus on automating key eCommerce KPIs, including abandoned cart recovery emails and personalized product recommendations, to maximize ROI. Leveraging predictive analytics and dynamic content delivery, our strategies yield measurable results, enhancing customer lifetime value and optimizing overall eCommerce performance.
+                                    </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
                                             Get Started Today
@@ -129,11 +133,9 @@ function EmailSmsMarketing() {
                                 <div className="aximo-default-content">
                                     <h3 className="mb-2">Email Marketing Design Services</h3>
                                     <h2 className="mb-2">Engage Customers with Creative Email Design</h2>
-                                    <p className="mb-2">
-                                        At Codersh Web Services, creative excellence and customer engagement drive everything we do. Our design-focused approach ensures your email marketing and SMS campaigns are visually stunning, on-brand, and optimized for performance. Whether building an eCommerce store or refining your retention strategies, we create messaging that captures attention and drives action.
-                                    </p>
-                                    <p className="mb-4">We design emails that reflect your brand’s identity—logos, colors, and messaging—while using compelling visuals, clear calls to action (CTAs), and dynamic product placements to encourage customer engagement. Our focus on UI/UX design creates a seamless experience that leads to conversions. Coupled with bespoke copywriting, we craft messages that resonate with your audience, ensuring consistent, performance-driven communication aligned with your brand voice and goals.</p>
 
+                                    <p className="mb-4">At Codersh, creativity and customer engagement are at the heart of everything we do. Our design-driven approach ensures your email marketing and SMS campaigns are visually stunning, on-brand, and optimized for performance. We create compelling, brand-aligned emails with dynamic product placements, clear CTAs, and visually appealing designs to boost engagement. With a focus on UI/UX, we ensure a seamless customer experience that drives conversions, while bespoke copywriting delivers messages that resonate with your audience, aligning with your brand voice and goals.
+                                    </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
                                             Contact Us Now!
@@ -161,7 +163,8 @@ function EmailSmsMarketing() {
                                     <h3 className="mb-2">SMS Marketing</h3>
                                     <h2 className="mb-2">Enhance Retention with SMS Marketing's Exceptional Open Rates</h2>
                                     <p className="mb-4">
-                                        Unlock the power of SMS marketing with open rates up to 94% and 5.5x more clicks than email, as 1 in 3 consumers prefer SMS from their favorite brands. At Codersh Web Services, we specialize in crafting tailored SMS campaigns to engage customers at the right moment—whether welcoming new subscribers, promoting products, or announcing sales. Our campaigns deliver personalized content and seamless customer support, ensuring high engagement and conversions. With a focus on opt-in consent and A/B testing, we continuously optimize strategies to drive results and maximize customer engagement. Contact Codersh Web Services for a free SMS consultation and elevate your customer communication.
+                                        Unlock the power of SMS marketing with open rates up to 94% and 5.5x more clicks than email, as 1 in 3 consumers prefer SMS from their favorite brands. At Codersh Web Services, we craft tailored SMS campaigns that engage customers at the perfect moment-whether welcoming new subscribers, promoting products, or announcing sales. Our campaigns deliver personalized content and seamless support, boosting engagement and conversions. With a focus on opt-in consent and A/B testing, we continuously optimize strategies to maximize results. Contact Codersh Web Services for a free SMS consultation and elevate your customer communication.
+
                                     </p>
                                     <FadeInUp className="aximo-btn-wrap2 mt-0 shopify-services-btn">
                                         <Link to="/contact-us" className="iwt-button">
@@ -189,7 +192,7 @@ function EmailSmsMarketing() {
                                     <h3 className="mb-2">Loyalty & Subscription Retention Strategies</h3>
                                     <h2 className="mb-2">Boosting Retention with Loyalty, Subscription, and On-Site Features</h2>
                                     <p className="mb-4">
-                                        At Codersh Web Services, we offer a comprehensive approach to customer retention by bridging on-site features with email and SMS marketing. We integrate with your existing subscription or loyalty programs to target the right customers with relevant content at the ideal time, enhancing recurring revenue and fostering long-term relationships. By segmenting customers based on behavior, we ensure your messaging reaches them when they’re most receptive, using data-driven insights to maximize engagement and conversions. Our Charle Memberships retainer is perfect for developing new on-site features, delivering a complete solution to elevate your eCommerce experience and retention strategy.
+                                        At Codersh, we connect on-site features with email and SMS marketing to enhance customer retention. By integrating with your subscription or loyalty programs, we target customers with relevant content at the right time, increasing recurring revenue and long-term loyalty. Using data-driven insights, we segment customers based on behavior to maximize engagement and conversions. Our Charle Memberships retainer offers a complete solution to develop new on-site features, elevating your eCommerce experience and retention strategy.
 
                                     </p>
 
