@@ -8,7 +8,7 @@ function Faq() {
 				title="Frequently Asked Questions | Codersh Web Services"
 				description="Find answers to common questions about Codersh Web Services. Learn more about our Shopify development, customization, and e-commerce solutions."
 				keywords="Codersh FAQ, Shopify development questions, Shopify customization help, e-commerce support, Shopify migration queries, Codersh Web Services answers"
-				canonical="https://react-vite-codersh.vercel.app/faq"
+				canonical="https://www.codersh.ca/faq"
 			/>
 			<BreadCrumb title="FAQ" />
 			<FaqAccordion />

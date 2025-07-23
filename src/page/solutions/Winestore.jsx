@@ -10,7 +10,7 @@ function Winestore() {
                 title="Online Wine Store | Premium Wines & Exclusive Collections"
                 description="Explore a curated selection of premium wines at Codersh Wine Store. Shop exclusive collections, rare vintages, and enjoy seamless online ordering."
                 keywords="online wine store, buy premium wine, exclusive wine collections, rare wines, wine delivery, best wines online, Codersh wine shop"
-                canonical="https://react-vite-codersh.vercel.app/winestore"
+                canonical="https://www.codersh.ca/winestore"
             />
 
             <BreadCrumb title="Winestore" />

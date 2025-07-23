@@ -26,7 +26,7 @@ function EcommerceSeo() {
                 title="SEO Agency for Shopify Stores | Boost Your Search Rankings | Codersh Web Services"
                 description="Enhance your Shopify store's visibility with Codersh Web Services' expert SEO services. We specialize in on-page, off-page, and technical SEO to improve rankings, traffic, and conversions."
                 keywords="SEO agency for Shopify, Shopify SEO services, e-commerce SEO, SEO experts, Shopify store SEO, on-page SEO, off-page SEO, technical SEO, Codersh Web Services"
-                canonical="https://react-vite-codersh.vercel.app/seo-agency"
+                canonical="https://www.codersh.ca/seo-agency"
             />
 
             <BreadCrumb title="SEO Agency" />

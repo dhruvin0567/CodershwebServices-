@@ -97,7 +97,7 @@ function Team() {
 				title="Meet the Codersh Team | Shopify Development Experts"
 				description="Get to know the expert team behind Codersh Web Services. Our Shopify developers, designers, and strategists are dedicated to building high-performing e-commerce solutions."
 				keywords="Codersh team, Shopify experts, Shopify developers, Shopify designers, e-commerce professionals, Shopify agency team, Shopify customization specialists"
-				canonical="https://react-vite-codersh.vercel.app/team"
+				canonical="https://www.codersh.ca/team"
 			/>
 			<BreadCrumb title="Our Team" />
 			<Teams teams={teamsData} />

@@ -1,78 +1,95 @@
-import BrandImg1 from "../../assets/images/brand_Webp/queenv-1.webp"
-import BrandImg2 from "../../assets/images/brand_Webp/queenv-2.webp"
-import BrandImg3 from "../../assets/images/brand_Webp/queenv-3.webp"
-import BrandImg4 from "../../assets/images/brand_Webp/queenv-4.webp"
-import Brandcard1 from "../../assets/images/images2/1.webp"
-import Brandcard2 from "../../assets/images/images2/2.webp"
-import Brandcard3 from "../../assets/images/images2/3.webp"
-import VideoSlider_2 from "../../components/common/VideoSlider_2"
-
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import Slider from "react-slick";
+import { Link } from "react-router-dom";
+import Star2Img from "../../assets/images/v1/icon/star2.webp";
+import VideoSlider from "../../components/common/VideoSlider";
+import FadeInStagger from "../../components/animation/FadeInStagger";
+import useIsMobile from "./useIsMobile";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function SingleBrandCustom() {
+    const { brandId } = useParams(); // from route like /brands/:brandId
+    const [brandData, setBrandData] = useState(null);
+    const isMobile = useIsMobile();
+
+    const sliderSettings = {
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        dots: true,
+    };
+
+    useEffect(() => {
+        fetch(`/data/brands-details/${brandId}.json`)
+            .then((res) => res.json())
+            .then((data) => setBrandData(data))
+            .catch((err) => console.error("Error loading brand data:", err));
+    }, [brandId]);
+
+    if (!brandData) return <div>Loading...</div>;
+
+    const {
+        heroImage,
+        brief,
+        details,
+        images,
+        challenge,
+        solution,
+        relatedBrands,
+    } = brandData;
+
     return (
         <div style={{ overflowX: "hidden" }}>
-
-            <div className="Brand-breadcrumb">
-                <div className="container">
-                    <br />
-                    <br />
-                    <br />
-                </div>
-            </div>
+            <div className="Brand-breadcrumb"><div className="container"><br /><br /><br /></div></div>
 
             <div className="case-study-hero-section">
-                <img src={BrandImg1} alt="Company_Site" className="img-fluid" />
+                <img src={heroImage} alt="Company_Site" />
             </div>
 
             <div className="cs-text">
-                <div className="container-lg ">
+                <div className="container-lg">
                     <div className="row">
-                        <div className=" col-md-6 text-start">
-                            <div className="p-4 p-lg-5">
-                                <h2 className="pb-3">The Brief</h2>
-                                <p className="brand-text">
-                                    The Split Grip Trainer is a patent-pending tool designed to refine swing mechanics and enhance player performance. With three training modes-split grip, short bat and one-hand-it helps athletes build strength, control, and efficiency, making it an essential aid for improving batting technique. Founded by former professional players Cory Voss and Trevor Goldberg, the Split Grip Trainer combines their deep expertise in baseball and bat crafting. Cory, a Division 1 All-American and former draft pick, owns The Baseball Mill in Pueblo, Colorado, while Trevor, a former collegiate player, has been crafting custom wood bats with Berg Bat Company since he was 15. Together, they created the Split Grip Trainer to elevate training and player performance across all skill levels.
-                                </p>
+                        <div className="col-md-6 text-start">
+                            <div className="p-3 p-md-4 p-lg-5">
+                                <h2 className="pt-3 pb-3 pt-md-0 pb-md-4">{brief.title}</h2>
+                                <p className="brand-text">{brief.description}</p>
                             </div>
                         </div>
-                        <div className="col-md-6 px-5 bg-light">
-                            <ul className="py-4 py-lg-5 mt-0 mt-md-5">
-                                <li className="brand-info-li">
-                                    <p>Industry</p>
-                                    <p className="fw-bold" style={{ marginBottom: "27px" }} >Sports Equipment</p>
-                                </li>
-                                <li className="brand-info-li">
-                                    <p>Project</p>
-                                    <p className="fw-bold" style={{ marginBottom: "27px" }}>
-
-                                        Brand Design / Development
-                                        <br />
-                                        Web Design & Development
-                                    </p>
-                                </li>
-                                <li className="brand-info-li">
-                                    <p>Technology</p>
-                                    <p className="fw-bold" style={{ marginBottom: "27px" }}>
-                                        Shopify Development <br />
-                                        E-Commerce & Payments Intigration <br />
-                                        Bootstrap UI Framework
-
-                                    </p>
-                                </li>
-                                <li className="brand-info-li">
-                                    <p>Visit</p>
-                                    <p className="fw-bold" style={{ marginBottom: "27px" }}>
-                                        <a
-                                            rel="noopener noreferrer"
-                                            href="https://splitgrip.com/"
-                                            target="_blank"
-                                            style={{ fontStyle: "none", color: "black" }}
-                                        >
-                                            splitgrip.com
-                                        </a>
-                                    </p>
-                                </li>
-                            </ul>
+                        <div className="col-md-6 brand-info-container">
+                            <div className="px-2 py-4 px-md-4 px-lg-5 py-md-5 h-100">
+                                <ul>
+                                    <li className="brand-info-li">
+                                        <p>Industry</p>
+                                        <p className="brand-text-2">{details.industry}</p>
+                                    </li>
+                                    <li className="brand-info-li">
+                                        <p>Project</p>
+                                        <p className="brand-text-2">{details.project}</p>
+                                    </li>
+                                    <li className="brand-info-li">
+                                        <p>Technology</p>
+                                        <p className="brand-text-2">{details.technology}</p>
+                                    </li>
+                                    <li className="brand-info-li">
+                                        <p>Visit</p>
+                                        <p className="brand-text-2">
+                                            <a
+                                                href={details.visit}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                style={{ fontStyle: "none", color: "black" }}
+                                            >
+                                                {new URL(details.visit).hostname}
+                                            </a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -80,83 +97,123 @@ function SingleBrandCustom() {
 
             <div className="image-section">
                 <div className="case-study-section-img">
-                    <img src={BrandImg2} alt="LaptopView_Of_Site" />
+                    <img src={images.laptop} alt="Laptop View" />
                 </div>
             </div>
 
             <div className="cs-richtext text-center">
-                <div className="container-lg bg-light p-lg-5 p-sm-4 p-4">
-                    <h2 className="mb-4 mb-lg-5">Challange</h2>
-                    <div className="cs-richtext-paragraph mx-lg-5 px-lg-5 pb-5">
-                        <p className="brand-text" >
-                            SplitGrip.com struggled with low user engagement and high cart abandonment rates, primarily due to a website structure that was difficult to navigate and an outdated design. The site’s user experience did not align with the premium brand image that SplitGrip aimed to project. As a result, customers found it hard to easily explore products, leading to frustration and lost sales. Additionally, the design lacked the modern, polished look needed to attract and retain customers. These issues hindered the company’s ability to fully capitalize on its innovative products and premium positioning in the market.
-                        </p>
-                    </div>
+                <div className="container-lg p-4 py-md-5 px-md-4 px-lg-0">
+                    <h2 className="my-3">
+                        <span className="aximo-title-animation">
+                            {challenge.title}
+                            <span className="aximo-title-icon">
+                                <img src={Star2Img} alt="star icon" />
+                            </span>
+                        </span>
+                    </h2>
+                    <p className="brand-text">{challenge.description}</p>
                 </div>
             </div>
 
-            <div className="cs-images-section ">
-                <div className="container-lg p-4 p-lg-5 p-sm-4">
+            <div className="cs-images-section">
+                <div className="container-lg">
                     <div className="row">
-                        <div className="col-6 ">
-                            <div className="cs-img">
-                                <img src={BrandImg3} alt="LaptopView_Of_Site " />
+                        {images.other.map((img, idx) => (
+                            <div className="col-md-6 mt-4 mt-md-0" key={idx}>
+                                <div className="cs-img">
+                                    <img src={img} alt={`View_${idx}`} />
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-6">
-                            <div className="cs-img">
-                                <img src={BrandImg4} alt="MobileView_Of_Site " />
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
 
             <div className="cs-richtext text-center">
-                <div className="container-lg bg-light p-4 p-lg-5 p-sm-4">
-                    <h2 className="mb-4 mb-lg-5">Solution & Results</h2>
-                    <div className="cs-richtext-paragraph mx-lg-5">
-                        <p className="mb-3 brand-text">
-                            The team revamped SplitGrip’s WordPress WooCommerce store, prioritizing a user-friendly design with intuitive navigation. High-quality product images and strategically placed call-to-action buttons were integrated to drive conversions. These improvements led to notable results, including a 40% increase in average session duration, a 35% drop in cart abandonment, and a 70% growth in revenue within just three months. The redesigned store not only enhanced the overall shopping experience but also aligned with the premium brand image, resulting in higher customer satisfaction and a significant boost in sales performance.
-                        </p>
-                    </div>
+                <div className="container-lg p-4 py-md-5 px-md-4 px-lg-0">
+                    <h2 className="my-3">
+                        <span className="aximo-title-animation">
+                            {solution.title}
+                            <span className="aximo-title-icon">
+                                <img src={Star2Img} alt="star icon" />
+                            </span>
+                        </span>
+                    </h2>
+                    <p className="brand-text">{solution.description}</p>
                 </div>
             </div>
 
-            <div>
-                <div className="container-lg cs-images-section-container px-0">
-
-                    <div className="cs-image-section d-flex justify-content-center pb-5">
-                        <img src={BrandImg2} alt=" " />
-                    </div>
-
-                </div>
-                {/* End */}
-                <div className="cs-video-section">
-                    <div className="cs-video">
-                        <VideoSlider_2 />
-                    </div>
+            <div className="container-lg cs-images-section-container px-lg-0">
+                <div className="cs-image-section d-flex justify-content-center">
+                    <img src={images.laptop} alt="brand img" />
                 </div>
             </div>
 
-            <div className="image-cards-section py-5">
+            <div className="cs-video-section">
+                <FadeInStagger>
+                    <div className="review-section text-center">
+                        <div className="container py-5">
+                            <div className="py-3">
+                                <div className="aximo-section-title center pb-2">
+                                    <h2>
+                                        Clients are always{" "}
+                                        <span className="aximo-title-animation">
+                                            satisfied with us
+                                            <span className="aximo-title-icon">
+                                                <img src={Star2Img} alt="star icon" />
+                                            </span>
+                                        </span>
+                                    </h2>
+                                </div>
+                                <p className="brand-text mx-lg-5 px-lg-5 mb-4 text-center">
+                                    We are very proud of the service we provide and stand by every product we carry.
+                                    <br /> See our testimonials from our happy customers.
+                                </p>
+                            </div>
+                            <VideoSlider />
+                        </div>
+                    </div>
+                </FadeInStagger>
+            </div>
+
+            <div className="image-cards-section pb-5">
+                <div className="container text-center">
+                    <h2 className="mb-3 mb-lg-4">
+                        Related Brands
+                        <span className="aximo-title-animation">
+                            We Support
+                            <span className="aximo-title-icon">
+                                <img src={Star2Img} alt="star icon" />
+                            </span>
+                        </span>
+                    </h2>
+                </div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-4 col-12 my-4 my-sm-4 my-md-auto ">
-                            <img src={Brandcard1} style={{ borderRadius: "25px" }} alt=" " />
-                        </div>
-                        <div className="col-md-4 col-12 my-4 my-sm-4 my-md-auto ">
-                            <img src={Brandcard2} style={{ borderRadius: "25px" }} alt=" " />
-                        </div>
-                        <div className="col-md-4 col-12 my-4 my-sm-4 my-md-auto">
-                            <img src={Brandcard3} style={{ borderRadius: "25px" }} alt=" " />
-                        </div>
+                        {isMobile ? (
+                            <Slider {...sliderSettings}>
+                                {relatedBrands.map((brand) => (
+                                    <div key={brand.id}>
+                                        <Link className="brand-card" to={brand.link}>
+                                            <img src={brand.img} alt={brand.title} style={{ width: "100%" }} />
+                                        </Link>
+                                    </div>
+                                ))}
+                            </Slider>
+                        ) : (
+                            relatedBrands.map((brand) => (
+                                <div className="col-md-4 p-4 p-md-3" key={brand.id}>
+                                    <Link className="brand-card" to={brand.link}>
+                                        <img src={brand.img} alt={brand.title} />
+                                    </Link>
+                                </div>
+                            ))
+                        )}
                     </div>
                 </div>
             </div>
-
         </div>
-    )
+    );
 }
 
-export default SingleBrandCustom
+export default SingleBrandCustom;

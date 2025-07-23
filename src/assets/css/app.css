@@ -1879,6 +1879,7 @@ blockquote {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	left: 0;
 }
 
 .slick-bullet .slick-dots li {

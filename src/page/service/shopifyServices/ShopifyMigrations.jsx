@@ -196,7 +196,7 @@ function ShopifyMigrations() {
                 title="Shopify Migration Services | Seamless Store Transition | Codersh Web Services"
                 description="Migrate your e-commerce store to Shopify with Codersh Web Services. We offer smooth, secure, and hassle-free migration for all your data, products, and customer information."
                 keywords="Shopify migration, e-commerce migration, Shopify store migration, Shopify data migration, Shopify product migration, secure Shopify migration, Codersh Web Services"
-                canonical="https://react-vite-codersh.vercel.app/shopify-migrations"
+                canonical="https://www.codersh.ca/shopify-migrations"
             />
             <BreadCrumb title="Shopify Migrations" />
 

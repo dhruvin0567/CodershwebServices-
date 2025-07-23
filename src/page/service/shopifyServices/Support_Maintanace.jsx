@@ -25,7 +25,7 @@ function Support_Maintanace() {
                 title="Shopify Support & Maintenance Services | Codersh Web Services"
                 description="Ensure your Shopify store runs smoothly with Codersh Web Services. Our comprehensive support and maintanance services cover updates, troubleshooting, and performance optimization."
                 keywords="Shopify support, Shopify maintanance, Shopify store updates, e-commerce troubleshooting, store performance optimization, Shopify experts, Codersh Web Services"
-                canonical="https://react-vite-codersh.vercel.app/support-&-maintanance"
+                canonical="https://www.codersh.ca/support-&-maintanance"
             />
             <BreadCrumb title="Support & Maintanance" />
 

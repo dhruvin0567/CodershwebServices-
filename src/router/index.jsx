@@ -43,8 +43,8 @@ import Businessdirectory from "../page/solutions/Businessdirectory.jsx";
 import Creditrepair from "../page/solutions/Creditrepair.jsx";
 import Itdigitalagency from "../page/solutions/Itdigitalagency.jsx";
 import CaseStudies from "../page/projects/CaseStudies.jsx";
-import Brand from "../page/brand/Brand.jsx";
-import SingleBrand from "../page/brand/SingleBrand.jsx";
+// import Brand from "../page/brand/Brand.jsx";
+// import SingleBrand from "../page/brand/SingleBrand.jsx";
 import SingleBlogPage from "../page/blog/SingleBlog.jsx";
 import LandingPage from "../page/projects/LandingPage.jsx";
 import CustomStore from "../page/service/shopifyServices/CustomStore.jsx";
@@ -81,6 +81,8 @@ import ThankyouPage from "../page/ThankyouPage.jsx";
 // import Countries from "../page/portfolio/Countries.jsx";
 // import Industries from "../page/portfolio/Industries.jsx";
 import ProtectedRoute from "../components/protectedroutes/ProtectedRoute.jsx";
+import Brand from "../page/brand/BrandCustom.jsx";
+import SingleBrandCustom from "../page/brand/SingleBrandCustom.jsx";
 
 
 export const router = createBrowserRouter([
@@ -120,15 +122,17 @@ export const router = createBrowserRouter([
 						path: "/brand",
 						element: (
 							<ProtectedRoute>
+								{/* <Brand /> */}
 								<Brand />
 							</ProtectedRoute>
 						),
 					},
 					{
-						path: "/brand/:slug",
+						path: "/brand/:brandId",
 						element: (
 							<ProtectedRoute>
-								<SingleBrand />
+								{/* <SingleBrand /> */}
+								<SingleBrandCustom />
 							</ProtectedRoute>
 						),
 					},

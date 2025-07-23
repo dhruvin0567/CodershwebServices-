@@ -1,34 +1,56 @@
-import FadeInStagger from "../../components/animation/FadeInStagger";
-import BreadCrumb from "../../components/common/Breadcrumb";
+import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import FadeInStagger from '../../components/animation/FadeInStagger';
+import BreadCrumb from '../../components/common/Breadcrumb';
 
-function Brand() {
-    const brandImages = [
-        "1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp",
-        "9.webp", "10.webp", "11.webp", "12.webp", "13.webp", "14.webp", "15.webp",
-        "16.webp", "17.webp", "18.webp", "19.webp", "20.webp"
-    ];
+const Brand = () => {
+    // Array of brands with slugs and image names
+    const brandImages = useMemo(() => ([
+        { id: 'rd-homes', image: '1.webp' },
+        { id: 'elevation-107', image: '2.webp' },
+        { id: 'kick-ash-basket', image: '4.webp' },
+        { id: 'texas-fowlers', image: '6.webp' },
+        { id: 'aubi-and-ramsa', image: '7.webp' },
+        { id: 'cool-out', image: '8.webp' },
+        { id: 'obvi-protien', image: '10.webp' },
+        { id: 'liberation-cocktails', image: '11.webp' },
+        { id: 'bone-idyll', image: '12.webp' },
+        { id: 'moth-drinks', image: '13.webp' },
+        { id: 'artisan-drink', image: '14.webp' },
+        { id: 'fuel-10k', image: '15.webp' },
+        { id: 'queen-v', image: '17.webp' },
+        { id: 'vidl-life', image: '19.webp' },
+        { id: 'geon-alps', image: '20.webp' },
+        // { id: 'reinvent-u', image: '9.webp' },
+        // { id: 'brand3', image: '3.webp' },
+        // Add more entries as needed...
+    ]), []);
 
     return (
-        <div>
+        <>
             <BreadCrumb title="Brand" />
-            <div className="brands-section py-5 my-sm-5">
+            <section className="brands-section py-5 my-sm-5">
                 <div className="container-fluid">
                     <div className="row">
-                        {brandImages.map((image, index) => (
-                            <div className="col-lg-3 col-sm-4 col-6 mb-3 p-3" key={index}>
+                        {brandImages.map((brand, index) => (
+                            <div className="col-lg-3 col-sm-4 col-6 mb-3 p-3" key={brand.id}>
                                 <FadeInStagger>
-                                    <Link className="brand-card" to="#">
-                                        <img src={`/images/${image}`} alt={`brand ${index + 1}`} />
+                                    <Link to={`/brand/${brand.id}`} className="brand-card" aria-label={`Brand ${index + 1}`}>
+                                        <img
+                                            src={`/images/brands/brands-cards/${brand.image}`}
+                                            alt={`Brand logo ${index + 1}`}
+                                            loading="lazy"
+                                            className="img-fluid"
+                                        />
                                     </Link>
                                 </FadeInStagger>
                             </div>
                         ))}
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </>
     );
-}
+};
 
 export default Brand;
