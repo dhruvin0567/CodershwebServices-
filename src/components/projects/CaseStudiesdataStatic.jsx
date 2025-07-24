@@ -18,37 +18,37 @@ const caseStudies = [
     {
         id: 3,
         title: "Shopify-Based Wine E-Commerce Store",
-        img: "/public/images/case-studies/casestudy-cards/madamef-casestudy.png",
+        img: "/images/case-studies/casestudy-cards/madamef-casestudy.png",
         link: "/case-studies/madame-f"
     },
     {
         id: 4,
         title: "Cocktail E-Commerce Shop Built with Shopify",
-        img: "/public/images/case-studies/casestudy-cards/liberation-casestudy.png",
+        img: "/images/case-studies/casestudy-cards/liberation-casestudy.png",
         link: "/case-studies/liberation-cocktails"
     },
     {
         id: 5,
         title: "Shopify-Powered Sparkling Wine Shop",
-        img: "/public/images/case-studies/casestudy-cards/van-hunks-casestudy.png",
+        img: "/images/case-studies/casestudy-cards/van-hunks-casestudy.png",
         link: "/case-studies/van-hunks"
     },
     {
         id: 6,
         title: "WooCommerce-Powered Grocery and Remittance Platform",
-        img: "/public/images/case-studies/casestudy-cards/pami-gente-casestudy.png",
+        img: "/images/case-studies/casestudy-cards/pami-gente-casestudy.png",
         link: "/case-studies/pa-mi-gente"
     },
     {
         id: 7,
         title: "WordPress-Based Financial Services Platform",
-        img: "/public/images/case-studies/casestudy-cards/stellar-credit-casestudy.png",
+        img: "/images/case-studies/casestudy-cards/stellar-credit-casestudy.png",
         link: "/case-studies/stellar-credit"
     },
     {
         id: 8,
         title: "Shopify E-Commerce Store for Baseball Bats",
-        img: "/public/images/case-studies/casestudy-cards/bergbat-casestudy.png",
+        img: "/images/case-studies/casestudy-cards/bergbat-casestudy.png",
         link: "/case-studies/bergbat"
     },
 ];
