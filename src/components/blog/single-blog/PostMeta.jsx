@@ -1,10 +1,14 @@
-function PostMeta() {
+function PostMeta({ industry, technology }) {
 	return (
-		<div className="post-meta">
+		<div className="post-meta gap-0 gap-md-5">
 			<div className="post-category">
-				<a href="">Business</a>
+				<span className="fw-bold me-2">Industry:</span>
+				{industry}
 			</div>
-			<div className="post-date">June 18, 2024</div>
+			<div className="post-category">
+				<span className="fw-bold me-2">Technology:</span>
+				{technology}
+			</div>
 		</div>
 	);
 }

@@ -1,10 +1,14 @@
-import { useNavigate } from "react-router-dom";  // Import useNavigate hook from React Router
-
-import { useForm } from "react-hook-form";
+// import CaseStudyDetails from "./CaseStudyDetails";
 import Field from "../../common/Field";
-import CaseStudyDetails from "./CaseStudyDetails";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import SingleCSdetailsStatic from "./SingleCSdetailsStatic";
+import { useParams } from "react-router-dom";
 
 function SingleCaseStudy() {
+
+	const { slug } = useParams();
+
 	const {
 		register,
 		handleSubmit,
@@ -13,7 +17,6 @@ function SingleCaseStudy() {
 	} = useForm();
 
 	const navigate = useNavigate();  // Initialize navigate function
-
 
 	const submitForm = async (formData) => {
 		console.log("Submitted Form Data =", formData);
@@ -31,12 +34,10 @@ function SingleCaseStudy() {
 
 			if (response.ok) {
 				console.log("Form submitted successfully:", result);
-				// alert("Thank you! Your form has been submitted.");
+
 				reset(); // Reset the form fields after successful submission
 
-				// Navigate to the Thank You page
-				navigate("/thank-you");  // Use React Router to navigate to the Thank You page
-
+				navigate("/thank-you"); // Navigate to the Thank You page
 
 			} else {
 				console.error("Form submission failed:", result);
@@ -53,8 +54,8 @@ function SingleCaseStudy() {
 		WebkitAppearance: 'none',
 		backgroundImage: 'none',
 		backgroundColor: 'transparent',
-		color: '#000', // Set text color to black
-		transition: 'background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s', // Transition for color as well
+		color: '#000',
+		transition: 'background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s',
 	};
 
 	return (
@@ -62,15 +63,19 @@ function SingleCaseStudy() {
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-8">
-						<CaseStudyDetails />
+						{/* <CaseStudyDetails /> */}
+						<SingleCSdetailsStatic slug={slug} />
 					</div>
 					<div className="col-lg-4">
 						<div className="right-sidebar">
+
 							<div className="px-2 mb-3">
 								<h3>Let's Connect!</h3>
 							</div>
+
 							<div className="aximo-main-form">
 								<form onSubmit={handleSubmit(submitForm)}>
+
 									{/* Name Field */}
 									<div className="aximo-main-field">
 										<Field label="Your Name" error={errors.name}>

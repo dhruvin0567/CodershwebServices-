@@ -26,7 +26,7 @@ function Brand() {
 				title="Codersh Web Services | Your Trusted Shopify Development Partner"
 				description="Discover the story behind Codersh Web Services. We specialize in Shopify development, custom e-commerce solutions, and helping brands grow through innovative digital strategies."
 				keywords="Codersh Web Services, Shopify development, e-commerce solutions, digital agency, Shopify experts, brand story, Shopify partner, custom Shopify solutions"
-				canonical="https://www.codersh.ca/brand"
+				canonical="https://react-vite-codersh.vercel.app/brand"
 			/>
 			<BreadCrumb title="Brand" />
 			<div className="brands-section py-5 my-sm-5">

@@ -3,7 +3,7 @@ import LayoutOne from "../components/layout/LayoutOne.jsx";
 import Layout from "../components/layout/index.jsx";
 import AboutUs from "../page/AboutUs";
 import ContactUs from "../page/ContactUs";
-import Pricing from "../page/Pricing";
+// import Pricing from "../page/Pricing";
 import Faq from "../page/utility/Faq.jsx";
 import TestimonialPage from "../page/utility/Testimonial.jsx";
 import HomeOne from "../page/home/HomeOne.jsx";
@@ -33,7 +33,7 @@ import BlogGridPage from "../page/blog/BlogGridPage.jsx";
 // import HomeTwo from "../page/home/HomeTwo.jsx";
 // import PortfolioOneColumn from "../page/portfolio/PortfolioOneColoum";
 // import SinglePortfolio from "../page/portfolio/SinglePortfolio";
-// import SingleService from "../page/service/SingleService.jsx";
+// import SingleService from "../page/service/service_pg/SingleService.jsx";
 // import SingleTeam from "../page/team/SingleTeam.jsx";
 
 // extrapages implimented
@@ -42,14 +42,14 @@ import Winestore from "../page/solutions/Winestore.jsx";
 import Businessdirectory from "../page/solutions/Businessdirectory.jsx";
 import Creditrepair from "../page/solutions/Creditrepair.jsx";
 import Itdigitalagency from "../page/solutions/Itdigitalagency.jsx";
-import CaseStudies from "../page/projects/CaseStudies.jsx";
+// import CaseStudies from "../page/projects/CaseStudies.jsx";
 // import Brand from "../page/brand/Brand.jsx";
 // import SingleBrand from "../page/brand/SingleBrand.jsx";
 import SingleBlogPage from "../page/blog/SingleBlog.jsx";
-import LandingPage from "../page/projects/LandingPage.jsx";
+// import LandingPage from "../page/projects/LandingPage.jsx";
 import CustomStore from "../page/service/shopifyServices/CustomStore.jsx";
 import ShopifyMigrations from "../page/service/shopifyServices/ShopifyMigrations.jsx";
-import SingleCaseStudyPage from "../page/projects/SingleCaseStudyPage.jsx";
+// import SingleCaseStudyPage from "../page/projects/SingleCaseStudyPage.jsx";
 import ShopifyPlus from "../page/service/shopifyServices/ShopifyPlus.jsx";
 import Headless from "../page/service/shopifyServices/Headless.jsx";
 import Support_Maintanace from "../page/service/shopifyServices/Support_Maintanace.jsx";
@@ -83,6 +83,8 @@ import ThankyouPage from "../page/ThankyouPage.jsx";
 import ProtectedRoute from "../components/protectedroutes/ProtectedRoute.jsx";
 import Brand from "../page/brand/BrandCustom.jsx";
 import SingleBrandCustom from "../page/brand/SingleBrandCustom.jsx";
+import CaseStudiesStatic from "../page/projects/CaseStudiesStatic.jsx";
+import SingleCaseStudyStatic from "../page/projects/SingleCaseStudyStatic.jsx";
 
 
 export const router = createBrowserRouter([
@@ -114,10 +116,10 @@ export const router = createBrowserRouter([
 						path: "/testimonial",
 						element: <TestimonialPage />,
 					},
-					{
-						path: "/pricing",
-						element: <Pricing />,
-					},
+					// {
+					// 	path: "/pricing",
+					// 	element: <Pricing />,
+					// },
 					{
 						path: "/brand",
 						element: (
@@ -140,7 +142,8 @@ export const router = createBrowserRouter([
 						path: "/case-studies",
 						element: (
 							<ProtectedRoute>
-								<CaseStudies />
+								{/* <CaseStudies /> */}
+								<CaseStudiesStatic />
 							</ProtectedRoute>
 						),
 					},
@@ -148,7 +151,8 @@ export const router = createBrowserRouter([
 						path: "/case-studies/:slug",
 						element: (
 							<ProtectedRoute>
-								<SingleCaseStudyPage />
+								{/* <SingleCaseStudyPage /> */}
+								<SingleCaseStudyStatic />
 							</ProtectedRoute>
 						),
 					},
@@ -163,6 +167,10 @@ export const router = createBrowserRouter([
 					// {
 					// 	path: "/portfolio-two",
 					// 	element: <PortfolioTwoColumn />,
+					// },
+					// {
+					// 	path: "/landingpage",
+					// 	element: <LandingPage />,
 					// },
 					{
 						path: "/ourblog",
@@ -192,10 +200,7 @@ export const router = createBrowserRouter([
 						path: "/team",
 						element: <Team />,
 					},
-					{
-						path: "/landingpage",
-						element: <LandingPage />,
-					},
+
 					{
 						path: "/customStore",
 						element: <CustomStore />,
@@ -248,21 +253,13 @@ export const router = createBrowserRouter([
 						path: "/thank-you",
 						element: <ThankyouPage />,
 					},
-					// {
-					// 	path: "/logo-slider",
-					// 	element: <Logoslider />,
-					// },
 					{
 						path: "*",
 						element: <ErrorPage />,
 					},
 					// {
-					// 	path: "/custom-brand-single",
-					// 	element: <SingleBrandCustom />,
-					// },
-					// {
-					// 	path: "/custom-brand",
-					// 	element: <BrandCustom />,
+					// 	path: "/logo-slider",
+					// 	element: <Logoslider />,
 					// },
 					// {
 					// 	path: "/singleblog2",

@@ -3,8 +3,6 @@ import { useParams } from "react-router-dom";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import Star2Img from "../../assets/images/v1/icon/star2.webp";
-import VideoSlider from "../../components/common/VideoSlider";
-import FadeInStagger from "../../components/animation/FadeInStagger";
 import useIsMobile from "./useIsMobile";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -149,39 +147,14 @@ function SingleBrandCustom() {
                 </div>
             </div>
 
-            <div className="cs-video-section">
-                <FadeInStagger>
-                    <div className="review-section text-center">
-                        <div className="container py-5">
-                            <div className="py-3">
-                                <div className="aximo-section-title center pb-2">
-                                    <h2>
-                                        Clients are always{" "}
-                                        <span className="aximo-title-animation">
-                                            satisfied with us
-                                            <span className="aximo-title-icon">
-                                                <img src={Star2Img} alt="star icon" />
-                                            </span>
-                                        </span>
-                                    </h2>
-                                </div>
-                                <p className="brand-text mx-lg-5 px-lg-5 mb-4 text-center">
-                                    We are very proud of the service we provide and stand by every product we carry.
-                                    <br /> See our testimonials from our happy customers.
-                                </p>
-                            </div>
-                            <VideoSlider />
-                        </div>
-                    </div>
-                </FadeInStagger>
-            </div>
 
-            <div className="image-cards-section pb-5">
+
+            <div className="image-cards-section py-5">
                 <div className="container text-center">
                     <h2 className="mb-3 mb-lg-4">
                         Related Brands
                         <span className="aximo-title-animation">
-                            We Support
+
                             <span className="aximo-title-icon">
                                 <img src={Star2Img} alt="star icon" />
                             </span>

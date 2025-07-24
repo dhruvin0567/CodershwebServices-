@@ -3,4 +3,4 @@ Disallow: /private/
 Allow: /
 
 
-Sitemap: https://www.codersh.ca/sitemap.xml
+Sitemap: https://react-vite-codersh.vercel.app/sitemap.xml

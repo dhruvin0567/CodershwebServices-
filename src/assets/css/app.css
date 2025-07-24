@@ -11336,66 +11336,6 @@ button#wp-block-search__button {
 	/* width: max-content; */
 }
 
-.entry-content h1,
-.entry-content h2,
-.entry-content h3,
-.entry-content h4 {
-	margin-bottom: 20px !important;
-}
-
-.entry-content h1 {
-	font-size: 35px !important;
-}
-
-.entry-content h3,
-.entry-content h2,
-.entry-content h2 b,
-.entry-content h3 b,
-.entry-content h4 b,
-.entry-content h2 strong,
-.entry-content p strong,
-.entry-content ol li b {
-	font-size: 26px !important;
-
-}
-
-.entry-content b,
-.entry-content strong,
-.entry-content p b {
-	font-family: syne, sans-serif;
-	font-size: 20px;
-	font-weight: 700;
-}
-
-.entry-content p,
-.entry-content ul,
-.entry-content ol {
-	font-size: 20px;
-	margin-bottom: 10px !important;
-}
-
-.entry-content span {
-	font-family: "Inter", sans-serif !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	vertical-align: baseline !important;
-	text-rendering: optimizeLegibility !important;
-	/* font-size: 18px !important; */
-}
-
-.entry-content ol li span {
-	font-size: 20px !important;
-}
-
-.entry-content h4 span {
-	font-size: 20px !important;
-}
-
-.entry-content p span,
-.entry-content ul li span {
-	font-weight: 400 !important;
-}
-
 .entry-content code {
 	color: #000 !important;
 	font-size: 20px !important;
@@ -11405,6 +11345,37 @@ button#wp-block-search__button {
 .entry-content a {
 	color: #000 !important;
 	font-size: 20px !important;
+}
+
+.entry-content span {
+	font-weight: 600;
+	font-size: 21px;
+}
+
+.entry-content p,
+.entry-content .aximo-user-interface ul {
+	margin-bottom: 30px;
+	font-size: 21px;
+}
+
+.entry-content h3,
+.entry-content h4 {
+	margin-bottom: 15px;
+}
+
+.entry-content .aximo-user-interface ul li {
+	margin-bottom: 4px;
+	font-size: 21px;
+}
+
+@media (max-width: 991px) {
+
+	.entry-content p,
+	.entry-content .aximo-user-interface ul,
+	.entry-content .aximo-user-interface ul li,
+	.entry-content span {
+		font-size: 18px;
+	}
 }
 
 .post-tag {

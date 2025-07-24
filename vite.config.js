@@ -23,10 +23,10 @@ export default defineConfig({
       },
     }),
     ViteSitemap({
-      hostname: 'https://www.codersh.ca/',
+      hostname: 'https://react-vite-codersh.vercel.app/',
     }),
     SitemapPlugin({
-      baseUrl: 'https://www.codersh.ca/',
+      baseUrl: 'https://react-vite-codersh.vercel.app/',
       changefreq: 'daily',
       priority: 1.0,
     }),

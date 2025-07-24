@@ -15,42 +15,42 @@ const projectsData = [
 		title: "Madame F",
 		description: "The UK's most inclusive vibrant LGBTQ+ Wine Brand",
 		img: Project1Img,
-		link: "https://www.codersh.ca/case-studies/madame-f-celebrating-diversity-in-every-glass"
+		link: "https://react-vite-codersh.vercel.app/case-studies/madame-f-celebrating-diversity-in-every-glass"
 	},
 	{
 		id: crypto.randomUUID(),
 		title: "Van Hunks",
 		description: "Van Hunks Sparkling Wine is a captivating drink that delights and surprises.",
 		img: Project2Img,
-		link: "https://www.codersh.ca/case-studies/van-hunks-spicing-up-their-shopify-store"
+		link: "https://react-vite-codersh.vercel.app/case-studies/van-hunks-spicing-up-their-shopify-store"
 	},
 	{
 		id: crypto.randomUUID(),
 		title: "Liberation Cocktails",
 		description: "We source only the best ingredients, selecting them for how they shape taste and twist tradition.",
 		img: Project3Img,
-		link: "https://www.codersh.ca/case-studies/liberation-cocktails-elevating-the-pre-mixed-cocktail-experience-with-a-custom-shopify-solution"
+		link: "https://react-vite-codersh.vercel.app/case-studies/liberation-cocktails-elevating-the-pre-mixed-cocktail-experience-with-a-custom-shopify-solution"
 	},
 	{
 		id: crypto.randomUUID(),
 		title: "Tylers Coffees",
 		description: "Our Acid-Free Coffee Range Offers a Symphony of Flavor, Minus the Sour Aftertaste.",
 		img: Project4Img,
-		link: "https://www.codersh.ca/case-studies"
+		link: "https://react-vite-codersh.vercel.app/case-studies"
 	},
 	{
 		id: crypto.randomUUID(),
 		title: "Asterley Bros",
 		description: "Two Brothers with a passion for Botanical Spirits in South London.",
 		img: Project5Img,
-		link: "https://www.codersh.ca/case-studies"
+		link: "https://react-vite-codersh.vercel.app/case-studies"
 	},
 	{
 		id: crypto.randomUUID(),
 		title: "Double Dutch Drinks",
 		description: "We created our Tonics and Mixers with Flavour pairing at the Heart of each rink.",
 		img: Project6Img,
-		link: "https://www.codersh.ca/case-studies"
+		link: "https://react-vite-codersh.vercel.app/case-studies"
 	},
 ];
 

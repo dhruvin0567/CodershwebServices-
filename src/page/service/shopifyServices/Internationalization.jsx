@@ -168,7 +168,7 @@ function Internationalization() {
                 title="Selling Internationally on Shopify | Expand Your E-commerce Reach | Codersh Web Services"
                 description="Reach global markets with Shopify's international selling capabilities. Codersh Web Services helps you set up multi-currency, multi-language, and cross-border solutions for your Shopify store."
                 keywords="selling internationally on Shopify, Shopify international selling, Shopify multi-currency setup, Shopify multi-language store, cross-border Shopify, expand Shopify store internationally, Codersh Web Services"
-                canonical="https://www.codersh.ca/selling-internationally-on-shopify"
+                canonical="https://react-vite-codersh.vercel.app/selling-internationally-on-shopify"
             />
             <BreadCrumb title="Internationalization With Shopify & Shopify Plus" />
 

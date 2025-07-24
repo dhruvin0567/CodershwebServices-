@@ -16,7 +16,7 @@ function TestimonialPage() {
 				title="Client Testimonials | Codersh Web Services Reviews"
 				description="Read what our clients say about Codersh Web Services. Discover how our expert Shopify development solutions have helped businesses achieve e-commerce success."
 				keywords="Codersh testimonials, client reviews, Shopify agency reviews, Shopify development feedback, e-commerce success stories, Codersh Web Services ratings"
-				canonical="https://www.codersh.ca/testimonial"
+				canonical="https://react-vite-codersh.vercel.app/testimonial"
 			/>
 			<GlobalStyle />
 			<BreadCrumb title="Testimonial" />
