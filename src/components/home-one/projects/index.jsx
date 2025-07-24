@@ -1,10 +1,13 @@
 import Star2Img from "../../../assets/images/v1/star2.webp";
-import Project1Img from "../../../assets/images/v1/project1.webp";
-import Project2Img from "../../../assets/images/v1/project2.webp";
-import Project3Img from "../../../assets/images/v1/project3.webp";
-import Project4Img from "../../../assets/images/v1/project4.webp";
-import Project5Img from "../../../assets/images/v1/project5.webp";
-import Project6Img from "../../../assets/images/v1/project6.webp";
+import Project1Img from "/images/case-studies/casestudy-cards/madamef-casestudy.png";
+import Project2Img from "/images/case-studies/casestudy-cards/liberation-casestudy.png";
+import Project3Img from "/images/case-studies/casestudy-cards/van-hunks-casestudy.png";
+import Project4Img from "/images/case-studies/casestudy-cards/pami-gente-casestudy.png";
+import Project5Img from "/images/case-studies/casestudy-cards/stellar-credit-casestudy.png";
+import Project6Img from "/images/case-studies/casestudy-cards/bergbat-casestudy.png";
+// import Project4Img from "../../../assets/images/v1/project4.webp";
+// import Project5Img from "../../../assets/images/v1/project5.webp";
+// import Project6Img from "../../../assets/images/v1/project6.webp";
 import ProjectCard from "./ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Mousewheel } from "swiper/modules";
@@ -13,45 +16,66 @@ const projectsData = [
 	{
 		id: crypto.randomUUID(),
 		title: "Madame F",
-		description: "The UK's most inclusive vibrant LGBTQ+ Wine Brand",
+		// description: "The UK's most inclusive vibrant LGBTQ+ Wine Brand",
 		img: Project1Img,
-		link: "https://react-vite-codersh.vercel.app/case-studies/madame-f-celebrating-diversity-in-every-glass"
+		link: "/case-studies/madame-f"
 	},
 	{
 		id: crypto.randomUUID(),
 		title: "Van Hunks",
-		description: "Van Hunks Sparkling Wine is a captivating drink that delights and surprises.",
+		// description: "Van Hunks Sparkling Wine is a captivating drink that delights and surprises.",
 		img: Project2Img,
-		link: "https://react-vite-codersh.vercel.app/case-studies/van-hunks-spicing-up-their-shopify-store"
+		link: "/case-studies/van-hunks"
 	},
 	{
 		id: crypto.randomUUID(),
 		title: "Liberation Cocktails",
-		description: "We source only the best ingredients, selecting them for how they shape taste and twist tradition.",
+		// description: "We source only the best ingredients, selecting them for how they shape taste and twist tradition.",
 		img: Project3Img,
-		link: "https://react-vite-codersh.vercel.app/case-studies/liberation-cocktails-elevating-the-pre-mixed-cocktail-experience-with-a-custom-shopify-solution"
+		link: "/case-studies/liberation-cocktails"
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "Tylers Coffees",
-		description: "Our Acid-Free Coffee Range Offers a Symphony of Flavor, Minus the Sour Aftertaste.",
+		title: "PaMi Gente",
+		// description: "The UK's most inclusive vibrant LGBTQ+ Wine Brand",
 		img: Project4Img,
-		link: "https://react-vite-codersh.vercel.app/case-studies"
+		link: "/case-studies/pa-mi-gente"
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "Asterley Bros",
-		description: "Two Brothers with a passion for Botanical Spirits in South London.",
+		title: "Stellar Credit",
+		// description: "Van Hunks Sparkling Wine is a captivating drink that delights and surprises.",
 		img: Project5Img,
-		link: "https://react-vite-codersh.vercel.app/case-studies"
+		link: "/case-studies/stellar-credit"
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "Double Dutch Drinks",
-		description: "We created our Tonics and Mixers with Flavour pairing at the Heart of each rink.",
+		title: "BergaBat",
+		// description: "We source only the best ingredients, selecting them for how they shape taste and twist tradition.",
 		img: Project6Img,
-		link: "https://react-vite-codersh.vercel.app/case-studies"
+		link: "/case-studies/bergbat"
 	},
+	// {
+	// 	id: crypto.randomUUID(),
+	// 	title: "Tylers Coffees",
+	// 	description: "Our Acid-Free Coffee Range Offers a Symphony of Flavor, Minus the Sour Aftertaste.",
+	// 	img: Project4Img,
+	// 	link: "https://react-vite-codersh.vercel.app/case-studies"
+	// },
+	// {
+	// 	id: crypto.randomUUID(),
+	// 	title: "Asterley Bros",
+	// 	description: "Two Brothers with a passion for Botanical Spirits in South London.",
+	// 	img: Project5Img,
+	// 	link: "https://react-vite-codersh.vercel.app/case-studies"
+	// },
+	// {
+	// 	id: crypto.randomUUID(),
+	// 	title: "Double Dutch Drinks",
+	// 	description: "We created our Tonics and Mixers with Flavour pairing at the Heart of each rink.",
+	// 	img: Project6Img,
+	// 	link: "https://react-vite-codersh.vercel.app/case-studies"
+	// },
 ];
 
 const swiperSettings = {
