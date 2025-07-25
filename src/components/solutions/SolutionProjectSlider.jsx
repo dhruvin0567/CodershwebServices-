@@ -32,7 +32,7 @@ function SolutionProjectSlider({ slides }) {
                                     style={{ cursor: "grab" }}
                                     data-wow-delay={`${0.1 + index * 0.1}s`}
                                 >
-                                    <img src={slide.image} alt={slide.alt} />
+                                    <img src={slide.image} alt={slide.alt} loading="lazy" />
                                 </div>
                             </SwiperSlide>
                         ))}
