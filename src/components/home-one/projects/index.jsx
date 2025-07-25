@@ -1,10 +1,10 @@
 import Star2Img from "../../../assets/images/v1/star2.webp";
-import Project1Img from "/images/case-studies/casestudy-cards/madamef-casestudy.png";
-import Project2Img from "/images/case-studies/casestudy-cards/liberation-casestudy.png";
-import Project3Img from "/images/case-studies/casestudy-cards/van-hunks-casestudy.png";
-import Project4Img from "/images/case-studies/casestudy-cards/pami-gente-casestudy.png";
-import Project5Img from "/images/case-studies/casestudy-cards/stellar-credit-casestudy.png";
-import Project6Img from "/images/case-studies/casestudy-cards/bergbat-casestudy.png";
+import Project1Img from "/images/case-studies/casestudy-cards/madamef-casestudy.webp";
+import Project2Img from "/images/case-studies/casestudy-cards/liberation-casestudy.webp";
+import Project3Img from "/images/case-studies/casestudy-cards/van-hunks-casestudy.webp";
+import Project4Img from "/images/case-studies/casestudy-cards/pami-gente-casestudy.webp";
+import Project5Img from "/images/case-studies/casestudy-cards/stellar-credit-casestudy.webp";
+import Project6Img from "/images/case-studies/casestudy-cards/bergbat-casestudy.webp";
 // import Project4Img from "../../../assets/images/v1/project4.webp";
 // import Project5Img from "../../../assets/images/v1/project5.webp";
 // import Project6Img from "../../../assets/images/v1/project6.webp";
