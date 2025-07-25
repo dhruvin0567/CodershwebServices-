@@ -7,9 +7,9 @@ import SolutionPageLogoSlider from "./SolutionPageLogoSlider";
 import SolutionTestimonialSlider from "./SolutionTestimonialSlider";
 import SolutionDynamicInfo from "./SolutionDynamicInfo";
 
-import projImg1 from '../../assets/images/images2/tinified2/hpn-global.webp';
-import projImg2 from '../../assets/images/images2/tinified2/tyrepages.webp';
-import projImg3 from '../../assets/images/images2/tinified2/redesign-hub.webp';
+import projImg1 from '/images/solutions/business-directory/hpn-global.webp';
+import projImg2 from '/images/solutions/business-directory/tyrepages.webp';
+import projImg3 from '/images/solutions/business-directory/redesign-hub.webp';
 const slidesData = [
     { image: projImg1, alt: "HPN Global Front Page" },
     { image: projImg2, alt: "Tyrepages Front Page" },
@@ -19,9 +19,9 @@ const slidesData = [
     { image: projImg3, alt: "Redesign Hub Front Page" },
 ];
 
-import Logo1Img from '../../assets/images/images2/tyrepage.webp';
-import Logo2Img from '../../assets/images/images2/hpn-logo-1.webp';
-import Logo3Img from '../../assets/images/images2/redesign-hub-logo.webp';
+import Logo1Img from '/images/solutions/business-directory/tyrepage.webp';
+import Logo2Img from '/images/solutions/business-directory/hpn-logo-1.webp';
+import Logo3Img from '/images/solutions/business-directory/redesign-hub-logo.webp';
 const logosData = [
     { image: Logo1Img, alt: "Tyrepage Logo" },
     { image: Logo2Img, alt: "HPN Logo 1" },

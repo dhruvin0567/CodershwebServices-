@@ -7,13 +7,13 @@ import SolutionPageLogoSlider from "./SolutionPageLogoSlider";
 import SolutionTestimonialSlider from "./SolutionTestimonialSlider";
 import SolutionDynamicInfo from "./SolutionDynamicInfo";
 
-import Slider1Img from '../../assets/images/images2/tinified/credi-coach-front-page.webp';
-import Slider2Img from '../../assets/images/images2/tinified/Credit-Saint-Ranked-1-By-Top-Financial-Sites-front-page.webp';
-import Slider3Img from '../../assets/images/images2/tinified/Credit101-front-page.webp';
-import Slider4Img from '../../assets/images/images2/tinified/Framework-Credit-front-page.webp';
-import Slider5Img from '../../assets/images/images2/tinified/preimier-credit-front-page.webp';
-import Slider6Img from '../../assets/images/images2/tinified/sd-capital-front-page.webp';
-import Slider7Img from '../../assets/images/images2/tinified/stellar-credit-front-page.webp';
+import Slider1Img from '/images/solutions/credit-repair/credi-coach-front-page.webp';
+import Slider2Img from '/images/solutions/credit-repair/Credit-Saint-Ranked-1-By-Top-Financial-Sites-front-page.webp';
+import Slider3Img from '/images/solutions/credit-repair/Credit101-front-page.webp';
+import Slider4Img from '/images/solutions/credit-repair/Framework-Credit-front-page.webp';
+import Slider5Img from '/images/solutions/credit-repair/preimier-credit-front-page.webp';
+import Slider6Img from '/images/solutions/credit-repair/sd-capital-front-page.webp';
+import Slider7Img from '/images/solutions/credit-repair/stellar-credit-front-page.webp';
 const slidesData = [
     { image: Slider1Img, alt: "Credi Coach Front Page" },
     { image: Slider2Img, alt: "Credit Saint Ranked #1 By Top Financial Sites Front Page" },
@@ -24,13 +24,13 @@ const slidesData = [
     { image: Slider7Img, alt: "Stellar Credit Front Page" },
 ];
 
-import Logo1Img from '../../assets/images/images2/logo-1.webp';
-import Logo2Img from '../../assets/images/images2/logo-2.webp';
-import Logo3Img from '../../assets/images/images2/logo-3.webp';
-import Logo4Img from '../../assets/images/images2/logo-4.webp';
-import Logo5Img from '../../assets/images/images2/logo-5.webp';
-import Logo6Img from '../../assets/images/images2/credit-101-logo.webp';
-import Logo7Img from '../../assets/images/images2/credit-saint-logo.webp';
+import Logo1Img from '/images/solutions/credit-repair/logo-1.webp';
+import Logo2Img from '/images/solutions/credit-repair/logo-2.webp';
+import Logo3Img from '/images/solutions/credit-repair/logo-3.webp';
+import Logo4Img from '/images/solutions/credit-repair/logo-4.webp';
+import Logo5Img from '/images/solutions/credit-repair/logo-5.webp';
+import Logo6Img from '/images/solutions/credit-repair/credit-101-logo.webp';
+import Logo7Img from '/images/solutions/credit-repair/credit-saint-logo.webp';
 const logosData = [
     { image: Logo1Img, alt: "Logo 1" },
     { image: Logo2Img, alt: "Logo 2" },

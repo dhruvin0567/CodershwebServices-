@@ -7,13 +7,13 @@ import SolutionPageLogoSlider from "./SolutionPageLogoSlider";
 import SolutionTestimonialSlider from "./SolutionTestimonialSlider";
 import SolutionDynamicInfo from "./SolutionDynamicInfo";
 
-import Slider1Img from '../../assets/images/images2/tinified/all-it-nw-front-page.webp';
-import Slider2Img from '../../assets/images/images2/tinified/alt-it-front-page.webp';
-import Slider3Img from '../../assets/images/images2/global-it-front-page.webp';
-import Slider4Img from '../../assets/images/images2/tinified/HoBarbe-front-page.webp';
-import Slider5Img from '../../assets/images/images2/tinified/informadist-front-page.webp';
-import Slider6Img from '../../assets/images/images2/tinified/orangenexus-front-page.webp';
-import Slider7Img from '../../assets/images/images2/tinified/The-IT-Consultancy-front-page.webp';
+import Slider1Img from '/images/solutions/it-agency/all-it-nw-front-page.webp';
+import Slider2Img from '/images/solutions/it-agency/alt-it-front-page.webp';
+import Slider3Img from '/images/solutions/it-agency/global-it-front-page.webp';
+import Slider4Img from '/images/solutions/it-agency/HoBarbe-front-page.webp';
+import Slider5Img from '/images/solutions/it-agency/informadist-front-page.webp';
+import Slider6Img from '/images/solutions/it-agency/orangenexus-front-page.webp';
+import Slider7Img from '/images/solutions/it-agency/The-IT-Consultancy-front-page.webp';
 const slidesData = [
     { image: Slider1Img, alt: "All IT NW Front Page" },
     { image: Slider2Img, alt: "Alt IT Front Page" },
@@ -24,13 +24,13 @@ const slidesData = [
     { image: Slider7Img, alt: "The IT Consultancy Front Page" },
 ];
 
-import Logo1Img from '../../assets/images/images2/alt-it-logo.webp';
-import Logo2Img from '../../assets/images/images2/HoBarbe-logo.webp';
-import Logo3Img from '../../assets/images/images2/ll-it-nw-logo.webp';
-import Logo4Img from '../../assets/images/images2/informadist-logo.webp';
-import Logo5Img from '../../assets/images/images2/orangenexus-logo.webp';
-import Logo6Img from '../../assets/images/images2/The-IT-Consultancy-logo.webp';
-import Logo7Img from '../../assets/images/images2/global-tech-distribution.webp';
+import Logo1Img from '/images/solutions/it-agency/alt-it-logo.webp';
+import Logo2Img from '/images/solutions/it-agency/HoBarbe-logo.webp';
+import Logo3Img from '/images/solutions/it-agency/ll-it-nw-logo.webp';
+import Logo4Img from '/images/solutions/it-agency/informadist-logo.webp';
+import Logo5Img from '/images/solutions/it-agency/orangenexus-logo.webp';
+import Logo6Img from '/images/solutions/it-agency/The-IT-Consultancy-logo.webp';
+import Logo7Img from '/images/solutions/it-agency/global-tech-distribution.webp';
 const logosData = [
     { image: Logo1Img, alt: "Alt IT Logo" },
     { image: Logo2Img, alt: "HoBarbe Logo" },

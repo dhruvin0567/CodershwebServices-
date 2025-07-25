@@ -7,16 +7,16 @@ import SolutionPageLogoSlider from "./SolutionPageLogoSlider";
 import SolutionTestimonialSlider from "./SolutionTestimonialSlider";
 import SolutionDynamicInfo from "./SolutionDynamicInfo";
 
-import ProjImg1 from '../../assets/images/images2/tinified2/artisan.webp';
-import ProjImg2 from '../../assets/images/images2/tinified2/asterley-bros.webp';
-import ProjImg3 from '../../assets/images/images2/tinified2/bone.webp';
-import ProjImg4 from '../../assets/images/images2/tinified2/Claudine.webp';
-import ProjImg5 from '../../assets/images/images2/tinified2/Double-Dutch.webp';
-import ProjImg6 from '../../assets/images/images2/tinified2/gattertop.webp';
-import ProjImg7 from '../../assets/images/images2/tinified2/liberation.webp';
-import ProjImg8 from '../../assets/images/images2/tinified2/madamef.webp';
-import ProjImg9 from '../../assets/images/images2/tinified2/negroni-soc.webp';
-import ProjImg10 from '../../assets/images/images2/tinified2/van-hunks.webp';
+import ProjImg1 from '/images/solutions/wine-store/artisan.webp';
+import ProjImg2 from '/images/solutions/wine-store/asterley-bros.webp';
+import ProjImg3 from '/images/solutions/wine-store/bone.webp';
+import ProjImg4 from '/images/solutions/wine-store/Claudine.webp';
+import ProjImg5 from '/images/solutions/wine-store/Double-Dutch.webp';
+import ProjImg6 from '/images/solutions/wine-store/gattertop.webp';
+import ProjImg7 from '/images/solutions/wine-store/liberation.webp';
+import ProjImg8 from '/images/solutions/wine-store/madamef.webp';
+import ProjImg9 from '/images/solutions/wine-store/negroni-soc.webp';
+import ProjImg10 from '/images/solutions/wine-store/van-hunks.webp';
 const slidesData = [
     { image: ProjImg1, alt: "artisan-homepage" },
     { image: ProjImg2, alt: "asterley-bros-homepaget" },
@@ -30,15 +30,15 @@ const slidesData = [
     { image: ProjImg10, alt: "van-hunks-homepaget" },
 ];
 
-import Logo1Img from '../../assets/images/images2/bone-logo.webp';
-import Logo2Img from '../../assets/images/images2/Claudine-logo.webp';
-import Logo3Img from '../../assets/images/images2/artisan-logo.webp';
-import Logo4Img from '../../assets/images/images2/asterley-bros.webp';
-import Logo5Img from '../../assets/images/images2/Double-Dutch-logo.webp';
-import Logo6Img from '../../assets/images/images2/gattertop-logo.webp';
-import Logo7Img from '../../assets/images/images2/liberation-logo.webp';
-import Logo8Img from '../../assets/images/images2/madamef-logo.webp';
-import Logo9Img from '../../assets/images/images2/van-hunks.webp';
+import Logo1Img from '/images/solutions/wine-store/bone-logo.webp';
+import Logo2Img from '/images/solutions/wine-store/Claudine-logo.webp';
+import Logo3Img from '/images/solutions/wine-store/artisan-logo.webp';
+import Logo4Img from '/images/solutions/wine-store/asterley-bros-logo.webp';
+import Logo5Img from '/images/solutions/wine-store/Double-Dutch-logo.webp';
+import Logo6Img from '/images/solutions/wine-store/gattertop-logo.webp';
+import Logo7Img from '/images/solutions/wine-store/liberation-logo.webp';
+import Logo8Img from '/images/solutions/wine-store/madamef-logo.webp';
+import Logo9Img from '/images/solutions/wine-store/van-hunks-logo.webp';
 const logosData = [
     { image: Logo1Img, alt: "Logo 1" },
     { image: Logo2Img, alt: "Logo 2" },
