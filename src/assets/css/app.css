@@ -12469,6 +12469,10 @@ button#aximo-notified-btn {
 
 
 /* header ccontainer div css  */
+/* .header-container-div {
+	max-width: 1440px !important;
+} */
+
 @media (max-width: 767px) {
 	.header-container-div {
 		/* margin: auto 0px !important; */
@@ -12559,4 +12563,21 @@ span.lazy-load-image-background.blur.lazy-load-image-loaded {
 
 .slick-list {
 	border-radius: 20px !important;
+}
+
+/* servcies-weoffer-box (servcies page) */
+.servcies-weoffer-box {
+	min-height: 351px;
+}
+
+@media (max-width: 991px) {
+	.servcies-weoffer-box {
+		min-height: 381px;
+	}
+}
+
+@media (max-width: 576px) {
+	.servcies-weoffer-box {
+		min-height: 351px;
+	}
 }

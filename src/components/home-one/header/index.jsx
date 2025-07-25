@@ -9,6 +9,7 @@ import HeaderButton from "./HeaderButton";
 import HeaderLogo from "./HeaderLogo";
 import Mega_Menu from "./Mega_Menu";
 import brandLogo from "../../../assets/images/logo/codersh-horizontal-logo-black.webp";
+import Mega_Menu_Services from "./Mega_Menu_2";
 
 
 function Header() {
@@ -27,6 +28,11 @@ function Header() {
 									<DropdownItem url="faq">FAQ</DropdownItem>
 								</Dropdown>
 							</NavItem>
+							{/* <NavItem dropdown title="services">
+								<Dropdown>
+									<Mega_Menu_Services />
+								</Dropdown>
+							</NavItem> */}
 							<NavItem dropdown title="Shopify">
 								<Dropdown>
 									<Mega_Menu />
@@ -37,6 +43,8 @@ function Header() {
 									<DropdownItem url="case-studies">Case Studies</DropdownItem>
 									<DropdownItem url="portfolio">Portfolio</DropdownItem>
 									<DropdownItem url="brand">brand</DropdownItem>
+									{/* <DropdownItem url="ourblog">Our Blog</DropdownItem> */}
+
 								</Dropdown>
 							</NavItem>
 							{/* <NavItem dropdown title="Pages">
