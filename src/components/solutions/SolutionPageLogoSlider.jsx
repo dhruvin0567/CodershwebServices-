@@ -1,6 +1,7 @@
 import { memo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { Helmet } from "react-helmet";
 import "swiper/css";
 
 const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
@@ -11,6 +12,18 @@ const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
       className="aximo-project-page logo-slider dark-bg border-t"
       aria-label={title || "Brand Logos"}
     >
+      <Helmet>
+        {logos.map((logo) => (
+          <link
+            key={logo.image}
+            rel="preload"
+            as="image"
+            href={logo.image}
+            type="image/webp"
+          />
+        ))}
+      </Helmet>
+
       <div className="container py-5">
         {title && (
           <h3 className="light-text text-center mb-5 font-semibold text-xl">
@@ -41,8 +54,6 @@ const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
             <SwiperSlide key={logo.id || logo.image}>
               <img
                 src={logo.image}
-                loading="lazy"
-                decoding="async"
                 width={120}
                 height={80}
                 className="max-h-16 mx-auto object-contain"
