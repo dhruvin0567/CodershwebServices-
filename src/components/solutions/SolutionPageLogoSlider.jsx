@@ -1,10 +1,34 @@
-import { memo } from "react";
+import { memo, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
+const preloadImages = (imageUrls) => {
+  return Promise.all(
+    imageUrls.map(
+      (src) =>
+        new Promise((resolve) => {
+          const img = new window.Image();
+          img.src = src;
+          img.onload = resolve;
+          img.onerror = resolve;
+        })
+    )
+  );
+};
+
 const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    if (logos.length > 0) {
+      const imageUrls = logos.map((logo) => logo.image);
+      preloadImages(imageUrls).then(() => setImagesLoaded(true));
+    }
+  }, [logos]);
+
   if (!logos || logos.length === 0) return null;
+  if (!imagesLoaded) return null; // or a spinner/placeholder
 
   return (
     <section
@@ -30,7 +54,7 @@ const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
           modules={[Autoplay]}
           observer={true}
           observeParents={true}
-          preloadImages={false}
+          preloadImages={true}
           breakpoints={{
             320: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
@@ -41,6 +65,7 @@ const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
             <SwiperSlide key={logo.id || logo.image}>
               <img
                 src={logo.image}
+                decoding="async"
                 width={120}
                 height={80}
                 className="max-h-16 mx-auto object-contain"
