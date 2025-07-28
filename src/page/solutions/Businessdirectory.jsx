@@ -4,21 +4,18 @@ import Bussinessdirectorydata from "../../components/solutions/Bussinessdirector
 // import Bussinessdirectorydata from "../../components/home-one/solutions/bussinessdirectorydata";
 
 function Businessdirectory() {
-    return (
-        <>
-            <SEO
-                title="Business Directory | Discover & Connect with Top Businesses"
-                description="Find trusted businesses across various industries in our comprehensive business directory. Connect with verified companies and grow your network with ease."
-                keywords="business directory, find businesses online, company listings, verified business directory, local businesses, Codersh directory"
-                canonical="https://react-vite-codersh.vercel.app/businessdirectory"
-            />
-            <BreadCrumb title="Business Directory" />
-            <Bussinessdirectorydata />
-
-
-        </>
-
-    )
+  return (
+    <>
+      <SEO
+        title="Business Directory | Discover & Connect with Top Businesses"
+        description="Find trusted businesses across various industries in our comprehensive business directory. Connect with verified companies and grow your network with ease."
+        keywords="business directory, find businesses online, company listings, verified business directory, local businesses, Codersh directory"
+        canonical="https://react-vite-codersh.vercel.app/businessdirectory"
+      />
+      <BreadCrumb title="Business Directory" />
+      <Bussinessdirectorydata />
+    </>
+  );
 }
 
-export default Businessdirectory
+export default Businessdirectory;

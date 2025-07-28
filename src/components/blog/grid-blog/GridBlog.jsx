@@ -1,5 +1,5 @@
-import FadeInStagger from "../animation/FadeInStagger";
-import PortfolioCard from "../portfolio/two/PortfolioCard";
+import FadeInStagger from "../../animation/FadeInStagger";
+import PortfolioCard from "../../portfolio/two/PortfolioCard";
 
 // Static case study data (manually inserted)
 const caseStudies = [
@@ -53,7 +53,7 @@ const caseStudies = [
   },
 ];
 
-function Blog1data() {
+function GridBlog() {
   return (
     <div className="section aximo-section-padding2 aximo-project-page">
       <div className="container">
@@ -73,4 +73,4 @@ function Blog1data() {
   );
 }
 
-export default Blog1data;
+export default GridBlog;
