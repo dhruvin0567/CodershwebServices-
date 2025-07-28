@@ -1,16 +1,9 @@
-import { memo, useEffect } from "react";
+import { memo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
-  useEffect(() => {
-    logos.forEach((logo) => {
-      const img = new Image();
-      img.src = logo.image;
-    });
-  }, [logos]);
-
   if (!logos || logos.length === 0) return null;
 
   return (
@@ -37,7 +30,6 @@ const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
           modules={[Autoplay]}
           observer={true}
           observeParents={true}
-          preloadImages={true}
           breakpoints={{
             320: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
@@ -52,7 +44,7 @@ const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
                 height={80}
                 className="max-h-16 mx-auto object-contain"
                 alt={logo.alt || "Brand logo"}
-                loading="eager"
+                loading="lazy"
                 decoding="async"
               />
             </SwiperSlide>
