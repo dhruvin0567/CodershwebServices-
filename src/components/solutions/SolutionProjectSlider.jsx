@@ -4,7 +4,7 @@ import "swiper/css"; // Don't forget to import Swiper styles
 
 function SolutionProjectSlider({ slides }) {
   return (
-    <div>
+    <section aria-label="Credit Repair Website Portfolio Carousel">
       <div className="section aximo-project-page aximo-section-padding5">
         <div className="container-fluid">
           <Swiper
@@ -25,20 +25,30 @@ function SolutionProjectSlider({ slides }) {
             }}
           >
             {slides.map((slide, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide
+                key={index}
+                role="group"
+                aria-label={`Project slide ${index + 1}`}
+              >
                 <div
                   className="aximo-project-thumb wow fadeInUpX Solution-slider"
                   style={{ cursor: "grab" }}
                   data-wow-delay={`${0.1 + index * 0.1}s`}
                 >
-                  <img src={slide.image} alt={slide.alt} loading="lazy" />
+                  <img
+                    src={slide.image}
+                    alt={
+                      slide.alt || `Credit repair website example ${index + 1}`
+                    }
+                    loading="lazy"
+                  />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

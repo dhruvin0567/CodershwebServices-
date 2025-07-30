@@ -18,16 +18,16 @@ import Slider5Img from "/images/solutions/credit-repair/preimier-credit-front-pa
 import Slider6Img from "/images/solutions/credit-repair/sd-capital-front-page.webp";
 import Slider7Img from "/images/solutions/credit-repair/stellar-credit-front-page.webp";
 const slidesData = [
-  { image: Slider1Img, alt: "Credi Coach Front Page" },
+  { image: Slider1Img, alt: "Credi Coach website front page" },
   {
     image: Slider2Img,
-    alt: "Credit Saint Ranked #1 By Top Financial Sites Front Page",
+    alt: "Credit Saint ranked #1 by financial sites",
   },
-  { image: Slider3Img, alt: "Credit101 Front Page" },
-  { image: Slider4Img, alt: "Framework Credit Front Page" },
-  { image: Slider5Img, alt: "Premier Credit Front Page" },
-  { image: Slider6Img, alt: "SD Capital Front Page" },
-  { image: Slider7Img, alt: "Stellar Credit Front Page" },
+  { image: Slider3Img, alt: "Credit101 homepage design" },
+  { image: Slider4Img, alt: "Framework Credit landing page" },
+  { image: Slider5Img, alt: "Premier Credit services homepage" },
+  { image: Slider6Img, alt: "SD Capital website layout" },
+  { image: Slider7Img, alt: "Stellar Credit front page preview" },
 ];
 
 import Logo1Img from "/images/solutions/credit-repair/logo-1.webp";
@@ -38,13 +38,13 @@ import Logo5Img from "/images/solutions/credit-repair/logo-5.webp";
 import Logo6Img from "/images/solutions/credit-repair/credit-101-logo.webp";
 import Logo7Img from "/images/solutions/credit-repair/credit-saint-logo.webp";
 const logosData = [
-  { image: Logo1Img, alt: "Logo 1" },
-  { image: Logo2Img, alt: "Logo 2" },
-  { image: Logo3Img, alt: "Logo 3" },
-  { image: Logo4Img, alt: "Logo 4" },
-  { image: Logo5Img, alt: "Logo 5" },
-  { image: Logo6Img, alt: "Logo 6" },
-  { image: Logo7Img, alt: "Logo 7" },
+  { image: Logo1Img, alt: "Credit Repair Logo 1" },
+  { image: Logo2Img, alt: "Credit Repair Logo 2" },
+  { image: Logo3Img, alt: "Credit Repair Logo 3" },
+  { image: Logo4Img, alt: "Credit Repair Logo 4" },
+  { image: Logo5Img, alt: "Credit Repair Logo 5" },
+  { image: Logo6Img, alt: "Credit101 Company Logo" },
+  { image: Logo7Img, alt: "Credit Saint Company Logo" },
 ];
 
 const featuresList = [
@@ -58,23 +58,29 @@ const featuresList = [
 
 function Creditrepairdata() {
   return (
-    <div>
+    <main className="credit-repair-solution">
       <FadeInStaggerTwo>
         <FadeInStaggerTwoChildren>
-          <SolutionPageLogoSlider
-            logos={logosData}
-            title="Trusted by Professionals in the Credit Repair Industry"
-          />
+          <section aria-label="Credit repair industry brands">
+            <SolutionPageLogoSlider
+              logos={logosData}
+              title="Trusted by Professionals in the Credit Repair Industry"
+            />
+          </section>
         </FadeInStaggerTwoChildren>
+
         <FadeInStaggerTwoChildren>
-          <SolutionProjectSlider slides={slidesData} />
+          <section aria-label="Credit repair project portfolio">
+            <SolutionProjectSlider slides={slidesData} />
+          </section>
         </FadeInStaggerTwoChildren>
       </FadeInStaggerTwo>
 
-      <SolutionDynamicInfo
-        title="Your Partner in Building"
-        subtitle="Credibility Online"
-        description="In today’s competitive credit repair industry, having a professional and user-friendly website is no
+      <section aria-label="Why choose Codersh for credit repair websites">
+        <SolutionDynamicInfo
+          title="Your Partner in Building"
+          subtitle="Credibility Online"
+          description="In today’s competitive credit repair industry, having a professional and user-friendly website is no
                             longer optional – it’s essential. Your website serves as the face of your business, the first impression that
                             potential clients have of your services. A well-designed credit repair website can help you build trust,
                             streamline lead generation, and showcase your expertise in solving credit challenges. At Codersh, we
@@ -82,14 +88,17 @@ function Creditrepairdata() {
                             From sleek, modern designs to strategic functionalities like lead capture forms and SEO optimization, we
                             provide solutions that help you stand out in the marketplace. Let us help you create a website that not
                             only reflects your professionalism but also drives results and fosters growth for your business."
-        ctaText="Get In Touch"
-        ctaLink="/contact-us"
-        iconImage={Star2Img}
-        features={featuresList}
-      />
+          ctaText="Get In Touch"
+          ctaLink="/contact-us"
+          iconImage={Star2Img}
+          features={featuresList}
+        />
+      </section>
 
-      <SolutionTestimonialSlider />
-    </div>
+      <section aria-label="Testimonials from credit repair businesses">
+        <SolutionTestimonialSlider />
+      </section>
+    </main>
   );
 }
 

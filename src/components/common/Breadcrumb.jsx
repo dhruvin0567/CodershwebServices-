@@ -8,7 +8,7 @@ function BreadCrumb({ title }) {
     >
       <div className="container">
         <h1 className="post__title">{title}</h1>
-        <nav className="breadcrumbs">
+        <nav aria-label="breadcrumb" className="breadcrumbs">
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -26,6 +26,49 @@ function BreadCrumb({ title }) {
             <li aria-current="page">{title}</li>
           </ul>
         </nav>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.yourdomain.com",
+              },
+              ...(title === "Blog Details"
+                ? [
+                    {
+                      "@type": "ListItem",
+                      position: 2,
+                      name: "Blog",
+                      item: "https://www.yourdomain.com/ourblog",
+                    },
+                  ]
+                : []),
+              ...(title === "Case Study Details"
+                ? [
+                    {
+                      "@type": "ListItem",
+                      position: 2,
+                      name: "Case Studies",
+                      item: "https://www.yourdomain.com/case-studies",
+                    },
+                  ]
+                : []),
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: title,
+                item: `https://www.yourdomain.com/${title
+                  .toLowerCase()
+                  .replace(/\s+/g, "-")}`,
+              },
+            ],
+          })}
+        </script>
       </div>
     </div>
   );

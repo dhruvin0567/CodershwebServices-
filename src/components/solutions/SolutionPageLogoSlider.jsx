@@ -9,7 +9,7 @@ const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
   return (
     <section
       className="aximo-project-page logo-slider dark-bg border-t"
-      aria-label={title || "Brand Logos"}
+      aria-label={`${title} logo carousel`}
     >
       <div className="container py-5">
         {title && (
@@ -36,14 +36,14 @@ const SolutionPageLogoSlider = ({ logos = [], title = "" }) => {
             1024: { slidesPerView: 4 },
           }}
         >
-          {logos.map((logo) => (
-            <SwiperSlide key={logo.id || logo.image}>
+          {logos.map((logo, index) => (
+            <SwiperSlide key={logo.id || `logo-${index}`}>
               <img
                 src={logo.image}
                 width={120}
                 height={80}
                 className="max-h-16 mx-auto object-contain"
-                alt={logo.alt || "Brand logo"}
+                alt={logo.alt || `Logo ${index + 1}`}
                 loading="lazy"
                 decoding="async"
               />
