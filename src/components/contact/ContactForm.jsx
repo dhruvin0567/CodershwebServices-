@@ -1,19 +1,30 @@
-import { useNavigate } from "react-router-dom"; // Import useNavigate hook from React Router
-// import { InstagramEmbed } from 'react-social-media-embed';
+import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-// import ContactThumb from "../../assets/images/contact/contact-thumb-1.webp";
+import emailjs from "emailjs-com";
 import Star2Img from "../../assets/images/v1/star2.webp";
 import FadeInRight from "../animation/FadeInRight";
 import Field from "../common/Field";
 import ContactVideo from "../../assets/images/Videos/reel.mp4";
-// import VideoPoster from "../../assets/images/Videos/Screenshot 2025-04-14 120605.png";
-// import emailjs from '@emailjs/browser';
 import { useRef, useState, useEffect } from "react";
+
+// Replace with your EmailJS keys
+const SERVICE_ID = "service_ry5xraq";
+const TEMPLATE_ID = "template_2ixe2hu";
+const PUBLIC_KEY = "xXD66OwtNN0ehOvWz";
 
 function ContactForm() {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showControls, setShowControls] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+
+  const navigate = useNavigate();
 
   const handlePlayPause = () => {
     const video = videoRef.current;
@@ -28,7 +39,6 @@ function ContactForm() {
     }
   };
 
-  // Pause video on outside click
   useEffect(() => {
     const handleBodyClick = (e) => {
       if (videoRef.current && !videoRef.current.contains(e.target)) {
@@ -43,47 +53,21 @@ function ContactForm() {
     };
   }, []);
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm();
-
-  const navigate = useNavigate(); // Initialize navigate function
-
-  // Submit form
   const submitForm = async (formData) => {
-    console.log("Submitted Form Data =", formData);
-
     try {
-      const response = await fetch(
-        "https://projects.codersh.com/aximo/wp-json/wp/v2/form-submit",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
+      const result = await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        formData,
+        PUBLIC_KEY
       );
 
-      const result = await response.json();
-
-      if (response.ok) {
-        console.log("Form submitted successfully:", result);
-        // alert("Thank you! Your form has been submitted.");
-        reset(); // Reset the form fields after successful submission
-
-        // Navigate to the Thank You page
-        navigate("/thank-you"); // Use React Router to navigate to the Thank You page
-      } else {
-        console.error("Form submission failed:", result);
-        alert("Form submission failed. Please try again.");
-      }
+      console.log("Email Successfully sent!", result.text);
+      reset();
+      navigate("/thank-you");
     } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("An error occurred. Please try again.");
+      console.log("Failed to send email", error);
+      alert("Something went wrong. Please try again.");
     }
   };
 
@@ -92,9 +76,9 @@ function ContactForm() {
     WebkitAppearance: "none",
     backgroundImage: "none",
     backgroundColor: "transparent",
-    color: "#000", // Set text color to white
+    color: "#000",
     transition:
-      "background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s", // Transition for color as well
+      "background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s",
   };
 
   return (
@@ -146,7 +130,7 @@ function ContactForm() {
                 {showControls && (
                   <button
                     onClick={(e) => {
-                      e.stopPropagation(); // prevent click from bubbling to body
+                      e.stopPropagation();
                       handlePlayPause();
                     }}
                     style={{

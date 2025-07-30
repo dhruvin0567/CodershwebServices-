@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "The Future of AI in Everyday Life",
+    "slug": "future-of-ai",
+    "image": "/assets/images/blog/blog1.webp"
+  },
+  {
+    "id": 2,
+    "title": "Design Trends in 2025",
+    "slug": "design-trends-2025",
+    "image": "/assets/images/blog/blog1.webp"
+  },
+  {
+    "id": 3,
+    "title": "Top React Libraries You Should Know",
+    "slug": "top-react-libraries",
+    "image": "/assets/images/blog/blog1.webp"
+  },
+  {
+    "id": 4,
+    "title": "Remote Work and Productivity Hacks",
+    "slug": "remote-work-hacks",
+    "image": "/assets/images/blog/blog1.webp"
+  },
+  {
+    "id": 5,
+    "title": "Building Accessible Web Apps",
+    "slug": "accessible-web-apps",
+    "image": "/assets/images/blog/blog1.webp"
+  },
+  {
+    "id": 6,
+    "title": "Understanding TypeScript in React",
+    "slug": "typescript-in-react",
+    "image": "/assets/images/blog/blog1.webp"
+  }
+]

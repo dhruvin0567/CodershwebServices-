@@ -1,6 +1,8 @@
+import React from "react";
 import GridBlog from "../../components/blog/grid-blog/GridBlog";
 import BreadCrumb from "../../components/common/Breadcrumb";
 import SEO from "../../components/common/SEO";
+
 function BlogGridPage() {
   return (
     <>
