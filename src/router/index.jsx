@@ -10,31 +10,6 @@ import HomeOne from "../page/home/HomeOne.jsx";
 import Team from "../page/team";
 import ErrorPage from "../error-page";
 import BlogGridPage from "../page/blog/BlogGridPage.jsx";
-// import SignIn from "../page/auth/SignIn";
-// import SignUp from "../page/auth/SignUp";
-// import PortfolioTwoColumn from "../page/portfolio/PortfolioTwoColumn";
-// import Service from "../page/service"
-// import Reset from "../page/auth/ResetPassword.jsx";
-// import CommingSoon from "../page/utility/CommingSoon.jsx";
-// import LayoutTwo from "../components/layout/LayoutTwo.jsx";
-// import LayoutThree from "../components/layout/LayoutThree.jsx";
-// import LayoutFour from "../components/layout/LayoutFour.jsx";
-// import LayoutFive from "../components/layout/LayoutFive.jsx";
-// import LayoutSix from "../components/layout/LayoutSix.jsx";
-// import LayoutSeven from "../components/layout/LayoutSeven.jsx";
-// import LayoutEight from "../components/layout/LayoutEight.jsx";
-// import BlogPage from "../page/blog/BlogPage.jsx";
-// import SingleBlogPage from "../page/blog/SingleBlog.jsx";
-// import HomeFive from "../page/home/HomeFive.jsx";
-// import HomeFour from "../page/home/HomeFour.jsx";
-// import HomeSeven from "../page/home/HomeSeven.jsx";
-// import HomeSix from "../page/home/HomeSix.jsx";
-// import HomeThree from "../page/home/HomeThree.jsx";
-// import HomeTwo from "../page/home/HomeTwo.jsx";
-// import PortfolioOneColumn from "../page/portfolio/PortfolioOneColoum";
-// import SinglePortfolio from "../page/portfolio/SinglePortfolio";
-// import SingleService from "../page/service/service_pg/SingleService.jsx";
-// import SingleTeam from "../page/team/SingleTeam.jsx";
 
 // extrapages implimented
 import Portfolio from "../page/portfolio/Portfolio.jsx";
